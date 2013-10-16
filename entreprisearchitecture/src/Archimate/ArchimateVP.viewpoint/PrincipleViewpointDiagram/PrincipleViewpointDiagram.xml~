@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagramSpecification id="1" name="PrincipleViewpointDiagram" modelVersion="1.0">
+  <EditionPattern id="2" name="TriggeringGR">
+    <DeletionScheme id="3" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="4" object="connector" />
+    </DeletionScheme>
+    <ContainedConnectorPatternRole id="5" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="6" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="7" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="8" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <RectPolylinConnector id="10" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.38368580060422963,0.5081967213114754" />
+        <TextStyle id="11" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="12" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="13" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="14" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="15" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="16" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="17" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="18" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="19" top="20" bottom="20" left="20" right="20" />
+        <CircleShape id="20" />
+        <ShadowStyle id="21" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="22" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="23" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="24" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="25" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="26" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="27" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="28" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="29" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="30" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="31" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="32" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot id="33" isRequired="true" isReadOnly="false" />
+      <GRSpec id="34" featureName="label" value="triggering.triggering.name" readOnly="true" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="5" />
+    <Inspector id="35" inspectorTitle="TrigerringGR" />
+  </EditionPattern>
+  <EditionPattern id="36" name="AssociationGR">
+    <DeletionScheme id="37" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="38" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="39" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToGoalGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="40" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="41" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="42" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="44" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromGoalToGoal" assignation="association">
+        <AddEditionPatternInstanceParameter id="45" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="46" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="47" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="48" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="49" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToPrincipleGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="50" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="51" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="52" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="53" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromGoalToPrinciple" assignation="association">
+        <AddEditionPatternInstanceParameter id="54" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="55" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="56" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="57" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="58" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToGoalGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="59" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="60" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="61" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="62" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromPrincipleToGoal" assignation="association">
+        <AddEditionPatternInstanceParameter id="63" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="64" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="65" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="66" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="67" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToPrincipleGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="68" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="69" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="70" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="71" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromPrincipleToPrinciple" assignation="association">
+        <AddEditionPatternInstanceParameter id="72" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="73" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="74" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="75" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedConnectorPatternRole id="76" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="77" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="78" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="79" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="80" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <RectPolylinConnector id="81" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.3021148036253776,0.4754098360655738" />
+        <TextStyle id="82" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="83" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="84" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="85" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="86" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="87" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="88" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="89" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="90" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="91" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="92" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="93" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="94" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="95" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="96" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="97" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="98" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="99" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="100" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="101" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="102" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="103" featureName="label" value="association.association.name" readOnly="true" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="76" />
+    <Inspector id="104" inspectorTitle="AssociationGR" />
+  </EditionPattern>
+  <EditionPattern id="105" name="CompositionGR">
+    <DeletionScheme id="106" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="107" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="108" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToGoalGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="109" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="110" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="111" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="112" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromGoalToGoal" assignation="composition">
+        <AddEditionPatternInstanceParameter id="113" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="114" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="115" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="116" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="117" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToPrincipleGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="118" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="119" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="120" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="121" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromPrincipleToPrinciple" assignation="composition">
+        <AddEditionPatternInstanceParameter id="122" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="123" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="124" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="125" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedConnectorPatternRole id="126" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="127" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="FILLED_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="128" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="129" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="130" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="131" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="132" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="133" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="134" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="135" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="136" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="137" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="138" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="139" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="140" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="141" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="142" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="143" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="144" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="145" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="146" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="147" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="148" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="149" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="150" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="151" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="152" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="153" featureName="label" value="composition.composition.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="126" />
+    <Inspector id="154" inspectorTitle="CompositionGR" />
+  </EditionPattern>
+  <EditionPattern id="155" name="FlowGR">
+    <DeletionScheme id="156" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="157" object="connector" />
+    </DeletionScheme>
+    <ContainedConnectorPatternRole id="158" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="159" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="160" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="DOT_LINES_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="161" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="162" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="163" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="164" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="165" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="166" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="167" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="168" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="169" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="170" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="171" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="172" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="173" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="174" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="175" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="176" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="177" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="178" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="179" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="180" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="181" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="182" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="183" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="184" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="185" featureName="label" value="flow.flow.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="158" />
+    <Inspector id="186" inspectorTitle="FlowGR" />
+  </EditionPattern>
+  <EditionPattern id="187" name="AggregationGR">
+    <DeletionScheme id="188" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="189" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="190" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToGoalGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="191" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="192" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="193" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="194" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromGoalToGoal" assignation="aggregation">
+        <AddEditionPatternInstanceParameter id="195" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="196" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="197" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="198" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="199" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToPrincipleGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="200" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="201" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="202" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="203" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromPrincipleToPrinciple" assignation="aggregation">
+        <AddEditionPatternInstanceParameter id="204" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="205" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="206" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="207" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedConnectorPatternRole id="208" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="209" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="PLAIN_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="210" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="211" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="212" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="213" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="214" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="215" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="216" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="217" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="218" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="219" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="220" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="221" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="222" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="223" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="224" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="225" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="226" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="227" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="228" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="229" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="230" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="231" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="232" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="233" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="234" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="235" featureName="label" value="aggregation.aggregation.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="208" />
+    <Inspector id="236" inspectorTitle="AggregationGR" />
+  </EditionPattern>
+  <EditionPattern id="237" name="SpecializationGR">
+    <DeletionScheme id="238" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="239" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="240" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToGoalGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="241" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="242" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="243" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="244" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromGoalToGoal" assignation="specialization">
+        <AddEditionPatternInstanceParameter id="245" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="246" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="247" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="248" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="249" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToPrincipleGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="250" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="251" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="252" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="253" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromPrincipleToPrinciple" assignation="specialization">
+        <AddEditionPatternInstanceParameter id="254" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="255" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="256" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="257" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedConnectorPatternRole id="258" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="259" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="260" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="261" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="262" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="263" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="264" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="265" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="266" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="267" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="268" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="269" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="270" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="271" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="272" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="273" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="274" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="275" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="276" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="277" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="278" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="279" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="280" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="281" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="282" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="283" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="284" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="285" featureName="label" value="specialization.specialization.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="258" />
+    <Inspector id="286" inspectorTitle="SpecialisationGR" />
+  </EditionPattern>
+  <EditionPattern id="287" name="UsedbyGR">
+    <DeletionScheme id="288" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="289" object="connector" />
+    </DeletionScheme>
+    <ContainedConnectorPatternRole id="290" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="291" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="292" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="293" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="294" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <RectPolylinConnector id="295" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" />
+        <TextStyle id="296" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="297" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="298" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="299" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="300" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="301" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="302" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="303" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="304" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="305" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="306" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="307" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="308" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="309" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="310" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="311" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="312" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="313" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="314" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="315" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="316" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="317" featureName="label" value="usedby.usedby.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="290" />
+    <Inspector id="318" inspectorTitle="UsedByGR" />
+  </EditionPattern>
+  <EditionPattern id="319" name="AccessGR">
+    <DeletionScheme id="320" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="321" object="connector" />
+    </DeletionScheme>
+    <ContainedConnectorPatternRole id="322" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="323" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="324" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="DOTS_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="325" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="326" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="327" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="328" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="329" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="330" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="331" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="332" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="333" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="334" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="335" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="336" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="337" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="338" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="339" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="340" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="341" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="342" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="343" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="344" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="345" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="346" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="347" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="348" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="349" featureName="label" value="access.access.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="322" />
+    <Inspector id="350" inspectorTitle="AccessGR" />
+  </EditionPattern>
+  <EditionPattern id="351" name="RealizationGR">
+    <DeletionScheme id="352" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="353" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="354" fromTarget="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToGoalGR" label="RealizationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="355" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="356" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="357" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddConnector>
+      <AddEditionPatternInstance id="358" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Realization.creationFromPrincipleToGoal" assignation="realization">
+        <AddEditionPatternInstanceParameter id="359" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="360" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="361" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="362" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedConnectorPatternRole id="363" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="364" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="25.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="365" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="366" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="367" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="368" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="369" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="370" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="371" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="372" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="373" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="374" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="375" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="376" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="377" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="378" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="379" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="380" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="381" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="382" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="383" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="384" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="385" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="386" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="387" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="388" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="389" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="390" featureName="label" value="realization.realization.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="363" />
+    <Inspector id="391" inspectorTitle="RealizationGR" />
+  </EditionPattern>
+  <EditionPattern id="392" name="AssignmentGR">
+    <DeletionScheme id="393" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="394" object="connector" />
+    </DeletionScheme>
+    <ContainedConnectorPatternRole id="395" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="396" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="FILLED_CIRCLE" endSymbol="FILLED_CIRCLE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="397" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="398" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="399" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <RectPolylinConnector id="400" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" />
+        <TextStyle id="401" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="402" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="403" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="404" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="405" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="406" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="407" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="408" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="409" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="410" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="411" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="412" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="413" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="414" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="415" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="416" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="417" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="418" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="419" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="420" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="421" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="422" featureName="label" value="assignment.assignment.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="395" />
+    <Inspector id="423" inspectorTitle="AssignmentGR" />
+  </EditionPattern>
+  <EditionPattern id="424" name="InfluenceGR">
+    <DeletionScheme id="425" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="426" object="connector" />
+    </DeletionScheme>
+    <ContainedConnectorPatternRole id="427" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="428" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="429" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_SPACED_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="430" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="431" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <RectPolylinConnector id="432" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" />
+        <TextStyle id="433" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="434" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="435" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="436" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="437" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="438" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="439" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="440" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="441" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="442" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="443" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="444" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="445" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="446" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="447" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="448" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="449" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="450" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="451" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="20" />
+        <ShadowStyle id="452" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="453" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="33" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="427" />
+    <Inspector id="454" inspectorTitle="InfluenceGR" />
+  </EditionPattern>
+  <EditionPattern id="455" name="ArchimateElementGR">
+    <Inspector id="456" inspectorTitle="ArchimateElementGR" />
+  </EditionPattern>
+  <EditionPattern id="457" name="GoalGR" parentEditionPattern="http://ArchimateVP/PrincipleViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="458" target="top" name="dropGoalGRAtTopLevel" label="dropGoalGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="459" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="460" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="461" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="462" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="463" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
+        <AddEditionPatternInstanceParameter id="464" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="465" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DeletionScheme id="466" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="467" object="shape2" />
+      <DeleteAction id="468" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="469" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="470" object="shape2" />
+      <DeleteAction id="471" object="shape" />
+      <DeleteAction id="472" object="goal" />
+    </DeletionScheme>
+    <DropScheme id="473" target="top" name="drop" label="Select Existing goal" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="474" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Goal" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot id="475" virtualModelURI="http://ArchimateVP/ArchimateVirtualModel" isRequired="true" isReadOnly="false" name="archimateVirtualModel" />
+      </EditionPatternInstanceParameter>
+      <AddShape id="476" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="477" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <DeclarePatternRole id="478" object="parameters.editionPatternInstance" assignation="goal" />
+    </DropScheme>
+    <DropScheme id="479" target="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" name="dropGoalGRToGoalGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="480" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="481" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="482" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="483" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="484" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
+        <AddEditionPatternInstanceParameter id="485" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="486" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="487" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromGoalToGoal">
+        <AddEditionPatternInstanceParameter id="488" paramName="source" value="goal" />
+        <AddEditionPatternInstanceParameter id="489" paramName="target" value="target.goal" />
+        <AddEditionPatternInstanceParameter id="490" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="491" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="492" target="http://ArchimateVP/PrincipleViewpointDiagram#GoalGR" name="dropGoalGRToGoalGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="493" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="494" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="495" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="496" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="497" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
+        <AddEditionPatternInstanceParameter id="498" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="499" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="500" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromGoalToGoal">
+        <AddEditionPatternInstanceParameter id="501" paramName="source" value="goal" />
+        <AddEditionPatternInstanceParameter id="502" paramName="target" value="target.goal" />
+        <AddEditionPatternInstanceParameter id="503" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="504" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="505" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Goal" name="goal" patternRole="goal">
+      <AddressedVirtualModelModelSlot idref="475" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="506" patternRole="shape" name="shape" exampleLabel="Goal">
+      <ShapeGraphicalRepresentation id="507" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="275.0" y="80.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="508" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="509" color1="153,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="510" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="511" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="512" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="513" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="514" top="20" bottom="20" left="20" right="20" />
+        <CustomPolygon id="515" className="org.openflexo.fge.shapes.RectangularOctogon">
+          <FGEPoint id="516" x="0.0" y="0.2" />
+          <FGEPoint id="517" x="0.0" y="0.8" />
+          <FGEPoint id="518" x="0.1" y="1.0" />
+          <FGEPoint id="519" x="0.9" y="1.0" />
+          <FGEPoint id="520" x="1.0" y="0.8" />
+          <FGEPoint id="521" x="1.0" y="0.2" />
+          <FGEPoint id="522" x="0.9" y="0.0" />
+          <FGEPoint id="523" x="0.1" y="0.0" />
+        </CustomPolygon>
+        <ShadowStyle id="524" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="525" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot id="43" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://ArchimateVP/PrincipleViewpointDiagram" />
+      <GRSpec id="526" featureName="label" value="goal.goal.name" readOnly="true" />
+    </ContainedShapePatternRole>
+    <ContainedShapePatternRole id="527" patternRole="shape2" name="shape2" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="528" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="91.0" y="4.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="529" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="530" imageFile="../Images/extension_goal.png" scaleX="1.0416666666666667" scaleY="1.0869565217391304" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="531" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="532" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="533" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="534" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="535" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape id="536" isRounded="false" arcSize="30.0" />
+        <ShadowStyle id="537" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="538" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <ParentShapePatternRole idref="506" />
+      <AddressedDiagramModelSlot idref="43" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="506" />
+    <Inspector id="539" inspectorTitle="GoalGR" />
+  </EditionPattern>
+  <EditionPattern id="540" name="PrincipleGR" parentEditionPattern="http://ArchimateVP/PrincipleViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="541" target="top" name="dropPrincipleGRAtTopLevel" label="dropPrincipleGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="542" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="543" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="544" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="545" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="546" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Principle.creation" assignation="principle">
+        <AddEditionPatternInstanceParameter id="547" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="548" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DeletionScheme id="549" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="550" object="shape2" />
+      <DeleteAction id="551" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="552" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="553" object="shape2" />
+      <DeleteAction id="554" object="shape" />
+      <DeleteAction id="555" object="principle" />
+    </DeletionScheme>
+    <DropScheme id="556" target="top" name="drop" label="Select Existing principle" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="557" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Principle" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="475" />
+      </EditionPatternInstanceParameter>
+      <AddShape id="558" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="559" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <DeclarePatternRole id="560" object="parameters.editionPatternInstance" assignation="principle" />
+    </DropScheme>
+    <DropScheme id="561" target="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" name="dropPrincipleGRToPrincipleGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="562" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="563" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="564" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="565" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="566" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Principle.creation" assignation="principle">
+        <AddEditionPatternInstanceParameter id="567" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="568" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="569" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromPrincipleToPrinciple">
+        <AddEditionPatternInstanceParameter id="570" paramName="source" value="principle" />
+        <AddEditionPatternInstanceParameter id="571" paramName="target" value="target.principle" />
+        <AddEditionPatternInstanceParameter id="572" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="573" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="574" target="http://ArchimateVP/PrincipleViewpointDiagram#PrincipleGR" name="dropPrincipleGRToPrincipleGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="575" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="576" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="577" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="578" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="579" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Principle.creation" assignation="principle">
+        <AddEditionPatternInstanceParameter id="580" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="581" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="582" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromPrincipleToPrinciple">
+        <AddEditionPatternInstanceParameter id="583" paramName="source" value="principle" />
+        <AddEditionPatternInstanceParameter id="584" paramName="target" value="target.principle" />
+        <AddEditionPatternInstanceParameter id="585" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="586" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="587" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Principle" name="principle" patternRole="principle">
+      <AddressedVirtualModelModelSlot idref="475" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="588" patternRole="shape" name="shape" exampleLabel="Principle">
+      <ShapeGraphicalRepresentation id="589" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="275.0" y="80.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="590" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="591" color1="153,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="592" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="593" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="594" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="595" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="596" top="20" bottom="20" left="20" right="20" />
+        <CustomPolygon idref="515" />
+        <ShadowStyle id="597" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="598" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="43" />
+      <GRSpec id="599" featureName="label" value="principle.principle.name" readOnly="true" />
+    </ContainedShapePatternRole>
+    <ContainedShapePatternRole id="600" patternRole="shape2" name="shape2" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="601" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="89.0" y="3.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="602" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="603" imageFile="../Images/extension_principle.png" scaleX="1.0416666666666667" scaleY="1.0869565217391304" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="604" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="605" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="606" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="607" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="608" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="536" />
+        <ShadowStyle id="609" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="610" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <ParentShapePatternRole idref="588" />
+      <AddressedDiagramModelSlot idref="43" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="588" />
+    <Inspector id="611" inspectorTitle="PrincipleGR" />
+  </EditionPattern>
+  <LocalizedDictionary id="612" />
+  <DiagramModelSlot idref="43" />
+  <VirtualModelModelSlot idref="475" />
+  <Inspector id="613" inspectorTitle="PrincipleViewpointDiagram" />
+</DiagramSpecification>
