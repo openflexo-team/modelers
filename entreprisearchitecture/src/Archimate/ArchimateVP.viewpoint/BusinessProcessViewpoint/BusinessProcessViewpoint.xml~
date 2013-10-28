@@ -642,39 +642,37 @@
       </AddEditionPatternInstance>
     </LinkScheme>
     <ContainedConnectorPatternRole id="447" patternRole="connector" name="connector" exampleLabel="label">
-      <ConnectorGraphicalRepresentation id="448" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ConnectorGraphicalRepresentation id="448" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="449" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="450" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="451" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <StartShapeGraphicalRepresentation id="452" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="453" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="454" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="455" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="456" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="457" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="458" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="459" top="20" bottom="20" left="20" right="20" />
-          <CircleShape id="460" />
-          <ShadowStyle id="461" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="462" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </StartShapeGraphicalRepresentation>
-        <EndShapeGraphicalRepresentation id="463" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="464" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="465" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="466" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="467" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="468" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="469" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="470" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="471" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="472" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </EndShapeGraphicalRepresentation>
-        <RectPolylinConnector id="473" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.38368580060422963,0.5081967213114754" />
-        <TextStyle id="474" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <RectPolylinConnector id="452" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.38368580060422963,0.5081967213114754" />
+        <TextStyle id="453" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ConnectorGraphicalRepresentation>
-      <ArtifactFromShapeGraphicalRepresentation idref="452" />
-      <ArtifactToShapeGraphicalRepresentation idref="463" />
+      <ArtifactFromShapeGraphicalRepresentation id="454" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="455" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="456" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="457" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="458" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="459" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="460" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="461" top="20" bottom="20" left="20" right="20" />
+        <CircleShape id="462" />
+        <ShadowStyle id="463" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="464" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="465" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="466" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="467" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="468" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="469" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="470" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="471" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="472" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="473" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="474" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot id="9" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://ArchimateVP/BusinessProcessViewpoint" />
       <GRSpec id="475" featureName="label" value="triggering.triggering.name" readOnly="true" />
     </ContainedConnectorPatternRole>
@@ -2576,7 +2574,7 @@
         <FocusedForegroundStyle id="1790" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="1791" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="1792" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="1793" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="1794" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -2588,7 +2586,7 @@
         <FocusedForegroundStyle id="1800" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="1801" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="1802" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="1803" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="1804" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -2881,7 +2879,7 @@
         <FocusedForegroundStyle id="2003" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2004" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2005" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2006" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2007" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -2893,7 +2891,7 @@
         <FocusedForegroundStyle id="2013" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2014" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2015" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2016" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2017" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -3394,7 +3392,7 @@
         <FocusedForegroundStyle id="2360" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2361" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2362" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2363" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2364" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -3406,7 +3404,7 @@
         <FocusedForegroundStyle id="2370" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2371" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2372" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2373" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2374" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -3712,7 +3710,7 @@
         <FocusedForegroundStyle id="2582" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2583" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2584" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2585" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2586" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -3724,7 +3722,7 @@
         <FocusedForegroundStyle id="2592" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2593" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2594" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2595" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2596" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -4017,7 +4015,7 @@
         <FocusedForegroundStyle id="2795" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2796" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2797" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2798" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2799" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -4029,7 +4027,7 @@
         <FocusedForegroundStyle id="2805" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="2806" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="2807" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="2808" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="2809" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -4803,7 +4801,7 @@
         <FocusedForegroundStyle id="3341" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3342" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3343" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3344" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3345" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -4815,7 +4813,7 @@
         <FocusedForegroundStyle id="3351" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3352" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3353" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3354" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3355" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -4983,7 +4981,7 @@
         <FocusedForegroundStyle id="3473" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3474" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3475" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3476" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3477" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -4995,7 +4993,7 @@
         <FocusedForegroundStyle id="3483" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3484" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3485" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3486" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3487" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -5119,7 +5117,7 @@
         <FocusedForegroundStyle id="3569" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3570" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3571" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3572" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3573" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -5131,7 +5129,7 @@
         <FocusedForegroundStyle id="3579" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3580" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3581" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3582" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3583" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -5489,7 +5487,7 @@
         <FocusedForegroundStyle id="3827" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3828" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3829" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3830" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3831" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -5501,7 +5499,7 @@
         <FocusedForegroundStyle id="3837" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3838" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3839" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3840" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3841" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
@@ -5534,7 +5532,7 @@
         <FocusedForegroundStyle id="3860" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3861" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3862" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3863" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3864" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactFromShapeGraphicalRepresentation>
@@ -5546,7 +5544,7 @@
         <FocusedForegroundStyle id="3870" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="3871" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
         <Border id="3872" top="20" bottom="20" left="20" right="20" />
-        <CircleShape idref="460" />
+        <CircleShape idref="462" />
         <ShadowStyle id="3873" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="3874" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ArtifactToShapeGraphicalRepresentation>
