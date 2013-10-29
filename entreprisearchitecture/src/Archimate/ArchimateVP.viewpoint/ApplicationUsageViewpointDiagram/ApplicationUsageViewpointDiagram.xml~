@@ -5017,7 +5017,7 @@
     <DropScheme id="3503" target="top" name="dropApplicationInterfaceGRAtTopLevel" label="dropApplicationInterfaceGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="3504" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="3505" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <IntegerParameter id="3506" name="interfaceType" label="interfaceType" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="3506" name="interfaceType" label="interfaceType" defaultValue="1" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="3507" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="11" />
       </AddShape>
