@@ -952,480 +952,484 @@
       <ArtifactFromShapeGraphicalRepresentation idref="671" />
       <ArtifactToShapeGraphicalRepresentation idref="681" />
       <AddressedDiagramModelSlot idref="43" />
+      <GRSpec id="693" featureName="label" value="influence.influence.name" readOnly="false" />
     </ContainedConnectorPatternRole>
+    <ContainedEditionPatternInstancePatternRole id="694" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Influence" name="influence" patternRole="influence">
+      <AddressedVirtualModelModelSlot idref="213" />
+    </ContainedEditionPatternInstancePatternRole>
     <PrimaryRepresentationConnectorPatternRole idref="666" />
-    <Inspector id="693" inspectorTitle="InfluenceGR" />
+    <Inspector id="695" inspectorTitle="InfluenceGR" />
   </EditionPattern>
-  <EditionPattern id="694" name="ArchimateElementGR">
-    <Inspector id="695" inspectorTitle="ArchimateElementGR" />
+  <EditionPattern id="696" name="ArchimateElementGR">
+    <Inspector id="697" inspectorTitle="ArchimateElementGR" />
   </EditionPattern>
-  <EditionPattern id="696" name="StakeholderGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="697" target="top" name="dropStakeholderGRAtTopLevel" label="dropStakeholderGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="698" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="699" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="700" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+  <EditionPattern id="698" name="StakeholderGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="699" target="top" name="dropStakeholderGRAtTopLevel" label="dropStakeholderGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="700" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="701" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="702" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="701" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="703" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="702" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder.creation" assignation="stakeholder">
-        <AddEditionPatternInstanceParameter id="703" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="704" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="704" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder.creation" assignation="stakeholder">
+        <AddEditionPatternInstanceParameter id="705" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="706" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DeletionScheme id="705" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="706" object="shape2" />
-      <DeleteAction id="707" object="shape" />
+    <DeletionScheme id="707" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="708" object="shape2" />
+      <DeleteAction id="709" object="shape" />
     </DeletionScheme>
-    <DeletionScheme id="708" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="709" object="shape2" />
-      <DeleteAction id="710" object="shape" />
-      <DeleteAction id="711" object="stakeholder" />
+    <DeletionScheme id="710" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="711" object="shape2" />
+      <DeleteAction id="712" object="shape" />
+      <DeleteAction id="713" object="stakeholder" />
     </DeletionScheme>
-    <DropScheme id="712" target="top" name="drop" label="Select Existing stakeholder" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="713" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <DropScheme id="714" target="top" name="drop" label="Select Existing stakeholder" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="715" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="213" />
       </EditionPatternInstanceParameter>
-      <AddShape id="714" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <AddShape id="716" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="715" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="717" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <DeclarePatternRole id="716" object="parameters.editionPatternInstance" assignation="stakeholder" />
+      <DeclarePatternRole id="718" object="parameters.editionPatternInstance" assignation="stakeholder" />
     </DropScheme>
-    <DropScheme id="717" target="http://ArchimateVP/StakeholderViewpointDiagram#StakeholderGR" name="dropStakeholderGRToStakeholderGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="718" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="719" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="720" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="719" target="http://ArchimateVP/StakeholderViewpointDiagram#StakeholderGR" name="dropStakeholderGRToStakeholderGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="720" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="721" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="722" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="721" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="723" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="722" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder.creation" assignation="stakeholder">
-        <AddEditionPatternInstanceParameter id="723" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="724" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="724" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder.creation" assignation="stakeholder">
+        <AddEditionPatternInstanceParameter id="725" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="726" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="725" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromStakeholderToStakeholder">
-        <AddEditionPatternInstanceParameter id="726" paramName="source" value="stakeholder" />
-        <AddEditionPatternInstanceParameter id="727" paramName="target" value="target.stakeholder" />
-        <AddEditionPatternInstanceParameter id="728" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="729" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="730" target="http://ArchimateVP/StakeholderViewpointDiagram#StakeholderGR" name="dropStakeholderGRToStakeholderGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="731" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="732" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="733" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddShape id="734" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddEditionPatternInstance id="735" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder.creation" assignation="stakeholder">
-        <AddEditionPatternInstanceParameter id="736" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="737" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="738" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromStakeholderToStakeholder">
-        <AddEditionPatternInstanceParameter id="739" paramName="source" value="stakeholder" />
-        <AddEditionPatternInstanceParameter id="740" paramName="target" value="target.stakeholder" />
-        <AddEditionPatternInstanceParameter id="741" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="742" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="727" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromStakeholderToStakeholder">
+        <AddEditionPatternInstanceParameter id="728" paramName="source" value="stakeholder" />
+        <AddEditionPatternInstanceParameter id="729" paramName="target" value="target.stakeholder" />
+        <AddEditionPatternInstanceParameter id="730" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="731" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="743" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder" name="stakeholder" patternRole="stakeholder">
+    <DropScheme id="732" target="http://ArchimateVP/StakeholderViewpointDiagram#StakeholderGR" name="dropStakeholderGRToStakeholderGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="733" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="734" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="735" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="736" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="737" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder.creation" assignation="stakeholder">
+        <AddEditionPatternInstanceParameter id="738" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="739" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="740" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromStakeholderToStakeholder">
+        <AddEditionPatternInstanceParameter id="741" paramName="source" value="stakeholder" />
+        <AddEditionPatternInstanceParameter id="742" paramName="target" value="target.stakeholder" />
+        <AddEditionPatternInstanceParameter id="743" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="744" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="745" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Stakeholder" name="stakeholder" patternRole="stakeholder">
       <AddressedVirtualModelModelSlot idref="213" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="744" patternRole="shape" name="shape" exampleLabel="Stakeholder">
-      <ShapeGraphicalRepresentation id="745" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="239.0" y="100.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="746" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="747" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="748" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="749" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="750" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="751" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="752" top="20" bottom="20" left="20" right="20" />
-        <CustomPolygon id="753" className="org.openflexo.fge.shapes.RectangularOctogon">
-          <FGEPoint id="754" x="0.0" y="0.2" />
-          <FGEPoint id="755" x="0.0" y="0.8" />
-          <FGEPoint id="756" x="0.1" y="1.0" />
-          <FGEPoint id="757" x="0.9" y="1.0" />
-          <FGEPoint id="758" x="1.0" y="0.8" />
-          <FGEPoint id="759" x="1.0" y="0.2" />
-          <FGEPoint id="760" x="0.9" y="0.0" />
-          <FGEPoint id="761" x="0.1" y="0.0" />
+    <ContainedShapePatternRole id="746" patternRole="shape" name="shape" exampleLabel="Stakeholder">
+      <ShapeGraphicalRepresentation id="747" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="239.0" y="100.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="748" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="749" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="750" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="751" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="752" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="753" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="754" top="20" bottom="20" left="20" right="20" />
+        <CustomPolygon id="755" className="org.openflexo.fge.shapes.RectangularOctogon">
+          <FGEPoint id="756" x="0.0" y="0.2" />
+          <FGEPoint id="757" x="0.0" y="0.8" />
+          <FGEPoint id="758" x="0.1" y="1.0" />
+          <FGEPoint id="759" x="0.9" y="1.0" />
+          <FGEPoint id="760" x="1.0" y="0.8" />
+          <FGEPoint id="761" x="1.0" y="0.2" />
+          <FGEPoint id="762" x="0.9" y="0.0" />
+          <FGEPoint id="763" x="0.1" y="0.0" />
         </CustomPolygon>
-        <ShadowStyle id="762" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="763" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <ShadowStyle id="764" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="765" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="43" />
-      <GRSpec id="764" featureName="label" value="stakeholder.stakeholder.name" readOnly="true" />
+      <GRSpec id="766" featureName="label" value="stakeholder.stakeholder.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="765" patternRole="shape2" name="shape2" exampleLabel="">
-      <ShapeGraphicalRepresentation id="766" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="93.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="767" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="768" imageFile="../Images/extension_stakeholder.png" scaleX="0.18796992481203006" scaleY="0.373134328358209" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="769" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="770" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="771" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="772" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="773" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape id="774" isRounded="false" arcSize="30.0" />
-        <ShadowStyle id="775" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="776" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="767" patternRole="shape2" name="shape2" exampleLabel="">
+      <ShapeGraphicalRepresentation id="768" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="93.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="769" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="770" imageFile="../Images/extension_stakeholder.png" scaleX="0.18796992481203006" scaleY="0.373134328358209" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="771" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="772" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="773" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="774" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="775" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape id="776" isRounded="false" arcSize="30.0" />
+        <ShadowStyle id="777" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="778" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="744" />
+      <ParentShapePatternRole idref="746" />
       <AddressedDiagramModelSlot idref="43" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="744" />
-    <Inspector id="777" inspectorTitle="StakeholderGR" />
+    <PrimaryRepresentationShapePatternRole idref="746" />
+    <Inspector id="779" inspectorTitle="StakeholderGR" />
   </EditionPattern>
-  <EditionPattern id="778" name="GoalGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="779" target="top" name="dropGoalGRAtTopLevel" label="dropGoalGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="780" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="781" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="782" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+  <EditionPattern id="780" name="GoalGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="781" target="top" name="dropGoalGRAtTopLevel" label="dropGoalGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="782" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="783" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="784" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="783" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="785" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="784" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
-        <AddEditionPatternInstanceParameter id="785" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="786" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="786" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
+        <AddEditionPatternInstanceParameter id="787" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="788" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DeletionScheme id="787" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="788" object="shape2" />
-      <DeleteAction id="789" object="shape" />
+    <DeletionScheme id="789" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="790" object="shape2" />
+      <DeleteAction id="791" object="shape" />
     </DeletionScheme>
-    <DeletionScheme id="790" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="791" object="shape2" />
-      <DeleteAction id="792" object="shape" />
-      <DeleteAction id="793" object="goal" />
+    <DeletionScheme id="792" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="793" object="shape2" />
+      <DeleteAction id="794" object="shape" />
+      <DeleteAction id="795" object="goal" />
     </DeletionScheme>
-    <DropScheme id="794" target="top" name="drop" label="Select Existing goal" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="795" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Goal" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <DropScheme id="796" target="top" name="drop" label="Select Existing goal" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="797" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Goal" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="213" />
       </EditionPatternInstanceParameter>
-      <AddShape id="796" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <AddShape id="798" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="797" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="799" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <DeclarePatternRole id="798" object="parameters.editionPatternInstance" assignation="goal" />
+      <DeclarePatternRole id="800" object="parameters.editionPatternInstance" assignation="goal" />
     </DropScheme>
-    <DropScheme id="799" target="http://ArchimateVP/StakeholderViewpointDiagram#GoalGR" name="dropGoalGRToGoalGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="800" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="801" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="802" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="801" target="http://ArchimateVP/StakeholderViewpointDiagram#GoalGR" name="dropGoalGRToGoalGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="802" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="803" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="804" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="803" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="805" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="804" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
-        <AddEditionPatternInstanceParameter id="805" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="806" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="806" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
+        <AddEditionPatternInstanceParameter id="807" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="808" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="807" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromGoalToGoal">
-        <AddEditionPatternInstanceParameter id="808" paramName="source" value="goal" />
-        <AddEditionPatternInstanceParameter id="809" paramName="target" value="target.goal" />
-        <AddEditionPatternInstanceParameter id="810" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="811" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="812" target="http://ArchimateVP/StakeholderViewpointDiagram#GoalGR" name="dropGoalGRToGoalGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="813" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="814" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="815" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddShape id="816" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddEditionPatternInstance id="817" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
-        <AddEditionPatternInstanceParameter id="818" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="819" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="820" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromGoalToGoal">
-        <AddEditionPatternInstanceParameter id="821" paramName="source" value="goal" />
-        <AddEditionPatternInstanceParameter id="822" paramName="target" value="target.goal" />
-        <AddEditionPatternInstanceParameter id="823" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="824" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="809" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromGoalToGoal">
+        <AddEditionPatternInstanceParameter id="810" paramName="source" value="goal" />
+        <AddEditionPatternInstanceParameter id="811" paramName="target" value="target.goal" />
+        <AddEditionPatternInstanceParameter id="812" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="813" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="825" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Goal" name="goal" patternRole="goal">
+    <DropScheme id="814" target="http://ArchimateVP/StakeholderViewpointDiagram#GoalGR" name="dropGoalGRToGoalGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="815" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="816" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="817" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="818" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="819" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Goal.creation" assignation="goal">
+        <AddEditionPatternInstanceParameter id="820" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="821" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="822" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromGoalToGoal">
+        <AddEditionPatternInstanceParameter id="823" paramName="source" value="goal" />
+        <AddEditionPatternInstanceParameter id="824" paramName="target" value="target.goal" />
+        <AddEditionPatternInstanceParameter id="825" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="826" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="827" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Goal" name="goal" patternRole="goal">
       <AddressedVirtualModelModelSlot idref="213" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="826" patternRole="shape" name="shape" exampleLabel="Goal">
-      <ShapeGraphicalRepresentation id="827" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="635.0" y="501.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="828" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="829" color1="153,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="830" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="831" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="832" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="833" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="834" top="20" bottom="20" left="20" right="20" />
-        <CustomPolygon idref="753" />
-        <ShadowStyle id="835" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="836" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="828" patternRole="shape" name="shape" exampleLabel="Goal">
+      <ShapeGraphicalRepresentation id="829" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="635.0" y="501.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="830" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="831" color1="153,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="832" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="833" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="834" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="835" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="836" top="20" bottom="20" left="20" right="20" />
+        <CustomPolygon idref="755" />
+        <ShadowStyle id="837" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="838" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="43" />
-      <GRSpec id="837" featureName="label" value="goal.goal.name" readOnly="true" />
+      <GRSpec id="839" featureName="label" value="goal.goal.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="838" patternRole="shape2" name="shape2" exampleLabel="label">
-      <ShapeGraphicalRepresentation id="839" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="91.0" y="4.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="840" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="841" imageFile="../Images/extension_goal.png" scaleX="1.0416666666666667" scaleY="1.0869565217391304" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="842" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="843" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="844" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="845" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="846" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="774" />
-        <ShadowStyle id="847" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="848" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="840" patternRole="shape2" name="shape2" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="841" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="91.0" y="4.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="842" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="843" imageFile="../Images/extension_goal.png" scaleX="1.0416666666666667" scaleY="1.0869565217391304" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="844" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="845" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="846" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="847" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="848" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="776" />
+        <ShadowStyle id="849" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="850" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="826" />
+      <ParentShapePatternRole idref="828" />
       <AddressedDiagramModelSlot idref="43" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="826" />
-    <Inspector id="849" inspectorTitle="GoalGR" />
+    <PrimaryRepresentationShapePatternRole idref="828" />
+    <Inspector id="851" inspectorTitle="GoalGR" />
   </EditionPattern>
-  <EditionPattern id="850" name="DriverGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="851" target="top" name="dropDriverGRAtTopLevel" label="dropDriverGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="852" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="853" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="854" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+  <EditionPattern id="852" name="DriverGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="853" target="top" name="dropDriverGRAtTopLevel" label="dropDriverGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="854" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="855" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="856" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="855" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="857" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="856" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Driver.creation" assignation="driver">
-        <AddEditionPatternInstanceParameter id="857" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="858" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="858" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Driver.creation" assignation="driver">
+        <AddEditionPatternInstanceParameter id="859" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="860" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DeletionScheme id="859" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="860" object="shape2" />
-      <DeleteAction id="861" object="shape" />
+    <DeletionScheme id="861" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="862" object="shape2" />
+      <DeleteAction id="863" object="shape" />
     </DeletionScheme>
-    <DeletionScheme id="862" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="863" object="shape2" />
-      <DeleteAction id="864" object="shape" />
-      <DeleteAction id="865" object="driver" />
+    <DeletionScheme id="864" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="865" object="shape2" />
+      <DeleteAction id="866" object="shape" />
+      <DeleteAction id="867" object="driver" />
     </DeletionScheme>
-    <DropScheme id="866" target="top" name="drop" label="Select Existing driver" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="867" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Driver" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <DropScheme id="868" target="top" name="drop" label="Select Existing driver" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="869" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Driver" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="213" />
       </EditionPatternInstanceParameter>
-      <AddShape id="868" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <AddShape id="870" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="869" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="871" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <DeclarePatternRole id="870" object="parameters.editionPatternInstance" assignation="driver" />
+      <DeclarePatternRole id="872" object="parameters.editionPatternInstance" assignation="driver" />
     </DropScheme>
-    <DropScheme id="871" target="http://ArchimateVP/StakeholderViewpointDiagram#DriverGR" name="dropDriverGRToDriverGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="872" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="873" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="874" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="873" target="http://ArchimateVP/StakeholderViewpointDiagram#DriverGR" name="dropDriverGRToDriverGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="874" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="875" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="876" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="875" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="877" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="876" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Driver.creation" assignation="driver">
-        <AddEditionPatternInstanceParameter id="877" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="878" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="878" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Driver.creation" assignation="driver">
+        <AddEditionPatternInstanceParameter id="879" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="880" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="879" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromDriverToDriver">
-        <AddEditionPatternInstanceParameter id="880" paramName="source" value="driver" />
-        <AddEditionPatternInstanceParameter id="881" paramName="target" value="target.driver" />
-        <AddEditionPatternInstanceParameter id="882" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="883" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="884" target="http://ArchimateVP/StakeholderViewpointDiagram#DriverGR" name="dropDriverGRToDriverGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="885" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="886" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="887" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddShape id="888" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddEditionPatternInstance id="889" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Driver.creation" assignation="driver">
-        <AddEditionPatternInstanceParameter id="890" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="891" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="892" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromDriverToDriver">
-        <AddEditionPatternInstanceParameter id="893" paramName="source" value="driver" />
-        <AddEditionPatternInstanceParameter id="894" paramName="target" value="target.driver" />
-        <AddEditionPatternInstanceParameter id="895" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="896" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="881" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromDriverToDriver">
+        <AddEditionPatternInstanceParameter id="882" paramName="source" value="driver" />
+        <AddEditionPatternInstanceParameter id="883" paramName="target" value="target.driver" />
+        <AddEditionPatternInstanceParameter id="884" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="885" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="897" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Driver" name="driver" patternRole="driver">
+    <DropScheme id="886" target="http://ArchimateVP/StakeholderViewpointDiagram#DriverGR" name="dropDriverGRToDriverGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="887" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="888" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="889" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="890" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="891" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Driver.creation" assignation="driver">
+        <AddEditionPatternInstanceParameter id="892" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="893" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="894" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromDriverToDriver">
+        <AddEditionPatternInstanceParameter id="895" paramName="source" value="driver" />
+        <AddEditionPatternInstanceParameter id="896" paramName="target" value="target.driver" />
+        <AddEditionPatternInstanceParameter id="897" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="898" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="899" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Driver" name="driver" patternRole="driver">
       <AddressedVirtualModelModelSlot idref="213" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="898" patternRole="shape" name="shape" exampleLabel="Driver">
-      <ShapeGraphicalRepresentation id="899" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="348.0" y="211.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="900" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="901" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="902" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="903" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="904" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="905" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="906" top="20" bottom="20" left="20" right="20" />
-        <CustomPolygon idref="753" />
-        <ShadowStyle id="907" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="908" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="900" patternRole="shape" name="shape" exampleLabel="Driver">
+      <ShapeGraphicalRepresentation id="901" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="348.0" y="211.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="902" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="903" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="904" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="905" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="906" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="907" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="908" top="20" bottom="20" left="20" right="20" />
+        <CustomPolygon idref="755" />
+        <ShadowStyle id="909" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="910" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="43" />
-      <GRSpec id="909" featureName="label" value="driver.driver.name" readOnly="true" />
+      <GRSpec id="911" featureName="label" value="driver.driver.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="910" patternRole="shape2" name="shape2" exampleLabel="label">
-      <ShapeGraphicalRepresentation id="911" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="95.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="912" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="913" imageFile="../Images/extension_driver.png" scaleX="0.8333333333333334" scaleY="0.8333333333333334" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="914" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="915" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="916" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="917" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="918" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="774" />
-        <ShadowStyle id="919" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="920" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="912" patternRole="shape2" name="shape2" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="913" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="95.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="914" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="915" imageFile="../Images/extension_driver.png" scaleX="0.8333333333333334" scaleY="0.8333333333333334" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="916" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="917" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="918" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="919" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="920" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="776" />
+        <ShadowStyle id="921" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="922" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="898" />
+      <ParentShapePatternRole idref="900" />
       <AddressedDiagramModelSlot idref="43" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="898" />
-    <Inspector id="921" inspectorTitle="DriverGR" />
+    <PrimaryRepresentationShapePatternRole idref="900" />
+    <Inspector id="923" inspectorTitle="DriverGR" />
   </EditionPattern>
-  <EditionPattern id="922" name="AssessmentGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="923" target="top" name="dropAssessmentGRAtTopLevel" label="dropAssessmentGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="924" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="925" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="926" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+  <EditionPattern id="924" name="AssessmentGR" parentEditionPattern="http://ArchimateVP/StakeholderViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="925" target="top" name="dropAssessmentGRAtTopLevel" label="dropAssessmentGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="926" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="927" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="928" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="927" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="929" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="928" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment.creation" assignation="assessment">
-        <AddEditionPatternInstanceParameter id="929" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="930" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="930" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment.creation" assignation="assessment">
+        <AddEditionPatternInstanceParameter id="931" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="932" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DeletionScheme id="931" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="932" object="shape2" />
-      <DeleteAction id="933" object="shape" />
+    <DeletionScheme id="933" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="934" object="shape2" />
+      <DeleteAction id="935" object="shape" />
     </DeletionScheme>
-    <DeletionScheme id="934" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="935" object="shape2" />
-      <DeleteAction id="936" object="shape" />
-      <DeleteAction id="937" object="assessment" />
+    <DeletionScheme id="936" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="937" object="shape2" />
+      <DeleteAction id="938" object="shape" />
+      <DeleteAction id="939" object="assessment" />
     </DeletionScheme>
-    <DropScheme id="938" target="top" name="drop" label="Select Existing assessment" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="939" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <DropScheme id="940" target="top" name="drop" label="Select Existing assessment" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="941" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="213" />
       </EditionPatternInstanceParameter>
-      <AddShape id="940" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <AddShape id="942" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="941" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="943" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <DeclarePatternRole id="942" object="parameters.editionPatternInstance" assignation="assessment" />
+      <DeclarePatternRole id="944" object="parameters.editionPatternInstance" assignation="assessment" />
     </DropScheme>
-    <DropScheme id="943" target="http://ArchimateVP/StakeholderViewpointDiagram#AssessmentGR" name="dropAssessmentGRToAssessmentGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="944" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="945" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="946" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="945" target="http://ArchimateVP/StakeholderViewpointDiagram#AssessmentGR" name="dropAssessmentGRToAssessmentGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="946" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="947" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="948" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddShape id="947" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="949" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="43" />
       </AddShape>
-      <AddEditionPatternInstance id="948" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment.creation" assignation="assessment">
-        <AddEditionPatternInstanceParameter id="949" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="950" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="950" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment.creation" assignation="assessment">
+        <AddEditionPatternInstanceParameter id="951" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="952" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="951" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromAssessmentToAssessment">
-        <AddEditionPatternInstanceParameter id="952" paramName="source" value="assessment" />
-        <AddEditionPatternInstanceParameter id="953" paramName="target" value="target.assessment" />
-        <AddEditionPatternInstanceParameter id="954" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="955" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="956" target="http://ArchimateVP/StakeholderViewpointDiagram#AssessmentGR" name="dropAssessmentGRToAssessmentGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="957" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="958" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="959" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddShape id="960" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="43" />
-      </AddShape>
-      <AddEditionPatternInstance id="961" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment.creation" assignation="assessment">
-        <AddEditionPatternInstanceParameter id="962" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="963" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="964" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromAssessmentToAssessment">
-        <AddEditionPatternInstanceParameter id="965" paramName="source" value="assessment" />
-        <AddEditionPatternInstanceParameter id="966" paramName="target" value="target.assessment" />
-        <AddEditionPatternInstanceParameter id="967" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="968" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="953" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromAssessmentToAssessment">
+        <AddEditionPatternInstanceParameter id="954" paramName="source" value="assessment" />
+        <AddEditionPatternInstanceParameter id="955" paramName="target" value="target.assessment" />
+        <AddEditionPatternInstanceParameter id="956" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="957" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="969" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment" name="assessment" patternRole="assessment">
+    <DropScheme id="958" target="http://ArchimateVP/StakeholderViewpointDiagram#AssessmentGR" name="dropAssessmentGRToAssessmentGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="959" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="960" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="961" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddShape id="962" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="43" />
+      </AddShape>
+      <AddEditionPatternInstance id="963" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment.creation" assignation="assessment">
+        <AddEditionPatternInstanceParameter id="964" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="965" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="966" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromAssessmentToAssessment">
+        <AddEditionPatternInstanceParameter id="967" paramName="source" value="assessment" />
+        <AddEditionPatternInstanceParameter id="968" paramName="target" value="target.assessment" />
+        <AddEditionPatternInstanceParameter id="969" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="970" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="971" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Assessment" name="assessment" patternRole="assessment">
       <AddressedVirtualModelModelSlot idref="213" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="970" patternRole="shape" name="shape" exampleLabel="Assessment">
-      <ShapeGraphicalRepresentation id="971" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="625.0" y="357.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="972" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="973" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="974" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="975" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="976" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="977" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="978" top="20" bottom="20" left="20" right="20" />
-        <CustomPolygon idref="753" />
-        <ShadowStyle id="979" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="980" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="972" patternRole="shape" name="shape" exampleLabel="Assessment">
+      <ShapeGraphicalRepresentation id="973" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="625.0" y="357.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="974" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="975" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="976" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="977" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="978" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="979" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="980" top="20" bottom="20" left="20" right="20" />
+        <CustomPolygon idref="755" />
+        <ShadowStyle id="981" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="982" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="43" />
-      <GRSpec id="981" featureName="label" value="assessment.assessment.name" readOnly="true" />
+      <GRSpec id="983" featureName="label" value="assessment.assessment.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="982" patternRole="shape2" name="shape2" exampleLabel="">
-      <ShapeGraphicalRepresentation id="983" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="93.0" y="4.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="984" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="985" imageFile="../Images/extension_assessment.png" scaleX="1.0" scaleY="1.0" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="986" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="987" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="988" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="989" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="990" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="774" />
-        <ShadowStyle id="991" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="992" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="984" patternRole="shape2" name="shape2" exampleLabel="">
+      <ShapeGraphicalRepresentation id="985" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="93.0" y="4.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="986" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="987" imageFile="../Images/extension_assessment.png" scaleX="1.0" scaleY="1.0" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="988" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="989" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="990" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="991" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="992" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="776" />
+        <ShadowStyle id="993" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="994" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="970" />
+      <ParentShapePatternRole idref="972" />
       <AddressedDiagramModelSlot idref="43" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="970" />
-    <Inspector id="993" inspectorTitle="AssessmentGR" />
+    <PrimaryRepresentationShapePatternRole idref="972" />
+    <Inspector id="995" inspectorTitle="AssessmentGR" />
   </EditionPattern>
-  <LocalizedDictionary id="994" />
+  <LocalizedDictionary id="996" />
   <DiagramModelSlot idref="43" />
   <VirtualModelModelSlot idref="213" />
-  <Inspector id="995" inspectorTitle="Stakeholder" />
+  <Inspector id="997" inspectorTitle="Stakeholder" />
 </DiagramSpecification>
