@@ -1505,8 +1505,263 @@
     <PrimaryRepresentationShapePatternRole idref="1014" />
     <Inspector id="1037" inspectorTitle="PrincipleGR" />
   </EditionPattern>
-  <LocalizedDictionary id="1038" />
+  <EditionPattern id="1038" name="InfluenceGR">
+    <DeletionScheme id="1039" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="1040" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="1041" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1042" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1043" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1044" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1045" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1046" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1047" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1048" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1049" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1050" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1051" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1052" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1053" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1054" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1055" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1056" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1057" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1058" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1059" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1060" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1061" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1062" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1063" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1064" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1065" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1066" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1067" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1068" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1069" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1070" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1071" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1072" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1073" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1074" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1075" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1076" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1077" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1078" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1079" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1080" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1081" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1082" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1083" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1084" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1085" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1086" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1087" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1088" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1089" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1090" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1091" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1092" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1093" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1094" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1095" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1096" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1097" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1098" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1099" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1100" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1101" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1102" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1103" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1104" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1105" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1106" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1107" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1108" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1109" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1110" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1111" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1112" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1113" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1114" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1115" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1116" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1117" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1118" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1119" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1120" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1121" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1122" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1123" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1124" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1125" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1126" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1127" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1128" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1129" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1130" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1131" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1132" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1133" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1134" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1135" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1136" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1137" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1138" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1139" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1140" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1141" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1142" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1143" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1144" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1145" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1146" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1147" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1148" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1149" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1150" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1151" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1152" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1153" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1154" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1155" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1156" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1157" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1158" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1159" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1160" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1161" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1162" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1163" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1164" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1165" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1166" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1167" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1168" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1169" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1170" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1171" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1172" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1173" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1174" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1175" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1176" fromTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/GoalContributionViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1177" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1178" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1179" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="33" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1180" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1181" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1182" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1183" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1184" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedEditionPatternInstancePatternRole id="1185" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Influence" name="influence" patternRole="influence">
+      <AddressedDiagramModelSlot idref="33" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedConnectorPatternRole id="1186" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="1187" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="1188" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="1189" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="1190" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <StartShapeGraphicalRepresentation id="1191" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="1192" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorBackgroundStyle id="1193" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="1194" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="1195" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="1196" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="1197" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="1198" top="20" bottom="20" left="20" right="20" />
+          <CircleShape idref="20" />
+          <ShadowStyle id="1199" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="1200" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </StartShapeGraphicalRepresentation>
+        <EndShapeGraphicalRepresentation id="1201" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="1202" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorBackgroundStyle id="1203" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="1204" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="1205" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="1206" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="1207" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="1208" top="20" bottom="20" left="20" right="20" />
+          <CircleShape idref="20" />
+          <ShadowStyle id="1209" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="1210" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </EndShapeGraphicalRepresentation>
+        <RectPolylinConnector id="1211" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="true" isEndingLocationDraggable="true" />
+        <TextStyle id="1212" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation idref="1191" />
+      <ArtifactToShapeGraphicalRepresentation idref="1201" />
+      <AddressedDiagramModelSlot idref="33" />
+      <GRSpec id="1213" featureName="label" value="influence.influence.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="1186" />
+    <Inspector id="1214" inspectorTitle="InfluenceGR" />
+  </EditionPattern>
+  <LocalizedDictionary id="1215" />
   <DiagramModelSlot idref="33" />
   <VirtualModelModelSlot idref="36" />
-  <Inspector id="1039" inspectorTitle="GoalContributionViewpointDiagram" />
+  <Inspector id="1216" inspectorTitle="GoalContributionViewpointDiagram" />
 </DiagramSpecification>

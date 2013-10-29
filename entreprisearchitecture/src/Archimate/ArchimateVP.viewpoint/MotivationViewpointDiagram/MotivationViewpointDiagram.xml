@@ -642,39 +642,37 @@
       </AddEditionPatternInstance>
     </LinkScheme>
     <ContainedConnectorPatternRole id="447" patternRole="connector" name="connector" exampleLabel="label">
-      <ConnectorGraphicalRepresentation id="448" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ConnectorGraphicalRepresentation id="448" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="449" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="450" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="451" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <StartShapeGraphicalRepresentation id="452" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="453" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="454" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="455" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="456" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="457" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="458" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="459" top="20" bottom="20" left="20" right="20" />
-          <CircleShape id="460" />
-          <ShadowStyle id="461" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="462" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </StartShapeGraphicalRepresentation>
-        <EndShapeGraphicalRepresentation id="463" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="464" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="465" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="466" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="467" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="468" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="469" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="470" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="471" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="472" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </EndShapeGraphicalRepresentation>
-        <RectPolylinConnector id="473" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.3021148036253776,0.4754098360655738" />
-        <TextStyle id="474" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <RectPolylinConnector id="452" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.3021148036253776,0.4754098360655738" />
+        <TextStyle id="453" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ConnectorGraphicalRepresentation>
-      <ArtifactFromShapeGraphicalRepresentation idref="452" />
-      <ArtifactToShapeGraphicalRepresentation idref="463" />
+      <ArtifactFromShapeGraphicalRepresentation id="454" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="455" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="456" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="457" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="458" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="459" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="460" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="461" top="20" bottom="20" left="20" right="20" />
+        <CircleShape id="462" />
+        <ShadowStyle id="463" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="464" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="465" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="466" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="467" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="468" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="469" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="470" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="471" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="472" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="473" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="474" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot id="9" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://ArchimateVP/MotivationViewpointDiagram" />
       <GRSpec id="475" featureName="label" value="association.association.name" readOnly="true" />
     </ContainedConnectorPatternRole>
@@ -806,39 +804,37 @@
       </AddEditionPatternInstance>
     </LinkScheme>
     <ContainedConnectorPatternRole id="563" patternRole="connector" name="connector" exampleLabel="label">
-      <ConnectorGraphicalRepresentation id="564" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="FILLED_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ConnectorGraphicalRepresentation id="564" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="FILLED_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="565" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="566" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="567" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <StartShapeGraphicalRepresentation id="568" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="569" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="570" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="571" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="572" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="573" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="574" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="575" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="576" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="577" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </StartShapeGraphicalRepresentation>
-        <EndShapeGraphicalRepresentation id="578" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="579" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="580" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="581" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="582" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="583" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="584" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="585" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="586" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="587" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </EndShapeGraphicalRepresentation>
-        <LineConnector id="588" lineConnectorType="MINIMAL_LENGTH" />
-        <TextStyle id="589" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <LineConnector id="568" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="569" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ConnectorGraphicalRepresentation>
-      <ArtifactFromShapeGraphicalRepresentation idref="568" />
-      <ArtifactToShapeGraphicalRepresentation idref="578" />
+      <ArtifactFromShapeGraphicalRepresentation id="570" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="571" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="572" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="573" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="574" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="575" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="576" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="577" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="578" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="579" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="580" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="581" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="582" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="583" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="584" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="585" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="586" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="587" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="588" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="589" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="590" featureName="label" value="composition.composition.name" readOnly="false" />
     </ContainedConnectorPatternRole>
@@ -970,39 +966,37 @@
       </AddEditionPatternInstance>
     </LinkScheme>
     <ContainedConnectorPatternRole id="677" patternRole="connector" name="connector" exampleLabel="label">
-      <ConnectorGraphicalRepresentation id="678" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="PLAIN_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ConnectorGraphicalRepresentation id="678" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="PLAIN_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="679" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="680" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="681" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <StartShapeGraphicalRepresentation id="682" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="683" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="684" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="685" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="686" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="687" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="688" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="689" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="690" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="691" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </StartShapeGraphicalRepresentation>
-        <EndShapeGraphicalRepresentation id="692" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="693" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="694" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="695" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="696" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="697" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="698" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="699" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="700" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="701" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </EndShapeGraphicalRepresentation>
-        <LineConnector id="702" lineConnectorType="MINIMAL_LENGTH" />
-        <TextStyle id="703" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <LineConnector id="682" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="683" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ConnectorGraphicalRepresentation>
-      <ArtifactFromShapeGraphicalRepresentation idref="682" />
-      <ArtifactToShapeGraphicalRepresentation idref="692" />
+      <ArtifactFromShapeGraphicalRepresentation id="684" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="685" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="686" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="687" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="688" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="689" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="690" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="691" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="692" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="693" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="694" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="695" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="696" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="697" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="698" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="699" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="700" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="701" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="702" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="703" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="704" featureName="label" value="aggregation.aggregation.name" readOnly="false" />
     </ContainedConnectorPatternRole>
@@ -1134,39 +1128,37 @@
       </AddEditionPatternInstance>
     </LinkScheme>
     <ContainedConnectorPatternRole id="791" patternRole="connector" name="connector" exampleLabel="label">
-      <ConnectorGraphicalRepresentation id="792" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ConnectorGraphicalRepresentation id="792" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="793" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="794" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="795" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <StartShapeGraphicalRepresentation id="796" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="797" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="798" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="799" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="800" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="801" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="802" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="803" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="804" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="805" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </StartShapeGraphicalRepresentation>
-        <EndShapeGraphicalRepresentation id="806" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="807" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="808" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="809" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="810" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="811" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="812" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="813" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="814" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="815" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </EndShapeGraphicalRepresentation>
-        <LineConnector id="816" lineConnectorType="MINIMAL_LENGTH" />
-        <TextStyle id="817" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <LineConnector id="796" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="797" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ConnectorGraphicalRepresentation>
-      <ArtifactFromShapeGraphicalRepresentation idref="796" />
-      <ArtifactToShapeGraphicalRepresentation idref="806" />
+      <ArtifactFromShapeGraphicalRepresentation id="798" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="799" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="800" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="801" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="802" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="803" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="804" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="805" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="806" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="807" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="808" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="809" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="810" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="811" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="812" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="813" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="814" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="815" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="816" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="817" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="818" featureName="label" value="specialization.specialization.name" readOnly="false" />
     </ContainedConnectorPatternRole>
@@ -1246,39 +1238,37 @@
       </AddEditionPatternInstance>
     </LinkScheme>
     <ContainedConnectorPatternRole id="869" patternRole="connector" name="connector" exampleLabel="label">
-      <ConnectorGraphicalRepresentation id="870" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="25.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ConnectorGraphicalRepresentation id="870" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="25.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="871" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_DASHES" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="872" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="873" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <StartShapeGraphicalRepresentation id="874" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="875" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="876" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="877" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="878" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="879" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="880" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="881" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="882" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="883" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </StartShapeGraphicalRepresentation>
-        <EndShapeGraphicalRepresentation id="884" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-          <ForegroundStyle id="885" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <ColorBackgroundStyle id="886" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedForegroundStyle id="887" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <SelectedColorBackgroundStyle id="888" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedForegroundStyle id="889" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-          <FocusedColorBackgroundStyle id="890" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
-          <Border id="891" top="20" bottom="20" left="20" right="20" />
-          <CircleShape idref="460" />
-          <ShadowStyle id="892" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-          <TextStyle id="893" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-        </EndShapeGraphicalRepresentation>
-        <LineConnector id="894" lineConnectorType="MINIMAL_LENGTH" />
-        <TextStyle id="895" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <LineConnector id="874" lineConnectorType="MINIMAL_LENGTH" />
+        <TextStyle id="875" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ConnectorGraphicalRepresentation>
-      <ArtifactFromShapeGraphicalRepresentation idref="874" />
-      <ArtifactToShapeGraphicalRepresentation idref="884" />
+      <ArtifactFromShapeGraphicalRepresentation id="876" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="877" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="878" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="879" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="880" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="881" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="882" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="883" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="884" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="885" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="886" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="887" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="888" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="889" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="890" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="891" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="892" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="893" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="462" />
+        <ShadowStyle id="894" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="895" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="896" featureName="label" value="realization.realization.name" readOnly="false" />
     </ContainedConnectorPatternRole>
@@ -1371,7 +1361,7 @@
       <AddressedVirtualModelModelSlot idref="477" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="949" patternRole="shape" name="shape" exampleLabel="Assessment">
-      <ShapeGraphicalRepresentation id="950" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="31.0" y="80.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Assessment" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="950" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="31.0" y="80.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="951" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="952" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="953" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -1608,7 +1598,7 @@
       <AddressedVirtualModelModelSlot idref="477" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="1103" patternRole="shape" name="shape" exampleLabel="Stakeholder">
-      <ShapeGraphicalRepresentation id="1104" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="275.0" y="80.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Stakeholder" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="1104" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="275.0" y="80.0" width="125.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="1105" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="1106" color1="255,153,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="1107" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -2178,8 +2168,523 @@
     <PrimaryRepresentationShapePatternRole idref="1443" />
     <Inspector id="1466" inspectorTitle="ConstraintGR" />
   </EditionPattern>
-  <LocalizedDictionary id="1467" />
+  <EditionPattern id="1467" name="InfluenceGR">
+    <DeletionScheme id="1468" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="1469" object="connector" />
+    </DeletionScheme>
+    <LinkScheme id="1470" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromAssessmentGRToAssessmentGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1471" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1472" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1473" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1474" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromAssessmentToAssessment" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1475" paramName="source" value="fromTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1476" paramName="target" value="toTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1477" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1478" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1479" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromAssessmentGRToDriverGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1480" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1481" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1482" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1483" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromAssessmentToDriver" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1484" paramName="source" value="fromTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1485" paramName="target" value="toTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1486" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1487" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1488" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromAssessmentGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1489" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1490" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1491" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1492" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromAssessmentToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1493" paramName="source" value="fromTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1494" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1495" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1496" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1497" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromAssessmentGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1498" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1499" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1500" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1501" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromAssessmentToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1502" paramName="source" value="fromTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1503" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1504" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1505" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1506" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromAssessmentGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1507" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1508" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1509" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1510" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromAssessmentToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1511" paramName="source" value="fromTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1512" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1513" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1514" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1515" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromAssessmentGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1516" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1517" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1518" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1519" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromAssessmentToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1520" paramName="source" value="fromTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1521" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1522" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1523" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1524" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDriverGRToAssessmentGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1525" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1526" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1527" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1528" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromDriverToAssessment" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1529" paramName="source" value="fromTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1530" paramName="target" value="toTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1531" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1532" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1533" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDriverGRToDriverGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1534" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1535" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1536" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1537" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromDriverToDriver" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1538" paramName="source" value="fromTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1539" paramName="target" value="toTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1540" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1541" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1542" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDriverGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1543" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1544" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1545" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1546" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromDriverToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1547" paramName="source" value="fromTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1548" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1549" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1550" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1551" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDriverGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1552" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1553" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1554" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1555" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromDriverToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1556" paramName="source" value="fromTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1557" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1558" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1559" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1560" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDriverGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1561" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1562" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1563" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1564" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromDriverToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1565" paramName="source" value="fromTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1566" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1567" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1568" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1569" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDriverGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1570" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1571" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1572" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1573" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromDriverToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1574" paramName="source" value="fromTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1575" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1576" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1577" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1578" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToAssessmentGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1579" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1580" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1581" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1582" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToAssessment" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1583" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1584" paramName="target" value="toTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1585" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1586" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1587" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToDriverGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1588" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1589" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1590" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1591" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToDriver" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1592" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1593" paramName="target" value="toTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1594" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1595" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1596" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1597" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1598" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1599" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1600" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1601" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1602" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1603" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1604" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1605" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1606" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1607" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1608" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1609" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1610" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1611" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1612" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1613" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1614" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1615" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1616" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1617" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1618" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1619" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1620" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1621" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1622" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1623" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromGoalGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1624" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1625" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1626" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1627" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromGoalToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1628" paramName="source" value="fromTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1629" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1630" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1631" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1632" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToAssessmentGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1633" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1634" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1635" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1636" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToAssessment" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1637" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1638" paramName="target" value="toTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1639" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1640" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1641" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToDriverGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1642" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1643" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1644" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1645" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToDriver" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1646" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1647" paramName="target" value="toTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1648" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1649" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1650" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1651" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1652" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1653" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1654" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1655" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1656" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1657" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1658" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1659" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1660" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1661" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1662" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1663" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1664" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1665" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1666" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1667" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1668" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1669" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1670" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1671" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1672" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1673" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1674" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1675" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1676" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1677" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromPrincipleGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1678" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1679" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1680" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1681" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromPrincipleToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1682" paramName="source" value="fromTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1683" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1684" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1685" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1686" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToAssessmentGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1687" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1688" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1689" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1690" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToAssessment" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1691" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1692" paramName="target" value="toTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1693" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1694" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1695" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToDriverGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1696" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1697" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1698" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1699" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToDriver" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1700" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1701" paramName="target" value="toTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1702" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1703" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1704" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1705" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1706" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1707" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1708" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1709" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1710" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1711" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1712" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1713" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1714" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1715" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1716" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1717" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1718" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1719" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1720" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1721" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1722" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1723" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1724" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1725" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1726" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1727" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1728" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1729" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1730" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1731" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRequirementGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1732" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1733" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1734" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1735" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromRequirementToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1736" paramName="source" value="fromTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1737" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1738" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1739" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1740" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#AssessmentGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToAssessmentGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1741" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1742" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1743" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1744" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToAssessment" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1745" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1746" paramName="target" value="toTarget.assessment" />
+        <AddEditionPatternInstanceParameter id="1747" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1748" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1749" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#DriverGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToDriverGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1750" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1751" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1752" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1753" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToDriver" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1754" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1755" paramName="target" value="toTarget.driver" />
+        <AddEditionPatternInstanceParameter id="1756" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1757" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1758" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#GoalGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToGoalGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1759" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1760" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1761" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1762" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToGoal" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1763" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1764" paramName="target" value="toTarget.goal" />
+        <AddEditionPatternInstanceParameter id="1765" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1766" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1767" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#PrincipleGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToPrincipleGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1768" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1769" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1770" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1771" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToPrinciple" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1772" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1773" paramName="target" value="toTarget.principle" />
+        <AddEditionPatternInstanceParameter id="1774" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1775" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1776" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#RequirementGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToRequirementGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1777" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1778" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1779" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1780" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToRequirement" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1781" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1782" paramName="target" value="toTarget.requirement" />
+        <AddEditionPatternInstanceParameter id="1783" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1784" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <LinkScheme id="1785" fromTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" toTarget="http://ArchimateVP/MotivationViewpointDiagram#ConstraintGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromConstraintGRToConstraintGR" label="InfluenceGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="1786" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="1787" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddConnector id="1788" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddConnector>
+      <AddEditionPatternInstance id="1789" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Influence.creationFromConstraintToConstraint" assignation="influence">
+        <AddEditionPatternInstanceParameter id="1790" paramName="source" value="fromTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1791" paramName="target" value="toTarget.constraint" />
+        <AddEditionPatternInstanceParameter id="1792" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="1793" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </LinkScheme>
+    <ContainedEditionPatternInstancePatternRole id="1794" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#Influence" name="influence" patternRole="influence">
+      <AddressedDiagramModelSlot idref="9" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedConnectorPatternRole id="1795" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="1796" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="1797" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="1798" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="1799" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <StartShapeGraphicalRepresentation id="1800" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="1801" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorBackgroundStyle id="1802" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="1803" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="1804" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="1805" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="1806" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="1807" top="20" bottom="20" left="20" right="20" />
+          <CircleShape idref="462" />
+          <ShadowStyle id="1808" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="1809" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </StartShapeGraphicalRepresentation>
+        <EndShapeGraphicalRepresentation id="1810" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="1811" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorBackgroundStyle id="1812" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="1813" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="1814" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="1815" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="1816" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="1817" top="20" bottom="20" left="20" right="20" />
+          <CircleShape idref="462" />
+          <ShadowStyle id="1818" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="1819" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </EndShapeGraphicalRepresentation>
+        <RectPolylinConnector id="1820" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="true" isEndingLocationDraggable="true" />
+        <TextStyle id="1821" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation idref="1800" />
+      <ArtifactToShapeGraphicalRepresentation idref="1810" />
+      <AddressedDiagramModelSlot idref="9" />
+      <GRSpec id="1822" featureName="label" value="influence.influence.name" readOnly="false" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="1795" />
+    <Inspector id="1823" inspectorTitle="InfluenceGR" />
+  </EditionPattern>
+  <LocalizedDictionary id="1824" />
   <DiagramModelSlot idref="9" />
   <VirtualModelModelSlot idref="477" />
-  <Inspector id="1468" inspectorTitle="MotivationViewpointDiagram" />
+  <Inspector id="1825" inspectorTitle="MotivationViewpointDiagram" />
 </DiagramSpecification>
