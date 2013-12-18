@@ -7021,7 +7021,7 @@
     <Inspector id="4891" inspectorTitle="ArchimateElementGR" />
   </EditionPattern>
   <EditionPattern id="4892" name="ApplicationServiceGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="4893" target="top" name="dropApplicationServiceGRAtTopLevel" label="dropApplicationServiceGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="4893" target="top" name="dropApplicationServiceGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="4894" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="4895" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="4896" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7092,7 +7092,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="4936" patternRole="shape" name="shape" exampleLabel="Application&#xA;Service">
-      <ShapeGraphicalRepresentation id="4937" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="79.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="4937" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="79.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Application&#xA;Service" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="4938" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="4939" color1="153,255,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="4940" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -7111,7 +7111,7 @@
     <Inspector id="4949" inspectorTitle="ApplicationServiceGR" />
   </EditionPattern>
   <EditionPattern id="4950" name="DataObjectGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="4951" target="top" name="dropDataObjectGRAtTopLevel" label="dropDataObjectGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="4951" target="top" name="dropDataObjectGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="4952" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="4953" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="4954" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7190,7 +7190,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="4998" patternRole="shape" name="shape" exampleLabel="Data&#xA;Object">
-      <ShapeGraphicalRepresentation id="4999" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="58.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="4999" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="58.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Data&#xA;Object" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5000" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5001" color1="153,255,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5002" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -7225,7 +7225,7 @@
     <Inspector id="5022" inspectorTitle="DataObjectGR" />
   </EditionPattern>
   <EditionPattern id="5023" name="ApplicationComponentGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5024" target="top" name="dropApplicationComponentGRAtTopLevel" label="dropApplicationComponentGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5024" target="top" name="dropApplicationComponentGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5025" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5026" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5027" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7344,7 +7344,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5097" patternRole="shape" name="shape" exampleLabel="Application&#xA;Component">
-      <ShapeGraphicalRepresentation id="5098" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="60.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5098" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="60.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Application&#xA;Component" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5099" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5100" color1="153,255,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5101" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -7379,7 +7379,7 @@
     <Inspector id="5120" inspectorTitle="ApplicationComponentGR" />
   </EditionPattern>
   <EditionPattern id="5121" name="ApplicationCollaborationGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5122" target="top" name="dropApplicationCollaborationGRAtTopLevel" label="dropApplicationCollaborationGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5122" target="top" name="dropApplicationCollaborationGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5123" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5124" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5125" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7498,7 +7498,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5195" patternRole="shape" name="shape" exampleLabel="Application&#xA;Collaboration">
-      <ShapeGraphicalRepresentation id="5196" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="50.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5196" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="50.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Application&#xA;Collaboration" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5197" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5198" color1="153,255,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5199" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -7533,7 +7533,7 @@
     <Inspector id="5218" inspectorTitle="ApplicationCollaborationGR" />
   </EditionPattern>
   <EditionPattern id="5219" name="BusinessCollaborationGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5220" target="top" name="dropBusinessCollaborationGRAtTopLevel" label="dropBusinessCollaborationGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5220" target="top" name="dropBusinessCollaborationGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5221" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5222" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5223" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7556,7 +7556,7 @@
       <DeleteAction id="5233" object="shape" />
       <DeleteAction id="5234" object="businessCollaboration" />
     </DeletionScheme>
-    <DropScheme id="5235" target="top" name="drop" label="Select Existing businessCollaboration" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5235" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5236" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -7569,105 +7569,106 @@
       <DeclarePatternRole id="5239" object="parameters.editionPatternInstance" assignation="businessCollaboration" />
     </DropScheme>
     <DropScheme id="5240" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessCollaborationGR" name="dropBusinessCollaborationGRToBusinessCollaborationGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5241" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5242" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5243" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <ContextShapePatternRole id="5241" patternRole="shape" name="shape" exampleLabel="Business&#xA;Collaboration">
+        <ShapeGraphicalRepresentation id="5242" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="44.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Collaboration" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="5243" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorGradientBackgroundStyle id="5244" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="5245" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="5246" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="5247" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="5248" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="5249" top="20" bottom="20" left="20" right="20" />
+          <RectangleShape idref="5007" />
+          <ShadowStyle id="5250" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="5251" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </ShapeGraphicalRepresentation>
+        <AddressedDiagramModelSlot idref="9" />
+        <GRSpec id="5252" featureName="label" value="businessCollaboration.businessColaboration.name" readOnly="true" />
+      </ContextShapePatternRole>
+      <TextFieldParameter id="5253" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5254" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5255" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5244" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5256" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5245" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
-        <AddEditionPatternInstanceParameter id="5246" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5247" paramName="name" value="parameters.name" />
+      <AddEditionPatternInstance id="5257" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
+        <AddEditionPatternInstanceParameter id="5258" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5259" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5248" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessCollaborationToBusinessCollaboration">
-        <AddEditionPatternInstanceParameter id="5249" paramName="source" value="businessCollaboration" />
-        <AddEditionPatternInstanceParameter id="5250" paramName="target" value="target.businessCollaboration" />
-        <AddEditionPatternInstanceParameter id="5251" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5252" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5253" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessRoleGR" name="dropBusinessCollaborationGRToBusinessRoleGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5254" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5255" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5256" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="5257" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="5258" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
-        <AddEditionPatternInstanceParameter id="5259" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5260" paramName="name" value="parameters.name" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5261" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessRoleToBusinessCollaboration">
-        <AddEditionPatternInstanceParameter id="5262" paramName="source" value="businessRole" />
-        <AddEditionPatternInstanceParameter id="5263" paramName="target" value="target.businessCollaboration" />
-        <AddEditionPatternInstanceParameter id="5264" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5265" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="5260" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessCollaborationToBusinessCollaboration">
+        <AddEditionPatternInstanceParameter id="5261" paramName="source" value="businessCollaboration" />
+        <AddEditionPatternInstanceParameter id="5262" paramName="target" value="target.businessCollaboration" />
+        <AddEditionPatternInstanceParameter id="5263" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5264" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DropScheme id="5266" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessCollaborationGR" name="dropBusinessCollaborationGRToBusinessCollaborationGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5267" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5268" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5269" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="5265" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessRoleGR" name="dropBusinessCollaborationGRToBusinessRoleGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5266" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5267" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5268" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5270" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5269" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5271" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
-        <AddEditionPatternInstanceParameter id="5272" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5273" paramName="name" value="parameters.name" />
+      <AddEditionPatternInstance id="5270" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
+        <AddEditionPatternInstanceParameter id="5271" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5272" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5274" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessCollaborationToBusinessCollaboration">
-        <AddEditionPatternInstanceParameter id="5275" paramName="source" value="businessCollaboration" />
-        <AddEditionPatternInstanceParameter id="5276" paramName="target" value="target.businessCollaboration" />
-        <AddEditionPatternInstanceParameter id="5277" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5278" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5279" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessRoleGR" name="dropBusinessCollaborationGRToBusinessRoleGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5280" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5281" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5282" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="5283" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="5284" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
-        <AddEditionPatternInstanceParameter id="5285" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5286" paramName="name" value="parameters.name" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5287" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessRoleToBusinessCollaboration">
-        <AddEditionPatternInstanceParameter id="5288" paramName="source" value="businessRole" />
-        <AddEditionPatternInstanceParameter id="5289" paramName="target" value="target.businessCollaboration" />
-        <AddEditionPatternInstanceParameter id="5290" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5291" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="5273" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessRoleToBusinessCollaboration">
+        <AddEditionPatternInstanceParameter id="5274" paramName="source" value="businessRole" />
+        <AddEditionPatternInstanceParameter id="5275" paramName="target" value="target.businessCollaboration" />
+        <AddEditionPatternInstanceParameter id="5276" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5277" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="5292" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration" name="businessCollaboration" patternRole="businessCollaboration">
+    <DropScheme id="5278" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessCollaborationGR" name="dropBusinessCollaborationGRToBusinessCollaborationGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5279" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5280" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5281" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="5282" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="5283" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
+        <AddEditionPatternInstanceParameter id="5284" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5285" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="5286" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessCollaborationToBusinessCollaboration">
+        <AddEditionPatternInstanceParameter id="5287" paramName="source" value="businessCollaboration" />
+        <AddEditionPatternInstanceParameter id="5288" paramName="target" value="target.businessCollaboration" />
+        <AddEditionPatternInstanceParameter id="5289" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5290" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="5291" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessRoleGR" name="dropBusinessCollaborationGRToBusinessRoleGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5292" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5293" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5294" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="5295" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="5296" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration.creation" assignation="businessCollaboration">
+        <AddEditionPatternInstanceParameter id="5297" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5298" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="5299" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessRoleToBusinessCollaboration">
+        <AddEditionPatternInstanceParameter id="5300" paramName="source" value="businessRole" />
+        <AddEditionPatternInstanceParameter id="5301" paramName="target" value="target.businessCollaboration" />
+        <AddEditionPatternInstanceParameter id="5302" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5303" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="5304" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessCollaboration" name="businessCollaboration" patternRole="businessCollaboration">
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="5293" patternRole="shape" name="shape" exampleLabel="Business&#xA;Collaboration">
-      <ShapeGraphicalRepresentation id="5294" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="44.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="5295" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="5296" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="5297" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="5298" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="5299" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="5300" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="5301" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="5007" />
-        <ShadowStyle id="5302" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="5303" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-      </ShapeGraphicalRepresentation>
-      <AddressedDiagramModelSlot idref="9" />
-      <GRSpec id="5304" featureName="label" value="businessCollaboration.businessCollaboration.name" readOnly="true" />
-    </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5305" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole idref="5241" />
+    <ContainedShapePatternRole id="5305" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5306" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="98.0" y="3.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5307" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ImageBackgroundStyle id="5308" imageFile="../Images/bussines_collaboration.png" scaleX="0.625" scaleY="1.0416666666666667" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
@@ -7680,14 +7681,14 @@
         <ShadowStyle id="5314" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="5315" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="5293" />
+      <ParentShapePatternRole idref="5241" />
       <AddressedDiagramModelSlot idref="9" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="5293" />
+    <PrimaryRepresentationShapePatternRole idref="5241" />
     <Inspector id="5316" inspectorTitle="BusinessCollaborationGR" />
   </EditionPattern>
   <EditionPattern id="5317" name="BusinessActorGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5318" target="top" name="dropBusinessActorGRAtTopLevel" label="dropBusinessActorGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5318" target="top" name="dropBusinessActorGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5319" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5320" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5321" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7710,7 +7711,7 @@
       <DeleteAction id="5331" object="shape" />
       <DeleteAction id="5332" object="businessActor" />
     </DeletionScheme>
-    <DropScheme id="5333" target="top" name="drop" label="Select Existing businessActor" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5333" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5334" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessActor" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -7786,7 +7787,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5378" patternRole="shape" name="shape" exampleLabel="Business&#xA;Actor">
-      <ShapeGraphicalRepresentation id="5379" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="181.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5379" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="181.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Actor" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5380" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5381" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5382" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -7801,7 +7802,7 @@
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="5389" featureName="label" value="businessActor.businessActor.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5390" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole id="5390" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5391" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="100.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5392" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ImageBackgroundStyle id="5393" imageFile="../Images/business_actor.gif" scaleX="0.6944444444444444" scaleY="0.5319148936170213" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
@@ -7821,7 +7822,7 @@
     <Inspector id="5401" inspectorTitle="BusinessActorGR" />
   </EditionPattern>
   <EditionPattern id="5402" name="BusinessEventGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5403" target="top" name="dropBusinessEventGRAtTopLevel" label="dropBusinessEventGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5403" target="top" name="dropBusinessEventGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5404" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5405" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5406" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7844,7 +7845,7 @@
       <DeleteAction id="5416" object="shape" />
       <DeleteAction id="5417" object="businessEvent" />
     </DeletionScheme>
-    <DropScheme id="5418" target="top" name="drop" label="Select Existing businessEvent" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5418" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5419" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessEvent" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -7857,26 +7858,22 @@
       <DeclarePatternRole id="5422" object="parameters.editionPatternInstance" assignation="businessEvent" />
     </DropScheme>
     <DropScheme id="5423" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessEventGR" name="dropBusinessEventGRToBusinessEventGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5424" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5425" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5426" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <ContextShapePatternRole id="5424" patternRole="shape" name="shape" exampleLabel="Business&#xA;Event">
+        <ShapeGraphicalRepresentation id="5425" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="24.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Event" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="5426" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorGradientBackgroundStyle id="5427" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="5428" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="5429" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="5430" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="5431" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="5432" top="20" bottom="20" left="20" right="20" />
+          <RectangleShape id="5433" isRounded="true" arcSize="30.0" />
+          <ShadowStyle id="5434" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="5435" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </ShapeGraphicalRepresentation>
         <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="5427" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="5428" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessEvent.creation" assignation="businessEvent">
-        <AddEditionPatternInstanceParameter id="5429" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5430" paramName="name" value="parameters.name" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5431" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessEventToBusinessEvent">
-        <AddEditionPatternInstanceParameter id="5432" paramName="source" value="businessEvent" />
-        <AddEditionPatternInstanceParameter id="5433" paramName="target" value="target.businessEvent" />
-        <AddEditionPatternInstanceParameter id="5434" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5435" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5436" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessEventGR" name="dropBusinessEventGRToBusinessEventGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+        <GRSpec id="5436" featureName="label" value="businessEvent.businessEvent.name" readOnly="true" />
+      </ContextShapePatternRole>
       <TextFieldParameter id="5437" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5438" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5439" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7889,33 +7886,38 @@
         <AddEditionPatternInstanceParameter id="5442" paramName="documentation" value="parameters.documentation" />
         <AddEditionPatternInstanceParameter id="5443" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5444" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessEventToBusinessEvent">
+      <AddEditionPatternInstance id="5444" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessEventToBusinessEvent">
         <AddEditionPatternInstanceParameter id="5445" paramName="source" value="businessEvent" />
         <AddEditionPatternInstanceParameter id="5446" paramName="target" value="target.businessEvent" />
         <AddEditionPatternInstanceParameter id="5447" paramName="name" value="parameters.name" />
         <AddEditionPatternInstanceParameter id="5448" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="5449" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessEvent" name="businessEvent" patternRole="businessEvent">
+    <DropScheme id="5449" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessEventGR" name="dropBusinessEventGRToBusinessEventGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5450" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5451" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5452" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="5453" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="5454" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessEvent.creation" assignation="businessEvent">
+        <AddEditionPatternInstanceParameter id="5455" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5456" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="5457" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessEventToBusinessEvent">
+        <AddEditionPatternInstanceParameter id="5458" paramName="source" value="businessEvent" />
+        <AddEditionPatternInstanceParameter id="5459" paramName="target" value="target.businessEvent" />
+        <AddEditionPatternInstanceParameter id="5460" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5461" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="5462" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessEvent" name="businessEvent" patternRole="businessEvent">
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="5450" patternRole="shape" name="shape" exampleLabel="Business&#xA;Event">
-      <ShapeGraphicalRepresentation id="5451" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="24.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="5452" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="5453" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="5454" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="5455" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="5456" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="5457" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="5458" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape id="5459" isRounded="true" arcSize="30.0" />
-        <ShadowStyle id="5460" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="5461" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
-      </ShapeGraphicalRepresentation>
-      <AddressedDiagramModelSlot idref="9" />
-      <GRSpec id="5462" featureName="label" value="businessEvent.businessEvent.name" readOnly="true" />
-    </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5463" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole idref="5424" />
+    <ContainedShapePatternRole id="5463" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5464" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="96.0" y="6.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5465" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ImageBackgroundStyle id="5466" imageFile="../Images/business_event.png" scaleX="0.625" scaleY="1.25" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
@@ -7928,14 +7930,14 @@
         <ShadowStyle id="5472" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="5473" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="5450" />
+      <ParentShapePatternRole idref="5424" />
       <AddressedDiagramModelSlot idref="9" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="5450" />
+    <PrimaryRepresentationShapePatternRole idref="5424" />
     <Inspector id="5474" inspectorTitle="BusinessEventGR" />
   </EditionPattern>
   <EditionPattern id="5475" name="BusinessObjectGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5476" target="top" name="dropBusinessObjectGRAtTopLevel" label="dropBusinessObjectGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5476" target="top" name="dropBusinessObjectGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5477" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5478" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5479" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -7958,7 +7960,7 @@
       <DeleteAction id="5489" object="shape" />
       <DeleteAction id="5490" object="businessObject" />
     </DeletionScheme>
-    <DropScheme id="5491" target="top" name="drop" label="Select Existing businessObject" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5491" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5492" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessObject" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -8014,7 +8016,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5523" patternRole="shape" name="shape" exampleLabel="Business&#xA;Object">
-      <ShapeGraphicalRepresentation id="5524" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="167.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5524" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="167.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Object" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5525" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5526" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5527" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -8029,7 +8031,7 @@
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="5534" featureName="label" value="businessObject.businessObject.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5535" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole id="5535" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5536" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="1.0434725591764504" y="1.8681318681318686" width="123.45157694577404" height="14.395604395604394" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="HEIGHT_FIXED" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5537" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorBackgroundStyle id="5538" color="255,255,153" useTransparency="false" transparencyLevel="0.5" />
@@ -8049,7 +8051,7 @@
     <Inspector id="5546" inspectorTitle="BusinessObjectGR" />
   </EditionPattern>
   <EditionPattern id="5547" name="BusinessServiceGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5548" target="top" name="dropBusinessServiceGRAtTopLevel" label="dropBusinessServiceGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5548" target="top" name="dropBusinessServiceGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5549" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5550" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5551" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -8072,7 +8074,7 @@
       <DeleteAction id="5561" object="shape" />
       <DeleteAction id="5562" object="businessService" />
     </DeletionScheme>
-    <DropScheme id="5563" target="top" name="drop" label="Select Existing businessService" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5563" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5564" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessService" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -8128,7 +8130,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5595" patternRole="shape" name="shape" exampleLabel="Business&#xA;Service">
-      <ShapeGraphicalRepresentation id="5596" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="13.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5596" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="13.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Service" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5597" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5598" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5599" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -8136,17 +8138,17 @@
         <FocusedForegroundStyle id="5601" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="5602" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
         <Border id="5603" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="5459" />
+        <RectangleShape idref="5433" />
         <ShadowStyle id="5604" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="5605" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="5606" featureName="label" value="businessService.businessService.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5607" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole id="5607" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5608" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="95.0" y="4.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5609" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="5610" imageFile="../Images/business_service.png" scaleX="0.17482517482517482" scaleY="0.4166666666666667" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="5610" imageFile="../Images/business_service.png" scaleX="0.3048780487804878" scaleY="0.5555555555555556" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5611" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <SelectedColorBackgroundStyle id="5612" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
         <FocusedForegroundStyle id="5613" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -8163,7 +8165,7 @@
     <Inspector id="5618" inspectorTitle="BusinessServiceGR" />
   </EditionPattern>
   <EditionPattern id="5619" name="BusinessRoleGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5620" target="top" name="dropBusinessRoleGRAtTopLevel" label="dropBusinessRoleGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5620" target="top" name="dropBusinessRoleGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5621" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5622" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5623" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -8186,7 +8188,7 @@
       <DeleteAction id="5633" object="shape" />
       <DeleteAction id="5634" object="businessRole" />
     </DeletionScheme>
-    <DropScheme id="5635" target="top" name="drop" label="Select Existing businessRole" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5635" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5636" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessRole" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -8282,7 +8284,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5693" patternRole="shape" name="shape" exampleLabel="Business&#xA;Role">
-      <ShapeGraphicalRepresentation id="5694" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="158.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5694" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="158.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Role" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5695" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5696" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5697" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -8297,7 +8299,7 @@
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="5704" featureName="label" value="businessRole.businessRole.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5705" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole id="5705" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5706" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="99.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5707" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ImageBackgroundStyle id="5708" imageFile="../Images/business_role.png" scaleX="0.5681818181818182" scaleY="1.0416666666666667" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
@@ -8317,7 +8319,7 @@
     <Inspector id="5716" inspectorTitle="BusinessRoleGR" />
   </EditionPattern>
   <EditionPattern id="5717" name="BusinessInteractionGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5718" target="top" name="dropBusinessInteractionGRAtTopLevel" label="dropBusinessInteractionGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5718" target="top" name="dropBusinessInteractionGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="5719" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <TextAreaParameter id="5720" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddShape id="5721" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
@@ -8340,7 +8342,7 @@
       <DeleteAction id="5731" object="shape" />
       <DeleteAction id="5732" object="businessInteraction" />
     </DeletionScheme>
-    <DropScheme id="5733" target="top" name="drop" label="Select Existing businessInteraction" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="5733" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="5734" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessInteraction" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
@@ -8476,7 +8478,7 @@
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="5817" patternRole="shape" name="shape" exampleLabel="Business&#xA;Interaction">
-      <ShapeGraphicalRepresentation id="5818" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="0.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="5818" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="0.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Interaction" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5819" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ColorGradientBackgroundStyle id="5820" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="5821" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -8484,14 +8486,14 @@
         <FocusedForegroundStyle id="5823" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <FocusedColorBackgroundStyle id="5824" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
         <Border id="5825" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="5459" />
+        <RectangleShape idref="5433" />
         <ShadowStyle id="5826" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="5827" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
       <GRSpec id="5828" featureName="label" value="businessInteraction.businessInteraction.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5829" patternRole="shape2" name="shape2" exampleLabel="label">
+    <ContainedShapePatternRole id="5829" patternRole="shape2" name="shape2" exampleLabel="">
       <ShapeGraphicalRepresentation id="5830" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="99.0" y="2.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="5831" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
         <ImageBackgroundStyle id="5832" imageFile="../Images/business_interaction.png" scaleX="1.1904761904761905" scaleY="1.1904761904761905" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
@@ -8506,400 +8508,401 @@
       </ShapeGraphicalRepresentation>
       <ParentShapePatternRole idref="5817" />
       <AddressedDiagramModelSlot idref="9" />
+      <GRSpec id="5840" featureName="label" value="" readOnly="false" />
     </ContainedShapePatternRole>
     <PrimaryRepresentationShapePatternRole idref="5817" />
-    <Inspector id="5840" inspectorTitle="BusinessInteractionGR" />
+    <Inspector id="5841" inspectorTitle="BusinessInteractionGR" />
   </EditionPattern>
-  <EditionPattern id="5841" name="BusinessProcessGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5842" target="top" name="dropBusinessProcessGRAtTopLevel" label="dropBusinessProcessGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5843" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5844" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5845" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+  <EditionPattern id="5842" name="BusinessProcessGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="5843" target="top" name="dropBusinessProcessGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5844" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5845" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5846" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5846" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5847" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5847" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5848" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5849" paramName="documetation" />
+      <AddEditionPatternInstance id="5848" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5849" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5850" paramName="documetation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DeletionScheme id="5850" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="5851" object="shape2" />
-      <DeleteAction id="5852" object="shape" />
+    <DeletionScheme id="5851" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="5852" object="shape2" />
+      <DeleteAction id="5853" object="shape" />
     </DeletionScheme>
-    <DeletionScheme id="5853" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="5854" object="shape2" />
-      <DeleteAction id="5855" object="shape" />
-      <DeleteAction id="5856" object="businessProcess" />
+    <DeletionScheme id="5854" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="5855" object="shape2" />
+      <DeleteAction id="5856" object="shape" />
+      <DeleteAction id="5857" object="businessProcess" />
     </DeletionScheme>
-    <DropScheme id="5857" target="top" name="drop" label="Select Existing businessProcess" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="5858" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <DropScheme id="5858" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="5859" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
-      <AddShape id="5859" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <AddShape id="5860" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5860" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5861" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <DeclarePatternRole id="5861" object="parameters.editionPatternInstance" assignation="businessProcess" />
+      <DeclarePatternRole id="5862" object="parameters.editionPatternInstance" assignation="businessProcess" />
     </DropScheme>
-    <DropScheme id="5862" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessProcessGRToBusinessInteractionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5863" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5864" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5865" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="5863" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessProcessGRToBusinessInteractionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5864" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5865" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5866" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5866" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5867" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5867" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5868" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5869" paramName="documetation" />
+      <AddEditionPatternInstance id="5868" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5869" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5870" paramName="documetation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5870" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessInteractionToBusinessProcess">
-        <AddEditionPatternInstanceParameter id="5871" paramName="source" value="businessInteraction" />
-        <AddEditionPatternInstanceParameter id="5872" paramName="target" value="target.businessProcess" />
-        <AddEditionPatternInstanceParameter id="5873" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5874" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5875" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessProcessGRToBusinessProcessGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5876" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5877" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5878" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="5879" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="5880" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5881" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5882" paramName="documetation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5883" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessProcessToBusinessProcess">
-        <AddEditionPatternInstanceParameter id="5884" paramName="source" value="businessProcess" />
-        <AddEditionPatternInstanceParameter id="5885" paramName="target" value="target.businessProcess" />
-        <AddEditionPatternInstanceParameter id="5886" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5887" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="5871" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessInteractionToBusinessProcess">
+        <AddEditionPatternInstanceParameter id="5872" paramName="source" value="businessInteraction" />
+        <AddEditionPatternInstanceParameter id="5873" paramName="target" value="target.businessProcess" />
+        <AddEditionPatternInstanceParameter id="5874" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5875" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DropScheme id="5888" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessProcessGRToBusinessFunctionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5889" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5890" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5891" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="5876" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessProcessGRToBusinessProcessGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5877" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5878" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5879" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5892" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5880" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5893" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5894" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5895" paramName="documetation" />
+      <AddEditionPatternInstance id="5881" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5882" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5883" paramName="documetation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5896" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessFunctionToBusinessProcess">
-        <AddEditionPatternInstanceParameter id="5897" paramName="source" value="businessFunction" />
-        <AddEditionPatternInstanceParameter id="5898" paramName="target" value="target.businessProcess" />
-        <AddEditionPatternInstanceParameter id="5899" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5900" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5901" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessProcessGRToBusinessInteractionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5902" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5903" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5904" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="5905" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="5906" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5907" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5908" paramName="documetation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5909" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessInteractionToBusinessProcess">
-        <AddEditionPatternInstanceParameter id="5910" paramName="source" value="businessInteraction" />
-        <AddEditionPatternInstanceParameter id="5911" paramName="target" value="target.businessProcess" />
-        <AddEditionPatternInstanceParameter id="5912" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5913" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="5884" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessProcessToBusinessProcess">
+        <AddEditionPatternInstanceParameter id="5885" paramName="source" value="businessProcess" />
+        <AddEditionPatternInstanceParameter id="5886" paramName="target" value="target.businessProcess" />
+        <AddEditionPatternInstanceParameter id="5887" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5888" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DropScheme id="5914" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessProcessGRToBusinessProcessGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5915" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5916" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5917" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="5889" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessProcessGRToBusinessFunctionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5890" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5891" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5892" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5918" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5893" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5919" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5920" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5921" paramName="documetation" />
+      <AddEditionPatternInstance id="5894" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5895" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5896" paramName="documetation" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5922" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessProcessToBusinessProcess">
-        <AddEditionPatternInstanceParameter id="5923" paramName="source" value="businessProcess" />
-        <AddEditionPatternInstanceParameter id="5924" paramName="target" value="target.businessProcess" />
-        <AddEditionPatternInstanceParameter id="5925" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5926" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5927" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessProcessGRToBusinessFunctionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5928" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5929" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5930" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="5931" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="5932" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
-        <AddEditionPatternInstanceParameter id="5933" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5934" paramName="documetation" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5935" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessFunctionToBusinessProcess">
-        <AddEditionPatternInstanceParameter id="5936" paramName="source" value="businessFunction" />
-        <AddEditionPatternInstanceParameter id="5937" paramName="target" value="target.businessProcess" />
-        <AddEditionPatternInstanceParameter id="5938" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5939" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="5897" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessFunctionToBusinessProcess">
+        <AddEditionPatternInstanceParameter id="5898" paramName="source" value="businessFunction" />
+        <AddEditionPatternInstanceParameter id="5899" paramName="target" value="target.businessProcess" />
+        <AddEditionPatternInstanceParameter id="5900" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5901" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="5940" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess" name="businessProcess" patternRole="businessProcess">
+    <DropScheme id="5902" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessProcessGRToBusinessInteractionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5903" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5904" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5905" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="5906" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="5907" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5908" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5909" paramName="documetation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="5910" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessInteractionToBusinessProcess">
+        <AddEditionPatternInstanceParameter id="5911" paramName="source" value="businessInteraction" />
+        <AddEditionPatternInstanceParameter id="5912" paramName="target" value="target.businessProcess" />
+        <AddEditionPatternInstanceParameter id="5913" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5914" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="5915" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessProcessGRToBusinessProcessGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5916" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5917" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5918" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="5919" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="5920" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5921" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5922" paramName="documetation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="5923" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessProcessToBusinessProcess">
+        <AddEditionPatternInstanceParameter id="5924" paramName="source" value="businessProcess" />
+        <AddEditionPatternInstanceParameter id="5925" paramName="target" value="target.businessProcess" />
+        <AddEditionPatternInstanceParameter id="5926" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5927" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="5928" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessProcessGRToBusinessFunctionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5929" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5930" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5931" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="5932" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="5933" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess.creation" assignation="businessProcess">
+        <AddEditionPatternInstanceParameter id="5934" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5935" paramName="documetation" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="5936" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessFunctionToBusinessProcess">
+        <AddEditionPatternInstanceParameter id="5937" paramName="source" value="businessFunction" />
+        <AddEditionPatternInstanceParameter id="5938" paramName="target" value="target.businessProcess" />
+        <AddEditionPatternInstanceParameter id="5939" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5940" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="5941" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessProcess" name="businessProcess" patternRole="businessProcess">
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="5941" patternRole="shape" name="shape" exampleLabel="Business&#xA;Process">
-      <ShapeGraphicalRepresentation id="5942" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="149.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="5943" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="5944" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="5945" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="5946" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="5947" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="5948" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="5949" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="5459" />
-        <ShadowStyle id="5950" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="5951" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="5942" patternRole="shape" name="shape" exampleLabel="Business&#xA;Process">
+      <ShapeGraphicalRepresentation id="5943" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="149.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Process" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="5944" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="5945" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="5946" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="5947" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="5948" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="5949" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="5950" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="5433" />
+        <ShadowStyle id="5951" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="5952" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
-      <GRSpec id="5952" featureName="label" value="businessProcess.businessProcess.name" readOnly="true" />
+      <GRSpec id="5953" featureName="label" value="businessProcess.businessProcess.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="5953" patternRole="shape2" name="shape2" exampleLabel="">
-      <ShapeGraphicalRepresentation id="5954" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="95.0" y="3.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="5955" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="5956" imageFile="../Images/business_process.png" scaleX="0.5952380952380952" scaleY="0.9615384615384616" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="5957" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="5958" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="5959" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="5960" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="5961" top="20" bottom="20" left="20" right="20" />
+    <ContainedShapePatternRole id="5954" patternRole="shape2" name="shape2" exampleLabel="">
+      <ShapeGraphicalRepresentation id="5955" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="95.0" y="3.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="5956" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="5957" imageFile="../Images/business_process.png" scaleX="0.5952380952380952" scaleY="0.9615384615384616" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="5958" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="5959" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="5960" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="5961" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="5962" top="20" bottom="20" left="20" right="20" />
         <RectangleShape idref="5007" />
-        <ShadowStyle id="5962" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="5963" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <ShadowStyle id="5963" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="5964" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="5941" />
+      <ParentShapePatternRole idref="5942" />
       <AddressedDiagramModelSlot idref="9" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="5941" />
-    <Inspector id="5964" inspectorTitle="BusinessProcessGR" />
+    <PrimaryRepresentationShapePatternRole idref="5942" />
+    <Inspector id="5965" inspectorTitle="BusinessProcessGR" />
   </EditionPattern>
-  <EditionPattern id="5965" name="BusinessFunctionGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
-    <DropScheme id="5966" target="top" name="dropBusinessFunctionGRAtTopLevel" label="dropBusinessFunctionGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5967" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5968" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5969" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+  <EditionPattern id="5966" name="BusinessFunctionGR" parentEditionPattern="http://ArchimateVP/ServiceRealisationViewpointDiagram#ArchimateElementGR">
+    <DropScheme id="5967" target="top" name="dropBusinessFunctionGRAtTopLevel" label="Create" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5968" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5969" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5970" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5970" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5971" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5971" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="5972" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5973" paramName="name" value="parameters.name" />
+      <AddEditionPatternInstance id="5972" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="5973" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5974" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DeletionScheme id="5974" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="5975" object="shape2" />
-      <DeleteAction id="5976" object="shape" />
+    <DeletionScheme id="5975" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="5976" object="shape2" />
+      <DeleteAction id="5977" object="shape" />
     </DeletionScheme>
-    <DeletionScheme id="5977" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="5978" object="shape2" />
-      <DeleteAction id="5979" object="shape" />
-      <DeleteAction id="5980" object="businessFunction" />
+    <DeletionScheme id="5978" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="5979" object="shape2" />
+      <DeleteAction id="5980" object="shape" />
+      <DeleteAction id="5981" object="businessFunction" />
     </DeletionScheme>
-    <DropScheme id="5981" target="top" name="drop" label="Select Existing businessFunction" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="5982" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <DropScheme id="5982" target="top" name="drop" label="Select" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="5983" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="711" />
       </EditionPatternInstanceParameter>
-      <AddShape id="5983" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+      <AddShape id="5984" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5984" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5985" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <DeclarePatternRole id="5985" object="parameters.editionPatternInstance" assignation="businessFunction" />
+      <DeclarePatternRole id="5986" object="parameters.editionPatternInstance" assignation="businessFunction" />
     </DropScheme>
-    <DropScheme id="5986" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessFunctionGRToBusinessInteractionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="5987" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="5988" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="5989" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="5987" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessFunctionGRToBusinessInteractionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="5988" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="5989" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5990" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="5990" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="5991" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="5991" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="5992" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="5993" paramName="name" value="parameters.name" />
+      <AddEditionPatternInstance id="5992" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="5993" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="5994" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="5994" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessInteractionToBusinessFunction">
-        <AddEditionPatternInstanceParameter id="5995" paramName="source" value="businessInteraction" />
-        <AddEditionPatternInstanceParameter id="5996" paramName="target" value="target.businessFunction" />
-        <AddEditionPatternInstanceParameter id="5997" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="5998" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="5999" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessFunctionGRToBusinessProcessGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="6000" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="6001" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="6002" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="6003" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="6004" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="6005" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="6006" paramName="name" value="parameters.name" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="6007" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessProcessToBusinessFunction">
-        <AddEditionPatternInstanceParameter id="6008" paramName="source" value="businessProcess" />
-        <AddEditionPatternInstanceParameter id="6009" paramName="target" value="target.businessFunction" />
-        <AddEditionPatternInstanceParameter id="6010" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="6011" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="5995" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessInteractionToBusinessFunction">
+        <AddEditionPatternInstanceParameter id="5996" paramName="source" value="businessInteraction" />
+        <AddEditionPatternInstanceParameter id="5997" paramName="target" value="target.businessFunction" />
+        <AddEditionPatternInstanceParameter id="5998" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="5999" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DropScheme id="6012" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessFunctionGRToBusinessFunctionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="6013" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="6014" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="6015" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="6000" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessFunctionGRToBusinessProcessGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="6001" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="6002" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="6003" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="6016" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="6004" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="6017" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="6018" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="6019" paramName="name" value="parameters.name" />
+      <AddEditionPatternInstance id="6005" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="6006" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="6007" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="6020" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessFunctionToBusinessFunction">
-        <AddEditionPatternInstanceParameter id="6021" paramName="source" value="businessFunction" />
-        <AddEditionPatternInstanceParameter id="6022" paramName="target" value="target.businessFunction" />
-        <AddEditionPatternInstanceParameter id="6023" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="6024" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="6025" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessFunctionGRToBusinessInteractionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="6026" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="6027" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="6028" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="6029" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="6030" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="6031" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="6032" paramName="name" value="parameters.name" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="6033" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessInteractionToBusinessFunction">
-        <AddEditionPatternInstanceParameter id="6034" paramName="source" value="businessInteraction" />
-        <AddEditionPatternInstanceParameter id="6035" paramName="target" value="target.businessFunction" />
-        <AddEditionPatternInstanceParameter id="6036" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="6037" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="6008" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessProcessToBusinessFunction">
+        <AddEditionPatternInstanceParameter id="6009" paramName="source" value="businessProcess" />
+        <AddEditionPatternInstanceParameter id="6010" paramName="target" value="target.businessFunction" />
+        <AddEditionPatternInstanceParameter id="6011" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="6012" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <DropScheme id="6038" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessFunctionGRToBusinessProcessGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="6039" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="6040" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="6041" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+    <DropScheme id="6013" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessFunctionGRToBusinessFunctionGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="6014" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="6015" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="6016" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddShape id="6042" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+      <AddShape id="6017" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
         <AddressedDiagramModelSlot idref="9" />
       </AddShape>
-      <AddEditionPatternInstance id="6043" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="6044" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="6045" paramName="name" value="parameters.name" />
+      <AddEditionPatternInstance id="6018" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="6019" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="6020" paramName="name" value="parameters.name" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="6046" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessProcessToBusinessFunction">
-        <AddEditionPatternInstanceParameter id="6047" paramName="source" value="businessProcess" />
-        <AddEditionPatternInstanceParameter id="6048" paramName="target" value="target.businessFunction" />
-        <AddEditionPatternInstanceParameter id="6049" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="6050" paramName="documentation" value="parameters.documentation" />
-      </AddEditionPatternInstance>
-    </DropScheme>
-    <DropScheme id="6051" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessFunctionGRToBusinessFunctionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="6052" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextAreaParameter id="6053" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddShape id="6054" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddShape id="6055" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
-        <AddressedDiagramModelSlot idref="9" />
-      </AddShape>
-      <AddEditionPatternInstance id="6056" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
-        <AddEditionPatternInstanceParameter id="6057" paramName="documentation" value="parameters.documentation" />
-        <AddEditionPatternInstanceParameter id="6058" paramName="name" value="parameters.name" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="6059" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessFunctionToBusinessFunction">
-        <AddEditionPatternInstanceParameter id="6060" paramName="source" value="businessFunction" />
-        <AddEditionPatternInstanceParameter id="6061" paramName="target" value="target.businessFunction" />
-        <AddEditionPatternInstanceParameter id="6062" paramName="name" value="parameters.name" />
-        <AddEditionPatternInstanceParameter id="6063" paramName="documentation" value="parameters.documentation" />
+      <AddEditionPatternInstance id="6021" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessFunctionToBusinessFunction">
+        <AddEditionPatternInstanceParameter id="6022" paramName="source" value="businessFunction" />
+        <AddEditionPatternInstanceParameter id="6023" paramName="target" value="target.businessFunction" />
+        <AddEditionPatternInstanceParameter id="6024" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="6025" paramName="documentation" value="parameters.documentation" />
       </AddEditionPatternInstance>
     </DropScheme>
-    <ContainedEditionPatternInstancePatternRole id="6064" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction" name="businessFunction" patternRole="businessFunction">
+    <DropScheme id="6026" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessInteractionGR" name="dropBusinessFunctionGRToBusinessInteractionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="6027" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="6028" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="6029" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="6030" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="6031" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="6032" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="6033" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="6034" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessInteractionToBusinessFunction">
+        <AddEditionPatternInstanceParameter id="6035" paramName="source" value="businessInteraction" />
+        <AddEditionPatternInstanceParameter id="6036" paramName="target" value="target.businessFunction" />
+        <AddEditionPatternInstanceParameter id="6037" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="6038" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="6039" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessProcessGR" name="dropBusinessFunctionGRToBusinessProcessGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="6040" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="6041" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="6042" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="6043" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="6044" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="6045" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="6046" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="6047" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessProcessToBusinessFunction">
+        <AddEditionPatternInstanceParameter id="6048" paramName="source" value="businessProcess" />
+        <AddEditionPatternInstanceParameter id="6049" paramName="target" value="target.businessFunction" />
+        <AddEditionPatternInstanceParameter id="6050" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="6051" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <DropScheme id="6052" target="http://ArchimateVP/ServiceRealisationViewpointDiagram#BusinessFunctionGR" name="dropBusinessFunctionGRToBusinessFunctionGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="6053" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextAreaParameter id="6054" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="6055" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddShape id="6056" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2">
+        <AddressedDiagramModelSlot idref="9" />
+      </AddShape>
+      <AddEditionPatternInstance id="6057" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction.creation" assignation="businessFunction">
+        <AddEditionPatternInstanceParameter id="6058" paramName="documentation" value="parameters.documentation" />
+        <AddEditionPatternInstanceParameter id="6059" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="6060" virtualModelInstance="diagram.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessFunctionToBusinessFunction">
+        <AddEditionPatternInstanceParameter id="6061" paramName="source" value="businessFunction" />
+        <AddEditionPatternInstanceParameter id="6062" paramName="target" value="target.businessFunction" />
+        <AddEditionPatternInstanceParameter id="6063" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="6064" paramName="documentation" value="parameters.documentation" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="6065" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessFunction" name="businessFunction" patternRole="businessFunction">
       <AddressedVirtualModelModelSlot idref="711" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="6065" patternRole="shape" name="shape" exampleLabel="Business&#xA;Function">
-      <ShapeGraphicalRepresentation id="6066" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="275.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="6067" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorGradientBackgroundStyle id="6068" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="6069" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="6070" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="6071" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="6072" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="6073" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="5459" />
-        <ShadowStyle id="6074" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="6075" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ContainedShapePatternRole id="6066" patternRole="shape" name="shape" exampleLabel="Business&#xA;Function">
+      <ShapeGraphicalRepresentation id="6067" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="275.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Business&#xA;Function" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="6068" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorGradientBackgroundStyle id="6069" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="6070" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="6071" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="6072" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="6073" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="6074" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="5433" />
+        <ShadowStyle id="6075" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="6076" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
       <AddressedDiagramModelSlot idref="9" />
-      <GRSpec id="6076" featureName="label" value="businessFunction.businessFunction.name" readOnly="true" />
+      <GRSpec id="6077" featureName="label" value="businessFunction.businesFunction.name" readOnly="true" />
     </ContainedShapePatternRole>
-    <ContainedShapePatternRole id="6077" patternRole="shape2" name="shape2" exampleLabel="label">
-      <ShapeGraphicalRepresentation id="6078" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="96.0" y="3.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="6079" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ImageBackgroundStyle id="6080" imageFile="../Images/business_function.png" scaleX="1.0" scaleY="0.8928571428571429" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="6081" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="6082" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="6083" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="6084" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="6085" top="20" bottom="20" left="20" right="20" />
+    <ContainedShapePatternRole id="6078" patternRole="shape2" name="shape2" exampleLabel="">
+      <ShapeGraphicalRepresentation id="6079" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="96.0" y="3.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="6080" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="6081" imageFile="../Images/business_function.png" scaleX="1.0" scaleY="0.8928571428571429" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="6082" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="6083" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="6084" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="6085" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="6086" top="20" bottom="20" left="20" right="20" />
         <RectangleShape idref="5007" />
-        <ShadowStyle id="6086" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="6087" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        <ShadowStyle id="6087" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="6088" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
       </ShapeGraphicalRepresentation>
-      <ParentShapePatternRole idref="6065" />
+      <ParentShapePatternRole idref="6066" />
       <AddressedDiagramModelSlot idref="9" />
     </ContainedShapePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="6065" />
-    <Inspector id="6088" inspectorTitle="BusinessFunctionGR" />
+    <PrimaryRepresentationShapePatternRole idref="6066" />
+    <Inspector id="6089" inspectorTitle="BusinessFunctionGR" />
   </EditionPattern>
-  <LocalizedDictionary id="6089" />
+  <LocalizedDictionary id="6090" />
   <DiagramModelSlot idref="9" />
   <VirtualModelModelSlot idref="711" />
-  <Inspector id="6090" inspectorTitle="ServiceRealisationViewpointDiagram" />
+  <Inspector id="6091" inspectorTitle="ServiceRealisationViewpointDiagram" />
 </DiagramSpecification>
