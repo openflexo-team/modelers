@@ -41,21 +41,24 @@
     <ContainedDiagramPatternRole id="28" diagramSpecificationURI="http://www.omg.org/UML/EMF/ClassDiagram" patternRole="relatedClassDiagram" name="relatedClassDiagram">
       <AddressedDiagramModelSlot idref="6" />
     </ContainedDiagramPatternRole>
+    <ContainedDiagramPatternRole id="29" diagramSpecificationURI="http://www.omg.org/UML/EMF/UseCaseDiagram" patternRole="relatedUseCaseDiagram" name="relatedUseCaseDiagram">
+      <AddressedDiagramModelSlot idref="6" />
+    </ContainedDiagramPatternRole>
     <PrimaryRepresentationShapePatternRole idref="14" />
-    <Inspector id="29" inspectorTitle="PackageGR" />
+    <Inspector id="30" inspectorTitle="PackageGR" />
   </EditionPattern>
-  <LocalizedDictionary id="30" />
+  <LocalizedDictionary id="31" />
   <DiagramModelSlot idref="6" />
   <VirtualModelModelSlot idref="10" />
-  <DeletionScheme id="31" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
-  <CreationScheme id="32" name="createPkgDiagram" label="createPkgDiagram" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-    <EditionPatternInstanceParameter id="33" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="monModel" label="monModel" usePaletteLabelAsDefaultValue="false" isRequired="false">
+  <DeletionScheme id="32" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
+  <CreationScheme id="33" name="createPkgDiagram" label="createPkgDiagram" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+    <EditionPatternInstanceParameter id="34" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="monModel" label="monModel" usePaletteLabelAsDefaultValue="false" isRequired="false">
       <AddressedVirtualModelModelSlot idref="10" />
     </EditionPatternInstanceParameter>
-    <AssignationAction id="34" value="parameters.monModel" assignation="model" />
+    <AssignationAction id="35" value="parameters.monModel" assignation="model" />
   </CreationScheme>
-  <ContainedEditionPatternInstancePatternRole id="35" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="model" patternRole="model">
+  <ContainedEditionPatternInstancePatternRole id="36" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="model" patternRole="model">
     <AddressedVirtualModelModelSlot idref="10" />
   </ContainedEditionPatternInstancePatternRole>
-  <Inspector id="36" inspectorTitle="PackageDiagram" />
+  <Inspector id="37" inspectorTitle="PackageDiagram" />
 </DiagramSpecification>

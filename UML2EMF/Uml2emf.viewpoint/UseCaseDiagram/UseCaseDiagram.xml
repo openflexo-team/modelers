@@ -1,10 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagramSpecification id="1" name="UseCaseDiagram" modelVersion="1.0">
-  <description />
-  <EditionPattern id="2" name="ActorGR">
-    <Inspector id="3" inspectorTitle="Actor" />
+  <EditionPattern id="2" name="UseCaseGR">
+    <DropScheme id="3" target="top" name="dropSchemeAtTopLevel" label="create_new_usecase" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="4" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="5" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="package" label="package" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot id="6" virtualModelURI="http://www.omg.org/UML/EMF/UML2EMF_VM" isRequired="true" isReadOnly="false" name="umlmodel" />
+      </EditionPatternInstanceParameter>
+      <AddEditionPatternInstance id="7" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase.createUseCase" assignation="useCase">
+        <AddEditionPatternInstanceParameter id="8" paramName="package" value="parameters.package" />
+        <AddEditionPatternInstanceParameter id="9" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddShape id="10" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="12" name="deleteGRUseCase" label="delete_usecase_gr" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="13" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="14" name="deleteGRandModelUseCase" label="delete_usecase_gr_and_model" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="15" object="useCase" />
+      <DeleteAction id="16" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="17" target="top" name="defaultDropAndSelect" label="select_usecase" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="18" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="useCase" label="useCase" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="6" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="19" object="parameters.useCase" assignation="useCase" />
+      <AddShape id="20" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="21" target="http://www.omg.org/UML/EMF/UseCaseDiagram#PackageGR" name="dropInPackage" label="create_new_usecase" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="22" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="23" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase.createUseCase" assignation="useCase">
+        <AddEditionPatternInstanceParameter id="24" paramName="package" value="target._package" />
+        <AddEditionPatternInstanceParameter id="25" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddShape id="26" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="27" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="useCase" patternRole="useCase">
+      <AddressedVirtualModelModelSlot idref="6" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="28" patternRole="shape" name="shape" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="29" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="80.0" y="379.0" width="157.3823409738234" height="60.879120879120876" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="30" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="31" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="32" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="33" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="34" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="35" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="36" top="20" bottom="20" left="20" right="20" />
+        <OvalShape id="37" />
+        <ShadowStyle id="38" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="39" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot id="11" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://www.omg.org/UML/EMF/UseCaseDiagram" />
+      <GRSpec id="40" featureName="label" value="useCase.useCase.name" readOnly="false" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="28" />
+    <Inspector id="41" inspectorTitle="UseCaseGR">
+      <TextField id="42" name="name" label="name" readOnly="false" data="useCase.useCase.name" />
+    </Inspector>
   </EditionPattern>
-  <LocalizedDictionary id="4" />
-  <DiagramModelSlot id="5" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://www.omg.org/UML/EMF/UseCaseDiagram" />
-  <Inspector id="6" inspectorTitle="UseCaseDiagram" />
+  <EditionPattern id="43" name="ActorGR">
+    <DropScheme id="44" target="top" name="dropSchemeAtTopLevel" label="create_new_actor" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="45" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="46" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="package" label="package" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="6" />
+      </EditionPatternInstanceParameter>
+      <AddEditionPatternInstance id="47" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor.createActor" assignation="actor">
+        <AddEditionPatternInstanceParameter id="48" paramName="package" value="parameters.package" />
+        <AddEditionPatternInstanceParameter id="49" paramName="name" value="parameters.name" />
+      </AddEditionPatternInstance>
+      <AddShape id="50" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="51" name="deleteGRActor" label="delete_actor_gr" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="52" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="53" name="deleteGRandModelActor" label="delete_actor_gr_and_model" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="54" object="actor" />
+      <DeleteAction id="55" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="56" target="top" name="defaultDropAndSelect" label="select_actor" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="57" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="actor" label="actor" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="6" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="58" object="parameters.actor" assignation="actor" />
+      <AddShape id="59" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="60" target="http://www.omg.org/UML/EMF/UseCaseDiagram#PackageGR" name="dropInPackage" label="create_new_actor" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="61" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="62" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor.createActor" assignation="actor">
+        <AddEditionPatternInstanceParameter id="63" paramName="package" value="target._package" />
+        <AddEditionPatternInstanceParameter id="64" paramName="name" value="parameters.name" />
+        <AddressedDiagramModelSlot idref="11" />
+      </AddEditionPatternInstance>
+      <AddShape id="65" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="66" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="actor" patternRole="actor">
+      <AddressedVirtualModelModelSlot idref="6" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="67" patternRole="shape" name="shape" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="68" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="48.230769230769226" y="7.387259357184163" width="60.769230769230774" height="68.61274064281584" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="48.0" absoluteTextY="94.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="69" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="70" imageFile="ExampleActorDiagram.diagram.png" scaleX="0.8102564102564103" scaleY="0.8910745538028031" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="71" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="72" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="73" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="74" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="75" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape id="76" isRounded="false" arcSize="30.0" />
+        <ShadowStyle id="77" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="78" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="11" />
+      <GRSpec id="79" featureName="label" value="actor.actor.name" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="67" />
+    <Inspector id="80" inspectorTitle="ActorGR">
+      <TextField id="81" name="name" label="name" readOnly="false" data="actor.actor.name" />
+    </Inspector>
+  </EditionPattern>
+  <EditionPattern id="82" name="PackageGR">
+    <DropScheme id="83" target="top" name="dropSchemeAtTopLevel" label="create_new_package" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="84" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="85" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="model" label="model" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="6" />
+      </EditionPatternInstanceParameter>
+      <AddEditionPatternInstance id="86" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package.createPackage" assignation="_package">
+        <AddEditionPatternInstanceParameter id="87" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="88" paramName="model" value="parameters.model" />
+      </AddEditionPatternInstance>
+      <AddShape id="89" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="90" name="deleteGRPackage" label="delete_package_gr" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="91" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="92" name="deleteGRandModelPackage" label="delete_package_gr_and_model" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="93" object="_package" />
+      <DeleteAction id="94" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="95" target="top" name="defaultDropAndSelect" label="select_package" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="96" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="_package" label="_package" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="6" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="97" object="parameters._package" assignation="_package" />
+      <AddShape id="98" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="99" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="_package" patternRole="_package">
+      <AddressedVirtualModelModelSlot idref="6" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="100" patternRole="shape" name="shape" exampleLabel="fdsfdsfds">
+      <ShapeGraphicalRepresentation id="101" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="49.0" y="0.0" width="316.82619692220015" height="191.336121505613" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="0" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="86.0" absoluteTextY="37.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="102" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="103" imageFile="Package.gif" scaleX="0.8586075797349597" scaleY="0.8073254071966793" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="104" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="105" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="106" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="107" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="108" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="76" />
+        <ShadowStyle id="109" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="110" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="11" />
+      <GRSpec id="111" featureName="label" value="_package.package.name" readOnly="false" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="100" />
+    <Inspector id="112" inspectorTitle="PackageGR">
+      <TextField id="113" name="name" label="name" readOnly="false" data="_package.package.name" />
+    </Inspector>
+  </EditionPattern>
+  <EditionPattern id="114" name="ExtendGR">
+    <LinkScheme id="115" fromTarget="http://www.omg.org/UML/EMF/UseCaseDiagram#UseCaseGR" toTarget="http://www.omg.org/UML/EMF/UseCaseDiagram#UseCaseGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkScheme" label="linkScheme" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="116" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Extend.creation" assignation="extend">
+        <AddEditionPatternInstanceParameter id="117" paramName="source" value="fromTarget.useCase" />
+        <AddEditionPatternInstanceParameter id="118" paramName="target" value="toTarget.useCase" />
+      </AddEditionPatternInstance>
+      <AddConnector id="119" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector">
+        <AddressedDiagramModelSlot idref="11" />
+      </AddConnector>
+    </LinkScheme>
+    <DeletionScheme id="120" name="deleteGRExtend" label="deleteGRExtend" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="121" object="connector" />
+    </DeletionScheme>
+    <DeletionScheme id="122" name="deleteGRandModelExtend" label="deleteGRandModelExtend" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="123" object="extend" />
+      <DeleteAction id="124" object="connector" />
+    </DeletionScheme>
+    <ContainedEditionPatternInstancePatternRole id="125" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Extend" name="extend" patternRole="extend">
+      <AddressedVirtualModelModelSlot idref="6" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedConnectorPatternRole id="126" patternRole="connector" name="connector" exampleLabel="&lt;&lt;extend&gt;&gt;">
+      <ConnectorGraphicalRepresentation id="127" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-64.0" absoluteTextY="-28.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="128" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_SPACED_DASHES" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="129" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="130" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <LineConnector id="131" lineConnectorType="ADJUSTABLE" cp1RelativeToStartObject="0.9919349550499534,0.41055728090000654" cp2RelativeToEndObject="0.48238690450241084,3.103174299141642E-4" />
+        <TextStyle id="132" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation id="133" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="134" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="135" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="136" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="137" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="138" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="139" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="140" top="20" bottom="20" left="20" right="20" />
+        <CircleShape id="141" />
+        <ShadowStyle id="142" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="143" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactFromShapeGraphicalRepresentation>
+      <ArtifactToShapeGraphicalRepresentation id="144" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="145" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="146" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="147" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="148" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="149" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="150" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="151" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="141" />
+        <ShadowStyle id="152" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="153" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ArtifactToShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="11" />
+      <GRSpec id="154" featureName="label" value="&quot;label&quot;" readOnly="true" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="126" />
+    <Inspector id="155" inspectorTitle="ExtendGR" />
+  </EditionPattern>
+  <LocalizedDictionary id="156" />
+  <DiagramModelSlot idref="11" />
+  <VirtualModelModelSlot idref="6" />
+  <Inspector id="157" inspectorTitle="UseCaseDiagram" />
 </DiagramSpecification>
