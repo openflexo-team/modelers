@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="1" modelVersion="1.0" name="UML2EMF_VM">
+  <EditionPattern id="2" name="Model">
+    <CreationScheme id="3" name="createModel" label="createModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="4" name="name" label="Model Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEMFObjectIndividual id="5" assignation="model" individualName="&quot;toto&quot;">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="7" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="8" name="model" patternRole="model" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Model">
+      <AddressedEMFModelSlot id="6" isRequired="true" isReadOnly="false" name="uml" metaModelURI="http://www.eclipse.org/uml2/3.0.0/UML" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="8" />
+    <Inspector id="9" inspectorTitle="Model" />
+  </EditionPattern>
+  <EditionPattern id="10" name="Package">
+    <CreationScheme id="11" name="createPackage" label="createPackage" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextAreaParameter id="12" name="name" label="New Package Name" defaultValue="&quot;Package&quot;" usePaletteLabelAsDefaultValue="false" isRequired="true" />
+      <EditionPatternInstanceParameter id="13" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="model" label="model" usePaletteLabelAsDefaultValue="false" isRequired="true">
+        <AddressedVirtualModelModelSlot id="14" virtualModelURI="http://www.omg.org/UML/EMF/UML2EMF_VM" isRequired="false" isReadOnly="false" name="this" />
+      </EditionPatternInstanceParameter>
+      <AssignationAction id="15" value="parameters.model" assignation="model" />
+      <AddEMFObjectIndividual id="16" container="model.model.packagedElement" assignation="package" individualName="&quot;none&quot;">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="17" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <DeletionScheme id="18" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="19" object="package" />
+    </DeletionScheme>
+    <ContainedEMFObjectIndividualPatternRole id="20" name="package" patternRole="package" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Package">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <ContainedEditionPatternInstancePatternRole id="21" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="model" patternRole="model">
+      <AddressedVirtualModelModelSlot idref="14" />
+    </ContainedEditionPatternInstancePatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="20" />
+    <Inspector id="22" inspectorTitle="Package" />
+  </EditionPattern>
+  <EditionPattern id="23" name="Actor">
+    <CreationScheme id="24" name="createActor" label="createActor" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="25" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="package" label="package" usePaletteLabelAsDefaultValue="false" isRequired="true">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <TextFieldParameter id="26" name="name" label="name" defaultValue="&quot;NoName&quot;" usePaletteLabelAsDefaultValue="false" isRequired="true" />
+      <AssignationAction id="27" value="parameters.package" assignation="package" />
+      <AddEMFObjectIndividual id="28" container="package.package.packagedElement" assignation="actor">
+        <AddressedEMFModelSlot idref="6" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="29" name="actor" patternRole="actor" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Actor">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <ContainedEditionPatternInstancePatternRole id="30" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="package" patternRole="package">
+      <AddressedVirtualModelModelSlot idref="14" />
+    </ContainedEditionPatternInstancePatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="29" />
+    <Inspector id="31" inspectorTitle="Actor" />
+  </EditionPattern>
+  <LocalizedDictionary id="32" />
+  <VirtualModelModelSlot idref="14" />
+  <EMFModelSlot idref="6" />
+  <description>Conceptual Model for UML2</description>
+  <DeletionScheme id="33" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
+  <Inspector id="34" inspectorTitle="UML2EMF_VM" />
+</VirtualModel>
