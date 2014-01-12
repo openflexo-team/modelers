@@ -469,7 +469,7 @@
       </AddEMFObjectIndividual>
     </CreationScheme>
     <CreationScheme id="240" name="createLiteralInteger" label="createLiteralInteger" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <IntegerParameter id="241" name="value" label="value" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="241" name="value" label="value" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <ConditionalAction id="242" condition="(literalUnlimitedNatural != null)">
         <DeleteAction id="243" object="literalUnlimitedNatural" />
       </ConditionalAction>
