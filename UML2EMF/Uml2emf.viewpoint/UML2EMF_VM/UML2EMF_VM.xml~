@@ -131,7 +131,7 @@
         <AddEditionPatternInstanceParameter id="74" paramName="type" value="sourceEnd" />
         <AddEditionPatternInstanceParameter id="75" paramName="lowerVal" value="parameters.end1LowerVal" />
         <AddEditionPatternInstanceParameter id="76" paramName="upperVal" value="parameters.end1UpperVal" />
-        <AddEditionPatternInstanceParameter id="77" paramName="isComposite" />
+        <AddEditionPatternInstanceParameter id="77" paramName="isComposite" value="" />
         <AddEditionPatternInstanceParameter id="78" paramName="visibilityKind" />
         <AddEditionPatternInstanceParameter id="79" paramName="container" />
         <AddressedVirtualModelModelSlot idref="14" />
@@ -153,457 +153,572 @@
       <AddToListAction id="90" value="sourceEnd.property" list="association.memberEnd" />
       <AddToListAction id="91" value="targetEnd.property" list="association.memberEnd" />
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="92" name="association" patternRole="association" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Association">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <ContainedEditionPatternInstancePatternRole id="93" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property" name="sourceEnd" patternRole="sourceEnd">
-      <AddressedVirtualModelModelSlot idref="14" />
-    </ContainedEditionPatternInstancePatternRole>
-    <ContainedEditionPatternInstancePatternRole id="94" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property" name="targetEnd" patternRole="targetEnd">
-      <AddressedVirtualModelModelSlot idref="14" />
-    </ContainedEditionPatternInstancePatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="92" />
-    <Inspector id="95" inspectorTitle="Association" />
-  </EditionPattern>
-  <EditionPattern id="96" name="Generalization" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
-    <CreationScheme id="97" name="creationActorToActor" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="98" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <CreationScheme id="92" name="createClassInterfaceAssociation" label="createClassInterfaceAssociation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="93" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="94" name="ends1Navigable" label="ends1Navigable" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="95" name="ends2Navigable" label="ends2Navigable" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="96" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="sourceEnd" label="sourceEnd" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
       </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="99" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+      <EditionPatternInstanceParameter id="97" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="targetEnd" label="targetEnd" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
       </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="100" container="parameters.source.actor.generalization" assignation="generalization">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="101" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.actor" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <CreationScheme id="102" name="creationUsecaseToUsecase" label="creationUsecaseToUsecase" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="103" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="104" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="105" container="parameters.source.useCase.generalization" assignation="generalization">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="106" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.useCase" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <CreationScheme id="107" name="creationClassToClass" label="creationClassToClass" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="108" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="109" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="110" container="parameters.source.class.generalization" assignation="generalization">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="111" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.class" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <CreationScheme id="112" name="creationClassToInterface" label="creationClassToInterface" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="113" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="114" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="115" container="parameters.source.class.generalization" assignation="generalization">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="116" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.interface" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <CreationScheme id="117" name="creationInterfaceToInterface" label="creationInterfaceToInterface" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="118" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="119" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="120" container="parameters.source.interface.generalization" assignation="generalization">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="121" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.interface" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="122" name="generalization" patternRole="generalization" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Generalization">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="122" />
-    <Inspector id="123" inspectorTitle="Generalization" />
-  </EditionPattern>
-  <EditionPattern id="124" name="Realization" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
-    <ContainedEMFObjectIndividualPatternRole id="125" name="realization" patternRole="realization" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Realization">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="125" />
-    <Inspector id="126" inspectorTitle="Realization" />
-  </EditionPattern>
-  <EditionPattern id="127" name="Relationships">
-    <Inspector id="128" inspectorTitle="Relationships" />
-  </EditionPattern>
-  <EditionPattern id="129" name="Extend" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
-    <CreationScheme id="130" name="creationUsecaseToUsecase" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="131" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="132" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="133" container="parameters.target.useCase.extensionPoint" assignation="extensionPoint">
-        <AddressedEMFModelSlot idref="6" />
-      </AddEMFObjectIndividual>
-      <AddEMFObjectIndividual id="134" container="parameters.source.useCase.extend" assignation="extend">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="135" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Extend/extendedCase" object="parameters.target.useCase" />
-      </AddEMFObjectIndividual>
-      <AddToListAction id="136" value="extensionPoint" list="extend.extensionLocation" />
-    </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="137" name="extend" patternRole="extend" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Extend">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <ContainedEMFObjectIndividualPatternRole id="138" name="extensionPoint" patternRole="extensionPoint" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ExtensionPoint">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="137" />
-    <Inspector id="139" inspectorTitle="Extend" />
-  </EditionPattern>
-  <EditionPattern id="140" name="DirectedRelationship" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#Relationships">
-    <Inspector id="141" inspectorTitle="DirectedRelationship" />
-  </EditionPattern>
-  <EditionPattern id="142" name="Include" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
-    <CreationScheme id="143" name="creationUsecaseToUsecase" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="144" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="145" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="146" container="parameters.source.useCase.include" assignation="include">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="147" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Include/includingCase" object="parameters.source.useCase" />
-        <ObjectPropertyAssertion id="148" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Include/addition" object="parameters.target.useCase" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="149" name="include" patternRole="include" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Include">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="149" />
-    <Inspector id="150" inspectorTitle="Include" />
-  </EditionPattern>
-  <EditionPattern id="151" name="Property">
-    <CreationScheme id="152" name="createUsecaseProperty" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="153" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="154" assignation="property">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="155" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.useCase" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <CreationScheme id="156" name="creationActorProperty" label="creationActorProperty" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="157" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="158" assignation="property">
-        <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="159" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.actor" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <CreationScheme id="160" name="createClassProperty" label="createClassProperty" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="161" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <EditionPatternInstanceParameter id="162" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <IntegerParameter id="163" name="lowerVal" label="lowerVal" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <IntegerParameter id="164" name="upperVal" label="upperVal" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <CheckBoxParameter id="165" name="isComposite" label="isComposite" defaultValue="false" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <TextFieldParameter id="166" name="visibilityKind" label="visibilityKind" defaultValue="&quot;&quot;" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <EditionPatternInstanceParameter id="167" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="168" container="parameters.container.class.ownedAttribute" assignation="property">
-        <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="169" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
-        <DataPropertyAssertion id="170" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Property/isComposite" value="parameters.isComposite" />
-        <ObjectPropertyAssertion id="171" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.class" />
-      </AddEMFObjectIndividual>
-      <AddEditionPatternInstance id="172" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createLiteralInteger" assignation="lowerValue">
-        <AddEditionPatternInstanceParameter id="173" paramName="value" value="parameters.lowerVal" />
-        <AddEditionPatternInstanceParameter id="174" paramName="container" value="property" />
+      <IntegerParameter id="98" name="end1LowerVal" label="end1LowerVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="99" name="end1UpperVal" label="end1UpperVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="100" name="end2LowerVal" label="end2LowerVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="101" name="end2UpperVal" label="end2UpperVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextFieldParameter id="102" name="end1Name" label="end1Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextFieldParameter id="103" name="end2Name" label="end2Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="104" name="isComposite" label="isComposite" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="105" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property.createClassProperty" assignation="sourceEnd">
+        <AddEditionPatternInstanceParameter id="106" paramName="name" value="parameters.end1Name" />
+        <AddEditionPatternInstanceParameter id="107" paramName="type" value="parameters.sourceEnd" />
+        <AddEditionPatternInstanceParameter id="108" paramName="lowerVal" value="parameters.end1LowerVal" />
+        <AddEditionPatternInstanceParameter id="109" paramName="upperVal" value="parameters.end1UpperVal" />
+        <AddEditionPatternInstanceParameter id="110" paramName="isComposite" value="parameters.isComposite" />
+        <AddEditionPatternInstanceParameter id="111" paramName="visibilityKind" />
+        <AddEditionPatternInstanceParameter id="112" paramName="container" />
         <AddressedVirtualModelModelSlot idref="14" />
       </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="175" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createUnlimitedNatural" assignation="upperValue">
-        <AddEditionPatternInstanceParameter id="176" paramName="value" value="parameters.upperVal" />
-        <AddEditionPatternInstanceParameter id="177" paramName="container" value="property" />
+      <AddEditionPatternInstance id="113" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property.createInterfaceProperty" assignation="targetEnd">
+        <AddEditionPatternInstanceParameter id="114" paramName="name" value="parameters.end2Name" />
+        <AddEditionPatternInstanceParameter id="115" paramName="type" value="parameters.targetEnd" />
+        <AddEditionPatternInstanceParameter id="116" paramName="container" />
+        <AddEditionPatternInstanceParameter id="117" paramName="lowerVal" value="parameters.end2LowerVal" />
+        <AddEditionPatternInstanceParameter id="118" paramName="upperVal" value="parameters.end2UpperVal" />
+        <AddEditionPatternInstanceParameter id="119" paramName="isComposite" value="" />
         <AddressedVirtualModelModelSlot idref="14" />
       </AddEditionPatternInstance>
-      <AddToListAction id="178" value="property" list="parameters.container.class.ownedAttribute" />
-      <DeclarePatternRole id="179" object="lowerValue.literalInteger" assignation="property.lowerValue" />
-      <DeclarePatternRole id="180" object="upperValue.literalUnlimitedNatural" assignation="property.upperValue" />
-    </CreationScheme>
-    <CreationScheme id="181" name="createInterfaceProperty" label="createInterfaceProperty" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="182" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <EditionPatternInstanceParameter id="183" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="184" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <IntegerParameter id="185" name="lowerVal" label="lowerVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <IntegerParameter id="186" name="upperVal" label="upperVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <CheckBoxParameter id="187" name="isComposite" label="isComposite" defaultValue="false" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddEditionPatternInstance id="188" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createLiteralInteger" assignation="lowerValue">
-        <AddEditionPatternInstanceParameter id="189" paramName="value" value="parameters.lowerVal" />
-        <AddEditionPatternInstanceParameter id="190" paramName="container" />
-        <AddressedVirtualModelModelSlot idref="14" />
-      </AddEditionPatternInstance>
-      <AddEditionPatternInstance id="191" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createUnlimitedNatural" assignation="upperValue">
-        <AddEditionPatternInstanceParameter id="192" paramName="value" value="parameters.upperVal" />
-        <AddEditionPatternInstanceParameter id="193" paramName="container" />
-        <AddressedVirtualModelModelSlot idref="14" />
-      </AddEditionPatternInstance>
-      <AddEMFObjectIndividual id="194" assignation="property">
+      <AddEMFObjectIndividual id="120" assignation="association">
         <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="195" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
-        <DataPropertyAssertion id="196" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Property/isComposite" value="parameters.isComposite" />
-        <ObjectPropertyAssertion id="197" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/MultiplicityElement/lowerValue" object="lowerValue.literalInteger" />
-        <ObjectPropertyAssertion id="198" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/MultiplicityElement/upperValue" object="upperValue.literalUnlimitedNatural" />
-        <ObjectPropertyAssertion id="199" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Property/datatype" object="parameters.type.class" />
+        <DataPropertyAssertion id="121" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
       </AddEMFObjectIndividual>
+      <AddToListAction id="122" value="sourceEnd.property" list="association.memberEnd" />
+      <AddToListAction id="123" value="targetEnd.property" list="association.memberEnd" />
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="200" name="property" patternRole="property" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Property">
+    <CreationScheme id="124" name="createInterfaceClassAssociation" label="createInterfaceClassAssociation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="125" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="126" name="ends1Navigable" label="ends1Navigable" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="127" name="ends2Navigable" label="ends2Navigable" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="128" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="sourceEnd" label="sourceEnd" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="129" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="targetEnd" label="targetEnd" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <TextFieldParameter id="130" name="end1Name" label="end1Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextFieldParameter id="131" name="end2Name" label="end2Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="132" name="isComposite" label="isComposite" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="133" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property.createInterfaceProperty" assignation="sourceEnd">
+        <AddEditionPatternInstanceParameter id="134" paramName="name" value="parameters.end1Name" />
+        <AddEditionPatternInstanceParameter id="135" paramName="type" value="parameters.sourceEnd" />
+        <AddEditionPatternInstanceParameter id="136" paramName="container" />
+        <AddEditionPatternInstanceParameter id="137" paramName="lowerVal" value="" />
+        <AddEditionPatternInstanceParameter id="138" paramName="upperVal" />
+        <AddEditionPatternInstanceParameter id="139" paramName="isComposite" value="parameters.isComposite" />
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="140" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property.createClassProperty" assignation="targetEnd">
+        <AddEditionPatternInstanceParameter id="141" paramName="name" value="parameters.end2Name" />
+        <AddEditionPatternInstanceParameter id="142" paramName="type" value="parameters.targetEnd" />
+        <AddEditionPatternInstanceParameter id="143" paramName="lowerVal" value="" />
+        <AddEditionPatternInstanceParameter id="144" paramName="upperVal" />
+        <AddEditionPatternInstanceParameter id="145" paramName="isComposite" />
+        <AddEditionPatternInstanceParameter id="146" paramName="visibilityKind" />
+        <AddEditionPatternInstanceParameter id="147" paramName="container" />
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEMFObjectIndividual id="148" assignation="association">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="149" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+      </AddEMFObjectIndividual>
+      <AddToListAction id="150" value="sourceEnd.property" list="association.memberEnd" />
+      <AddToListAction id="151" value="targetEnd.property" list="association.memberEnd" />
+    </CreationScheme>
+    <CreationScheme id="152" name="createInterfaceInterfaceAssociation" label="createInterfaceInterfaceAssociation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="153" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="154" name="ends1Navigable" label="ends1Navigable" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="155" name="ends2Navigable" label="ends2Navigable" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="156" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="sourceEnd" label="sourceEnd" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="157" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="targetEnd" label="targetEnd" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <TextFieldParameter id="158" name="end1Name" label="end1Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextFieldParameter id="159" name="end2Name" label="end2Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="160" name="isComposite" label="isComposite" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="161">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="162">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEMFObjectIndividual id="163">
+        <AddressedEMFModelSlot idref="6" />
+      </AddEMFObjectIndividual>
+      <AddToListAction id="164" />
+      <AddToListAction id="165" />
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="166" name="association" patternRole="association" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Association">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
-    <ContainedEditionPatternInstancePatternRole id="201" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value" name="upperValue" patternRole="upperValue">
+    <ContainedEditionPatternInstancePatternRole id="167" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property" name="sourceEnd" patternRole="sourceEnd">
       <AddressedVirtualModelModelSlot idref="14" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedEditionPatternInstancePatternRole id="202" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value" name="lowerValue" patternRole="lowerValue">
+    <ContainedEditionPatternInstancePatternRole id="168" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Property" name="targetEnd" patternRole="targetEnd">
       <AddressedVirtualModelModelSlot idref="14" />
     </ContainedEditionPatternInstancePatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="200" />
-    <Inspector id="203" inspectorTitle="Property" />
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="166" />
+    <Inspector id="169" inspectorTitle="Association" />
   </EditionPattern>
-  <EditionPattern id="204" name="Type">
-    <PrimaryConceptEMFObjectIndividualPatternRole id="205" name="type" patternRole="type" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Type">
-      <AddressedEMFModelSlot idref="6" />
-    </PrimaryConceptEMFObjectIndividualPatternRole>
-    <Inspector id="206" inspectorTitle="Type" />
-  </EditionPattern>
-  <EditionPattern id="207" name="Class">
-    <CreationScheme id="208" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="209" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <CheckBoxParameter id="210" name="isAbstract" label="isAbstract" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddEMFObjectIndividual id="211" assignation="class">
-        <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="212" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
-        <DataPropertyAssertion id="213" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Classifier/isAbstract" value="parameters.isAbstract" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="214" name="class" patternRole="class" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Class">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="214" />
-    <Inspector id="215" inspectorTitle="Class" />
-  </EditionPattern>
-  <EditionPattern id="216" name="Interface">
-    <CreationScheme id="217" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="218" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <AddEMFObjectIndividual id="219" assignation="interface">
-        <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="220" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
-      </AddEMFObjectIndividual>
-    </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="221" name="interface" patternRole="interface" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Interface">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="221" />
-    <Inspector id="222" inspectorTitle="Interface" />
-  </EditionPattern>
-  <EditionPattern id="223" name="Operation">
-    <CreationScheme id="224" name="creationInClass" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="225" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <EditionPatternInstanceParameter id="226" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+  <EditionPattern id="170" name="Generalization" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
+    <CreationScheme id="171" name="creationActorToActor" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="172" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
       </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="227" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+      <EditionPatternInstanceParameter id="173" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
       </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="228" container="parameters.container.class.ownedOperation" assignation="operation">
+      <AddEMFObjectIndividual id="174" container="parameters.source.actor.generalization" assignation="generalization">
         <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="229" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
-        <ObjectPropertyAssertion id="230" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Operation/type" object="parameters.type.class" />
+        <ObjectPropertyAssertion id="175" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.actor" />
       </AddEMFObjectIndividual>
     </CreationScheme>
-    <CreationScheme id="231" name="creationInInterface" label="creationInInterface" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <TextFieldParameter id="232" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <EditionPatternInstanceParameter id="233" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <CreationScheme id="176" name="creationUsecaseToUsecase" label="creationUsecaseToUsecase" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="177" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
       </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="234" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+      <EditionPatternInstanceParameter id="178" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
       </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="235" container="parameters.container.interface.ownedOperation" assignation="operation">
+      <AddEMFObjectIndividual id="179" container="parameters.source.useCase.generalization" assignation="generalization">
         <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="236" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
-        <ObjectPropertyAssertion id="237" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Operation/type" object="parameters.type.class" />
+        <ObjectPropertyAssertion id="180" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.useCase" />
       </AddEMFObjectIndividual>
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="238" name="operation" patternRole="operation" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Operation">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="238" />
-    <Inspector id="239" inspectorTitle="Operation" />
-  </EditionPattern>
-  <EditionPattern id="240" name="Value">
-    <CreationScheme id="241" name="createUnlimitedNatural" label="createUnlimitedNatural" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <IntegerParameter id="242" name="value" label="value" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <IndividualParameter id="243" conceptURI="http://www.eclipse.org/uml2/3.0.0/UML/Property" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <CreationScheme id="181" name="creationClassToClass" label="creationClassToClass" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="182" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="183" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="184" container="parameters.source.class.generalization" assignation="generalization">
         <AddressedEMFModelSlot idref="6" />
-      </IndividualParameter>
-      <ConditionalAction id="244" condition="(literalInteger != null)">
-        <DeleteAction id="245" object="literalInteger" />
-      </ConditionalAction>
-      <AddEMFObjectIndividual id="246" container="" assignation="literalUnlimitedNatural">
-        <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="247" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/LiteralUnlimitedNatural/value" value="parameters.value" />
+        <ObjectPropertyAssertion id="185" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.class" />
       </AddEMFObjectIndividual>
     </CreationScheme>
-    <CreationScheme id="248" name="createLiteralInteger" label="createLiteralInteger" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <IntegerParameter id="249" name="value" label="value" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
-      <IndividualParameter id="250" conceptURI="http://www.eclipse.org/uml2/3.0.0/UML/Property" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+    <CreationScheme id="186" name="creationClassToInterface" label="creationClassToInterface" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="187" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="188" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="189" container="parameters.source.class.generalization" assignation="generalization">
         <AddressedEMFModelSlot idref="6" />
-      </IndividualParameter>
-      <ConditionalAction id="251" condition="(literalUnlimitedNatural != null)">
-        <DeleteAction id="252" object="literalUnlimitedNatural" />
-      </ConditionalAction>
-      <AddEMFObjectIndividual id="253" container="" assignation="literalInteger">
-        <AddressedEMFModelSlot idref="6" />
-        <DataPropertyAssertion id="254" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/LiteralUnlimitedNatural/value" value="parameters.value" />
+        <ObjectPropertyAssertion id="190" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.interface" />
       </AddEMFObjectIndividual>
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="255" name="literalUnlimitedNatural" patternRole="literalUnlimitedNatural" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/LiteralUnlimitedNatural">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <ContainedEMFObjectIndividualPatternRole id="256" name="literalInteger" patternRole="literalInteger" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/LiteralInteger">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole id="257" name="value" patternRole="value" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ValueSpecification">
-      <AddressedEMFModelSlot idref="6" />
-    </PrimaryConceptEMFObjectIndividualPatternRole>
-    <Inspector id="258" inspectorTitle="Value" />
-  </EditionPattern>
-  <EditionPattern id="259" name="InitialNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <CreationScheme id="260" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <AddEMFObjectIndividual id="261" assignation="initialNode">
+    <CreationScheme id="191" name="creationInterfaceToInterface" label="creationInterfaceToInterface" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="192" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="193" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="194" container="parameters.source.interface.generalization" assignation="generalization">
         <AddressedEMFModelSlot idref="6" />
+        <ObjectPropertyAssertion id="195" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Generalization/general" object="parameters.target.interface" />
       </AddEMFObjectIndividual>
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="262" name="initialNode" patternRole="initialNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/InitialNode">
+    <ContainedEMFObjectIndividualPatternRole id="196" name="generalization" patternRole="generalization" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Generalization">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="262" />
-    <Inspector id="263" inspectorTitle="InitialNode" />
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="196" />
+    <Inspector id="197" inspectorTitle="Generalization" />
   </EditionPattern>
-  <EditionPattern id="264" name="ActivityFinal" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <ContainedEMFObjectIndividualPatternRole id="265" name="activityFinal" patternRole="activityFinal" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ActivityFinalNode">
+  <EditionPattern id="198" name="Realization" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
+    <ContainedEMFObjectIndividualPatternRole id="199" name="realization" patternRole="realization" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Realization">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="265" />
-    <Inspector id="266" inspectorTitle="ActivityFinal" />
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="199" />
+    <Inspector id="200" inspectorTitle="Realization" />
   </EditionPattern>
-  <EditionPattern id="267" name="FlowFinal" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <ContainedEMFObjectIndividualPatternRole id="268" name="flowFinal" patternRole="flowFinal" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/FlowFinalNode">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="268" />
-    <Inspector id="269" inspectorTitle="FlowFinal" />
+  <EditionPattern id="201" name="Relationships">
+    <Inspector id="202" inspectorTitle="Relationships" />
   </EditionPattern>
-  <EditionPattern id="270" name="DecisionNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <CreationScheme id="271" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <AddEMFObjectIndividual id="272" assignation="decisionNode">
+  <EditionPattern id="203" name="Extend" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
+    <CreationScheme id="204" name="creationUsecaseToUsecase" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="205" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="206" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="207" container="parameters.target.useCase.extensionPoint" assignation="extensionPoint">
         <AddressedEMFModelSlot idref="6" />
       </AddEMFObjectIndividual>
+      <AddEMFObjectIndividual id="208" container="parameters.source.useCase.extend" assignation="extend">
+        <AddressedEMFModelSlot idref="6" />
+        <ObjectPropertyAssertion id="209" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Extend/extendedCase" object="parameters.target.useCase" />
+      </AddEMFObjectIndividual>
+      <AddToListAction id="210" value="extensionPoint" list="extend.extensionLocation" />
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="273" name="decisionNode" patternRole="decisionNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/DecisionNode">
+    <ContainedEMFObjectIndividualPatternRole id="211" name="extend" patternRole="extend" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Extend">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
+    <ContainedEMFObjectIndividualPatternRole id="212" name="extensionPoint" patternRole="extensionPoint" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ExtensionPoint">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="211" />
+    <Inspector id="213" inspectorTitle="Extend" />
+  </EditionPattern>
+  <EditionPattern id="214" name="DirectedRelationship" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#Relationships">
+    <Inspector id="215" inspectorTitle="DirectedRelationship" />
+  </EditionPattern>
+  <EditionPattern id="216" name="Include" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#DirectedRelationship">
+    <CreationScheme id="217" name="creationUsecaseToUsecase" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="218" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="219" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="220" container="parameters.source.useCase.include" assignation="include">
+        <AddressedEMFModelSlot idref="6" />
+        <ObjectPropertyAssertion id="221" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Include/includingCase" object="parameters.source.useCase" />
+        <ObjectPropertyAssertion id="222" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Include/addition" object="parameters.target.useCase" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="223" name="include" patternRole="include" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Include">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="223" />
+    <Inspector id="224" inspectorTitle="Include" />
+  </EditionPattern>
+  <EditionPattern id="225" name="Property">
+    <CreationScheme id="226" name="createUsecaseProperty" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="227" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#UseCase" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="228" assignation="property">
+        <AddressedEMFModelSlot idref="6" />
+        <ObjectPropertyAssertion id="229" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.useCase" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <CreationScheme id="230" name="creationActorProperty" label="creationActorProperty" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="231" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Actor" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="232" assignation="property">
+        <AddressedEMFModelSlot idref="6" />
+        <ObjectPropertyAssertion id="233" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.actor" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <CreationScheme id="234" name="createClassProperty" label="createClassProperty" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="235" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="236" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <IntegerParameter id="237" name="lowerVal" label="lowerVal" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="238" name="upperVal" label="upperVal" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="239" name="isComposite" label="isComposite" defaultValue="false" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextFieldParameter id="240" name="visibilityKind" label="visibilityKind" defaultValue="&quot;&quot;" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="241" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="242" container="parameters.container.class.ownedAttribute" assignation="property">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="243" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+        <DataPropertyAssertion id="244" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Property/isComposite" value="parameters.isComposite" />
+        <ObjectPropertyAssertion id="245" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.class" />
+      </AddEMFObjectIndividual>
+      <AddEditionPatternInstance id="246" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createLiteralInteger" assignation="lowerValue">
+        <AddEditionPatternInstanceParameter id="247" paramName="value" value="parameters.lowerVal" />
+        <AddEditionPatternInstanceParameter id="248" paramName="container" value="property" />
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="249" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createUnlimitedNatural" assignation="upperValue">
+        <AddEditionPatternInstanceParameter id="250" paramName="value" value="parameters.upperVal" />
+        <AddEditionPatternInstanceParameter id="251" paramName="container" value="property" />
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <DeclarePatternRole id="252" object="lowerValue.literalInteger" assignation="property.lowerValue" />
+      <DeclarePatternRole id="253" object="upperValue.literalUnlimitedNatural" assignation="property.upperValue" />
+    </CreationScheme>
+    <CreationScheme id="254" name="createInterfaceProperty" label="createInterfaceProperty" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="255" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="256" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="257" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <IntegerParameter id="258" name="lowerVal" label="lowerVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IntegerParameter id="259" name="upperVal" label="upperVal" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="260" name="isComposite" label="isComposite" defaultValue="false" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="261" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createLiteralInteger" assignation="lowerValue">
+        <AddEditionPatternInstanceParameter id="262" paramName="value" value="parameters.lowerVal" />
+        <AddEditionPatternInstanceParameter id="263" paramName="container" />
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEditionPatternInstance id="264" virtualModelInstance="virtualModelInstance" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value.createUnlimitedNatural" assignation="upperValue">
+        <AddEditionPatternInstanceParameter id="265" paramName="value" value="parameters.upperVal" />
+        <AddEditionPatternInstanceParameter id="266" paramName="container" />
+        <AddressedVirtualModelModelSlot idref="14" />
+      </AddEditionPatternInstance>
+      <AddEMFObjectIndividual id="267" assignation="property">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="268" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+        <DataPropertyAssertion id="269" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Property/isComposite" value="parameters.isComposite" />
+        <ObjectPropertyAssertion id="270" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/MultiplicityElement/lowerValue" object="lowerValue.literalInteger" />
+        <ObjectPropertyAssertion id="271" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/MultiplicityElement/upperValue" object="upperValue.literalUnlimitedNatural" />
+        <ObjectPropertyAssertion id="272" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/TypedElement/type" object="parameters.type.interface" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="273" name="property" patternRole="property" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Property">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <ContainedEditionPatternInstancePatternRole id="274" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value" name="upperValue" patternRole="upperValue">
+      <AddressedVirtualModelModelSlot idref="14" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedEditionPatternInstancePatternRole id="275" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Value" name="lowerValue" patternRole="lowerValue">
+      <AddressedVirtualModelModelSlot idref="14" />
+    </ContainedEditionPatternInstancePatternRole>
     <PrimaryConceptEMFObjectIndividualPatternRole idref="273" />
-    <Inspector id="274" inspectorTitle="DecisionNode" />
+    <Inspector id="276" inspectorTitle="Property" />
   </EditionPattern>
-  <EditionPattern id="275" name="MergeNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <ContainedEMFObjectIndividualPatternRole id="276" name="mergeNode" patternRole="mergeNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/MergeNode">
+  <EditionPattern id="277" name="Type">
+    <PrimaryConceptEMFObjectIndividualPatternRole id="278" name="type" patternRole="type" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Type">
       <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="276" />
-    <Inspector id="277" inspectorTitle="MergeNode" />
+    </PrimaryConceptEMFObjectIndividualPatternRole>
+    <Inspector id="279" inspectorTitle="Type" />
   </EditionPattern>
-  <EditionPattern id="278" name="JoinNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <ContainedEMFObjectIndividualPatternRole id="279" name="joinNode" patternRole="joinNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/JoinNode">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="279" />
-    <Inspector id="280" inspectorTitle="JoinNode" />
-  </EditionPattern>
-  <EditionPattern id="281" name="ForkNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <ContainedEMFObjectIndividualPatternRole id="282" name="forkNode" patternRole="forkNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ForkNode">
-      <AddressedEMFModelSlot idref="6" />
-    </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="282" />
-    <Inspector id="283" inspectorTitle="ForkNode" />
-  </EditionPattern>
-  <EditionPattern id="284" name="ActivityEdge">
-    <CreationScheme id="285" name="creationInitialNodeToDecisionNode" label="creationInitialNodeToDecisionNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <EditionPatternInstanceParameter id="286" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#InitialNode" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <EditionPatternInstanceParameter id="287" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#DecisionNode" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
-        <AddressedVirtualModelModelSlot idref="14" />
-      </EditionPatternInstanceParameter>
-      <AddEMFObjectIndividual id="288" assignation="edge">
+  <EditionPattern id="280" name="Class" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#Classifier">
+    <CreationScheme id="281" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="282" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <CheckBoxParameter id="283" name="isAbstract" label="isAbstract" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEMFObjectIndividual id="284" assignation="class">
         <AddressedEMFModelSlot idref="6" />
-        <ObjectPropertyAssertion id="289" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/ActivityEdge/source" object="parameters.source.initialNode" />
-        <ObjectPropertyAssertion id="290" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/ActivityEdge/target" object="parameters.target.decisionNode" />
+        <DataPropertyAssertion id="285" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+        <DataPropertyAssertion id="286" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Classifier/isAbstract" value="parameters.isAbstract" />
       </AddEMFObjectIndividual>
     </CreationScheme>
-    <ContainedEMFObjectIndividualPatternRole id="291" name="edge" patternRole="edge" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ActivityEdge">
+    <ContainedEMFObjectIndividualPatternRole id="287" name="class" patternRole="class" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Class">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
-    <ContainedEditionPatternInstancePatternRole id="292" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode" name="source" patternRole="source">
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="287" />
+    <Inspector id="288" inspectorTitle="Class" />
+  </EditionPattern>
+  <EditionPattern id="289" name="Interface" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#Classifier">
+    <CreationScheme id="290" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="291" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEMFObjectIndividual id="292" assignation="interface">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="293" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="294" name="interface" patternRole="interface" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Interface">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="294" />
+    <Inspector id="295" inspectorTitle="Interface" />
+  </EditionPattern>
+  <EditionPattern id="296" name="Operation">
+    <CreationScheme id="297" name="creationInClass" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="298" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="299" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="300" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="301" container="parameters.container.class.ownedOperation" assignation="operation">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="302" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+        <ObjectPropertyAssertion id="303" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Operation/type" object="parameters.type.class" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <CreationScheme id="304" name="creationInInterface" label="creationInInterface" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="305" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <EditionPatternInstanceParameter id="306" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="type" label="type" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="307" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="308" container="parameters.container.interface.ownedOperation" assignation="operation">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="309" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/NamedElement/name" value="parameters.name" />
+        <ObjectPropertyAssertion id="310" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/Operation/type" object="parameters.type.class" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="311" name="operation" patternRole="operation" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/Operation">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="311" />
+    <Inspector id="312" inspectorTitle="Operation" />
+  </EditionPattern>
+  <EditionPattern id="313" name="Value">
+    <CreationScheme id="314" name="createUnlimitedNatural" label="createUnlimitedNatural" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <IntegerParameter id="315" name="value" label="value" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IndividualParameter id="316" conceptURI="http://www.eclipse.org/uml2/3.0.0/UML/Property" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedEMFModelSlot idref="6" />
+      </IndividualParameter>
+      <ConditionalAction id="317" condition="(literalInteger != null)">
+        <DeleteAction id="318" object="literalInteger" />
+      </ConditionalAction>
+      <AddEMFObjectIndividual id="319" assignation="literalUnlimitedNatural">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="320" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/LiteralUnlimitedNatural/value" value="parameters.value" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <CreationScheme id="321" name="createLiteralInteger" label="createLiteralInteger" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <IntegerParameter id="322" name="value" label="value" defaultValue="0" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <IndividualParameter id="323" conceptURI="http://www.eclipse.org/uml2/3.0.0/UML/Property" name="container" label="container" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedEMFModelSlot idref="6" />
+      </IndividualParameter>
+      <ConditionalAction id="324" condition="(literalUnlimitedNatural != null)">
+        <DeleteAction id="325" object="literalUnlimitedNatural" />
+      </ConditionalAction>
+      <AddEMFObjectIndividual id="326" assignation="literalInteger">
+        <AddressedEMFModelSlot idref="6" />
+        <DataPropertyAssertion id="327" dataPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/LiteralUnlimitedNatural/value" value="parameters.value" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="328" name="literalUnlimitedNatural" patternRole="literalUnlimitedNatural" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/LiteralUnlimitedNatural">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <ContainedEMFObjectIndividualPatternRole id="329" name="literalInteger" patternRole="literalInteger" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/LiteralInteger">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole id="330" name="value" patternRole="value" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ValueSpecification">
+      <AddressedEMFModelSlot idref="6" />
+    </PrimaryConceptEMFObjectIndividualPatternRole>
+    <Inspector id="331" inspectorTitle="Value" />
+  </EditionPattern>
+  <EditionPattern id="332" name="ActivityInitialNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <CreationScheme id="333" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEMFObjectIndividual id="334" assignation="initialNode">
+        <AddressedEMFModelSlot idref="6" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="335" name="initialNode" patternRole="initialNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/InitialNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="335" />
+    <Inspector id="336" inspectorTitle="InitialNode" />
+  </EditionPattern>
+  <EditionPattern id="337" name="ActivityFinalNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <ContainedEMFObjectIndividualPatternRole id="338" name="activityFinal" patternRole="activityFinal" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ActivityFinalNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="338" />
+    <Inspector id="339" inspectorTitle="ActivityFinal" />
+  </EditionPattern>
+  <EditionPattern id="340" name="FlowFinalNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <ContainedEMFObjectIndividualPatternRole id="341" name="flowFinal" patternRole="flowFinal" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/FlowFinalNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="341" />
+    <Inspector id="342" inspectorTitle="FlowFinal" />
+  </EditionPattern>
+  <EditionPattern id="343" name="DecisionNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <CreationScheme id="344" name="creation" label="creation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEMFObjectIndividual id="345" assignation="decisionNode">
+        <AddressedEMFModelSlot idref="6" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="346" name="decisionNode" patternRole="decisionNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/DecisionNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="346" />
+    <Inspector id="347" inspectorTitle="DecisionNode" />
+  </EditionPattern>
+  <EditionPattern id="348" name="MergeNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <ContainedEMFObjectIndividualPatternRole id="349" name="mergeNode" patternRole="mergeNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/MergeNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="349" />
+    <Inspector id="350" inspectorTitle="MergeNode" />
+  </EditionPattern>
+  <EditionPattern id="351" name="JoinNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <ContainedEMFObjectIndividualPatternRole id="352" name="joinNode" patternRole="joinNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/JoinNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="352" />
+    <Inspector id="353" inspectorTitle="JoinNode" />
+  </EditionPattern>
+  <EditionPattern id="354" name="ForkNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <ContainedEMFObjectIndividualPatternRole id="355" name="forkNode" patternRole="forkNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ForkNode">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="355" />
+    <Inspector id="356" inspectorTitle="ForkNode" />
+  </EditionPattern>
+  <EditionPattern id="357" name="ActivityEdge">
+    <CreationScheme id="358" name="creationInitialNodeToDecisionNode" label="creationInitialNodeToDecisionNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="359" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#InitialNode" name="source" label="source" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <EditionPatternInstanceParameter id="360" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#DecisionNode" name="target" label="target" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="14" />
+      </EditionPatternInstanceParameter>
+      <AddEMFObjectIndividual id="361" assignation="edge">
+        <AddressedEMFModelSlot idref="6" />
+        <ObjectPropertyAssertion id="362" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/ActivityEdge/source" object="parameters.source.initialNode" />
+        <ObjectPropertyAssertion id="363" objectPropertyURI="http://www.eclipse.org/uml2/3.0.0/UML/ActivityEdge/target" object="parameters.target.decisionNode" />
+      </AddEMFObjectIndividual>
+    </CreationScheme>
+    <ContainedEMFObjectIndividualPatternRole id="364" name="edge" patternRole="edge" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/ActivityEdge">
+      <AddressedEMFModelSlot idref="6" />
+    </ContainedEMFObjectIndividualPatternRole>
+    <ContainedEditionPatternInstancePatternRole id="365" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode" name="source" patternRole="source">
       <AddressedVirtualModelModelSlot idref="14" />
     </ContainedEditionPatternInstancePatternRole>
-    <ContainedEditionPatternInstancePatternRole id="293" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode" name="target" patternRole="target">
+    <ContainedEditionPatternInstancePatternRole id="366" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode" name="target" patternRole="target">
       <AddressedVirtualModelModelSlot idref="14" />
     </ContainedEditionPatternInstancePatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="291" />
-    <Inspector id="294" inspectorTitle="ActivityEdge" />
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="364" />
+    <Inspector id="367" inspectorTitle="ActivityEdge" />
   </EditionPattern>
-  <EditionPattern id="295" name="ActivityNode">
-    <ContainedEMFObjectIndividualPatternRole id="296" name="StructuredActivityNode" patternRole="StructuredActivityNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/StructuredActivityNode">
+  <EditionPattern id="368" name="ActivityNode">
+    <ContainedEMFObjectIndividualPatternRole id="369" name="StructuredActivityNode" patternRole="StructuredActivityNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/StructuredActivityNode">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
-    <ContainedEMFObjectIndividualPatternRole id="297" name="LoopNode" patternRole="LoopNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/LoopNode">
+    <ContainedEMFObjectIndividualPatternRole id="370" name="LoopNode" patternRole="LoopNode" ontologicType="http://www.eclipse.org/uml2/3.0.0/UML/LoopNode">
       <AddressedEMFModelSlot idref="6" />
     </ContainedEMFObjectIndividualPatternRole>
-    <PrimaryConceptEMFObjectIndividualPatternRole idref="296" />
-    <Inspector id="298" inspectorTitle="ActivityNode" />
+    <PrimaryConceptEMFObjectIndividualPatternRole idref="369" />
+    <Inspector id="371" inspectorTitle="ActivityNode" />
   </EditionPattern>
-  <EditionPattern id="299" name="LoopNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <Inspector id="300" inspectorTitle="LoopNode" />
+  <EditionPattern id="372" name="LoopNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityGroup">
+    <Inspector id="373" inspectorTitle="LoopNode" />
   </EditionPattern>
-  <EditionPattern id="301" name="ConditionalNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <Inspector id="302" inspectorTitle="ConditionalNode" />
+  <EditionPattern id="374" name="ConditionalNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityGroup">
+    <Inspector id="375" inspectorTitle="ConditionalNode" />
   </EditionPattern>
-  <EditionPattern id="303" name="ExpensionNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <Inspector id="304" inspectorTitle="ExpensionNode" />
+  <EditionPattern id="376" name="ExpensionNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityGroup">
+    <Inspector id="377" inspectorTitle="ExpensionNode" />
   </EditionPattern>
-  <EditionPattern id="305" name="StructuredNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
-    <Inspector id="306" inspectorTitle="StructuredNode" />
+  <EditionPattern id="378" name="StructuredNode" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityGroup">
+    <Inspector id="379" inspectorTitle="StructuredNode" />
   </EditionPattern>
-  <LocalizedDictionary id="307" />
+  <EditionPattern id="380" name="Classifier">
+    <Inspector id="381" inspectorTitle="Classifier" />
+  </EditionPattern>
+  <EditionPattern id="382" name="Activity">
+    <Inspector id="383" inspectorTitle="Activity" />
+  </EditionPattern>
+  <EditionPattern id="384" name="ActivityGroup" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityNode">
+    <Inspector id="385" inspectorTitle="ActivityGroup" />
+  </EditionPattern>
+  <LocalizedDictionary id="386" />
   <VirtualModelModelSlot idref="14" />
   <EMFModelSlot idref="6" />
   <description>Conceptual Model for UML2</description>
-  <DeletionScheme id="308" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
-  <Inspector id="309" inspectorTitle="UML2EMF_VM" />
+  <DeletionScheme id="387" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
+  <Inspector id="388" inspectorTitle="UML2EMF_VM" />
 </VirtualModel>
