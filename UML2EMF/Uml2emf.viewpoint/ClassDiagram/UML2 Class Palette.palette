@@ -53,191 +53,189 @@
   </PaletteElement>
   <PaletteElement id="45" name="Package" editionPattern="PackageGR" dropSchemeName="dropPackageAtTopLevel" boundLabelToElementName="false">
     <Parameter id="46" name="name" value="" />
-    <Parameter id="47" name="model" value="" />
-    <Parameter id="48" name="_package" value="" />
-    <ShapeGraphicalRepresentation id="49" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="276.0" y="40.0" width="120.0" height="100.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_3" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="50" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="51" imageFile="Package.palette-element.png" scaleX="0.6091370558375635" scaleY="0.7194244604316546" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="52" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedImageBackgroundStyle id="53" imageFile="Package.palette-element.png" scaleX="1.0" scaleY="1.0" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="false" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="54" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedImageBackgroundStyle id="55" imageFile="Package.palette-element.png" scaleX="1.0" scaleY="1.0" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="false" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="56" top="20" bottom="20" left="20" right="20" />
+    <Parameter id="47" name="_package" value="" />
+    <ShapeGraphicalRepresentation id="48" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="276.0" y="40.0" width="120.0" height="100.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_3" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="49" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="50" imageFile="Package.palette-element.png" scaleX="0.6091370558375635" scaleY="0.7194244604316546" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="51" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedImageBackgroundStyle id="52" imageFile="Package.palette-element.png" scaleX="1.0" scaleY="1.0" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="false" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="53" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedImageBackgroundStyle id="54" imageFile="Package.palette-element.png" scaleX="1.0" scaleY="1.0" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="false" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="55" top="20" bottom="20" left="20" right="20" />
       <RectangleShape idref="14" />
-      <ShadowStyle id="57" drawShadow="false" shadowDarkness="150" shadowDepth="0" shadowBlur="4" />
-      <TextStyle id="58" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      <ShadowStyle id="56" drawShadow="false" shadowDarkness="150" shadowDepth="0" shadowBlur="4" />
+      <TextStyle id="57" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="59" name="Private" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
-    <Parameter id="60" name="name" value="" />
-    <Parameter id="61" name="type" value="" />
-    <Parameter id="62" name="lowerVal" value="1" />
-    <Parameter id="63" name="upperVal" value="1" />
-    <Parameter id="64" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
-    <ShapeGraphicalRepresentation id="65" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="82.0" y="231.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_4" layer="2" hasText="true" text="Private" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-12.0" absoluteTextY="35.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="66" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="67" imageFile="../../../../../Desktop/class_diagram_icons/attribute_private.png" scaleX="0.375" scaleY="0.39473684210526316" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="68" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="69" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="70" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="71" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="72" top="20" bottom="20" left="20" right="20" />
-      <CircleShape id="73" />
-      <ShadowStyle id="74" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="75" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="58" name="Private" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
+    <Parameter id="59" name="name" value="" />
+    <Parameter id="60" name="type" value="" />
+    <Parameter id="61" name="lowerVal" value="1" />
+    <Parameter id="62" name="upperVal" value="1" />
+    <Parameter id="63" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
+    <ShapeGraphicalRepresentation id="64" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="82.0" y="231.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_4" layer="2" hasText="true" text="Private" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-12.0" absoluteTextY="35.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="65" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="66" imageFile="../../../../../Desktop/class_diagram_icons/attribute_private.png" scaleX="0.375" scaleY="0.39473684210526316" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="67" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="68" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="69" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="70" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="71" top="20" bottom="20" left="20" right="20" />
+      <CircleShape id="72" />
+      <ShadowStyle id="73" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="74" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="76" name="Public" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
-    <Parameter id="77" name="name" value="" />
-    <Parameter id="78" name="type" value="" />
-    <Parameter id="79" name="lowerVal" value="0" />
-    <Parameter id="80" name="upperVal" value="1" />
-    <Parameter id="81" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
-    <ShapeGraphicalRepresentation id="82" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="82.0" y="195.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_5" layer="2" hasText="true" text="Public" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-13.0" absoluteTextY="37.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="83" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="84" imageFile="../../../../../Desktop/class_diagram_icons/attribute_public.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="85" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="86" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="87" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="88" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="89" top="20" bottom="20" left="20" right="20" />
-      <CircleShape idref="73" />
-      <ShadowStyle id="90" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="91" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="75" name="Public" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
+    <Parameter id="76" name="name" value="" />
+    <Parameter id="77" name="type" value="" />
+    <Parameter id="78" name="lowerVal" value="0" />
+    <Parameter id="79" name="upperVal" value="1" />
+    <Parameter id="80" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
+    <ShapeGraphicalRepresentation id="81" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="82.0" y="195.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_5" layer="2" hasText="true" text="Public" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-13.0" absoluteTextY="37.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="82" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="83" imageFile="../../../../../Desktop/class_diagram_icons/attribute_public.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="84" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="85" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="86" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="87" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="88" top="20" bottom="20" left="20" right="20" />
+      <CircleShape idref="72" />
+      <ShadowStyle id="89" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="90" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="92" name="Protected" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
-    <Parameter id="93" name="name" value="" />
-    <Parameter id="94" name="type" value="" />
-    <Parameter id="95" name="lowerVal" value="1" />
-    <Parameter id="96" name="upperVal" value="1" />
-    <Parameter id="97" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
-    <ShapeGraphicalRepresentation id="98" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="82.0" y="270.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_6" layer="2" hasText="true" text="Protected" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-18.0" absoluteTextY="36.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="99" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="100" imageFile="../../../../../Desktop/class_diagram_icons/attribute_protected.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="101" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="102" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="103" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="104" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="105" top="20" bottom="20" left="20" right="20" />
-      <CircleShape idref="73" />
-      <ShadowStyle id="106" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="107" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="91" name="Protected" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
+    <Parameter id="92" name="name" value="" />
+    <Parameter id="93" name="type" value="" />
+    <Parameter id="94" name="lowerVal" value="1" />
+    <Parameter id="95" name="upperVal" value="1" />
+    <Parameter id="96" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
+    <ShapeGraphicalRepresentation id="97" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="82.0" y="270.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_6" layer="2" hasText="true" text="Protected" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-18.0" absoluteTextY="36.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="98" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="99" imageFile="../../../../../Desktop/class_diagram_icons/attribute_protected.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="100" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="101" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="102" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="103" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="104" top="20" bottom="20" left="20" right="20" />
+      <CircleShape idref="72" />
+      <ShadowStyle id="105" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="106" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="108" name="Package" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
-    <Parameter id="109" name="name" value="" />
-    <Parameter id="110" name="type" value="" />
-    <Parameter id="111" name="lowerVal" value="1" />
-    <Parameter id="112" name="upperVal" value="1" />
-    <Parameter id="113" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
-    <ShapeGraphicalRepresentation id="114" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="83.0" y="306.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_7" layer="2" hasText="true" text="Package" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-14.0" absoluteTextY="36.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="115" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="116" imageFile="../../../../../Desktop/class_diagram_icons/attribute_package.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="117" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="118" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="119" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="120" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="121" top="20" bottom="20" left="20" right="20" />
-      <CircleShape idref="73" />
-      <ShadowStyle id="122" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="123" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="107" name="Package" editionPattern="AttributeGR" dropSchemeName="dropInClass" boundLabelToElementName="true">
+    <Parameter id="108" name="name" value="" />
+    <Parameter id="109" name="type" value="" />
+    <Parameter id="110" name="lowerVal" value="1" />
+    <Parameter id="111" name="upperVal" value="1" />
+    <Parameter id="112" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
+    <ShapeGraphicalRepresentation id="113" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="83.0" y="306.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_7" layer="2" hasText="true" text="Package" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-14.0" absoluteTextY="36.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="114" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="115" imageFile="../../../../../Desktop/class_diagram_icons/attribute_package.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="116" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="117" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="118" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="119" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="120" top="20" bottom="20" left="20" right="20" />
+      <CircleShape idref="72" />
+      <ShadowStyle id="121" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="122" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="124" name="Attributes" boundLabelToElementName="true">
-    <ShapeGraphicalRepresentation id="125" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="0.015133958210526544" y="164.0" width="132.94181833843524" height="178.51590059100565" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_8" layer="1" hasText="true" text="Attributes" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="90.0" absoluteTextY="34.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="false" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="126" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
-      <ColorBackgroundStyle id="127" color="204,255,204" useTransparency="true" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="128" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="129" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="130" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="131" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="132" top="20" bottom="20" left="20" right="20" />
+  <PaletteElement id="123" name="Attributes" boundLabelToElementName="true">
+    <ShapeGraphicalRepresentation id="124" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="0.015133958210526544" y="164.0" width="132.94181833843524" height="178.51590059100565" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_8" layer="1" hasText="true" text="Attributes" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="90.0" absoluteTextY="34.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="false" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="125" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
+      <ColorBackgroundStyle id="126" color="204,255,204" useTransparency="true" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="127" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="128" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="129" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="130" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="131" top="20" bottom="20" left="20" right="20" />
       <RectangleShape idref="14" />
-      <ShadowStyle id="133" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="134" font="Lucida Sans Regular,0,16" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      <ShadowStyle id="132" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="133" font="Lucida Sans Regular,0,16" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="135" name="Operations" boundLabelToElementName="true">
-    <ShapeGraphicalRepresentation id="136" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="145.98054542296336" y="166.0" width="124.79937467430958" height="178.29886648784284" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_9" layer="1" hasText="true" text="Operations" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="78.01073451207326" absoluteTextY="29.358672672120598" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="false" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="137" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
-      <ColorBackgroundStyle id="138" color="204,204,255" useTransparency="true" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="139" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="140" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="141" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="142" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="143" top="20" bottom="20" left="20" right="20" />
+  <PaletteElement id="134" name="Operations" boundLabelToElementName="true">
+    <ShapeGraphicalRepresentation id="135" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="145.98054542296336" y="166.0" width="124.79937467430958" height="178.29886648784284" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_9" layer="1" hasText="true" text="Operations" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="78.01073451207326" absoluteTextY="29.358672672120598" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="false" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="136" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
+      <ColorBackgroundStyle id="137" color="204,204,255" useTransparency="true" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="138" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="139" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="140" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="141" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="142" top="20" bottom="20" left="20" right="20" />
       <RectangleShape idref="14" />
-      <ShadowStyle id="144" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="145" font="Lucida Sans Regular,0,16" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      <ShadowStyle id="143" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="144" font="Lucida Sans Regular,0,16" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="146" name="Classifiers" boundLabelToElementName="true">
-    <ShapeGraphicalRepresentation id="147" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="-6.0" y="5.0" width="405.65839859247245" height="144.96667267159071" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="false" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="true" hasSelectedBackground="false" hasFocusedForeground="true" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_10" layer="1" hasText="true" text="Classifiers" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="232.0" absoluteTextY="34.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="false" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="148" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
-      <ColorBackgroundStyle id="149" color="255,255,204" useTransparency="true" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="150" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="151" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="152" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="153" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="154" top="20" bottom="20" left="20" right="20" />
+  <PaletteElement id="145" name="Classifiers" boundLabelToElementName="true">
+    <ShapeGraphicalRepresentation id="146" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="-6.0" y="5.0" width="405.65839859247245" height="144.96667267159071" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="false" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="true" hasSelectedBackground="false" hasFocusedForeground="true" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_10" layer="1" hasText="true" text="Classifiers" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="232.0" absoluteTextY="34.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="false" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="147" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
+      <ColorBackgroundStyle id="148" color="255,255,204" useTransparency="true" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="149" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="150" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="151" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="152" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="153" top="20" bottom="20" left="20" right="20" />
       <RectangleShape idref="14" />
-      <ShadowStyle id="155" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="156" font="Lucida Sans Regular,0,16" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      <ShadowStyle id="154" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="155" font="Lucida Sans Regular,0,16" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="157" name="Private" editionPattern="OperationGR" dropSchemeName="dropOperationInClass" boundLabelToElementName="true">
-    <Parameter id="158" name="name" value="" />
-    <Parameter id="159" name="type" value="" />
-    <Parameter id="160" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
-    <ShapeGraphicalRepresentation id="161" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="229.0" y="228.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_11" layer="2" hasText="true" text="Private" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-9.0" absoluteTextY="38.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="162" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="163" imageFile="../../../../../Desktop/class_diagram_icons/operation_private.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="164" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="165" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="166" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="167" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="168" top="20" bottom="20" left="20" right="20" />
-      <CircleShape idref="73" />
-      <ShadowStyle id="169" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="170" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="156" name="Private" editionPattern="OperationGR" dropSchemeName="dropOperationInClass" boundLabelToElementName="true">
+    <Parameter id="157" name="name" value="" />
+    <Parameter id="158" name="type" value="" />
+    <Parameter id="159" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
+    <ShapeGraphicalRepresentation id="160" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="229.0" y="228.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_11" layer="2" hasText="true" text="Private" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-9.0" absoluteTextY="38.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="161" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="162" imageFile="../../../../../Desktop/class_diagram_icons/operation_private.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="163" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="164" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="165" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="166" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="167" top="20" bottom="20" left="20" right="20" />
+      <CircleShape idref="72" />
+      <ShadowStyle id="168" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="169" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="171" name="Package" editionPattern="PackageGR" dropSchemeName="dropPackageAtTopLevel" boundLabelToElementName="true">
-    <Parameter id="172" name="name" value="" />
-    <Parameter id="173" name="model" value="" />
-    <Parameter id="174" name="_package" value="" />
-    <ShapeGraphicalRepresentation id="175" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="230.0" y="305.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_12" layer="2" hasText="true" text="Package" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-13.0" absoluteTextY="37.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="176" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="177" imageFile="../../../../../Desktop/class_diagram_icons/operation_package.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="178" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="179" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="180" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="181" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="182" top="20" bottom="20" left="20" right="20" />
-      <CircleShape idref="73" />
-      <ShadowStyle id="183" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="184" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="170" name="Package" editionPattern="PackageGR" dropSchemeName="dropPackageAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="171" name="name" value="" />
+    <Parameter id="172" name="_package" value="" />
+    <ShapeGraphicalRepresentation id="173" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="230.0" y="305.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_12" layer="2" hasText="true" text="Package" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-13.0" absoluteTextY="37.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="174" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="175" imageFile="../../../../../Desktop/class_diagram_icons/operation_package.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="176" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="177" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="178" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="179" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="180" top="20" bottom="20" left="20" right="20" />
+      <CircleShape idref="72" />
+      <ShadowStyle id="181" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="182" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="185" name="Protected" editionPattern="OperationGR" dropSchemeName="dropOperationInClass" boundLabelToElementName="true">
-    <Parameter id="186" name="name" value="" />
-    <Parameter id="187" name="type" value="" />
-    <Parameter id="188" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
-    <ShapeGraphicalRepresentation id="189" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="229.0" y="268.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_13" layer="2" hasText="true" text="Protected" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-14.0" absoluteTextY="36.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-      <ForegroundStyle id="190" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <ImageBackgroundStyle id="191" imageFile="../../../../../Desktop/class_diagram_icons/operation_protected.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedForegroundStyle id="192" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <SelectedColorBackgroundStyle id="193" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedForegroundStyle id="194" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-      <FocusedColorBackgroundStyle id="195" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
-      <Border id="196" top="20" bottom="20" left="20" right="20" />
-      <CircleShape idref="73" />
-      <ShadowStyle id="197" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-      <TextStyle id="198" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <PaletteElement id="183" name="Protected" editionPattern="OperationGR" dropSchemeName="dropOperationInClass" boundLabelToElementName="true">
+    <Parameter id="184" name="name" value="" />
+    <Parameter id="185" name="type" value="" />
+    <Parameter id="186" name="visibilityValue" value="&lt; Takes palette element label &gt;" />
+    <ShapeGraphicalRepresentation id="187" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="229.0" y="268.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_13" layer="2" hasText="true" text="Protected" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="-14.0" absoluteTextY="36.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="188" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="189" imageFile="../../../../../Desktop/class_diagram_icons/operation_protected.png" scaleX="0.35294117647058826" scaleY="0.375" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="190" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="191" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="192" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="193" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="194" top="20" bottom="20" left="20" right="20" />
+      <CircleShape idref="72" />
+      <ShadowStyle id="195" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="196" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <DrawingGraphicalRepresentation id="199" className="org.openflexo.vpm.diagrampalette.DiagramPaletteGR" width="260.0" height="300.0" drawWorkingArea="true" selectionColor="0,0,255" focusColor="255,0,0" backgroundColor="255,255,255" identifier="root" layer="0" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-    <TextStyle id="200" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  <DrawingGraphicalRepresentation id="197" className="org.openflexo.vpm.diagrampalette.DiagramPaletteGR" width="260.0" height="300.0" drawWorkingArea="true" selectionColor="0,0,255" focusColor="255,0,0" backgroundColor="255,255,255" identifier="root" layer="0" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+    <TextStyle id="198" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
   </DrawingGraphicalRepresentation>
 </Palette>
