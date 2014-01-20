@@ -61,7 +61,7 @@
       <Checkbox id="43" name="isSingleExecution" label="isSingleExecution" readOnly="false" data="activity.activity.isSingleExecution" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="44" name="LoopNodeGR">
+  <EditionPattern id="44" name="LoopNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
     <DropScheme id="45" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="46" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <CheckBoxParameter id="47" name="isTestedFirst" label="isTestedFirst" defaultValue="true" usePaletteLabelAsDefaultValue="false" isRequired="false" />
@@ -115,7 +115,7 @@
       <Checkbox id="78" name="isTestFirst" label="isTestFirst" readOnly="false" data="loopNode.loopNode.isTestedFirst" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="79" name="ConditionalNodeGR">
+  <EditionPattern id="79" name="ConditionalNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
     <DropScheme id="80" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="81" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <CheckBoxParameter id="82" name="isDeterminate" label="isDeterminate" defaultValue="false" usePaletteLabelAsDefaultValue="false" isRequired="false" />
@@ -156,7 +156,7 @@
       <AddressedVirtualModelModelSlot idref="10" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="103" patternRole="shape" name="shape" exampleLabel="&lt;&lt;conditional&gt;&gt;">
-      <ShapeGraphicalRepresentation id="104" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="20.22152308688817" y="0.0" width="301.77847691311183" height="192.62382167595436" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="&lt;&lt;conditional&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="171.0" absoluteTextY="42.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="104" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="20.22152308688817" y="0.0" width="301.77847691311183" height="192.62382167595436" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="171.0" absoluteTextY="42.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="105" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
         <NoneBackgroundStyle id="106" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="107" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -174,7 +174,7 @@
     <PrimaryRepresentationShapePatternRole idref="103" />
     <Inspector id="115" inspectorTitle="ConditionalNodeGR" />
   </EditionPattern>
-  <EditionPattern id="116" name="StructuredNodeGR">
+  <EditionPattern id="116" name="StructuredNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
     <DropScheme id="117" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="118" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <CheckBoxParameter id="119" name="mustIsolate" label="mustIsolate" defaultValue="false" usePaletteLabelAsDefaultValue="false" isRequired="false" />
@@ -219,7 +219,7 @@
       <AddressedVirtualModelModelSlot idref="10" />
     </ContainedEditionPatternInstancePatternRole>
     <ContainedShapePatternRole id="141" patternRole="shape" name="shape" exampleLabel="&lt;&lt;structured&gt;&gt;">
-      <ShapeGraphicalRepresentation id="142" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="98.22152308688817" y="0.0" width="301.77847691311183" height="192.62382167595436" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="&lt;&lt;structured&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="176.0" absoluteTextY="38.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ShapeGraphicalRepresentation id="142" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="98.22152308688817" y="0.0" width="301.77847691311183" height="192.62382167595436" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="176.0" absoluteTextY="38.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
         <ForegroundStyle id="143" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" />
         <NoneBackgroundStyle id="144" useTransparency="false" transparencyLevel="0.5" />
         <SelectedForegroundStyle id="145" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -240,7 +240,7 @@
       <Checkbox id="155" name="mustIsolate" label="mustIsolate" readOnly="false" data="structuredNode.structuredNode.mustIsolate" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="156" name="SeqeunceNodeGR">
+  <EditionPattern id="156" name="SeqeunceNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
     <DropScheme id="157" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <TextFieldParameter id="158" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
       <AddEditionPatternInstance id="159" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#SeqeunceNode.createSequenceNodeInActivity" assignation="seqeunceNode">
@@ -307,11 +307,11 @@
     <PrimaryRepresentationShapePatternRole idref="182" />
     <Inspector id="194" inspectorTitle="SeqeunceNodeGR" />
   </EditionPattern>
-  <EditionPattern id="195" name="ActivityInitialNodeGR">
+  <EditionPattern id="195" name="ActivityInitialNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
     <DropScheme id="196" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropAtActivity" label="create_initialnode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <AddEditionPatternInstance id="197" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityInitialNode.createInActivity" assignation="activityInitialNode">
-        <AddEditionPatternInstanceParameter id="198" paramName="activity" />
-        <AddEditionPatternInstanceParameter id="199" paramName="name" />
+        <AddEditionPatternInstanceParameter id="198" paramName="activity" value="target.activity" />
+        <AddEditionPatternInstanceParameter id="199" paramName="name" value="&quot;&quot;" />
       </AddEditionPatternInstance>
       <AddShape id="200" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
         <AddressedDiagramModelSlot idref="16" />
@@ -381,14 +381,587 @@
     <PrimaryRepresentationShapePatternRole idref="223" />
     <Inspector id="236" inspectorTitle="ActivityInitialNodeGR" />
   </EditionPattern>
-  <LocalizedDictionary id="237" />
+  <EditionPattern id="237" name="ActivityFinalNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="238" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="239" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="240" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityFinalNode.createInActivity" assignation="activityFinalNode">
+        <AddEditionPatternInstanceParameter id="241" paramName="activity" value="target.activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="242" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="243" name="deleteGRActivityFinalNode" label="deleteGRActivityFinalNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="244" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="245" name="deleteGRandModelActivityFinalNode" label="deleteGRandModelActivityFinalNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="246" object="activityFinalNode" />
+      <DeleteAction id="247" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="248" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="249" name="activityFinalNode" label="activityFinalNode" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="250" object="parameters.activityFinalNode" assignation="activityFinalNode" />
+      <AddShape id="251" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="252" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="253" assignation="activityFinalNode" />
+      <AddShape id="254" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="255" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="256" assignation="activityFinalNode" />
+      <AddShape id="257" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="258" target="http://www.omg.org/UML/EMF/ActivityDiagram#StructuredNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="259" assignation="activityFinalNode" />
+      <AddShape id="260" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="261" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="262" assignation="activityFinalNode" />
+      <AddShape id="263" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="264" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ActivityFinalNode" name="activityFinalNode" patternRole="activityFinalNode">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="265" patternRole="shape" name="shape" exampleLabel="activity final">
+      <ShapeGraphicalRepresentation id="266" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="370.0" y="100.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="activity final" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="34.0" absoluteTextY="57.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="267" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="268" imageFile="../Images/activity_diagram/endNode.png" scaleX="0.25" scaleY="0.25" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="269" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="270" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="271" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="272" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="273" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="232" />
+        <ShadowStyle id="274" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="275" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="276" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="265" />
+    <Inspector id="277" inspectorTitle="ActivityFinalNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="278" name="OpaqueActionGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="279" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="280" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <TextFieldParameter id="281" name="body" label="body" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="282" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#OpaqueAction.createInActivity" assignation="opaqueAction">
+        <AddEditionPatternInstanceParameter id="283" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="284" paramName="body" value="parameters.body" />
+        <AddEditionPatternInstanceParameter id="285" paramName="activity" value="target.activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="286" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="287" name="deleteGROpaqueAction" label="deleteGROpaqueAction" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="288" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="289" name="deleteGRandModelOpaqueAction" label="deleteGRandModelOpaqueAction" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="290" object="opaqueAction" />
+      <DeleteAction id="291" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="292" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="293" name="opaqueAction" label="opaqueAction" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="294" object="parameters.opaqueAction" assignation="opaqueAction" />
+      <AddShape id="295" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="296" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="297" assignation="opaqueAction" />
+      <AddShape id="298" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="299" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="300" assignation="opaqueAction" />
+      <AddShape id="301" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="302" target="http://www.omg.org/UML/EMF/ActivityDiagram#StructuredNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="303" assignation="opaqueAction" />
+      <AddShape id="304" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="305" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="306" assignation="opaqueAction" />
+      <AddShape id="307" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="308" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#OpaqueAction" name="opaqueAction" patternRole="opaqueAction">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="309" patternRole="shape" name="shape" exampleLabel="opaque action">
+      <ShapeGraphicalRepresentation id="310" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="5.0" y="59.230769230769226" width="91.68316831683168" height="70.76923076923077" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="opaque action" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="311" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="312" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="313" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="314" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="315" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="316" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="317" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape id="318" isRounded="true" arcSize="30.0" />
+        <ShadowStyle id="319" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="320" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="321" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="309" />
+    <Inspector id="322" inspectorTitle="OpaqueActionGR">
+      <TextField id="323" name="name" label="name" readOnly="false" data="opaqueAction.opaqueAction.name" />
+      <TextField id="324" name="body" label="body" readOnly="false" data="opaqueAction.opaqueAction.body.toString" />
+    </Inspector>
+  </EditionPattern>
+  <EditionPattern id="325" name="FlowFinalNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="326" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="327" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="328" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#FlowFinalNode.createInActivity" assignation="flowFinalNode">
+        <AddEditionPatternInstanceParameter id="329" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="330" paramName="activity" value="target.activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="331" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="332" name="deleteGRFlowFinalNode" label="deleteGRFlowFinalNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="333" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="334" name="deleteGRandModelFlowFinalNode" label="deleteGRandModelFlowFinalNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="335" object="flowFinalNode" />
+      <DeleteAction id="336" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="337" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="338" name="flowFinalNode" label="flowFinalNode" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="339" object="parameters.flowFinalNode" assignation="flowFinalNode" />
+      <AddShape id="340" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="341" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="342" assignation="flowFinalNode" />
+      <AddShape id="343" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="344" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="345" assignation="flowFinalNode" />
+      <AddShape id="346" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="347" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="348" assignation="flowFinalNode" />
+      <AddShape id="349" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="350" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#FlowFinalNode" name="flowFinalNode" patternRole="flowFinalNode">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="351" patternRole="shape" name="shape" exampleLabel="flow final">
+      <ShapeGraphicalRepresentation id="352" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="311.0" y="100.0" width="30.0" height="30.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="35.0" absoluteTextY="62.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="353" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="354" imageFile="../Images/activity_diagram/flowEndNode.png" scaleX="0.25" scaleY="0.25" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="355" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="356" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="357" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="358" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="359" top="20" bottom="20" left="20" right="20" />
+        <CircleShape idref="232" />
+        <ShadowStyle id="360" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="361" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="362" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="351" />
+    <Inspector id="363" inspectorTitle="FlowFinalNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="364" name="JoinNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="365" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="366" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="367" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#JoinNode.createInActivity" assignation="joinNode">
+        <AddEditionPatternInstanceParameter id="368" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="369" paramName="activity" value="target.activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="370" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="371" name="deleteGRJoinNode" label="deleteGRJoinNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="372" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="373" name="deleteGRandModelJoinNode" label="deleteGRandModelJoinNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="374" object="joinNode" />
+      <DeleteAction id="375" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="376" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="377" name="joinNode" label="joinNode" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="378" object="parameters.joinNode" assignation="joinNode" />
+      <AddShape id="379" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="380" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="381" assignation="joinNode" />
+      <AddShape id="382" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="383" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="384" assignation="joinNode" />
+      <AddShape id="385" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="386" target="http://www.omg.org/UML/EMF/ActivityDiagram#StructuredNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="387" assignation="joinNode" />
+      <AddShape id="388" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="389" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="390" assignation="joinNode" />
+      <AddShape id="391" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="392" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#JoinNode" name="joinNode" patternRole="joinNode">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="393" patternRole="shape" name="shape" exampleLabel="join">
+      <ShapeGraphicalRepresentation id="394" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="40.0" y="16.613783567425926" width="273.3782178217822" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="join" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="395" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="396" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="397" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="398" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="399" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="400" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="401" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="35" />
+        <ShadowStyle id="402" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="403" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="404" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="393" />
+    <Inspector id="405" inspectorTitle="JoinNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="406" name="ForkNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="407" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="408" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="409" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ForkNode.creationInActivity" assignation="forkNode">
+        <AddEditionPatternInstanceParameter id="410" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="411" paramName="activity" value="target.activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="412" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="413" name="deleteGRForkNode" label="deleteGRForkNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="414" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="415" name="deleteGRandModelForkNode" label="deleteGRandModelForkNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="416" object="forkNode" />
+      <DeleteAction id="417" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="418" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="419" name="forkNode" label="forkNode" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="420" object="parameters.forkNode" assignation="forkNode" />
+      <AddShape id="421" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="422" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="423" assignation="forkNode" />
+      <AddShape id="424" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="425" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="426" assignation="forkNode" />
+      <AddShape id="427" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="428" target="http://www.omg.org/UML/EMF/ActivityDiagram#StructuredNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="429" assignation="forkNode" />
+      <AddShape id="430" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="431" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="432" assignation="forkNode" />
+      <AddShape id="433" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="434" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#ForkNode" name="forkNode" patternRole="forkNode">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="435" patternRole="shape" name="shape" exampleLabel="fork">
+      <ShapeGraphicalRepresentation id="436" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="106.45544554455444" y="69.0576923076923" width="205.54455445544556" height="13.942307692307693" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="120.0" absoluteTextY="26.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="437" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="438" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="439" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="440" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="441" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="442" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="443" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="35" />
+        <ShadowStyle id="444" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="445" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="446" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="435" />
+    <Inspector id="447" inspectorTitle="ForkNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="448" name="DecisionNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="449" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="450" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#DecisionNode.creation" assignation="decisionNode">
+        <AddEditionPatternInstanceParameter id="451" paramName="activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="452" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="453" name="deleteGRDecisionNode" label="deleteGRDecisionNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="454" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="455" name="deleteGRandModelDecisionNode" label="deleteGRandModelDecisionNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="456" object="decisionNode" />
+      <DeleteAction id="457" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="458" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="459" name="decisionNode" label="decisionNode" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="460" object="parameters.decisionNode" assignation="decisionNode" />
+      <AddShape id="461" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="462" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="463" assignation="decisionNode" />
+      <AddShape id="464" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="465" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="466" assignation="decisionNode" />
+      <AddShape id="467" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="468" target="http://www.omg.org/UML/EMF/ActivityDiagram#StructuredNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="469" assignation="decisionNode" />
+      <AddShape id="470" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="471" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="472" assignation="decisionNode" />
+      <AddShape id="473" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="474" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#DecisionNode" name="decisionNode" patternRole="decisionNode">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="475" patternRole="shape" name="shape" exampleLabel="decision node/merge node">
+      <ShapeGraphicalRepresentation id="476" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="251.0" y="13.696965286369306" width="117.68712871287127" height="116.3030347136307" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="477" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="478" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="479" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="480" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="481" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="482" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="483" top="20" bottom="20" left="20" right="20" />
+        <LosangeShape id="484" nPoints="4" startAngle="90" />
+        <ShadowStyle id="485" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="486" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="487" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="475" />
+    <Inspector id="488" inspectorTitle="DecisionNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="489" name="MergeNodeGR" parentEditionPattern="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR">
+    <DropScheme id="490" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="491" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddEditionPatternInstance id="492" virtualModelInstance="diagram.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#MergeNode.createInActivity" assignation="mergeNode">
+        <AddEditionPatternInstanceParameter id="493" paramName="name" value="parameters.name" />
+        <AddEditionPatternInstanceParameter id="494" paramName="activity" value="target.activity" />
+      </AddEditionPatternInstance>
+      <AddShape id="495" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DeletionScheme id="496" name="deleteGRMergeNode" label="deleteGRMergeNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="497" object="shape" />
+    </DeletionScheme>
+    <DeletionScheme id="498" name="deleteGRandModelMergeNode" label="deleteGRandModelMergeNode" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <DeleteAction id="499" object="mergeNode" />
+      <DeleteAction id="500" object="shape" />
+    </DeletionScheme>
+    <DropScheme id="501" target="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityGR" name="defaultDropAndSelect" label="defaultDropAndSelect" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <EditionPatternInstanceParameter id="502" name="mergeNode" label="mergeNode" usePaletteLabelAsDefaultValue="false" isRequired="false">
+        <AddressedVirtualModelModelSlot idref="10" />
+      </EditionPatternInstanceParameter>
+      <DeclarePatternRole id="503" object="parameters.mergeNode" assignation="mergeNode" />
+      <AddShape id="504" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="505" target="http://www.omg.org/UML/EMF/ActivityDiagram#LoopNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="506" assignation="mergeNode" />
+      <AddShape id="507" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="508" target="http://www.omg.org/UML/EMF/ActivityDiagram#ConditionalNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="509" assignation="mergeNode" />
+      <AddShape id="510" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="511" target="http://www.omg.org/UML/EMF/ActivityDiagram#StructuredNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="512" assignation="mergeNode" />
+      <AddShape id="513" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="514" target="http://www.omg.org/UML/EMF/ActivityDiagram#SeqeunceNodeGR" name="defaultDropAndCreate" label="defaultDropAndCreate" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <AddEditionPatternInstance id="515" assignation="mergeNode" />
+      <AddShape id="516" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddShape>
+    </DropScheme>
+    <ContainedEditionPatternInstancePatternRole id="517" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#MergeNode" name="mergeNode" patternRole="mergeNode">
+      <AddressedVirtualModelModelSlot idref="10" />
+    </ContainedEditionPatternInstancePatternRole>
+    <ContainedShapePatternRole id="518" patternRole="shape" name="shape" exampleLabel="decision node/merge node">
+      <ShapeGraphicalRepresentation id="519" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="251.0" y="13.696965286369306" width="117.68712871287127" height="116.3030347136307" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="520" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="521" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="522" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="523" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="524" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="525" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="526" top="20" bottom="20" left="20" right="20" />
+        <LosangeShape idref="484" />
+        <ShadowStyle id="527" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="528" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="529" featureName="label" value="&quot;Forme&quot;" readOnly="true" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="518" />
+    <Inspector id="530" inspectorTitle="MergeNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="531" name="ActivityNodeGR">
+    <ContainedShapePatternRole id="532" patternRole="shape" name="shape" exampleLabel="label">
+      <ShapeGraphicalRepresentation id="533" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="160.0" y="40.0" width="80.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="534" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ColorBackgroundStyle id="535" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="536" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="537" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="538" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="539" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="540" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape idref="35" />
+        <ShadowStyle id="541" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="542" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot idref="16" />
+    </ContainedShapePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="532" />
+    <Inspector id="543" inspectorTitle="ActivityNodeGR" />
+  </EditionPattern>
+  <EditionPattern id="544" name="ControlFlowGR">
+    <LinkScheme id="545" fromTarget="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR" toTarget="http://www.omg.org/UML/EMF/ActivityDiagram#ActivityNodeGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="link" label="link" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <ConditionalAction id="546" condition="fromTarget" />
+      <AddConnector id="547" fromShape="fromTarget">
+        <AddressedDiagramModelSlot idref="16" />
+      </AddConnector>
+    </LinkScheme>
+    <ContainedConnectorPatternRole id="548" patternRole="connector" name="connector" exampleLabel="label">
+      <ConnectorGraphicalRepresentation id="549" className="org.openflexo.vpm.view.widget.EditionPatternPreviewConnectorGR" hasSelectedForeground="false" hasFocusedForeground="false" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" text="label" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="550" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="551" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="552" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <StartShapeGraphicalRepresentation id="553" className="org.openflexo.vpm.view.widget.EditionPatternConnectorFromArtefactGR" x="80.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="554" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorBackgroundStyle id="555" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="556" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="557" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="558" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="559" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="560" top="20" bottom="20" left="20" right="20" />
+          <CircleShape idref="232" />
+          <ShadowStyle id="561" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="562" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </StartShapeGraphicalRepresentation>
+        <EndShapeGraphicalRepresentation id="563" className="org.openflexo.vpm.view.widget.EditionPatternConnectorToArtefactGR" x="350.0" y="80.0" width="20.0" height="20.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="CONSTRAINED_DIMENSIONS" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="false" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+          <ForegroundStyle id="564" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <ColorBackgroundStyle id="565" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedForegroundStyle id="566" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <SelectedColorBackgroundStyle id="567" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedForegroundStyle id="568" noStroke="false" color="255,204,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+          <FocusedColorBackgroundStyle id="569" color="255,255,204" useTransparency="false" transparencyLevel="0.5" />
+          <Border id="570" top="20" bottom="20" left="20" right="20" />
+          <CircleShape idref="232" />
+          <ShadowStyle id="571" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+          <TextStyle id="572" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+        </EndShapeGraphicalRepresentation>
+        <RectPolylinConnector id="573" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="true" isEndingLocationDraggable="true" />
+        <TextStyle id="574" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ConnectorGraphicalRepresentation>
+      <ArtifactFromShapeGraphicalRepresentation idref="553" />
+      <ArtifactToShapeGraphicalRepresentation idref="563" />
+      <AddressedDiagramModelSlot idref="16" />
+      <GRSpec id="575" featureName="label" value="&quot;label&quot;" readOnly="true" />
+    </ContainedConnectorPatternRole>
+    <PrimaryRepresentationConnectorPatternRole idref="548" />
+    <Inspector id="576" inspectorTitle="ControlFlowGR" />
+  </EditionPattern>
+  <LocalizedDictionary id="577" />
   <VirtualModelModelSlot idref="10" />
   <DiagramModelSlot idref="16" />
-  <ContainedEditionPatternInstancePatternRole id="238" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="class" patternRole="class">
+  <ContainedEditionPatternInstancePatternRole id="578" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Class" name="class" patternRole="class">
     <AddressedVirtualModelModelSlot idref="10" />
   </ContainedEditionPatternInstancePatternRole>
-  <ContainedEditionPatternInstancePatternRole id="239" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="interface" patternRole="interface">
+  <ContainedEditionPatternInstancePatternRole id="579" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Interface" name="interface" patternRole="interface">
     <AddressedVirtualModelModelSlot idref="10" />
   </ContainedEditionPatternInstancePatternRole>
-  <Inspector id="240" inspectorTitle="ActivityDiagram" />
+  <Inspector id="580" inspectorTitle="ActivityDiagram" />
 </DiagramSpecification>
