@@ -35,7 +35,7 @@
       <TextStyle id="32" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="33" name="&lt;&lt;sequence&gt;&gt;" editionPattern="SeqeunceNodeGR" dropSchemeName="dropSchemeAtTopLevel" boundLabelToElementName="true">
+  <PaletteElement id="33" name="&lt;&lt;sequence&gt;&gt;" editionPattern="SeqenceNodeGR" dropSchemeName="dropSchemeAtTopLevel" boundLabelToElementName="true">
     <Parameter id="34" name="name" value="" />
     <Parameter id="35" name="seqeunceNode" value="" />
     <ShapeGraphicalRepresentation id="36" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="-11.0" y="67.0" width="113.90024983806788" height="50.85308056872036" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_2" layer="1" hasText="true" text="&lt;&lt;sequence&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="77.35745708331955" absoluteTextY="55.99677100151034" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
@@ -51,7 +51,7 @@
       <TextStyle id="46" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
     </ShapeGraphicalRepresentation>
   </PaletteElement>
-  <PaletteElement id="47" name="&lt;&lt;structured&gt;&gt;" editionPattern="StructuredNodeGR" dropSchemeName="dropSchemeAtTopLevel" boundLabelToElementName="true">
+  <PaletteElement id="47" name="&lt;&lt;structured&gt;&gt;" editionPattern="StructuredActivityNodeGR" dropSchemeName="dropSchemeAtTopLevel" boundLabelToElementName="true">
     <Parameter id="48" name="name" value="" />
     <Parameter id="49" name="mustIsolate" value="" />
     <Parameter id="50" name="structuredNode" value="" />
