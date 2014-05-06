@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagramSpecification id="1" name="DiagramSpecification" modelVersion="1.0">
-  <EditionPattern id="2" name="BusinessRole" parentEditionPattern="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification#ArchimateElement">
+  <EditionPattern id="2" name="BusinessRole">
     <DropScheme id="3" target="top" name="dropBusinessRoleAtTopLevel" label="dropBusinessRoleAtTopLevel" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="4" base="&quot;BusinessRole&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot id="5" isRequired="false" isReadOnly="false" name="owl" metaModelURI="http://www.bolton.ac.uk/archimate" />
@@ -186,7 +186,7 @@
       <TextArea id="112" name="Documentation" label="Documentation" readOnly="false" data="businessRole.documentation" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="113" name="BusinessActor" parentEditionPattern="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification#ArchimateElement">
+  <EditionPattern id="113" name="BusinessActor" >
     <DropScheme id="114" target="top" name="dropBusinessActorAtTopLevel" label="dropBusinessActorAtTopLevel" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="115" base="&quot;BusinessActor&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -747,7 +747,7 @@
       <TextField id="448" name="annotation" label="annotation" readOnly="false" data="specialisationRelationship.annotation" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="449" name="ApplicationService" parentEditionPattern="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification#ArchimateElement">
+  <EditionPattern id="449" name="ApplicationService" >
     <DropScheme id="450" target="top" name="dropApplicationServiceAtTopLevel" label="dropApplicationServiceAtTopLevel" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="451" base="&quot;ApplicationService&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -1125,7 +1125,7 @@
       <TextField id="677" name="annotation" label="annotation" readOnly="false" data="associationRelationship.annotation" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="678" name="Goal" parentEditionPattern="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification#ArchimateElement">
+  <EditionPattern id="678" name="Goal" >
     <DropScheme id="679" target="top" name="dropGoalAtTopLevel" label="dropGoalAtTopLevel" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="680" base="&quot;Goal&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -1220,7 +1220,7 @@
       <Individual id="736" name="individual" label="individual" readOnly="false" data="goal" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="737" name="Deliverable" parentEditionPattern="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification#ArchimateElement">
+  <EditionPattern id="737" name="Deliverable" >
     <DropScheme id="738" target="top" name="dropDeliverableAtTopLevel" label="dropDeliverableAtTopLevel" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="739" base="&quot;Deliverable&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -1303,7 +1303,7 @@
       <Individual id="783" name="individual" label="individual" readOnly="false" data="deliverable" />
     </Inspector>
   </EditionPattern>
-  <EditionPattern id="784" name="WorkPackage" parentEditionPattern="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification#ArchimateElement">
+  <EditionPattern id="784" name="WorkPackage" >
     <DropScheme id="785" target="top" name="dropWorkPackageAtTopLevel" label="dropWorkPackageAtTopLevel" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="786" base="&quot;WorkPackage&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
