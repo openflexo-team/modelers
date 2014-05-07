@@ -38,7 +38,7 @@
     <PrimaryConceptEMFObjectIndividualPatternRole idref="20" />
     <Inspector id="22" inspectorTitle="Package" />
   </EditionPattern>
-  <EditionPattern id="23" name="Actor" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM">
+  <EditionPattern id="23" name="Actor">
     <CreationScheme id="24" name="createActor" label="createActor" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="25" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="package" label="package" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedVirtualModelModelSlot idref="14" />
@@ -59,7 +59,7 @@
     <PrimaryConceptEMFObjectIndividualPatternRole idref="30" />
     <Inspector id="32" inspectorTitle="Actor" />
   </EditionPattern>
-  <EditionPattern id="33" name="UseCase" parentEditionPattern="http://www.omg.org/UML/EMF/UML2EMF_VM">
+  <EditionPattern id="33" name="UseCase">
     <CreationScheme id="34" name="createUseCase" label="createUseCase" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
       <EditionPatternInstanceParameter id="35" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Package" name="package" label="package" usePaletteLabelAsDefaultValue="false" isRequired="false">
         <AddressedVirtualModelModelSlot idref="14" />
