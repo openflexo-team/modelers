@@ -1,80 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiagramSpecification id="1" name="Overview" modelVersion="1.0">
-  <EditionPattern id="2" name="ActorCooperation">
-    <NavigationScheme id="3" targetObject="actorCooperation" name="navigation" label="navigation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
-    <DropScheme id="4" target="top" name="drop" label="drop" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <AddShape id="5" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="6" />
+<VirtualModel id="1" name="Overview" modelVersion="1.0" userID="FLX">
+  <FlexoConcept id="2" name="ActorCooperation" userID="FLX">
+    <NavigationScheme id="3" targetObject="actorCooperation" name="navigation" label="navigation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX" />
+    <DropScheme id="4" target="top" name="drop" label="drop" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <AddShape id="5" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="52" userID="FLX" />
       </AddShape>
     </DropScheme>
-    <ContainedShapePatternRole id="7" patternRole="shape" name="shape" exampleLabel="label">
-      <ShapeGraphicalRepresentation id="8" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="68.0" y="138.0" width="80.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorBackgroundStyle id="10" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="11" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="12" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="13" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="14" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="15" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape id="16" isRounded="false" arcSize="30.0" />
-        <ShadowStyle id="17" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="18" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <ShapeRole id="7" name="shape" exampleLabel="label" userID="FLX">
+      <ShapeGraphicalRepresentation id="8" x="68.0" y="138.0" width="80.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorBackgroundStyle id="10" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="11" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="12" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="13" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="14" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="15" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape id="16" isRounded="false" arcSize="30.0" userID="FLX" />
+        <ShadowStyle id="17" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="18" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
       </ShapeGraphicalRepresentation>
-      <AddressedDiagramModelSlot id="6" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://ArchimateVP/Overview" />
-    </ContainedShapePatternRole>
-    <ContainedEditionPatternInstancePatternRole id="19" editionPatternTypeURI="http://ArchimateVP/ActorCooperationViewpointDiagram" name="actorCooperation" patternRole="actorCooperation">
-      <AddressedVirtualModelModelSlot id="20" virtualModelURI="http://ArchimateVP/ActorCooperationViewpointDiagram" isRequired="true" isReadOnly="false" name="ActorCooperationViewpoint" />
-    </ContainedEditionPatternInstancePatternRole>
-    <PrimaryRepresentationShapePatternRole idref="7" />
-    <Inspector id="21" inspectorTitle="ActorCooperation" />
-  </EditionPattern>
-  <EditionPattern id="22" name="ArchimateModel">
-    <DropScheme id="23" target="top" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <AddEditionPatternInstance id="24" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#ArchimateModel.creation" assignation="archimateModel" />
-      <AddShape id="25" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
-        <AddressedDiagramModelSlot idref="6" />
+      <TypedDiagramModelSlot idref="52" isRequired="true" isReadOnly="false" userID="FLX" />
+    </ShapeRole>
+    <FlexoConceptInstanceRole id="19" flexoConceptTypeURI="http://ArchimateVP/ActorCooperationViewpointDiagram" name="actorCooperation" userID="FLX">
+      <VirtualModelModelSlot id="20" virtualModelURI="http://ArchimateVP/ActorCooperationViewpointDiagram" isRequired="true" isReadOnly="false" name="ActorCooperationViewpoint" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="21" inspectorTitle="ActorCooperation" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="22" name="ArchimateModel" userID="FLX">
+    <DropScheme id="23" target="top" name="dropSchemeAtTopLevel" label="dropSchemeAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <AddFlexoConceptInstance id="24" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#ArchimateModel.creation" assignation="archimateModel" userID="FLX" />
+      <AddShape id="25" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="52" userID="FLX" />
       </AddShape>
     </DropScheme>
-    <DeletionScheme id="26" name="deleteGRArchimateModel" label="deleteGRArchimateModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="27" object="shape" />
+    <DeletionScheme id="26" name="deleteGRArchimateModel" label="deleteGRArchimateModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="27" object="shape" userID="FLX" />
     </DeletionScheme>
-    <DeletionScheme id="28" name="deleteGRandModelArchimateModel" label="deleteGRandModelArchimateModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <DeleteAction id="29" object="archimateModel" />
-      <DeleteAction id="30" object="shape" />
+    <DeletionScheme id="28" name="deleteGRandModelArchimateModel" label="deleteGRandModelArchimateModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="29" object="archimateModel" userID="FLX" />
+      <DeleteAction id="30" object="shape" userID="FLX" />
     </DeletionScheme>
-    <ActionScheme id="31" name="actorCooperation" label="actorCooperation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
-      <AddDiagram id="32" diagramSpecificationURI="http://ArchimateVP/ActorCooperationViewpointDiagram">
-        <AddressedDiagramModelSlot idref="6" />
+    <ActionScheme id="31" name="actorCooperation" label="actorCooperation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <AddDiagram id="32" diagramSpecificationURI="http://ArchimateVP/ActorCooperationViewpointDiagram/ActorCooperationViewpointDiagram.diagramspecification" userID="FLX">
+        <TypedDiagramModelSlot idref="52" userID="FLX" />
       </AddDiagram>
-      <AssignationAction id="33" />
+      <AssignationAction id="33" userID="FLX" />
     </ActionScheme>
-    <ContainedEditionPatternInstancePatternRole id="34" editionPatternTypeURI="http://ArchimateVP/ArchimateVirtualModel#ArchimateModel" name="archimateModel" patternRole="archimateModel">
-      <AddressedVirtualModelModelSlot id="35" virtualModelURI="http://ArchimateVP/ArchimateVirtualModel" isRequired="true" isReadOnly="false" name="virtualModel" />
-    </ContainedEditionPatternInstancePatternRole>
-    <ContainedShapePatternRole id="36" patternRole="shape" name="shape" exampleLabel="label">
-      <ShapeGraphicalRepresentation id="37" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="68.0" y="80.0" width="80.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
-        <ForegroundStyle id="38" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <ColorBackgroundStyle id="39" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedForegroundStyle id="40" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <SelectedColorBackgroundStyle id="41" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedForegroundStyle id="42" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
-        <FocusedColorBackgroundStyle id="43" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
-        <Border id="44" top="20" bottom="20" left="20" right="20" />
-        <RectangleShape idref="16" />
-        <ShadowStyle id="45" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
-        <TextStyle id="46" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    <FlexoConceptInstanceRole id="34" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#ArchimateModel" name="archimateModel" userID="FLX">
+      <VirtualModelModelSlot id="35" virtualModelURI="http://ArchimateVP/ArchimateVirtualModel" isRequired="true" isReadOnly="false" name="virtualModel" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="36" name="shape" exampleLabel="label" userID="FLX">
+      <ShapeGraphicalRepresentation id="37" x="68.0" y="80.0" width="80.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="38" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorBackgroundStyle id="39" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="40" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="41" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="42" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="43" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="44" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="16" userID="FLX" />
+        <ShadowStyle id="45" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="46" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
       </ShapeGraphicalRepresentation>
-      <AddressedDiagramModelSlot idref="6" />
-    </ContainedShapePatternRole>
-    <ContainedDiagramPatternRole id="47" diagramSpecificationURI="http://ArchimateVP/ActorCooperationViewpointDiagram" patternRole="actorCooperation" name="actorCooperation">
-      <AddressedDiagramModelSlot idref="6" />
-    </ContainedDiagramPatternRole>
-    <PrimaryRepresentationShapePatternRole idref="36" />
-    <Inspector id="48" inspectorTitle="ArchimateModel" />
-  </EditionPattern>
-  <LocalizedDictionary id="49" />
-  <DiagramModelSlot idref="6" />
-  <VirtualModelModelSlot idref="35" />
-  <VirtualModelModelSlot id="50" virtualModelURI="http://ArchimateVP/ActorCooperationViewpointDiagram" isRequired="true" isReadOnly="false" name="actorCooperation" />
-  <Inspector id="51" inspectorTitle="Overview" />
-</DiagramSpecification>
+      <TypedDiagramModelSlot idref="52" userID="FLX" />
+    </ShapeRole>
+    <DiagramRole id="47" diagramSpecificationURI="http://ArchimateVP/ActorCooperationViewpointDiagram/ActorCooperationViewpointDiagram.diagramspecification" name="actorCooperation" userID="FLX">
+      <TypedDiagramModelSlot idref="52" userID="FLX" />
+    </DiagramRole>
+    <Inspector id="48" inspectorTitle="ArchimateModel" userID="FLX" />
+  </FlexoConcept>
+  <LocalizedDictionary id="49" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot virtualModelURI="http://ArchimateVP/Overview" name="virtualModelInstance" id="6" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot idref="35" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot id="50" virtualModelURI="http://ArchimateVP/ActorCooperationViewpointDiagram" isRequired="true" isReadOnly="false" name="actorCooperation" userID="FLX" />
+  <Inspector id="51" inspectorTitle="Overview" userID="FLX" />
+  <ModelSlot_TypedDiagramModelSlot metaModelURI="http://ArchimateVP/Overview/Overview.diagramspecification" name="typedDiagramModelSlot" id="52" userID="FLX">
+    <FMLDiagramPaletteElementBinding paletteElementId="http://ArchimateVP/Overview/Overview.diagramspecification/Palette.palette#ActorCooperation2" userID="FLX">
+      <DropScheme idref="4" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+  </ModelSlot_TypedDiagramModelSlot>
+</VirtualModel>
