@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="0" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="1" name="Kaos">
+  <FlexoConcept id="1" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="5" name="Goal">
+    <Inspector id="2" flexoID="2" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Goal" />
+    <PrimitiveRole id="3" flexoID="55" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <PrimitiveRole id="4" flexoID="56" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <CreationScheme id="5" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="49" skipConfirmationPanel="false" name="create">
+      <BehaviourControlGraph_Sequence id="6" flexoID="63" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="7" userID="FLX" useSpecificDescriptions="false" flexoID="59" ownerContext="controlGraph1" assign="name">
+          <AssignableAction_ExpressionAction id="8" expression="parameters.name" flexoID="58" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="9" userID="FLX" useSpecificDescriptions="false" flexoID="62" ownerContext="controlGraph2" assign="description">
+          <AssignableAction_ExpressionAction id="10" expression="parameters.description" flexoID="61" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="11" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="6" name="Obstacle">
+    <Inspector id="12" flexoID="7" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Obstacle" />
+    <CreationScheme id="13" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="101" skipConfirmationPanel="false" name="create">
+      <BehaviourControlGraph_EmptyControlGraph id="14" flexoID="102" userID="FLX" useSpecificDescriptions="false" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="15" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="13" name="DomainProperty">
+    <Inspector id="16" flexoID="10" useSpecificDescriptions="false" userID="FLX" inspectorTitle="DomainProperty" />
+  </FlexoConcept>
+  <FlexoConcept id="17" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="17" name="Requirement">
+    <Inspector id="18" flexoID="14" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Requirement" />
+    <PrimitiveRole id="19" flexoID="72" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <PrimitiveRole id="20" flexoID="73" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <CreationScheme id="21" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="68" skipConfirmationPanel="false" name="create">
+      <BehaviourControlGraph_Sequence id="22" flexoID="71" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="23" userID="FLX" useSpecificDescriptions="false" flexoID="69" ownerContext="controlGraph1" assign="name">
+          <AssignableAction_ExpressionAction idref="8" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="24" userID="FLX" useSpecificDescriptions="false" flexoID="70" ownerContext="controlGraph2" assign="description">
+          <AssignableAction_ExpressionAction idref="10" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="25" flexoID="74" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+      <TextAreaParameter id="26" flexoID="75" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="27" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="21" name="Expectation">
+    <Inspector id="28" flexoID="18" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Expectation" />
+  </FlexoConcept>
+  <FlexoConcept id="29" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="23" name="Entity">
+    <Inspector id="30" flexoID="22" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Entity" />
+  </FlexoConcept>
+  <FlexoConcept id="31" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="25" name="Operation">
+    <Inspector id="32" flexoID="24" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Operation" />
+  </FlexoConcept>
+  <FlexoConcept id="33" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="27" name="Event">
+    <Inspector id="34" flexoID="26" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Event" />
+  </FlexoConcept>
+  <FlexoConcept id="35" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="29" name="Agent">
+    <Inspector id="36" flexoID="28" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Agent" />
+  </FlexoConcept>
+  <FlexoConcept id="37" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="30" name="Refinment">
+    <Inspector id="38" flexoID="31" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Refinment" />
+    <FlexoConceptInstanceRole id="39" flexoID="37" useSpecificDescriptions="false" userID="FLX" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="40" flexoID="38" useSpecificDescriptions="false" userID="FLX" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <CreationScheme id="41" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="34" skipConfirmationPanel="false" name="create">
+      <BehaviourControlGraph_Sequence id="42" flexoID="46" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="43" userID="FLX" useSpecificDescriptions="false" flexoID="42" ownerContext="controlGraph1" assign="sourceGoal">
+          <AssignableAction_ExpressionAction id="44" expression="parameters.sourceGoal" flexoID="41" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="45" userID="FLX" useSpecificDescriptions="false" flexoID="45" ownerContext="controlGraph2" assign="targetGoal">
+          <AssignableAction_ExpressionAction id="46" expression="parameters.targetGoal" flexoID="44" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <FlexoConceptInstanceParameter id="47" userID="FLX" useSpecificDescriptions="false" label="sourceGoal" flexoID="35" isRequired="false" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" aVirtualModelInstance="virtualModelInstance" />
+      <FlexoConceptInstanceParameter id="48" userID="FLX" useSpecificDescriptions="false" label="targetGoal" flexoID="36" isRequired="false" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" aVirtualModelInstance="virtualModelInstance" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="49" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="76" name="ConflictWith">
+    <Inspector id="50" flexoID="77" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ConflictWith" />
+    <FlexoConceptInstanceRole id="51" flexoID="81" useSpecificDescriptions="false" userID="FLX" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="52" flexoID="82" useSpecificDescriptions="false" userID="FLX" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <CreationScheme id="53" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="80" skipConfirmationPanel="false" name="create">
+      <BehaviourControlGraph_Sequence id="54" flexoID="92" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="55" userID="FLX" useSpecificDescriptions="false" flexoID="88" ownerContext="controlGraph1" assign="sourceGoal">
+          <AssignableAction_ExpressionAction id="56" expression="parameters.sourceGoal" flexoID="87" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="57" userID="FLX" useSpecificDescriptions="false" flexoID="91" ownerContext="controlGraph2" assign="targetGoal">
+          <AssignableAction_ExpressionAction id="58" expression="parameters.targetGoal" flexoID="90" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <FlexoConceptInstanceParameter id="59" userID="FLX" useSpecificDescriptions="false" label="sourceGoal" flexoID="83" isRequired="false" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" aVirtualModelInstance="virtualModelInstance" />
+      <FlexoConceptInstanceParameter id="60" userID="FLX" useSpecificDescriptions="false" label="targetGoal" flexoID="84" isRequired="false" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" aVirtualModelInstance="virtualModelInstance" />
+    </CreationScheme>
+  </FlexoConcept>
+  <Inspector id="61" flexoID="6" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOSVirtualModel" />
+</VirtualModel>
