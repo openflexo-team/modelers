@@ -2,167 +2,244 @@
 <VirtualModel id="0" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="1" name="GoalModeling">
   <FlexoConcept id="1" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="11" name="GoalGR">
     <Inspector id="2" flexoID="12" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Goal" />
-    <ShapeRole id="3" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="15" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="4" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="40.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="94.18181818181817" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="5d783af1" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" layer="1" absoluteTextX="0.0" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="47.0" maximalWidth="Infinity" x="125.0">
-        <FocusedForegroundStyle id="5" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedColorBackgroundStyle id="6" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <TextStyle id="7" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
-        <ShapeBorder id="8" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="9" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedForegroundStyle id="10" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <FocusedColorBackgroundStyle id="11" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <ParallelogramShape id="12" shiftRatio="0.2" />
-        <ShadowStyle id="13" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
-        <ColorBackgroundStyle id="14" color="185,185,253" transparencyLevel="0.5" useTransparency="false" />
+    <ParentFlexoConcept id="3" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="716" name="AbstractGoalGR">
+      <Inspector id="4" flexoID="717" useSpecificDescriptions="false" userID="FLX" inspectorTitle="AbstractGoalGR" />
+      <ParentFlexoConcept id="5" useSpecificDescriptions="false" userID="FLX" isAbstract="true" flexoID="340" name="AbstractKaosElementGR">
+        <Inspector id="6" flexoID="341" useSpecificDescriptions="false" userID="FLX" inspectorTitle="AbstractKaosElement" />
+        <ShapeRole id="7" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="408" name="shape" cardinality="ZeroOne">
+          <ShapeGraphicalRepresentation id="8" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="80.0" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="true" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="4f4a99ad" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="40.0" maximalWidth="Infinity" x="160.0">
+            <FocusedForegroundStyle id="9" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+            <SelectedColorBackgroundStyle id="10" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+            <TextStyle id="11" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+            <ShapeBorder id="12" bottom="2" left="2" right="2" top="2" />
+            <ForegroundStyle id="13" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+            <SelectedForegroundStyle id="14" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+            <FocusedColorBackgroundStyle id="15" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+            <RectangleShape id="16" arcSize="30.0" isRounded="false" />
+            <ShadowStyle id="17" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+            <ColorBackgroundStyle id="18" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+          </ShapeGraphicalRepresentation>
+          <TypedDiagramModelSlot idref="19" />
+        </ShapeRole>
+        <DropScheme id="117" userID="FLX" useSpecificDescriptions="false" width="800" label="dropScheme" definePopupDefaultSize="false" height="600" flexoID="446" skipConfirmationPanel="false" name="dropScheme" target="top">
+          <BehaviourControlGraph_EmptyControlGraph id="118" flexoID="450" userID="FLX" useSpecificDescriptions="false" />
+          <TextFieldParameter id="119" flexoID="447" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+          <TextAreaParameter id="120" flexoID="449" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+        </DropScheme>
+      </ParentFlexoConcept>
+    </ParentFlexoConcept>
+    <ShapeRole id="121" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="15" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="122" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="40.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="94.18181818181817" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="5d783af1" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="47.0" maximalWidth="Infinity" x="125.0">
+        <FocusedForegroundStyle id="123" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedColorBackgroundStyle id="124" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <TextStyle id="125" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
+        <ShapeBorder id="126" bottom="2" left="2" right="2" top="2" />
+        <ForegroundStyle id="127" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="128" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedColorBackgroundStyle id="129" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <ParallelogramShape id="130" shiftRatio="0.2" />
+        <ShadowStyle id="131" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+        <ColorBackgroundStyle id="132" color="185,185,253" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="15" featureName="label" flexoID="261" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="goal.name" />
-      <TypedDiagramModelSlot idref="16" />
+      <GRSpec id="133" featureName="label" flexoID="658" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="goal.name" />
+      <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="46" flexoID="165" useSpecificDescriptions="false" userID="FLX" name="goal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne">
-      <FMLRTModelSlot idref="23" />
+    <FlexoConceptInstanceRole id="134" flexoID="165" useSpecificDescriptions="false" userID="FLX" name="goal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <DropScheme id="18" userID="FLX" useSpecificDescriptions="false" width="800" label="dropGoal" definePopupDefaultSize="false" height="600" flexoID="52" skipConfirmationPanel="false" name="dropGoal" target="top">
-      <BehaviourControlGraph_Sequence id="19" flexoID="170" userID="FLX" useSpecificDescriptions="false">
-        <ControlGraph1_AssignationAction id="20" userID="FLX" useSpecificDescriptions="false" flexoID="61" ownerContext="controlGraph1" assign="shape">
-          <AssignableAction_AddShape id="21" flexoID="60" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
-            <TypedDiagramModelSlot idref="16" />
+    <DropScheme id="21" userID="FLX" useSpecificDescriptions="false" width="800" label="create_goal" definePopupDefaultSize="false" height="600" flexoID="52" skipConfirmationPanel="false" name="CreateGoal" target="top">
+      <BehaviourControlGraph_Sequence id="22" flexoID="460" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="23" userID="FLX" useSpecificDescriptions="false" flexoID="61" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="24" flexoID="60" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
           </AssignableAction_AddShape>
         </ControlGraph1_AssignationAction>
-        <ControlGraph2_AddFlexoConceptInstance id="22" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="169" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Goal.create" ownerContext="controlGraph2" description="">
-          <FMLRTModelSlot idref="23" />
-        </ControlGraph2_AddFlexoConceptInstance>
-      </BehaviourControlGraph_Sequence>
-      <TextFieldParameter id="24" flexoID="171" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
-      <TextFieldParameter id="25" flexoID="172" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
-    </DropScheme>
-  </FlexoConcept>
-  <FlexoConcept id="47" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="16" name="RequirementGR">
-    <Inspector id="48" flexoID="17" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RequirementGR" />
-    <ShapeRole id="49" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="50" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="50" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="40.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="94.18181818181817" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="5d783af1" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" layer="1" absoluteTextX="0.0" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="70.0" maximalWidth="Infinity" x="119.0">
-        <FocusedForegroundStyle id="51" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedColorBackgroundStyle id="52" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <TextStyle id="53" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans Demibold,1,11" isBackgroundColored="false" />
-        <ShapeBorder id="54" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="55" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.200000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedForegroundStyle id="56" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <FocusedColorBackgroundStyle id="57" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <ParallelogramShape id="58" shiftRatio="0.2" />
-        <ShadowStyle id="59" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
-        <ColorBackgroundStyle id="60" color="185,185,253" transparencyLevel="0.5" useTransparency="false" />
-      </ShapeGraphicalRepresentation>
-      <GRSpec id="61" featureName="label" flexoID="262" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="requirement.name" />
-      <TypedDiagramModelSlot idref="16" />
-    </ShapeRole>
-    <FlexoConceptInstanceRole id="62" flexoID="175" useSpecificDescriptions="false" userID="FLX" name="requirement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Requirement" cloningStrategy="Reference" cardinality="ZeroOne">
-      <FMLRTModelSlot idref="23" />
-    </FlexoConceptInstanceRole>
-    <DropScheme id="27" userID="FLX" useSpecificDescriptions="false" width="800" label="dropScheme" definePopupDefaultSize="false" height="600" flexoID="176" skipConfirmationPanel="false" name="dropScheme" target="top">
-      <BehaviourControlGraph_Sequence id="28" flexoID="203" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
-        <ControlGraph1_AddFlexoConceptInstance id="29" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="189" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Requirement.create" ownerContext="controlGraph1" description="">
-          <FMLRTModelSlot idref="23" />
-          <AddFlexoConceptInstanceParameter id="30" flexoID="76" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
-          <AddFlexoConceptInstanceParameter id="31" flexoID="77" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
-        </ControlGraph1_AddFlexoConceptInstance>
-        <ControlGraph2_AssignationAction id="32" userID="FLX" useSpecificDescriptions="false" flexoID="202" ownerContext="controlGraph2" assign="shape">
-          <AssignableAction_AddShape id="33" flexoID="201" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
-            <TypedDiagramModelSlot idref="16" />
-          </AssignableAction_AddShape>
+        <ControlGraph2_AssignationAction id="25" userID="FLX" useSpecificDescriptions="false" flexoID="459" ownerContext="controlGraph2" assign="goal">
+          <AssignableAction_AddFlexoConceptInstance id="26" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="458" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Goal.create" description="">
+            <FMLRTModelSlot idref="27" />
+            <AddFlexoConceptInstanceParameter id="28" flexoID="146" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="29" flexoID="147" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
+          </AssignableAction_AddFlexoConceptInstance>
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <TextFieldParameter id="34" flexoID="177" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
-      <TextAreaParameter id="35" flexoID="178" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+      <TextFieldParameter id="30" flexoID="479" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+      <TextAreaParameter id="31" flexoID="480" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+    </DropScheme>
+    <DropScheme id="70" userID="FLX" useSpecificDescriptions="false" width="800" label="Select_Goal" definePopupDefaultSize="false" height="600" flexoID="461" skipConfirmationPanel="false" name="SelectGoal" target="top">
+      <BehaviourControlGraph_Sequence id="71" flexoID="474" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="72" userID="FLX" useSpecificDescriptions="false" flexoID="470" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="73" flexoID="469" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="74" userID="FLX" useSpecificDescriptions="false" flexoID="473" ownerContext="controlGraph2" assign="goal">
+          <AssignableAction_ExpressionAction id="75" expression="parameters.goal" flexoID="472" description="" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <FlexoConceptInstanceParameter id="76" userID="FLX" useSpecificDescriptions="false" label="goal" flexoID="476" isRequired="false" name="goal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+        <FMLRTModelSlot idref="27" />
+      </FlexoConceptInstanceParameter>
     </DropScheme>
   </FlexoConcept>
-  <FlexoConcept id="63" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="20" name="ConflictWithGR">
-    <Inspector id="64" flexoID="21" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ConflictWith" />
-    <ConnectorRole id="65" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="24" name="connector" cardinality="ZeroOne">
-      <ConnectorGraphicalRepresentation id="66" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" isVisible="true" drawControlPointsWhenFocused="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" absoluteTextX="0.0" layer="64" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="7301129c">
-        <SelectedForegroundStyle id="67" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <FocusedForegroundStyle id="68" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <LineConnectorSpecification id="69" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="10.0" endSymbolSize="10.0" startSymbol="NONE" endSymbol="NONE" />
-        <TextStyle id="70" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="71" dashStyle="PLAIN_STROKE" color="255,51,51" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.500000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-      </ConnectorGraphicalRepresentation>
-      <TypedDiagramModelSlot idref="16" />
-    </ConnectorRole>
-    <FlexoConceptInstanceRole id="72" flexoID="243" useSpecificDescriptions="false" userID="FLX" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="73" flexoID="244" useSpecificDescriptions="false" userID="FLX" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="74" flexoID="253" useSpecificDescriptions="false" userID="FLX" name="conflictWith" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#ConflictWith" cloningStrategy="Reference" cardinality="ZeroOne">
-      <FMLRTModelSlot idref="23" />
+  <FlexoConcept id="135" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="16" name="RequirementGR">
+    <Inspector id="136" flexoID="17" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RequirementGR" />
+    <ParentFlexoConcept idref="3" />
+    <ShapeRole id="137" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="50" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="138" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="40.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="94.18181818181817" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="5d783af1" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="70.0" maximalWidth="Infinity" x="119.0">
+        <FocusedForegroundStyle id="139" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedColorBackgroundStyle id="140" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <TextStyle id="141" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans Demibold,1,11" isBackgroundColored="false" />
+        <ShapeBorder id="142" bottom="2" left="2" right="2" top="2" />
+        <ForegroundStyle id="143" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.200000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="144" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedColorBackgroundStyle id="145" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <ParallelogramShape id="146" shiftRatio="0.2" />
+        <ShadowStyle id="147" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+        <ColorBackgroundStyle id="148" color="185,185,253" transparencyLevel="0.5" useTransparency="false" />
+      </ShapeGraphicalRepresentation>
+      <GRSpec id="149" featureName="label" flexoID="659" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="requirement.name" />
+      <TypedDiagramModelSlot idref="19" />
+    </ShapeRole>
+    <FlexoConceptInstanceRole id="150" flexoID="175" useSpecificDescriptions="false" userID="FLX" name="requirement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Requirement" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <LinkScheme id="75" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#GoalGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#GoalGR" userID="FLX" useSpecificDescriptions="false" width="800" label="goalToGoal" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="40" height="600" skipConfirmationPanel="false" name="goalToGoal" eastDirectionSupported="true">
-      <BehaviourControlGraph_Sequence id="76" flexoID="251" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
-        <ControlGraph1_AssignationAction id="77" userID="FLX" useSpecificDescriptions="false" flexoID="73" ownerContext="controlGraph1" assign="connector">
-          <AssignableAction_AddConnector id="78" userID="FLX" useSpecificDescriptions="false" flexoID="72" fromShape="fromTarget.shape" toShape="toTarget.shape">
-            <TypedDiagramModelSlot idref="16" />
+    <DropScheme id="33" userID="FLX" useSpecificDescriptions="false" width="800" label="Create_Requirement" definePopupDefaultSize="false" height="600" flexoID="176" skipConfirmationPanel="false" name="CreateRequirement" target="top">
+      <BehaviourControlGraph_Sequence id="34" flexoID="515" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="35" userID="FLX" useSpecificDescriptions="false" flexoID="202" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="36" flexoID="201" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="37" userID="FLX" useSpecificDescriptions="false" flexoID="503" ownerContext="controlGraph2" assign="requirement">
+          <AssignableAction_AddFlexoConceptInstance id="38" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="502" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Requirement.create">
+            <FMLRTModelSlot idref="27" />
+            <AddFlexoConceptInstanceParameter id="39" flexoID="146" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="40" flexoID="147" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="41" flexoID="497" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+      <TextAreaParameter id="42" flexoID="498" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+    </DropScheme>
+    <DropScheme id="78" userID="FLX" useSpecificDescriptions="false" width="800" label="SelectRequirement" definePopupDefaultSize="false" height="600" flexoID="504" skipConfirmationPanel="false" name="SelectRequirement" target="top">
+      <BehaviourControlGraph_Sequence id="79" flexoID="516" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="80" userID="FLX" useSpecificDescriptions="false" flexoID="511" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="81" flexoID="510" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="82" userID="FLX" useSpecificDescriptions="false" flexoID="514" ownerContext="controlGraph2" assign="requirement">
+          <AssignableAction_ExpressionAction id="83" expression="parameters.requirement" flexoID="513" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <FlexoConceptInstanceParameter id="84" userID="FLX" useSpecificDescriptions="false" label="requirement" flexoID="505" isRequired="false" name="requirement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Requirement" aVirtualModelInstance="kaosVirtualModel">
+        <FMLRTModelSlot idref="27" />
+      </FlexoConceptInstanceParameter>
+    </DropScheme>
+  </FlexoConcept>
+  <FlexoConcept id="151" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="20" name="ConflictWithGR">
+    <Inspector id="152" flexoID="21" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ConflictWith" />
+    <ConnectorRole id="153" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="24" name="connector" cardinality="ZeroOne">
+      <ConnectorGraphicalRepresentation id="154" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isLabelEditable="true" isSelectable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="7301129c">
+        <SelectedForegroundStyle id="155" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="156" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <LineConnectorSpecification id="157" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="10.0" endSymbolSize="10.0" startSymbol="NONE" endSymbol="NONE" />
+        <TextStyle id="158" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+        <ForegroundStyle id="159" dashStyle="PLAIN_STROKE" color="255,51,51" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.500000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="160" flexoID="243" useSpecificDescriptions="false" userID="FLX" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="161" flexoID="244" useSpecificDescriptions="false" userID="FLX" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="162" flexoID="253" useSpecificDescriptions="false" userID="FLX" name="conflictWith" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#ConflictWith" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
+    </FlexoConceptInstanceRole>
+    <LinkScheme id="163" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="conflict" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="40" height="600" skipConfirmationPanel="false" name="conflict" eastDirectionSupported="true">
+      <BehaviourControlGraph_Sequence id="164" flexoID="251" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="165" userID="FLX" useSpecificDescriptions="false" flexoID="73" ownerContext="controlGraph1" assign="connector">
+          <AssignableAction_AddConnector id="166" userID="FLX" useSpecificDescriptions="false" flexoID="72" fromShape="fromTarget.shape" toShape="toTarget.shape">
+            <TypedDiagramModelSlot idref="19" />
           </AssignableAction_AddConnector>
         </ControlGraph1_AssignationAction>
-        <ControlGraph2_Sequence id="79" flexoID="252" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
-          <ControlGraph1_AssignationAction id="80" userID="FLX" useSpecificDescriptions="false" flexoID="247" ownerContext="controlGraph1" assign="sourceGoal">
-            <AssignableAction_ExpressionAction id="81" expression="fromTarget" flexoID="246" userID="FLX" useSpecificDescriptions="false" />
+        <ControlGraph2_Sequence id="167" flexoID="252" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
+          <ControlGraph1_AssignationAction id="168" userID="FLX" useSpecificDescriptions="false" flexoID="247" ownerContext="controlGraph1" assign="sourceGoal">
+            <AssignableAction_ExpressionAction id="169" expression="fromTarget" flexoID="246" userID="FLX" useSpecificDescriptions="false" />
           </ControlGraph1_AssignationAction>
-          <ControlGraph2_Sequence id="82" flexoID="258" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
-            <ControlGraph1_AssignationAction id="83" userID="FLX" useSpecificDescriptions="false" flexoID="250" ownerContext="controlGraph1" assign="targetGoal">
-              <AssignableAction_ExpressionAction id="84" expression="toTarget" flexoID="249" userID="FLX" useSpecificDescriptions="false" />
-            </ControlGraph1_AssignationAction>
-            <ControlGraph2_AddFlexoConceptInstance id="85" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="257" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#ConflictWith.create" ownerContext="controlGraph2" description="">
-              <FMLRTModelSlot idref="23" />
-              <AddFlexoConceptInstanceParameter id="86" flexoID="93" userID="FLX" useSpecificDescriptions="false" value="sourceGoal.goal" paramName="sourceGoal" />
-              <AddFlexoConceptInstanceParameter id="87" flexoID="94" userID="FLX" useSpecificDescriptions="false" value="targetGoal.goal" paramName="targetGoal" />
-            </ControlGraph2_AddFlexoConceptInstance>
-          </ControlGraph2_Sequence>
+          <ControlGraph2_AssignationAction id="170" userID="FLX" useSpecificDescriptions="false" flexoID="250" ownerContext="controlGraph2" assign="targetGoal">
+            <AssignableAction_ExpressionAction id="171" expression="toTarget" flexoID="249" userID="FLX" useSpecificDescriptions="false" />
+          </ControlGraph2_AssignationAction>
         </ControlGraph2_Sequence>
       </BehaviourControlGraph_Sequence>
     </LinkScheme>
   </FlexoConcept>
-  <FlexoConcept id="88" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="91" name="ObstacleGR">
-    <Inspector id="89" flexoID="88" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ObstacleGR" />
-    <ShapeRole id="90" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="270" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="91" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="40.91666666666666" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="93.48488394584139" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="7e75f9e7" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" layer="1" absoluteTextX="0.0" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="196.9944444444444" maximalWidth="Infinity" x="185.0">
-        <FocusedForegroundStyle id="92" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedColorBackgroundStyle id="93" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <TextStyle id="94" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
-        <ShapeBorder id="95" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="96" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedForegroundStyle id="97" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <FocusedColorBackgroundStyle id="98" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <ParallelogramShape id="99" shiftRatio="-0.20000000074505805" />
-        <ShadowStyle id="100" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
-        <ColorBackgroundStyle id="101" color="255,153,153" transparencyLevel="0.5" useTransparency="false" />
+  <FlexoConcept id="172" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="91" name="ObstacleGR">
+    <Inspector id="173" flexoID="88" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ObstacleGR" />
+    <ShapeRole id="174" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="270" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="175" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="40.91666666666666" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="93.48488394584139" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="7e75f9e7" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="196.9944444444444" maximalWidth="Infinity" x="185.0">
+        <FocusedForegroundStyle id="176" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedColorBackgroundStyle id="177" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <TextStyle id="178" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
+        <ShapeBorder id="179" bottom="2" left="2" right="2" top="2" />
+        <ForegroundStyle id="180" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="181" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedColorBackgroundStyle id="182" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <ParallelogramShape id="183" shiftRatio="-0.20000000074505805" />
+        <ShadowStyle id="184" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+        <ColorBackgroundStyle id="185" color="255,153,153" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <TypedDiagramModelSlot idref="16" />
+      <GRSpec id="186" featureName="label" flexoID="660" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="obstacle.name" />
+      <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="102" flexoID="281" useSpecificDescriptions="false" userID="FLX" name="obstacle" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstacle" cloningStrategy="Reference" cardinality="ZeroOne">
-      <FMLRTModelSlot idref="23" />
+    <FlexoConceptInstanceRole id="187" flexoID="281" useSpecificDescriptions="false" userID="FLX" name="obstacle" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstacle" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <DropScheme id="37" userID="FLX" useSpecificDescriptions="false" width="800" label="dropScheme" definePopupDefaultSize="false" height="600" flexoID="267" skipConfirmationPanel="false" name="dropScheme" target="top">
-      <BehaviourControlGraph_Sequence id="38" flexoID="292" userID="FLX" useSpecificDescriptions="false">
-        <ControlGraph1_AssignationAction id="39" userID="FLX" useSpecificDescriptions="false" flexoID="286" ownerContext="controlGraph1" assign="obstacle">
-          <AssignableAction_AddFlexoConceptInstance id="40" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="285" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Obstacle.create">
-            <FMLRTModelSlot idref="23" />
+    <DropScheme id="44" userID="FLX" useSpecificDescriptions="false" width="800" label="CreateObstacle" definePopupDefaultSize="false" height="600" flexoID="267" skipConfirmationPanel="false" name="CreateObstacle" target="top">
+      <BehaviourControlGraph_Sequence id="45" flexoID="292" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="46" userID="FLX" useSpecificDescriptions="false" flexoID="286" ownerContext="controlGraph1" assign="obstacle">
+          <AssignableAction_AddFlexoConceptInstance id="47" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="285" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Obstacle.create">
+            <FMLRTModelSlot idref="27" />
+            <AddFlexoConceptInstanceParameter id="48" flexoID="152" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="49" flexoID="153" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
           </AssignableAction_AddFlexoConceptInstance>
         </ControlGraph1_AssignationAction>
-        <ControlGraph2_AssignationAction id="41" userID="FLX" useSpecificDescriptions="false" flexoID="291" ownerContext="controlGraph2" assign="shape">
-          <AssignableAction_AddShape id="42" flexoID="290" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
-            <TypedDiagramModelSlot idref="16" />
+        <ControlGraph2_AssignationAction id="50" userID="FLX" useSpecificDescriptions="false" flexoID="291" ownerContext="controlGraph2" assign="shape">
+          <AssignableAction_AddShape id="51" flexoID="290" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
           </AssignableAction_AddShape>
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="52" flexoID="554" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+      <TextAreaParameter id="53" flexoID="555" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+    </DropScheme>
+    <DropScheme id="86" userID="FLX" useSpecificDescriptions="false" width="800" label="SelectObstacle" definePopupDefaultSize="false" height="600" flexoID="556" skipConfirmationPanel="false" name="SelectObstacle" target="top">
+      <BehaviourControlGraph_Sequence id="87" flexoID="567" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="88" userID="FLX" useSpecificDescriptions="false" flexoID="563" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="89" flexoID="562" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="90" userID="FLX" useSpecificDescriptions="false" flexoID="566" ownerContext="controlGraph2" assign="obstacle">
+          <AssignableAction_ExpressionAction id="91" expression="parameters.obstacle" flexoID="565" description="" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <FlexoConceptInstanceParameter id="92" userID="FLX" useSpecificDescriptions="false" label="obstacle" flexoID="557" isRequired="false" name="obstacle" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstacle" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+        <FMLRTModelSlot idref="27" />
+      </FlexoConceptInstanceParameter>
     </DropScheme>
   </FlexoConcept>
-  <FlexoConcept id="103" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="95" name="DomainPropertyGR">
-    <Inspector id="104" flexoID="92" useSpecificDescriptions="false" userID="FLX" inspectorTitle="DomainPropertyGR" />
-    <ShapeRole id="105" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="271" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="106" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="67.73913043478261" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="96.0" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="7d398e34" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" layer="1" absoluteTextX="0.0" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="252.04347826086956" maximalWidth="Infinity" x="419.7524752475248">
-        <FocusedForegroundStyle id="107" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedColorBackgroundStyle id="108" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <TextStyle id="109" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
-        <ShapeBorder id="110" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="111" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <SelectedForegroundStyle id="112" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <FocusedColorBackgroundStyle id="113" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
-        <CustomPolygonShape id="114">
+  <FlexoConcept id="188" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="95" name="DomainPropertyGR">
+    <Inspector id="189" flexoID="92" useSpecificDescriptions="false" userID="FLX" inspectorTitle="DomainPropertyGR" />
+    <ParentFlexoConcept idref="5" />
+    <ShapeRole id="190" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="271" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="191" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="67.73913043478261" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="82.13861386138613" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="7d398e34" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="62.26086956521739" maximalWidth="Infinity" x="97.61386138613865">
+        <FocusedForegroundStyle id="192" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedColorBackgroundStyle id="193" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <TextStyle id="194" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
+        <ShapeBorder id="195" bottom="2" left="2" right="2" top="2" />
+        <ForegroundStyle id="196" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="197" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedColorBackgroundStyle id="198" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <CustomPolygonShape id="199">
           <Point>0.0,1.0</Point>
           <Point>0.0,0.37254901960784315</Point>
           <Point>0.5217391304347826,0.0</Point>
@@ -170,79 +247,281 @@
           <Point>0.9855072463768116,1.0</Point>
           <Point>1.0,1.0</Point>
         </CustomPolygonShape>
-        <ShadowStyle id="115" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
-        <ColorBackgroundStyle id="116" color="102,102,255" transparencyLevel="0.5" useTransparency="false" />
+        <ShadowStyle id="200" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+        <ColorBackgroundStyle id="201" color="102,102,255" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <TypedDiagramModelSlot idref="16" />
+      <GRSpec id="202" featureName="label" flexoID="661" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="domainProperty.name" />
+      <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <DropScheme id="44" userID="FLX" useSpecificDescriptions="false" width="800" label="dropScheme" definePopupDefaultSize="false" height="600" flexoID="274" skipConfirmationPanel="false" name="dropScheme" target="top">
-      <BehaviourControlGraph_EmptyControlGraph id="45" flexoID="275" userID="FLX" useSpecificDescriptions="false" />
+    <FlexoConceptInstanceRole id="203" flexoID="293" useSpecificDescriptions="false" userID="FLX" name="domainProperty" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#DomainProperty" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
+    </FlexoConceptInstanceRole>
+    <DropScheme id="55" userID="FLX" useSpecificDescriptions="false" width="800" label="Create Domain Property" definePopupDefaultSize="false" height="600" flexoID="274" skipConfirmationPanel="false" name="CreateDomainProperty" target="top">
+      <BehaviourControlGraph_Sequence id="56" flexoID="310" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="57" userID="FLX" useSpecificDescriptions="false" flexoID="300" ownerContext="controlGraph1" assign="domainProperty">
+          <AssignableAction_AddFlexoConceptInstance id="58" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="297" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#DomainProperty.create" description="">
+            <FMLRTModelSlot idref="27" />
+            <AddFlexoConceptInstanceParameter id="59" flexoID="144" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="60" flexoID="145" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="61" userID="FLX" useSpecificDescriptions="false" flexoID="309" ownerContext="controlGraph2" assign="shape">
+          <AssignableAction_AddShape id="62" flexoID="308" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="63" flexoID="616" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+      <TextAreaParameter id="64" flexoID="617" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+    </DropScheme>
+    <DropScheme id="94" userID="FLX" useSpecificDescriptions="false" width="800" label="SelectDomainProperty" definePopupDefaultSize="false" height="600" flexoID="618" skipConfirmationPanel="false" name="SelectDomainProperty" target="top">
+      <BehaviourControlGraph_Sequence id="95" flexoID="629" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="96" userID="FLX" useSpecificDescriptions="false" flexoID="625" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="97" flexoID="624" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="98" userID="FLX" useSpecificDescriptions="false" flexoID="628" ownerContext="controlGraph2" assign="domainProperty">
+          <AssignableAction_ExpressionAction id="99" expression="parameters.domainProperty" flexoID="627" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <FlexoConceptInstanceParameter id="100" userID="FLX" useSpecificDescriptions="false" label="domainProperty" flexoID="619" isRequired="false" name="domainProperty" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#DomainProperty" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+        <FMLRTModelSlot idref="27" />
+      </FlexoConceptInstanceParameter>
     </DropScheme>
   </FlexoConcept>
-  <FlexoConcept id="117" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="99" name="ExpectationGR">
-    <Inspector id="118" flexoID="96" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ExpectationGR" />
-  </FlexoConcept>
-  <FlexoConcept id="119" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="103" name="JustifiedGR">
-    <Inspector id="120" flexoID="100" useSpecificDescriptions="false" userID="FLX" inspectorTitle="JustifiedGR" />
-  </FlexoConcept>
-  <FlexoConcept id="121" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="107" name="RefinementGR">
-    <Inspector id="122" flexoID="104" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RefinementGR" />
-    <ConnectorRole id="123" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="111" name="connector" cardinality="ZeroOne">
-      <ConnectorGraphicalRepresentation id="124" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" isVisible="true" drawControlPointsWhenFocused="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" absoluteTextX="0.0" layer="64" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="190e999f">
-        <SelectedForegroundStyle id="125" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <FocusedForegroundStyle id="126" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-        <LineConnectorSpecification id="127" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="FILLED_CIRCLE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="15.0" endSymbolSize="15.0" startSymbol="NONE" endSymbol="FILLED_ARROW" />
-        <TextStyle id="128" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="129" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
-      </ConnectorGraphicalRepresentation>
-      <TypedDiagramModelSlot idref="16" />
-    </ConnectorRole>
-    <FlexoConceptInstanceRole id="130" flexoID="113" useSpecificDescriptions="false" userID="FLX" name="source" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RequirementGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="131" flexoID="114" useSpecificDescriptions="false" userID="FLX" name="target" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RequirementGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="132" flexoID="156" useSpecificDescriptions="false" userID="FLX" name="refinment" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Refinment" cloningStrategy="Reference" cardinality="ZeroOne">
-      <FMLRTModelSlot idref="23" />
+  <FlexoConcept id="204" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="99" name="ExpectationGR">
+    <Inspector id="205" flexoID="96" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ExpectationGR" />
+    <ParentFlexoConcept idref="5" />
+    <FlexoConceptInstanceRole id="206" flexoID="430" useSpecificDescriptions="false" userID="FLX" name="expectation" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Expectation" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <LinkScheme id="133" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#RequirementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#RequirementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refinement" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="130" height="600" skipConfirmationPanel="false" name="refinement" eastDirectionSupported="true">
-      <BehaviourControlGraph_Sequence id="134" flexoID="144" userID="FLX" useSpecificDescriptions="false">
-        <ControlGraph1_AssignationAction id="135" userID="FLX" useSpecificDescriptions="false" flexoID="136" ownerContext="controlGraph1" assign="connector">
-          <AssignableAction_AddConnector id="136" userID="FLX" useSpecificDescriptions="false" flexoID="135" description="" fromShape="fromTarget.shape" toShape="toTarget.shape">
-            <TypedDiagramModelSlot idref="16" />
+    <ShapeRole id="207" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="633" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="208" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="39.99999999999999" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="92.83297598627789" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="1398a60e" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="62.0" maximalWidth="Infinity" x="418.0">
+        <FocusedForegroundStyle id="209" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedColorBackgroundStyle id="210" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <TextStyle id="211" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" isBackgroundColored="false" />
+        <ShapeBorder id="212" bottom="2" left="2" right="2" top="2" />
+        <ForegroundStyle id="213" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.3000000014901163" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="214" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedColorBackgroundStyle id="215" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
+        <ParallelogramShape id="216" shiftRatio="0.2" />
+        <ShadowStyle id="217" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+        <ColorBackgroundStyle id="218" color="255,255,102" transparencyLevel="0.5" useTransparency="false" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ShapeRole>
+    <DropScheme id="102" userID="FLX" useSpecificDescriptions="false" width="800" label="Create_Expectation" definePopupDefaultSize="false" height="600" flexoID="442" skipConfirmationPanel="false" name="CreateExpectation" target="top">
+      <BehaviourControlGraph_Sequence id="103" flexoID="648" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="104" userID="FLX" useSpecificDescriptions="false" flexoID="636" ownerContext="controlGraph1" assign="shape">
+          <AssignableAction_AddShape id="105" flexoID="635" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+            <TypedDiagramModelSlot idref="19" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="106" userID="FLX" useSpecificDescriptions="false" flexoID="647" ownerContext="controlGraph2" assign="expectation">
+          <AssignableAction_AddFlexoConceptInstance id="107" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="646" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Expectation.create">
+            <FMLRTModelSlot idref="27" />
+            <AddFlexoConceptInstanceParameter id="108" flexoID="182" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="109" flexoID="183" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="110" flexoID="444" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+      <TextAreaParameter id="111" flexoID="445" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+    </DropScheme>
+    <DropScheme id="113" userID="FLX" useSpecificDescriptions="false" width="800" label="SelectExpectation" definePopupDefaultSize="false" height="600" flexoID="649" skipConfirmationPanel="false" name="SelectExpectation" target="top">
+      <BehaviourControlGraph_AssignationAction id="114" userID="FLX" useSpecificDescriptions="false" flexoID="654" assign="expectation">
+        <AssignableAction_ExpressionAction id="115" expression="parameters.expectation" flexoID="653" description="" userID="FLX" useSpecificDescriptions="false" />
+      </BehaviourControlGraph_AssignationAction>
+      <FlexoConceptInstanceParameter id="116" userID="FLX" useSpecificDescriptions="false" label="expectation" flexoID="650" isRequired="false" name="expectation" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Expectation" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+        <FMLRTModelSlot idref="27" />
+      </FlexoConceptInstanceParameter>
+    </DropScheme>
+  </FlexoConcept>
+  <FlexoConcept id="219" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="103" name="JustifiedGR">
+    <Inspector id="220" flexoID="100" useSpecificDescriptions="false" userID="FLX" inspectorTitle="JustifiedGR" />
+  </FlexoConcept>
+  <FlexoConcept id="221" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="107" name="RefinementTargetGR">
+    <Inspector id="222" flexoID="104" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RefinementGR" />
+    <ParentFlexoConcept id="223" useSpecificDescriptions="false" userID="FLX" isAbstract="true" flexoID="379" name="RefinementGR">
+      <Inspector id="224" flexoID="376" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RefinementGR" />
+      <ShapeRole id="225" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="568" name="shape" cardinality="ZeroOne">
+        <ShapeGraphicalRepresentation id="226" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="80.0" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="true" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="15572af8" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="40.0" maximalWidth="Infinity" x="160.0">
+          <FocusedForegroundStyle id="227" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+          <SelectedColorBackgroundStyle id="228" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+          <TextStyle id="229" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+          <ShapeBorder id="230" bottom="2" left="2" right="2" top="2" />
+          <ForegroundStyle id="231" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+          <SelectedForegroundStyle id="232" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+          <FocusedColorBackgroundStyle id="233" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+          <RectangleShape id="234" arcSize="30.0" isRounded="false" />
+          <ShadowStyle id="235" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
+          <ColorBackgroundStyle id="236" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+        </ShapeGraphicalRepresentation>
+        <TypedDiagramModelSlot idref="19" />
+      </ShapeRole>
+    </ParentFlexoConcept>
+    <ConnectorRole id="237" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="111" name="connector" cardinality="ZeroOne">
+      <ConnectorGraphicalRepresentation id="238" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isLabelEditable="true" isSelectable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="190e999f">
+        <SelectedForegroundStyle id="239" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="240" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <LineConnectorSpecification id="241" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="15.0" endSymbolSize="15.0" startSymbol="NONE" endSymbol="FILLED_ARROW" />
+        <TextStyle id="242" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+        <ForegroundStyle id="243" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="244" flexoID="156" useSpecificDescriptions="false" userID="FLX" name="refinment" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Refinment" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
+    </FlexoConceptInstanceRole>
+    <FlexoConceptInstanceRole id="245" flexoID="355" useSpecificDescriptions="false" userID="FLX" name="target" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="246" flexoID="375" useSpecificDescriptions="false" userID="FLX" name="source" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RefinementPointGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <LinkScheme id="247" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#RefinementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refinement" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="130" height="600" skipConfirmationPanel="false" name="refinement" eastDirectionSupported="true">
+      <BehaviourControlGraph_Sequence id="248" flexoID="144" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="249" userID="FLX" useSpecificDescriptions="false" flexoID="136" ownerContext="controlGraph1" assign="connector">
+          <AssignableAction_AddConnector id="250" userID="FLX" useSpecificDescriptions="false" flexoID="135" description="" fromShape="fromTarget.shape" toShape="toTarget.shape">
+            <TypedDiagramModelSlot idref="19" />
           </AssignableAction_AddConnector>
         </ControlGraph1_AssignationAction>
-        <ControlGraph2_Sequence id="137" flexoID="151" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
-          <ControlGraph1_AssignationAction id="138" userID="FLX" useSpecificDescriptions="false" flexoID="143" ownerContext="controlGraph1" assign="source">
-            <AssignableAction_ExpressionAction id="139" expression="fromTarget" flexoID="142" userID="FLX" useSpecificDescriptions="false" />
+        <ControlGraph2_Sequence id="251" flexoID="151" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
+          <ControlGraph1_AssignationAction id="252" userID="FLX" useSpecificDescriptions="false" flexoID="143" ownerContext="controlGraph1" assign="source">
+            <AssignableAction_ExpressionAction id="253" expression="fromTarget" flexoID="142" userID="FLX" useSpecificDescriptions="false" />
           </ControlGraph1_AssignationAction>
-          <ControlGraph2_Sequence id="140" flexoID="162" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
-            <ControlGraph1_AssignationAction id="141" userID="FLX" useSpecificDescriptions="false" flexoID="147" ownerContext="controlGraph1" assign="target">
-              <AssignableAction_ExpressionAction id="142" expression="toTarget" flexoID="146" userID="FLX" useSpecificDescriptions="false" />
-            </ControlGraph1_AssignationAction>
-            <ControlGraph2_AssignationAction id="143" userID="FLX" useSpecificDescriptions="false" flexoID="161" ownerContext="controlGraph2" assign="refinment">
-              <AssignableAction_AddFlexoConceptInstance id="144" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="160" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Refinment.create" description="">
-                <FMLRTModelSlot idref="23" />
-                <AddFlexoConceptInstanceParameter id="145" flexoID="97" userID="FLX" useSpecificDescriptions="false" value="source.requirement" paramName="sourceGoal" />
-                <AddFlexoConceptInstanceParameter id="146" flexoID="98" userID="FLX" useSpecificDescriptions="false" paramName="targetGoal" />
-              </AssignableAction_AddFlexoConceptInstance>
-            </ControlGraph2_AssignationAction>
-          </ControlGraph2_Sequence>
+          <ControlGraph2_AssignationAction id="254" userID="FLX" useSpecificDescriptions="false" flexoID="147" ownerContext="controlGraph2" assign="target">
+            <AssignableAction_ExpressionAction id="255" expression="toTarget" flexoID="146" userID="FLX" useSpecificDescriptions="false" />
+          </ControlGraph2_AssignationAction>
         </ControlGraph2_Sequence>
       </BehaviourControlGraph_Sequence>
     </LinkScheme>
   </FlexoConcept>
-  <Inspector id="147" flexoID="9" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOSModeling" />
-  <ModelSlot_FMLRTModelSlot id="23" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="2" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://formose.viewpoint.kaos/Kaos" cardinality="ZeroOne" />
-  <ModelSlot_TypedDiagramModelSlot id="16" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="10" isRequired="true" name="goalModelSlot" metaModelURI="http://formose.kaos.diagram.goal" isReadOnly="false" cardinality="ZeroOne">
-    <FMLDiagramPaletteElementBinding id="17" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="53">
-      <DropScheme idref="18" />
+  <FlexoConcept idref="5" />
+  <FlexoConcept id="256" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="356" name="RefinementPointGR">
+    <Inspector id="257" flexoID="357" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RefinementPoint" />
+    <ParentFlexoConcept idref="223" />
+    <ShapeRole id="258" exampleLabel="" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="371" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="259" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="26.436363636363637" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="28.611764705882344" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="true" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="11c9e5bd" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="37.0" maximalWidth="Infinity" x="160.0">
+        <FocusedForegroundStyle id="260" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedColorBackgroundStyle id="261" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+        <TextStyle id="262" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+        <ShapeBorder id="263" bottom="2" left="2" right="2" top="2" />
+        <ForegroundStyle id="264" dashStyle="PLAIN_STROKE" color="255,153,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="265" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedColorBackgroundStyle id="266" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
+        <CircleShape id="267" />
+        <ShadowStyle id="268" shadowDepth="2" shadowBlur="4" drawShadow="false" shadowDarkness="150" />
+        <ColorBackgroundStyle id="269" color="255,204,0" transparencyLevel="0.5" useTransparency="false" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ShapeRole>
+    <DropScheme id="66" userID="FLX" useSpecificDescriptions="false" width="800" label="createRefinmentPoint" definePopupDefaultSize="false" height="600" flexoID="533" skipConfirmationPanel="false" name="createRefinmentPoint" target="top">
+      <BehaviourControlGraph_AssignationAction id="67" userID="FLX" useSpecificDescriptions="false" flexoID="539" assign="shape">
+        <AssignableAction_AddShape id="68" flexoID="538" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
+          <TypedDiagramModelSlot idref="19" />
+        </AssignableAction_AddShape>
+      </BehaviourControlGraph_AssignationAction>
+    </DropScheme>
+  </FlexoConcept>
+  <FlexoConcept idref="223" />
+  <FlexoConcept id="270" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="383" name="RefinementSourceGR">
+    <Inspector id="271" flexoID="380" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RefinementSourceGR" />
+    <ParentFlexoConcept idref="223" />
+    <ConnectorRole id="272" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="396" name="connector" cardinality="ZeroOne">
+      <ConnectorGraphicalRepresentation id="273" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isLabelEditable="true" isSelectable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="520d6b2b">
+        <SelectedForegroundStyle id="274" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="275" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <LineConnectorSpecification id="276" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="10.0" endSymbolSize="10.0" startSymbol="NONE" endSymbol="NONE" />
+        <TextStyle id="277" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+        <ForegroundStyle id="278" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ConnectorRole>
+    <LinkScheme id="279" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#RefinementPointGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refined" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="400" height="600" skipConfirmationPanel="false" name="linkScheme" eastDirectionSupported="true">
+      <BehaviourControlGraph_AssignationAction id="280" userID="FLX" useSpecificDescriptions="false" flexoID="418" assign="connector">
+        <AssignableAction_AddConnector id="281" userID="FLX" useSpecificDescriptions="false" flexoID="417" fromShape="fromTarget.shape" toShape="toTarget.shape">
+          <TypedDiagramModelSlot idref="19" />
+        </AssignableAction_AddConnector>
+      </BehaviourControlGraph_AssignationAction>
+    </LinkScheme>
+  </FlexoConcept>
+  <FlexoConcept id="282" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="673" name="ObstructGR">
+    <Inspector id="283" flexoID="670" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ObstructGR" />
+    <ConnectorRole id="284" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="674" name="connector" cardinality="ZeroOne">
+      <ConnectorGraphicalRepresentation id="285" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isLabelEditable="true" isSelectable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="19593bed">
+        <SelectedForegroundStyle id="286" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="287" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <ArcConnector id="288" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" cpPosition="0.5,0.4" cp1RelativeToStartObject="0.9999455434085489,0.49262072998659157" areBoundsAdjustable="false" middleSymbolSize="10.0" endSymbolSize="10.0" cp2RelativeToEndObject="5.526923040660714E-5,0.49256587760937415" startSymbol="NONE" endSymbol="PLAIN_SQUARE" />
+        <TextStyle id="289" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+        <ForegroundStyle id="290" dashStyle="PLAIN_STROKE" color="255,0,102" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.999999998509884" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="291" flexoID="678" useSpecificDescriptions="false" userID="FLX" name="obstruct" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstruct" cloningStrategy="Reference" cardinality="ZeroOne">
+      <FMLRTModelSlot idref="27" />
+    </FlexoConceptInstanceRole>
+    <LinkScheme id="292" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#ObstacleGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractGoalGR" userID="FLX" useSpecificDescriptions="false" width="800" label="obstruct" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="679" height="600" skipConfirmationPanel="false" name="obstruct" eastDirectionSupported="true">
+      <BehaviourControlGraph_AssignationAction id="293" userID="FLX" useSpecificDescriptions="false" flexoID="696" assign="connector">
+        <AssignableAction_AddConnector id="294" userID="FLX" useSpecificDescriptions="false" flexoID="695" fromShape="fromTarget.shape" toShape="toTarget.shape">
+          <TypedDiagramModelSlot idref="19" />
+        </AssignableAction_AddConnector>
+      </BehaviourControlGraph_AssignationAction>
+    </LinkScheme>
+  </FlexoConcept>
+  <FlexoConcept id="295" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="702" name="ResolvesGR">
+    <Inspector id="296" flexoID="699" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ResolvesGR" />
+    <ConnectorRole id="297" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="703" name="connector" cardinality="ZeroOne">
+      <ConnectorGraphicalRepresentation id="298" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isLabelEditable="true" isSelectable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="6a3a952a">
+        <SelectedForegroundStyle id="299" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="300" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <ArcConnector id="301" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" cpPosition="0.5,0.4" cp1RelativeToStartObject="0.9999455434085489,0.49262072998659157" areBoundsAdjustable="false" middleSymbolSize="10.0" endSymbolSize="10.0" cp2RelativeToEndObject="5.526923040660714E-5,0.49256587760937415" startSymbol="NONE" endSymbol="FILLED_SQUARE" />
+        <TextStyle id="302" orientation="0" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" isBackgroundColored="false" />
+        <ForegroundStyle id="303" dashStyle="PLAIN_STROKE" color="0,255,102" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="19" />
+    </ConnectorRole>
+    <LinkScheme id="304" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractGoalGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#ObstacleGR" userID="FLX" useSpecificDescriptions="false" width="800" label="resolves" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="707" height="600" skipConfirmationPanel="false" name="resolves" eastDirectionSupported="true">
+      <BehaviourControlGraph_AssignationAction id="305" userID="FLX" useSpecificDescriptions="false" flexoID="713" assign="connector">
+        <AssignableAction_AddConnector id="306" userID="FLX" useSpecificDescriptions="false" flexoID="712" fromShape="fromTarget.shape" toShape="toTarget.shape">
+          <TypedDiagramModelSlot idref="19" />
+        </AssignableAction_AddConnector>
+      </BehaviourControlGraph_AssignationAction>
+    </LinkScheme>
+  </FlexoConcept>
+  <FlexoConcept idref="3" />
+  <Inspector id="307" flexoID="9" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOSModeling" />
+  <ModelSlot_FMLRTModelSlot id="27" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="2" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://formose.viewpoint.kaos/Kaos" cardinality="ZeroOne" />
+  <ModelSlot_TypedDiagramModelSlot id="19" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="10" isRequired="true" name="goalModelSlot" metaModelURI="http://formose.kaos.diagram.goal" isReadOnly="false" cardinality="ZeroOne">
+    <FMLDiagramPaletteElementBinding id="20" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="53">
+      <DropScheme idref="21" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="26" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="191">
-      <DropScheme idref="27" />
+    <FMLDiagramPaletteElementBinding id="32" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="191">
+      <DropScheme idref="33" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="36" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="268">
-      <DropScheme idref="37" />
-    </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="43" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="276">
+    <FMLDiagramPaletteElementBinding id="43" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="268">
       <DropScheme idref="44" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="54" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="276">
+      <DropScheme idref="55" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="65" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Refinement" useSpecificDescriptions="false" userID="FLX" flexoID="540">
+      <DropScheme idref="66" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="69" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="599">
+      <DropScheme idref="70" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="77" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="600">
+      <DropScheme idref="78" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="85" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="601">
+      <DropScheme idref="86" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="93" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="602">
+      <DropScheme idref="94" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="101" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="632">
+      <DropScheme idref="102" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="112" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="655">
+      <DropScheme idref="113" />
     </FMLDiagramPaletteElementBinding>
   </ModelSlot_TypedDiagramModelSlot>
 </VirtualModel>
