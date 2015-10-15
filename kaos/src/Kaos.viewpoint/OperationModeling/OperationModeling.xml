@@ -6,8 +6,14 @@
   <FlexoConcept id="3" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="6" name="EventGR">
     <Inspector id="4" flexoID="7" useSpecificDescriptions="false" userID="FLX" inspectorTitle="EventGR" />
   </FlexoConcept>
-  <FlexoConcept id="5" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="10" name="EntityGR">
+  <FlexoConcept id="5" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="10" name="ObjectGR">
     <Inspector id="6" flexoID="11" useSpecificDescriptions="false" userID="FLX" inspectorTitle="EntityGR" />
   </FlexoConcept>
-  <Inspector id="7" flexoID="14" useSpecificDescriptions="false" userID="FLX" inspectorTitle="OperationModeling" />
+  <FlexoConcept id="7" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="18" name="InputGR">
+    <Inspector id="8" flexoID="15" useSpecificDescriptions="false" userID="FLX" inspectorTitle="InputLinkGR" />
+  </FlexoConcept>
+  <FlexoConcept id="9" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="22" name="OutputGR">
+    <Inspector id="10" flexoID="19" useSpecificDescriptions="false" userID="FLX" inspectorTitle="OutputLinkGR" />
+  </FlexoConcept>
+  <Inspector id="11" flexoID="14" useSpecificDescriptions="false" userID="FLX" inspectorTitle="OperationModeling" />
 </VirtualModel>
