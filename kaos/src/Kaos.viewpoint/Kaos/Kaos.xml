@@ -130,10 +130,10 @@
     <CreationScheme id="83" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="34" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="84" flexoID="46" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="85" userID="FLX" useSpecificDescriptions="false" flexoID="42" ownerContext="controlGraph1" assign="source">
-          <AssignableAction_ExpressionAction id="86" expression="parameters.sourceGoal" flexoID="41" userID="FLX" useSpecificDescriptions="false" />
+          <AssignableAction_ExpressionAction id="86" expression="parameters.source" flexoID="41" userID="FLX" useSpecificDescriptions="false" />
         </ControlGraph1_AssignationAction>
         <ControlGraph2_AssignationAction id="87" userID="FLX" useSpecificDescriptions="false" flexoID="45" ownerContext="controlGraph2" assign="target">
-          <AssignableAction_ExpressionAction id="88" expression="parameters.targetGoal" flexoID="44" description="" userID="FLX" useSpecificDescriptions="false" />
+          <AssignableAction_ExpressionAction id="88" expression="parameters.target" flexoID="44" description="" userID="FLX" useSpecificDescriptions="false" />
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
       <FlexoConceptInstanceParameter id="89" userID="FLX" useSpecificDescriptions="false" label="source" flexoID="35" isRequired="false" name="source" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#AbstractKaosElement" aVirtualModelInstance="virtualModelInstance" />
