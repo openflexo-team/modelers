@@ -21,7 +21,7 @@
           </ShapeGraphicalRepresentation>
           <TypedDiagramModelSlot idref="19" />
         </ShapeRole>
-        <FlexoConceptInstanceRole id="117" flexoID="848" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#AbstractKaosElement" cloningStrategy="Reference" cardinality="ZeroOne">
+        <FlexoConceptInstanceRole id="117" flexoID="848" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#AbstractKaosElement" cloningStrategy="Reference" cardinality="ZeroOne">
           <FMLRTModelSlot idref="27" />
         </FlexoConceptInstanceRole>
         <DropScheme id="118" userID="FLX" useSpecificDescriptions="false" width="800" label="dropScheme" definePopupDefaultSize="false" height="600" flexoID="446" skipConfirmationPanel="false" name="dropScheme" target="top">
@@ -47,7 +47,7 @@
       <GRSpec id="134" featureName="label" flexoID="918" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="135" flexoID="165" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="135" flexoID="165" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Goal" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
     <DropScheme id="21" userID="FLX" useSpecificDescriptions="false" width="800" label="create_goal" definePopupDefaultSize="false" height="600" flexoID="52" skipConfirmationPanel="false" name="CreateGoal" target="top">
@@ -58,7 +58,7 @@
           </AssignableAction_AddShape>
         </ControlGraph1_AssignationAction>
         <ControlGraph2_AssignationAction id="25" userID="FLX" useSpecificDescriptions="false" flexoID="459" ownerContext="controlGraph2" assign="kaosElement">
-          <AssignableAction_AddFlexoConceptInstance id="26" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="458" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Goal.create" description="">
+          <AssignableAction_AddFlexoConceptInstance id="26" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="458" creationSchemeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Goal.create" description="">
             <FMLRTModelSlot idref="27" />
             <AddFlexoConceptInstanceParameter id="28" flexoID="146" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
             <AddFlexoConceptInstanceParameter id="29" flexoID="147" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
@@ -79,7 +79,7 @@
           <AssignableAction_ExpressionAction id="75" expression="parameters.goal" flexoID="472" description="" userID="FLX" useSpecificDescriptions="false" />
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <FlexoConceptInstanceParameter id="76" userID="FLX" useSpecificDescriptions="false" label="goal" flexoID="476" isRequired="false" name="goal" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Goal" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+      <FlexoConceptInstanceParameter id="76" userID="FLX" useSpecificDescriptions="false" label="goal" flexoID="476" isRequired="false" name="goal" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Goal" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
         <FMLRTModelSlot idref="27" />
       </FlexoConceptInstanceParameter>
     </DropScheme>
@@ -103,7 +103,7 @@
       <GRSpec id="150" featureName="label" flexoID="919" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="151" flexoID="175" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Requirement" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="151" flexoID="175" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Requirement" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
     <DropScheme id="33" userID="FLX" useSpecificDescriptions="false" width="800" label="Create_Requirement" definePopupDefaultSize="false" height="600" flexoID="176" skipConfirmationPanel="false" name="CreateRequirement" target="top">
@@ -114,7 +114,7 @@
           </AssignableAction_AddShape>
         </ControlGraph1_AssignationAction>
         <ControlGraph2_AssignationAction id="37" userID="FLX" useSpecificDescriptions="false" flexoID="503" ownerContext="controlGraph2" assign="kaosElement">
-          <AssignableAction_AddFlexoConceptInstance id="38" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="502" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Requirement.create" description="">
+          <AssignableAction_AddFlexoConceptInstance id="38" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="502" creationSchemeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Requirement.create" description="">
             <FMLRTModelSlot idref="27" />
             <AddFlexoConceptInstanceParameter id="39" flexoID="146" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
             <AddFlexoConceptInstanceParameter id="40" flexoID="147" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
@@ -135,7 +135,7 @@
           <AssignableAction_ExpressionAction id="83" expression="parameters.requirement" flexoID="513" description="" userID="FLX" useSpecificDescriptions="false" />
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <FlexoConceptInstanceParameter id="84" userID="FLX" useSpecificDescriptions="false" label="requirement" flexoID="505" isRequired="false" name="requirement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Requirement" aVirtualModelInstance="kaosVirtualModel">
+      <FlexoConceptInstanceParameter id="84" userID="FLX" useSpecificDescriptions="false" label="requirement" flexoID="505" isRequired="false" name="requirement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Requirement" aVirtualModelInstance="kaosVirtualModel">
         <FMLRTModelSlot idref="27" />
       </FlexoConceptInstanceParameter>
     </DropScheme>
@@ -152,12 +152,12 @@
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="19" />
     </ConnectorRole>
-    <FlexoConceptInstanceRole id="161" flexoID="243" useSpecificDescriptions="false" userID="FLX" name="sourceGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="162" flexoID="244" useSpecificDescriptions="false" userID="FLX" name="targetGoal" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="163" flexoID="253" useSpecificDescriptions="false" userID="FLX" name="conflictWith" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#ConflictWith" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="161" flexoID="243" useSpecificDescriptions="false" userID="FLX" name="sourceGoal" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="162" flexoID="244" useSpecificDescriptions="false" userID="FLX" name="targetGoal" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#GoalGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="163" flexoID="253" useSpecificDescriptions="false" userID="FLX" name="conflictWith" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#ConflictWith" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <LinkScheme id="164" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="conflict" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="40" height="600" skipConfirmationPanel="false" name="conflict" eastDirectionSupported="true">
+    <LinkScheme id="164" northDirectionSupported="true" fromTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractKaosElementGR" toTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractKaosElementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="conflict" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="40" height="600" skipConfirmationPanel="false" name="conflict" eastDirectionSupported="true">
       <BehaviourControlGraph_Sequence id="165" flexoID="251" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="166" userID="FLX" useSpecificDescriptions="false" flexoID="73" ownerContext="controlGraph1" assign="connector">
           <AssignableAction_AddConnector id="167" userID="FLX" useSpecificDescriptions="false" flexoID="72" fromShape="fromTarget.shape" toShape="toTarget.shape">
@@ -196,13 +196,13 @@
       <GRSpec id="189" featureName="label" flexoID="920" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="obstacle.name" />
       <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="190" flexoID="281" useSpecificDescriptions="false" userID="FLX" name="obstacle" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstacle" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="190" flexoID="281" useSpecificDescriptions="false" userID="FLX" name="obstacle" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Obstacle" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
     <DropScheme id="44" userID="FLX" useSpecificDescriptions="false" width="800" label="CreateObstacle" definePopupDefaultSize="false" height="600" flexoID="267" skipConfirmationPanel="false" name="CreateObstacle" target="top">
       <BehaviourControlGraph_Sequence id="45" flexoID="292" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="46" userID="FLX" useSpecificDescriptions="false" flexoID="286" ownerContext="controlGraph1" assign="obstacle">
-          <AssignableAction_AddFlexoConceptInstance id="47" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="285" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Obstacle.create">
+          <AssignableAction_AddFlexoConceptInstance id="47" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="285" creationSchemeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Obstacle.create">
             <FMLRTModelSlot idref="27" />
             <AddFlexoConceptInstanceParameter id="48" flexoID="152" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
             <AddFlexoConceptInstanceParameter id="49" flexoID="153" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
@@ -228,7 +228,7 @@
           <AssignableAction_ExpressionAction id="91" expression="parameters.obstacle" flexoID="565" description="" userID="FLX" useSpecificDescriptions="false" />
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <FlexoConceptInstanceParameter id="92" userID="FLX" useSpecificDescriptions="false" label="obstacle" flexoID="557" isRequired="false" name="obstacle" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstacle" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+      <FlexoConceptInstanceParameter id="92" userID="FLX" useSpecificDescriptions="false" label="obstacle" flexoID="557" isRequired="false" name="obstacle" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Obstacle" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
         <FMLRTModelSlot idref="27" />
       </FlexoConceptInstanceParameter>
     </DropScheme>
@@ -259,13 +259,13 @@
       <GRSpec id="205" featureName="label" flexoID="921" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="206" flexoID="293" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#DomainProperty" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="206" flexoID="293" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#DomainProperty" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
     <DropScheme id="55" userID="FLX" useSpecificDescriptions="false" width="800" label="Create Domain Property" definePopupDefaultSize="false" height="600" flexoID="274" skipConfirmationPanel="false" name="CreateDomainProperty" target="top">
       <BehaviourControlGraph_Sequence id="56" flexoID="310" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="57" userID="FLX" useSpecificDescriptions="false" flexoID="300" ownerContext="controlGraph1" assign="kaosElement">
-          <AssignableAction_AddFlexoConceptInstance id="58" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="297" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#DomainProperty.create" description="">
+          <AssignableAction_AddFlexoConceptInstance id="58" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="297" creationSchemeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#DomainProperty.create" description="">
             <FMLRTModelSlot idref="27" />
             <AddFlexoConceptInstanceParameter id="59" flexoID="144" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
             <AddFlexoConceptInstanceParameter id="60" flexoID="145" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
@@ -291,7 +291,7 @@
           <AssignableAction_ExpressionAction id="99" expression="parameters.domainProperty" flexoID="627" description="" userID="FLX" useSpecificDescriptions="false" />
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <FlexoConceptInstanceParameter id="100" userID="FLX" useSpecificDescriptions="false" label="domainProperty" flexoID="619" isRequired="false" name="domainProperty" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#DomainProperty" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+      <FlexoConceptInstanceParameter id="100" userID="FLX" useSpecificDescriptions="false" label="domainProperty" flexoID="619" isRequired="false" name="domainProperty" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#DomainProperty" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
         <FMLRTModelSlot idref="27" />
       </FlexoConceptInstanceParameter>
     </DropScheme>
@@ -299,7 +299,7 @@
   <FlexoConcept id="207" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="99" name="ExpectationGR">
     <Inspector id="208" flexoID="96" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ExpectationGR" />
     <ParentFlexoConcept idref="5" />
-    <FlexoConceptInstanceRole id="209" flexoID="430" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Expectation" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="209" flexoID="430" useSpecificDescriptions="false" userID="FLX" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Expectation" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
     <ShapeRole id="210" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="633" name="shape" cardinality="ZeroOne">
@@ -326,7 +326,7 @@
           </AssignableAction_AddShape>
         </ControlGraph1_AssignationAction>
         <ControlGraph2_AssignationAction id="106" userID="FLX" useSpecificDescriptions="false" flexoID="647" ownerContext="controlGraph2" assign="kaosElement">
-          <AssignableAction_AddFlexoConceptInstance id="107" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="646" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Expectation.create" description="">
+          <AssignableAction_AddFlexoConceptInstance id="107" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="646" creationSchemeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Expectation.create" description="">
             <FMLRTModelSlot idref="27" />
             <AddFlexoConceptInstanceParameter id="108" flexoID="182" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
             <AddFlexoConceptInstanceParameter id="109" flexoID="183" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
@@ -340,7 +340,7 @@
       <BehaviourControlGraph_AssignationAction id="114" userID="FLX" useSpecificDescriptions="false" flexoID="654" assign="kaosElement">
         <AssignableAction_ExpressionAction id="115" expression="parameters.expectation" flexoID="653" description="" userID="FLX" useSpecificDescriptions="false" />
       </BehaviourControlGraph_AssignationAction>
-      <FlexoConceptInstanceParameter id="116" userID="FLX" useSpecificDescriptions="false" label="expectation" flexoID="650" isRequired="false" name="expectation" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Expectation" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
+      <FlexoConceptInstanceParameter id="116" userID="FLX" useSpecificDescriptions="false" label="expectation" flexoID="650" isRequired="false" name="expectation" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Expectation" aVirtualModelInstance="virtualModelInstance.kaosVirtualModel">
         <FMLRTModelSlot idref="27" />
       </FlexoConceptInstanceParameter>
     </DropScheme>
@@ -378,9 +378,9 @@
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="19" />
     </ConnectorRole>
-    <FlexoConceptInstanceRole id="248" flexoID="355" useSpecificDescriptions="false" userID="FLX" name="target" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="249" flexoID="375" useSpecificDescriptions="false" userID="FLX" name="source" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RefinementPointGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <LinkScheme id="250" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#RefinementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refinement" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="130" height="600" skipConfirmationPanel="false" name="refinement" eastDirectionSupported="true">
+    <FlexoConceptInstanceRole id="248" flexoID="355" useSpecificDescriptions="false" userID="FLX" name="target" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractKaosElementGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="249" flexoID="375" useSpecificDescriptions="false" userID="FLX" name="source" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#RefinementPointGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <LinkScheme id="250" northDirectionSupported="true" fromTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#RefinementGR" toTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractKaosElementGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refinement" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="130" height="600" skipConfirmationPanel="false" name="refinement" eastDirectionSupported="true">
       <BehaviourControlGraph_Sequence id="251" flexoID="144" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="252" userID="FLX" useSpecificDescriptions="false" flexoID="136" ownerContext="controlGraph1" assign="connector">
           <AssignableAction_AddConnector id="253" userID="FLX" useSpecificDescriptions="false" flexoID="135" description="" fromShape="fromTarget.shape" toShape="toTarget.shape">
@@ -403,7 +403,7 @@
                 <ControlGraph_AssignationAction id="264" userID="FLX" useSpecificDescriptions="false" flexoID="893" ownerContext="controlGraph" assign="source.refinement.target">
                   <AssignableAction_ExpressionAction id="265" expression="toTarget.kaosElement" flexoID="892" userID="FLX" useSpecificDescriptions="false" />
                 </ControlGraph_AssignationAction>
-                <Iteration_SelectFlexoConceptInstance id="266" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance" flexoID="888" ownerContext="iterationControlGraph" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RefinementSourceGR">
+                <Iteration_SelectFlexoConceptInstance id="266" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance" flexoID="888" ownerContext="iterationControlGraph" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#RefinementSourceGR">
                   <Condition id="267" flexoID="889" condition="(selected.point = source)" useSpecificDescriptions="false" userID="FLX" />
                   <FMLRTModelSlot idref="27" />
                 </Iteration_SelectFlexoConceptInstance>
@@ -433,7 +433,7 @@
       </ShapeGraphicalRepresentation>
       <TypedDiagramModelSlot idref="19" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="282" flexoID="811" useSpecificDescriptions="false" userID="FLX" name="target" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RefinementTargetGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="282" flexoID="811" useSpecificDescriptions="false" userID="FLX" name="target" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#RefinementTargetGR" cloningStrategy="Reference" cardinality="ZeroOne" />
     <DropScheme id="66" userID="FLX" useSpecificDescriptions="false" width="800" label="createRefinmentPoint" definePopupDefaultSize="false" height="600" flexoID="533" skipConfirmationPanel="false" name="createRefinmentPoint" target="top">
       <BehaviourControlGraph_AssignationAction id="67" userID="FLX" useSpecificDescriptions="false" flexoID="539" ownerContext="controlGraph1" assign="shape">
         <AssignableAction_AddShape id="68" flexoID="538" description="" container="topLevel" useSpecificDescriptions="false" userID="FLX" extendParentBoundsToHostThisShape="false">
@@ -456,11 +456,11 @@
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="19" />
     </ConnectorRole>
-    <FlexoConceptInstanceRole id="292" flexoID="800" useSpecificDescriptions="false" userID="FLX" name="refinement" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Refinment" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="292" flexoID="800" useSpecificDescriptions="false" userID="FLX" name="refinement" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Refinment" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <FlexoConceptInstanceRole id="293" flexoID="855" useSpecificDescriptions="false" userID="FLX" name="point" flexoConceptTypeURI="http://formose.viewpoint.kaos/GoalModeling#RefinementPointGR" cloningStrategy="Reference" cardinality="ZeroOne" />
-    <LinkScheme id="294" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractKaosElementGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#RefinementPointGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refined" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="400" height="600" skipConfirmationPanel="false" name="linkScheme" eastDirectionSupported="true">
+    <FlexoConceptInstanceRole id="293" flexoID="855" useSpecificDescriptions="false" userID="FLX" name="point" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#RefinementPointGR" cloningStrategy="Reference" cardinality="ZeroOne" />
+    <LinkScheme id="294" northDirectionSupported="true" fromTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractKaosElementGR" toTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#RefinementPointGR" userID="FLX" useSpecificDescriptions="false" width="800" label="refined" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="400" height="600" skipConfirmationPanel="false" name="linkScheme" eastDirectionSupported="true">
       <BehaviourControlGraph_Sequence id="295" flexoID="845" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="296" userID="FLX" useSpecificDescriptions="false" flexoID="418" ownerContext="controlGraph1" assign="connector">
           <AssignableAction_AddConnector id="297" userID="FLX" useSpecificDescriptions="false" flexoID="417" fromShape="fromTarget.shape" toShape="toTarget.shape">
@@ -469,7 +469,7 @@
         </ControlGraph1_AssignationAction>
         <ControlGraph2_Sequence id="298" flexoID="859" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
           <ControlGraph1_AssignationAction id="299" userID="FLX" useSpecificDescriptions="false" flexoID="844" ownerContext="controlGraph1" assign="refinement">
-            <AssignableAction_AddFlexoConceptInstance id="300" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="843" creationSchemeURI="http://formose.viewpoint.kaos/Kaos#Refinment.create" description="">
+            <AssignableAction_AddFlexoConceptInstance id="300" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance.kaosVirtualModel" flexoID="843" creationSchemeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Refinment.create" description="">
               <FMLRTModelSlot idref="27" />
               <AddFlexoConceptInstanceParameter id="301" flexoID="236" userID="FLX" useSpecificDescriptions="false" value="fromTarget.kaosElement" paramName="source" />
               <AddFlexoConceptInstanceParameter id="302" flexoID="237" userID="FLX" useSpecificDescriptions="false" value="toTarget.target.target.kaosElement" paramName="target" />
@@ -494,10 +494,10 @@
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="19" />
     </ConnectorRole>
-    <FlexoConceptInstanceRole id="314" flexoID="678" useSpecificDescriptions="false" userID="FLX" name="obstruct" flexoConceptTypeURI="http://formose.viewpoint.kaos/Kaos#Obstruct" cloningStrategy="Reference" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="314" flexoID="678" useSpecificDescriptions="false" userID="FLX" name="obstruct" flexoConceptTypeURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel#Obstruct" cloningStrategy="Reference" cardinality="ZeroOne">
       <FMLRTModelSlot idref="27" />
     </FlexoConceptInstanceRole>
-    <LinkScheme id="315" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#ObstacleGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractGoalGR" userID="FLX" useSpecificDescriptions="false" width="800" label="obstruct" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="679" height="600" skipConfirmationPanel="false" name="obstruct" eastDirectionSupported="true">
+    <LinkScheme id="315" northDirectionSupported="true" fromTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#ObstacleGR" toTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractGoalGR" userID="FLX" useSpecificDescriptions="false" width="800" label="obstruct" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="679" height="600" skipConfirmationPanel="false" name="obstruct" eastDirectionSupported="true">
       <BehaviourControlGraph_AssignationAction id="316" userID="FLX" useSpecificDescriptions="false" flexoID="696" assign="connector">
         <AssignableAction_AddConnector id="317" userID="FLX" useSpecificDescriptions="false" flexoID="695" fromShape="fromTarget.shape" toShape="toTarget.shape">
           <TypedDiagramModelSlot idref="19" />
@@ -517,7 +517,7 @@
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="19" />
     </ConnectorRole>
-    <LinkScheme id="327" northDirectionSupported="true" fromTarget="http://formose.viewpoint.kaos/GoalModeling#AbstractGoalGR" toTarget="http://formose.viewpoint.kaos/GoalModeling#ObstacleGR" userID="FLX" useSpecificDescriptions="false" width="800" label="resolves" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="707" height="600" skipConfirmationPanel="false" name="resolves" eastDirectionSupported="true">
+    <LinkScheme id="327" northDirectionSupported="true" fromTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#AbstractGoalGR" toTarget="http://openflexo.org/viewpoints/Kaos.viewpoint/GoalModeling#ObstacleGR" userID="FLX" useSpecificDescriptions="false" width="800" label="resolves" definePopupDefaultSize="false" southDirectionSupported="true" westDirectionSupported="true" isAvailableWithFloatingPalette="true" flexoID="707" height="600" skipConfirmationPanel="false" name="resolves" eastDirectionSupported="true">
       <BehaviourControlGraph_AssignationAction id="328" userID="FLX" useSpecificDescriptions="false" flexoID="713" assign="connector">
         <AssignableAction_AddConnector id="329" userID="FLX" useSpecificDescriptions="false" flexoID="712" fromShape="fromTarget.shape" toShape="toTarget.shape">
           <TypedDiagramModelSlot idref="19" />
@@ -527,7 +527,7 @@
   </FlexoConcept>
   <FlexoConcept idref="3" />
   <Inspector id="330" flexoID="9" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOSModeling" />
-  <ModelSlot_FMLRTModelSlot id="27" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="2" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://formose.viewpoint.kaos/Kaos" cardinality="ZeroOne" />
+  <ModelSlot_FMLRTModelSlot id="27" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="2" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel" cardinality="ZeroOne" />
   <ModelSlot_TypedDiagramModelSlot id="19" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="10" isRequired="true" name="goalModelSlot" metaModelURI="http://formose.kaos.diagram.goal" isReadOnly="false" cardinality="ZeroOne">
     <FMLDiagramPaletteElementBinding id="20" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="53">
       <DropScheme idref="21" />
