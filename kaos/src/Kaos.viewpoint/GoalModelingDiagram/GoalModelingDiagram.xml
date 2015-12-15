@@ -530,38 +530,38 @@
   <ModelSlot_VirtualModelInstanceModelSlot id="27" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="2" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel" cardinality="ZeroOne">
     <VirtualModelInstanceModelSlot idref="27" />
   </ModelSlot_VirtualModelInstanceModelSlot>
-  <ModelSlot_TypedDiagramModelSlot id="19" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="10" isRequired="true" name="goalModelSlot" metaModelURI="http://formose.kaos.diagram.goal" isReadOnly="false" cardinality="ZeroOne">
-    <FMLDiagramPaletteElementBinding id="20" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="53">
+  <ModelSlot_TypedDiagramModelSlot id="19" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="10" isRequired="true" name="goalModelSlot" metaModelURI="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification" isReadOnly="false" cardinality="ZeroOne">
+    <FMLDiagramPaletteElementBinding id="20" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="53">
       <DropScheme idref="21" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="32" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="191">
+    <FMLDiagramPaletteElementBinding id="32" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="191">
       <DropScheme idref="33" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="43" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="268">
+    <FMLDiagramPaletteElementBinding id="43" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="268">
       <DropScheme idref="44" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="54" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="276">
+    <FMLDiagramPaletteElementBinding id="54" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="276">
       <DropScheme idref="55" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="65" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Refinement" useSpecificDescriptions="false" userID="FLX" flexoID="540">
+    <FMLDiagramPaletteElementBinding id="65" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Refinement" useSpecificDescriptions="false" userID="FLX" flexoID="540">
       <DropScheme idref="66" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="69" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="599">
+    <FMLDiagramPaletteElementBinding id="69" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Goal" useSpecificDescriptions="false" userID="FLX" flexoID="599">
       <DropScheme idref="70" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="77" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="600">
+    <FMLDiagramPaletteElementBinding id="77" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="600">
       <DropScheme idref="78" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="85" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="601">
+    <FMLDiagramPaletteElementBinding id="85" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Obstacle" useSpecificDescriptions="false" userID="FLX" flexoID="601">
       <DropScheme idref="86" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="93" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="602">
+    <FMLDiagramPaletteElementBinding id="93" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#DomainProperty" useSpecificDescriptions="false" userID="FLX" flexoID="602">
       <DropScheme idref="94" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="101" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="632">
+    <FMLDiagramPaletteElementBinding id="101" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="632">
       <DropScheme idref="102" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="112" paletteElementId="http://formose.kaos.diagram.goal/GoalPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="655">
+    <FMLDiagramPaletteElementBinding id="112" paletteElementId="http://openflexo.org/diagrams/KaosGoalDiagram.diagramspecification/GoalPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="655">
       <DropScheme idref="113" />
     </FMLDiagramPaletteElementBinding>
     <TypedDiagramModelSlot idref="19" />

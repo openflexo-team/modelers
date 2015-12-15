@@ -240,23 +240,23 @@
   <ModelSlot_VirtualModelInstanceModelSlot id="24" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="12" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://openflexo.org/viewpoints/Kaos.viewpoint/KaosModel" cardinality="ZeroOne">
     <VirtualModelInstanceModelSlot idref="24" />
   </ModelSlot_VirtualModelInstanceModelSlot>
-  <ModelSlot_TypedDiagramModelSlot id="16" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="15" isRequired="true" name="responsabilityDiagram" metaModelURI="http://formose.kaos.diagram.responsability" isReadOnly="false" cardinality="ZeroOne">
-    <FMLDiagramPaletteElementBinding id="17" paletteElementId="http://formose.kaos.diagram.responsability/ResponsabilityPalette.palette#Agent" useSpecificDescriptions="false" userID="FLX" flexoID="47">
+  <ModelSlot_TypedDiagramModelSlot id="16" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="15" isRequired="true" name="responsabilityDiagram" metaModelURI="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification" isReadOnly="false" cardinality="ZeroOne">
+    <FMLDiagramPaletteElementBinding id="17" paletteElementId="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification/ResponsabilityPalette.palette#Agent" useSpecificDescriptions="false" userID="FLX" flexoID="47">
       <DropScheme idref="18" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="29" paletteElementId="http://formose.kaos.diagram.responsability/ResponsabilityPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="48">
+    <FMLDiagramPaletteElementBinding id="29" paletteElementId="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification/ResponsabilityPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="48">
       <DropScheme idref="30" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="40" paletteElementId="http://formose.kaos.diagram.responsability/ResponsabilityPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="49">
+    <FMLDiagramPaletteElementBinding id="40" paletteElementId="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification/ResponsabilityPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="49">
       <DropScheme idref="41" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="51" paletteElementId="http://formose.kaos.diagram.responsability/ResponsabilityPalette.palette#Agent" useSpecificDescriptions="false" userID="FLX" flexoID="50">
+    <FMLDiagramPaletteElementBinding id="51" paletteElementId="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification/ResponsabilityPalette.palette#Agent" useSpecificDescriptions="false" userID="FLX" flexoID="50">
       <DropScheme idref="52" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="59" paletteElementId="http://formose.kaos.diagram.responsability/ResponsabilityPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="51">
+    <FMLDiagramPaletteElementBinding id="59" paletteElementId="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification/ResponsabilityPalette.palette#Requirement" useSpecificDescriptions="false" userID="FLX" flexoID="51">
       <DropScheme idref="60" />
     </FMLDiagramPaletteElementBinding>
-    <FMLDiagramPaletteElementBinding id="67" paletteElementId="http://formose.kaos.diagram.responsability/ResponsabilityPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="52">
+    <FMLDiagramPaletteElementBinding id="67" paletteElementId="http://openflexo.org/diagrams/KaosResponsabilityDiagram.diagramspecification/ResponsabilityPalette.palette#Expectation" useSpecificDescriptions="false" userID="FLX" flexoID="52">
       <DropScheme idref="68" />
     </FMLDiagramPaletteElementBinding>
     <TypedDiagramModelSlot idref="16" />
