@@ -10,7 +10,7 @@
         <VirtualModelInstanceModelSlot idref="2" />
         <AddFlexoConceptInstanceParameter id="6" flexoID="36" userID="FLX" useSpecificDescriptions="false" value="parameters.name" paramName="name" />
         <AddFlexoConceptInstanceParameter id="7" flexoID="37" userID="FLX" useSpecificDescriptions="false" value="parameters.title" paramName="title" />
-        <AddFlexoConceptInstanceParameter id="8" flexoID="69" userID="FLX" useSpecificDescriptions="false" paramName="description" />
+        <AddFlexoConceptInstanceParameter id="8" flexoID="69" userID="FLX" useSpecificDescriptions="false" value="parameters.description" paramName="description" />
       </AssignableAction_AddVirtualModelInstance>
     </BehaviourControlGraph_AssignationAction>
     <TextFieldParameter id="9" flexoID="62" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
