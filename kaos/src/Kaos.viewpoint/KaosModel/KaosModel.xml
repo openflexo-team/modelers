@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="0" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="1" name="Kaos">
+<VirtualModel id="0" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="1" name="KaosModel">
   <FlexoConcept id="1" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="5" name="Goal">
     <Inspector id="2" flexoID="2" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Goal" />
     <ParentFlexoConcept id="3" useSpecificDescriptions="false" userID="FLX" isAbstract="true" flexoID="110" name="AbstractKaosElement">
@@ -210,5 +210,36 @@
   <FlexoConcept id="137" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="310" name="Concern">
     <Inspector id="138" flexoID="309" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Concern" />
   </FlexoConcept>
-  <Inspector id="139" flexoID="6" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOSVirtualModel" />
+  <Inspector id="139" flexoID="6" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOS Model">
+    <TextField id="140" flexoID="68" name="name" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="name" label="name">
+      <Inspector idref="139" />
+    </TextField>
+    <TextField id="141" flexoID="69" name="title" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="title" label="title">
+      <Inspector idref="139" />
+    </TextField>
+    <TextArea id="142" flexoID="70" name="description" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="description" label="description">
+      <Inspector idref="139" />
+    </TextArea>
+  </Inspector>
+  <PrimitiveRole id="143" flexoID="53" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
+  <PrimitiveRole id="144" flexoID="54" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="title" cloningStrategy="Clone" cardinality="ZeroOne" />
+  <PrimitiveRole id="145" flexoID="55" primitiveType="String" useSpecificDescriptions="false" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
+  <CreationScheme id="146" userID="FLX" useSpecificDescriptions="false" width="800" label="init" definePopupDefaultSize="false" height="600" flexoID="25" skipConfirmationPanel="false" name="init">
+    <BehaviourControlGraph_Sequence id="147" flexoID="65" userID="FLX" useSpecificDescriptions="false">
+      <ControlGraph1_AssignationAction id="148" userID="FLX" useSpecificDescriptions="false" flexoID="57" ownerContext="controlGraph1" assign="name">
+        <AssignableAction_ExpressionAction id="149" expression="parameters.name" flexoID="56" userID="FLX" useSpecificDescriptions="false" />
+      </ControlGraph1_AssignationAction>
+      <ControlGraph2_Sequence id="150" flexoID="66" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
+        <ControlGraph1_AssignationAction id="151" userID="FLX" useSpecificDescriptions="false" flexoID="59" ownerContext="controlGraph1" assign="title">
+          <AssignableAction_ExpressionAction id="152" expression="parameters.title" flexoID="58" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="153" userID="FLX" useSpecificDescriptions="false" flexoID="61" ownerContext="controlGraph2" assign="description">
+          <AssignableAction_ExpressionAction id="154" expression="parameters.description" flexoID="60" userID="FLX" useSpecificDescriptions="false" />
+        </ControlGraph2_AssignationAction>
+      </ControlGraph2_Sequence>
+    </BehaviourControlGraph_Sequence>
+    <TextFieldParameter id="155" flexoID="38" isRequired="false" name="name" useSpecificDescriptions="false" userID="FLX" label="name" />
+    <TextFieldParameter id="156" flexoID="39" isRequired="false" name="title" useSpecificDescriptions="false" userID="FLX" label="title" />
+    <TextAreaParameter id="157" flexoID="67" isRequired="false" name="description" useSpecificDescriptions="false" userID="FLX" label="description" />
+  </CreationScheme>
 </VirtualModel>
