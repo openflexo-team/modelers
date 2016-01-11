@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.openflexo</groupId>
+		<artifactId>openflexo-component</artifactId>
+		<version>0.4-SNAPSHOT</version>
+	</parent>
+	<version>1.8.0-SNAPSHOT</version>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>modelers</artifactId>
+	<name>modelers</name>
+    <description>Contains various modelers</description>
+	<modules>
+	</modules>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<executions>
+						<execution>
+						    <id>default-jar</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+							<configuration>
+							     <skipIfEmpty>true</skipIfEmpty>
+							</configuration>
+						</execution>
+						<execution>
+							<goals>
+								<goal>test-jar</goal>
+							</goals>
+							<configuration>
+							     <skipIfEmpty>true</skipIfEmpty>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
+

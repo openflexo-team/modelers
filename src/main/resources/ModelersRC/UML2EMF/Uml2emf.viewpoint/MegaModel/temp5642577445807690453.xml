@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagramSpecification id="1" name="MegaModel" modelVersion="1.0">
+  <description>Diagram of Model Packages</description>
+  <EditionPattern id="2" name="ModelGR">
+    <DropScheme id="3" target="top" name="dropAtTopLevel" label="dropAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="4" name="name" label="New Model Name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddShape id="5" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape">
+        <AddressedDiagramModelSlot id="6" isRequired="true" isReadOnly="false" />
+      </AddShape>
+      <AddEditionPatternInstance id="7" virtualModelInstance="virtualModelInstance.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model.createModel" assignation="modelInstance">
+        <AddEditionPatternInstanceParameter id="8" paramName="name" value="parameters.name" />
+        <AddressedVirtualModelModelSlot idref="9" />
+      </AddEditionPatternInstance>
+    </DropScheme>
+    <ActionScheme id="10" conditional="(pkgDiagram = null)" name="createPackageDiagram" label="createPackageDiagram" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600">
+      <TextFieldParameter id="11" name="diagram_name" label="diagram_name" usePaletteLabelAsDefaultValue="false" isRequired="false" />
+      <AddDiagram id="12" diagramName="parameters.diagram_name" diagramSpecificationURI="http://www.omg.org/UML/EMF/PackageDiagram" assignation="pkgDiagram">
+        <AddressedDiagramModelSlot idref="13" />
+      </AddDiagram>
+      <AssignationAction id="14" value="modelInstance.model" assignation="pkgDiagram.model.model" />
+    </ActionScheme>
+    <NavigationScheme id="15" targetObject="pkgDiagram" conditional="(pkgDiagram != null)" name="NavigateToPackageDiagram" label="NavigateToPackageDiagram" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
+    <ContainedShapePatternRole id="16" patternRole="shape" name="shape" exampleLabel="&lt;No Name&gt;">
+      <ShapeGraphicalRepresentation id="17" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="529.0" y="424.0" width="158.39408438451497" height="100.66316292403249" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+        <ForegroundStyle id="18" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="19" imageFile="Model.gif" scaleX="0.4292522612046476" scaleY="0.42473908406764765" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedForegroundStyle id="20" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <SelectedColorBackgroundStyle id="21" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedForegroundStyle id="22" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+        <FocusedColorBackgroundStyle id="23" color="192,192,192" useTransparency="false" transparencyLevel="0.5" />
+        <Border id="24" top="20" bottom="20" left="20" right="20" />
+        <RectangleShape id="25" isRounded="false" arcSize="30.0" />
+        <ShadowStyle id="26" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+        <TextStyle id="27" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+      </ShapeGraphicalRepresentation>
+      <AddressedDiagramModelSlot id="13" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://www.omg.org/UML/EMF/MegaModel" />
+      <GRSpec id="28" featureName="label" value="modelInstance.model.name" readOnly="false" />
+    </ContainedShapePatternRole>
+    <ContainedDiagramPatternRole id="29" diagramSpecificationURI="http://www.omg.org/UML/EMF/PackageDiagram" patternRole="pkgDiagram" name="pkgDiagram">
+      <AddressedDiagramModelSlot idref="13" />
+    </ContainedDiagramPatternRole>
+    <ContainedEditionPatternInstancePatternRole id="30" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="modelInstance" patternRole="modelInstance">
+      <AddressedVirtualModelModelSlot id="9" virtualModelURI="http://www.omg.org/UML/EMF/UML2EMF_VM" isRequired="true" isReadOnly="false" name="umlmodel" />
+    </ContainedEditionPatternInstancePatternRole>
+    <PrimaryRepresentationShapePatternRole idref="16" />
+    <Inspector id="31" inspectorTitle="ModelGR" />
+  </EditionPattern>
+  <LocalizedDictionary id="32" />
+  <DiagramModelSlot idref="13" />
+  <VirtualModelModelSlot idref="9" />
+  <DeletionScheme id="33" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" />
+  <ContainedEditionPatternInstancePatternRole id="34" editionPatternTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="glouk" patternRole="glouk">
+    <AddressedVirtualModelModelSlot idref="9" />
+  </ContainedEditionPatternInstancePatternRole>
+  <Inspector id="35" inspectorTitle="MegaModel" />
+</DiagramSpecification>

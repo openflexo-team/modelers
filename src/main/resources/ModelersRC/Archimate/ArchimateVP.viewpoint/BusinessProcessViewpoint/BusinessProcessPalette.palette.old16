@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Palette id="1" index="0" name="BusinessProcessPalette">
+  <PaletteElement id="2" name="Application &#xA;Service" editionPattern="ApplicationServiceGR" dropSchemeName="dropApplicationServiceGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="3" name="name" value="" />
+    <Parameter id="4" name="documentation" value="" />
+    <Parameter id="5" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="6" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="78.0" y="186.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" text="Application &#xA;Service" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="53.0" absoluteTextY="92.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="7" noStroke="false" color="0,0,0" lineWidth="1.999999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ColorGradientBackgroundStyle id="8" color1="153,255,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="10" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="11" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="12" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="13" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape id="14" isRounded="true" arcSize="90.0" />
+      <ShadowStyle id="15" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="16" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="17" name="Business&#xA;Service" editionPattern="BusinessServiceGR" dropSchemeName="dropBusinessServiceGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="18" name="name" value="" />
+    <Parameter id="19" name="documentation" value="" />
+    <Parameter id="20" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="21" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="-5.0" y="188.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" text="Business&#xA;Service" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="50.0" absoluteTextY="88.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="22" noStroke="false" color="0,0,0" lineWidth="2.000000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ColorGradientBackgroundStyle id="23" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="24" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="25" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="26" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="27" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="28" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="14" />
+      <ShadowStyle id="29" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="30" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="31" name="Business&#xA;Role" editionPattern="BusinessRoleGR" dropSchemeName="dropBusinessRoleGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="32" name="name" value="" />
+    <Parameter id="33" name="documentation" value="" />
+    <Parameter id="34" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="35" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="-4.0" y="87.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_2" layer="1" hasText="true" text="Business&#xA;Role" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="55.0" absoluteTextY="87.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="36" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="37" imageFile="../Images/business_role.png" scaleX="1.3636363636363635" scaleY="2.0833333333333335" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="38" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="39" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="40" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="41" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="42" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape id="43" isRounded="false" arcSize="30.0" />
+      <ShadowStyle id="44" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="45" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="46" name="Business&#xA;Collaboration" editionPattern="BusinessCollaborationGR" dropSchemeName="dropBusinessCollaborationGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="47" name="name" value="" />
+    <Parameter id="48" name="documentation" value="" />
+    <Parameter id="49" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="50" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="161.0" y="92.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_3" layer="1" hasText="true" text="Business&#xA;Collaboration" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="45.0" absoluteTextY="85.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="51" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="52" imageFile="../Images/bussines_collaboration.png" scaleX="1.5" scaleY="2.0833333333333335" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="53" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="54" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="55" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="56" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="57" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="58" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="59" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="60" name="Business&#xA;Actor" editionPattern="BusinessActorGR" dropSchemeName="dropBusinessActorGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="61" name="name" value="" />
+    <Parameter id="62" name="documentation" value="" />
+    <Parameter id="63" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="64" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="79.0" y="89.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_4" layer="1" hasText="true" text="Business&#xA;Actor" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="46.0" absoluteTextY="86.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="65" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="66" imageFile="../Images/business_actor.gif" scaleX="1.6666666666666667" scaleY="1.0638297872340425" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="67" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="68" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="69" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="70" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="71" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="72" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="73" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="74" name="Business &#xA;Process" editionPattern="BusinessProcessGR" dropSchemeName="dropBusinessProcessGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="75" name="name" value="" />
+    <Parameter id="76" name="documentation" value="" />
+    <Parameter id="77" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="78" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="240.0" y="-7.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_5" layer="1" hasText="true" text="Business &#xA;Process" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="47.0" absoluteTextY="87.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="79" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="80" imageFile="../Images/business_process.png" scaleX="1.4285714285714286" scaleY="1.9230769230769231" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="81" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="82" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="83" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="84" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="85" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="86" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="87" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="88" name="Business &#xA;Interaction" editionPattern="BusinessInteractionGR" dropSchemeName="dropBusinessInteractionGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="89" name="name" value="" />
+    <Parameter id="90" name="documentation" value="" />
+    <Parameter id="91" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="92" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="241.0" y="92.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_6" layer="1" hasText="true" text="Business &#xA;Interaction" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="50.0" absoluteTextY="87.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="93" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="94" imageFile="../Images/business_interaction.png" scaleX="2.857142857142857" scaleY="2.380952380952381" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="95" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="96" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="97" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="98" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="99" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="100" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="101" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="102" name="Representation" editionPattern="RepresentationGR" dropSchemeName="dropRepresentationGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="103" name="name" value="" />
+    <Parameter id="104" name="documentation" value="" />
+    <Parameter id="105" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="106" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="-3.0" y="-7.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_7" layer="1" hasText="true" text="Representation" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="51.0" absoluteTextY="81.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="107" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="108" imageFile="../Images/business_representation.png" scaleX="0.3973509933774834" scaleY="0.49504950495049505" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="109" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="110" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="111" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="112" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="113" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="114" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="115" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="116" name="Business&#xA;Function" editionPattern="BusinessFunctionGR" dropSchemeName="dropBusinessFunctionGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="117" name="name" value="" />
+    <Parameter id="118" name="documentation" value="" />
+    <Parameter id="119" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="120" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="320.0" y="-6.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_8" layer="1" hasText="true" text="Business&#xA;Function" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="50.0" absoluteTextY="82.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="121" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="122" imageFile="../Images/business_function.png" scaleX="2.4" scaleY="1.7857142857142858" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="123" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="124" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="125" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="126" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="127" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="128" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="129" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="130" name="Business&#xA;Object" editionPattern="BusinessObjectGR" dropSchemeName="dropBusinessObjectGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="131" name="name" value="" />
+    <Parameter id="132" name="documentation" value="" />
+    <Parameter id="133" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="134" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="78.0" y="-6.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_9" layer="1" hasText="true" text="Business&#xA;Object" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="49.0" absoluteTextY="85.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="135" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="136" imageFile="../Images/BusinessObjectPal.png" scaleX="0.5660377358490566" scaleY="0.9803921568627451" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="137" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="138" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="139" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="140" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="141" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="142" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="143" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="144" name="Business&#xA;Event" editionPattern="BusinessEventGR" dropSchemeName="dropBusinessEventGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="145" name="name" value="" />
+    <Parameter id="146" name="documentation" value="" />
+    <Parameter id="147" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="148" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="159.0" y="-5.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_10" layer="1" hasText="true" text="Business&#xA;Event" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="52.0" absoluteTextY="85.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="149" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="150" imageFile="../Images/business_event.png" scaleX="1.5" scaleY="2.5" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="151" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="152" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="153" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="154" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="155" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="156" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="157" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <PaletteElement id="158" name="Location" editionPattern="LocationGR" dropSchemeName="dropLocationGRAtTopLevel" boundLabelToElementName="true">
+    <Parameter id="159" name="name" value="" />
+    <Parameter id="160" name="documentation" value="" />
+    <Parameter id="161" name="editionPatternInstance" value="" />
+    <ShapeGraphicalRepresentation id="162" className="org.openflexo.vpm.diagrampalette.DiagramPaletteElementGR" x="322.0" y="89.0" width="60.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_11" layer="1" hasText="true" text="Location" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="50.0" absoluteTextY="84.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+      <ForegroundStyle id="163" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="164" imageFile="../Images/business_location.png" scaleX="3.75" scaleY="1.9230769230769231" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedForegroundStyle id="165" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <SelectedColorBackgroundStyle id="166" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedForegroundStyle id="167" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
+      <FocusedColorBackgroundStyle id="168" color="255,255,255" useTransparency="false" transparencyLevel="0.5" />
+      <Border id="169" top="20" bottom="20" left="20" right="20" />
+      <RectangleShape idref="43" />
+      <ShadowStyle id="170" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
+      <TextStyle id="171" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+    </ShapeGraphicalRepresentation>
+  </PaletteElement>
+  <DrawingGraphicalRepresentation id="172" className="org.openflexo.vpm.diagrampalette.DiagramPaletteGR" width="1000.0" height="1000.0" drawWorkingArea="false" selectionColor="0,0,255" focusColor="255,0,0" backgroundColor="255,255,255" identifier="root" layer="0" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
+    <TextStyle id="173" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
+  </DrawingGraphicalRepresentation>
+</Palette>
