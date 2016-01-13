@@ -2,10 +2,10 @@
 <VirtualModel id="0" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="1" name="GoalModelingDiagram">
   <FlexoConcept id="1" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="11" name="GoalGR">
     <Inspector id="2" flexoID="12" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Goal">
-      <TextField id="3" flexoID="932" name="goal" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="kaosElement.name" label="goal">
+      <TextField id="3" flexoID="932" name="goal" userID="FLX" useSpecificDescriptions="false" data="kaosElement.name" readOnly="false" label="goal">
         <Inspector idref="2" />
       </TextField>
-      <TextArea id="4" flexoID="933" name="description" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="kaosElement.description" label="description">
+      <TextArea id="4" flexoID="933" name="description" userID="FLX" useSpecificDescriptions="false" data="kaosElement.description" readOnly="false" label="description">
         <Inspector idref="2" />
       </TextArea>
     </Inspector>
@@ -15,12 +15,12 @@
         <Inspector id="8" flexoID="341" useSpecificDescriptions="false" userID="FLX" inspectorTitle="AbstractKaosElement" />
         <ShapeRole id="9" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="408" name="shape" cardinality="ZeroOne">
           <ShapeGraphicalRepresentation id="10" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="80.0" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="true" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="4f4a99ad" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="40.0" maximalWidth="Infinity" x="160.0">
-            <FocusedForegroundStyle id="11" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+            <FocusedForegroundStyle id="11" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
             <SelectedColorBackgroundStyle id="12" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
             <TextStyle id="13" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
             <ShapeBorder id="14" bottom="2" left="2" right="2" top="2" />
-            <ForegroundStyle id="15" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-            <SelectedForegroundStyle id="16" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+            <ForegroundStyle id="15" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+            <SelectedForegroundStyle id="16" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
             <FocusedColorBackgroundStyle id="17" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
             <RectangleShape id="18" arcSize="30.0" isRounded="false" />
             <ShadowStyle id="19" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
@@ -40,18 +40,18 @@
     </ParentFlexoConcept>
     <ShapeRole id="124" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="15" name="shape" cardinality="ZeroOne">
       <ShapeGraphicalRepresentation id="125" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="70.182" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="5d783af1" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="1.0" maximalWidth="Infinity" x="0.0">
-        <FocusedForegroundStyle id="126" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedForegroundStyle id="126" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <SelectedColorBackgroundStyle id="127" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <TextStyle id="128" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" isBackgroundColored="false" />
         <ShapeBorder id="129" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="130" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="131" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="130" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="131" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <FocusedColorBackgroundStyle id="132" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <ParallelogramShape id="133" shiftRatio="0.2" />
         <ShadowStyle id="134" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
         <ColorBackgroundStyle id="135" color="185,185,253" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="136" featureName="label" flexoID="978" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
+      <GRSpec id="136" featureName="label" flexoID="983" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="21" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="137" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="165" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/KaosModel#Goal" cardinality="ZeroOne">
@@ -93,28 +93,28 @@
   </FlexoConcept>
   <FlexoConcept id="138" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="16" name="RequirementGR">
     <Inspector id="139" flexoID="17" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RequirementGR">
-      <TextField id="140" flexoID="936" name="requirement" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="kaosElement.name" label="requirement">
+      <TextField id="140" flexoID="936" name="requirement" userID="FLX" useSpecificDescriptions="false" data="kaosElement.name" readOnly="false" label="requirement">
         <Inspector idref="139" />
       </TextField>
-      <TextArea id="141" flexoID="937" name="description" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="kaosElement.description" label="description">
+      <TextArea id="141" flexoID="937" name="description" userID="FLX" useSpecificDescriptions="false" data="kaosElement.description" readOnly="false" label="description">
         <Inspector idref="139" />
       </TextArea>
     </Inspector>
     <ParentFlexoConcept idref="5" />
     <ShapeRole id="142" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="50" name="shape" cardinality="ZeroOne">
       <ShapeGraphicalRepresentation id="143" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="70.182" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="5d783af1" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="0.0" maximalWidth="Infinity" x="0.0">
-        <FocusedForegroundStyle id="144" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedForegroundStyle id="144" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <SelectedColorBackgroundStyle id="145" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <TextStyle id="146" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans Demibold,1,11" isBackgroundColored="false" />
         <ShapeBorder id="147" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="148" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.200000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="149" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="148" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.200000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="149" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <FocusedColorBackgroundStyle id="150" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <ParallelogramShape id="151" shiftRatio="0.2" />
         <ShadowStyle id="152" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
         <ColorBackgroundStyle id="153" color="185,185,253" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="154" featureName="label" flexoID="979" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
+      <GRSpec id="154" featureName="label" flexoID="984" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="21" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="155" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="175" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/KaosModel#Requirement" cardinality="ZeroOne">
@@ -158,11 +158,11 @@
     <Inspector id="157" flexoID="21" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ConflictWith" />
     <ConnectorRole id="158" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="24" name="connector" cardinality="ZeroOne">
       <ConnectorGraphicalRepresentation id="159" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="7301129c">
-        <SelectedForegroundStyle id="160" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedForegroundStyle id="161" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="160" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="161" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <LineConnectorSpecification id="162" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="10.0" endSymbolSize="10.0" startSymbol="NONE" endSymbol="NONE" />
         <TextStyle id="163" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="164" dashStyle="PLAIN_STROKE" color="255,51,51" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="164" dashStyle="PLAIN_STROKE" color="255,51,51" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.500000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="21" />
     </ConnectorRole>
@@ -196,18 +196,18 @@
     <Inspector id="180" flexoID="88" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ObstacleGR" />
     <ShapeRole id="181" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="270" name="shape" cardinality="ZeroOne">
       <ShapeGraphicalRepresentation id="182" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.917" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="70.485" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="7e75f9e7" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="0.0" maximalWidth="Infinity" x="0.0">
-        <FocusedForegroundStyle id="183" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedForegroundStyle id="183" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <SelectedColorBackgroundStyle id="184" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <TextStyle id="185" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" isBackgroundColored="false" />
         <ShapeBorder id="186" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="187" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="188" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="187" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="188" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <FocusedColorBackgroundStyle id="189" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <ParallelogramShape id="190" shiftRatio="-0.20000000074505805" />
         <ShadowStyle id="191" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
         <ColorBackgroundStyle id="192" color="255,153,153" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="193" featureName="label" flexoID="980" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="obstacle.name" />
+      <GRSpec id="193" featureName="label" flexoID="985" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="obstacle.name" />
       <TypedDiagramModelSlot idref="21" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="194" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="281" name="obstacle" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/KaosModel#Obstacle" cardinality="ZeroOne">
@@ -252,12 +252,12 @@
     <ParentFlexoConcept idref="7" />
     <ShapeRole id="197" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="271" name="shape" cardinality="ZeroOne">
       <ShapeGraphicalRepresentation id="198" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.739" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="70.139" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="7d398e34" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="0.0" maximalWidth="Infinity" x="0.0">
-        <FocusedForegroundStyle id="199" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedForegroundStyle id="199" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <SelectedColorBackgroundStyle id="200" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <TextStyle id="201" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" isBackgroundColored="false" />
         <ShapeBorder id="202" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="203" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="0.999999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="204" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="203" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="0.999999998509884" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="204" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <FocusedColorBackgroundStyle id="205" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <CustomPolygonShape id="206">
           <Point>0.0,1.0</Point>
@@ -270,7 +270,7 @@
         <ShadowStyle id="207" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
         <ColorBackgroundStyle id="208" color="102,102,255" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="209" featureName="label" flexoID="981" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
+      <GRSpec id="209" featureName="label" flexoID="986" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="21" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="210" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Reference" flexoID="293" name="kaosElement" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/KaosModel#DomainProperty" cardinality="ZeroOne">
@@ -312,10 +312,10 @@
   </FlexoConcept>
   <FlexoConcept id="211" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="99" name="ExpectationGR">
     <Inspector id="212" flexoID="96" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ExpectationGR">
-      <TextField id="213" flexoID="945" name="expectation" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="kaosElement.name" label="expectation">
+      <TextField id="213" flexoID="945" name="expectation" userID="FLX" useSpecificDescriptions="false" data="kaosElement.name" readOnly="false" label="expectation">
         <Inspector idref="212" />
       </TextField>
-      <TextArea id="214" flexoID="946" name="description" userID="FLX" useSpecificDescriptions="false" readOnly="false" data="kaosElement.description" label="description">
+      <TextArea id="214" flexoID="946" name="description" userID="FLX" useSpecificDescriptions="false" data="kaosElement.description" readOnly="false" label="description">
         <Inspector idref="212" />
       </TextArea>
     </Inspector>
@@ -325,18 +325,18 @@
     </FlexoConceptInstanceRole>
     <ShapeRole id="216" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="633" name="shape" cardinality="ZeroOne">
       <ShapeGraphicalRepresentation id="217" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="70.833" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="false" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="1398a60e" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="0.0" maximalWidth="Infinity" x="0.0">
-        <FocusedForegroundStyle id="218" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedForegroundStyle id="218" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <SelectedColorBackgroundStyle id="219" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <TextStyle id="220" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" isBackgroundColored="false" />
         <ShapeBorder id="221" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="222" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.3000000014901163" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="223" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="222" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.3000000014901163" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="223" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <FocusedColorBackgroundStyle id="224" color="254,247,217" transparencyLevel="0.5" useTransparency="false" />
         <ParallelogramShape id="225" shiftRatio="0.2" />
         <ShadowStyle id="226" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
         <ColorBackgroundStyle id="227" color="255,255,102" transparencyLevel="0.5" useTransparency="false" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="228" featureName="label" flexoID="982" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
+      <GRSpec id="228" featureName="label" flexoID="987" readOnly="false" useSpecificDescriptions="false" userID="FLX" value="kaosElement.name" />
       <TypedDiagramModelSlot idref="21" />
     </ShapeRole>
     <DropScheme id="104" userID="FLX" useSpecificDescriptions="false" width="800" label="Create_Expectation" definePopupDefaultSize="false" height="600" flexoID="442" skipConfirmationPanel="false" name="CreateExpectation" target="top">
@@ -375,12 +375,12 @@
       <Inspector id="234" flexoID="376" useSpecificDescriptions="false" userID="FLX" inspectorTitle="RefinementGR" />
       <ShapeRole id="235" exampleLabel="label" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="568" name="shape" cardinality="ZeroOne">
         <ShapeGraphicalRepresentation id="236" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="50.0" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="80.0" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="true" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="15572af8" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="FREELY_RESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="40.0" maximalWidth="Infinity" x="160.0">
-          <FocusedForegroundStyle id="237" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+          <FocusedForegroundStyle id="237" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
           <SelectedColorBackgroundStyle id="238" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
           <TextStyle id="239" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
           <ShapeBorder id="240" bottom="2" left="2" right="2" top="2" />
-          <ForegroundStyle id="241" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-          <SelectedForegroundStyle id="242" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+          <ForegroundStyle id="241" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+          <SelectedForegroundStyle id="242" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
           <FocusedColorBackgroundStyle id="243" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
           <RectangleShape id="244" arcSize="30.0" isRounded="false" />
           <ShadowStyle id="245" shadowDepth="2" shadowBlur="4" drawShadow="true" shadowDarkness="150" />
@@ -391,11 +391,11 @@
     </ParentFlexoConcept>
     <ConnectorRole id="247" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="111" name="connector" cardinality="ZeroOne">
       <ConnectorGraphicalRepresentation id="248" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="190e999f">
-        <SelectedForegroundStyle id="249" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedForegroundStyle id="250" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="249" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="250" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <LineConnectorSpecification id="251" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="15.0" endSymbolSize="15.0" startSymbol="NONE" endSymbol="FILLED_ARROW" />
         <TextStyle id="252" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="253" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="253" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="21" />
     </ConnectorRole>
@@ -441,12 +441,12 @@
     <ParentFlexoConcept idref="233" />
     <ShapeRole id="276" exampleLabel="" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Clone" flexoID="371" name="shape" cardinality="ZeroOne">
       <ShapeGraphicalRepresentation id="277" minimalHeight="0.0" relativeTextX="0.5" transparency="1.0" drawControlPointsWhenFocused="true" height="20.436" hasFocusedBackground="false" verticalTextAlignment="MIDDLE" adjustMinimalWidthToLabelWidth="true" width="20.612" hasFocusedForeground="false" hasSelectedBackground="false" allowToLeaveBounds="true" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" relativeTextY="0.5" continuousTextEditing="true" minimalWidth="0.0" identifier="11c9e5bd" lineWrap="false" locationConstraints="FREELY_MOVABLE" adjustMinimalHeightToLabelHeight="true" horizontalTextAlignment="CENTER" adaptBoundsToContents="false" maximalHeight="Infinity" isVisible="true" dimensionConstraints="UNRESIZABLE" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" isFloatingLabel="false" hasSelectedForeground="false" paragraphAlignment="CENTER" absoluteTextX="0.0" layer="1" absoluteTextY="0.0" adjustMaximalWidthToLabelWidth="false" isMultilineAllowed="false" y="4.0" maximalWidth="Infinity" x="5.0">
-        <FocusedForegroundStyle id="278" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedForegroundStyle id="278" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <SelectedColorBackgroundStyle id="279" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
         <TextStyle id="280" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
         <ShapeBorder id="281" bottom="2" left="2" right="2" top="2" />
-        <ForegroundStyle id="282" dashStyle="PLAIN_STROKE" color="255,153,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="283" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="282" dashStyle="PLAIN_STROKE" color="255,153,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <SelectedForegroundStyle id="283" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <FocusedColorBackgroundStyle id="284" color="192,192,192" transparencyLevel="0.5" useTransparency="false" />
         <CircleShape id="285" />
         <ShadowStyle id="286" shadowDepth="2" shadowBlur="4" drawShadow="false" shadowDarkness="150" />
@@ -469,11 +469,11 @@
     <ParentFlexoConcept idref="233" />
     <ConnectorRole id="291" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="396" name="connector" cardinality="ZeroOne">
       <ConnectorGraphicalRepresentation id="292" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="520d6b2b">
-        <SelectedForegroundStyle id="293" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedForegroundStyle id="294" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="293" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="294" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <LineConnectorSpecification id="295" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" lineConnectorType="MINIMAL_LENGTH" middleSymbolSize="10.0" endSymbolSize="10.0" startSymbol="NONE" endSymbol="NONE" />
         <TextStyle id="296" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="297" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="297" dashStyle="PLAIN_STROKE" color="255,204,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="21" />
     </ConnectorRole>
@@ -507,11 +507,11 @@
     <Inspector id="312" flexoID="670" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ObstructGR" />
     <ConnectorRole id="313" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="674" name="connector" cardinality="ZeroOne">
       <ConnectorGraphicalRepresentation id="314" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="19593bed">
-        <SelectedForegroundStyle id="315" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedForegroundStyle id="316" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="315" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="316" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <ArcConnector id="317" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" cpPosition="0.5,0.4" cp1RelativeToStartObject="0.9999455434085489,0.49262072998659157" areBoundsAdjustable="false" middleSymbolSize="10.0" endSymbolSize="20.0" cp2RelativeToEndObject="5.526923040660714E-5,0.49256587760937415" startSymbol="NONE" endSymbol="FILLED_DOUBLE_ARROW" />
         <TextStyle id="318" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="319" dashStyle="PLAIN_STROKE" color="255,0,102" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.999999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="319" dashStyle="PLAIN_STROKE" color="255,0,102" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.999999998509884" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="21" />
     </ConnectorRole>
@@ -530,11 +530,11 @@
     <Inspector id="325" flexoID="699" useSpecificDescriptions="false" userID="FLX" inspectorTitle="ResolvesGR" />
     <ConnectorRole id="326" exampleLabel="label" userID="FLX" useSpecificDescriptions="false" cloningStrategy="Clone" flexoID="703" name="connector" cardinality="ZeroOne">
       <ConnectorGraphicalRepresentation id="327" lineWrap="false" horizontalTextAlignment="CENTER" transparency="1.0" drawControlPointsWhenFocused="true" isVisible="true" isReadOnly="false" paragraphAlignment="CENTER" hasSelectedForeground="false" verticalTextAlignment="MIDDLE" hasFocusedForeground="false" applyForegroundToSymbols="true" layer="64" absoluteTextX="0.0" absoluteTextY="0.0" isFocusable="true" drawControlPointsWhenSelected="true" isSelectable="true" isLabelEditable="true" continuousTextEditing="true" isMultilineAllowed="false" identifier="6a3a952a">
-        <SelectedForegroundStyle id="328" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedForegroundStyle id="329" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="328" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
+        <FocusedForegroundStyle id="329" dashStyle="PLAIN_STROKE" color="0,0,0" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="1.0" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
         <ArcConnector id="330" relativeMiddleSymbolLocation="0.5" startSymbolSize="10.0" middleSymbol="NONE" cpPosition="0.5,0.4" cp1RelativeToStartObject="0.9999455434085489,0.49262072998659157" areBoundsAdjustable="false" middleSymbolSize="10.0" endSymbolSize="20.0" cp2RelativeToEndObject="5.526923040660714E-5,0.49256587760937415" startSymbol="NONE" endSymbol="FILLED_DOUBLE_ARROW" />
         <TextStyle id="331" orientation="0" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" isBackgroundColored="false" />
-        <ForegroundStyle id="332" dashStyle="PLAIN_STROKE" color="0,255,102" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <ForegroundStyle id="332" dashStyle="PLAIN_STROKE" color="0,255,102" transparencyLevel="0.5" noStroke="false" useTransparency="false" lineWidth="2.000000001490116" capStyle="CAP_SQUARE" joinStyle="JOIN_MITER" />
       </ConnectorGraphicalRepresentation>
       <TypedDiagramModelSlot idref="21" />
     </ConnectorRole>
@@ -547,7 +547,7 @@
     </LinkScheme>
   </FlexoConcept>
   <FlexoConcept idref="5" />
-  <Inspector id="336" flexoID="9" useSpecificDescriptions="false" userID="FLX" inspectorTitle="KAOSModeling" />
+  <Inspector id="336" flexoID="9" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Goal Modeling Diagram" />
   <ModelSlot_VirtualModelInstanceModelSlot id="27" useSpecificDescriptions="false" userID="FLX" cloningStrategy="Reference" flexoID="2" isRequired="true" name="kaosVirtualModel" isReadOnly="false" virtualModelURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/KaosModel" cardinality="ZeroOne">
     <VirtualModelInstanceModelSlot idref="27" />
   </ModelSlot_VirtualModelInstanceModelSlot>
