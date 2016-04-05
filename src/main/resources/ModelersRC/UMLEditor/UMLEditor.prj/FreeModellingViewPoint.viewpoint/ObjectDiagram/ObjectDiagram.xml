@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="0" isAbstract="false" userID="FLX" useSpecificDescriptions="false" name="ObjectDiagram" flexoID="1">
+  <ModelSlot_VirtualModelInstanceModelSlot id="1" isRequired="true" cardinality="One" virtualModelURI="http://www.openflexo.org/projects/2016/4/UMLEditor_1459842566240/FreeModellingViewPoint/UMLmodel" isReadOnly="false" cloningStrategy="Reference" userID="FLX" useSpecificDescriptions="false" name="theModel" flexoID="6">
+    <VirtualModelInstanceModelSlot idref="1" />
+  </ModelSlot_VirtualModelInstanceModelSlot>
+  <ModelSlot_TypedDiagramModelSlot id="2" isRequired="true" cardinality="One" metaModelURI="http://16H16" isReadOnly="false" cloningStrategy="Reference" userID="FLX" useSpecificDescriptions="false" name="theDiagram" flexoID="28">
+    <TypedDiagramModelSlot idref="2" />
+  </ModelSlot_TypedDiagramModelSlot>
+  <Inspector id="3" userID="FLX" inspectorTitle="ObjectDiagram" useSpecificDescriptions="false" flexoID="11" />
+  <FlexoConcept id="4" isAbstract="false" userID="FLX" useSpecificDescriptions="false" name="ObjectGR" flexoID="2">
+    <Inspector id="5" userID="FLX" inspectorTitle="ObjectGR" useSpecificDescriptions="false" flexoID="3" />
+    <FlexoConceptInstanceRole id="6" virtualModelInstance="theModel" flexoConceptTypeURI="http://www.openflexo.org/projects/2016/4/UMLEditor_1459842566240/FreeModellingViewPoint/UMLmodel#Object" cardinality="One" cloningStrategy="Reference" userID="FLX" useSpecificDescriptions="false" name="theObject" flexoID="14">
+      <VirtualModelInstanceModelSlot idref="1" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="7" cardinality="One" exampleLabel="" cloningStrategy="Clone" userID="FLX" useSpecificDescriptions="false" name="shape" flexoID="29">
+      <TypedDiagramModelSlot idref="2" />
+      <ShapeGraphicalRepresentation id="8" hasFocusedForeground="false" relativeTextY="0.5" lineWrap="false" hasSelectedBackground="false" locationConstraints="FREELY_MOVABLE" widthConstraints="null" allowToLeaveBounds="true" minimalHeight="0.0" maximalHeight="Infinity" isSelectable="true" height="94.11764705882352" verticalTextAlignment="MIDDLE" identifier="1b4103d2" isVisible="true" transparency="1.0" relativeTextX="0.5" adjustMinimalWidthToLabelWidth="true" adjustMaximalWidthToLabelWidth="false" isFloatingLabel="true" dimensionConstraints="FREELY_RESIZABLE" horizontalTextAlignment="CENTER" layer="1" minimalWidth="0.0" adjustMinimalHeightToLabelHeight="true" adaptBoundsToContents="false" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" drawControlPointsWhenFocused="true" isMultilineAllowed="false" absoluteTextY="0.0" absoluteTextX="0.0" hasSelectedForeground="false" continuousTextEditing="true" paragraphAlignment="CENTER" x="100.0" width="111.76470588235294" drawControlPointsWhenSelected="true" y="100.0" hasFocusedBackground="false" isLabelEditable="true" isFocusable="true" maximalWidth="Infinity">
+        <SelectedColorBackgroundStyle id="9" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
+        <ForegroundStyle id="10" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
+        <FocusedForegroundStyle id="11" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
+        <ColorBackgroundStyle id="12" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
+        <RectangleShape id="13" arcSize="30.0" isRounded="false" />
+        <FocusedColorBackgroundStyle id="14" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
+        <ShadowStyle id="15" shadowDarkness="150" shadowDepth="2" shadowBlur="4" drawShadow="true" />
+        <SelectedForegroundStyle id="16" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
+        <TextStyle id="17" orientation="0" backgroundColor="255,255,255" color="0,0,0" isBackgroundColored="false" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </ShapeRole>
+    <ShapeRole id="18" cardinality="One" exampleLabel="ObjectName" cloningStrategy="Clone" userID="FLX" useSpecificDescriptions="false" name="nameShape" flexoID="41">
+      <TypedDiagramModelSlot idref="2" />
+      <GRSpec id="19" featureName="label" userID="FLX" useSpecificDescriptions="false" readOnly="true" value="((theObject.id + &quot;: &quot;) + theObject.instanceOf.name)" flexoID="42" />
+      <ParentShapeRole idref="7" />
+      <ShapeGraphicalRepresentation id="20" hasFocusedForeground="false" relativeTextY="0.5" lineWrap="false" hasSelectedBackground="false" locationConstraints="UNMOVABLE" widthConstraints="parent.width" allowToLeaveBounds="true" minimalHeight="0.0" maximalHeight="Infinity" isSelectable="true" height="20.0" verticalTextAlignment="MIDDLE" identifier="4d004952" heightConstraints="20" isVisible="true" transparency="1.0" relativeTextX="0.5" adjustMinimalWidthToLabelWidth="true" adjustMaximalWidthToLabelWidth="false" isFloatingLabel="false" dimensionConstraints="UNRESIZABLE" horizontalTextAlignment="CENTER" layer="1" minimalWidth="0.0" adjustMinimalHeightToLabelHeight="true" adaptBoundsToContents="false" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" drawControlPointsWhenFocused="true" isMultilineAllowed="false" yConstraints="0" absoluteTextY="0.0" absoluteTextX="0.0" hasSelectedForeground="false" continuousTextEditing="true" xConstraints="0" paragraphAlignment="CENTER" x="0.0" width="111.76470588235294" drawControlPointsWhenSelected="true" y="0.0" hasFocusedBackground="false" isLabelEditable="true" isFocusable="true" maximalWidth="Infinity">
+        <SelectedColorBackgroundStyle id="21" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
+        <ForegroundStyle id="22" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
+        <FocusedForegroundStyle id="23" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
+        <ColorBackgroundStyle id="24" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
+        <RectangleShape id="25" arcSize="30.0" isRounded="false" />
+        <FocusedColorBackgroundStyle id="26" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
+        <ShadowStyle id="27" shadowDarkness="150" shadowDepth="2" shadowBlur="4" drawShadow="true" />
+        <SelectedForegroundStyle id="28" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
+        <TextStyle id="29" orientation="0" backgroundColor="255,255,255" color="0,0,0" isBackgroundColored="false" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </ShapeRole>
+  </FlexoConcept>
+</VirtualModel>
