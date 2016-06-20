@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ViewPoint id="0" userID="FLX" modelVersion="1.0" version="0.1" flexoID="2" name="SysMLKaos" uri="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint">
   <Inspector id="1" flexoID="1" userID="FLX" inspectorTitle="Kaos" />
-  <ModelSlot_VirtualModelInstanceModelSlot id="2" userID="FLX" cloningStrategy="Reference" flexoID="18" isRequired="true" name="model" virtualModelURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/KaosModel" cardinality="ZeroOne">
+  <ModelSlot_VirtualModelInstanceModelSlot id="2" userID="FLX" cloningStrategy="Reference" flexoID="18" isRequired="true" name="model" virtualModelURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel" cardinality="ZeroOne">
     <VirtualModelInstanceModelSlot idref="2" />
   </ModelSlot_VirtualModelInstanceModelSlot>
   <CreationScheme id="3" userID="FLX" width="800" label="init" height="600" flexoID="15" description="Creates a new view conform to Kaos viewpoint.&#xA;A new KAOS model is instanciated.&#xA;" name="init">
