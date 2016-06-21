@@ -15,7 +15,7 @@
         <ShapeGraphicalRepresentation id="8" relativeTextX="0.5" height="50.0" width="80.0" relativeTextY="0.5" identifier="4f4a99ad" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="60.0" x="92.0">
           <FocusedForegroundStyle id="9" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
           <SelectedColorBackgroundStyle id="10" color="192,192,192" transparencyLevel="0.5" />
-          <TextStyle id="11" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" />
+          <TextStyle id="11" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" />
           <ForegroundStyle id="12" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
           <SelectedForegroundStyle id="13" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
           <FocusedColorBackgroundStyle id="14" color="192,192,192" transparencyLevel="0.5" />
@@ -25,29 +25,29 @@
         </ShapeGraphicalRepresentation>
         <TypedDiagramModelSlot idref="18" />
       </ShapeRole>
-      <AbstractProperty id="33" flexoID="1039" name="goal" userID="FLX" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal&gt;" />
-      <DropScheme id="34" userID="FLX" width="800" label="dropScheme" height="600" flexoID="446" name="dropScheme" target="top">
-        <BehaviourControlGraph_EmptyControlGraph id="35" flexoID="450" userID="FLX" />
-        <TextFieldParameter id="36" flexoID="447" name="name" userID="FLX" label="name" />
-        <TextAreaParameter id="37" flexoID="449" name="description" userID="FLX" label="description" />
+      <AbstractProperty id="60" flexoID="1039" name="goal" userID="FLX" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal&gt;" />
+      <DropScheme id="61" userID="FLX" width="800" label="dropScheme" height="600" flexoID="446" name="dropScheme" target="top">
+        <BehaviourControlGraph_EmptyControlGraph id="62" flexoID="450" userID="FLX" />
+        <TextFieldParameter id="63" flexoID="447" name="name" userID="FLX" label="name" />
+        <TextAreaParameter id="64" flexoID="449" name="description" userID="FLX" label="description" />
       </DropScheme>
     </ParentFlexoConcept>
-    <ShapeRole id="38" exampleLabel="Functional Goal" userID="FLX" cloningStrategy="Clone" flexoID="15" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="39" relativeTextX="0.5" height="50.0" width="160.0" allowToLeaveBounds="false" relativeTextY="0.5" identifier="5d783af1" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="70.0" x="35.0">
-        <FocusedForegroundStyle id="40" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedColorBackgroundStyle id="41" color="254,247,217" transparencyLevel="0.5" />
-        <TextStyle id="42" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
-        <ForegroundStyle id="43" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="44" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedColorBackgroundStyle id="45" color="254,247,217" transparencyLevel="0.5" />
-        <ParallelogramShape id="46" />
-        <ShadowStyle id="47" />
-        <ColorBackgroundStyle id="48" color="185,185,253" transparencyLevel="0.5" />
+    <ShapeRole id="65" exampleLabel="F-Goal" userID="FLX" cloningStrategy="Clone" flexoID="15" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="66" relativeTextX="0.5" height="45.0" allowToLeaveBounds="false" relativeTextY="0.5" identifier="5d783af1" lineWrap="true" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" isMultilineAllowed="true" y="40.0" x="40.0">
+        <FocusedForegroundStyle id="67" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedColorBackgroundStyle id="68" color="254,247,217" transparencyLevel="0.5" />
+        <TextStyle id="69" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" />
+        <ForegroundStyle id="70" dashStyle="PLAIN_STROKE" color="0,51,204" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="71" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="72" color="254,247,217" transparencyLevel="0.5" />
+        <ParallelogramShape id="73" />
+        <ShadowStyle id="74" />
+        <ColorGradientBackgroundStyle id="75" direction="SOUTH_EAST_NORTH_WEST" transparencyLevel="0.5" color2="255,255,255" color1="153,204,255" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="49" featureName="label" flexoID="1065" userID="FLX" value="goal.name" />
+      <GRSpec id="76" featureName="label" flexoID="1173" userID="FLX" value="goal.name" />
       <TypedDiagramModelSlot idref="18" />
     </ShapeRole>
-    <FlexoConceptInstanceRole id="50" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="165" name="goal" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#FunctionalGoal" cardinality="ZeroOne">
+    <FlexoConceptInstanceRole id="77" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="165" name="goal" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#FunctionalGoal" cardinality="ZeroOne">
       <VirtualModelInstanceModelSlot idref="24" />
     </FlexoConceptInstanceRole>
     <DropScheme id="20" userID="FLX" width="800" label="create_goal" height="600" flexoID="52" name="CreateGoal" target="top">
@@ -74,54 +74,145 @@
     </DropScheme>
   </FlexoConcept>
   <FlexoConcept idref="5" />
-  <FlexoConcept id="51" userID="FLX" isAbstract="true" flexoID="379" name="RefinementGR">
-    <Inspector id="52" flexoID="376" userID="FLX" inspectorTitle="RefinementGR" />
-    <ShapeRole id="53" exampleLabel="label" userID="FLX" cloningStrategy="Clone" flexoID="568" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="54" relativeTextX="0.5" height="50.0" width="80.0" relativeTextY="0.5" identifier="15572af8" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="40.0" x="160.0">
-        <FocusedForegroundStyle id="55" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedColorBackgroundStyle id="56" color="192,192,192" transparencyLevel="0.5" />
-        <TextStyle id="57" backgroundColor="255,255,255" color="0,0,0" font="SansSerif,1,11" />
-        <ForegroundStyle id="58" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="59" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedColorBackgroundStyle id="60" color="192,192,192" transparencyLevel="0.5" />
-        <RectangleShape id="61" />
-        <ShadowStyle id="62" />
-        <ColorBackgroundStyle id="63" color="192,192,192" transparencyLevel="0.5" />
+  <FlexoConcept id="78" userID="FLX" isAbstract="true" flexoID="379" name="RefinementGR">
+    <Inspector id="79" flexoID="376" userID="FLX" inspectorTitle="RefinementGR" />
+    <ShapeRole id="80" exampleLabel="label" userID="FLX" cloningStrategy="Clone" flexoID="568" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="81" relativeTextX="0.5" height="50.0" width="80.0" relativeTextY="0.5" identifier="15572af8" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="40.0" x="160.0">
+        <FocusedForegroundStyle id="82" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedColorBackgroundStyle id="83" color="192,192,192" transparencyLevel="0.5" />
+        <TextStyle id="84" color="0,0,0" backgroundColor="255,255,255" font="SansSerif,1,11" />
+        <ForegroundStyle id="85" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="86" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="87" color="192,192,192" transparencyLevel="0.5" />
+        <RectangleShape id="88" />
+        <ShadowStyle id="89" />
+        <ColorBackgroundStyle id="90" color="192,192,192" transparencyLevel="0.5" />
       </ShapeGraphicalRepresentation>
       <TypedDiagramModelSlot idref="18" />
     </ShapeRole>
   </FlexoConcept>
-  <FlexoConcept id="64" userID="FLX" isAbstract="true" flexoID="1035" name="NonFunctionalGoal">
-    <Inspector id="65" flexoID="1036" userID="FLX" inspectorTitle="NonFunctionalGoal" />
+  <FlexoConcept id="91" userID="FLX" isAbstract="true" flexoID="1035" name="NonFunctionalGoalGR">
+    <Inspector id="92" flexoID="1036" userID="FLX" inspectorTitle="NonFunctionalGoal" />
     <ParentFlexoConcept idref="5" />
-    <ShapeRole id="66" exampleLabel="Non functional Goal" userID="FLX" cloningStrategy="Clone" flexoID="1040" name="shape" cardinality="ZeroOne">
-      <ShapeGraphicalRepresentation id="67" relativeTextX="0.5" height="50.0" width="160.0" relativeTextY="0.5" identifier="333d1faf" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="62.0" x="64.0">
-        <FocusedForegroundStyle id="68" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedColorBackgroundStyle id="69" color="255,255,255" transparencyLevel="0.5" />
-        <TextStyle id="70" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
-        <ForegroundStyle id="71" dashStyle="MEDIUM_SPACED_DASHES" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <SelectedForegroundStyle id="72" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
-        <FocusedColorBackgroundStyle id="73" color="255,255,255" transparencyLevel="0.5" />
-        <ParallelogramShape id="74" />
-        <ShadowStyle id="75" />
-        <ColorBackgroundStyle id="76" color="255,255,255" transparencyLevel="0.5" />
+    <ShapeRole id="93" exampleLabel="NF-Goal" userID="FLX" cloningStrategy="Clone" flexoID="1040" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="94" relativeTextX="0.5" height="45.0" allowToLeaveBounds="false" relativeTextY="0.5" identifier="333d1faf" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" isMultilineAllowed="true" y="40.0" x="40.0">
+        <FocusedForegroundStyle id="95" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedColorBackgroundStyle id="96" color="254,247,217" transparencyLevel="0.5" />
+        <TextStyle id="97" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" />
+        <ForegroundStyle id="98" dashStyle="MEDIUM_SPACED_DASHES" color="153,153,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="99" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="100" color="254,247,217" transparencyLevel="0.5" />
+        <ParallelogramShape id="101" />
+        <ShadowStyle id="102" />
+        <ColorGradientBackgroundStyle id="103" direction="SOUTH_EAST_NORTH_WEST" transparencyLevel="0.5" color2="255,255,255" color1="254,247,217" />
       </ShapeGraphicalRepresentation>
       <TypedDiagramModelSlot idref="18" />
     </ShapeRole>
+    <FlexoConceptInstanceRole id="104" userID="FLX" virtualModelInstance="model" cloningStrategy="Reference" flexoID="1159" name="goal" cardinality="ZeroOne" />
+    <DropScheme id="45" userID="FLX" width="800" label="CreateGoal" height="600" flexoID="1162" name="CreateGoal" target="top">
+      <BehaviourControlGraph_Sequence id="46" flexoID="1174" userID="FLX">
+        <ControlGraph1_AssignationAction id="47" userID="FLX" flexoID="1166" ownerContext="controlGraph1" assign="goal">
+          <AssignableAction_AddFlexoConceptInstance id="48" userID="FLX" virtualModelInstance="model" flexoID="1165" creationSchemeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#NonFunctionalGoal.create">
+            <AddFlexoConceptInstanceParameter id="49" flexoID="406" userID="FLX" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="50" flexoID="407" userID="FLX" value="parameters.type" paramName="type" />
+            <AddFlexoConceptInstanceParameter id="51" flexoID="408" userID="FLX" value="parameters.description" paramName="description" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="52" userID="FLX" flexoID="1172" ownerContext="controlGraph2" assign="shape">
+          <AssignableAction_AddShape id="53" flexoID="1171" userID="FLX">
+            <TypedDiagramModelSlot idref="18" />
+          </AssignableAction_AddShape>
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="54" flexoID="1167" name="name" userID="FLX" label="name" />
+      <TextFieldParameter id="55" flexoID="1168" name="type" userID="FLX" label="type" />
+      <TextAreaParameter id="56" flexoID="1169" name="description" userID="FLX" label="description" />
+    </DropScheme>
   </FlexoConcept>
-  <Inspector id="77" flexoID="9" userID="FLX" inspectorTitle="Goal Modeling Diagram" />
+  <FlexoConcept id="105" userID="FLX" isAbstract="true" flexoID="1071" name="AgentGR">
+    <Inspector id="106" flexoID="1072" userID="FLX" inspectorTitle="AgentGR" />
+    <ShapeRole id="107" exampleLabel="Agent" userID="FLX" cloningStrategy="Clone" flexoID="1086" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="108" relativeTextX="0.5" height="50.0" width="80.0" relativeTextY="0.5" identifier="52a418b7" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="20.0" x="20.0">
+        <FocusedForegroundStyle id="109" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedColorBackgroundStyle id="110" color="255,255,255" transparencyLevel="0.5" />
+        <TextStyle id="111" color="0,0,0" backgroundColor="255,255,255" font="Lucida Sans,0,11" />
+        <ForegroundStyle id="112" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="113" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="114" color="255,255,255" transparencyLevel="0.5" />
+        <RectangleShape id="115" />
+        <ShadowStyle id="116" />
+        <ColorBackgroundStyle id="117" color="255,255,255" transparencyLevel="0.5" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="18" />
+    </ShapeRole>
+    <AbstractProperty id="118" flexoID="1098" name="agent" userID="FLX" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Agent&gt;" />
+  </FlexoConcept>
+  <FlexoConcept id="119" userID="FLX" flexoID="1102" name="EnvironmentalAgentGR">
+    <Inspector id="120" flexoID="1099" userID="FLX" inspectorTitle="EnvironmentalAgent" />
+    <ParentFlexoConcept idref="105" />
+    <ShapeRole id="121" exampleLabel="Env. Agent" userID="FLX" cloningStrategy="Clone" flexoID="1105" name="shape" cardinality="ZeroOne">
+      <ShapeGraphicalRepresentation id="122" relativeTextX="0.5" height="43.44827586206897" width="80.39188826215417" allowToLeaveBounds="false" relativeTextY="0.5" identifier="538d1863" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" dimensionConstraints="FREELY_RESIZABLE" isFloatingLabel="false" layer="1" y="66.0" x="54.0">
+        <FocusedForegroundStyle id="123" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedColorGradientBackgroundStyle id="124" direction="SOUTH_EAST_NORTH_WEST" transparencyLevel="0.5" color2="255,255,255" color1="254,247,217" />
+        <TextStyle id="125" color="153,0,51" backgroundColor="255,255,255" font="Lucida Sans Demibold,1,11" />
+        <ForegroundStyle id="126" dashStyle="PLAIN_STROKE" color="255,102,102" lineWidth="1.4000000014901162" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="127" dashStyle="PLAIN_STROKE" color="0,0,0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" />
+        <FocusedColorGradientBackgroundStyle id="128" direction="SOUTH_EAST_NORTH_WEST" transparencyLevel="0.5" color2="255,255,255" color1="254,247,217" />
+        <CustomPolygonShape id="129">
+          <Point>0.15,0.0</Point>
+          <Point>0.0,0.5</Point>
+          <Point>0.15,1.0</Point>
+          <Point>0.85,1.0</Point>
+          <Point>1.0,0.5</Point>
+          <Point>0.85,0.0</Point>
+        </CustomPolygonShape>
+        <ShadowStyle id="130" />
+        <ColorGradientBackgroundStyle id="131" direction="SOUTH_EAST_NORTH_WEST" transparencyLevel="0.5" color2="255,255,255" color1="255,102,102" />
+      </ShapeGraphicalRepresentation>
+      <GRSpec id="132" featureName="label" flexoID="1135" userID="FLX" value="agent.name" />
+      <TypedDiagramModelSlot idref="18" />
+    </ShapeRole>
+    <FlexoConceptInstanceRole id="133" userID="FLX" virtualModelInstance="model" cloningStrategy="Reference" flexoID="1117" name="agent" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#EnvironmentalAgent" cardinality="ZeroOne" />
+    <DropScheme id="34" userID="FLX" width="800" label="dropScheme" height="600" flexoID="1118" name="dropScheme" target="top">
+      <BehaviourControlGraph_Sequence id="35" flexoID="1126" userID="FLX">
+        <ControlGraph1_AssignationAction id="36" userID="FLX" flexoID="1122" ownerContext="controlGraph1" assign="agent">
+          <AssignableAction_AddFlexoConceptInstance id="37" userID="FLX" virtualModelInstance="model" flexoID="1121" creationSchemeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#EnvironmentalAgent.create">
+            <AddFlexoConceptInstanceParameter id="38" flexoID="386" userID="FLX" value="parameters.name" paramName="name" />
+            <AddFlexoConceptInstanceParameter id="39" flexoID="387" userID="FLX" value="parameters.description" paramName="description" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="40" userID="FLX" flexoID="1125" ownerContext="controlGraph2" assign="shape">
+          <AssignableAction_AddShape id="41" flexoID="1124" userID="FLX">
+            <TypedDiagramModelSlot idref="18" />
+          </AssignableAction_AddShape>
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="42" flexoID="1127" name="name" userID="FLX" label="name" />
+      <TextAreaParameter id="43" flexoID="1128" name="description" userID="FLX" label="description" />
+    </DropScheme>
+  </FlexoConcept>
+  <Inspector id="134" flexoID="9" userID="FLX" inspectorTitle="Goal Modeling Diagram" />
   <ModelSlot_TypedDiagramModelSlot id="18" userID="FLX" cloningStrategy="Reference" flexoID="10" isRequired="true" name="kaosGoalDiagram" metaModelURI="http://openflexo.org/diagrams/SysMLKaos/GoalDiagram.diagramspecification" cardinality="ZeroOne">
     <FMLDiagramPaletteElementBinding id="19" paletteElementId="http://openflexo.org/diagrams/SysMLKaos/GoalDiagram.diagramspecification/GoalPalette.palette#F-Goal" userID="FLX" flexoID="1057">
       <DropScheme idref="20" />
     </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="33" paletteElementId="http://openflexo.org/diagrams/SysMLKaos/GoalDiagram.diagramspecification/GoalPalette.palette#Env. Agent" userID="FLX" flexoID="1130">
+      <DropScheme idref="34" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="44" paletteElementId="http://openflexo.org/diagrams/SysMLKaos/GoalDiagram.diagramspecification/GoalPalette.palette#NF-Goal" userID="FLX" flexoID="1175">
+      <DropScheme idref="45" />
+      <FMLDiagramPaletteElementBindingParameter id="57" flexoID="1176" userID="FLX" />
+      <FMLDiagramPaletteElementBindingParameter id="58" flexoID="1177" userID="FLX" />
+      <FMLDiagramPaletteElementBindingParameter id="59" flexoID="1178" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
     <TypedDiagramModelSlot idref="18" />
   </ModelSlot_TypedDiagramModelSlot>
-  <CreationScheme id="78" userID="FLX" width="800" label="init" height="600" flexoID="74" name="init">
-    <BehaviourControlGraph_AssignationAction id="79" userID="FLX" flexoID="76" ownerContext="controlGraph2" assign="kaosGoalDiagram">
-      <AssignableAction_CreateDiagram id="80" diagramSpecificationURI="http://openflexo.org/diagrams/SysMLKaos/GoalDiagram.diagramspecification" diagramName="parameters.diagramName" relativePath="/Diagrams" userID="FLX" flexoID="75" resourceCenter="project">
+  <CreationScheme id="135" userID="FLX" width="800" label="init" height="600" flexoID="74" name="init">
+    <BehaviourControlGraph_AssignationAction id="136" userID="FLX" flexoID="76" ownerContext="controlGraph2" assign="kaosGoalDiagram">
+      <AssignableAction_CreateDiagram id="137" diagramSpecificationURI="http://openflexo.org/diagrams/SysMLKaos/GoalDiagram.diagramspecification" diagramName="parameters.diagramName" relativePath="/Diagrams" userID="FLX" flexoID="75" resourceCenter="project">
         <TypedDiagramModelSlot idref="18" />
       </AssignableAction_CreateDiagram>
     </BehaviourControlGraph_AssignationAction>
-    <TextFieldParameter id="81" flexoID="77" name="diagramName" userID="FLX" label="diagram_name" />
+    <TextFieldParameter id="138" flexoID="77" name="diagramName" userID="FLX" label="diagram_name" />
   </CreationScheme>
 </VirtualModel>

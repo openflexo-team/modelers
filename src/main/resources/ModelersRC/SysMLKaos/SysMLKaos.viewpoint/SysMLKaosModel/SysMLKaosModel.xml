@@ -32,93 +32,123 @@
   </FlexoConcept>
   <FlexoConcept id="23" userID="FLX" isAbstract="true" flexoID="29" name="Agent">
     <Inspector id="24" flexoID="28" userID="FLX" inspectorTitle="Agent" />
-    <CreationScheme id="25" userID="FLX" width="800" label="create" height="600" flexoID="250" name="create">
-      <BehaviourControlGraph_Sequence id="26" flexoID="262" userID="FLX">
-        <ControlGraph1_AssignationAction id="27" userID="FLX" flexoID="258" ownerContext="controlGraph1" assign="name">
-          <AssignableAction_ExpressionAction id="28" expression="parameters.name" flexoID="257" userID="FLX" />
-        </ControlGraph1_AssignationAction>
-        <ControlGraph2_AssignationAction id="29" userID="FLX" flexoID="261" ownerContext="controlGraph2" assign="description">
-          <AssignableAction_ExpressionAction id="30" expression="parameters.description" flexoID="260" userID="FLX" />
-        </ControlGraph2_AssignationAction>
-      </BehaviourControlGraph_Sequence>
-      <TextFieldParameter id="31" flexoID="251" name="name" userID="FLX" label="name" />
-      <TextAreaParameter id="32" flexoID="252" name="description" userID="FLX" label="description" />
-    </CreationScheme>
+    <PrimitiveRole id="25" flexoID="376" primitiveType="String" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <PrimitiveRole id="26" flexoID="377" primitiveType="String" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
   </FlexoConcept>
-  <FlexoConcept id="33" userID="FLX" isAbstract="true" flexoID="30" description="Defines a refinment relationship between a Goal and a collection of Goals&#xA;Goals should be compatible (a functional requirement cannot emerge from a non functional requirement for example)&#xA;Semantics of refinment is defined by sub-classes&#xA;" name="Refinment">
-    <Inspector id="34" flexoID="31" userID="FLX" inspectorTitle="Refinment" />
-    <FlexoConceptInstanceRole id="35" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="234" description="The goal beeing refined" name="source" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="36" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="235" description="Collection of goals that define the refinment" name="target" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" cardinality="ZeroMany" />
-    <CreationScheme id="37" userID="FLX" width="800" label="create" height="600" flexoID="34" name="create">
-      <BehaviourControlGraph_Sequence id="38" flexoID="46" userID="FLX">
-        <ControlGraph1_AssignationAction id="39" userID="FLX" flexoID="42" ownerContext="controlGraph1" assign="source">
-          <AssignableAction_ExpressionAction id="40" expression="parameters.source" flexoID="41" userID="FLX" />
+  <FlexoConcept id="27" userID="FLX" isAbstract="true" flexoID="30" description="Defines a refinment relationship between a Goal and a collection of Goals&#xA;Goals should be compatible (a functional requirement cannot emerge from a non functional requirement for example)&#xA;Semantics of refinment is defined by sub-classes&#xA;" name="Refinment">
+    <Inspector id="28" flexoID="31" userID="FLX" inspectorTitle="Refinment" />
+    <FlexoConceptInstanceRole id="29" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="234" description="The goal beeing refined" name="source" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="30" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="235" description="Collection of goals that define the refinment" name="target" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" cardinality="ZeroMany" />
+    <CreationScheme id="31" userID="FLX" width="800" label="create" height="600" flexoID="34" name="create">
+      <BehaviourControlGraph_Sequence id="32" flexoID="46" userID="FLX">
+        <ControlGraph1_AssignationAction id="33" userID="FLX" flexoID="42" ownerContext="controlGraph1" assign="source">
+          <AssignableAction_ExpressionAction id="34" expression="parameters.source" flexoID="41" userID="FLX" />
         </ControlGraph1_AssignationAction>
-        <ControlGraph2_AssignationAction id="41" userID="FLX" flexoID="45" ownerContext="controlGraph2" assign="target">
-          <AssignableAction_ExpressionAction id="42" expression="parameters.target" flexoID="44" description="" userID="FLX" />
+        <ControlGraph2_AssignationAction id="35" userID="FLX" flexoID="45" ownerContext="controlGraph2" assign="target">
+          <AssignableAction_ExpressionAction id="36" expression="parameters.target" flexoID="44" description="" userID="FLX" />
         </ControlGraph2_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <FlexoConceptInstanceParameter id="43" userID="FLX" label="source" flexoID="35" name="source" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" aVirtualModelInstance="virtualModelInstance" />
-      <FlexoConceptInstanceParameter id="44" userID="FLX" label="target" flexoID="36" name="target" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" aVirtualModelInstance="virtualModelInstance" />
+      <FlexoConceptInstanceParameter id="37" userID="FLX" label="source" flexoID="35" name="source" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" aVirtualModelInstance="virtualModelInstance" />
+      <FlexoConceptInstanceParameter id="38" userID="FLX" label="target" flexoID="36" name="target" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Goal" aVirtualModelInstance="virtualModelInstance" />
     </CreationScheme>
   </FlexoConcept>
   <FlexoConcept idref="3" />
-  <FlexoConcept id="45" userID="FLX" flexoID="326" name="OrRefinment">
-    <Inspector id="46" flexoID="323" userID="FLX" inspectorTitle="OrRefinment" />
-    <ParentFlexoConcept idref="33" />
+  <FlexoConcept id="39" userID="FLX" flexoID="326" name="OrRefinment">
+    <Inspector id="40" flexoID="323" userID="FLX" inspectorTitle="OrRefinment" />
+    <ParentFlexoConcept idref="27" />
   </FlexoConcept>
-  <FlexoConcept id="47" userID="FLX" flexoID="330" name="AndRefinment">
-    <Inspector id="48" flexoID="327" userID="FLX" inspectorTitle="AndRefinment" />
-    <ParentFlexoConcept idref="33" />
+  <FlexoConcept id="41" userID="FLX" flexoID="330" name="AndRefinment">
+    <Inspector id="42" flexoID="327" userID="FLX" inspectorTitle="AndRefinment" />
+    <ParentFlexoConcept idref="27" />
   </FlexoConcept>
-  <FlexoConcept id="49" userID="FLX" flexoID="334" description="A non functional goal.&#xA;This concept implements here many notions of the model.&#xA;When no contributions are defined, this is a normal goal, to be refined.&#xA;When at least one contribution is defined, this is an Elementary NonFunctionalGoal&#xA;&#xA;" name="NonFunctionalGoal">
-    <Inspector id="50" flexoID="331" userID="FLX" inspectorTitle="NonFunctionalGoal" />
+  <FlexoConcept id="43" userID="FLX" flexoID="334" description="A non functional goal.&#xA;This concept implements here many notions of the model.&#xA;When no contributions are defined, this is a normal goal, to be refined.&#xA;When at least one contribution is defined, this is an Elementary NonFunctionalGoal&#xA;&#xA;" name="NonFunctionalGoal">
+    <Inspector id="44" flexoID="331" userID="FLX" inspectorTitle="NonFunctionalGoal" />
     <ParentFlexoConcept idref="3" />
-    <PrimitiveRole id="51" flexoID="366" description="Type of non functional goal" primitiveType="String" userID="FLX" name="nonFunctionalGoalType" cloningStrategy="Clone" cardinality="ZeroOne" />
-    <PrimitiveRole id="52" flexoID="367" primitiveType="String" userID="FLX" name="topic" cloningStrategy="Clone" cardinality="ZeroOne" />
-    <FlexoConceptInstanceRole id="53" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="368" description="Non functional goal" name="contributions" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Contribution" cardinality="OneMany" />
+    <PrimitiveRole id="45" flexoID="366" description="Type of non functional goal" primitiveType="String" userID="FLX" name="nonFunctionalGoalType" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <PrimitiveRole id="46" flexoID="367" primitiveType="String" userID="FLX" name="topic" cloningStrategy="Clone" cardinality="ZeroOne" />
+    <FlexoConceptInstanceRole id="47" userID="FLX" virtualModelInstance="virtualModelInstance" cloningStrategy="Reference" flexoID="368" description="Non functional goal" name="contributions" flexoConceptTypeURI="http://openflexo.org/modellers/SysMLKaos/SysMLKaos.viewpoint/SysMLKaosModel#Contribution" cardinality="OneMany" />
+    <CreationScheme id="48" userID="FLX" width="800" label="create" height="600" flexoID="395" name="create">
+      <BehaviourControlGraph_Sequence id="49" flexoID="409" userID="FLX">
+        <ControlGraph1_AssignationAction id="50" userID="FLX" flexoID="401" ownerContext="controlGraph1" assign="name">
+          <AssignableAction_ExpressionAction id="51" expression="parameters.name" flexoID="400" userID="FLX" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_Sequence id="52" flexoID="410" ownerContext="controlGraph2" userID="FLX">
+          <ControlGraph1_AssignationAction id="53" userID="FLX" flexoID="403" ownerContext="controlGraph1" assign="nonFunctionalGoalType">
+            <AssignableAction_ExpressionAction id="54" expression="parameters.type" flexoID="402" userID="FLX" />
+          </ControlGraph1_AssignationAction>
+          <ControlGraph2_AssignationAction id="55" userID="FLX" flexoID="405" ownerContext="controlGraph2" assign="description">
+            <AssignableAction_ExpressionAction id="56" expression="parameters.description" flexoID="404" userID="FLX" />
+          </ControlGraph2_AssignationAction>
+        </ControlGraph2_Sequence>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="57" flexoID="397" name="name" userID="FLX" label="name" />
+      <TextFieldParameter id="58" flexoID="398" name="type" userID="FLX" label="type" />
+      <TextAreaParameter id="59" flexoID="399" name="description" userID="FLX" label="description" />
+    </CreationScheme>
   </FlexoConcept>
-  <FlexoConcept id="54" userID="FLX" flexoID="349" name="EnvironmentalAgent">
-    <Inspector id="55" flexoID="350" userID="FLX" inspectorTitle="EnvironmentalAgent" />
+  <FlexoConcept id="60" userID="FLX" flexoID="349" name="EnvironmentalAgent">
+    <Inspector id="61" flexoID="350" userID="FLX" inspectorTitle="EnvironmentalAgent" />
     <ParentFlexoConcept idref="23" />
+    <ParentFlexoConcept id="62" userID="FLX" isAbstract="true" flexoID="-1" name="Agent">
+      <Inspector id="63" flexoID="-1" userID="FLX" inspectorTitle="Agent" />
+      <PrimitiveRole id="64" flexoID="-1" primitiveType="String" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
+      <PrimitiveRole id="65" flexoID="-1" primitiveType="String" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
+      <CreationScheme id="66" userID="FLX" width="800" label="create" height="600" flexoID="-1" name="create">
+        <TextFieldParameter id="67" flexoID="251" name="name" userID="FLX" label="name" />
+        <TextAreaParameter id="68" flexoID="252" name="description" userID="FLX" label="description" />
+      </CreationScheme>
+    </ParentFlexoConcept>
+    <CreationScheme id="69" userID="FLX" width="800" label="create" height="600" flexoID="380" name="create">
+      <BehaviourControlGraph_Sequence id="70" flexoID="388" userID="FLX">
+        <ControlGraph1_AssignationAction id="71" userID="FLX" flexoID="383" ownerContext="controlGraph1" assign="name">
+          <AssignableAction_ExpressionAction id="72" expression="parameters.name" flexoID="382" userID="FLX" />
+        </ControlGraph1_AssignationAction>
+        <ControlGraph2_AssignationAction id="73" userID="FLX" flexoID="385" ownerContext="controlGraph2" assign="description">
+          <AssignableAction_ExpressionAction id="74" expression="parameters.description" flexoID="384" userID="FLX" />
+        </ControlGraph2_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <TextFieldParameter id="75" flexoID="389" name="name" userID="FLX" label="name" />
+      <TextAreaParameter id="76" flexoID="390" name="description" userID="FLX" label="description" />
+    </CreationScheme>
   </FlexoConcept>
-  <FlexoConcept id="56" userID="FLX" flexoID="356" name="SoftwareAgent">
-    <Inspector id="57" flexoID="355" userID="FLX" inspectorTitle="SoftwareAgent" />
+  <FlexoConcept id="77" userID="FLX" flexoID="356" name="SoftwareAgent">
+    <Inspector id="78" flexoID="355" userID="FLX" inspectorTitle="SoftwareAgent" />
     <ParentFlexoConcept idref="23" />
+    <ParentFlexoConcept idref="62" />
   </FlexoConcept>
-  <FlexoConcept id="58" userID="FLX" flexoID="369" name="Contribution">
-    <Inspector id="59" flexoID="371" userID="FLX" inspectorTitle="Contribution" />
+  <FlexoConcept id="79" userID="FLX" flexoID="369" name="Contribution">
+    <Inspector id="80" flexoID="371" userID="FLX" inspectorTitle="Contribution" />
   </FlexoConcept>
-  <Inspector id="60" flexoID="6" userID="FLX" inspectorTitle="KAOS Model">
-    <TextField id="61" flexoID="68" name="name" userID="FLX" data="name" label="name">
-      <Inspector idref="60" />
+  <Inspector id="81" flexoID="6" userID="FLX" inspectorTitle="KAOS Model">
+    <TextField id="82" flexoID="68" name="name" userID="FLX" data="name" label="name">
+      <Inspector idref="81" />
     </TextField>
-    <TextField id="62" flexoID="69" name="title" userID="FLX" data="title" label="title">
-      <Inspector idref="60" />
+    <TextField id="83" flexoID="69" name="title" userID="FLX" data="title" label="title">
+      <Inspector idref="81" />
     </TextField>
-    <TextArea id="63" flexoID="70" name="description" userID="FLX" data="description" label="description">
-      <Inspector idref="60" />
+    <TextArea id="84" flexoID="70" name="description" userID="FLX" data="description" label="description">
+      <Inspector idref="81" />
     </TextArea>
   </Inspector>
-  <PrimitiveRole id="64" flexoID="53" primitiveType="String" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
-  <PrimitiveRole id="65" flexoID="54" primitiveType="String" userID="FLX" name="title" cloningStrategy="Clone" cardinality="ZeroOne" />
-  <PrimitiveRole id="66" flexoID="55" primitiveType="String" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
-  <CreationScheme id="67" userID="FLX" width="800" label="init" height="600" flexoID="25" name="init">
-    <BehaviourControlGraph_Sequence id="68" flexoID="65" userID="FLX">
-      <ControlGraph1_AssignationAction id="69" userID="FLX" flexoID="57" ownerContext="controlGraph1" assign="name">
-        <AssignableAction_ExpressionAction id="70" expression="parameters.name" flexoID="56" userID="FLX" />
+  <PrimitiveRole id="85" flexoID="53" primitiveType="String" userID="FLX" name="name" cloningStrategy="Clone" cardinality="ZeroOne" />
+  <PrimitiveRole id="86" flexoID="54" primitiveType="String" userID="FLX" name="title" cloningStrategy="Clone" cardinality="ZeroOne" />
+  <PrimitiveRole id="87" flexoID="55" primitiveType="String" userID="FLX" name="description" cloningStrategy="Clone" cardinality="ZeroOne" />
+  <CreationScheme id="88" userID="FLX" width="800" label="init" height="600" flexoID="25" name="init">
+    <BehaviourControlGraph_Sequence id="89" flexoID="65" userID="FLX">
+      <ControlGraph1_AssignationAction id="90" userID="FLX" flexoID="57" ownerContext="controlGraph1" assign="name">
+        <AssignableAction_ExpressionAction id="91" expression="parameters.name" flexoID="56" userID="FLX" />
       </ControlGraph1_AssignationAction>
-      <ControlGraph2_Sequence id="71" flexoID="66" ownerContext="controlGraph2" userID="FLX">
-        <ControlGraph1_AssignationAction id="72" userID="FLX" flexoID="59" ownerContext="controlGraph1" assign="title">
-          <AssignableAction_ExpressionAction id="73" expression="parameters.title" flexoID="58" userID="FLX" />
+      <ControlGraph2_Sequence id="92" flexoID="66" ownerContext="controlGraph2" userID="FLX">
+        <ControlGraph1_AssignationAction id="93" userID="FLX" flexoID="59" ownerContext="controlGraph1" assign="title">
+          <AssignableAction_ExpressionAction id="94" expression="parameters.title" flexoID="58" userID="FLX" />
         </ControlGraph1_AssignationAction>
-        <ControlGraph2_AssignationAction id="74" userID="FLX" flexoID="61" ownerContext="controlGraph2" assign="description">
-          <AssignableAction_ExpressionAction id="75" expression="parameters.description" flexoID="60" userID="FLX" />
+        <ControlGraph2_AssignationAction id="95" userID="FLX" flexoID="61" ownerContext="controlGraph2" assign="description">
+          <AssignableAction_ExpressionAction id="96" expression="parameters.description" flexoID="60" userID="FLX" />
         </ControlGraph2_AssignationAction>
       </ControlGraph2_Sequence>
     </BehaviourControlGraph_Sequence>
-    <TextFieldParameter id="76" flexoID="38" name="name" userID="FLX" label="name" />
-    <TextFieldParameter id="77" flexoID="39" name="title" userID="FLX" label="title" />
-    <TextAreaParameter id="78" flexoID="67" name="description" userID="FLX" label="description" />
+    <TextFieldParameter id="97" flexoID="38" name="name" userID="FLX" label="name" />
+    <TextFieldParameter id="98" flexoID="39" name="title" userID="FLX" label="title" />
+    <TextAreaParameter id="99" flexoID="67" name="description" userID="FLX" label="description" />
   </CreationScheme>
 </VirtualModel>
