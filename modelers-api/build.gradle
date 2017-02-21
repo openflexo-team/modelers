@@ -1,0 +1,14 @@
+dependencies {
+
+  compile project(':modelers-rc')
+
+  // openflexo dep
+  compile flexoFoundation()
+   
+  // external dep
+  
+  // testing dep
+  testCompile testUtils()
+  testCompile flexoFoundationTest()
+   
+}

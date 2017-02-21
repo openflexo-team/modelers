@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="1" name="LayeredViewpointDiagram" modelVersion="1.0" userID="FLX">
+  <FlexoConcept id="2" name="TriggeringGR" userID="FLX">
+    <DeletionScheme id="3" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="4" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="5" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="6" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="7" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="8" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="10" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.38368580060422963,0.5081967213114754" userID="FLX" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="11" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot id="360" isRequired="true" isReadOnly="false" userID="FLX" />
+      <GRSpec id="34" featureName="label" value="triggering.triggering.name" readOnly="true" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="35" inspectorTitle="TrigerringGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="36" name="AssociationGR" userID="FLX">
+    <DeletionScheme id="37" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="38" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="39" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="40" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="41" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="42" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="43" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="44" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.3021148036253776,0.4754098360655738" userID="FLX" startSymbol="NONE" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="45" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="66" featureName="label" value="association.association.name" readOnly="true" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="67" inspectorTitle="AssociationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="68" name="CompositionGR" userID="FLX">
+    <DeletionScheme id="69" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="70" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="71" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="72" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="73" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="74" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="75" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="76" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="FILLED_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="77" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="98" featureName="label" value="composition.composition.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="99" inspectorTitle="CompositionGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="100" name="FlowGR" userID="FLX">
+    <DeletionScheme id="101" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="102" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="103" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="104" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="105" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="DOT_LINES_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="106" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="107" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="108" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="109" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="130" featureName="label" value="flow.flow.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="131" inspectorTitle="FlowGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="132" name="AggregationGR" userID="FLX">
+    <DeletionScheme id="133" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="134" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="135" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="136" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="137" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="138" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="139" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="140" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="PLAIN_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="141" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="162" featureName="label" value="aggregation.aggregation.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="163" inspectorTitle="AggregationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="164" name="SpecializationGR" userID="FLX">
+    <DeletionScheme id="165" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="166" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="167" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="168" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="169" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="170" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="171" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="172" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="173" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="194" featureName="label" value="specialization.specialization.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="195" inspectorTitle="SpecialisationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="196" name="UsedbyGR" userID="FLX">
+    <DeletionScheme id="197" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="198" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="199" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="200" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="201" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="202" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="203" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="204" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" userID="FLX" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="205" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="226" featureName="label" value="usedby.usedby.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="227" inspectorTitle="UsedByGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="228" name="AccessGR" userID="FLX">
+    <DeletionScheme id="229" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="230" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="231" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="232" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="233" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="DOTS_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="234" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="235" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="236" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="237" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="258" featureName="label" value="access.access.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="259" inspectorTitle="AccessGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="260" name="RealizationGR" userID="FLX">
+    <DeletionScheme id="261" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="262" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="263" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="264" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="265" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="266" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="267" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="268" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="25.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="269" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="290" featureName="label" value="realization.realization.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="291" inspectorTitle="RealizationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="292" name="AssignmentGR" userID="FLX">
+    <DeletionScheme id="293" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="294" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="295" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="296" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="297" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="298" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="299" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="300" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" userID="FLX" startSymbol="FILLED_CIRCLE" endSymbol="FILLED_CIRCLE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="301" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+      <GRSpec id="322" featureName="label" value="assignment.assignment.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="323" inspectorTitle="AssignmentGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="324" name="InfluenceGR" userID="FLX">
+    <DeletionScheme id="325" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="326" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="327" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="328" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="329" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_SPACED_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="330" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="331" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="332" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="AUTO_LAYOUT" startOrientation="EAST" endOrientation="WEST" isRounded="false" arcSize="5" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" userID="FLX" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="333" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="360" userID="FLX" />
+    </ConnectorRole>
+    <Inspector id="354" inspectorTitle="InfluenceGR" userID="FLX" />
+  </FlexoConcept>
+  <LocalizedDictionary id="355" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot isRequired="true" isReadOnly="false" virtualModelURI="http://ArchimateVP/LayeredViewpointDiagram" name="virtualModelInstance" id="356" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot id="357" virtualModelURI="http://ArchimateVP/ArchimateVirtualModel" isRequired="true" isReadOnly="false" name="archimateVirtualModel" userID="FLX" />
+  <Inspector id="358" inspectorTitle="LayeredViewpointDiagram" userID="FLX" />
+  <ModelSlot_TypedDiagramModelSlot metaModelURI="http://ArchimateVP/LayeredViewpointDiagram/LayeredViewpointDiagram.diagramspecification" name="typedDiagramModelSlot" id="360" userID="FLX" />
+</VirtualModel>

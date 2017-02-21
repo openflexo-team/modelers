@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="1" name="MegaModel" modelVersion="1.0" userID="FLX">
+  <description userID="FLX">Diagram of Model Packages</description>
+  <FlexoConcept id="2" name="ModelGR" userID="FLX">
+    <DropScheme id="3" target="top" name="dropAtTopLevel" label="dropAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="4" name="name" label="New Model Name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="5" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="36" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="7" virtualModelInstance="virtualModelInstance.umlmodel" creationSchemeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model.createModel" assignation="modelInstance" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="8" paramName="name" value="parameters.name" userID="FLX" />
+        <VirtualModelModelSlot idref="9" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <ActionScheme id="10" conditional="(pkgDiagram = null)" name="createPackageDiagram" label="createPackageDiagram" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="11" name="flexoBehaviourInstance_name" label="flexoBehaviourInstance_name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddDiagram id="12" diagramName="parameters.diagram_name" diagramSpecificationURI="http://www.omg.org/UML/EMF/PackageDiagram/PackageDiagram.diagramspecification" assignation="pkgDiagram" userID="FLX">
+        <TypedDiagramModelSlot idref="36" userID="FLX" />
+      </AddDiagram>
+      <AssignationAction id="13" value="modelInstance.model" assignation="pkgDiagram.model.model" userID="FLX" />
+    </ActionScheme>
+    <NavigationScheme id="14" targetObject="pkgDiagram" conditional="(pkgDiagram != null)" name="NavigateToPackageDiagram" label="NavigateToPackageDiagram" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX" />
+    <ShapeRole id="15" name="shape" exampleLabel="&lt;No Name&gt;" userID="FLX">
+      <ShapeGraphicalRepresentation id="16" x="529.0" y="424.0" width="158.39408438451497" height="100.66316292403249" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" text="&lt;No Name&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="17" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ImageBackgroundStyle id="18" imageFile="../Images/model_diagram/Model.gif" scaleX="0.2682926829268293" scaleY="0.25316455696202533" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="19" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="20" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="21" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="22" color="192,192,192" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="23" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape id="24" isRounded="false" arcSize="30.0" userID="FLX" />
+        <ShadowStyle id="25" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="26" font="SansSerif,1,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="36" isRequired="true" isReadOnly="false" userID="FLX" />
+      <GRSpec id="27" featureName="label" value="modelInstance.model.name" readOnly="false" userID="FLX" />
+    </ShapeRole>
+    <DiagramRole id="28" diagramSpecificationURI="http://www.omg.org/UML/EMF/PackageDiagram/PackageDiagram.diagramspecification" name="pkgDiagram" userID="FLX">
+      <TypedDiagramModelSlot idref="36" userID="FLX" />
+    </DiagramRole>
+    <FlexoConceptInstanceRole id="29" flexoConceptTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="modelInstance" userID="FLX">
+      <VirtualModelModelSlot id="9" virtualModelURI="http://www.omg.org/UML/EMF/UML2EMF_VM" isRequired="true" isReadOnly="false" name="umlmodel" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="30" inspectorTitle="ModelGR" userID="FLX" />
+  </FlexoConcept>
+  <LocalizedDictionary id="31" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot virtualModelURI="http://www.omg.org/UML/EMF/MegaModel" name="virtualModelInstance" id="6" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot idref="9" userID="FLX" />
+  <DeletionScheme id="32" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX" />
+  <FlexoConceptInstanceRole id="33" flexoConceptTypeURI="http://www.omg.org/UML/EMF/UML2EMF_VM#Model" name="glouk" userID="FLX">
+    <VirtualModelModelSlot idref="9" userID="FLX" />
+  </FlexoConceptInstanceRole>
+  <Inspector id="34" inspectorTitle="MegaModel" userID="FLX" />
+  <ModelSlot_TypedDiagramModelSlot metaModelURI="http://www.omg.org/UML/EMF/MegaModel/MegaModel.diagramspecification" name="typedDiagramModelSlot" id="36" userID="FLX">
+    <FMLDiagramPaletteElementBinding paletteElementId="http://www.omg.org/UML/EMF/MegaModel/MegaModel.diagramspecification/UML2 MegaModel.palette#ModelGR2" userID="FLX">
+      <DropScheme idref="3" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+  </ModelSlot_TypedDiagramModelSlot>
+</VirtualModel>

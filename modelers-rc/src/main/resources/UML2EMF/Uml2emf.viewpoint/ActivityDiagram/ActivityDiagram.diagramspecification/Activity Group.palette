@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagramPalette id="1" index="0" name="Activity Group" diagramSpecificationURI="http://www.omg.org/UML/EMF/ActivityDiagram/ActivityDiagram.diagramspecification" userID="FLX">
+  <DiagramPaletteElement id="2" name="LoopNodeGR2" boundLabelToElementName="true" userID="FLX">
+    <Parameter id="3" name="name" value="" userID="FLX" />
+    <Parameter id="4" name="isTestedFirst" value="true" userID="FLX" />
+    <Parameter id="5" name="loopNode" value="" userID="FLX" />
+    <ShapeGraphicalRepresentation id="6" x="-11.992874988433414" y="0.0" width="111.90154529471633" height="47.85792406645487" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_0" layer="1" hasText="true" text="&lt;&lt;loop&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="74.3361308723732" absoluteTextY="52.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+      <ForegroundStyle id="7" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <NoneBackgroundStyle id="8" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedColorBackgroundStyle id="10" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedForegroundStyle id="11" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedColorBackgroundStyle id="12" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <ShapeBorder id="13" top="20" bottom="20" left="20" right="20" userID="FLX" />
+      <RectangleShape id="14" isRounded="true" arcSize="30.0" userID="FLX" />
+      <ShadowStyle id="15" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+      <TextStyle id="16" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DiagramPaletteElement id="17" name="ConditionalNodeGR17" boundLabelToElementName="true" userID="FLX">
+    <Parameter id="18" name="name" value="" userID="FLX" />
+    <Parameter id="19" name="isDeterminate" value="" userID="FLX" />
+    <Parameter id="20" name="isAssured" value="" userID="FLX" />
+    <Parameter id="21" name="conditionalNode" value="" userID="FLX" />
+    <ShapeGraphicalRepresentation id="22" x="112.0" y="1.0" width="115.89895438141946" height="48.85630956721003" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_1" layer="1" hasText="true" text="&lt;&lt;conditional&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="77.0" absoluteTextY="55.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+      <ForegroundStyle id="23" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <NoneBackgroundStyle id="24" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedForegroundStyle id="25" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedColorBackgroundStyle id="26" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedForegroundStyle id="27" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedColorBackgroundStyle id="28" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <ShapeBorder id="29" top="20" bottom="20" left="20" right="20" userID="FLX" />
+      <RectangleShape id="30" isRounded="true" arcSize="30.0" userID="FLX" />
+      <ShadowStyle id="31" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+      <TextStyle id="32" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DiagramPaletteElement id="33" name="SeqenceNodeGR33" boundLabelToElementName="true" userID="FLX">
+    <Parameter id="34" name="name" value="" userID="FLX" />
+    <Parameter id="35" name="seqeunceNode" value="" userID="FLX" />
+    <ShapeGraphicalRepresentation id="36" x="-11.0" y="67.0" width="113.90024983806788" height="50.85308056872036" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_2" layer="1" hasText="true" text="&lt;&lt;sequence&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="77.35745708331955" absoluteTextY="55.99677100151034" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+      <ForegroundStyle id="37" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <NoneBackgroundStyle id="38" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedForegroundStyle id="39" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedColorBackgroundStyle id="40" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedForegroundStyle id="41" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedColorBackgroundStyle id="42" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <ShapeBorder id="43" top="20" bottom="20" left="20" right="20" userID="FLX" />
+      <RectangleShape id="44" isRounded="true" arcSize="30.0" userID="FLX" />
+      <ShadowStyle id="45" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+      <TextStyle id="46" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DiagramPaletteElement id="47" name="StructuredActivityNodeGR47" boundLabelToElementName="true" userID="FLX">
+    <Parameter id="48" name="name" value="" userID="FLX" />
+    <Parameter id="49" name="mustIsolate" value="" userID="FLX" />
+    <Parameter id="50" name="structuredNode" value="" userID="FLX" />
+    <ShapeGraphicalRepresentation id="51" x="111.0" y="67.0" width="116.8983066530952" height="51.851466069475535" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_3" layer="1" hasText="true" text="&lt;&lt;structured&gt;&gt;" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="79.05500116810731" absoluteTextY="52.996771001510325" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="TOP" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+      <ForegroundStyle id="52" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="SMALL_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <NoneBackgroundStyle id="53" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedForegroundStyle id="54" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedColorBackgroundStyle id="55" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedForegroundStyle id="56" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedColorBackgroundStyle id="57" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <ShapeBorder id="58" top="20" bottom="20" left="20" right="20" userID="FLX" />
+      <RectangleShape id="59" isRounded="true" arcSize="30.0" userID="FLX" />
+      <ShadowStyle id="60" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+      <TextStyle id="61" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DiagramPaletteElement id="62" name="ActivityGR62" boundLabelToElementName="true" userID="FLX">
+    <Parameter id="63" name="name" value="" userID="FLX" />
+    <Parameter id="64" name="isSingleExecution" value="" userID="FLX" />
+    <Parameter id="65" name="classifier" value="" userID="FLX" />
+    <ShapeGraphicalRepresentation id="66" x="-10.271069466195968" y="132.4460224751017" width="233.83271839248272" height="141.7447495961228" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="true" identifier="object_4" layer="0" hasText="true" text="Activity" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="138.7962493228884" absoluteTextY="92.19620829428989" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+      <ForegroundStyle id="67" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <ColorBackgroundStyle id="68" color="255,255,255" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedForegroundStyle id="69" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <SelectedColorBackgroundStyle id="70" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedForegroundStyle id="71" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <FocusedColorBackgroundStyle id="72" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+      <ShapeBorder id="73" top="20" bottom="20" left="20" right="20" userID="FLX" />
+      <RectangleShape id="74" isRounded="false" arcSize="30.0" userID="FLX" />
+      <ShadowStyle id="75" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+      <TextStyle id="76" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DrawingGraphicalRepresentation id="77" width="260.0" height="300.0" drawWorkingArea="true" selectionColor="0,0,255" focusColor="255,0,0" backgroundColor="255,255,255" identifier="root" layer="0" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+    <TextStyle id="78" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+  </DrawingGraphicalRepresentation>
+</DiagramPalette>

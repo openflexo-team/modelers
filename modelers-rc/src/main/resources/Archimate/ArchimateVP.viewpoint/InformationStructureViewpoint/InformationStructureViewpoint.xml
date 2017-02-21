@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="1" name="InformationStructureViewpointDiagram" modelVersion="1.0" userID="FLX">
+  <FlexoConcept id="2" name="TriggeringGR" userID="FLX">
+    <DeletionScheme id="3" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="4" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="5" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="6" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="7" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="8" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="9" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="10" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.38368580060422963,0.5081967213114754" userID="FLX" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="11" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" isRequired="true" isReadOnly="false" userID="FLX" />
+      <GRSpec id="34" featureName="label" value="triggering.triggering.name" readOnly="true" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="35" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Triggering" name="triggering" userID="FLX">
+      <VirtualModelModelSlot id="36" virtualModelURI="http://ArchimateVP/ArchimateVirtualModel" isRequired="true" isReadOnly="false" name="archimateVirtualModel" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="37" inspectorTitle="TrigerringGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="38" name="AssociationGR" userID="FLX">
+    <DeletionScheme id="39" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="40" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <LinkScheme id="41" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToRepresentationGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="42" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="43" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="44" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="45" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromRepresentationToRepresentation" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="46" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="47" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="48" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="49" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="50" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToDataObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="51" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="52" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="53" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="54" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromRepresentationToDataObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="55" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="56" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="57" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="58" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="59" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToMeaningGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="60" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="61" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="62" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="63" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromRepresentationToMeaning" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="64" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="65" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="66" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="67" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="68" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToBusinessObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="69" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="70" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="71" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="72" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromRepresentationToBusinessObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="73" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="74" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="75" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="76" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="77" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToArtifactGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="78" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="79" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="80" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="81" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromRepresentationToArtifact" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="82" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="83" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="84" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="85" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="86" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToRepresentationGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="87" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="88" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="89" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="90" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromDataObjectToRepresentation" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="91" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="92" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="93" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="94" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="95" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToDataObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="96" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="97" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="98" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="99" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromDataObjectToDataObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="100" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="101" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="102" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="103" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="104" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToMeaningGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="105" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="106" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="107" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="108" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromDataObjectToMeaning" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="109" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="110" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="111" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="112" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="113" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToBusinessObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="114" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="115" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="116" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="117" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromDataObjectToBusinessObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="118" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="119" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="120" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="121" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="122" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToArtifactGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="123" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="124" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="125" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="126" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromDataObjectToArtifact" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="127" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="128" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="129" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="130" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="131" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToRepresentationGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="132" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="133" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="134" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="135" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromMeaningToRepresentation" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="136" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="137" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="138" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="139" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="140" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToDataObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="141" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="142" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="143" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="144" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromMeaningToDataObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="145" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="146" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="147" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="148" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="149" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToMeaningGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="150" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="151" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="152" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="153" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromMeaningToMeaning" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="154" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="155" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="156" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="157" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="158" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToBusinessObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="159" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="160" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="161" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="162" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromMeaningToBusinessObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="163" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="164" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="165" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="166" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="167" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToArtifactGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="168" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="169" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="170" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="171" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromMeaningToArtifact" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="172" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="173" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="174" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="175" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="176" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToRepresentationGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="177" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="178" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="179" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="180" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromBusinessObjectToRepresentation" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="181" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="182" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="183" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="184" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="185" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToDataObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="186" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="187" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="188" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="189" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromBusinessObjectToDataObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="190" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="191" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="192" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="193" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="194" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToMeaningGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="195" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="196" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="197" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="198" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromBusinessObjectToMeaning" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="199" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="200" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="201" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="202" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="203" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToBusinessObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="204" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="205" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="206" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="207" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromBusinessObjectToBusinessObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="208" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="209" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="210" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="211" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="212" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToArtifactGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="213" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="214" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="215" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="216" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromBusinessObjectToArtifact" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="217" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="218" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="219" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="220" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="221" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToRepresentationGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="222" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="223" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="224" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="225" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromArtifactToRepresentation" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="226" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="227" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="228" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="229" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="230" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToDataObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="231" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="232" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="233" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="234" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromArtifactToDataObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="235" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="236" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="237" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="238" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="239" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToMeaningGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="240" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="241" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="242" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="243" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromArtifactToMeaning" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="244" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="245" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="246" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="247" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="248" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToBusinessObjectGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="249" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="250" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="251" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="252" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromArtifactToBusinessObject" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="253" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="254" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="255" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="256" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="257" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToArtifactGR" label="AssociationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="258" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="259" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="260" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="261" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Association.creationFromArtifactToArtifact" assignation="association" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="262" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="263" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="264" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="265" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <ConnectorRole id="266" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="267" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="268" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="269" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="270" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <RectPolylinConnectorSpecification id="271" rectPolylinConstraints="NONE" straightLineWhenPossible="true" adjustability="BASICALLY_ADJUSTABLE" startOrientation="EAST" endOrientation="WEST" isRounded="true" arcSize="10" isStartingLocationFixed="false" isEndingLocationFixed="false" isStartingLocationDraggable="false" isEndingLocationDraggable="false" crossedControlPoint="0.3021148036253776,0.4754098360655738" userID="FLX" startSymbol="NONE" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="272" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="293" featureName="label" value="association.association.name" readOnly="true" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="294" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Association" name="association" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="295" inspectorTitle="AssociationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="296" name="CompositionGR" userID="FLX">
+    <DeletionScheme id="297" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="298" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <LinkScheme id="299" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToRepresentationGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="300" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="301" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="302" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="303" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromRepresentationToRepresentation" assignation="composition" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="304" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="305" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="306" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="307" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="308" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToDataObjectGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="309" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="310" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="311" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="312" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromDataObjectToDataObject" assignation="composition" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="313" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="314" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="315" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="316" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="317" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToMeaningGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="318" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="319" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="320" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="321" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromMeaningToMeaning" assignation="composition" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="322" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="323" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="324" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="325" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="326" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToBusinessObjectGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="327" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="328" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="329" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="330" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessObjectToBusinessObject" assignation="composition" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="331" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="332" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="333" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="334" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="335" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToArtifactGR" label="CompositionGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="336" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="337" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="338" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="339" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromArtifactToArtifact" assignation="composition" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="340" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="341" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="342" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="343" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <ConnectorRole id="344" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="345" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="346" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="347" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="348" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="349" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="FILLED_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="350" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="371" featureName="label" value="composition.composition.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="372" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Composition" name="composition" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="373" inspectorTitle="CompositionGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="374" name="FlowGR" userID="FLX">
+    <DeletionScheme id="375" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="376" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <ConnectorRole id="377" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="378" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="379" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="DOT_LINES_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="380" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="381" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="382" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="FILLED_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="383" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="404" featureName="label" value="flow.flow.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="405" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Flow" name="flow" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="406" inspectorTitle="FlowGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="407" name="AggregationGR" userID="FLX">
+    <DeletionScheme id="408" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="409" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <LinkScheme id="410" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToRepresentationGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="411" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="412" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="413" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="414" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromRepresentationToRepresentation" assignation="aggregation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="415" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="416" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="417" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="418" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="419" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToDataObjectGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="420" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="421" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="422" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="423" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromDataObjectToDataObject" assignation="aggregation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="424" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="425" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="426" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="427" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="428" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToMeaningGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="429" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="430" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="431" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="432" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromMeaningToMeaning" assignation="aggregation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="433" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="434" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="435" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="436" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="437" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToBusinessObjectGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="438" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="439" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="440" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="441" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessObjectToBusinessObject" assignation="aggregation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="442" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="443" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="444" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="445" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="446" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToArtifactGR" label="AggregationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="447" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="448" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="449" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="450" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromArtifactToArtifact" assignation="aggregation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="451" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="452" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="453" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="454" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <ConnectorRole id="455" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="456" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="457" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="458" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="459" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="460" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="PLAIN_DIAMOND" endSymbol="NONE" middleSymbol="NONE" startSymbolSize="20.0" endSymbolSize="10.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="461" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="482" featureName="label" value="aggregation.aggregation.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="483" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation" name="aggregation" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="484" inspectorTitle="AggregationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="485" name="SpecializationGR" userID="FLX">
+    <DeletionScheme id="486" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="487" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <LinkScheme id="488" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToRepresentationGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="489" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="490" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="491" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="492" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromRepresentationToRepresentation" assignation="specialization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="493" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="494" paramName="target" value="toTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="495" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="496" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="497" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToDataObjectGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="498" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="499" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="500" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="501" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromDataObjectToDataObject" assignation="specialization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="502" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="503" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="504" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="505" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="506" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromMeaningGRToMeaningGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="507" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="508" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="509" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="510" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromMeaningToMeaning" assignation="specialization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="511" paramName="source" value="fromTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="512" paramName="target" value="toTarget.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="513" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="514" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="515" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromBusinessObjectGRToBusinessObjectGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="516" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="517" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="518" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="519" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromBusinessObjectToBusinessObject" assignation="specialization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="520" paramName="source" value="fromTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="521" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="522" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="523" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="524" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToArtifactGR" label="SpecializationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="525" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="526" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="527" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="528" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization.creationFromArtifactToArtifact" assignation="specialization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="529" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="530" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="531" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="532" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <ConnectorRole id="533" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="534" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="535" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="536" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="537" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="538" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="20.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="539" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="560" featureName="label" value="specialization.specialization.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="561" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Specialization" name="specialization" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="562" inspectorTitle="SpecialisationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="563" name="AccessGR" userID="FLX">
+    <DeletionScheme id="564" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="565" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <LinkScheme id="566" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToDataObjectGR" label="AccessGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="567" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="568" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <IntegerParameter id="569" name="accessType" label="accessType" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="570" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="571" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Access.creationFromArtifactToDataObject" assignation="access" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="572" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="573" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="574" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="575" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="576" paramName="accessType" value="parameters.accessType" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="577" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToBusinessObjectGR" label="AccessGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="578" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="579" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <IntegerParameter id="580" name="accessType" label="accessType" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="581" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="582" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Access.creationFromArtifactToBusinessObject" assignation="access" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="583" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="584" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="585" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="586" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="587" paramName="accessType" value="parameters.accessType" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <ConnectorRole id="588" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="589" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="590" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="DOTS_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="591" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="592" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="593" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="15.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="594" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="615" featureName="label" value="access.access.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="616" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Access" name="access" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="617" inspectorTitle="AccessGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="618" name="RealizationGR" userID="FLX">
+    <DeletionScheme id="619" name="deletion" label="deletion" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="620" object="connector" userID="FLX" />
+    </DeletionScheme>
+    <LinkScheme id="621" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromRepresentationGRToBusinessObjectGR" label="RealizationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="622" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="623" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="624" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="625" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Realization.creationFromRepresentationToBusinessObject" assignation="realization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="626" paramName="source" value="fromTarget.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="627" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="628" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="629" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="630" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromDataObjectGRToBusinessObjectGR" label="RealizationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="631" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="632" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="633" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="634" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Realization.creationFromDataObjectToBusinessObject" assignation="realization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="635" paramName="source" value="fromTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="636" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="637" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="638" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="639" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToDataObjectGR" label="RealizationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="640" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="641" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="642" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="643" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Realization.creationFromArtifactToDataObject" assignation="realization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="644" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="645" paramName="target" value="toTarget.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="646" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="647" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="648" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToBusinessObjectGR" label="RealizationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="649" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="650" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="651" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="652" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Realization.creationFromArtifactToBusinessObject" assignation="realization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="653" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="654" paramName="target" value="toTarget.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="655" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="656" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <LinkScheme id="657" fromTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" toTarget="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkFromArtifactGRToArtifactGR" label="RealizationGR" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="658" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="659" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddConnector id="660" fromShape="fromTarget.shape" toShape="toTarget.shape" assignation="connector" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddConnector>
+      <AddFlexoConceptInstance id="661" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Realization.creationFromArtifactToArtifact" assignation="realization" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="662" paramName="source" value="fromTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="663" paramName="target" value="toTarget.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="664" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="665" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </LinkScheme>
+    <ConnectorRole id="666" name="connector" exampleLabel="label" userID="FLX">
+      <ConnectorGraphicalRepresentation id="667" hasSelectedForeground="false" hasFocusedForeground="false" applyForegroundToSymbols="true" identifier="object_2" layer="64" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="668" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="MEDIUM_DASHES" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="669" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="670" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <LineConnectorSpecification id="671" lineConnectorType="MINIMAL_LENGTH" userID="FLX" startSymbol="NONE" endSymbol="PLAIN_ARROW" middleSymbol="NONE" startSymbolSize="10.0" endSymbolSize="25.0" middleSymbolSize="10.0" relativeMiddleSymbolLocation="0.5" />
+        <TextStyle id="672" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ConnectorGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="693" featureName="label" value="realization.realization.name" readOnly="false" userID="FLX" />
+    </ConnectorRole>
+    <FlexoConceptInstanceRole id="694" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Realization" name="realization" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <Inspector id="695" inspectorTitle="RealizationGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="696" name="ArchimateElementGR" userID="FLX">
+    <Inspector id="697" inspectorTitle="ArchimateElementGR" userID="FLX" />
+  </FlexoConcept>
+  <FlexoConcept id="698" name="RepresentationGR" userID="FLX">
+    <DropScheme id="699" target="top" name="dropRepresentationGRAtTopLevel" label="dropRepresentationGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="700" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="701" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="702" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="703" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Representation.creation" assignation="representation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="704" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="705" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DeletionScheme id="706" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="707" object="shape" userID="FLX" />
+    </DeletionScheme>
+    <DeletionScheme id="708" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="709" object="shape" userID="FLX" />
+      <DeleteAction id="710" object="representation" userID="FLX" />
+    </DeletionScheme>
+    <DropScheme id="711" target="top" name="drop" label="Select Existing representation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <FlexoConceptInstanceParameter id="712" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Representation" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX">
+        <VirtualModelModelSlot idref="36" userID="FLX" />
+      </FlexoConceptInstanceParameter>
+      <AddShape id="713" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <DeclareFlexoRole id="714" object="parameters.editionPatternInstance" assignation="representation" userID="FLX" />
+    </DropScheme>
+    <DropScheme id="715" target="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" name="dropRepresentationGRToRepresentationGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="716" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="717" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="718" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="719" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="720" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Representation.creation" assignation="representation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="721" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="722" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="723" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromRepresentationToRepresentation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="724" paramName="source" value="representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="725" paramName="target" value="target.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="726" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="727" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DropScheme id="728" target="http://ArchimateVP/InformationStructureViewpointDiagram#RepresentationGR" name="dropRepresentationGRToRepresentationGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="729" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="730" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="731" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="732" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="733" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Representation.creation" assignation="representation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="734" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="735" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="736" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromRepresentationToRepresentation" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="737" paramName="source" value="representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="738" paramName="target" value="target.representation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="739" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="740" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <FlexoConceptInstanceRole id="741" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Representation" name="representation" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="742" name="shape" exampleLabel="Representation" userID="FLX">
+      <ShapeGraphicalRepresentation id="743" x="246.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Representation" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="744" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ImageBackgroundStyle id="745" imageFile="../Images/business_representation.png" scaleX="0.8278145695364238" scaleY="0.7425742574257426" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="746" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="747" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="748" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="749" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="750" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape id="751" isRounded="false" arcSize="30.0" userID="FLX" />
+        <ShadowStyle id="752" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="753" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="754" featureName="label" value="representation.representation.name" readOnly="true" userID="FLX" />
+    </ShapeRole>
+    <Inspector id="755" inspectorTitle="RepresentationGR" userID="FLX" />
+    <ParentFlexoConcept idref="696" />
+  </FlexoConcept>
+  <FlexoConcept id="756" name="DataObjectGR" userID="FLX">
+    <DropScheme id="757" target="top" name="dropDataObjectGRAtTopLevel" label="dropDataObjectGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="758" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="759" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="760" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="761" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="762" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#DataObject.creation" assignation="dataObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="763" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="764" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DeletionScheme id="765" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="766" object="shape2" userID="FLX" />
+      <DeleteAction id="767" object="shape" userID="FLX" />
+    </DeletionScheme>
+    <DeletionScheme id="768" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="769" object="shape2" userID="FLX" />
+      <DeleteAction id="770" object="shape" userID="FLX" />
+      <DeleteAction id="771" object="dataObject" userID="FLX" />
+    </DeletionScheme>
+    <DropScheme id="772" target="top" name="drop" label="Select Existing dataObject" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <FlexoConceptInstanceParameter id="773" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#DataObject" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX">
+        <VirtualModelModelSlot idref="36" userID="FLX" />
+      </FlexoConceptInstanceParameter>
+      <AddShape id="774" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="775" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <DeclareFlexoRole id="776" object="parameters.editionPatternInstance" assignation="dataObject" userID="FLX" />
+    </DropScheme>
+    <DropScheme id="777" target="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" name="dropDataObjectGRToDataObjectGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="778" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="779" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="780" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="781" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="782" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#DataObject.creation" assignation="dataObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="783" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="784" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="785" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromDataObjectToDataObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="786" paramName="source" value="dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="787" paramName="target" value="target.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="788" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="789" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DropScheme id="790" target="http://ArchimateVP/InformationStructureViewpointDiagram#DataObjectGR" name="dropDataObjectGRToDataObjectGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="791" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="792" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="793" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="794" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="795" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#DataObject.creation" assignation="dataObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="796" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="797" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="798" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromDataObjectToDataObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="799" paramName="source" value="dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="800" paramName="target" value="target.dataObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="801" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="802" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <FlexoConceptInstanceRole id="803" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#DataObject" name="dataObject" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="804" name="shape" exampleLabel="Data&#xA;Object" userID="FLX">
+      <ShapeGraphicalRepresentation id="805" x="275.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Data&#xA;Object" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="806" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorGradientBackgroundStyle id="807" color1="153,255,255" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="808" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="809" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="810" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="811" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="812" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="813" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="814" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="815" featureName="label" value="dataObject.dataObject.name" readOnly="true" userID="FLX" />
+    </ShapeRole>
+    <ShapeRole id="816" name="shape2" exampleLabel="" userID="FLX">
+      <ShapeGraphicalRepresentation id="817" x="1.0" y="1.0" width="123.36633663366337" height="15.384615384615387" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="HEIGHT_FIXED" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="818" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorBackgroundStyle id="819" color="153,255,255" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="820" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="821" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="822" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="823" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="824" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="825" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="826" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <ParentShapeRole idref="804" userID="FLX" />
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+    </ShapeRole>
+    <Inspector id="827" inspectorTitle="DataObjectGR" userID="FLX" />
+    <ParentFlexoConcept idref="696" />
+  </FlexoConcept>
+  <FlexoConcept id="828" name="MeaningGR" userID="FLX">
+    <DropScheme id="829" target="top" name="dropMeaningGRAtTopLevel" label="dropMeaningGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="830" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="831" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="832" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="833" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Meaning.creation" assignation="meaning" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="834" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="835" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DeletionScheme id="836" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="837" object="shape" userID="FLX" />
+    </DeletionScheme>
+    <DeletionScheme id="838" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="839" object="shape" userID="FLX" />
+      <DeleteAction id="840" object="meaning" userID="FLX" />
+    </DeletionScheme>
+    <DropScheme id="841" target="top" name="drop" label="Select Existing meaning" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <FlexoConceptInstanceParameter id="842" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Meaning" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX">
+        <VirtualModelModelSlot idref="36" userID="FLX" />
+      </FlexoConceptInstanceParameter>
+      <AddShape id="843" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <DeclareFlexoRole id="844" object="parameters.editionPatternInstance" assignation="meaning" userID="FLX" />
+    </DropScheme>
+    <DropScheme id="845" target="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" name="dropMeaningGRToMeaningGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="846" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="847" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="848" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="849" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="850" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Meaning.creation" assignation="meaning" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="851" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="852" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="853" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromMeaningToMeaning" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="854" paramName="source" value="meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="855" paramName="target" value="target.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="856" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="857" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DropScheme id="858" target="http://ArchimateVP/InformationStructureViewpointDiagram#MeaningGR" name="dropMeaningGRToMeaningGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="859" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="860" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="861" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="862" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="863" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Meaning.creation" assignation="meaning" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="864" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="865" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="866" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromMeaningToMeaning" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="867" paramName="source" value="meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="868" paramName="target" value="target.meaning" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="869" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="870" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <FlexoConceptInstanceRole id="871" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Meaning" name="meaning" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="872" name="shape" exampleLabel="Meaning" userID="FLX">
+      <ShapeGraphicalRepresentation id="873" x="275.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Meaning" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="874" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ImageBackgroundStyle id="875" imageFile="../Images/business_meaning.png" scaleX="0.9124087591240876" scaleY="0.7575757575757576" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="876" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="877" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="878" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="879" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="880" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="881" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="882" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="883" featureName="label" value="meaning.meaning.name" readOnly="true" userID="FLX" />
+    </ShapeRole>
+    <Inspector id="884" inspectorTitle="MeaningGR" userID="FLX" />
+    <ParentFlexoConcept idref="696" />
+  </FlexoConcept>
+  <FlexoConcept id="885" name="BusinessObjectGR" userID="FLX">
+    <DropScheme id="886" target="top" name="dropBusinessObjectGRAtTopLevel" label="dropBusinessObjectGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <AddShape id="887" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="888" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+    </DropScheme>
+    <DropScheme id="889" target="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" name="dropBusinessObjectGRToBusinessObjectGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="890" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="891" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="892" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="893" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="894" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessObject.creation" assignation="businessObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="895" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="896" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="897" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromBusinessObjectToBusinessObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="898" paramName="source" value="businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="899" paramName="target" value="target.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="900" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="901" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DropScheme id="902" target="http://ArchimateVP/InformationStructureViewpointDiagram#BusinessObjectGR" name="dropBusinessObjectGRToBusinessObjectGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="903" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="904" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="905" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="906" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="907" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessObject.creation" assignation="businessObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="908" paramName="documentation" value="parameters.documentation" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="909" paramName="name" value="parameters.name" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="910" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromBusinessObjectToBusinessObject" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="911" paramName="source" value="businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="912" paramName="target" value="target.businessObject" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="913" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="914" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <FlexoConceptInstanceRole id="915" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#BusinessObject" name="businessObject" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="916" name="shape" exampleLabel="Business&#xA;Object" userID="FLX">
+      <ShapeGraphicalRepresentation id="917" x="258.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="918" noStroke="false" color="0,0,0" lineWidth="1.500000001490116" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorGradientBackgroundStyle id="919" color1="255,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="920" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="921" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="922" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="923" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="924" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="925" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="926" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="927" featureName="label" value="&quot;Shape&quot;" readOnly="true" userID="FLX" />
+    </ShapeRole>
+    <ShapeRole id="928" name="shape2" exampleLabel="label" userID="FLX">
+      <ShapeGraphicalRepresentation id="929" x="1.0434725591764504" y="1.8681318681318686" width="123.45157694577404" height="14.395604395604394" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="HEIGHT_FIXED" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="930" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorBackgroundStyle id="931" color="255,255,153" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="932" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="933" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="934" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="935" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="936" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="937" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="938" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <ParentShapeRole idref="916" userID="FLX" />
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="939" featureName="label" value="&quot;Shape&quot;" readOnly="true" userID="FLX" />
+    </ShapeRole>
+    <Inspector id="940" inspectorTitle="BusinessObjectGR" userID="FLX" />
+    <ParentFlexoConcept idref="885" />
+  </FlexoConcept>
+  <FlexoConcept id="941" name="ArtifactGR" userID="FLX">
+    <DropScheme id="942" target="top" name="dropArtifactGRAtTopLevel" label="dropArtifactGRAtTopLevel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="943" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="944" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="945" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="946" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="947" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Artifact.creation" assignation="artifact" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="948" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="949" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DeletionScheme id="950" name="deleteFromView" label="deleteFromView" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="951" object="shape2" userID="FLX" />
+      <DeleteAction id="952" object="shape" userID="FLX" />
+    </DeletionScheme>
+    <DeletionScheme id="953" name="deleteFromModel" label="deleteFromModel" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <DeleteAction id="954" object="shape2" userID="FLX" />
+      <DeleteAction id="955" object="shape" userID="FLX" />
+      <DeleteAction id="956" object="artifact" userID="FLX" />
+    </DeletionScheme>
+    <DropScheme id="957" target="top" name="drop" label="Select Existing artifact" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <FlexoConceptInstanceParameter id="958" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Artifact" name="editionPatternInstance" label="editionPatternInstance" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX">
+        <VirtualModelModelSlot idref="36" userID="FLX" />
+      </FlexoConceptInstanceParameter>
+      <AddShape id="959" container="topLevel" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="960" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <DeclareFlexoRole id="961" object="parameters.editionPatternInstance" assignation="artifact" userID="FLX" />
+    </DropScheme>
+    <DropScheme id="962" target="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" name="dropArtifactGRToArtifactGRCompositionGR" label="Composition" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="963" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="964" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="965" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="966" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="967" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Artifact.creation" assignation="artifact" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="968" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="969" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="970" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Composition.creationFromArtifactToArtifact" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="971" paramName="source" value="artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="972" paramName="target" value="target.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="973" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="974" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <DropScheme id="975" target="http://ArchimateVP/InformationStructureViewpointDiagram#ArtifactGR" name="dropArtifactGRToArtifactGRAggregationGR" label="Aggregation" skipConfirmationPanel="false" definePopupDefaultSize="false" width="800" height="600" userID="FLX">
+      <TextFieldParameter id="976" name="name" label="name" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <TextAreaParameter id="977" name="documentation" label="documentation" usePaletteLabelAsDefaultValue="false" isRequired="false" userID="FLX" />
+      <AddShape id="978" container="target.shape" extendParentBoundsToHostThisShape="false" assignation="shape" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddShape id="979" container="shape" extendParentBoundsToHostThisShape="false" assignation="shape2" userID="FLX">
+        <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      </AddShape>
+      <AddFlexoConceptInstance id="980" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Artifact.creation" assignation="artifact" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="981" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="982" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+      <AddFlexoConceptInstance id="983" virtualModelInstance="virtualModelInstance.archimateVirtualModel" creationSchemeURI="http://ArchimateVP/ArchimateVirtualModel#Aggregation.creationFromArtifactToArtifact" userID="FLX">
+        <AddFlexoConceptInstanceParameter id="984" paramName="source" value="artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="985" paramName="target" value="target.artifact" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="986" paramName="name" value="parameters.name" userID="FLX" />
+        <AddFlexoConceptInstanceParameter id="987" paramName="documentation" value="parameters.documentation" userID="FLX" />
+      </AddFlexoConceptInstance>
+    </DropScheme>
+    <FlexoConceptInstanceRole id="988" flexoConceptTypeURI="http://ArchimateVP/ArchimateVirtualModel#Artifact" name="artifact" userID="FLX">
+      <VirtualModelModelSlot idref="36" userID="FLX" />
+    </FlexoConceptInstanceRole>
+    <ShapeRole id="989" name="shape" exampleLabel="Artifact" userID="FLX">
+      <ShapeGraphicalRepresentation id="990" x="275.0" y="55.0" width="125.0" height="75.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" text="Artifact" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="991" noStroke="false" color="0,0,0" lineWidth="1.499999998509884" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ColorGradientBackgroundStyle id="992" color1="153,255,153" color2="255,255,255" direction="NORTH_SOUTH" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="993" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="994" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="995" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="996" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="997" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="998" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="999" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+      <GRSpec id="1000" featureName="label" value="artifact.artifact.name" readOnly="true" userID="FLX" />
+    </ShapeRole>
+    <ShapeRole id="1001" name="shape2" exampleLabel="" userID="FLX">
+      <ShapeGraphicalRepresentation id="1002" x="95.0" y="5.0" width="25.0" height="25.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="UNMOVABLE" dimensionConstraints="UNRESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" xConstraints="((parent.width - this.width) - 5)" yConstraints="5" identifier="object_0_0" layer="2" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true" userID="FLX">
+        <ForegroundStyle id="1003" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ImageBackgroundStyle id="1004" imageFile="../Images/technology_artifact.png" scaleX="0.9615384615384616" scaleY="0.7352941176470589" deltaX="0.0" deltaY="0.0" imageBackgroundType="TRANSPARENT" imageBackgroundColor="255,255,255" fitToShape="true" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedForegroundStyle id="1005" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <SelectedColorBackgroundStyle id="1006" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedForegroundStyle id="1007" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <FocusedColorBackgroundStyle id="1008" color="254,247,217" useTransparency="false" transparencyLevel="0.5" userID="FLX" />
+        <ShapeBorder id="1009" top="20" bottom="20" left="20" right="20" userID="FLX" />
+        <RectangleShape idref="751" userID="FLX" />
+        <ShadowStyle id="1010" drawShadow="false" shadowDarkness="150" shadowDepth="2" shadowBlur="4" userID="FLX" />
+        <TextStyle id="1011" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" userID="FLX" />
+      </ShapeGraphicalRepresentation>
+      <ParentShapeRole idref="989" userID="FLX" />
+      <TypedDiagramModelSlot idref="1016" userID="FLX" />
+    </ShapeRole>
+    <Inspector id="1012" inspectorTitle="ArtifactGR" userID="FLX" />
+    <ParentFlexoConcept idref="696" />
+  </FlexoConcept>
+  <LocalizedDictionary id="1013" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot virtualModelURI="http://ArchimateVP/InformationStructureViewpointDiagram" name="virtualModelInstance" id="33" userID="FLX" />
+  <ModelSlot_VirtualModelModelSlot idref="36" userID="FLX" />
+  <Inspector id="1014" inspectorTitle="InformationStructureViewpoint" userID="FLX" />
+  <ModelSlot_TypedDiagramModelSlot metaModelURI="http://ArchimateVP/InformationStructureViewpoint/InformationStructureViewpoint.diagramspecification" name="typedDiagramModelSlot" id="1016" userID="FLX">
+    <FMLDiagramPaletteElementBinding paletteElementId="http://ArchimateVP/InformationStructureViewpoint/InformationStructureViewpoint.diagramspecification/InformationStrcuturePalette.palette#RepresentationGR2" userID="FLX">
+      <DropScheme idref="699" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding paletteElementId="http://ArchimateVP/InformationStructureViewpoint/InformationStructureViewpoint.diagramspecification/InformationStrcuturePalette.palette#MeaningGR17" userID="FLX">
+      <DropScheme idref="829" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding paletteElementId="http://ArchimateVP/InformationStructureViewpoint/InformationStructureViewpoint.diagramspecification/InformationStrcuturePalette.palette#ArtifactGR31" userID="FLX">
+      <DropScheme idref="942" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding paletteElementId="http://ArchimateVP/InformationStructureViewpoint/InformationStructureViewpoint.diagramspecification/InformationStrcuturePalette.palette#DataObjectGR45" userID="FLX">
+      <DropScheme idref="757" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding paletteElementId="http://ArchimateVP/InformationStructureViewpoint/InformationStructureViewpoint.diagramspecification/InformationStrcuturePalette.palette#BusinessObjectGR59" userID="FLX">
+      <DropScheme idref="886" userID="FLX" />
+    </FMLDiagramPaletteElementBinding>
+  </ModelSlot_TypedDiagramModelSlot>
+</VirtualModel>
