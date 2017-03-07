@@ -32,7 +32,6 @@
     <ShapeRole id="33" cardinality="One" exampleLabel="ClassName" cloningStrategy="Clone" userID="FLX" useSpecificDescriptions="false" name="nameShape" flexoID="18">
       <TypedDiagramModelSlot idref="2" />
       <GRSpec id="34" featureName="label" userID="FLX" useSpecificDescriptions="false" readOnly="false" value="theClass.name" flexoID="19" />
-      <ParentShapeRole idref="22" />
       <ShapeGraphicalRepresentation id="35" hasFocusedForeground="false" relativeTextY="0.5" lineWrap="false" hasSelectedBackground="false" locationConstraints="UNMOVABLE" widthConstraints="parent.width" allowToLeaveBounds="true" minimalHeight="0.0" maximalHeight="Infinity" isSelectable="true" height="20.0" verticalTextAlignment="MIDDLE" identifier="2ae3098e" heightConstraints="20" isVisible="true" transparency="1.0" relativeTextX="0.5" adjustMinimalWidthToLabelWidth="true" adjustMaximalWidthToLabelWidth="false" isFloatingLabel="false" dimensionConstraints="UNRESIZABLE" horizontalTextAlignment="CENTER" layer="1" minimalWidth="0.0" adjustMinimalHeightToLabelHeight="true" adaptBoundsToContents="false" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" drawControlPointsWhenFocused="true" isMultilineAllowed="false" yConstraints="0" absoluteTextY="0.0" absoluteTextX="0.0" hasSelectedForeground="false" continuousTextEditing="true" xConstraints="0" paragraphAlignment="CENTER" x="0.0" width="172.36671481842305" drawControlPointsWhenSelected="true" y="0.0" hasFocusedBackground="false" isLabelEditable="true" isFocusable="true" maximalWidth="Infinity">
         <SelectedColorBackgroundStyle id="36" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
         <ForegroundStyle id="37" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
@@ -44,10 +43,10 @@
         <SelectedForegroundStyle id="43" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
         <TextStyle id="44" orientation="0" backgroundColor="255,255,255" color="0,0,0" isBackgroundColored="false" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
+      <ParentShapeRole idref="22" />
     </ShapeRole>
     <ShapeRole id="45" cardinality="ZeroOne" exampleLabel="" cloningStrategy="Clone" userID="FLX" useSpecificDescriptions="false" name="propertyShape" flexoID="30">
       <TypedDiagramModelSlot idref="2" />
-      <ParentShapeRole idref="22" />
       <ShapeGraphicalRepresentation id="46" hasFocusedForeground="false" relativeTextY="0.5" lineWrap="false" hasSelectedBackground="false" locationConstraints="UNMOVABLE" widthConstraints="parent.width" allowToLeaveBounds="true" minimalHeight="0.0" maximalHeight="Infinity" isSelectable="true" height="83.85267620561737" verticalTextAlignment="MIDDLE" identifier="1c4a1004" heightConstraints="((parent.height - 20) / 2)" isVisible="true" transparency="1.0" relativeTextX="0.5" adjustMinimalWidthToLabelWidth="true" adjustMaximalWidthToLabelWidth="false" isFloatingLabel="true" dimensionConstraints="UNRESIZABLE" horizontalTextAlignment="CENTER" layer="1" minimalWidth="0.0" adjustMinimalHeightToLabelHeight="true" adaptBoundsToContents="false" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" drawControlPointsWhenFocused="true" isMultilineAllowed="false" yConstraints="20" absoluteTextY="0.0" absoluteTextX="0.0" hasSelectedForeground="false" continuousTextEditing="true" xConstraints="0" paragraphAlignment="CENTER" x="0.0" width="172.36671481842305" drawControlPointsWhenSelected="true" y="20.0" hasFocusedBackground="false" isLabelEditable="true" isFocusable="true" maximalWidth="Infinity">
         <SelectedColorBackgroundStyle id="47" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
         <ForegroundStyle id="48" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
@@ -59,6 +58,7 @@
         <SelectedForegroundStyle id="54" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
         <TextStyle id="55" orientation="0" backgroundColor="255,255,255" color="0,0,0" isBackgroundColored="false" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
+      <ParentShapeRole idref="22" />
     </ShapeRole>
     <DropScheme id="4" skipConfirmationPanel="false" label="dropScheme" definePopupDefaultSize="false" target="top" userID="FLX" useSpecificDescriptions="false" name="dropScheme" width="800" height="600" flexoID="53">
       <BehaviourControlGraph_Sequence id="5" userID="FLX" useSpecificDescriptions="false" flexoID="69">

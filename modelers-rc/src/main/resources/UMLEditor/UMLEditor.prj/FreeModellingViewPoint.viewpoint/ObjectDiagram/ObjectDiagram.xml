@@ -29,7 +29,6 @@
     <ShapeRole id="18" cardinality="One" exampleLabel="ObjectName" cloningStrategy="Clone" userID="FLX" useSpecificDescriptions="false" name="nameShape" flexoID="41">
       <TypedDiagramModelSlot idref="2" />
       <GRSpec id="19" featureName="label" userID="FLX" useSpecificDescriptions="false" readOnly="true" value="((theObject.id + &quot;: &quot;) + theObject.instanceOf.name)" flexoID="42" />
-      <ParentShapeRole idref="7" />
       <ShapeGraphicalRepresentation id="20" hasFocusedForeground="false" relativeTextY="0.5" lineWrap="false" hasSelectedBackground="false" locationConstraints="UNMOVABLE" widthConstraints="parent.width" allowToLeaveBounds="true" minimalHeight="0.0" maximalHeight="Infinity" isSelectable="true" height="20.0" verticalTextAlignment="MIDDLE" identifier="4d004952" heightConstraints="20" isVisible="true" transparency="1.0" relativeTextX="0.5" adjustMinimalWidthToLabelWidth="true" adjustMaximalWidthToLabelWidth="false" isFloatingLabel="false" dimensionConstraints="UNRESIZABLE" horizontalTextAlignment="CENTER" layer="1" minimalWidth="0.0" adjustMinimalHeightToLabelHeight="true" adaptBoundsToContents="false" isReadOnly="false" adjustMaximalHeightToLabelHeight="false" drawControlPointsWhenFocused="true" isMultilineAllowed="false" yConstraints="0" absoluteTextY="0.0" absoluteTextX="0.0" hasSelectedForeground="false" continuousTextEditing="true" xConstraints="0" paragraphAlignment="CENTER" x="0.0" width="111.76470588235294" drawControlPointsWhenSelected="true" y="0.0" hasFocusedBackground="false" isLabelEditable="true" isFocusable="true" maximalWidth="Infinity">
         <SelectedColorBackgroundStyle id="21" color="255,255,255" transparencyLevel="0.5" useTransparency="false" />
         <ForegroundStyle id="22" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
@@ -41,6 +40,7 @@
         <SelectedForegroundStyle id="28" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="false" capStyle="CAP_SQUARE" useTransparency="false" transparencyLevel="0.5" lineWidth="1.0" />
         <TextStyle id="29" orientation="0" backgroundColor="255,255,255" color="0,0,0" isBackgroundColored="false" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
+      <ParentShapeRole idref="7" />
     </ShapeRole>
   </FlexoConcept>
 </VirtualModel>
