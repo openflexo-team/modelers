@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="0" modelVersion="1.0" version="0.1" name="ClassDiagram" userID="FLX" description="Diagram for a Class model" flexoID="2">
+  <FlexoConcept id="1" name="ClassGR" userID="FLX" flexoID="19">
+    <ShapeRole id="2" exampleLabel="" container="" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="FLX" flexoID="36">
+      <ShapeGraphicalRepresentation id="3" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" widthConstraints="" allowToLeaveBounds="false" adaptBoundsToContents="false" x="28.787878787878782" y="42.345656855707105" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="192.42424242424244" height="115.30868628858579" identifier="1dac891a" layer="1">
+        <SelectedColorBackgroundStyle id="4" color="254,247,217" transparencyLevel="0.5" />
+        <ForegroundStyle id="5" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="6" color="254,247,217" transparencyLevel="0.5" />
+        <ShadowStyle id="7" />
+        <FocusedForegroundStyle id="8" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="9" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <NoneBackgroundStyle id="10" transparencyLevel="0.5" />
+        <RectangleShape id="11" />
+        <TextStyle id="12" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+      <TypedDiagramModelSlot idref="13" />
+    </ShapeRole>
+    <ShapeRole id="24" exampleLabel="class1" container="shape" cloningStrategy="Clone" cardinality="ZeroOne" name="header" userID="FLX" flexoID="24">
+      <ParentShapeRole idref="2" />
+      <ShapeGraphicalRepresentation id="25" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="parent.width" allowToLeaveBounds="false" adaptBoundsToContents="false" heightConstraints="30" xConstraints="0" y="42.654343144292895" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="192.42424242424244" height="30.0" identifier="3e013268" layer="1">
+        <SelectedColorBackgroundStyle id="26" color="255,255,255" transparencyLevel="0.5" />
+        <ForegroundStyle id="27" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="28" color="255,255,255" transparencyLevel="0.5" />
+        <ShadowStyle id="29" drawShadow="false" />
+        <FocusedForegroundStyle id="30" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="31" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <ColorBackgroundStyle id="32" color="255,255,255" transparencyLevel="0.5" />
+        <RectangleShape id="33" />
+        <TextStyle id="34" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+      <GRSpec id="35" featureName="label" value="model.name" userID="FLX" flexoID="25" />
+      <TypedDiagramModelSlot idref="13" />
+    </ShapeRole>
+    <FlexoConceptInstanceRole id="36" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" cloningStrategy="Reference" cardinality="ZeroOne" name="_class" userID="FLX" flexoID="37" />
+    <DropScheme id="15" target="top" name="dropClassGRAtTopLevel" width="800" label="dropClassGRAtTopLevel" height="600" userID="FLX" flexoID="18">
+      <BehaviourControlGraph_Sequence id="16" userID="FLX" flexoID="34">
+        <ControlGraph2_Sequence id="17" ownerContext="controlGraph2" userID="FLX" flexoID="32">
+          <ControlGraph2_AssignationAction id="18" assign="_class" ownerContext="controlGraph2" userID="FLX" flexoID="22">
+            <AssignableAction_AddFlexoConceptInstance id="19" creationSchemeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class.create" virtualModelInstance="model" userID="FLX" flexoID="31" />
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_AssignationAction id="20" assign="header" ownerContext="controlGraph1" userID="FLX" flexoID="21">
+            <AssignableAction_AddShape id="21" container="shape" userID="FLX" flexoID="23">
+              <TypedDiagramModelSlot idref="13" />
+            </AssignableAction_AddShape>
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_AssignationAction id="22" assign="shape" ownerContext="controlGraph1" userID="FLX" flexoID="20">
+          <AssignableAction_AddShape id="23" container="topLevel" userID="FLX" flexoID="33">
+            <TypedDiagramModelSlot idref="13" />
+          </AssignableAction_AddShape>
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+    </DropScheme>
+    <Inspector id="37" inspectorTitle="ClassGR" userID="FLX" flexoID="15" />
+  </FlexoConcept>
+  <ModelSlot_TypedDiagramModelSlot id="13" metaModelURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram/ClassDiagramSpec" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="diagram" userID="FLX" flexoID="11">
+    <FMLDiagramPaletteElementBinding id="14" paletteElementId="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram/ClassDiagramSpec/Palette.palette#Class" userID="FLX" flexoID="35">
+      <DropScheme idref="15" />
+    </FMLDiagramPaletteElementBinding>
+    <TypedDiagramModelSlot idref="13" />
+  </ModelSlot_TypedDiagramModelSlot>
+  <ModelSlot_VirtualModelInstanceModelSlot id="38" virtualModelURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="model" userID="FLX" flexoID="7">
+    <VirtualModelInstanceModelSlot idref="38" />
+  </ModelSlot_VirtualModelInstanceModelSlot>
+  <CreationScheme id="39" name="init" width="800" label="init" height="600" userID="FLX" flexoID="6">
+    <BehaviourControlGraph_Sequence id="40" userID="FLX" flexoID="13">
+      <ControlGraph2_AssignationAction id="41" assign="model" ownerContext="controlGraph2" userID="FLX" flexoID="10">
+        <AssignableAction_ExpressionAction id="42" expression="parameters.model" userID="FLX" flexoID="9" />
+      </ControlGraph2_AssignationAction>
+      <ControlGraph1_AssignationAction id="43" assign="diagram" ownerContext="controlGraph1" userID="FLX" flexoID="8">
+        <AssignableAction_CreateDiagram id="44" diagramSpecificationURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram/ClassDiagramSpec" diagramName="'diagram'" resourceCenter="project" relativePath="/Diagrams" userID="FLX" flexoID="12">
+          <TypedDiagramModelSlot idref="13" />
+        </AssignableAction_CreateDiagram>
+      </ControlGraph1_AssignationAction>
+    </BehaviourControlGraph_Sequence>
+    <GenericBehaviourParameter id="45" container="view" widget="CUSTOM_WIDGET" name="model" type="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel&gt;" userID="FLX" flexoID="14" />
+  </CreationScheme>
+  <Inspector id="46" inspectorTitle="ClassDiagram" userID="FLX" flexoID="1" />
+</VirtualModel>
