@@ -95,47 +95,50 @@
     <EmbeddedFlexoConcept id="62" name="Reference" userID="FLX" flexoID="117">
       <PrimitiveRole id="63" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="cardinality" userID="FLX" flexoID="123" />
       <FlexoConceptInstanceRole id="64" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" cloningStrategy="Reference" cardinality="ZeroOne" name="referenced" userID="FLX" flexoID="126" />
-      <CreationScheme id="65" name="create" width="800" label="create" height="600" userID="FLX" flexoID="120">
-        <BehaviourControlGraph_EmptyControlGraph id="66" userID="FLX" flexoID="124" />
-        <GenericBehaviourParameter id="67" widget="CUSTOM_WIDGET" name="name" type="java.lang.String" userID="FLX" flexoID="128" />
-        <GenericBehaviourParameter id="68" container="virtualModelInstance" widget="CUSTOM_WIDGET" name="referenced" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class&gt;" userID="FLX" flexoID="129" />
+      <PrimitiveRole id="65" primitiveType="Boolean" cloningStrategy="Clone" cardinality="ZeroOne" name="container" userID="FLX" flexoID="136" />
+      <CreationScheme id="66" name="create" width="800" label="create" height="600" userID="FLX" flexoID="120">
+        <BehaviourControlGraph_EmptyControlGraph id="67" userID="FLX" flexoID="124" />
+        <GenericBehaviourParameter id="68" widget="CUSTOM_WIDGET" name="name" type="java.lang.String" userID="FLX" flexoID="128" />
+        <GenericBehaviourParameter id="69" container="virtualModelInstance" widget="CUSTOM_WIDGET" name="referenced" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class&gt;" userID="FLX" flexoID="129" />
       </CreationScheme>
-      <DeletionScheme id="69" name="delete" width="800" label="delete" height="600" userID="FLX" flexoID="121">
-        <BehaviourControlGraph_DeleteAction id="70" object="cardinality" userID="FLX" flexoID="122" />
+      <DeletionScheme id="70" name="delete" width="800" label="delete" height="600" userID="FLX" flexoID="121">
+        <BehaviourControlGraph_DeleteAction id="71" object="cardinality" userID="FLX" flexoID="122" />
       </DeletionScheme>
       <ParentFlexoConcept idref="15" />
-      <Inspector id="71" inspectorTitle="Reference" userID="FLX" flexoID="116">
-        <GenericInspectorEntry id="72" widget="TEXT_FIELD" data="cardinality" name="cardinality" label="cardinality" type="java.lang.String" userID="FLX" flexoID="125" />
+      <Inspector id="72" inspectorTitle="Reference" userID="FLX" flexoID="116">
+        <GenericInspectorEntry id="73" container="virtualModelInstance" widget="CUSTOM_WIDGET" data="referenced" name="referenced" label="referenced" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class&gt;" userID="FLX" flexoID="137" />
+        <GenericInspectorEntry id="74" widget="TEXT_FIELD" data="cardinality" name="cardinality" label="cardinality" type="java.lang.String" userID="FLX" flexoID="125" />
+        <GenericInspectorEntry id="75" widget="CHECKBOX" data="container" name="container" label="container" type="java.lang.Boolean" userID="FLX" flexoID="138" />
       </Inspector>
     </EmbeddedFlexoConcept>
-    <PrimitiveRole id="73" primitiveType="Boolean" cloningStrategy="Clone" defaultValue="false" cardinality="ZeroOne" name="abstract" userID="FLX" flexoID="19" />
-    <FlexoConceptInstanceRole id="74" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" cloningStrategy="Reference" cardinality="ZeroOne" name="parent" userID="FLX" flexoID="107" />
-    <CreationScheme id="75" name="create" width="800" label="create" height="600" userID="FLX" flexoID="9">
-      <BehaviourControlGraph_Sequence id="76" userID="FLX" flexoID="40">
-        <ControlGraph2_AssignationAction id="77" assign="abstract" ownerContext="controlGraph2" userID="FLX" flexoID="16">
-          <AssignableAction_ExpressionAction id="78" expression="parameters.anAbstract" userID="FLX" flexoID="38" />
+    <PrimitiveRole id="76" primitiveType="Boolean" cloningStrategy="Clone" defaultValue="false" cardinality="ZeroOne" name="abstract" userID="FLX" flexoID="19" />
+    <FlexoConceptInstanceRole id="77" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" cloningStrategy="Reference" cardinality="ZeroOne" name="parent" userID="FLX" flexoID="107" />
+    <CreationScheme id="78" name="create" width="800" label="create" height="600" userID="FLX" flexoID="9">
+      <BehaviourControlGraph_Sequence id="79" userID="FLX" flexoID="40">
+        <ControlGraph2_AssignationAction id="80" assign="abstract" ownerContext="controlGraph2" userID="FLX" flexoID="16">
+          <AssignableAction_ExpressionAction id="81" expression="parameters.anAbstract" userID="FLX" flexoID="38" />
         </ControlGraph2_AssignationAction>
-        <ControlGraph1_AssignationAction id="79" assign="name" ownerContext="controlGraph1" userID="FLX" flexoID="15">
-          <AssignableAction_ExpressionAction id="80" expression="parameters.aName" userID="FLX" flexoID="39" />
+        <ControlGraph1_AssignationAction id="82" assign="name" ownerContext="controlGraph1" userID="FLX" flexoID="15">
+          <AssignableAction_ExpressionAction id="83" expression="parameters.aName" userID="FLX" flexoID="39" />
         </ControlGraph1_AssignationAction>
       </BehaviourControlGraph_Sequence>
-      <GenericBehaviourParameter id="81" isRequired="true" widget="TEXT_FIELD" name="aName" type="java.lang.String" userID="FLX" flexoID="13" />
-      <GenericBehaviourParameter id="82" isRequired="true" widget="CHECKBOX" defaultValue="false" name="anAbstract" type="java.lang.Boolean" userID="FLX" flexoID="14" />
+      <GenericBehaviourParameter id="84" isRequired="true" widget="TEXT_FIELD" name="aName" type="java.lang.String" userID="FLX" flexoID="13" />
+      <GenericBehaviourParameter id="85" isRequired="true" widget="CHECKBOX" defaultValue="false" name="anAbstract" type="java.lang.Boolean" userID="FLX" flexoID="14" />
     </CreationScheme>
-    <DeletionScheme id="83" name="delete" width="800" label="delete" height="600" userID="FLX" flexoID="10">
-      <BehaviourControlGraph_Sequence id="84" userID="FLX" flexoID="41">
-        <ControlGraph2_DeleteAction id="85" object="abstract" ownerContext="controlGraph2" userID="FLX" flexoID="18" />
-        <ControlGraph1_DeleteAction id="86" object="name" ownerContext="controlGraph1" userID="FLX" flexoID="17" />
+    <DeletionScheme id="86" name="delete" width="800" label="delete" height="600" userID="FLX" flexoID="10">
+      <BehaviourControlGraph_Sequence id="87" userID="FLX" flexoID="41">
+        <ControlGraph2_DeleteAction id="88" object="abstract" ownerContext="controlGraph2" userID="FLX" flexoID="18" />
+        <ControlGraph1_DeleteAction id="89" object="name" ownerContext="controlGraph1" userID="FLX" flexoID="17" />
       </BehaviourControlGraph_Sequence>
     </DeletionScheme>
-    <CreationScheme id="87" name="createEmpty" width="800" label="createEmpty" height="600" userID="FLX" flexoID="101">
-      <BehaviourControlGraph_AssignationAction id="88" assign="name" userID="FLX" flexoID="104">
-        <AssignableAction_ExpressionAction id="89" expression="&quot;Class1&quot;" userID="FLX" flexoID="103" />
+    <CreationScheme id="90" name="createEmpty" width="800" label="createEmpty" height="600" userID="FLX" flexoID="101">
+      <BehaviourControlGraph_AssignationAction id="91" assign="name" userID="FLX" flexoID="104">
+        <AssignableAction_ExpressionAction id="92" expression="&quot;Class1&quot;" userID="FLX" flexoID="103" />
       </BehaviourControlGraph_AssignationAction>
     </CreationScheme>
     <ParentFlexoConcept idref="15" />
-    <Inspector id="90" inspectorTitle="Class" userID="FLX" flexoID="6">
-      <GenericInspectorEntry id="91" widget="CHECKBOX" data="abstract" name="abstract" label="abstract" type="java.lang.Boolean" userID="FLX" flexoID="43" />
+    <Inspector id="93" inspectorTitle="Class" userID="FLX" flexoID="6">
+      <GenericInspectorEntry id="94" widget="CHECKBOX" data="abstract" name="abstract" label="abstract" type="java.lang.Boolean" userID="FLX" flexoID="43" />
     </Inspector>
   </FlexoConcept>
   <FlexoConcept idref="2" />
@@ -144,5 +147,8 @@
   <FlexoConcept idref="15" />
   <FlexoConcept idref="25" />
   <FlexoConcept idref="62" />
-  <Inspector id="92" inspectorTitle="ClassModel" userID="FLX" flexoID="1" />
+  <DeletionScheme id="95" name="delete" width="800" label="delete" height="600" userID="FLX" flexoID="131">
+    <BehaviourControlGraph_EmptyControlGraph id="96" userID="FLX" flexoID="130" />
+  </DeletionScheme>
+  <Inspector id="97" inspectorTitle="ClassModel" userID="FLX" flexoID="1" />
 </VirtualModel>
