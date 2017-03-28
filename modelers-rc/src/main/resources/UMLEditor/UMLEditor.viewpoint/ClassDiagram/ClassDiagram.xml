@@ -17,7 +17,7 @@
     </ShapeRole>
     <ShapeRole id="26" exampleLabel="class1" container="shape" cloningStrategy="Clone" cardinality="ZeroOne" name="header" userID="FLX" flexoID="24">
       <ParentShapeRole idref="2" />
-      <ShapeGraphicalRepresentation id="27" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="parent.width" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="0" heightConstraints="30" xConstraints="0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="192.42424242424244" height="30.0" identifier="3e013268" layer="1">
+      <ShapeGraphicalRepresentation id="27" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="parent.width" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="0" heightConstraints="30" xConstraints="0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="192.42424242424244" height="30.0" identifier="3e013268" layer="1" isSelectable="false" isFocusable="false">
         <SelectedColorBackgroundStyle id="28" color="255,255,255" transparencyLevel="0.5" />
         <ForegroundStyle id="29" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
         <FocusedColorBackgroundStyle id="30" color="255,255,255" transparencyLevel="0.5" />
@@ -28,7 +28,7 @@
         <RectangleShape id="35" />
         <TextStyle id="36" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
-      <GRSpec id="37" featureName="label" value="class.name" userID="FLX" flexoID="472" />
+      <GRSpec id="37" featureName="label" value="class.name" userID="FLX" flexoID="517" />
       <TypedDiagramModelSlot idref="13" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="38" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" cloningStrategy="Reference" cardinality="ZeroOne" name="class" userID="FLX" flexoID="37" />
@@ -86,13 +86,13 @@
       <GenericBehaviourParameter id="55" container="model" isRequired="true" widget="CUSTOM_WIDGET" name="class" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class&gt;" userID="FLX" flexoID="100" />
     </CreationScheme>
     <Inspector id="56" inspectorTitle="ClassGR" userID="FLX" flexoID="15">
-      <GenericInspectorEntry id="57" widget="CUSTOM_WIDGET" data="class.abstract" name="abstract" label="abstract" type="java.lang.Boolean" userID="FLX" flexoID="324" />
+      <GenericInspectorEntry id="57" widget="CHECKBOX" data="class.abstract" name="abstract" label="abstract" type="java.lang.Boolean" userID="FLX" flexoID="324" />
     </Inspector>
   </FlexoConcept>
   <FlexoConcept id="58" name="InheritanceGR" userID="FLX" flexoID="79">
     <ConnectorRole id="59" exampleLabel="" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="FLX" flexoID="101">
       <ConnectorGraphicalRepresentation id="60" identifier="35cc16cc" layer="64">
-        <RectPolylinConnectorSpecification id="61" rectPolylinConstraints="NONE" isRounded="false" arcSize="5" isStartingLocationDraggable="true" isEndingLocationDraggable="true" endOrientation="WEST" startOrientation="EAST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="NONE" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+        <RectPolylinConnectorSpecification id="61" rectPolylinConstraints="ORIENTATIONS_FIXED" isRounded="false" arcSize="5" isStartingLocationDraggable="true" isEndingLocationDraggable="true" endOrientation="SOUTH" startOrientation="NORTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="NONE" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
         <ForegroundStyle id="62" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
         <FocusedForegroundStyle id="63" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
         <SelectedForegroundStyle id="64" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -177,7 +177,7 @@
         <SelectedForegroundStyle id="109" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
         <TextStyle id="110" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ConnectorGraphicalRepresentation>
-      <GRSpec id="111" featureName="label" value="reference.name" userID="FLX" flexoID="473" />
+      <GRSpec id="111" featureName="label" value="reference.name" userID="FLX" flexoID="518" />
       <TypedDiagramModelSlot idref="13" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="112" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Reference" cloningStrategy="Reference" cardinality="ZeroOne" name="reference" userID="FLX" flexoID="129" />
@@ -272,7 +272,7 @@
         <SelectedForegroundStyle id="163" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
         <TextStyle id="164" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ConnectorGraphicalRepresentation>
-      <GRSpec id="165" featureName="label" value="reference.name" userID="FLX" flexoID="474" />
+      <GRSpec id="165" featureName="label" value="reference.name" userID="FLX" flexoID="519" />
       <TypedDiagramModelSlot idref="13" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="166" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Reference" cloningStrategy="Reference" cardinality="ZeroOne" name="reference" userID="FLX" flexoID="381" />
@@ -368,7 +368,7 @@
         <AssignableAction_ExpressionAction id="212" expression="parameters.model" userID="FLX" flexoID="9" />
       </ControlGraph2_AssignationAction>
       <ControlGraph1_AssignationAction id="213" assign="diagram" ownerContext="controlGraph1" userID="FLX" flexoID="8">
-        <AssignableAction_CreateDiagram id="214" diagramSpecificationURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram/ClassDiagramSpec" diagramName="&quot;diagram&quot;" resourceCenter="project" relativePath="/Diagrams" userID="FLX" flexoID="12">
+        <AssignableAction_CreateDiagram id="214" diagramSpecificationURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram/ClassDiagramSpec" diagramName="(parameters.model.name + &quot;_diagram&quot;)" resourceCenter="project" relativePath="/Diagrams" userID="FLX" flexoID="12">
           <TypedDiagramModelSlot idref="13" />
         </AssignableAction_CreateDiagram>
       </ControlGraph1_AssignationAction>
@@ -424,5 +424,38 @@
       </ControlGraph_Sequence>
     </BehaviourControlGraph_IterationAction>
   </SynchronizationScheme>
-  <Inspector id="249" inspectorTitle="ClassDiagram" userID="FLX" flexoID="1" />
+  <ActionScheme id="249" name="clear" width="800" label="clear" height="600" userID="FLX" flexoID="481">
+    <BehaviourControlGraph_Sequence id="250" userID="FLX" flexoID="501">
+      <ControlGraph2_Sequence id="251" ownerContext="controlGraph2" userID="FLX" flexoID="513">
+        <ControlGraph2_IterationAction id="252" iteratorName="item" ownerContext="controlGraph2" userID="FLX" flexoID="503">
+          <Iteration_SelectFlexoConceptInstance id="253" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ContainerGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="505">
+            <Condition id="254" condition="(selected.connector = null)" userID="FLX" flexoID="506" />
+            <VirtualModelInstanceModelSlot idref="43" />
+          </Iteration_SelectFlexoConceptInstance>
+          <ControlGraph_DeleteFlexoConceptInstance id="255" deletionSchemeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ContainerGR.delete" object="item" ownerContext="controlGraph" userID="FLX" flexoID="509">
+            <VirtualModelInstanceModelSlot idref="43" />
+          </ControlGraph_DeleteFlexoConceptInstance>
+        </ControlGraph2_IterationAction>
+        <ControlGraph1_IterationAction id="256" iteratorName="item" ownerContext="controlGraph1" userID="FLX" flexoID="495">
+          <Iteration_SelectFlexoConceptInstance id="257" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#InheritanceGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="497">
+            <Condition id="258" condition="(selected.connector = null)" userID="FLX" flexoID="498" />
+            <VirtualModelInstanceModelSlot idref="43" />
+          </Iteration_SelectFlexoConceptInstance>
+          <ControlGraph_DeleteFlexoConceptInstance id="259" deletionSchemeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#InheritanceGR.delete" object="item" ownerContext="controlGraph" userID="FLX" flexoID="500">
+            <VirtualModelInstanceModelSlot idref="43" />
+          </ControlGraph_DeleteFlexoConceptInstance>
+        </ControlGraph1_IterationAction>
+      </ControlGraph2_Sequence>
+      <ControlGraph1_IterationAction id="260" iteratorName="item" ownerContext="controlGraph1" userID="FLX" flexoID="485">
+        <Iteration_SelectFlexoConceptInstance id="261" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ReferenceGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="487">
+          <Condition id="262" condition="(selected.connector = null)" userID="FLX" flexoID="488" />
+          <VirtualModelInstanceModelSlot idref="43" />
+        </Iteration_SelectFlexoConceptInstance>
+        <ControlGraph_DeleteFlexoConceptInstance id="263" deletionSchemeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ReferenceGR.delete" object="item" ownerContext="controlGraph" userID="FLX" flexoID="491">
+          <VirtualModelInstanceModelSlot idref="43" />
+        </ControlGraph_DeleteFlexoConceptInstance>
+      </ControlGraph1_IterationAction>
+    </BehaviourControlGraph_Sequence>
+  </ActionScheme>
+  <Inspector id="264" inspectorTitle="ClassDiagram" userID="FLX" flexoID="1" />
 </VirtualModel>

@@ -98,7 +98,7 @@
       <PrimitiveRole id="65" primitiveType="Boolean" cloningStrategy="Clone" cardinality="ZeroOne" name="container" userID="FLX" flexoID="136" />
       <CreationScheme id="66" name="create" width="800" label="create" height="600" userID="FLX" flexoID="120">
         <BehaviourControlGraph_EmptyControlGraph id="67" userID="FLX" flexoID="124" />
-        <GenericBehaviourParameter id="68" widget="CUSTOM_WIDGET" name="name" type="java.lang.String" userID="FLX" flexoID="128" />
+        <GenericBehaviourParameter id="68" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="FLX" flexoID="128" />
         <GenericBehaviourParameter id="69" container="virtualModelInstance" widget="CUSTOM_WIDGET" name="referenced" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class&gt;" userID="FLX" flexoID="129" />
       </CreationScheme>
       <DeletionScheme id="70" name="delete" width="800" label="delete" height="600" userID="FLX" flexoID="121">
