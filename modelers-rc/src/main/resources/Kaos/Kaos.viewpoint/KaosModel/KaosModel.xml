@@ -22,8 +22,7 @@
   </FlexoConcept>
   <FlexoConcept id="15" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="6" name="Obstacle">
     <Inspector id="16" flexoID="7" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Obstacle" />
-    <ParentFlexoConcept idref="3" />
-    <CreationScheme id="17" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="131" skipConfirmationPanel="false" name="create">
+   <CreationScheme id="17" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="131" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="18" flexoID="136" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="19" userID="FLX" useSpecificDescriptions="false" flexoID="132" ownerContext="controlGraph1" assign="name">
           <AssignableAction_ExpressionAction id="20" expression="parameters.name" flexoID="58" description="" userID="FLX" useSpecificDescriptions="false" />
@@ -38,7 +37,6 @@
   </FlexoConcept>
   <FlexoConcept id="25" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="13" name="DomainProperty">
     <Inspector id="26" flexoID="10" useSpecificDescriptions="false" userID="FLX" inspectorTitle="DomainProperty" />
-    <ParentFlexoConcept idref="3" />
     <CreationScheme id="27" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="105" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="28" flexoID="219" ownerContext="controlGraph2" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="29" userID="FLX" useSpecificDescriptions="false" flexoID="215" ownerContext="controlGraph1" assign="name">
@@ -54,7 +52,6 @@
   </FlexoConcept>
   <FlexoConcept id="35" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="17" name="Requirement">
     <Inspector id="36" flexoID="14" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Requirement" />
-    <ParentFlexoConcept idref="3" />
     <CreationScheme id="37" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="68" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="38" flexoID="209" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="39" userID="FLX" useSpecificDescriptions="false" flexoID="205" ownerContext="controlGraph1" assign="name">
@@ -70,7 +67,6 @@
   </FlexoConcept>
   <FlexoConcept id="45" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="21" name="Expectation">
     <Inspector id="46" flexoID="18" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Expectation" />
-    <ParentFlexoConcept idref="3" />
     <CreationScheme id="47" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="158" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="48" flexoID="229" ownerContext="controlGraph1" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="49" userID="FLX" useSpecificDescriptions="false" flexoID="225" ownerContext="controlGraph1" assign="name">
@@ -86,7 +82,6 @@
   </FlexoConcept>
   <FlexoConcept id="55" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="23" name="Object">
     <Inspector id="56" flexoID="22" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Entity" />
-    <ParentFlexoConcept idref="3" />
     <CreationScheme id="57" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="164" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="58" flexoID="174" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="59" userID="FLX" useSpecificDescriptions="false" flexoID="170" ownerContext="controlGraph1" assign="name">
@@ -105,11 +100,9 @@
   </FlexoConcept>
   <FlexoConcept id="67" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="27" name="Event">
     <Inspector id="68" flexoID="26" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Event" />
-    <ParentFlexoConcept idref="3" />
   </FlexoConcept>
   <FlexoConcept id="69" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="29" name="Agent">
     <Inspector id="70" flexoID="28" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Agent" />
-    <ParentFlexoConcept idref="3" />
     <CreationScheme id="71" userID="FLX" useSpecificDescriptions="false" width="800" label="create" definePopupDefaultSize="false" height="600" flexoID="250" skipConfirmationPanel="false" name="create">
       <BehaviourControlGraph_Sequence id="72" flexoID="262" userID="FLX" useSpecificDescriptions="false">
         <ControlGraph1_AssignationAction id="73" userID="FLX" useSpecificDescriptions="false" flexoID="258" ownerContext="controlGraph1" assign="name">
@@ -157,7 +150,6 @@
       <FlexoConceptInstanceParameter id="102" userID="FLX" useSpecificDescriptions="false" label="targetGoal" flexoID="84" isRequired="false" name="targetGoal" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/KaosModel#Goal" aVirtualModelInstance="virtualModelInstance" />
     </CreationScheme>
   </FlexoConcept>
-  <FlexoConcept idref="3" />
   <FlexoConcept id="103" useSpecificDescriptions="false" userID="FLX" isAbstract="false" flexoID="200" name="Obstruct">
     <Inspector id="104" flexoID="194" useSpecificDescriptions="false" userID="FLX" inspectorTitle="Obstruct" />
   </FlexoConcept>
