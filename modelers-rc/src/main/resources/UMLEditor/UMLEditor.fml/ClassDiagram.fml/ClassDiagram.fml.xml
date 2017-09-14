@@ -135,14 +135,14 @@
                 <TypedDiagramModelSlot idref="13" />
               </ControlGraph2_AddConnector>
               <ControlGraph1_DeclarationAction id="86" variable="targets" ownerContext="controlGraph1" userID="FLX" flexoID="193">
-                <AssignableAction_SelectFlexoConceptInstance id="87" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="191">
+                <AssignableAction_SelectFlexoConceptInstance id="87" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="191">
                   <Condition id="88" condition="(selected.class = class.parent)" userID="FLX" flexoID="192" />
                   <VirtualModelInstanceModelSlot idref="43" />
                 </AssignableAction_SelectFlexoConceptInstance>
               </ControlGraph1_DeclarationAction>
             </ControlGraph2_Sequence>
             <ControlGraph1_DeclarationAction id="89" variable="sources" ownerContext="controlGraph1" userID="FLX" flexoID="189">
-              <AssignableAction_SelectFlexoConceptInstance id="90" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="187">
+              <AssignableAction_SelectFlexoConceptInstance id="90" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="187">
                 <Condition id="91" condition="(selected.class = class)" userID="FLX" flexoID="188" />
                 <VirtualModelInstanceModelSlot idref="43" />
               </AssignableAction_SelectFlexoConceptInstance>
@@ -220,14 +220,14 @@
                 </AssignableAction_AddConnector>
               </ControlGraph2_AssignationAction>
               <ControlGraph1_DeclarationAction id="135" variable="targets" ownerContext="controlGraph1" userID="FLX" flexoID="208">
-                <AssignableAction_SelectFlexoConceptInstance id="136" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="206">
+                <AssignableAction_SelectFlexoConceptInstance id="136" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="206">
                   <Condition id="137" condition="(selected.class = referenced)" userID="FLX" flexoID="207" />
                   <VirtualModelInstanceModelSlot idref="43" />
                 </AssignableAction_SelectFlexoConceptInstance>
               </ControlGraph1_DeclarationAction>
             </ControlGraph2_Sequence>
             <ControlGraph1_DeclarationAction id="138" variable="sources" ownerContext="controlGraph1" userID="FLX" flexoID="204">
-              <AssignableAction_SelectFlexoConceptInstance id="139" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="202">
+              <AssignableAction_SelectFlexoConceptInstance id="139" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="202">
                 <Condition id="140" condition="(selected.class = parameters.parentClass)" userID="FLX" flexoID="203" />
                 <VirtualModelInstanceModelSlot idref="43" />
               </AssignableAction_SelectFlexoConceptInstance>
@@ -315,14 +315,14 @@
                 </AssignableAction_AddConnector>
               </ControlGraph2_AssignationAction>
               <ControlGraph1_DeclarationAction id="189" variable="targets" ownerContext="controlGraph1" userID="FLX" flexoID="411">
-                <AssignableAction_SelectFlexoConceptInstance id="190" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="412">
+                <AssignableAction_SelectFlexoConceptInstance id="190" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="412">
                   <Condition id="191" condition="(selected.class = referenced)" userID="FLX" flexoID="409" />
                   <VirtualModelInstanceModelSlot idref="43" />
                 </AssignableAction_SelectFlexoConceptInstance>
               </ControlGraph1_DeclarationAction>
             </ControlGraph2_Sequence>
             <ControlGraph1_DeclarationAction id="192" variable="sources" ownerContext="controlGraph1" userID="FLX" flexoID="405">
-              <AssignableAction_SelectFlexoConceptInstance id="193" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="407">
+              <AssignableAction_SelectFlexoConceptInstance id="193" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ClassGR" userID="FLX" flexoID="407">
                 <Condition id="194" condition="(selected.class = parameters.parentClass)" userID="FLX" flexoID="406" />
                 <VirtualModelInstanceModelSlot idref="43" />
               </AssignableAction_SelectFlexoConceptInstance>
@@ -380,13 +380,13 @@
   </DeletionScheme>
   <SynchronizationScheme id="218" name="synchronizationScheme" width="800" label="synchronizationScheme" height="600" userID="FLX" flexoID="61">
     <BehaviourControlGraph_IterationAction id="219" iteratorName="item" userID="FLX" flexoID="64">
-      <Iteration_SelectFlexoConceptInstance id="220" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" ownerContext="iterationControlGraph" userID="FLX" flexoID="66">
+      <Iteration_SelectFlexoConceptInstance id="220" receiver="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Class" ownerContext="iterationControlGraph" userID="FLX" flexoID="66">
         <VirtualModelInstanceModelSlot idref="43" />
       </Iteration_SelectFlexoConceptInstance>
       <ControlGraph_Sequence id="221" ownerContext="controlGraph" userID="FLX" flexoID="252">
         <ControlGraph2_Sequence id="222" ownerContext="controlGraph2" userID="FLX" flexoID="251">
           <ControlGraph2_IterationAction id="223" iteratorName="itemReference" ownerContext="controlGraph2" userID="FLX" flexoID="238">
-            <Iteration_SelectFlexoConceptInstance id="224" container="item" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Reference" ownerContext="iterationControlGraph" userID="FLX" flexoID="242">
+            <Iteration_SelectFlexoConceptInstance id="224" container="item" receiver="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassModel#Reference" ownerContext="iterationControlGraph" userID="FLX" flexoID="242">
               <VirtualModelInstanceModelSlot idref="43" />
             </Iteration_SelectFlexoConceptInstance>
             <ControlGraph_ConditionalAction id="225" condition="itemReference.container" ownerContext="controlGraph" userID="FLX" flexoID="424">
@@ -428,7 +428,7 @@
     <BehaviourControlGraph_Sequence id="250" userID="FLX" flexoID="501">
       <ControlGraph2_Sequence id="251" ownerContext="controlGraph2" userID="FLX" flexoID="513">
         <ControlGraph2_IterationAction id="252" iteratorName="item" ownerContext="controlGraph2" userID="FLX" flexoID="503">
-          <Iteration_SelectFlexoConceptInstance id="253" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ContainerGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="505">
+          <Iteration_SelectFlexoConceptInstance id="253" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ContainerGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="505">
             <Condition id="254" condition="(selected.connector = null)" userID="FLX" flexoID="506" />
             <VirtualModelInstanceModelSlot idref="43" />
           </Iteration_SelectFlexoConceptInstance>
@@ -437,7 +437,7 @@
           </ControlGraph_DeleteFlexoConceptInstance>
         </ControlGraph2_IterationAction>
         <ControlGraph1_IterationAction id="256" iteratorName="item" ownerContext="controlGraph1" userID="FLX" flexoID="495">
-          <Iteration_SelectFlexoConceptInstance id="257" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#InheritanceGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="497">
+          <Iteration_SelectFlexoConceptInstance id="257" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#InheritanceGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="497">
             <Condition id="258" condition="(selected.connector = null)" userID="FLX" flexoID="498" />
             <VirtualModelInstanceModelSlot idref="43" />
           </Iteration_SelectFlexoConceptInstance>
@@ -447,7 +447,7 @@
         </ControlGraph1_IterationAction>
       </ControlGraph2_Sequence>
       <ControlGraph1_IterationAction id="260" iteratorName="item" ownerContext="controlGraph1" userID="FLX" flexoID="485">
-        <Iteration_SelectFlexoConceptInstance id="261" virtualModelInstance="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ReferenceGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="487">
+        <Iteration_SelectFlexoConceptInstance id="261" receiver="virtualModelInstance" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/ClassDiagram#ReferenceGR" ownerContext="iterationControlGraph" userID="FLX" flexoID="487">
           <Condition id="262" condition="(selected.connector = null)" userID="FLX" flexoID="488" />
           <VirtualModelInstanceModelSlot idref="43" />
         </Iteration_SelectFlexoConceptInstance>

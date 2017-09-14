@@ -424,7 +424,7 @@
                 <ControlGraph_AssignationAction id="270" userID="FLX" useSpecificDescriptions="false" flexoID="893" ownerContext="controlGraph" assign="source.refinement.target">
                   <AssignableAction_ExpressionAction id="271" expression="toTarget.kaosElement" flexoID="892" userID="FLX" useSpecificDescriptions="false" />
                 </ControlGraph_AssignationAction>
-                <Iteration_SelectFlexoConceptInstance id="272" useSpecificDescriptions="false" userID="FLX" virtualModelInstance="virtualModelInstance" flexoID="888" ownerContext="iterationControlGraph" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/GoalModelingDiagram#RefinementSourceGR">
+                <Iteration_SelectFlexoConceptInstance id="272" useSpecificDescriptions="false" userID="FLX" receiver="virtualModelInstance" flexoID="888" ownerContext="iterationControlGraph" flexoConceptTypeURI="http://openflexo.org/modellers/Kaos/Kaos.viewpoint/GoalModelingDiagram#RefinementSourceGR">
                   <Condition id="273" flexoID="889" condition="(selected.point = source)" useSpecificDescriptions="false" userID="FLX" />
                   <VirtualModelInstanceModelSlot idref="27" />
                 </Iteration_SelectFlexoConceptInstance>
