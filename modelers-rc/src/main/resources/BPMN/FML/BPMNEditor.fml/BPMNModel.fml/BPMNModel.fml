@@ -52,10 +52,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class Activity extends AbstractActivity  {    
-      
-      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
-      public List<FlexoConceptInstanceType<Transition>> transitions;    
+    public class Activity extends AbstractActivity,TransitionEmitter,TransitionReceiver  {    
       
       @CreationScheme      
       Activity:create(String name) {      
@@ -70,10 +67,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class BeginActivity extends AbstractActivity  {    
-      
-      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
-      public List<FlexoConceptInstanceType<Transition>> transitions;    
+    public class BeginActivity extends AbstractActivity,TransitionEmitter  {    
       
       @CreationScheme      
       BeginActivity:create() {      
@@ -88,7 +82,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class EndActivity extends AbstractActivity  {    
+    public class EndActivity extends AbstractActivity,TransitionReceiver  {    
       
       @CreationScheme      
       EndActivity:create() {      
@@ -103,7 +97,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class Gateway extends AbstractActivity  {    
+    public class Gateway extends AbstractActivity,TransitionEmitter,TransitionReceiver  {    
       
       @CreationScheme      
       Gateway:create(String condition) {      
@@ -118,14 +112,17 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class AbstractTransition {    
+    public class Transition {    
       
-      @PrimitiveRole(cardinality=ZeroOne,readOnly=false)      
-      public String label;    
+      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
+      public FlexoConceptInstanceType<TransitionEmitter> from;    
+      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
+      public FlexoConceptInstanceType<TransitionReceiver> to;    
       
       @CreationScheme      
-      AbstractTransition:create() {      
-          
+      Transition:create(FlexoConceptInstanceType<TransitionEmitter> from, FlexoConceptInstanceType<TransitionReceiver> to) {      
+        from = parameters.from;        
+        to = parameters.to;      
       }      
       
       @DeletionScheme      
@@ -135,24 +132,26 @@ public class BPMNModel {
       
     }    
   
+    /**    
+     * An abstract actitity which declares one or more transitions    
+     *     
+     */    
     @FlexoConcept    
-    public class Transition extends AbstractTransition  {    
+    public class TransitionEmitter extends AbstractActivity  {    
       
-      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
-      public FlexoConceptInstanceType<AbstractActivity> from;    
-      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
-      public FlexoConceptInstanceType<AbstractActivity> to;    
+      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
+      public List<FlexoConceptInstanceType<Transition>> outTransitions;    
+    }    
+  
+    /**    
+     * An abstract actitity which declares one or more transitions    
+     *     
+     */    
+    @FlexoConcept    
+    public class TransitionReceiver extends AbstractActivity  {    
       
-      @CreationScheme      
-      Transition:create() {      
-          
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
-      }      
-      
+      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
+      public List<FlexoConceptInstanceType<Transition>> inTransitions;    
     }    
   
   }  
@@ -176,10 +175,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class Activity extends AbstractActivity  {  
-  
-    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
-    public List<FlexoConceptInstanceType<Transition>> transitions;  
+  public class Activity extends AbstractActivity,TransitionEmitter,TransitionReceiver  {  
   
     @CreationScheme    
     Activity:create(String name) {    
@@ -194,10 +190,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class BeginActivity extends AbstractActivity  {  
-  
-    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
-    public List<FlexoConceptInstanceType<Transition>> transitions;  
+  public class BeginActivity extends AbstractActivity,TransitionEmitter  {  
   
     @CreationScheme    
     BeginActivity:create() {    
@@ -212,7 +205,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class EndActivity extends AbstractActivity  {  
+  public class EndActivity extends AbstractActivity,TransitionReceiver  {  
   
     @CreationScheme    
     EndActivity:create() {    
@@ -227,7 +220,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class Gateway extends AbstractActivity  {  
+  public class Gateway extends AbstractActivity,TransitionEmitter,TransitionReceiver  {  
   
     @CreationScheme    
     Gateway:create(String condition) {    
@@ -242,14 +235,17 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class AbstractTransition {  
+  public class Transition {  
   
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public String label;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<TransitionEmitter> from;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<TransitionReceiver> to;  
   
     @CreationScheme    
-    AbstractTransition:create() {    
-      
+    Transition:create(FlexoConceptInstanceType<TransitionEmitter> from, FlexoConceptInstanceType<TransitionReceiver> to) {    
+      from = parameters.from;      
+      to = parameters.to;    
     }    
   
     @DeletionScheme    
@@ -259,24 +255,26 @@ public class BPMNModel {
   
   }  
 
+  /**  
+   * An abstract actitity which declares one or more transitions  
+   *   
+   */  
   @FlexoConcept  
-  public class Transition extends AbstractTransition  {  
+  public class TransitionEmitter extends AbstractActivity  {  
   
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<AbstractActivity> from;  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<AbstractActivity> to;  
+    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
+    public List<FlexoConceptInstanceType<Transition>> outTransitions;  
+  }  
+
+  /**  
+   * An abstract actitity which declares one or more transitions  
+   *   
+   */  
+  @FlexoConcept  
+  public class TransitionReceiver extends AbstractActivity  {  
   
-    @CreationScheme    
-    Transition:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
+    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
+    public List<FlexoConceptInstanceType<Transition>> inTransitions;  
   }  
 
 }

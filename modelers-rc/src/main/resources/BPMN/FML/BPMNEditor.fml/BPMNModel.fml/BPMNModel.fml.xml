@@ -14,9 +14,8 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-18" userID="SYL" flexoID="18" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-29" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" name="Activity" userID="SYL" flexoID="29">
+    <EmbeddedFlexoConcept id="SYL-29" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver" name="Activity" userID="SYL" flexoID="29">
       <Inspector id="SYL-24" inspectorTitle="Activity" userID="SYL" flexoID="24" />
-      <FlexoConceptInstanceRole id="SYL-135" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="transitions" userID="SYL" flexoID="135" />
       <CreationScheme id="SYL-26" name="create" width="800" label="create" height="600" userID="SYL" flexoID="26">
         <BehaviourControlGraph_AssignationAction id="SYL-99" assign="activityName" userID="SYL" flexoID="99">
           <AssignableAction_ExpressionAction id="SYL-98" expression="parameters.name" userID="SYL" flexoID="98" />
@@ -27,9 +26,8 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-27" userID="SYL" flexoID="27" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-45" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" name="BeginActivity" userID="SYL" flexoID="45">
+    <EmbeddedFlexoConcept id="SYL-45" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter" name="BeginActivity" userID="SYL" flexoID="45">
       <Inspector id="SYL-40" inspectorTitle="BeginActivity" userID="SYL" flexoID="40" />
-      <FlexoConceptInstanceRole id="SYL-136" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="transitions" userID="SYL" flexoID="136" />
       <CreationScheme id="SYL-42" name="create" width="800" label="create" height="600" userID="SYL" flexoID="42">
         <BehaviourControlGraph_EmptyControlGraph id="SYL-41" userID="SYL" flexoID="41" />
       </CreationScheme>
@@ -37,7 +35,7 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-43" userID="SYL" flexoID="43" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-54" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" name="EndActivity" userID="SYL" flexoID="54">
+    <EmbeddedFlexoConcept id="SYL-54" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver" name="EndActivity" userID="SYL" flexoID="54">
       <Inspector id="SYL-49" inspectorTitle="EndActivity" userID="SYL" flexoID="49" />
       <CreationScheme id="SYL-51" name="create" width="800" label="create" height="600" userID="SYL" flexoID="51">
         <BehaviourControlGraph_EmptyControlGraph id="SYL-50" userID="SYL" flexoID="50" />
@@ -46,7 +44,7 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-52" userID="SYL" flexoID="52" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-63" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" name="Gateway" userID="SYL" flexoID="63">
+    <EmbeddedFlexoConcept id="SYL-63" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver" name="Gateway" userID="SYL" flexoID="63">
       <Inspector id="SYL-58" inspectorTitle="Gateway" userID="SYL" flexoID="58" />
       <CreationScheme id="SYL-60" name="create" width="800" label="create" height="600" userID="SYL" flexoID="60">
         <BehaviourControlGraph_AssignationAction id="SYL-102" assign="activityName" userID="SYL" flexoID="102">
@@ -58,26 +56,33 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-61" userID="SYL" flexoID="61" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-119" name="AbstractTransition" userID="SYL" flexoID="119">
-      <Inspector id="SYL-114" inspectorTitle="AbstractTransition" userID="SYL" flexoID="114" />
-      <PrimitiveRole id="SYL-132" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="label" userID="SYL" flexoID="132" />
-      <CreationScheme id="SYL-116" name="create" width="800" label="create" height="600" userID="SYL" flexoID="116">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-115" userID="SYL" flexoID="115" />
-      </CreationScheme>
-      <DeletionScheme id="SYL-118" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="118">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-117" userID="SYL" flexoID="117" />
-      </DeletionScheme>
-    </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-128" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractTransition" name="Transition" userID="SYL" flexoID="128">
+    <EmbeddedFlexoConcept id="SYL-128" name="Transition" userID="SYL" flexoID="128">
       <Inspector id="SYL-123" inspectorTitle="Transition" userID="SYL" flexoID="123" />
-      <FlexoConceptInstanceRole id="SYL-133" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" cloningStrategy="Reference" cardinality="ZeroOne" name="from" userID="SYL" flexoID="133" />
-      <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" cloningStrategy="Reference" cardinality="ZeroOne" name="to" userID="SYL" flexoID="134" />
+      <FlexoConceptInstanceRole id="SYL-133" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter" cloningStrategy="Reference" cardinality="ZeroOne" name="from" userID="SYL" flexoID="133" />
+      <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver" cloningStrategy="Reference" cardinality="ZeroOne" name="to" userID="SYL" flexoID="134" />
       <CreationScheme id="SYL-125" name="create" width="800" label="create" height="600" userID="SYL" flexoID="125">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-124" userID="SYL" flexoID="124" />
+        <BehaviourControlGraph_Sequence id="SYL-155" userID="SYL" flexoID="155">
+          <ControlGraph2_AssignationAction id="SYL-154" assign="to" ownerContext="controlGraph2" userID="SYL" flexoID="154">
+            <AssignableAction_ExpressionAction id="SYL-153" expression="parameters.to" userID="SYL" flexoID="153" />
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_AssignationAction id="SYL-152" assign="from" ownerContext="controlGraph1" userID="SYL" flexoID="152">
+            <AssignableAction_ExpressionAction id="SYL-151" expression="parameters.from" userID="SYL" flexoID="151" />
+          </ControlGraph1_AssignationAction>
+        </BehaviourControlGraph_Sequence>
+        <GenericBehaviourParameter id="SYL-150" widget="CUSTOM_WIDGET" name="from" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter&gt;" userID="SYL" flexoID="150" />
+        <GenericBehaviourParameter id="SYL-149" widget="CUSTOM_WIDGET" name="to" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver&gt;" userID="SYL" flexoID="149" />
       </CreationScheme>
       <DeletionScheme id="SYL-127" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="127">
         <BehaviourControlGraph_EmptyControlGraph id="SYL-126" userID="SYL" flexoID="126" />
       </DeletionScheme>
+    </EmbeddedFlexoConcept>
+    <EmbeddedFlexoConcept id="SYL-166" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" name="TransitionEmitter" description="An abstract actitity which declares one or more transitions" userID="SYL" flexoID="166">
+      <Inspector id="SYL-161" inspectorTitle="TransitionEmitter" userID="SYL" flexoID="161" />
+      <FlexoConceptInstanceRole id="SYL-170" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="outTransitions" userID="SYL" flexoID="170" />
+    </EmbeddedFlexoConcept>
+    <EmbeddedFlexoConcept id="SYL-174" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#AbstractActivity" name="TransitionReceiver" description="An abstract actitity which declares one or more transitions" userID="SYL" flexoID="174">
+      <Inspector id="SYL-171" inspectorTitle="TransitionEmitter" userID="SYL" flexoID="171" />
+      <FlexoConceptInstanceRole id="SYL-173" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="inTransitions" userID="SYL" flexoID="173" />
     </EmbeddedFlexoConcept>
     <FlexoConceptInstanceRole id="SYL-72" virtualModelInstance="container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process" cloningStrategy="Reference" cardinality="ZeroOne" name="parentProcess" userID="SYL" flexoID="72" />
     <PrimitiveRole id="SYL-73" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="name" userID="SYL" flexoID="73" />
@@ -102,8 +107,9 @@
   <FlexoConcept idref="SYL-45" />
   <FlexoConcept idref="SYL-54" />
   <FlexoConcept idref="SYL-63" />
-  <FlexoConcept idref="SYL-119" />
   <FlexoConcept idref="SYL-128" />
+  <FlexoConcept idref="SYL-166" />
+  <FlexoConcept idref="SYL-174" />
   <Inspector id="SYL-1" inspectorTitle="BPMNModel" userID="SYL" flexoID="1" />
   <CreationScheme id="SYL-67" name="create" width="800" label="create" height="600" userID="SYL" flexoID="67">
     <BehaviourControlGraph_EmptyControlGraph id="SYL-68" userID="SYL" flexoID="68" />

@@ -4,15 +4,15 @@
     <StartShape idref="2" />
     <EndShape idref="13" />
     <ConnectorGraphicalRepresentation id="24" identifier="36462fa1" layer="64">
-      <LineConnectorSpecification id="25" lineConnectorType="MINIMAL_LENGTH" startSymbol="NONE" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
-      <ForegroundStyle id="26" color="51,51,51" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.3999999985098839" />
+      <RectPolylinConnectorSpecification id="25" rectPolylinConstraints="NONE" arcSize="5" endOrientation="WEST" startOrientation="EAST" adjustability="AUTO_LAYOUT" startSymbol="NONE" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="26" color="102,102,102" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.6000000014901161" />
       <FocusedForegroundStyle id="27" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="28" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
       <TextStyle id="29" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
   <Shape id="13" name="Activity" userID="SYL" flexoID="2">
-    <ShapeGraphicalRepresentation id="14" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" layoutManagerIdentifier="grid" x="135.0" y="117.5" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="90.0" height="45.0" identifier="44703226" layer="1">
+    <ShapeGraphicalRepresentation id="14" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" layoutManagerIdentifier="grid" x="175.0" y="117.5" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="90.0" height="45.0" identifier="44703226" layer="1">
       <SelectedColorBackgroundStyle id="15" color="254,247,217" transparencyLevel="0.5" />
       <ForegroundStyle id="16" color="48,117,204" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedColorBackgroundStyle id="17" color="254,247,217" transparencyLevel="0.5" />
@@ -63,7 +63,7 @@
       <TextStyle id="51" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </Shape>
-  <DrawingGraphicalRepresentation id="52" drawWorkingArea="false" backgroundColor="255,255,255" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="ebc74cd">
+  <DrawingGraphicalRepresentation id="52" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="ebc74cd">
     <GridLayoutManagerSpecification id="53" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" identifier="grid" paintDecoration="true" draggingMode="ContinuousLayout" />
     <TextStyle id="54" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
   </DrawingGraphicalRepresentation>

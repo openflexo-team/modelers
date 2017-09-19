@@ -14,26 +14,21 @@ public class ProcessDiagram {
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_97diagram from diagram {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_9ediagram from diagram {    
     };    
     process = Process.create(parameters.name,null);  
   }  
 
-  @ActionScheme  
-  public VirtualModelInstanceType<ProcessDiagram> newSubProcess(String processName) {  
-    return ProcessDiagram.createNewSubProcess(parameters.processName,process);  
-  }  
-
   @CreationScheme  
   ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_97diagram from diagram {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_9ediagram from diagram {    
     };    
     process = Process.create(parameters.name,parameters.parentProcess);  
   }  
 
 
   @FlexoConcept  
-  public class ActivityGR {  
+  public class ActivityGR extends AbstractActivityGR,TransitionEmitterGR,TransitionReceiverGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
@@ -50,54 +45,95 @@ public class ProcessDiagram {
   }  
 
   @FlexoConcept  
-  public class BeginActivityGR {  
+  public class BeginActivityGR extends AbstractActivityGR,TransitionEmitterGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<BeginActivity> beginActivity;  
+    public FlexoConceptInstanceType<BeginActivity> activity;  
   
     @DropScheme    
     BeginActivityGR:dropBeginActivityGRAtTopLevel() {    
       shape = diagram.DIAGRAM::AddShape {      
-        label = beginActivity.activityName;      
+        label = activity.activityName;      
       };      
-      beginActivity = BeginActivity.create();    
+      activity = BeginActivity.create();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class EndActivityGR {  
+  public class EndActivityGR extends AbstractActivityGR,TransitionReceiverGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<EndActivity> endActivity;  
+    public FlexoConceptInstanceType<EndActivity> activity;  
   
     @DropScheme    
     EndActivityGR:dropEndActivityGRAtTopLevel() {    
       shape = diagram.DIAGRAM::AddShape {      
-        label = endActivity.activityName;      
+        label = activity.activityName;      
       };      
-      endActivity = EndActivity.create();    
+      activity = EndActivity.create();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class GatewayGR {  
+  public class GatewayGR extends AbstractActivityGR,TransitionEmitterGR,TransitionReceiverGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Gateway> gateway;  
+    public FlexoConceptInstanceType<Gateway> activity;  
   
     @DropScheme    
     GatewayGR:dropGatewayGRAtTopLevel() {    
       shape = diagram.DIAGRAM::AddShape {      
-        label = this.gateway.activityName;      
+        label = this.activity.activityName;      
       };      
-      gateway = Gateway.create("condition ?");    
+      activity = Gateway.create("condition ?");    
     }    
   
+  }  
+
+  @FlexoConcept  
+  public class TransitionGR {  
+  
+    FlexoRole connector as ConnectorSpecification from ProcessDiagram;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<Transition> transition;  
+  
+    @LinkScheme    
+    TransitionGR:linkEmitterGRToReceiverGR() {    
+      connector = AddConnector$AddConnectorImpl_$$_jvst367_99 conformTo ConnectorSpecification from diagram {      
+      };      
+      transition = Transition.create(fromTarget.activity,toTarget.activity);      
+      fromTarget.activity.outTransitions.FML::AddToList(transition)      
+      toTarget.activity.inTransitions.FML::AddToList(transition)    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class AbstractActivityGR {  
+  
+    @AbstractProperty    
+    abstract DiagramShape shape;  
+    @AbstractProperty    
+    abstract FlexoConceptInstanceType<AbstractActivity> activity;  
+  }  
+
+  @FlexoConcept  
+  public class TransitionEmitterGR extends AbstractActivityGR  {  
+  
+    @AbstractProperty    
+    abstract FlexoConceptInstanceType<TransitionEmitter> activity;  
+  }  
+
+  @FlexoConcept  
+  public class TransitionReceiverGR extends AbstractActivityGR  {  
+  
+    @AbstractProperty    
+    abstract FlexoConceptInstanceType<TransitionReceiver> activity;  
   }  
 
 }
