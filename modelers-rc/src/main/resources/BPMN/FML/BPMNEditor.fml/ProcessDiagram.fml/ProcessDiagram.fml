@@ -1,0 +1,103 @@
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
+
+/**
+ * 
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml")
+public class ProcessDiagram {
+
+  @TypedDiagramModelSlot(metamodel="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification",cardinality=ZeroOne,readOnly=false)  
+  public DiagramType<ProcessDiagram> diagram;
+  @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)  
+  public FlexoConceptInstanceType<Process> process;
+
+  @CreationScheme  
+  ProcessDiagram:createNewProcess(String name) {  
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_97diagram from diagram {    
+    };    
+    process = Process.create(parameters.name,null);  
+  }  
+
+  @ActionScheme  
+  public VirtualModelInstanceType<ProcessDiagram> newSubProcess(String processName) {  
+    return ProcessDiagram.createNewSubProcess(parameters.processName,process);  
+  }  
+
+  @CreationScheme  
+  ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_97diagram from diagram {    
+    };    
+    process = Process.create(parameters.name,parameters.parentProcess);  
+  }  
+
+
+  @FlexoConcept  
+  public class ActivityGR {  
+  
+    FlexoRole shape as ShapeSpecification from ProcessDiagram;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<Activity> activity;  
+  
+    @DropScheme    
+    ActivityGR:dropActivityGRAtTopLevel() {    
+      shape = diagram.DIAGRAM::AddShape {      
+        label = activity.activityName;      
+      };      
+      activity = Activity.create("Activity");    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class BeginActivityGR {  
+  
+    FlexoRole shape as ShapeSpecification from ProcessDiagram;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<BeginActivity> beginActivity;  
+  
+    @DropScheme    
+    BeginActivityGR:dropBeginActivityGRAtTopLevel() {    
+      shape = diagram.DIAGRAM::AddShape {      
+        label = beginActivity.activityName;      
+      };      
+      beginActivity = BeginActivity.create();    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class EndActivityGR {  
+  
+    FlexoRole shape as ShapeSpecification from ProcessDiagram;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<EndActivity> endActivity;  
+  
+    @DropScheme    
+    EndActivityGR:dropEndActivityGRAtTopLevel() {    
+      shape = diagram.DIAGRAM::AddShape {      
+        label = endActivity.activityName;      
+      };      
+      endActivity = EndActivity.create();    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class GatewayGR {  
+  
+    FlexoRole shape as ShapeSpecification from ProcessDiagram;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<Gateway> gateway;  
+  
+    @DropScheme    
+    GatewayGR:dropGatewayGRAtTopLevel() {    
+      shape = diagram.DIAGRAM::AddShape {      
+        label = this.gateway.activityName;      
+      };      
+      gateway = Gateway.create("condition ?");    
+    }    
+  
+  }  
+
+}

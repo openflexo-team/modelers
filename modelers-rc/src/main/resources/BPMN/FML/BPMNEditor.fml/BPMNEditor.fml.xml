@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-2" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" version="0.1" name="BPMNEditor" author="sylvain" userID="SYL" flexoID="2">
+  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
+  <Inspector id="SYL-1" inspectorTitle="BPMNEditor" userID="SYL" flexoID="1" />
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-6" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="model" userID="SYL" flexoID="6" />
+  <CreationScheme id="SYL-7" name="create" width="800" label="create" height="600" userID="SYL" flexoID="7">
+    <BehaviourControlGraph_AssignationAction id="SYL-11" assign="model" userID="SYL" flexoID="11">
+      <AssignableAction_AddVirtualModelInstance id="SYL-10" virtualModelInstanceTitle="&quot;Model for BPMN editor&quot;" virtualModelInstanceName="&quot;BPMNModel&quot;" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml.create" receiver="this" userID="SYL" flexoID="10" />
+    </BehaviourControlGraph_AssignationAction>
+  </CreationScheme>
+  <ActionScheme id="SYL-15" visibility="Public" name="newProcess" width="800" label="newProcess" height="600" userID="SYL" flexoID="15">
+    <BehaviourControlGraph_AddVirtualModelInstance id="SYL-16" virtualModelInstanceName="parameters.processName" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.createNewProcess" receiver="this" userID="SYL" flexoID="16">
+      <AddFlexoConceptInstanceParameter id="SYL-215" paramName="name" value="parameters.processName" userID="SYL" flexoID="215" />
+    </BehaviourControlGraph_AddVirtualModelInstance>
+    <GenericBehaviourParameter id="SYL-17" isRequired="true" widget="TEXT_FIELD" name="processName" type="java.lang.String" userID="SYL" flexoID="17" />
+  </ActionScheme>
+</VirtualModel>

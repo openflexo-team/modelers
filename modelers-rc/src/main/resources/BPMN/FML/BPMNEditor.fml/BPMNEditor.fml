@@ -1,0 +1,24 @@
+use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml")
+public class BPMNEditor {
+
+  @FMLRTVirtualModelInstanceModelSlot(cardinality=ZeroOne,readOnly=false)  
+  public VirtualModelInstanceType<BPMNModel> model;
+
+  @CreationScheme  
+  BPMNEditor:create() {  
+    model = BPMNModel.create();  
+  }  
+
+  @ActionScheme  
+  public Void newProcess(String processName) {  
+    ProcessDiagram.createNewProcess(parameters.processName)  
+  }  
+
+}

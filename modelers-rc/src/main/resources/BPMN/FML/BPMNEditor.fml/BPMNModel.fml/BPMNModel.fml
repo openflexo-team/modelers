@@ -1,0 +1,282 @@
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml")
+public class BPMNModel {
+
+  @CreationScheme  
+  BPMNModel:create() {  
+  
+  }  
+
+
+  @FlexoConcept  
+  public class Process {  
+  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<Process> parentProcess;  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public String name;  
+  
+    @CreationScheme    
+    Process:create(String name, FlexoConceptInstanceType<Process> parentProcess) {    
+      name = parameters.name;      
+      parentProcess = parameters.parentProcess;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  
+    @FlexoConcept    
+    public class AbstractActivity {    
+      
+      @PrimitiveRole(cardinality=ZeroOne,readOnly=false)      
+      public String activityName;    
+      
+      @CreationScheme      
+      AbstractActivity:create() {      
+          
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class Activity extends AbstractActivity  {    
+      
+      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
+      public List<FlexoConceptInstanceType<Transition>> transitions;    
+      
+      @CreationScheme      
+      Activity:create(String name) {      
+        activityName = parameters.name;      
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class BeginActivity extends AbstractActivity  {    
+      
+      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
+      public List<FlexoConceptInstanceType<Transition>> transitions;    
+      
+      @CreationScheme      
+      BeginActivity:create() {      
+          
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class EndActivity extends AbstractActivity  {    
+      
+      @CreationScheme      
+      EndActivity:create() {      
+          
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class Gateway extends AbstractActivity  {    
+      
+      @CreationScheme      
+      Gateway:create(String condition) {      
+        activityName = parameters.condition;      
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class AbstractTransition {    
+      
+      @PrimitiveRole(cardinality=ZeroOne,readOnly=false)      
+      public String label;    
+      
+      @CreationScheme      
+      AbstractTransition:create() {      
+          
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class Transition extends AbstractTransition  {    
+      
+      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
+      public FlexoConceptInstanceType<AbstractActivity> from;    
+      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
+      public FlexoConceptInstanceType<AbstractActivity> to;    
+      
+      @CreationScheme      
+      Transition:create() {      
+          
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class AbstractActivity {  
+  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public String activityName;  
+  
+    @CreationScheme    
+    AbstractActivity:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Activity extends AbstractActivity  {  
+  
+    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
+    public List<FlexoConceptInstanceType<Transition>> transitions;  
+  
+    @CreationScheme    
+    Activity:create(String name) {    
+      activityName = parameters.name;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class BeginActivity extends AbstractActivity  {  
+  
+    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
+    public List<FlexoConceptInstanceType<Transition>> transitions;  
+  
+    @CreationScheme    
+    BeginActivity:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class EndActivity extends AbstractActivity  {  
+  
+    @CreationScheme    
+    EndActivity:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Gateway extends AbstractActivity  {  
+  
+    @CreationScheme    
+    Gateway:create(String condition) {    
+      activityName = parameters.condition;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class AbstractTransition {  
+  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public String label;  
+  
+    @CreationScheme    
+    AbstractTransition:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Transition extends AbstractTransition  {  
+  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<AbstractActivity> from;  
+    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
+    public FlexoConceptInstanceType<AbstractActivity> to;  
+  
+    @CreationScheme    
+    Transition:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+}
