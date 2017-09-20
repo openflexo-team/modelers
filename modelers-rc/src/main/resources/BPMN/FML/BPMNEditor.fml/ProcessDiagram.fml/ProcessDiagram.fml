@@ -14,21 +14,26 @@ public class ProcessDiagram {
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_9ediagram from diagram {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_93diagram from diagram {    
     };    
     process = Process.create(parameters.name,null);  
   }  
 
   @CreationScheme  
   ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_9ediagram from diagram {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst367_93diagram from diagram {    
     };    
     process = Process.create(parameters.name,parameters.parentProcess);  
   }  
 
+  @ActionScheme  
+  public VirtualModelInstanceType<ProcessDiagram> newSubProcess(String processName) {  
+    return ProcessDiagram.createNewSubProcess(parameters.processName,this.process);  
+  }  
+
 
   @FlexoConcept  
-  public class ActivityGR extends AbstractActivityGR,TransitionEmitterGR,TransitionReceiverGR  {  
+  public class ActivityGR extends TransitionEmitterGR,TransitionReceiverGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
@@ -45,7 +50,7 @@ public class ProcessDiagram {
   }  
 
   @FlexoConcept  
-  public class BeginActivityGR extends AbstractActivityGR,TransitionEmitterGR  {  
+  public class BeginActivityGR extends TransitionEmitterGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
@@ -62,7 +67,7 @@ public class ProcessDiagram {
   }  
 
   @FlexoConcept  
-  public class EndActivityGR extends AbstractActivityGR,TransitionReceiverGR  {  
+  public class EndActivityGR extends TransitionReceiverGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
@@ -79,7 +84,7 @@ public class ProcessDiagram {
   }  
 
   @FlexoConcept  
-  public class GatewayGR extends AbstractActivityGR,TransitionEmitterGR,TransitionReceiverGR  {  
+  public class GatewayGR extends TransitionEmitterGR,TransitionReceiverGR  {  
   
     FlexoRole shape as ShapeSpecification from ProcessDiagram;  
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
@@ -104,7 +109,7 @@ public class ProcessDiagram {
   
     @LinkScheme    
     TransitionGR:linkEmitterGRToReceiverGR() {    
-      connector = AddConnector$AddConnectorImpl_$$_jvst367_99 conformTo ConnectorSpecification from diagram {      
+      connector = AddConnector$AddConnectorImpl_$$_jvst367_8e conformTo ConnectorSpecification from diagram {      
       };      
       transition = Transition.create(fromTarget.activity,toTarget.activity);      
       fromTarget.activity.outTransitions.FML::AddToList(transition)      

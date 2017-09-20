@@ -20,11 +20,14 @@ public class BPMNModel {
     public FlexoConceptInstanceType<Process> parentProcess;  
     @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
     public String name;  
+    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
+    public List<FlexoConceptInstanceType<Process>> childProcesses;  
   
     @CreationScheme    
     Process:create(String name, FlexoConceptInstanceType<Process> parentProcess) {    
       name = parameters.name;      
-      parentProcess = parameters.parentProcess;    
+      parentProcess = parameters.parentProcess;      
+      parentProcess.childProcesses.FML::AddToList(this)    
     }    
   
     @DeletionScheme    

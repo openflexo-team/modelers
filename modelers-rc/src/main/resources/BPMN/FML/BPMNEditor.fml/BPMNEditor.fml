@@ -10,6 +10,10 @@ public class BPMNEditor {
 
   @FMLRTVirtualModelInstanceModelSlot(cardinality=ZeroOne,readOnly=false)  
   public VirtualModelInstanceType<BPMNModel> model;
+  @GetSetProperty(value="rootProcesses", access=get)  
+  public List<VirtualModelInstanceType<ProcessDiagram>> getRootProcesses {  
+    return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
+  }
 
   @CreationScheme  
   BPMNEditor:create() {  
@@ -19,6 +23,16 @@ public class BPMNEditor {
   @ActionScheme  
   public Void newProcess(String processName) {  
     ProcessDiagram.createNewProcess(parameters.processName)  
+  }  
+
+  @ActionScheme  
+  VirtualModelInstanceType<ProcessDiagram> getProcessDiagram(FlexoConceptInstanceType<Process> process) {  
+    List<VirtualModelInstanceType<ProcessDiagram>> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process = parameters.process);    
+    if (list.size > 0) {    
+      return list.get(0);    
+    } else {    
+      return null;    
+    }  
   }  
 
 }
