@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-2" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" version="0.1" name="BPMNModel" author="sylvain" userID="SYL" flexoID="2">
+<VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" version="0.1" smallIconResource="../../../Icons/BPMN_32x32.png" name="BPMNModel" author="sylvain" userID="SYL" flexoID="2">
+  <FMLLocalizedDictionary id="SYL-239" userID="SYL" flexoID="239">
+    <Localized id="SYL-274" lang="English" value="Activity name" key="activity_name" userID="SYL" flexoID="274" />
+    <Localized id="SYL-275" lang="French" value="activity_name" key="activity_name" userID="SYL" flexoID="275" />
+    <Localized id="SYL-276" lang="Dutch" value="activity_name" key="activity_name" userID="SYL" flexoID="276" />
+  </FMLLocalizedDictionary>
   <FlexoConcept id="SYL-11" name="Process" userID="SYL" flexoID="11">
     <Inspector id="SYL-6" renderer="name" inspectorTitle="Process" userID="SYL" flexoID="6" />
     <EmbeddedFlexoConcept id="SYL-20" name="AbstractActivity" userID="SYL" flexoID="20">
@@ -116,8 +121,14 @@
   <FlexoConcept idref="SYL-128" />
   <FlexoConcept idref="SYL-166" />
   <FlexoConcept idref="SYL-174" />
+  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.gina.FIBComponentModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="BPMNModel" userID="SYL" flexoID="1" />
+  <FIBComponentModelSlot id="SYL-240" templateComponentURI="http://openflexo.org/modellers/BPMN/Fib/BPMNModelUI.fib" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="ui" userID="SYL" flexoID="240">
+    <VariableAssignment id="SYL-241" variableType="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml&gt;" variable="data" value="this" userID="SYL" flexoID="241" />
+  </FIBComponentModelSlot>
   <CreationScheme id="SYL-67" name="create" width="800" label="create" height="600" userID="SYL" flexoID="67">
-    <BehaviourControlGraph_EmptyControlGraph id="SYL-68" userID="SYL" flexoID="68" />
+    <BehaviourControlGraph_AssignationAction id="SYL-242" assign="ui" userID="SYL" flexoID="242">
+      <AssignableAction_ConfigureGINAFIBComponent id="SYL-243" receiver="ui" userID="SYL" flexoID="243" />
+    </BehaviourControlGraph_AssignationAction>
   </CreationScheme>
 </VirtualModel>

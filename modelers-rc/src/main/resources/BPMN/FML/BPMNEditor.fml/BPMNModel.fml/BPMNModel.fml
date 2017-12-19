@@ -1,3 +1,4 @@
+use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
 
 /**
  * 
@@ -7,9 +8,12 @@
 @VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml")
 public class BPMNModel {
 
+  @FIBComponentModelSlot(cardinality=ZeroOne,readOnly=false)  
+  public GINAFIBComponent ui;
+
   @CreationScheme  
   BPMNModel:create() {  
-  
+    ui = ui.ConfigureGINAFIBComponent();  
   }  
 
 

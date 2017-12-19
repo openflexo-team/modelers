@@ -22,7 +22,8 @@ public class BPMNEditor {
 
   @ActionScheme  
   public Void newProcess(String processName) {  
-    ProcessDiagram.createNewProcess(parameters.processName)  
+    ProcessDiagram.createNewProcess(parameters.processName)    
+    this.firePropertyChange rootProcesses  
   }  
 
   @ActionScheme  
@@ -33,6 +34,31 @@ public class BPMNEditor {
     } else {    
       return null;    
     }  
+  }  
+
+  @ActionScheme  
+  VirtualModelInstanceType<ProcessDiagram> getProcess(String processName) {  
+    List<VirtualModelInstanceType<ProcessDiagram>> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process.name = parameters.processName);    
+    log ((("on cherche " + parameters.processName) + " on trouve ") + list)    
+    if (list.size > 0) {    
+      return list.get(0);    
+    } else {    
+      return null;    
+    }  
+  }  
+
+  @ActionScheme  
+  Void createNewProcess() {  
+    String baseName = "process";    
+    String current = baseName;    
+    Long aLong = 2;    
+    while (this.getProcess(current) != null) {    
+      current = (baseName + aLong);      
+      log ("On essaie " + current)      
+      aLong = (aLong + 1);    
+    }    
+    log ("creating process " + current)    
+    return this.newProcess(current);  
   }  
 
 }
