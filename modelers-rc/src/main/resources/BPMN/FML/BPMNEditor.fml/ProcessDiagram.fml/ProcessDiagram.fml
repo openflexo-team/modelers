@@ -14,14 +14,14 @@ public class ProcessDiagram {
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_b8 {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_b6 {    
     };    
     process = Process.create(parameters.name,null);  
   }  
 
   @CreationScheme  
   ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_b8 {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_b6 {    
     };    
     process = Process.create(parameters.name,parameters.parentProcess);  
   }  

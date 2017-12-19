@@ -10,6 +10,10 @@ public class BPMNModel {
 
   @FIBComponentModelSlot(cardinality=ZeroOne,readOnly=false)  
   public GINAFIBComponent ui;
+  @GetSetProperty(value="rootProcesses", access=get)  
+  public List<FlexoConceptInstanceType<Process>> getRootProcesses {  
+    return this.SelectFlexoConceptInstance(type=Process,where=where=(selected.parentProcess = null));  
+  }
 
   @CreationScheme  
   BPMNModel:create() {  
@@ -23,19 +27,46 @@ public class BPMNModel {
     @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
     public FlexoConceptInstanceType<Process> parentProcess;  
     @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public String name;  
+    public String _name;  
     @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
     public List<FlexoConceptInstanceType<Process>> childProcesses;  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public String author;  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public String version;  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public Date lastUpdate;  
+    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
+    public String description;  
+    @GetSetProperty(value="name", access=get)    
+    public String getName {    
+      return _name;    
+    }    
+    @GetSetProperty(value="name", access=set)    
+    public void setName(String value) {    
+      VirtualModelInstanceType<ProcessDiagram> processDiagram = container.container.getProcessDiagram(this);      
+      log ("On change le nom pour " + value)      
+      log ("ProcessDiagram=" + processDiagram)      
+      processDiagram.resource.name = (value + ".fml.rt");      
+      processDiagram.diagram.resource.name = (value + ".diagram");      
+      _name = value;    
+    }  
   
     @CreationScheme    
     Process:create(String name, FlexoConceptInstanceType<Process> parentProcess) {    
-      name = parameters.name;      
+      _name = parameters.name;      
       parentProcess = parameters.parentProcess;      
-      parentProcess.childProcesses.FML::AddToList(this)    
+      parentProcess.childProcesses.FML::AddToList(this)      
+      container.firePropertyChange rootProcesses    
     }    
   
     @DeletionScheme    
     Void delete() {    
+      
+    }    
+  
+    @NavigationScheme    
+    public Void navigateToProcessEditor() {    
       
     }    
   

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GINAFIBComponent id="0" userID="SYL" flexoID="1">
+  <Panel id="1" align="left" borderTop="0" borderLeft="0" trackViewPortHeight="true" trackViewPortWidth="true" borderBottom="0" border="empty" sizeAdjustment="OriginalSize" layout="twocols" borderRight="0" controllerClassName="org.openflexo.technologyadapter.gina.controller.FMLControlledFIBController">
+    <Browser id="2" backgroundSelectionColor="9,80,208" visibleRowCount="3" backgroundNonSelectionColor="255,255,255" iteratorClassName="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" textSelectionColor="255,255,255" backgroundSecondarySelectionColor="178,215,255" showRootsHandle="true" showFooter="true" textNonSelectionColor="0,0,0" root="data.model" selectionMode="DiscontiguousTreeSelection" rowHeight="18" manageDynamicModel="true" doubleClickAction="ProcessBrowser.selected.navigateToProcessEditor()" constraints="twocols(expandHorizontally=false;expandVertically=true;insetsBottom=10;insetsLeft=10;insetsRight=10;insetsTop=10;location=left)" height="500" width="200" name="ProcessBrowser">
+      <BrowserElement id="3" dataClassName="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml&gt;" icon="controller.iconForObject(model)" label="model.container.name" isEditable="false" name="model">
+        <Children id="4" data="model.rootProcesses" name="children" />
+      </BrowserElement>
+      <BrowserElement id="5" dataClassName="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" icon="controller.iconForObject(process)" label="process.name" isEditable="false" name="process">
+        <Children id="6" data="process.childProcesses" name="children" />
+      </BrowserElement>
+    </Browser>
+    <Panel id="7" align="left" borderTop="0" borderTitle="Panel" borderLeft="0" trackViewPortHeight="true" trackViewPortWidth="true" borderBottom="0" border="empty" sizeAdjustment="OriginalSize" layout="border" borderRight="0" constraints="twocols(expandHorizontally=true;expandVertically=true;insetsBottom=10;insetsLeft=0;insetsRight=10;insetsTop=10;location=right)" name="FIBPanel">
+      <Panel id="8" align="left" borderTop="0" borderLeft="0" trackViewPortHeight="true" trackViewPortWidth="true" borderBottom="10" border="rounded3d" sizeAdjustment="OriginalSize" layout="twocols" borderRight="0" constraints="border(expandHorizontally=true;expandVertically=true;insetsBottom=10;insetsLeft=0;insetsRight=10;insetsTop=10;location=center)" name="FIBPanel">
+        <Label id="9" label="process" align="left" localize="true" enable="(ProcessBrowser.selected != null)" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=left)" name="Label" />
+        <TextField id="10" columns="7" enable="(ProcessBrowser.selected != null)" data="ProcessBrowser.selected.name" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=right)" name="TextField" />
+        <Label id="11" label="author" align="left" localize="true" enable="(ProcessBrowser.selected != null)" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=left)" name="Label3" />
+        <TextField id="12" columns="7" enable="(ProcessBrowser.selected != null)" data="ProcessBrowser.selected.author" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=right)" name="TextField2" />
+        <Label id="13" label="version" align="left" localize="true" enable="(ProcessBrowser.selected != null)" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=left)" name="Label4" />
+        <TextField id="14" columns="7" enable="(ProcessBrowser.selected != null)" data="ProcessBrowser.selected.version" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=right)" name="TextField3" />
+        <Label id="15" label="last_update" align="left" localize="true" enable="(ProcessBrowser.selected != null)" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=left)" name="Label5" />
+        <Date id="16" enable="(ProcessBrowser.selected != null)" data="ProcessBrowser.selected.lastUpdate" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=right)" name="DateSelector" />
+        <Label id="17" label="description" align="left" localize="true" enable="(ProcessBrowser.selected != null)" constraints="twocols(expandHorizontally=true;expandVertically=false;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=left)" name="Label2" />
+        <TextArea id="18" rows="3" columns="8" validateOnReturn="true" text="TextArea" enable="(ProcessBrowser.selected != null)" useScrollBar="true" verticalScrollbarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED" constraints="twocols(expandHorizontally=true;expandVertically=true;insetsBottom=0;insetsLeft=0;insetsRight=0;insetsTop=0;location=right)" horizontalScrollbarPolicy="HORIZONTAL_SCROLLBAR_AS_NEEDED" name="TextArea" />
+      </Panel>
+      <Panel id="19" align="left" borderTop="0" flowAlignment="CENTER" borderLeft="0" trackViewPortHeight="true" trackViewPortWidth="true" borderBottom="0" border="empty" sizeAdjustment="OriginalSize" layout="flow" vGap="5" borderRight="0" hGap="5" constraints="border(location=south)" name="FIBPanel2">
+        <Button id="20" buttonType="Trigger" label="new_process" localize="true" clickAction="data.createNewProcess(ProcessBrowser.selected)" constraints="flow()" name="Button" />
+        <Button id="21" buttonType="Trigger" action="ProcessBrowser.selected.navigateToProcessEditor()" label="open_process" localize="true" enable="(ProcessBrowser.selected != null)" constraints="flow()" name="Button3" />
+        <Button id="22" buttonType="Trigger" label="delete_process" localize="true" enable="(ProcessBrowser.selected != null)" constraints="flow()" name="Button2" />
+      </Panel>
+    </Panel>
+    <LocalizedDictionary id="23">
+      <Localized id="24" lang="English" value="Process" key="process" />
+      <Localized id="25" lang="Dutch" value="Proces" key="process" />
+      <Localized id="26" lang="French" value="Processus" key="process" />
+      <Localized id="27" lang="English" value="Description" key="description" />
+      <Localized id="28" lang="Dutch" value="Beschrijving" key="description" />
+      <Localized id="29" lang="French" value="Description" key="description" />
+      <Localized id="30" lang="English" value="New process" key="new_process" />
+      <Localized id="31" lang="Dutch" value="new_process" key="new_process" />
+      <Localized id="32" lang="French" value="Nouveau processus" key="new_process" />
+      <Localized id="33" lang="English" value="Open process" key="open_process" />
+      <Localized id="34" lang="Dutch" value="open_process" key="open_process" />
+      <Localized id="35" lang="French" value="Ouvrir le processus" key="open_process" />
+      <Localized id="36" lang="English" value="Delete process" key="delete_process" />
+      <Localized id="37" lang="Dutch" value="delete_process" key="delete_process" />
+      <Localized id="38" lang="French" value="Supprimer le processus" key="delete_process" />
+      <Localized id="39" lang="English" value="Author" key="author" />
+      <Localized id="40" lang="Dutch" value="author" key="author" />
+      <Localized id="41" lang="French" value="Auteur" key="author" />
+      <Localized id="42" lang="English" value="Version" key="version" />
+      <Localized id="43" lang="Dutch" value="version" key="version" />
+      <Localized id="44" lang="French" value="Version" key="version" />
+      <Localized id="45" lang="English" value="Last update" key="last_update" />
+      <Localized id="46" lang="Dutch" value="last_update" key="last_update" />
+      <Localized id="47" lang="French" value="Dernière modification" key="last_update" />
+    </LocalizedDictionary>
+    <FIBVariable id="48" type="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml&gt;" name="data" />
+  </Panel>
+</GINAFIBComponent>

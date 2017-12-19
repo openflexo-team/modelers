@@ -2,9 +2,10 @@
 <VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" version="0.1" smallIconResource="../../Icons/BPMN_32x32.png" name="BPMNEditor" author="sylvain" userID="SYL" flexoID="2">
   <FMLLocalizedDictionary id="SYL-269" userID="SYL" flexoID="269" />
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
+  <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.technologyadapter.gina.FIBComponentModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="BPMNEditor" userID="SYL" flexoID="1" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-6" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="model" userID="SYL" flexoID="6" />
-  <GetSetProperty id="SYL-220" name="rootProcesses" userID="SYL" flexoID="220">
+  <GetSetProperty id="SYL-220" name="rootProcessDiagrams" userID="SYL" flexoID="220">
     <SetControlGraph_EmptyControlGraph id="SYL-219" ownerContext="setControlGraph" userID="SYL" flexoID="219" />
     <GetControlGraph_ReturnStatement id="SYL-248" ownerContext="getControlGraph" userID="SYL" flexoID="248">
       <AssignableAction_SelectVirtualModelInstance id="SYL-243" container="this" virtualModelTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="this" ownerContext="getControlGraph" userID="SYL" flexoID="243">
@@ -12,17 +13,32 @@
       </AssignableAction_SelectVirtualModelInstance>
     </GetControlGraph_ReturnStatement>
   </GetSetProperty>
+  <FIBComponentModelSlot id="SYL-315" templateComponentURI="http://openflexo.org/modellers/BPMN/Fib/BPMNEditor.fib" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="ui" userID="SYL" flexoID="315">
+    <VariableAssignment id="SYL-316" variableType="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml&gt;" variable="data" value="this" userID="SYL" flexoID="316" />
+  </FIBComponentModelSlot>
   <CreationScheme id="SYL-7" name="create" width="800" label="create" height="600" userID="SYL" flexoID="7">
-    <BehaviourControlGraph_AssignationAction id="SYL-11" assign="model" userID="SYL" flexoID="11">
-      <AssignableAction_AddVirtualModelInstance id="SYL-10" virtualModelInstanceTitle="&quot;Model for BPMN editor&quot;" virtualModelInstanceName="&quot;BPMNModel&quot;" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml.create" receiver="this" userID="SYL" flexoID="10" />
-    </BehaviourControlGraph_AssignationAction>
+    <BehaviourControlGraph_Sequence id="SYL-317" userID="SYL" flexoID="317">
+      <ControlGraph2_AssignationAction id="SYL-318" assign="ui" ownerContext="controlGraph2" userID="SYL" flexoID="318">
+        <AssignableAction_ConfigureGINAFIBComponent id="SYL-319" receiver="ui" userID="SYL" flexoID="319" />
+      </ControlGraph2_AssignationAction>
+      <ControlGraph1_AssignationAction id="SYL-11" assign="model" ownerContext="controlGraph1" userID="SYL" flexoID="11">
+        <AssignableAction_AddVirtualModelInstance id="SYL-10" virtualModelInstanceTitle="&quot;Model for BPMN editor&quot;" virtualModelInstanceName="&quot;BPMNModel&quot;" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml.create" receiver="this" userID="SYL" flexoID="10" />
+      </ControlGraph1_AssignationAction>
+    </BehaviourControlGraph_Sequence>
   </CreationScheme>
-  <ActionScheme id="SYL-15" visibility="Public" name="newProcess" width="800" label="newProcess" height="600" userID="SYL" flexoID="15">
+  <ActionScheme id="SYL-15" visibility="Public" name="newProcessDiagram" width="800" label="newProcessDiagram" height="600" userID="SYL" flexoID="15">
     <BehaviourControlGraph_Sequence id="SYL-311" userID="SYL" flexoID="311">
-      <ControlGraph2_NotifyPropertyChangedAction id="SYL-310" propertyName="rootProcesses" object="this" ownerContext="controlGraph2" userID="SYL" flexoID="310" />
-      <ControlGraph1_AddVirtualModelInstance id="SYL-16" virtualModelInstanceName="parameters.processName" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.createNewProcess" receiver="this" ownerContext="controlGraph1" userID="SYL" flexoID="16">
-        <AddFlexoConceptInstanceParameter id="SYL-215" paramName="name" value="parameters.processName" userID="SYL" flexoID="215" />
-      </ControlGraph1_AddVirtualModelInstance>
+      <ControlGraph2_Sequence id="SYL-339" ownerContext="controlGraph2" userID="SYL" flexoID="339">
+        <ControlGraph2_ReturnStatement id="SYL-338" ownerContext="controlGraph2" userID="SYL" flexoID="338">
+          <AssignableAction_ExpressionAction id="SYL-337" expression="returned" userID="SYL" flexoID="337" />
+        </ControlGraph2_ReturnStatement>
+        <ControlGraph1_NotifyPropertyChangedAction id="SYL-310" propertyName="rootProcesses" object="this" ownerContext="controlGraph1" userID="SYL" flexoID="310" />
+      </ControlGraph2_Sequence>
+      <ControlGraph1_DeclarationAction id="SYL-336" variable="returned" ownerContext="controlGraph1" userID="SYL" flexoID="336">
+        <AssignableAction_AddVirtualModelInstance id="SYL-16" virtualModelInstanceName="parameters.processName" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.createNewProcess" receiver="this" ownerContext="controlGraph1" userID="SYL" flexoID="16">
+          <AddFlexoConceptInstanceParameter id="SYL-215" paramName="name" value="parameters.processName" userID="SYL" flexoID="215" />
+        </AssignableAction_AddVirtualModelInstance>
+      </ControlGraph1_DeclarationAction>
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-17" isRequired="true" widget="TEXT_FIELD" name="processName" type="java.lang.String" userID="SYL" flexoID="17" />
   </ActionScheme>
@@ -44,7 +60,7 @@
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-241" widget="CUSTOM_WIDGET" name="process" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" userID="SYL" flexoID="241" />
   </ActionScheme>
-  <ActionScheme id="SYL-252" name="getProcess" width="800" label="getProcess" height="600" userID="SYL" flexoID="252">
+  <ActionScheme id="SYL-252" name="getProcessDiagram" width="800" label="getProcessDiagram" height="600" userID="SYL" flexoID="252">
     <BehaviourControlGraph_Sequence id="SYL-270" userID="SYL" flexoID="270">
       <ControlGraph2_Sequence id="SYL-305" ownerContext="controlGraph2" userID="SYL" flexoID="305">
         <ControlGraph2_ConditionalAction id="SYL-258" condition="(list.size &gt; 0)" ownerContext="controlGraph2" userID="SYL" flexoID="258">
@@ -71,12 +87,23 @@
         <ControlGraph2_Sequence id="SYL-285" ownerContext="controlGraph2" userID="SYL" flexoID="285">
           <ControlGraph2_Sequence id="SYL-286" ownerContext="controlGraph2" userID="SYL" flexoID="286">
             <ControlGraph2_Sequence id="SYL-293" ownerContext="controlGraph2" userID="SYL" flexoID="293">
-              <ControlGraph2_ReturnStatement id="SYL-283" ownerContext="controlGraph2" userID="SYL" flexoID="283">
-                <AssignableAction_ExpressionAction id="SYL-282" expression="this.newProcess(current)" userID="SYL" flexoID="282" />
-              </ControlGraph2_ReturnStatement>
+              <ControlGraph2_Sequence id="SYL-330" ownerContext="controlGraph2" userID="SYL" flexoID="330">
+                <ControlGraph2_ReturnStatement id="SYL-283" ownerContext="controlGraph2" userID="SYL" flexoID="283">
+                  <AssignableAction_ExpressionAction id="SYL-282" expression="this.newProcessDiagram(current)" userID="SYL" flexoID="282" />
+                </ControlGraph2_ReturnStatement>
+                <ControlGraph1_ConditionalAction id="SYL-325" condition="(parameters.parentProcess != null)" ownerContext="controlGraph1" userID="SYL" flexoID="325">
+                  <ElseControlGraph_EmptyControlGraph id="SYL-335" ownerContext="elseControlGraph" userID="SYL" flexoID="335" />
+                  <ThenControlGraph_ReturnStatement id="SYL-329" ownerContext="thenControlGraph" userID="SYL" flexoID="329">
+                    <AssignableAction_AddVirtualModelInstance id="SYL-328" virtualModelInstanceName="current" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.createNewSubProcess" receiver="this" userID="SYL" flexoID="328">
+                      <AddFlexoConceptInstanceParameter id="SYL-638" paramName="name" value="current" userID="SYL" flexoID="638" />
+                      <AddFlexoConceptInstanceParameter id="SYL-639" paramName="parentProcess" value="parameters.parentProcess" userID="SYL" flexoID="639" />
+                    </AssignableAction_AddVirtualModelInstance>
+                  </ThenControlGraph_ReturnStatement>
+                </ControlGraph1_ConditionalAction>
+              </ControlGraph2_Sequence>
               <ControlGraph1_LogAction id="SYL-292" logLevel="INFO" logString="(&quot;creating process &quot; + current)" ownerContext="controlGraph1" userID="SYL" flexoID="292" />
             </ControlGraph2_Sequence>
-            <ControlGraph1_WhileAction id="SYL-275" condition="(this.getProcess(current) != null)" ownerContext="controlGraph1" userID="SYL" flexoID="275">
+            <ControlGraph1_WhileAction id="SYL-275" condition="(this.getProcessDiagram(current) != null)" ownerContext="controlGraph1" userID="SYL" flexoID="275">
               <ControlGraph_Sequence id="SYL-287" ownerContext="controlGraph" userID="SYL" flexoID="287">
                 <ControlGraph2_Sequence id="SYL-299" ownerContext="controlGraph2" userID="SYL" flexoID="299">
                   <ControlGraph2_AssignationAction id="SYL-281" assign="aLong" ownerContext="controlGraph2" userID="SYL" flexoID="281">
@@ -102,5 +129,6 @@
         <AssignableAction_ExpressionAction id="SYL-264" expression="&quot;process&quot;" userID="SYL" flexoID="264" />
       </ControlGraph1_DeclarationAction>
     </BehaviourControlGraph_Sequence>
+    <GenericBehaviourParameter id="SYL-323" widget="CUSTOM_WIDGET" name="parentProcess" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" userID="SYL" flexoID="323" />
   </ActionScheme>
 </VirtualModel>

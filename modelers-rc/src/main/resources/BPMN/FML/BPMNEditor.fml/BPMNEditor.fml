@@ -1,4 +1,5 @@
 use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
+use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
 
 /**
  * 
@@ -10,20 +11,24 @@ public class BPMNEditor {
 
   @FMLRTVirtualModelInstanceModelSlot(cardinality=ZeroOne,readOnly=false)  
   public VirtualModelInstanceType<BPMNModel> model;
-  @GetSetProperty(value="rootProcesses", access=get)  
-  public List<VirtualModelInstanceType<ProcessDiagram>> getRootProcesses {  
+  @GetSetProperty(value="rootProcessDiagrams", access=get)  
+  public List<VirtualModelInstanceType<ProcessDiagram>> getRootProcessDiagrams {  
     return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
   }
+  @FIBComponentModelSlot(cardinality=ZeroOne,readOnly=false)  
+  public GINAFIBComponent ui;
 
   @CreationScheme  
   BPMNEditor:create() {  
-    model = BPMNModel.create();  
+    model = BPMNModel.create();    
+    ui = ui.ConfigureGINAFIBComponent();  
   }  
 
   @ActionScheme  
-  public Void newProcess(String processName) {  
-    ProcessDiagram.createNewProcess(parameters.processName)    
-    this.firePropertyChange rootProcesses  
+  public VirtualModelInstanceType<ProcessDiagram> newProcessDiagram(String processName) {  
+    VirtualModelInstanceType<ProcessDiagram> returned = ProcessDiagram.createNewProcess(parameters.processName);    
+    this.firePropertyChange rootProcesses    
+    return returned;  
   }  
 
   @ActionScheme  
@@ -37,7 +42,7 @@ public class BPMNEditor {
   }  
 
   @ActionScheme  
-  VirtualModelInstanceType<ProcessDiagram> getProcess(String processName) {  
+  VirtualModelInstanceType<ProcessDiagram> getProcessDiagram(String processName) {  
     List<VirtualModelInstanceType<ProcessDiagram>> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process.name = parameters.processName);    
     log ((("on cherche " + parameters.processName) + " on trouve ") + list)    
     if (list.size > 0) {    
@@ -48,17 +53,22 @@ public class BPMNEditor {
   }  
 
   @ActionScheme  
-  Void createNewProcess() {  
+  VirtualModelInstanceType<ProcessDiagram> createNewProcess(FlexoConceptInstanceType<Process> parentProcess) {  
     String baseName = "process";    
     String current = baseName;    
     Long aLong = 2;    
-    while (this.getProcess(current) != null) {    
+    while (this.getProcessDiagram(current) != null) {    
       current = (baseName + aLong);      
       log ("On essaie " + current)      
       aLong = (aLong + 1);    
     }    
     log ("creating process " + current)    
-    return this.newProcess(current);  
+    if (parameters.parentProcess != null) {    
+      return ProcessDiagram.createNewSubProcess(current,parameters.parentProcess);    
+    } else {    
+      
+    }    
+    return this.newProcessDiagram(current);  
   }  
 
 }
