@@ -14,14 +14,14 @@ public class ProcessDiagram {
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_b6 {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_bd {    
     };    
     process = Process.create(parameters.name,null);  
   }  
 
   @CreationScheme  
   ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_b6 {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_bd {    
     };    
     process = Process.create(parameters.name,parameters.parentProcess);  
   }  
@@ -29,6 +29,11 @@ public class ProcessDiagram {
   @ActionScheme  
   public VirtualModelInstanceType<ProcessDiagram> newSubProcess(String processName) {  
     return ProcessDiagram.createNewSubProcess(parameters.processName,this.process);  
+  }  
+
+  @DeletionScheme  
+  Void delete() {  
+    diagram.delete();  
   }  
 
 

@@ -62,7 +62,14 @@ public class BPMNModel {
   
     @DeletionScheme    
     Void delete() {    
-      
+      VirtualModelInstanceType<ProcessDiagram> processDiagram = container.container.getProcessDiagram(this);      
+      processDiagram.delete();      
+      if (parentProcess != null) {      
+        <not_implemented:[then] RemoveFromListAction()>        
+        parentProcess.firePropertyChange childProcesses      
+      } else {      
+        container.firePropertyChange rootProcesses      
+      }    
     }    
   
     @NavigationScheme    

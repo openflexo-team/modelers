@@ -44,14 +44,20 @@
   </ActionScheme>
   <ActionScheme id="SYL-228" name="getProcessDiagram" width="800" label="getProcessDiagram" height="600" userID="SYL" flexoID="228">
     <BehaviourControlGraph_Sequence id="SYL-240" userID="SYL" flexoID="240">
-      <ControlGraph2_ConditionalAction id="SYL-235" condition="(list.size &gt; 0)" ownerContext="controlGraph2" userID="SYL" flexoID="235">
-        <ElseControlGraph_ReturnStatement id="SYL-239" ownerContext="elseControlGraph" userID="SYL" flexoID="239">
-          <AssignableAction_ExpressionAction id="SYL-238" expression="null" userID="SYL" flexoID="238" />
-        </ElseControlGraph_ReturnStatement>
-        <ThenControlGraph_ReturnStatement id="SYL-237" ownerContext="thenControlGraph" userID="SYL" flexoID="237">
-          <AssignableAction_ExpressionAction id="SYL-236" expression="list.get(0)" userID="SYL" flexoID="236" />
-        </ThenControlGraph_ReturnStatement>
-      </ControlGraph2_ConditionalAction>
+      <ControlGraph2_Sequence id="SYL-647" ownerContext="controlGraph2" userID="SYL" flexoID="647">
+        <ControlGraph2_Sequence id="SYL-648" ownerContext="controlGraph2" userID="SYL" flexoID="648">
+          <ControlGraph2_ConditionalAction id="SYL-235" condition="(list.size &gt; 0)" ownerContext="controlGraph2" userID="SYL" flexoID="235">
+            <ElseControlGraph_ReturnStatement id="SYL-239" ownerContext="elseControlGraph" userID="SYL" flexoID="239">
+              <AssignableAction_ExpressionAction id="SYL-238" expression="null" userID="SYL" flexoID="238" />
+            </ElseControlGraph_ReturnStatement>
+            <ThenControlGraph_ReturnStatement id="SYL-237" ownerContext="thenControlGraph" userID="SYL" flexoID="237">
+              <AssignableAction_ExpressionAction id="SYL-236" expression="list.get(0)" userID="SYL" flexoID="236" />
+            </ThenControlGraph_ReturnStatement>
+          </ControlGraph2_ConditionalAction>
+          <ControlGraph1_LogAction id="SYL-646" logLevel="INFO" logString="(&quot;Trouve: &quot; + list)" ownerContext="controlGraph1" userID="SYL" flexoID="646" />
+        </ControlGraph2_Sequence>
+        <ControlGraph1_LogAction id="SYL-644" logLevel="INFO" logString="(&quot;On cherche le diagramme pour &quot; + parameters.process)" ownerContext="controlGraph1" userID="SYL" flexoID="644" />
+      </ControlGraph2_Sequence>
       <ControlGraph1_DeclarationAction id="SYL-233" variable="list" ownerContext="controlGraph1" userID="SYL" flexoID="233">
         <AssignableAction_SelectVirtualModelInstance id="SYL-231" container="this" virtualModelTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="this" userID="SYL" flexoID="231">
           <Condition id="SYL-232" condition="(selected.process = parameters.process)" userID="SYL" flexoID="232" />

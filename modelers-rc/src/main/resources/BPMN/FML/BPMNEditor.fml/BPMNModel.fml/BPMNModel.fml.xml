@@ -146,7 +146,21 @@
       <GenericBehaviourParameter id="SYL-80" widget="CUSTOM_WIDGET" name="parentProcess" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" userID="SYL" flexoID="80" />
     </CreationScheme>
     <DeletionScheme id="SYL-10" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="10">
-      <BehaviourControlGraph_EmptyControlGraph id="SYL-9" userID="SYL" flexoID="9" />
+      <BehaviourControlGraph_Sequence id="SYL-469" userID="SYL" flexoID="469">
+        <ControlGraph2_Sequence id="SYL-473" ownerContext="controlGraph2" userID="SYL" flexoID="473">
+          <ControlGraph2_ConditionalAction id="SYL-510" condition="(parentProcess != null)" ownerContext="controlGraph2" userID="SYL" flexoID="510">
+            <ElseControlGraph_NotifyPropertyChangedAction id="SYL-520" propertyName="rootProcesses" object="container" ownerContext="elseControlGraph" userID="SYL" flexoID="520" />
+            <ThenControlGraph_Sequence id="SYL-518" ownerContext="thenControlGraph" userID="SYL" flexoID="518">
+              <ControlGraph2_NotifyPropertyChangedAction id="SYL-517" propertyName="childProcesses" object="parentProcess" ownerContext="controlGraph2" userID="SYL" flexoID="517" />
+              <ControlGraph1_RemoveFromListAction id="SYL-512" list="parentProcess.childProcesses" value="this" ownerContext="controlGraph1" userID="SYL" flexoID="512" />
+            </ThenControlGraph_Sequence>
+          </ControlGraph2_ConditionalAction>
+          <ControlGraph1_DeleteFlexoConceptInstance id="SYL-468" deletionSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.delete" object="processDiagram" ownerContext="controlGraph1" userID="SYL" flexoID="468" />
+        </ControlGraph2_Sequence>
+        <ControlGraph1_DeclarationAction id="SYL-466" variable="processDiagram" ownerContext="controlGraph1" userID="SYL" flexoID="466">
+          <AssignableAction_ExpressionAction id="SYL-465" expression="container.container.getProcessDiagram(this)" userID="SYL" flexoID="465" />
+        </ControlGraph1_DeclarationAction>
+      </BehaviourControlGraph_Sequence>
     </DeletionScheme>
     <NavigationScheme id="SYL-433" targetObject="container.container.getProcessDiagram(this)" visibility="Public" name="navigateToProcessEditor" width="800" label="navigateToProcessEditor" height="600" userID="SYL" flexoID="433">
       <BehaviourControlGraph_EmptyControlGraph id="SYL-434" userID="SYL" flexoID="434" />

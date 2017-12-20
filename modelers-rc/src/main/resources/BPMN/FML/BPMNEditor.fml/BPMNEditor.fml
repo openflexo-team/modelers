@@ -34,6 +34,8 @@ public class BPMNEditor {
   @ActionScheme  
   VirtualModelInstanceType<ProcessDiagram> getProcessDiagram(FlexoConceptInstanceType<Process> process) {  
     List<VirtualModelInstanceType<ProcessDiagram>> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process = parameters.process);    
+    log ("On cherche le diagramme pour " + parameters.process)    
+    log ("Trouve: " + list)    
     if (list.size > 0) {    
       return list.get(0);    
     } else {    
