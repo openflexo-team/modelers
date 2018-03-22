@@ -460,14 +460,14 @@
         <FocusedColorBackgroundStyle id="327" color="254,247,217" useTransparency="false" transparencyLevel="0.5" />
         <Border id="328" top="20" bottom="20" left="20" right="20" />
         <CustomPolygon id="329" className="org.openflexo.diana.shapes.RectangularOctogon">
-          <FGEPoint id="330" x="0.0" y="0.2" />
-          <FGEPoint id="331" x="0.0" y="0.8" />
-          <FGEPoint id="332" x="0.1" y="1.0" />
-          <FGEPoint id="333" x="0.9" y="1.0" />
-          <FGEPoint id="334" x="1.0" y="0.8" />
-          <FGEPoint id="335" x="1.0" y="0.2" />
-          <FGEPoint id="336" x="0.9" y="0.0" />
-          <FGEPoint id="337" x="0.1" y="0.0" />
+          <DianaPoint id="330" x="0.0" y="0.2" />
+          <DianaPoint id="331" x="0.0" y="0.8" />
+          <DianaPoint id="332" x="0.1" y="1.0" />
+          <DianaPoint id="333" x="0.9" y="1.0" />
+          <DianaPoint id="334" x="1.0" y="0.8" />
+          <DianaPoint id="335" x="1.0" y="0.2" />
+          <DianaPoint id="336" x="0.9" y="0.0" />
+          <DianaPoint id="337" x="0.1" y="0.0" />
         </CustomPolygon>
         <ShadowStyle id="338" drawShadow="true" shadowDarkness="150" shadowDepth="2" shadowBlur="4" />
         <TextStyle id="339" font="Lucida Sans,0,11" color="0,0,0" orientation="0" isBackgroundColored="false" backgroundColor="255,255,255" />
