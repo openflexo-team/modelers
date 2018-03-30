@@ -22,7 +22,7 @@
       <DeleteAction id="14" object="icon" />
       <DeleteAction id="15" object="shape" />
     </DeletionScheme>
-    <DropScheme id="16" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropBusinessRoleInBusinessRoleAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="16" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropBusinessRoleInBusinessRoleAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole id="17" patternRole="shape" name="shape" exampleLabel="Business Role">
         <ShapeGraphicalRepresentation id="18" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="0.0" y="1.0" width="105.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
           <ForegroundStyle id="19" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -60,7 +60,7 @@
       </AddShape>
       <GraphicalAction id="39" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="40" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropBusinessRoleInBusinessRoleComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="40" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropBusinessRoleInBusinessRoleComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole idref="17" />
       <URIParameter id="41" base="&quot;BusinessRole&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -83,7 +83,7 @@
       </AddShape>
       <GraphicalAction id="50" subject="target.shape" value="0.1" feature="relativeTextX" />
     </DropScheme>
-    <DropScheme id="51" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" name="dropBusinessRoleInBusinessActor" label="AssignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="51" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" name="dropBusinessRoleInBusinessActor" label="AssignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole id="52" patternRole="shape" name="shape" exampleLabel="Business Actor">
         <ShapeGraphicalRepresentation id="53" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="3.0" y="13.31064733585741" width="108.79701808824643" height="75.68935266414259" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.4999999997764826" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
           <ForegroundStyle id="54" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -121,7 +121,7 @@
       </AddShape>
       <GraphicalAction id="73" subject="target.shape" value="0.1" feature="relativeTextX" />
     </DropScheme>
-    <DropScheme id="74" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" name="dropBusinessRoleInBusinessActorCopy" label="AssignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="74" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" name="dropBusinessRoleInBusinessActorCopy" label="AssignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole id="75" patternRole="shape" name="shape" exampleLabel="Business Actor">
         <ShapeGraphicalRepresentation id="76" x="200.0" y="17.0" width="62.97029702970298" height="52.96703296703295" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="false" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="true" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="false" continuousTextEditing="true" absoluteTextX="52.0" absoluteTextY="9.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
           <ForegroundStyle id="77" noStroke="true" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -208,7 +208,7 @@
       <DeleteAction id="123" object="icon" />
       <DeleteAction id="124" object="shape" />
     </DeletionScheme>
-    <DropScheme id="125" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" name="dropBusinessActorInBusinessActorAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="125" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" name="dropBusinessActorInBusinessActorAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole idref="52" />
       <URIParameter id="126" base="&quot;BusinessActor&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -231,7 +231,7 @@
       </AddShape>
       <GraphicalAction id="135" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="136" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" name="dropBusinessActorInBusinessActorComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="136" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" name="dropBusinessActorInBusinessActorComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole idref="52" />
       <URIParameter id="137" base="&quot;BusinessActor&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -254,7 +254,7 @@
       </AddShape>
       <GraphicalAction id="146" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="147" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropBusinessActorInBusinessRoleAssignment" label="AssignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="147" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropBusinessActorInBusinessRoleAssignment" label="AssignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole idref="17" />
       <URIParameter id="148" base="&quot;BusinessActor&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -310,7 +310,7 @@
       <DeleteAction id="176" object="realisationRelationship" />
       <DeleteAction id="177" object="connector" />
     </DeletionScheme>
-    <LinkScheme id="178" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToGoalRealisation" label="RealisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="178" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToGoalRealisation" label="RealisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="179" base="&quot;Realizationrelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -323,7 +323,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="184" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToDeliverableRealisation" label="RealisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="184" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToDeliverableRealisation" label="RealisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="185" base="&quot;Realizationrelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -384,7 +384,7 @@
     </Inspector>
   </EditionPattern>
   <EditionPattern id="225" name="TriggeringRelationship">
-    <LinkScheme id="226" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackagetriggering" label="triggeringRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="226" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackagetriggering" label="triggeringRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="227" base="&quot;TriggeringRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -449,7 +449,7 @@
     </Inspector>
   </EditionPattern>
   <EditionPattern id="269" name="FlowRelationship">
-    <LinkScheme id="270" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackageflow" label="flowRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="270" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackageflow" label="flowRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="271" base="&quot;FlowRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -513,7 +513,7 @@
     </Inspector>
   </EditionPattern>
   <EditionPattern id="312" name="AggregationRelationship">
-    <LinkScheme id="313" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkGoalToGoalaggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="313" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkGoalToGoalaggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="314" base="&quot;Aggregation&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -530,7 +530,7 @@
       <DeleteAction id="320" object="aggregationRelationship" />
       <DeleteAction id="321" object="connector" />
     </DeletionScheme>
-    <LinkScheme id="322" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessActoraggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="322" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessActoraggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="323" base="&quot;Aggregation&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -543,7 +543,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="328" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessRoleaggregation" label="aggregationRelation" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="328" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessRoleaggregation" label="aggregationRelation" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="329" base="&quot;Aggregation&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -556,7 +556,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="334" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackageaggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="334" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackageaggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="335" base="&quot;Aggregation&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -569,7 +569,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="340" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkDeliverableToDeliverableaggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="340" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkDeliverableToDeliverableaggregation" label="aggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="341" base="&quot;Aggregation&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -630,7 +630,7 @@
     </Inspector>
   </EditionPattern>
   <EditionPattern id="380" name="SpecialisationRelationship">
-    <LinkScheme id="381" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkGoalToGoalSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="381" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkGoalToGoalSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="382" base="&quot;SpecializationRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -647,7 +647,7 @@
       <DeleteAction id="388" object="specialisationRelationship" />
       <DeleteAction id="389" object="connector" />
     </DeletionScheme>
-    <LinkScheme id="390" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessActorSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="390" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessActorSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="391" base="&quot;SpecializationRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -660,7 +660,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="396" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessRoleSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="396" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessRoleSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="397" base="&quot;SpecializationRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -673,7 +673,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="402" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackageSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="402" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackageSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="403" base="&quot;SpecializationRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -686,7 +686,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="408" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkDeliverableToDeliverableSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="408" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkDeliverableToDeliverableSpecialisation" label="SpecialisationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="409" base="&quot;SpecializationRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -761,7 +761,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddShape>
     </DropScheme>
-    <DropScheme id="456" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ApplicationService" name="dropApplicationServiceInApplicationServiceAggregation" label="dropApplicationServiceInApplicationServiceAggregation" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="456" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ApplicationService" name="dropApplicationServiceInApplicationServiceAggregation" label="dropApplicationServiceInApplicationServiceAggregation" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="457" base="&quot;ApplicationService&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -780,7 +780,7 @@
       </AddShape>
       <GraphicalAction id="465" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="466" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ApplicationService" name="dropApplicationServiceInApplicationServiceComposition" label="dropApplicationServiceInApplicationServiceComposition" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="466" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ApplicationService" name="dropApplicationServiceInApplicationServiceComposition" label="dropApplicationServiceInApplicationServiceComposition" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="467" base="&quot;ApplicationService&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -831,7 +831,7 @@
     </Inspector>
   </EditionPattern>
   <EditionPattern id="497" name="AssignmentRelationship">
-    <LinkScheme id="498" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToBusinessRoleassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="498" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToBusinessRoleassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="499" base="&quot;AssignmentRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -844,7 +844,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="504" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToWorkPackageassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="504" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToWorkPackageassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="505" base="&quot;AssignmentRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -857,7 +857,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="510" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessRoleassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="510" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessRoleassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="511" base="&quot;AssignmentRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -870,7 +870,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="516" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessActorassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="516" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessActorassignment" label="assignmentRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="517" base="&quot;AssignmentRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -935,7 +935,7 @@
     </Inspector>
   </EditionPattern>
   <EditionPattern id="559" name="CompositionRelationship">
-    <LinkScheme id="560" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessActorcomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="560" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessActor" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessActorToBusinessActorcomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="561" base="&quot;Composition&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -948,7 +948,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="566" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessRolecomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="566" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkBusinessRoleToBusinessRolecomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="567" base="&quot;Composition&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -961,7 +961,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="572" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackagecomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="572" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkWorkPackageToWorkPackagecomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="573" base="&quot;Composition&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -974,7 +974,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddConnector>
     </LinkScheme>
-    <LinkScheme id="578" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkDeliverableToDeliverablecomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="578" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkDeliverableToDeliverablecomposition" label="compositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="579" base="&quot;Composition&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -1062,7 +1062,7 @@
     <Inspector id="634" inspectorTitle="ArchimateElement" />
   </EditionPattern>
   <EditionPattern id="635" name="AssociationRelationship">
-    <LinkScheme id="636" fromTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ArchimateElement" toTarget="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ArchimateElement" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkArchimateElementToArchimateElementAssociation" label="AssociationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <LinkScheme id="636" fromTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ArchimateElement" toTarget="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#ArchimateElement" isAvailableWithFloatingPalette="true" northDirectionSupported="true" eastDirectionSupported="true" southDirectionSupported="true" westDirectionSupported="true" name="linkArchimateElementToArchimateElementAssociation" label="AssociationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="637" base="&quot;AssociationRelationship&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -1142,7 +1142,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddShape>
     </DropScheme>
-    <DropScheme id="686" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" name="dropGoalInGoalAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="686" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Goal" name="dropGoalInGoalAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole id="687" patternRole="shape" name="shape" exampleLabel="Goal">
         <ShapeGraphicalRepresentation id="688" className="org.openflexo.vpm.view.widget.EditionPatternPreviewShapeGR" x="3.0" y="22.0" width="105.0" height="50.0" minimalWidth="0.0" minimalHeight="0.0" maximalWidth="Infinity" maximalHeight="Infinity" relativeTextX="0.5" relativeTextY="0.5" lineWrap="true" locationConstraints="FREELY_MOVABLE" dimensionConstraints="FREELY_RESIZABLE" adjustMinimalWidthToLabelWidth="true" adjustMinimalHeightToLabelHeight="true" adjustMaximalWidthToLabelWidth="false" adjustMaximalHeightToLabelHeight="false" hasSelectedForeground="false" hasSelectedBackground="false" hasFocusedForeground="false" hasFocusedBackground="false" isFloatingLabel="false" allowToLeaveBounds="false" identifier="object_0" layer="1" hasText="true" isMultilineAllowed="true" continuousTextEditing="true" absoluteTextX="0.0" absoluteTextY="0.0" paragraphAlignment="CENTER" horizontalTextAlignment="CENTER" verticalTextAlignment="MIDDLE" isSelectable="true" isFocusable="true" drawControlPointsWhenFocused="true" drawControlPointsWhenSelected="true" isReadOnly="false" isLabelEditable="true" isVisible="true">
           <ForegroundStyle id="689" noStroke="false" color="0,0,0" lineWidth="1.0" joinStyle="JOIN_MITER" capStyle="CAP_SQUARE" dashStyle="PLAIN_STROKE" useTransparency="false" transparencyLevel="0.5" />
@@ -1234,7 +1234,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddShape>
     </DropScheme>
-    <DropScheme id="744" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" name="dropDeliverableInDelivrableAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="744" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" name="dropDeliverableInDelivrableAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="745" base="&quot;Deliverable&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -1253,7 +1253,7 @@
       </AddShape>
       <GraphicalAction id="753" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="754" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" name="dropDeliverableInDeliverableComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="754" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#Deliverable" name="dropDeliverableInDeliverableComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="755" base="&quot;Deliverable&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -1317,7 +1317,7 @@
         <AddressedDiagramModelSlot idref="10" />
       </AddShape>
     </DropScheme>
-    <DropScheme id="791" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" name="dropWorkPackageInWorkPackageComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="791" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" name="dropWorkPackageInWorkPackageComposition" label="CompositionRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <URIParameter id="792" base="&quot;WorkPackage&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
       </URIParameter>
@@ -1336,7 +1336,7 @@
       </AddShape>
       <GraphicalAction id="800" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="801" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" name="dropWorkPackageInWorkPackageAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="801" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#WorkPackage" name="dropWorkPackageInWorkPackageAggregation" label="AggregationRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole idref="17" />
       <URIParameter id="802" base="&quot;WorkPackage&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -1356,7 +1356,7 @@
       </AddShape>
       <GraphicalAction id="810" subject="target.shape" value="0.1" feature="relativeTextY" />
     </DropScheme>
-    <DropScheme id="811" target="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropWorkPackageInBusinessRoleAssignement" label=" AssignementRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
+    <DropScheme id="811" target="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl#BusinessRole" name="dropWorkPackageInBusinessRoleAssignement" label=" AssignementRelationship" skipConfirmationPanel="true" definePopupDefaultSize="false" width="800" height="600">
       <ContextShapePatternRole idref="17" />
       <URIParameter id="812" base="&quot;WorkPackage&quot;" name="uri" label="uri" usePaletteLabelAsDefaultValue="false" isRequired="true">
         <AddressedOWLModelSlot idref="5" />
@@ -1844,6 +1844,6 @@
   </LocalizedDictionary>
   <OWLModelSlot idref="5" />
   <DiagramModelSlot idref="10" />
-  <DiagramModelSlot id="1218" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://www.agilebirds.com/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification" />
+  <DiagramModelSlot id="1218" isRequired="true" isReadOnly="false" name="this" virtualModelURI="http://www.openflexo.org/openflexo/ViewPoints/Archimate/ProjectViewpoint.owl/DiagramSpecification" />
   <Inspector id="1219" inspectorTitle="DiagramSpecification" />
 </DiagramSpecification>
