@@ -47,7 +47,7 @@
 	<target name="copyOnServerWindowsRelease" unless="isNightly">
 		<property name="folder" value="${deployment.root.folder}/Modelers/${daily_folder}/Windows" />
 		<antcall target="createRemoteFolder"/>
-		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="false">
+		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="true">
 			<fileset dir="${project.build.directory}">
 				<include name="*zip" />
 			</fileset>
@@ -57,7 +57,7 @@
 	<target name="copyOnServerMacRelease" unless="isNightly">
 		<property name="folder" value="${deployment.root.folder}/Modelers/${daily_folder}/Mac" />
 		<antcall target="createRemoteFolder"/>
-		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="false">
+		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="true">
 			<fileset dir="${project.build.directory}">
 				<include name="*.dmg" />
 			</fileset>
@@ -67,7 +67,7 @@
 	<target name="copyOnServerLinuxRelease" unless="isNightly">
 		<property name="folder" value="${deployment.root.folder}/Modelers/${daily_folder}/Linux" />
 		<antcall target="createRemoteFolder"/>
-		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="false">
+		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="true">
 			<fileset dir="${project.build.directory}">
 				<include name="*.tar.gz" />
 			</fileset>
@@ -77,7 +77,7 @@
 	<target name="copyOnServerWindowsNightly" if="isNightly">
 		<property name="folder" value="${deployment.root.folder}/Modelers/${daily_folder}/Windows" />
 		<antcall target="createRemoteFolder"/>
-		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="false">
+		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="true">
 			<fileset dir="${project.build.directory}">
 				<include name="*zip" />
 			</fileset>
@@ -87,7 +87,7 @@
 	<target name="copyOnServerMacNightly" if="isNightly">
 		<property name="folder" value="${deployment.root.folder}/Modelers/${daily_folder}/Mac" />
 		<antcall target="createRemoteFolder"/>
-		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="false">
+		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="true">
 			<fileset dir="${project.build.directory}">
 				<include name="*.dmg" />
 			</fileset>
@@ -97,7 +97,7 @@
 	<target name="copyOnServerLinuxNightly" if="isNightly">
 		<property name="folder" value="${deployment.root.folder}/Modelers/${daily_folder}/Linux" />
 		<antcall target="createRemoteFolder"/>
-		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="false">
+		<scp todir="${deployment.user.name}@${deployment.server.name}:${folder}" trust="true" keyfile="${ssh.private.keyfile}" passphrase="${ssh.passphrase}" failonerror="true">
 			<fileset dir="${project.build.directory}">
 				<include name="*.tar.gz" />
 			</fileset>
