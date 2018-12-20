@@ -11,7 +11,7 @@ public class UMLClassDiagram {
 
   @CreationScheme  
   UMLClassDiagram:init() {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst813_80 {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst13a_95 {    
     };  
   }  
 
@@ -34,6 +34,28 @@ public class UMLClassDiagram {
       shape4 = diagram.AddShape();      
       shape5 = diagram.AddShape();      
       shape6 = diagram.AddShape();    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class TotoGR {  
+  
+    public DiagramShape main;  
+    public DiagramShape icon;  
+    public DiagramShape header;  
+    public DiagramShape properties;  
+    public DiagramShape operations;  
+    public DiagramShape headerOutline;  
+  
+    @DropScheme    
+    TotoGR:dropTotoGRAtTopLevel() {    
+      main = diagram.AddShape();      
+      icon = diagram.AddShape();      
+      header = diagram.AddShape();      
+      properties = diagram.AddShape();      
+      operations = diagram.AddShape();      
+      headerOutline = diagram.AddShape();    
     }    
   
   }  
