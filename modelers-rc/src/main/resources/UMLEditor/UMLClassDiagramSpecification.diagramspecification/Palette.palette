@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagramPalette id="0" name="Palette">
-  <DiagramPaletteElement id="1" name="ClassGR">
-    <ShapeGraphicalRepresentation id="2" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" adaptBoundsToContents="false" x="10.0" y="10.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="193.0" height="160.0" identifier="5280822e" layer="1" text="">
-      <SelectedImageBackgroundStyle id="3" imageFile="ClassGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+  <DiagramPaletteElement id="1" name="Class">
+    <ShapeGraphicalRepresentation id="2" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" x="17.0" y="12.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="75.00156675187597" height="68.28065990856689" identifier="617adab0" absoluteTextY="6.0" absoluteTextX="31.0" layer="1" text="">
+      <SelectedImageBackgroundStyle id="3" imageFile="Class.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ForegroundStyle id="4" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <FocusedImageBackgroundStyle id="5" imageFile="ClassGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <FocusedImageBackgroundStyle id="5" imageFile="Class.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ShadowStyle id="6" shadowDepth="0" drawShadow="false" />
       <FocusedForegroundStyle id="7" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="8" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="9" imageFile="ClassGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="9" fitToShape="true" imageFile="Class.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="10" />
       <TextStyle id="11" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </DiagramPaletteElement>
-  <DiagramPaletteElement id="12" name="TotoGR">
-    <ShapeGraphicalRepresentation id="13" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" adaptBoundsToContents="false" x="10.0" y="180.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="118.0" height="113.0" identifier="3d535374" layer="1" text="">
-      <SelectedImageBackgroundStyle id="14" imageFile="TotoGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
-      <ForegroundStyle id="15" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <FocusedImageBackgroundStyle id="16" imageFile="TotoGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
-      <ShadowStyle id="17" shadowDepth="0" drawShadow="false" />
-      <FocusedForegroundStyle id="18" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <SelectedForegroundStyle id="19" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="20" imageFile="TotoGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
-      <RectangleShape id="21" />
-      <TextStyle id="22" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
-    </ShapeGraphicalRepresentation>
-  </DiagramPaletteElement>
+  <DrawingGraphicalRepresentation id="12" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="2b5d98d5">
+    <TextStyle id="13" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  </DrawingGraphicalRepresentation>
 </DiagramPalette>

@@ -7,6 +7,12 @@
 @VirtualModel(uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml")
 public class UMLModel {
 
+  @CreationScheme  
+  UMLModel:init() {  
+  
+  }  
+
+
   @FlexoConcept  
   public class Class {  
   

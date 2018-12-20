@@ -1,116 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" version="0.1" uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLClassDiagram.fml" name="UMLClassDiagram" userID="SYL" flexoID="5">
-  <FlexoConcept id="SYL-17" name="ClassGR" userID="SYL" flexoID="17">
-    <Inspector id="SYL-13" inspectorTitle="ClassGR" userID="SYL" flexoID="13" />
-    <ShapeRole id="SYL-25" previewHeight="145.54071549012562" previewY="27.22964225493719" previewX="35.87308232116639" previewWidth="178.2538353576672" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="25" />
-    <ShapeRole id="SYL-26" previewHeight="20.0" previewY="0.0" previewX="0.0" previewWidth="20.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape2" userID="SYL" flexoID="26">
-      <ParentShapeRole idref="SYL-25" />
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLClassDiagram.fml" version="0.1" name="UMLClassDiagram" userID="SYL" flexoID="5">
+  <FlexoConcept id="SYL-143" name="ClassGR" userID="SYL" flexoID="143">
+    <Inspector id="SYL-139" inspectorTitle="ClassGR" userID="SYL" flexoID="139">
+      <InspectorEntry id="SYL-210" widget="TEXT_FIELD" data="class.name" name="className" label="className" type="java.lang.String" userID="SYL" flexoID="210" />
+    </Inspector>
+    <ShapeRole id="SYL-145" previewHeight="98.2104107752885" previewY="50.89479461235575" previewX="73.01948984279248" previewWidth="103.96102031441504" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="main" userID="SYL" flexoID="145" />
+    <ShapeRole id="SYL-146" previewHeight="20.0" previewY="0.0" previewX="0.0" previewWidth="20.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="icon" userID="SYL" flexoID="146">
+      <ParentShapeRole idref="SYL-145" />
     </ShapeRole>
-    <ShapeRole id="SYL-27" previewHeight="20.0" previewY="0.0" previewX="20.0" previewWidth="203.3679191054243" exampleLabel="ClassName" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="shape3" userID="SYL" flexoID="27">
-      <ParentShapeRole idref="SYL-25" />
+    <ShapeRole id="SYL-147" previewHeight="20.0" previewY="0.0" previewX="20.0" previewWidth="83.96102031441504" exampleLabel="Class" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="header" userID="SYL" flexoID="147">
+      <ParentShapeRole idref="SYL-145" />
+      <GRSpec id="SYL-184" featureName="label" value="class.name" userID="SYL" flexoID="184" />
     </ShapeRole>
-    <ShapeRole id="SYL-28" previewHeight="102.33358989644499" previewY="20.0" previewX="0.0" previewWidth="223.3679191054243" exampleLabel="Properties" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_5" cloningStrategy="Clone" cardinality="ZeroOne" name="shape4" userID="SYL" flexoID="28">
-      <ParentShapeRole idref="SYL-25" />
+    <ShapeRole id="SYL-148" previewHeight="39.10520538764425" previewY="20.0" previewX="0.0" previewWidth="103.96102031441504" exampleLabel="&lt;properties&gt;" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_5" cloningStrategy="Clone" cardinality="ZeroOne" name="properties" userID="SYL" flexoID="148">
+      <ParentShapeRole idref="SYL-145" />
     </ShapeRole>
-    <ShapeRole id="SYL-29" previewHeight="102.33358989644499" previewY="43.20712559368063" previewX="-45.11408374775709" previewWidth="223.3679191054243" exampleLabel="Methods" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="shape5" userID="SYL" flexoID="29">
-      <ParentShapeRole idref="SYL-25" />
+    <ShapeRole id="SYL-149" previewHeight="39.10520538764425" previewY="59.10520538764425" previewX="0.0" previewWidth="103.96102031441504" exampleLabel="&lt;operations&gt;" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="operations" userID="SYL" flexoID="149">
+      <ParentShapeRole idref="SYL-145" />
     </ShapeRole>
-    <ShapeRole id="SYL-30" previewHeight="11.0" previewY="122.33358989644499" previewX="0.0" previewWidth="223.3679191054243" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_7" cloningStrategy="Clone" cardinality="ZeroOne" name="shape6" userID="SYL" flexoID="30">
-      <ParentShapeRole idref="SYL-25" />
+    <ShapeRole id="SYL-150" previewHeight="20.0" previewY="0.0" previewX="0.0" previewWidth="103.96102031441504" exampleLabel="HeaderOutline" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_7" cloningStrategy="Clone" cardinality="ZeroOne" name="headerOutline" userID="SYL" flexoID="150">
+      <ParentShapeRole idref="SYL-145" />
     </ShapeRole>
-    <DropScheme id="SYL-18" target="top" name="dropClassGRAtTopLevel" width="800" label="dropClassGRAtTopLevel" height="600" userID="SYL" flexoID="18">
-      <BehaviourControlGraph_Sequence id="SYL-31" userID="SYL" flexoID="31">
-        <ControlGraph2_Sequence id="SYL-32" ownerContext="controlGraph2" userID="SYL" flexoID="32">
-          <ControlGraph2_Sequence id="SYL-33" ownerContext="controlGraph2" userID="SYL" flexoID="33">
-            <ControlGraph2_Sequence id="SYL-34" ownerContext="controlGraph2" userID="SYL" flexoID="34">
-              <ControlGraph2_Sequence id="SYL-35" ownerContext="controlGraph2" userID="SYL" flexoID="35">
-                <ControlGraph2_AssignationAction id="SYL-36" assign="shape6" ownerContext="controlGraph2" userID="SYL" flexoID="36">
-                  <AssignableAction_AddShape id="SYL-37" container="shape" receiver="diagram" userID="SYL" flexoID="37" />
-                </ControlGraph2_AssignationAction>
-                <ControlGraph1_AssignationAction id="SYL-38" assign="shape5" ownerContext="controlGraph1" userID="SYL" flexoID="38">
-                  <AssignableAction_AddShape id="SYL-39" container="shape" receiver="diagram" userID="SYL" flexoID="39" />
+    <FlexoConceptInstanceRole id="SYL-151" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml#Class" cloningStrategy="Reference" cardinality="ZeroOne" name="class" userID="SYL" flexoID="151" />
+    <DropScheme id="SYL-144" target="top" name="dropClassGRAtTopLevel" width="800" label="drop_class_at_top_level" height="600" userID="SYL" flexoID="144">
+      <BehaviourControlGraph_Sequence id="SYL-152" userID="SYL" flexoID="152">
+        <ControlGraph2_Sequence id="SYL-153" ownerContext="controlGraph2" userID="SYL" flexoID="153">
+          <ControlGraph2_Sequence id="SYL-154" ownerContext="controlGraph2" userID="SYL" flexoID="154">
+            <ControlGraph2_Sequence id="SYL-155" ownerContext="controlGraph2" userID="SYL" flexoID="155">
+              <ControlGraph2_Sequence id="SYL-156" ownerContext="controlGraph2" userID="SYL" flexoID="156">
+                <ControlGraph2_Sequence id="SYL-157" ownerContext="controlGraph2" userID="SYL" flexoID="157">
+                  <ControlGraph2_AssignationAction id="SYL-158" assign="class" ownerContext="controlGraph2" userID="SYL" flexoID="158">
+                    <AssignableAction_AddFlexoConceptInstance id="SYL-159" creationSchemeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml#Class.create" receiver="model" userID="SYL" flexoID="159">
+                      <AddFlexoConceptInstanceParameter id="SYL-209" paramName="aName" value="&quot;Class&quot;" userID="SYL" flexoID="209" />
+                    </AssignableAction_AddFlexoConceptInstance>
+                  </ControlGraph2_AssignationAction>
+                  <ControlGraph1_AssignationAction id="SYL-160" assign="headerOutline" ownerContext="controlGraph1" userID="SYL" flexoID="160">
+                    <AssignableAction_AddShape id="SYL-161" container="main" receiver="diagram" userID="SYL" flexoID="161" />
+                  </ControlGraph1_AssignationAction>
+                </ControlGraph2_Sequence>
+                <ControlGraph1_AssignationAction id="SYL-162" assign="operations" ownerContext="controlGraph1" userID="SYL" flexoID="162">
+                  <AssignableAction_AddShape id="SYL-163" container="main" receiver="diagram" userID="SYL" flexoID="163" />
                 </ControlGraph1_AssignationAction>
               </ControlGraph2_Sequence>
-              <ControlGraph1_AssignationAction id="SYL-40" assign="shape4" ownerContext="controlGraph1" userID="SYL" flexoID="40">
-                <AssignableAction_AddShape id="SYL-41" container="shape" receiver="diagram" userID="SYL" flexoID="41" />
+              <ControlGraph1_AssignationAction id="SYL-164" assign="properties" ownerContext="controlGraph1" userID="SYL" flexoID="164">
+                <AssignableAction_AddShape id="SYL-165" container="main" receiver="diagram" userID="SYL" flexoID="165" />
               </ControlGraph1_AssignationAction>
             </ControlGraph2_Sequence>
-            <ControlGraph1_AssignationAction id="SYL-42" assign="shape3" ownerContext="controlGraph1" userID="SYL" flexoID="42">
-              <AssignableAction_AddShape id="SYL-43" container="shape" receiver="diagram" userID="SYL" flexoID="43" />
+            <ControlGraph1_AssignationAction id="SYL-166" assign="header" ownerContext="controlGraph1" userID="SYL" flexoID="166">
+              <AssignableAction_AddShape id="SYL-167" container="main" receiver="diagram" userID="SYL" flexoID="167" />
             </ControlGraph1_AssignationAction>
           </ControlGraph2_Sequence>
-          <ControlGraph1_AssignationAction id="SYL-44" assign="shape2" ownerContext="controlGraph1" userID="SYL" flexoID="44">
-            <AssignableAction_AddShape id="SYL-45" container="shape" receiver="diagram" userID="SYL" flexoID="45" />
+          <ControlGraph1_AssignationAction id="SYL-168" assign="icon" ownerContext="controlGraph1" userID="SYL" flexoID="168">
+            <AssignableAction_AddShape id="SYL-169" container="main" receiver="diagram" userID="SYL" flexoID="169" />
           </ControlGraph1_AssignationAction>
         </ControlGraph2_Sequence>
-        <ControlGraph1_AssignationAction id="SYL-46" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="46">
-          <AssignableAction_AddShape id="SYL-47" container="topLevel" receiver="diagram" userID="SYL" flexoID="47" />
-        </ControlGraph1_AssignationAction>
-      </BehaviourControlGraph_Sequence>
-    </DropScheme>
-  </FlexoConcept>
-  <FlexoConcept id="SYL-59" name="TotoGR" userID="SYL" flexoID="59">
-    <Inspector id="SYL-55" inspectorTitle="TotoGR" userID="SYL" flexoID="55" />
-    <ShapeRole id="SYL-67" previewHeight="98.2104107752885" previewY="50.89479461235575" previewX="73.01948984279248" previewWidth="103.96102031441504" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="main" userID="SYL" flexoID="67" />
-    <ShapeRole id="SYL-74" previewHeight="20.0" previewY="0.0" previewX="0.0" previewWidth="20.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="icon" userID="SYL" flexoID="74">
-      <ParentShapeRole idref="SYL-67" />
-    </ShapeRole>
-    <ShapeRole id="SYL-81" previewHeight="20.0" previewY="0.0" previewX="20.0" previewWidth="83.96102031441504" exampleLabel="Header" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="header" userID="SYL" flexoID="81">
-      <ParentShapeRole idref="SYL-67" />
-    </ShapeRole>
-    <ShapeRole id="SYL-88" previewHeight="39.10520538764425" previewY="20.0" previewX="0.0" previewWidth="103.96102031441504" exampleLabel="Properties" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_5" cloningStrategy="Clone" cardinality="ZeroOne" name="properties" userID="SYL" flexoID="88">
-      <ParentShapeRole idref="SYL-67" />
-    </ShapeRole>
-    <ShapeRole id="SYL-95" previewHeight="39.10520538764425" previewY="59.10520538764425" previewX="0.0" previewWidth="103.96102031441504" exampleLabel="Operations" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="operations" userID="SYL" flexoID="95">
-      <ParentShapeRole idref="SYL-67" />
-    </ShapeRole>
-    <ShapeRole id="SYL-102" previewHeight="20.0" previewY="0.0" previewX="0.0" previewWidth="103.96102031441504" exampleLabel="HeaderOutline" metamodelElementReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_7" cloningStrategy="Clone" cardinality="ZeroOne" name="headerOutline" userID="SYL" flexoID="102">
-      <ParentShapeRole idref="SYL-67" />
-    </ShapeRole>
-    <DropScheme id="SYL-60" target="top" name="dropTotoGRAtTopLevel" width="800" label="dropTotoGRAtTopLevel" height="600" userID="SYL" flexoID="60">
-      <BehaviourControlGraph_Sequence id="SYL-109" userID="SYL" flexoID="109">
-        <ControlGraph2_Sequence id="SYL-110" ownerContext="controlGraph2" userID="SYL" flexoID="110">
-          <ControlGraph2_Sequence id="SYL-111" ownerContext="controlGraph2" userID="SYL" flexoID="111">
-            <ControlGraph2_Sequence id="SYL-112" ownerContext="controlGraph2" userID="SYL" flexoID="112">
-              <ControlGraph2_Sequence id="SYL-113" ownerContext="controlGraph2" userID="SYL" flexoID="113">
-                <ControlGraph2_AssignationAction id="SYL-108" assign="headerOutline" ownerContext="controlGraph2" userID="SYL" flexoID="108">
-                  <AssignableAction_AddShape id="SYL-114" container="main" receiver="diagram" userID="SYL" flexoID="114" />
-                </ControlGraph2_AssignationAction>
-                <ControlGraph1_AssignationAction id="SYL-107" assign="operations" ownerContext="controlGraph1" userID="SYL" flexoID="107">
-                  <AssignableAction_AddShape id="SYL-115" container="main" receiver="diagram" userID="SYL" flexoID="115" />
-                </ControlGraph1_AssignationAction>
-              </ControlGraph2_Sequence>
-              <ControlGraph1_AssignationAction id="SYL-106" assign="properties" ownerContext="controlGraph1" userID="SYL" flexoID="106">
-                <AssignableAction_AddShape id="SYL-116" container="main" receiver="diagram" userID="SYL" flexoID="116" />
-              </ControlGraph1_AssignationAction>
-            </ControlGraph2_Sequence>
-            <ControlGraph1_AssignationAction id="SYL-105" assign="header" ownerContext="controlGraph1" userID="SYL" flexoID="105">
-              <AssignableAction_AddShape id="SYL-117" container="main" receiver="diagram" userID="SYL" flexoID="117" />
-            </ControlGraph1_AssignationAction>
-          </ControlGraph2_Sequence>
-          <ControlGraph1_AssignationAction id="SYL-104" assign="icon" ownerContext="controlGraph1" userID="SYL" flexoID="104">
-            <AssignableAction_AddShape id="SYL-118" container="main" receiver="diagram" userID="SYL" flexoID="118" />
-          </ControlGraph1_AssignationAction>
-        </ControlGraph2_Sequence>
-        <ControlGraph1_AssignationAction id="SYL-103" assign="main" ownerContext="controlGraph1" userID="SYL" flexoID="103">
-          <AssignableAction_AddShape id="SYL-119" container="topLevel" receiver="diagram" userID="SYL" flexoID="119" />
+        <ControlGraph1_AssignationAction id="SYL-170" assign="main" ownerContext="controlGraph1" userID="SYL" flexoID="170">
+          <AssignableAction_AddShape id="SYL-171" container="topLevel" receiver="diagram" userID="SYL" flexoID="171" />
         </ControlGraph1_AssignationAction>
       </BehaviourControlGraph_Sequence>
     </DropScheme>
   </FlexoConcept>
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="UMLClassDiagram" userID="SYL" flexoID="1" />
-  <TypedDiagramModelSlot id="SYL-7" metaModelURI="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="diagram" userID="SYL" flexoID="7">
+  <TypedDiagramModelSlot id="SYL-7" templateDiagramReference="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/ExampleDiagram.diagram#SYL_1" metaModelURI="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="diagram" userID="SYL" flexoID="7">
     <FMLDiagramPaletteElementBinding id="SYL-48" paletteElementId="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/Palette.palette#ClassGR" userID="SYL" flexoID="48">
-      <DropScheme idref="SYL-18" />
+      <DropScheme id="SYL-18" target="top" width="800" height="600" userID="SYL" flexoID="18" />
     </FMLDiagramPaletteElementBinding>
     <FMLDiagramPaletteElementBinding id="SYL-120" paletteElementId="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/Palette.palette#TotoGR" userID="SYL" flexoID="120">
-      <DropScheme idref="SYL-60" />
+      <DropScheme id="SYL-60" target="top" width="800" height="600" userID="SYL" flexoID="60" />
+    </FMLDiagramPaletteElementBinding>
+    <FMLDiagramPaletteElementBinding id="SYL-138" paletteElementId="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification/Palette.palette#Class" userID="SYL" flexoID="138">
+      <DropScheme idref="SYL-144" />
     </FMLDiagramPaletteElementBinding>
   </TypedDiagramModelSlot>
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-134" virtualModelURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="model" userID="SYL" flexoID="134" />
   <CreationScheme id="SYL-6" name="init" width="800" label="init" height="600" userID="SYL" flexoID="6">
-    <BehaviourControlGraph_AssignationAction id="SYL-8" assign="diagram" userID="SYL" flexoID="8">
-      <AssignableAction_CreateDiagram id="SYL-9" diagramSpecificationURI="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" diagramName="&quot;diagram&quot;" resourceCenter="this.resourceCenter" relativePath="/Diagrams" userID="SYL" flexoID="9" />
-    </BehaviourControlGraph_AssignationAction>
+    <BehaviourControlGraph_Sequence id="SYL-137" userID="SYL" flexoID="137">
+      <ControlGraph2_AssignationAction id="SYL-136" assign="model" ownerContext="controlGraph2" userID="SYL" flexoID="136">
+        <AssignableAction_ExpressionAction id="SYL-135" expression="parameters.model" userID="SYL" flexoID="135" />
+      </ControlGraph2_AssignationAction>
+      <ControlGraph1_AssignationAction id="SYL-8" assign="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="8">
+        <AssignableAction_CreateDiagram id="SYL-9" diagramSpecificationURI="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" diagramName="&quot;diagram&quot;" resourceCenter="this.resourceCenter" relativePath="/Diagrams" userID="SYL" flexoID="9" />
+      </ControlGraph1_AssignationAction>
+    </BehaviourControlGraph_Sequence>
+    <GenericBehaviourParameter id="SYL-130" container="container" widget="CUSTOM_WIDGET" name="model" type="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml&gt;" userID="SYL" flexoID="130" />
   </CreationScheme>
 </VirtualModel>

@@ -1,0 +1,17 @@
+use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
+
+/**
+ * 
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint")
+public class UMLEditor {
+
+  public UMLModel rootModel;
+
+  @CreationScheme  
+  UMLEditor:init() {  
+    rootModel = UMLModel.init();  
+  }  
+
+}

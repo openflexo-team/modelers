@@ -8,38 +8,18 @@ use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
 public class UMLClassDiagram {
 
   public Diagram diagram;
+  public UMLModel model;
 
   @CreationScheme  
-  UMLClassDiagram:init() {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst13a_95 {    
-    };  
+  UMLClassDiagram:init(VirtualModelInstanceType<UMLModel> model) {  
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst813_90 {    
+    };    
+    model = parameters.model;  
   }  
 
 
   @FlexoConcept  
   public class ClassGR {  
-  
-    public DiagramShape shape;  
-    public DiagramShape shape2;  
-    public DiagramShape shape3;  
-    public DiagramShape shape4;  
-    public DiagramShape shape5;  
-    public DiagramShape shape6;  
-  
-    @DropScheme    
-    ClassGR:dropClassGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      shape2 = diagram.AddShape();      
-      shape3 = diagram.AddShape();      
-      shape4 = diagram.AddShape();      
-      shape5 = diagram.AddShape();      
-      shape6 = diagram.AddShape();    
-    }    
-  
-  }  
-
-  @FlexoConcept  
-  public class TotoGR {  
   
     public DiagramShape main;  
     public DiagramShape icon;  
@@ -47,15 +27,17 @@ public class UMLClassDiagram {
     public DiagramShape properties;  
     public DiagramShape operations;  
     public DiagramShape headerOutline;  
+    public Class class;  
   
     @DropScheme    
-    TotoGR:dropTotoGRAtTopLevel() {    
+    ClassGR:dropClassGRAtTopLevel() {    
       main = diagram.AddShape();      
       icon = diagram.AddShape();      
       header = diagram.AddShape();      
       properties = diagram.AddShape();      
       operations = diagram.AddShape();      
-      headerOutline = diagram.AddShape();    
+      headerOutline = diagram.AddShape();      
+      class = Class.create("Class");    
     }    
   
   }  
