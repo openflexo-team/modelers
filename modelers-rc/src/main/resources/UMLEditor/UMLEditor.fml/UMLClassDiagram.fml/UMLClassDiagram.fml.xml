@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLClassDiagram.fml" version="0.1" name="UMLClassDiagram" userID="SYL" flexoID="5">
+  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot" userID="SYL" flexoID="-1" />
+  <Inspector id="SYL-1" inspectorTitle="UMLClassDiagram" userID="SYL" flexoID="1" />
+  <TypedDiagramModelSlot id="SYL-7" metaModelURI="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="diagram" userID="SYL" flexoID="7" />
+  <CreationScheme id="SYL-6" name="init" width="800" label="init" height="600" userID="SYL" flexoID="6">
+    <BehaviourControlGraph_AssignationAction id="SYL-8" assign="diagram" userID="SYL" flexoID="8">
+      <AssignableAction_CreateDiagram id="SYL-9" diagramSpecificationURI="http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" diagramName="'diagram'" resourceCenter="this.resourceCenter" relativePath="/Diagrams" userID="SYL" flexoID="9" />
+    </BehaviourControlGraph_AssignationAction>
+  </CreationScheme>
+</VirtualModel>

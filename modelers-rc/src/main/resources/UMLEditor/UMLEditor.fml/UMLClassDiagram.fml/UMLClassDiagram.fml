@@ -1,0 +1,18 @@
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
+
+/**
+ * 
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLClassDiagram.fml")
+public class UMLClassDiagram {
+
+  public Diagram diagram;
+
+  @CreationScheme  
+  UMLClassDiagram:init() {  
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst813_90 {    
+    };  
+  }  
+
+}

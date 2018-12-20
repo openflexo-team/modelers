@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml" version="0.1" name="UMLModel" author="sylvain" userID="SYL" flexoID="5">
+  <FlexoConcept id="SYL-7" name="Class" author="sylvain" userID="SYL" flexoID="7">
+    <Inspector id="SYL-6" inspectorTitle="Class" userID="SYL" flexoID="6">
+      <InspectorEntry id="SYL-13" widget="TEXT_FIELD" data="name" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="13" />
+    </Inspector>
+    <PrimitiveRole id="SYL-22" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="name" userID="SYL" flexoID="22" />
+    <FlexoConceptInstanceRole id="SYL-21" virtualModelInstance="container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml#Property" cloningStrategy="Reference" cardinality="ZeroMany" name="properties" userID="SYL" flexoID="21" />
+    <CreationScheme id="SYL-11" name="create" width="800" label="create" height="600" userID="SYL" flexoID="11">
+      <BehaviourControlGraph_AssignationAction id="SYL-23" assign="name" userID="SYL" flexoID="23">
+        <AssignableAction_ExpressionAction id="SYL-24" expression="parameters.aName" userID="SYL" flexoID="24" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-25" isRequired="true" widget="TEXT_FIELD" name="aName" type="java.lang.String" userID="SYL" flexoID="25" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-12" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="12">
+      <BehaviourControlGraph_AssignationAction id="SYL-26" assign="name" userID="SYL" flexoID="26">
+        <AssignableAction_ExpressionAction id="SYL-27" expression="null" userID="SYL" flexoID="27" />
+      </BehaviourControlGraph_AssignationAction>
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-15" name="Property" author="sylvain" userID="SYL" flexoID="15">
+    <Inspector id="SYL-14" inspectorTitle="Property" userID="SYL" flexoID="14">
+      <InspectorEntry id="SYL-28" widget="TEXT_FIELD" data="name" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="28" />
+    </Inspector>
+    <PrimitiveRole id="SYL-29" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="name" userID="SYL" flexoID="29" />
+    <CreationScheme id="SYL-19" name="create" width="800" label="create" height="600" userID="SYL" flexoID="19">
+      <BehaviourControlGraph_AssignationAction id="SYL-30" assign="name" userID="SYL" flexoID="30">
+        <AssignableAction_ExpressionAction id="SYL-31" expression="parameters.aName" userID="SYL" flexoID="31" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-32" isRequired="true" widget="TEXT_FIELD" name="aName" type="java.lang.String" userID="SYL" flexoID="32" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-20" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="20">
+      <BehaviourControlGraph_AssignationAction id="SYL-33" assign="name" userID="SYL" flexoID="33">
+        <AssignableAction_ExpressionAction id="SYL-34" expression="null" userID="SYL" flexoID="34" />
+      </BehaviourControlGraph_AssignationAction>
+    </DeletionScheme>
+  </FlexoConcept>
+  <Inspector id="SYL-1" inspectorTitle="UMLModel" userID="SYL" flexoID="1" />
+</VirtualModel>

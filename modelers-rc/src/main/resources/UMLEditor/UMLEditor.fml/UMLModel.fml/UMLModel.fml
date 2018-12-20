@@ -1,0 +1,45 @@
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml")
+public class UMLModel {
+
+  @FlexoConcept  
+  public class Class {  
+  
+    public String name;  
+    public List properties;  
+  
+    @CreationScheme    
+    Class:create(String aName) {    
+      name = parameters.aName;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      name = null;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Property {  
+  
+    public String name;  
+  
+    @CreationScheme    
+    Property:create(String aName) {    
+      name = parameters.aName;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      name = null;    
+    }    
+  
+  }  
+
+}
