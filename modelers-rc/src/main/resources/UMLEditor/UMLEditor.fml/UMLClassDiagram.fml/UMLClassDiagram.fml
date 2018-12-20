@@ -11,8 +11,31 @@ public class UMLClassDiagram {
 
   @CreationScheme  
   UMLClassDiagram:init() {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst813_90 {    
+    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst813_80 {    
     };  
+  }  
+
+
+  @FlexoConcept  
+  public class ClassGR {  
+  
+    public DiagramShape shape;  
+    public DiagramShape shape2;  
+    public DiagramShape shape3;  
+    public DiagramShape shape4;  
+    public DiagramShape shape5;  
+    public DiagramShape shape6;  
+  
+    @DropScheme    
+    ClassGR:dropClassGRAtTopLevel() {    
+      shape = diagram.AddShape();      
+      shape2 = diagram.AddShape();      
+      shape3 = diagram.AddShape();      
+      shape4 = diagram.AddShape();      
+      shape5 = diagram.AddShape();      
+      shape6 = diagram.AddShape();    
+    }    
+  
   }  
 
 }
