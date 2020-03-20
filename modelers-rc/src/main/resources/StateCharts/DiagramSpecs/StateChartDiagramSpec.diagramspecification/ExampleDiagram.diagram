@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram id="0" diagramSpecificationURI="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification" uri="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram" name="ExampleDiagram.diagram" userID="SYL" flexoID="1">
+  <Connector id="1" name="Connector4" userID="SYL" flexoID="4">
+    <StartShape idref="2" />
+    <EndShape idref="13" />
+    <ConnectorGraphicalRepresentation id="24" identifier="746edd16" absoluteTextY="-7.0" absoluteTextX="19.0" layer="64">
+      <ArcConnector id="25" curveConnectorType="CUBIC_CURVE" cpPosition="0.5280898876404494,-0.10331626932598809" cp2Position="0.8175675675675677,-0.23584905660377342" cp1Position="0.28378378378378377,-0.48113207547169795" middleSymbol="NONE" startSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="26" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <FocusedForegroundStyle id="27" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="28" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="29" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="30" name="Connector6" userID="SYL" flexoID="6">
+    <StartShape idref="31" />
+    <EndShape idref="2" />
+    <ConnectorGraphicalRepresentation id="42" identifier="36e59190" absoluteTextY="-11.0" absoluteTextX="4.0" layer="64">
+      <ArcConnector id="43" curveConnectorType="QUAD_CURVE" cpPosition="0.33793103448275863,0.13953488372093023" cp2Position="0.2826086956521739,0.11475409836065574" cp1Position="0.125,0.19672131147540983" middleSymbol="NONE" startSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="44" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <FocusedForegroundStyle id="45" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="46" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="47" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Shape id="2" name="Forme" text="State" userID="SYL" flexoID="2">
+    <ShapeGraphicalRepresentation id="3" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="132.0" y="108.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="63.18407960199006" height="35.26315789473684" identifier="24225212" layer="1" text="State">
+      <SelectedColorBackgroundStyle id="4" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="5" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="6" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="7" />
+      <FocusedForegroundStyle id="8" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="9" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="10" color="254,247,217" transparencyLevel="0.5" />
+      <RectangleShape id="11" isRounded="true" />
+      <TextStyle id="12" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="13" name="State" text="State2" userID="SYL" flexoID="3">
+    <ShapeGraphicalRepresentation id="14" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="348.0" y="162.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="63.18407960199006" height="35.26315789473684" identifier="40937396" layer="1" text="State2">
+      <SelectedColorBackgroundStyle id="15" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="16" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="17" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="18" />
+      <FocusedForegroundStyle id="19" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="20" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="21" color="254,247,217" transparencyLevel="0.5" />
+      <RectangleShape id="22" isRounded="true" />
+      <TextStyle id="23" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="31" name="Forme" userID="SYL" flexoID="5">
+    <ShapeGraphicalRepresentation id="32" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="67.5" y="74.5" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="15.0" height="15.0" identifier="3232924c" layer="1">
+      <SelectedColorBackgroundStyle id="33" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="34" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="35" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="36" drawShadow="false" />
+      <FocusedForegroundStyle id="37" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="38" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="39" color="51,51,51" transparencyLevel="0.5" />
+      <OvalShape id="40" />
+      <TextStyle id="41" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <DrawingGraphicalRepresentation id="48" drawWorkingArea="false" backgroundColor="255,255,255" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="25a01d24">
+    <TextStyle id="49" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  </DrawingGraphicalRepresentation>
+</Diagram>

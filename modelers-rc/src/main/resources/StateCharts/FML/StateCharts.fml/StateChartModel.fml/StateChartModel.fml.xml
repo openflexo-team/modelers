@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml" version="0.1" name="StateChartModel" author="sylvain" userID="SYL" flexoID="5">
+  <FlexoConcept id="SYL-14" name="State" userID="SYL" flexoID="14">
+    <Inspector id="SYL-15" inspectorTitle="State" userID="SYL" flexoID="15" />
+    <PrimitiveRole id="SYL-30" primitiveType="String" cloningStrategy="Clone" cardinality="One" name="name" userID="SYL" flexoID="30" />
+    <CreationScheme id="SYL-19" label="create" name="create" width="800" height="600" userID="SYL" flexoID="19">
+      <BehaviourControlGraph_AssignationAction id="SYL-32" assign="name" userID="SYL" flexoID="32">
+        <AssignableAction_ExpressionAction id="SYL-31" expression="parameters.aName" userID="SYL" flexoID="31" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-33" isRequired="true" widget="TEXT_FIELD" name="aName" type="java.lang.String" userID="SYL" flexoID="33" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-20" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="20">
+      <BehaviourControlGraph_AssignationAction id="SYL-35" assign="name" userID="SYL" flexoID="35">
+        <AssignableAction_ExpressionAction id="SYL-34" expression="null" userID="SYL" flexoID="34" />
+      </BehaviourControlGraph_AssignationAction>
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-22" name="Transition" userID="SYL" flexoID="22">
+    <Inspector id="SYL-21" inspectorTitle="Transition" userID="SYL" flexoID="21">
+      <InspectorEntry id="SYL-44" widget="CUSTOM_WIDGET" data="from" name="from" label="from" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="44" />
+      <InspectorEntry id="SYL-45" widget="CUSTOM_WIDGET" data="to" name="to" label="to" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="45" />
+    </Inspector>
+    <FlexoConceptInstanceRole id="SYL-28" virtualModelInstance="container" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State" cloningStrategy="Reference" cardinality="One" name="from" userID="SYL" flexoID="28" />
+    <FlexoConceptInstanceRole id="SYL-29" virtualModelInstance="container" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State" cloningStrategy="Reference" cardinality="One" name="to" userID="SYL" flexoID="29" />
+    <PrimitiveRole id="SYL-46" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="label" userID="SYL" flexoID="46" />
+    <CreationScheme id="SYL-26" label="create" name="create" width="800" height="600" userID="SYL" flexoID="26">
+      <BehaviourControlGraph_Sequence id="SYL-40" userID="SYL" flexoID="40">
+        <ControlGraph2_Sequence id="SYL-50" ownerContext="controlGraph2" userID="SYL" flexoID="50">
+          <ControlGraph2_AssignationAction id="SYL-49" assign="label" ownerContext="controlGraph2" userID="SYL" flexoID="49">
+            <AssignableAction_ExpressionAction id="SYL-48" expression="parameters.aLabel" userID="SYL" flexoID="48" />
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_AssignationAction id="SYL-37" assign="to" ownerContext="controlGraph1" userID="SYL" flexoID="37">
+            <AssignableAction_ExpressionAction id="SYL-36" expression="parameters.aTo" userID="SYL" flexoID="36" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_AssignationAction id="SYL-39" assign="from" ownerContext="controlGraph1" userID="SYL" flexoID="39">
+          <AssignableAction_ExpressionAction id="SYL-38" expression="parameters.aFrom" userID="SYL" flexoID="38" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-41" isRequired="true" widget="CUSTOM_WIDGET" name="aFrom" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="41" />
+      <GenericBehaviourParameter id="SYL-42" isRequired="true" widget="CUSTOM_WIDGET" name="aTo" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="42" />
+      <GenericBehaviourParameter id="SYL-47" widget="TEXT_FIELD" name="aLabel" type="java.lang.String" userID="SYL" flexoID="47" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-27" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="27">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-43" userID="SYL" flexoID="43" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-61" name="InitialTransition" userID="SYL" flexoID="61">
+    <Inspector id="SYL-62" inspectorTitle="InitialTransition" userID="SYL" flexoID="62" />
+    <FlexoConceptInstanceRole id="SYL-68" virtualModelInstance="container" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State" cloningStrategy="Reference" cardinality="One" name="to" userID="SYL" flexoID="68" />
+    <PrimitiveRole id="SYL-86" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="label" userID="SYL" flexoID="86" />
+    <CreationScheme id="SYL-66" label="create" name="create" width="800" height="600" userID="SYL" flexoID="66">
+      <BehaviourControlGraph_Sequence id="SYL-90" userID="SYL" flexoID="90">
+        <ControlGraph2_AssignationAction id="SYL-89" assign="label" ownerContext="controlGraph2" userID="SYL" flexoID="89">
+          <AssignableAction_ExpressionAction id="SYL-88" expression="parameters.aLabel" userID="SYL" flexoID="88" />
+        </ControlGraph2_AssignationAction>
+        <ControlGraph1_AssignationAction id="SYL-71" assign="to" ownerContext="controlGraph1" userID="SYL" flexoID="71">
+          <AssignableAction_ExpressionAction id="SYL-70" expression="parameters.aTo" userID="SYL" flexoID="70" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-72" widget="CUSTOM_WIDGET" name="aTo" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State&gt;" userID="SYL" flexoID="72" />
+      <GenericBehaviourParameter id="SYL-91" widget="TEXT_FIELD" name="aLabel" type="java.lang.String" userID="SYL" flexoID="91" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-67" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="67">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-73" userID="SYL" flexoID="73" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <Inspector id="SYL-1" inspectorTitle="StateChartModel" userID="SYL" flexoID="1" />
+  <FlexoConceptInstanceRole id="SYL-60" virtualModelInstance="this" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition" cloningStrategy="Reference" cardinality="ZeroOne" name="initialTransition" userID="SYL" flexoID="60" />
+  <CreationScheme id="SYL-9" label="create" name="create" width="800" height="600" userID="SYL" flexoID="9">
+    <BehaviourControlGraph_EmptyControlGraph id="SYL-10" userID="SYL" flexoID="10" />
+  </CreationScheme>
+</VirtualModel>

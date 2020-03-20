@@ -1,0 +1,67 @@
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
+use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
+
+/**
+ * 
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml")
+public class StateChartDiagram {
+
+  public Diagram diagram;
+  public StateChartModel model;
+
+  @CreationScheme  
+  StateChartDiagram:create(String name, StateChartModel aModel) {  
+    model = parameters.aModel;    
+    diagram = CreateDiagram();  
+  }  
+
+
+  @FlexoConcept  
+  public class StateGR {  
+  
+    public DiagramShape shape;  
+    public State state;  
+  
+    @DropScheme    
+    StateGR:dropStateGRAtTopLevel() {    
+      shape = diagram.AddShape();      
+      state = State.create("State");    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class TransitionGR {  
+  
+    public DiagramConnector connector;  
+    public Transition transition;  
+  
+    @LinkScheme    
+    TransitionGR:linkStateGRToStateGR() {    
+      connector = diagram.AddConnector();      
+      transition = Transition.create(fromTarget.state,toTarget.state,"transition");    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class InitialTransitionGR {  
+  
+    public DiagramShape shape;  
+    public InitialTransition initialTransition;  
+    public DiagramConnector connector;  
+  
+    @DropScheme    
+    InitialTransitionGR:dropInitialTransitionGR() {    
+      initialTransition = InitialTransition.create(target.state,"init");      
+      shape = diagram.AddShape();      
+      shape.x=(target.shape.graphicalRepresentation.x - 30)      
+      shape.y=(target.shape.graphicalRepresentation.y - 20)      
+      connector = diagram.AddConnector();    
+    }    
+  
+  }  
+
+}
