@@ -3,7 +3,7 @@
   <FlexoConcept id="SYL-30" name="StateGR" userID="SYL" flexoID="30">
     <Inspector id="SYL-26" inspectorTitle="StateGR" userID="SYL" flexoID="26" />
     <ShapeRole id="SYL-50" previewHeight="35.26315789473684" previewY="82.36842105263158" previewX="93.40796019900498" previewWidth="63.18407960199006" exampleLabel="State" metamodelElementReference="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="50">
-      <GRSpec id="SYL-177" featureName="label" value="state.name" userID="SYL" flexoID="177" />
+      <GRSpec id="SYL-191" featureName="label" value="state.name" userID="SYL" flexoID="191" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-51" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State" cloningStrategy="Reference" cardinality="ZeroOne" name="state" userID="SYL" flexoID="51" />
     <DropScheme id="SYL-31" target="top" label="dropStateGRAtTopLevel" name="dropStateGRAtTopLevel" width="800" height="600" userID="SYL" flexoID="31">
@@ -22,7 +22,7 @@
   <FlexoConcept id="SYL-58" name="TransitionGR" userID="SYL" flexoID="58">
     <Inspector id="SYL-54" inspectorTitle="TransitionGR" userID="SYL" flexoID="54" />
     <ConnectorRole id="SYL-63" exampleLabel="transition" metamodelElementReference="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="63">
-      <GRSpec id="SYL-174" featureName="label" value="transition.label" userID="SYL" flexoID="174" />
+      <GRSpec id="SYL-192" featureName="label" value="transition.label" userID="SYL" flexoID="192" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-64" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroOne" name="transition" userID="SYL" flexoID="64" />
     <LinkScheme id="SYL-59" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml#StateGR" toTarget="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml#StateGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" label="linkStateGRToStateGR" name="linkStateGRToStateGR" width="800" height="600" userID="SYL" flexoID="59">
@@ -46,7 +46,7 @@
     <FlexoConceptInstanceRole id="SYL-103" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition" cloningStrategy="Reference" cardinality="ZeroOne" name="initialTransition" userID="SYL" flexoID="103" />
     <ConnectorRole id="SYL-117" exampleLabel="init" metamodelElementReference="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="117">
       <StartShape_ShapeRole idref="SYL-100" />
-      <GRSpec id="SYL-178" featureName="label" value="initialTransition.label" userID="SYL" flexoID="178" />
+      <GRSpec id="SYL-193" featureName="label" value="initialTransition.label" userID="SYL" flexoID="193" />
     </ConnectorRole>
     <DropScheme id="SYL-88" target="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml#StateGR" label="dropInitialTransitionGR" name="dropInitialTransitionGR" width="800" height="600" userID="SYL" flexoID="88">
       <BehaviourControlGraph_Sequence id="SYL-152" ownerContext="controlGraph2" userID="SYL" flexoID="152">
@@ -56,7 +56,7 @@
               <ControlGraph2_AssignationAction id="SYL-149" assign="connector" ownerContext="controlGraph2" userID="SYL" flexoID="149">
                 <AssignableAction_AddConnector id="SYL-156" fromShape="shape" toShape="target.shape" receiver="diagram" userID="SYL" flexoID="156" />
               </ControlGraph2_AssignationAction>
-              <ControlGraph1_GraphicalAction id="SYL-147" subject="shape" value="(target.shape.graphicalRepresentation.y - 20)" feature="y" receiver="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="147" />
+              <ControlGraph1_GraphicalAction id="SYL-147" subject="shape" value="(target.shape.graphicalRepresentation.y - 30)" feature="y" receiver="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="147" />
             </ControlGraph2_Sequence>
             <ControlGraph1_GraphicalAction id="SYL-145" subject="shape" value="(target.shape.graphicalRepresentation.x - 30)" feature="x" receiver="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="145" />
           </ControlGraph2_Sequence>

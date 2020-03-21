@@ -58,7 +58,7 @@ public class StateChartDiagram {
       initialTransition = InitialTransition.create(target.state,"init");      
       shape = diagram.AddShape();      
       shape.x=(target.shape.graphicalRepresentation.x - 30)      
-      shape.y=(target.shape.graphicalRepresentation.y - 20)      
+      shape.y=(target.shape.graphicalRepresentation.y - 30)      
       connector = diagram.AddConnector();    
     }    
   
