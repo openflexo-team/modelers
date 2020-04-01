@@ -11,16 +11,19 @@
           <AssignableAction_ExpressionAction id="SYL-34" expression="editor" userID="SYL" flexoID="34" />
         </ControlGraph2_ReturnStatement>
         <ControlGraph1_DeclarationAction id="SYL-19" variable="editor" ownerContext="controlGraph1" userID="SYL" flexoID="19">
-          <AssignableAction_AddVirtualModelInstance id="SYL-16" virtualModelInstanceTitle="parameters.name" virtualModelInstanceName="parameters.name" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml.create(name,aModel)" receiver="this" ownerContext="controlGraph2" userID="SYL" flexoID="16">
+          <AssignableAction_AddVirtualModelInstance id="SYL-16" virtualModelInstanceTitle="parameters.name" virtualModelInstanceName="parameters.name" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml.create(name,aModel)" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml" receiver="this" ownerContext="controlGraph2" userID="SYL" flexoID="16">
             <AddFlexoConceptInstanceParameter id="SYL-17" paramName="name" value="parameters.name" userID="SYL" flexoID="17" />
             <AddFlexoConceptInstanceParameter id="SYL-18" paramName="aModel" value="model" userID="SYL" flexoID="18" />
           </AssignableAction_AddVirtualModelInstance>
         </ControlGraph1_DeclarationAction>
       </ControlGraph2_Sequence>
       <ControlGraph1_DeclarationAction id="SYL-14" variable="model" ownerContext="controlGraph1" userID="SYL" flexoID="14">
-        <AssignableAction_AddVirtualModelInstance id="SYL-13" virtualModelInstanceTitle="(parameters.name + &quot;Model&quot;)" virtualModelInstanceName="(parameters.name + &quot;Model&quot;)" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml.create()" receiver="this" userID="SYL" flexoID="13" />
+        <AssignableAction_AddVirtualModelInstance id="SYL-13" virtualModelInstanceTitle="(parameters.name + &quot;Model&quot;)" virtualModelInstanceName="(parameters.name + &quot;Model&quot;)" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml.create()" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml" receiver="this" userID="SYL" flexoID="13" />
       </ControlGraph1_DeclarationAction>
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-21" isRequired="true" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="21" />
   </ActionScheme>
+  <DeletionScheme id="SYL-40" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="40">
+    <BehaviourControlGraph_EmptyControlGraph id="SYL-41" userID="SYL" flexoID="41" />
+  </DeletionScheme>
 </VirtualModel>

@@ -7,10 +7,18 @@
 @VirtualModel(uri="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml")
 public class StateChartModel {
 
-  public InitialTransition initialTransition;
+  @GetSetProperty(value="initialTransition", access=get)  
+  public InitialTransition getInitialTransition {  
+    return this.SelectUniqueFlexoConceptInstance(type=InitialTransition);  
+  }
 
   @CreationScheme  
   StateChartModel:create() {  
+  
+  }  
+
+  @DeletionScheme  
+  Void delete() {  
   
   }  
 
@@ -19,6 +27,14 @@ public class StateChartModel {
   public class State {  
   
     public String name;  
+    @GetSetProperty(value="incomingTransitions", access=get)    
+    public List<Transition> getIncomingTransitions {    
+      return container.SelectFlexoConceptInstance(type=Transition,where=where=(selected.to = this));    
+    }  
+    @GetSetProperty(value="outgoingTransitions", access=get)    
+    public List<Transition> getOutgoingTransitions {    
+      return container.SelectFlexoConceptInstance(type=Transition,where=where=(selected.from = this));    
+    }  
   
     @CreationScheme    
     State:create(String aName) {    

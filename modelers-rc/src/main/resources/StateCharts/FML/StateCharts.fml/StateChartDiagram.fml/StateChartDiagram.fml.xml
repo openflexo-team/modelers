@@ -3,13 +3,13 @@
   <FlexoConcept id="SYL-30" name="StateGR" userID="SYL" flexoID="30">
     <Inspector id="SYL-26" inspectorTitle="StateGR" userID="SYL" flexoID="26" />
     <ShapeRole id="SYL-50" previewHeight="35.26315789473684" previewY="82.36842105263158" previewX="93.40796019900498" previewWidth="63.18407960199006" exampleLabel="State" metamodelElementReference="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="50">
-      <GRSpec id="SYL-191" featureName="label" value="state.name" userID="SYL" flexoID="191" />
+      <GRSpec id="SYL-221" featureName="label" value="state.name" userID="SYL" flexoID="221" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-51" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State" cloningStrategy="Reference" cardinality="ZeroOne" name="state" userID="SYL" flexoID="51" />
     <DropScheme id="SYL-31" target="top" label="dropStateGRAtTopLevel" name="dropStateGRAtTopLevel" width="800" height="600" userID="SYL" flexoID="31">
       <BehaviourControlGraph_Sequence id="SYL-52" userID="SYL" flexoID="52">
         <ControlGraph2_AssignationAction id="SYL-33" assign="state" ownerContext="controlGraph2" userID="SYL" flexoID="33">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-35" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State.create(aName)" receiver="model" userID="SYL" flexoID="35">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-35" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State.create(aName)" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#State" receiver="model" userID="SYL" flexoID="35">
             <AddFlexoConceptInstanceParameter id="SYL-38" paramName="aName" value="&quot;State&quot;" userID="SYL" flexoID="38" />
           </AssignableAction_AddFlexoConceptInstance>
         </ControlGraph2_AssignationAction>
@@ -22,13 +22,13 @@
   <FlexoConcept id="SYL-58" name="TransitionGR" userID="SYL" flexoID="58">
     <Inspector id="SYL-54" inspectorTitle="TransitionGR" userID="SYL" flexoID="54" />
     <ConnectorRole id="SYL-63" exampleLabel="transition" metamodelElementReference="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="63">
-      <GRSpec id="SYL-192" featureName="label" value="transition.label" userID="SYL" flexoID="192" />
+      <GRSpec id="SYL-222" featureName="label" value="transition.label" userID="SYL" flexoID="222" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-64" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroOne" name="transition" userID="SYL" flexoID="64" />
     <LinkScheme id="SYL-59" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml#StateGR" toTarget="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml#StateGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" label="linkStateGRToStateGR" name="linkStateGRToStateGR" width="800" height="600" userID="SYL" flexoID="59">
       <BehaviourControlGraph_Sequence id="SYL-68" userID="SYL" flexoID="68">
         <ControlGraph2_AssignationAction id="SYL-66" assign="transition" ownerContext="controlGraph2" userID="SYL" flexoID="66">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-67" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition.create(aFrom,aTo,aLabel)" receiver="model" userID="SYL" flexoID="67">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-67" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition.create(aFrom,aTo,aLabel)" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition" receiver="model" userID="SYL" flexoID="67">
             <AddFlexoConceptInstanceParameter id="SYL-71" paramName="aFrom" value="fromTarget.state" userID="SYL" flexoID="71" />
             <AddFlexoConceptInstanceParameter id="SYL-72" paramName="aTo" value="toTarget.state" userID="SYL" flexoID="72" />
             <AddFlexoConceptInstanceParameter id="SYL-73" paramName="aLabel" value="&quot;transition&quot;" userID="SYL" flexoID="73" />
@@ -46,7 +46,7 @@
     <FlexoConceptInstanceRole id="SYL-103" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition" cloningStrategy="Reference" cardinality="ZeroOne" name="initialTransition" userID="SYL" flexoID="103" />
     <ConnectorRole id="SYL-117" exampleLabel="init" metamodelElementReference="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="117">
       <StartShape_ShapeRole idref="SYL-100" />
-      <GRSpec id="SYL-193" featureName="label" value="initialTransition.label" userID="SYL" flexoID="193" />
+      <GRSpec id="SYL-223" featureName="label" value="initialTransition.label" userID="SYL" flexoID="223" />
     </ConnectorRole>
     <DropScheme id="SYL-88" target="http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml#StateGR" label="dropInitialTransitionGR" name="dropInitialTransitionGR" width="800" height="600" userID="SYL" flexoID="88">
       <BehaviourControlGraph_Sequence id="SYL-152" ownerContext="controlGraph2" userID="SYL" flexoID="152">
@@ -65,7 +65,7 @@
           </ControlGraph1_AssignationAction>
         </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-105" assign="initialTransition" ownerContext="controlGraph1" userID="SYL" flexoID="105">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-106" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition.create(aTo,aLabel)" receiver="model" userID="SYL" flexoID="106">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-106" creationSchemeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition.create(aTo,aLabel)" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition" receiver="model" userID="SYL" flexoID="106">
             <AddFlexoConceptInstanceParameter id="SYL-160" paramName="aTo" value="target.state" userID="SYL" flexoID="160" />
             <AddFlexoConceptInstanceParameter id="SYL-161" paramName="aLabel" value="&quot;init&quot;" userID="SYL" flexoID="161" />
           </AssignableAction_AddFlexoConceptInstance>

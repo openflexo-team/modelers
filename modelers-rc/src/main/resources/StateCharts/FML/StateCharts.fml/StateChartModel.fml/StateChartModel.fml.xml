@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml" version="0.1" name="StateChartModel" author="sylvain" userID="SYL" flexoID="5">
   <FlexoConcept id="SYL-14" name="State" userID="SYL" flexoID="14">
-    <Inspector id="SYL-15" inspectorTitle="State" userID="SYL" flexoID="15" />
+    <Inspector id="SYL-15" renderer="(&quot;State:&quot; + name)" inspectorTitle="State" userID="SYL" flexoID="15" />
     <PrimitiveRole id="SYL-30" primitiveType="String" cloningStrategy="Clone" cardinality="One" name="name" userID="SYL" flexoID="30" />
+    <GetSetProperty id="SYL-137" name="incomingTransitions" userID="SYL" flexoID="137">
+      <SetControlGraph_EmptyControlGraph id="SYL-147" ownerContext="setControlGraph" userID="SYL" flexoID="147" />
+      <GetControlGraph_ReturnStatement id="SYL-141" ownerContext="getControlGraph" userID="SYL" flexoID="141">
+        <AssignableAction_SelectFlexoConceptInstance id="SYL-139" container="container" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition" receiver="container" userID="SYL" flexoID="139">
+          <Condition id="SYL-140" condition="(selected.to = this)" userID="SYL" flexoID="140" />
+        </AssignableAction_SelectFlexoConceptInstance>
+      </GetControlGraph_ReturnStatement>
+    </GetSetProperty>
+    <GetSetProperty id="SYL-142" name="outgoingTransitions" userID="SYL" flexoID="142">
+      <SetControlGraph_EmptyControlGraph id="SYL-148" ownerContext="setControlGraph" userID="SYL" flexoID="148" />
+      <GetControlGraph_ReturnStatement id="SYL-146" ownerContext="getControlGraph" userID="SYL" flexoID="146">
+        <AssignableAction_SelectFlexoConceptInstance id="SYL-144" container="container" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#Transition" receiver="container" userID="SYL" flexoID="144">
+          <Condition id="SYL-145" condition="(selected.from = this)" userID="SYL" flexoID="145" />
+        </AssignableAction_SelectFlexoConceptInstance>
+      </GetControlGraph_ReturnStatement>
+    </GetSetProperty>
     <CreationScheme id="SYL-19" label="create" name="create" width="800" height="600" userID="SYL" flexoID="19">
       <BehaviourControlGraph_AssignationAction id="SYL-32" assign="name" userID="SYL" flexoID="32">
         <AssignableAction_ExpressionAction id="SYL-31" expression="parameters.aName" userID="SYL" flexoID="31" />
@@ -16,7 +32,7 @@
     </DeletionScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-22" name="Transition" userID="SYL" flexoID="22">
-    <Inspector id="SYL-21" inspectorTitle="Transition" userID="SYL" flexoID="21">
+    <Inspector id="SYL-21" renderer="(&quot;Transition:&quot; + label)" inspectorTitle="Transition" userID="SYL" flexoID="21">
       <InspectorEntry id="SYL-44" widget="CUSTOM_WIDGET" data="from" name="from" label="from" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="44" />
       <InspectorEntry id="SYL-45" widget="CUSTOM_WIDGET" data="to" name="to" label="to" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="45" />
     </Inspector>
@@ -66,8 +82,16 @@
     </DeletionScheme>
   </FlexoConcept>
   <Inspector id="SYL-1" inspectorTitle="StateChartModel" userID="SYL" flexoID="1" />
-  <FlexoConceptInstanceRole id="SYL-60" virtualModelInstance="this" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition" cloningStrategy="Reference" cardinality="ZeroOne" name="initialTransition" userID="SYL" flexoID="60" />
+  <GetSetProperty id="SYL-104" name="initialTransition" userID="SYL" flexoID="104">
+    <SetControlGraph_EmptyControlGraph id="SYL-108" ownerContext="setControlGraph" userID="SYL" flexoID="108" />
+    <GetControlGraph_ReturnStatement id="SYL-124" ownerContext="getControlGraph" userID="SYL" flexoID="124">
+      <AssignableAction_SelectUniqueFlexoConceptInstance id="SYL-123" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml#InitialTransition" receiver="this" ownerContext="getControlGraph" userID="SYL" flexoID="123" />
+    </GetControlGraph_ReturnStatement>
+  </GetSetProperty>
   <CreationScheme id="SYL-9" label="create" name="create" width="800" height="600" userID="SYL" flexoID="9">
     <BehaviourControlGraph_EmptyControlGraph id="SYL-10" userID="SYL" flexoID="10" />
   </CreationScheme>
+  <DeletionScheme id="SYL-161" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="161">
+    <BehaviourControlGraph_EmptyControlGraph id="SYL-162" userID="SYL" flexoID="162" />
+  </DeletionScheme>
 </VirtualModel>
