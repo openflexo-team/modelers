@@ -1,0 +1,91 @@
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml")
+public class StateChartModel {
+
+  @GetSetProperty(value="initialTransition", access=get)  
+  public InitialTransition getInitialTransition {  
+    return this.SelectUniqueFlexoConceptInstance(type=InitialTransition);  
+  }
+
+  @CreationScheme  
+  StateChartModel:create() {  
+  
+  }  
+
+  @DeletionScheme  
+  Void delete() {  
+  
+  }  
+
+
+  @FlexoConcept  
+  public class State {  
+  
+    public String name;  
+    @GetSetProperty(value="incomingTransitions", access=get)    
+    public List<Transition> getIncomingTransitions {    
+      return container.SelectFlexoConceptInstance(type=Transition,where=where=(selected.to = this));    
+    }  
+    @GetSetProperty(value="outgoingTransitions", access=get)    
+    public List<Transition> getOutgoingTransitions {    
+      return container.SelectFlexoConceptInstance(type=Transition,where=where=(selected.from = this));    
+    }  
+  
+    @CreationScheme    
+    State:create(String aName) {    
+      name = parameters.aName;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      name = null;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Transition {  
+  
+    public State from;  
+    public State to;  
+    public String label;  
+  
+    @CreationScheme    
+    Transition:create(UndefinedFlexoConceptInstanceType<null> aFrom, UndefinedFlexoConceptInstanceType<null> aTo, String aLabel) {    
+      from = parameters.aFrom;      
+      to = parameters.aTo;      
+      label = parameters.aLabel;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class InitialTransition {  
+  
+    public State to;  
+    public String label;  
+  
+    @CreationScheme    
+    InitialTransition:create(State aTo, String aLabel) {    
+      to = parameters.aTo;      
+      label = parameters.aLabel;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+}
