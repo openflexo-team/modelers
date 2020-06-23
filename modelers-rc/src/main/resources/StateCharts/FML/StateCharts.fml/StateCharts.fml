@@ -1,0 +1,27 @@
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://openflexo.org/modellers/StateCharts.fml")
+public class StateCharts {
+
+  @CreationScheme  
+  StateCharts:create() {  
+  
+  }  
+
+  @ActionScheme  
+  public StateChartDiagram createStateChartDiagram(String name) {  
+    StateChartModel model = StateChartModel.create();    
+    StateChartDiagram editor = StateChartDiagram.create(parameters.name,model);    
+    return editor;  
+  }  
+
+  @DeletionScheme  
+  Void delete() {  
+  
+  }  
+
+}
