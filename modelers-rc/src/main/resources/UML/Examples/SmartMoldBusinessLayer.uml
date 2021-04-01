@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Bmm="https://www.eclipse.org/papyrus/BMM/0.7.0/" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_ektKgF4uEeaUVv6tQnR_4w" name="RootElement">
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_ofWOsF4uEeaUVv6tQnR_4w" name="Georges Pernoud" fileName=""/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_HBG18F4xEeaUVv6tQnR_4w" name="OrganizationUnitDefinesEnd1" client="_ofWOsF4uEeaUVv6tQnR_4w" supplier="_1Z2EUF4wEeaUVv6tQnR_4w"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ocavIF4xEeaUVv6tQnR_4w" name="End">
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_1Z2EUF4wEeaUVv6tQnR_4w" name="Be a cutting edge equipment producer for the plastics industry" fileName=""/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_KK7iEF47EeaUVv6tQnR_4w" name="Increase productivity" fileName=""/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_QffQYF47EeaUVv6tQnR_4w" name="GoalAmplifiesVision1" client="_KK7iEF47EeaUVv6tQnR_4w" supplier="_1Z2EUF4wEeaUVv6tQnR_4w"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_0AR6QF45EeaUVv6tQnR_4w" name="Reduce cost of guarantee" fileName=""/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_5I0hYF45EeaUVv6tQnR_4w" name="Reduce cost of maintenance" fileName=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_G2K70F4yEeaUVv6tQnR_4w" name="Design CPPS for equipment monitoring" fileName=""/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_TmTXsF44EeaUVv6tQnR_4w" name="OrganizationUnitEstablishesMeans1" client="_ofWOsF4uEeaUVv6tQnR_4w" supplier="_MNIZcF4yEeaUVv6tQnR_4w"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3iVlYF4xEeaUVv6tQnR_4w" name="Means">
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_MNIZcF4yEeaUVv6tQnR_4w" name="Create injection moulding tools" fileName=""/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dytJAF4yEeaUVv6tQnR_4w" name="MissionMakesOperativeVision1" client="_MNIZcF4yEeaUVv6tQnR_4w" supplier="_1Z2EUF4wEeaUVv6tQnR_4w"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_odg6UF48EeaUVv6tQnR_4w" name="To monitor usage of moulding tools"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_xtbmgF48EeaUVv6tQnR_4w" name="Be present at the client's premises to observe tool usage"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_CbKvIF49EeaUVv6tQnR_4w" name="StrategyIsAComponentfOfThe_PlanForMIssion1" client="_xtbmgF48EeaUVv6tQnR_4w" supplier="_MNIZcF4yEeaUVv6tQnR_4w"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_EPU0YF49EeaUVv6tQnR_4w" name="TacticImplementsStrategy1" client="_odg6UF48EeaUVv6tQnR_4w" supplier="_xtbmgF48EeaUVv6tQnR_4w"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_LMmvkF49EeaUVv6tQnR_4w" name="" client="_xtbmgF48EeaUVv6tQnR_4w" supplier="_KK7iEF47EeaUVv6tQnR_4w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_SRQI8F47EeaUVv6tQnR_4w" name="ObjectiveQuantitiesGoal1" client="_0AR6QF45EeaUVv6tQnR_4w" supplier="_KK7iEF47EeaUVv6tQnR_4w"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_WygGkF47EeaUVv6tQnR_4w" name="ObjectiveQuantitiesGoal2" client="_5I0hYF45EeaUVv6tQnR_4w" supplier="_KK7iEF47EeaUVv6tQnR_4w"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_UFXgAF49EeaUVv6tQnR_4w" name="BusinessProcessRealizesCourseOfAction1" client="_G2K70F4yEeaUVv6tQnR_4w" supplier="_odg6UF48EeaUVv6tQnR_4w"/>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_b362UF49EeaUVv6tQnR_4w" name="Set up and deploy monitoring CPPS" fileName=""/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_p4BUAF49EeaUVv6tQnR_4w" name="BusinessProcessRealizesCourseOfAction2" client="_b362UF49EeaUVv6tQnR_4w" supplier="_odg6UF48EeaUVv6tQnR_4w"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ex_YkF4uEeaUVv6tQnR_4w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ex_YkV4uEeaUVv6tQnR_4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="https://www.eclipse.org/papyrus/BMM/0.7.0/#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BMM_PROFILE_1.3/Bmm.profile.uml#_bNz28BEEEeWdY8_QZO32Xg"/>
+    </profileApplication>
+  </uml:Model>
+  <Bmm:OrganizationUnit xmi:id="_onVtEF4uEeaUVv6tQnR_4w" description="" base_Artifact="_ofWOsF4uEeaUVv6tQnR_4w"/>
+  <Bmm:Vision xmi:id="_1avcMF4wEeaUVv6tQnR_4w" description="to place itself at the core of the evolution of electric machines in plastics industry " base_Artifact="_1Z2EUF4wEeaUVv6tQnR_4w"/>
+  <Bmm:OrganizationUnitDefinesEnd xmi:id="_HDmJQF4xEeaUVv6tQnR_4w" base_Dependency="_HBG18F4xEeaUVv6tQnR_4w"/>
+  <Bmm:BusinessProcess xmi:id="_G3gYkF4yEeaUVv6tQnR_4w" base_Artifact="_G2K70F4yEeaUVv6tQnR_4w"/>
+  <Bmm:Mission xmi:id="_MOx_QF4yEeaUVv6tQnR_4w" description="is specialized in injection moulding tooling for thermoplastic parts" base_Artifact="_MNIZcF4yEeaUVv6tQnR_4w"/>
+  <Bmm:MissionMakesOperativeVision xmi:id="_d14Y0F4yEeaUVv6tQnR_4w" base_Dependency="_dytJAF4yEeaUVv6tQnR_4w"/>
+  <Bmm:OrganizationUnitEstablishesMeans xmi:id="_TqLyIF44EeaUVv6tQnR_4w" base_Dependency="_TmTXsF44EeaUVv6tQnR_4w"/>
+  <Bmm:Objective xmi:id="_0DK2MF45EeaUVv6tQnR_4w" description="Save 15% of costs in guarantee subprocess" base_Artifact="_0AR6QF45EeaUVv6tQnR_4w"/>
+  <Bmm:Objective xmi:id="_5MVIYF45EeaUVv6tQnR_4w" description="Reduce average cost of maintenance operations by end of 2016&#xD;&#xA;" base_Artifact="_5I0hYF45EeaUVv6tQnR_4w"/>
+  <Bmm:Goal xmi:id="_KM4p4F47EeaUVv6tQnR_4w" base_Artifact="_KK7iEF47EeaUVv6tQnR_4w"/>
+  <Bmm:GoalAmplifiesVision xmi:id="_Qj2L8F47EeaUVv6tQnR_4w" base_Dependency="_QffQYF47EeaUVv6tQnR_4w"/>
+  <Bmm:ObjectiveQuantitiesGoal xmi:id="_SVV-wF47EeaUVv6tQnR_4w" base_Dependency="_SRQI8F47EeaUVv6tQnR_4w"/>
+  <Bmm:ObjectiveQuantitiesGoal xmi:id="_W2vtYF47EeaUVv6tQnR_4w" base_Dependency="_WygGkF47EeaUVv6tQnR_4w"/>
+  <Bmm:Tactic xmi:id="_oejcIF48EeaUVv6tQnR_4w" base_Artifact="_odg6UF48EeaUVv6tQnR_4w"/>
+  <Bmm:Strategy xmi:id="_xwJjUF48EeaUVv6tQnR_4w" base_Artifact="_xtbmgF48EeaUVv6tQnR_4w"/>
+  <Bmm:StrategyIsAComponentfOfThe_PlanForMIssion xmi:id="_CeKYwF49EeaUVv6tQnR_4w" base_Dependency="_CbKvIF49EeaUVv6tQnR_4w"/>
+  <Bmm:TacticImplementsStrategy xmi:id="_ETp6wF49EeaUVv6tQnR_4w" base_Dependency="_EPU0YF49EeaUVv6tQnR_4w"/>
+  <Bmm:CourseOfActionChannelsEffortsTowardsDesiredResult xmi:id="_LRa-IF49EeaUVv6tQnR_4w" base_Dependency="_LMmvkF49EeaUVv6tQnR_4w"/>
+  <Bmm:BusinessProcessRealizesCourseOfAction xmi:id="_UIfsgF49EeaUVv6tQnR_4w" base_Dependency="_UFXgAF49EeaUVv6tQnR_4w"/>
+  <Bmm:BusinessProcess xmi:id="_b5aEEF49EeaUVv6tQnR_4w" base_Artifact="_b362UF49EeaUVv6tQnR_4w"/>
+  <Bmm:BusinessProcessRealizesCourseOfAction xmi:id="_p6vQ0F49EeaUVv6tQnR_4w" base_Dependency="_p4BUAF49EeaUVv6tQnR_4w"/>
+</xmi:XMI>

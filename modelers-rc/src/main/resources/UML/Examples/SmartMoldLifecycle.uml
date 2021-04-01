@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:BPMNProfile="http://www.omg.org/spec/BPMNProfile/20121112/" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_ZT3ngHBMEea16PgNTbuM9w" name="RootElement">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_ZfAggHBMEea16PgNTbuM9w" name="SmartMoldLifecycle" node="_avl-oHBMEea16PgNTbuM9w _doyZUHBMEea16PgNTbuM9w _i8o4kHBMEea16PgNTbuM9w _xW5isHBMEea16PgNTbuM9w _8WbyYHBMEea16PgNTbuM9w _fnpX0HD-Eea48LLFszjKaQ _JliWEHD_Eea48LLFszjKaQ _pGTOIHD_Eea48LLFszjKaQ">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_gQrooHBMEea16PgNTbuM9w" target="_doyZUHBMEea16PgNTbuM9w" source="_avl-oHBMEea16PgNTbuM9w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_lUaBMHBMEea16PgNTbuM9w" target="_i8o4kHBMEea16PgNTbuM9w" source="_doyZUHBMEea16PgNTbuM9w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_z0-HoHBMEea16PgNTbuM9w" target="_xW5isHBMEea16PgNTbuM9w" source="_i8o4kHBMEea16PgNTbuM9w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Z7a00HD-Eea48LLFszjKaQ" target="_8WbyYHBMEea16PgNTbuM9w" source="_xW5isHBMEea16PgNTbuM9w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_CTx_sHD_Eea48LLFszjKaQ" target="_fnpX0HD-Eea48LLFszjKaQ" source="_xW5isHBMEea16PgNTbuM9w"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_OtB0UHD_Eea48LLFszjKaQ" target="_JliWEHD_Eea48LLFszjKaQ" source="_fnpX0HD-Eea48LLFszjKaQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_mks0EHD_Eea48LLFszjKaQ" target="_i8o4kHBMEea16PgNTbuM9w" source="_JliWEHD_Eea48LLFszjKaQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_qgPckHD_Eea48LLFszjKaQ" target="_pGTOIHD_Eea48LLFszjKaQ" source="_8WbyYHBMEea16PgNTbuM9w"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_avl-oHBMEea16PgNTbuM9w" name="InitialNode1" outgoing="_gQrooHBMEea16PgNTbuM9w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_doyZUHBMEea16PgNTbuM9w" name="Design and Development" incoming="_gQrooHBMEea16PgNTbuM9w" outgoing="_lUaBMHBMEea16PgNTbuM9w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_i8o4kHBMEea16PgNTbuM9w" name="Transportation to Client's premises" incoming="_lUaBMHBMEea16PgNTbuM9w _mks0EHD_Eea48LLFszjKaQ" outgoing="_z0-HoHBMEea16PgNTbuM9w"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xW5isHBMEea16PgNTbuM9w" name="Set up and Production use" incoming="_z0-HoHBMEea16PgNTbuM9w" outgoing="_Z7a00HD-Eea48LLFszjKaQ _CTx_sHD_Eea48LLFszjKaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_8WbyYHBMEea16PgNTbuM9w" name="Decommissioning and Recycling" incoming="_Z7a00HD-Eea48LLFszjKaQ" outgoing="_qgPckHD_Eea48LLFszjKaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_fnpX0HD-Eea48LLFszjKaQ" name="Transport to moldmaker's premises" incoming="_CTx_sHD_Eea48LLFszjKaQ" outgoing="_OtB0UHD_Eea48LLFszjKaQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_JliWEHD_Eea48LLFszjKaQ" name="Perform maintenance" incoming="_OtB0UHD_Eea48LLFszjKaQ" outgoing="_mks0EHD_Eea48LLFszjKaQ"/>
+      <node xmi:type="uml:FlowFinalNode" xmi:id="_pGTOIHD_Eea48LLFszjKaQ" name="FlowFinalNode1" incoming="_qgPckHD_Eea48LLFszjKaQ"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZdxKYHBMEea16PgNTbuM9w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZdxxcHBMEea16PgNTbuM9w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.omg.org/spec/BPMNProfile/20121112/#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BPMN_PROF/bpmn.profile.uml#_wrG1oHwkEeOWLfCz6n-rOA"/>
+    </profileApplication>
+  </uml:Model>
+  <BPMNProfile:BPMNProcess xmi:id="_ZfVQoHBMEea16PgNTbuM9w" base_Element="_ZfAggHBMEea16PgNTbuM9w" base_PackageableElement="_ZfAggHBMEea16PgNTbuM9w" base_Behavior="_ZfAggHBMEea16PgNTbuM9w" base_Activity="_ZfAggHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:StartEvent xmi:id="_avzaAHBMEea16PgNTbuM9w" base_Element="_avl-oHBMEea16PgNTbuM9w" base_ActivityNode="_avl-oHBMEea16PgNTbuM9w" base_InitialNode="_avl-oHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:Task xmi:id="_do7jQHBMEea16PgNTbuM9w" base_Element="_doyZUHBMEea16PgNTbuM9w" base_ActivityNode="_doyZUHBMEea16PgNTbuM9w" base_Action="_doyZUHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:SequenceFlow xmi:id="_gREDIHBMEea16PgNTbuM9w" base_Element="_gQrooHBMEea16PgNTbuM9w" base_ControlFlow="_gQrooHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:Task xmi:id="_i86lYHBMEea16PgNTbuM9w" base_Element="_i8o4kHBMEea16PgNTbuM9w" base_ActivityNode="_i8o4kHBMEea16PgNTbuM9w" base_Action="_i8o4kHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:SequenceFlow xmi:id="_lUs8IHBMEea16PgNTbuM9w" base_Element="_lUaBMHBMEea16PgNTbuM9w" base_ControlFlow="_lUaBMHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:Task xmi:id="_xXNEsHBMEea16PgNTbuM9w" base_Element="_xW5isHBMEea16PgNTbuM9w" base_ActivityNode="_xW5isHBMEea16PgNTbuM9w" base_Action="_xW5isHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:SequenceFlow xmi:id="_z1OmUHBMEea16PgNTbuM9w" base_Element="_z0-HoHBMEea16PgNTbuM9w" base_ControlFlow="_z0-HoHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:Task xmi:id="_8Wqb4HBMEea16PgNTbuM9w" base_Element="_8WbyYHBMEea16PgNTbuM9w" base_ActivityNode="_8WbyYHBMEea16PgNTbuM9w" base_Action="_8WbyYHBMEea16PgNTbuM9w"/>
+  <BPMNProfile:SequenceFlow xmi:id="_Z8nHoHD-Eea48LLFszjKaQ" base_Element="_Z7a00HD-Eea48LLFszjKaQ" base_ControlFlow="_Z7a00HD-Eea48LLFszjKaQ"/>
+  <BPMNProfile:Task xmi:id="_foPNsHD-Eea48LLFszjKaQ" base_Element="_fnpX0HD-Eea48LLFszjKaQ" base_ActivityNode="_fnpX0HD-Eea48LLFszjKaQ" base_Action="_fnpX0HD-Eea48LLFszjKaQ"/>
+  <BPMNProfile:SequenceFlow xmi:id="_CUX1kHD_Eea48LLFszjKaQ" base_Element="_CTx_sHD_Eea48LLFszjKaQ" base_ControlFlow="_CTx_sHD_Eea48LLFszjKaQ"/>
+  <BPMNProfile:Task xmi:id="_Jl_CAHD_Eea48LLFszjKaQ" base_Element="_JliWEHD_Eea48LLFszjKaQ" base_ActivityNode="_JliWEHD_Eea48LLFszjKaQ" base_Action="_JliWEHD_Eea48LLFszjKaQ"/>
+  <BPMNProfile:SequenceFlow xmi:id="_OtoRQHD_Eea48LLFszjKaQ" base_Element="_OtB0UHD_Eea48LLFszjKaQ" base_ControlFlow="_OtB0UHD_Eea48LLFszjKaQ"/>
+  <BPMNProfile:SequenceFlow xmi:id="_mk_vAHD_Eea48LLFszjKaQ" base_Element="_mks0EHD_Eea48LLFszjKaQ" base_ControlFlow="_mks0EHD_Eea48LLFszjKaQ"/>
+  <BPMNProfile:EndEvent xmi:id="_pGv6EHD_Eea48LLFszjKaQ" base_Element="_pGTOIHD_Eea48LLFszjKaQ" base_ActivityNode="_pGTOIHD_Eea48LLFszjKaQ" base_FlowFinalNode="_pGTOIHD_Eea48LLFszjKaQ" base_FinalNode="_pGTOIHD_Eea48LLFszjKaQ"/>
+  <BPMNProfile:SequenceFlow xmi:id="_qgi-kHD_Eea48LLFszjKaQ" base_Element="_qgPckHD_Eea48LLFszjKaQ" base_ControlFlow="_qgPckHD_Eea48LLFszjKaQ"/>
+</xmi:XMI>
