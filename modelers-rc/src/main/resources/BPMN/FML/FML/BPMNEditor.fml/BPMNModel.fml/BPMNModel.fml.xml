@@ -176,7 +176,7 @@
   <FlexoConcept idref="SYL-174" />
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.gina.FIBComponentModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="BPMNModel" userID="SYL" flexoID="1" />
-  <FIBComponentModelSlot id="SYL-240" templateComponentURI="http://openflexo.org/modellers/BPMN/Fib/BPMNModelUI.fib" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="ui" userID="SYL" flexoID="240">
+  <FIBComponentModelSlot id="SYL-240" templateComponentURI="http://openflexo.org/modellers/BPMN/FML/Fib/BPMNModelUI.fib" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="ui" userID="SYL" flexoID="240">
     <VariableAssignment id="SYL-241" variableType="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml&gt;" variable="data" value="this" userID="SYL" flexoID="241" />
   </FIBComponentModelSlot>
   <GetSetProperty id="SYL-307" name="rootProcesses" userID="SYL" flexoID="307">
