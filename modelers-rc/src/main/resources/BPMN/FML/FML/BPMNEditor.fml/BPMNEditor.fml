@@ -16,12 +16,10 @@ public class BPMNEditor {
     return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
   }
   public GINAFIBComponent ui;
-  ModelSlot bpmn type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_d5 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNEditor:create(EMFModelResource bpmnResource) {  
-    bpmn = parameters.bpmnResource.resourceData;    
-    model = BPMNModel.create();    
+    model = BPMNModel.create(parameters.bpmnResource);    
     ui = ui.ConfigureGINAFIBComponent();  
   }  
 

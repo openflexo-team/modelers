@@ -7,45 +7,37 @@ use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
 @VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml")
 public class ProcessDiagram {
 
-  @TypedDiagramModelSlot(metamodel="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification",cardinality=ZeroOne,readOnly=false)  
-  public DiagramType<ProcessDiagram> diagram;
-  @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)  
-  public FlexoConceptInstanceType<Process> process;
+  public Diagram diagram;
+  public Process process;
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_bd {    
-    };    
-    process = Process.create(parameters.name,null);  
+    diagram = CreateDiagram();    
+    process = Process.create();  
   }  
 
   @CreationScheme  
-  ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_bd {    
-    };    
-    process = Process.create(parameters.name,parameters.parentProcess);  
+  ProcessDiagram:createNewSubProcess(String name, Process parentProcess) {  
+    diagram = CreateDiagram();    
+    process = Process.create();  
   }  
 
   @ActionScheme  
-  public VirtualModelInstanceType<ProcessDiagram> newSubProcess(String processName) {  
+  public ProcessDiagram newSubProcess(String processName) {  
     return ProcessDiagram.createNewSubProcess(parameters.processName,this.process);  
   }  
 
   @DeletionScheme  
   Void delete() {  
-    diagram.delete();  
+    delete diagram;  
   }  
 
 
   @FlexoConcept  
   public class ActivityGR extends TransitionEmitterGR,TransitionReceiverGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Activity> activity;  
+    public DiagramShape shape;  
+    public Activity activity;  
   
     @DropScheme    
     ActivityGR:dropActivityGRAtTopLevel() {    
@@ -58,12 +50,8 @@ public class ProcessDiagram {
   @FlexoConcept  
   public class BeginActivityGR extends TransitionEmitterGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<BeginActivity> activity;  
+    public DiagramShape shape;  
+    public BeginActivity activity;  
   
     @DropScheme    
     BeginActivityGR:dropBeginActivityGRAtTopLevel() {    
@@ -76,12 +64,8 @@ public class ProcessDiagram {
   @FlexoConcept  
   public class EndActivityGR extends TransitionReceiverGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<EndActivity> activity;  
+    public DiagramShape shape;  
+    public EndActivity activity;  
   
     @DropScheme    
     EndActivityGR:dropEndActivityGRAtTopLevel() {    
@@ -94,12 +78,8 @@ public class ProcessDiagram {
   @FlexoConcept  
   public class GatewayGR extends TransitionEmitterGR,TransitionReceiverGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = this.activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Gateway> activity;  
+    public DiagramShape shape;  
+    public Gateway activity;  
   
     @DropScheme    
     GatewayGR:dropGatewayGRAtTopLevel() {    
@@ -112,18 +92,15 @@ public class ProcessDiagram {
   @FlexoConcept  
   public class TransitionGR {  
   
-    @ConnectorRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramConnector connector {    
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Transition> transition;  
+    public DiagramConnector connector;  
+    public Transition transition;  
   
     @LinkScheme    
     TransitionGR:linkEmitterGRToReceiverGR() {    
       connector = diagram.AddConnector();      
       transition = Transition.create(fromTarget.activity,toTarget.activity);      
-      fromTarget.activity.outTransitions.FML::AddToList(transition)      
-      toTarget.activity.inTransitions.FML::AddToList(transition)    
+      fromTarget.activity.outTransitions.add(transition)      
+      toTarget.activity.inTransitions.add(transition)    
     }    
   
   }  
@@ -131,24 +108,24 @@ public class ProcessDiagram {
   @FlexoConcept  
   public class AbstractActivityGR {  
   
-    @AbstractProperty    
+      
     abstract DiagramShape shape;  
-    @AbstractProperty    
-    abstract FlexoConceptInstanceType<AbstractActivity> activity;  
+      
+    abstract AbstractActivity activity;  
   }  
 
   @FlexoConcept  
   public class TransitionEmitterGR extends AbstractActivityGR  {  
   
-    @AbstractProperty    
-    abstract FlexoConceptInstanceType<TransitionEmitter> activity;  
+      
+    abstract TransitionEmitter activity;  
   }  
 
   @FlexoConcept  
   public class TransitionReceiverGR extends AbstractActivityGR  {  
   
-    @AbstractProperty    
-    abstract FlexoConceptInstanceType<TransitionReceiver> activity;  
+      
+    abstract TransitionReceiver activity;  
   }  
 
 }

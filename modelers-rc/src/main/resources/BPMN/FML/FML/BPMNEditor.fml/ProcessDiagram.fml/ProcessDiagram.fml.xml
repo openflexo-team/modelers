@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" version="0.1" smallIconResource="../../../Icons/Process.png" name="ProcessDiagram" userID="SYL" flexoID="2">
-  <FMLLocalizedDictionary id="SYL-529" userID="SYL" flexoID="529">
-    <Localized id="SYL-562" lang="English" value="Activity name" key="activity_name" userID="SYL" flexoID="562" />
-    <Localized id="SYL-563" lang="French" value="activity_name" key="activity_name" userID="SYL" flexoID="563" />
-    <Localized id="SYL-564" lang="Dutch" value="activity_name" key="activity_name" userID="SYL" flexoID="564" />
-    <Localized id="SYL-565" lang="English" value="LinkEmitterGRToReceiverGR" key="linkEmitterGRToReceiverGR" userID="SYL" flexoID="565" />
-    <Localized id="SYL-566" lang="French" value="linkEmitterGRToReceiverGR" key="linkEmitterGRToReceiverGR" userID="SYL" flexoID="566" />
-    <Localized id="SYL-567" lang="Dutch" value="linkEmitterGRToReceiverGR" key="linkEmitterGRToReceiverGR" userID="SYL" flexoID="567" />
-    <Localized id="SYL-568" lang="English" value="ActivityGR" key="ActivityGR" userID="SYL" flexoID="568" />
-    <Localized id="SYL-569" lang="French" value="ActivityGR" key="ActivityGR" userID="SYL" flexoID="569" />
-    <Localized id="SYL-570" lang="Dutch" value="ActivityGR" key="ActivityGR" userID="SYL" flexoID="570" />
-    <Localized id="SYL-571" lang="English" value="EndActivityGR" key="EndActivityGR" userID="SYL" flexoID="571" />
-    <Localized id="SYL-572" lang="French" value="EndActivityGR" key="EndActivityGR" userID="SYL" flexoID="572" />
-    <Localized id="SYL-573" lang="Dutch" value="EndActivityGR" key="EndActivityGR" userID="SYL" flexoID="573" />
-    <Localized id="SYL-574" lang="English" value="GatewayGR" key="GatewayGR" userID="SYL" flexoID="574" />
-    <Localized id="SYL-575" lang="French" value="GatewayGR" key="GatewayGR" userID="SYL" flexoID="575" />
-    <Localized id="SYL-576" lang="Dutch" value="GatewayGR" key="GatewayGR" userID="SYL" flexoID="576" />
-  </FMLLocalizedDictionary>
   <FlexoConcept id="SYL-87" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionEmitterGR,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionReceiverGR" name="ActivityGR" userID="SYL" flexoID="87">
     <Inspector id="SYL-86" inspectorTitle="ActivityGR" userID="SYL" flexoID="86">
       <InspectorEntry id="SYL-120" widget="CUSTOM_WIDGET" data="activity.activityName" name="activity_name" label="activity_name" type="java.lang.String" userID="SYL" flexoID="120" />
     </Inspector>
     <ShapeRole id="SYL-91" previewHeight="63.99825783972124" previewY="68.00087108013938" previewX="55.431979368149584" previewWidth="139.13604126370083" exampleLabel="Activity" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="91">
-      <GRSpec id="SYL-706" featureName="label" value="activity.activityName" userID="SYL" flexoID="706" />
+      <GRSpec id="SYL-834" featureName="label" value="activity.activityName" userID="SYL" flexoID="834" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-92" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Activity" cloningStrategy="Reference" cardinality="ZeroOne" name="activity" userID="SYL" flexoID="92" />
-    <DropScheme id="SYL-93" target="top" name="dropActivityGRAtTopLevel" width="800" label="dropActivityGRAtTopLevel" height="600" userID="SYL" flexoID="93">
+    <DropScheme id="SYL-93" target="top" label="dropActivityGRAtTopLevel" name="dropActivityGRAtTopLevel" width="800" height="600" userID="SYL" flexoID="93">
       <BehaviourControlGraph_Sequence id="SYL-98" userID="SYL" flexoID="98">
         <ControlGraph2_AssignationAction id="SYL-95" assign="activity" ownerContext="controlGraph2" userID="SYL" flexoID="95">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-94" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Activity.create" receiver="model" userID="SYL" flexoID="94">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-94" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Activity.create(name)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Activity" receiver="model" userID="SYL" flexoID="94">
             <AddFlexoConceptInstanceParameter id="SYL-140" paramName="name" value="&quot;Activity&quot;" userID="SYL" flexoID="140" />
           </AssignableAction_AddFlexoConceptInstance>
         </ControlGraph2_AssignationAction>
@@ -43,13 +26,13 @@
       <InspectorEntry id="SYL-121" widget="CUSTOM_WIDGET" data="activity.activityName" name="label" label="label" type="java.lang.String" userID="SYL" flexoID="121" />
     </Inspector>
     <ShapeRole id="SYL-112" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="112">
-      <GRSpec id="SYL-707" featureName="label" value="activity.activityName" userID="SYL" flexoID="707" />
+      <GRSpec id="SYL-835" featureName="label" value="activity.activityName" userID="SYL" flexoID="835" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-113" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BeginActivity" cloningStrategy="Reference" cardinality="ZeroOne" name="activity" userID="SYL" flexoID="113" />
-    <DropScheme id="SYL-114" target="top" name="dropBeginActivityGRAtTopLevel" width="800" label="dropBeginActivityGRAtTopLevel" height="600" userID="SYL" flexoID="114">
+    <DropScheme id="SYL-114" target="top" label="dropBeginActivityGRAtTopLevel" name="dropBeginActivityGRAtTopLevel" width="800" height="600" userID="SYL" flexoID="114">
       <BehaviourControlGraph_Sequence id="SYL-119" userID="SYL" flexoID="119">
         <ControlGraph2_AssignationAction id="SYL-116" assign="activity" ownerContext="controlGraph2" userID="SYL" flexoID="116">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-115" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BeginActivity.create" receiver="model" userID="SYL" flexoID="115" />
+          <AssignableAction_AddFlexoConceptInstance id="SYL-115" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BeginActivity.create()" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BeginActivity" receiver="model" userID="SYL" flexoID="115" />
         </ControlGraph2_AssignationAction>
         <ControlGraph1_AssignationAction id="SYL-118" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="118">
           <AssignableAction_AddShape id="SYL-117" container="topLevel" receiver="diagram" userID="SYL" flexoID="117" />
@@ -60,13 +43,13 @@
   <FlexoConcept id="SYL-129" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionReceiverGR" name="EndActivityGR" userID="SYL" flexoID="129">
     <Inspector id="SYL-128" inspectorTitle="EndActivityGR" userID="SYL" flexoID="128" />
     <ShapeRole id="SYL-133" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="133">
-      <GRSpec id="SYL-708" featureName="label" value="activity.activityName" userID="SYL" flexoID="708" />
+      <GRSpec id="SYL-836" featureName="label" value="activity.activityName" userID="SYL" flexoID="836" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndActivity" cloningStrategy="Reference" cardinality="ZeroOne" name="activity" userID="SYL" flexoID="134" />
-    <DropScheme id="SYL-250" target="top" name="dropEndActivityGRAtTopLevel" width="800" label="dropEndActivityGRAtTopLevel" height="600" userID="SYL" flexoID="250">
+    <DropScheme id="SYL-250" target="top" label="dropEndActivityGRAtTopLevel" name="dropEndActivityGRAtTopLevel" width="800" height="600" userID="SYL" flexoID="250">
       <BehaviourControlGraph_Sequence id="SYL-265" userID="SYL" flexoID="265">
         <ControlGraph2_AssignationAction id="SYL-261" assign="activity" ownerContext="controlGraph2" userID="SYL" flexoID="261">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-260" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndActivity.create" receiver="model" userID="SYL" flexoID="260" />
+          <AssignableAction_AddFlexoConceptInstance id="SYL-260" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndActivity.create()" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndActivity" receiver="model" userID="SYL" flexoID="260" />
         </ControlGraph2_AssignationAction>
         <ControlGraph1_AssignationAction id="SYL-258" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="258">
           <AssignableAction_AddShape id="SYL-257" container="topLevel" receiver="diagram" userID="SYL" flexoID="257" />
@@ -77,13 +60,13 @@
   <FlexoConcept id="SYL-149" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionEmitterGR,http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionReceiverGR" name="GatewayGR" userID="SYL" flexoID="149">
     <Inspector id="SYL-148" inspectorTitle="GatewayGR" userID="SYL" flexoID="148" />
     <ShapeRole id="SYL-154" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="Condition ?" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_5" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="154">
-      <GRSpec id="SYL-709" featureName="label" value="this.activity.activityName" userID="SYL" flexoID="709" />
+      <GRSpec id="SYL-837" featureName="label" value="this.activity.activityName" userID="SYL" flexoID="837" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-155" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Gateway" cloningStrategy="Reference" cardinality="ZeroOne" name="activity" userID="SYL" flexoID="155" />
-    <DropScheme id="SYL-156" target="top" name="dropGatewayGRAtTopLevel" width="800" label="dropGatewayGRAtTopLevel" height="600" userID="SYL" flexoID="156">
+    <DropScheme id="SYL-156" target="top" label="dropGatewayGRAtTopLevel" name="dropGatewayGRAtTopLevel" width="800" height="600" userID="SYL" flexoID="156">
       <BehaviourControlGraph_Sequence id="SYL-161" userID="SYL" flexoID="161">
         <ControlGraph2_AssignationAction id="SYL-158" assign="activity" ownerContext="controlGraph2" userID="SYL" flexoID="158">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-157" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Gateway.create" receiver="model" userID="SYL" flexoID="157">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-157" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Gateway.create(condition)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Gateway" receiver="model" userID="SYL" flexoID="157">
             <AddFlexoConceptInstanceParameter id="SYL-141" paramName="condition" value="&quot;condition ?&quot;" userID="SYL" flexoID="141" />
           </AssignableAction_AddFlexoConceptInstance>
         </ControlGraph2_AssignationAction>
@@ -97,7 +80,7 @@
     <Inspector id="SYL-277" inspectorTitle="TransitionGR" userID="SYL" flexoID="277" />
     <ConnectorRole id="SYL-282" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="282" />
     <FlexoConceptInstanceRole id="SYL-283" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroOne" name="transition" userID="SYL" flexoID="283" />
-    <LinkScheme id="SYL-284" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionEmitterGR" toTarget="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionReceiverGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="linkEmitterGRToReceiverGR" width="800" label="linkEmitterGRToReceiverGR" height="600" userID="SYL" flexoID="284">
+    <LinkScheme id="SYL-284" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionEmitterGR" toTarget="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TransitionReceiverGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" label="linkEmitterGRToReceiverGR" name="linkEmitterGRToReceiverGR" width="800" height="600" userID="SYL" flexoID="284">
       <BehaviourControlGraph_Sequence id="SYL-289" userID="SYL" flexoID="289">
         <ControlGraph2_Sequence id="SYL-296" ownerContext="controlGraph2" userID="SYL" flexoID="296">
           <ControlGraph2_Sequence id="SYL-424" ownerContext="controlGraph2" userID="SYL" flexoID="424">
@@ -109,7 +92,7 @@
             </ControlGraph1_AddToListAction>
           </ControlGraph2_Sequence>
           <ControlGraph1_AssignationAction id="SYL-286" assign="transition" ownerContext="controlGraph1" userID="SYL" flexoID="286">
-            <AssignableAction_AddFlexoConceptInstance id="SYL-285" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition.create" receiver="model" userID="SYL" flexoID="285">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-285" container="process" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition.create(from,to)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" receiver="model" userID="SYL" flexoID="285">
               <AddFlexoConceptInstanceParameter id="SYL-175" paramName="from" value="fromTarget.activity" userID="SYL" flexoID="175" />
               <AddFlexoConceptInstanceParameter id="SYL-176" paramName="to" value="toTarget.activity" userID="SYL" flexoID="176" />
             </AssignableAction_AddFlexoConceptInstance>
@@ -151,45 +134,43 @@
     </FMLDiagramPaletteElementBinding>
   </TypedDiagramModelSlot>
   <FlexoConceptInstanceRole id="SYL-13" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process" cloningStrategy="Reference" cardinality="ZeroOne" name="process" userID="SYL" flexoID="13" />
-  <CreationScheme id="SYL-7" name="createNewProcess" width="800" label="init" height="600" userID="SYL" flexoID="7">
+  <CreationScheme id="SYL-7" label="init" name="createNewProcess" width="800" height="600" userID="SYL" flexoID="7">
     <BehaviourControlGraph_Sequence id="SYL-17" userID="SYL" flexoID="17">
       <ControlGraph2_AssignationAction id="SYL-16" assign="process" ownerContext="controlGraph2" userID="SYL" flexoID="16">
-        <AssignableAction_AddFlexoConceptInstance id="SYL-15" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process.create" receiver="model" userID="SYL" flexoID="15">
-          <AddFlexoConceptInstanceParameter id="SYL-81" paramName="name" value="parameters.name" userID="SYL" flexoID="81" />
-          <AddFlexoConceptInstanceParameter id="SYL-82" paramName="parentProcess" value="null" userID="SYL" flexoID="82" />
+        <AssignableAction_AddFlexoConceptInstance id="SYL-15" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process.create(aProcess)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process" receiver="model" userID="SYL" flexoID="15">
+          <AddFlexoConceptInstanceParameter id="SYL-865" paramName="aProcess" userID="SYL" flexoID="865" />
         </AssignableAction_AddFlexoConceptInstance>
       </ControlGraph2_AssignationAction>
       <ControlGraph1_AssignationAction id="SYL-9" assign="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="9">
-        <AssignableAction_CreateDiagram id="SYL-8" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.name" resourceCenter="this.resourceCenter" relativePath="/Diagrams" userID="SYL" flexoID="8" />
+        <AssignableAction_CreateDiagram id="SYL-8" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.name" resourceCenter="this.resourceCenter" relativePath="/Diagrams" dynamicRelativePath="&quot;/Diagrams&quot;" resourceName="parameters.name" userID="SYL" flexoID="8" />
       </ControlGraph1_AssignationAction>
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-18" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="18" />
   </CreationScheme>
-  <CreationScheme id="SYL-180" name="createNewSubProcess" width="800" label="init" height="600" userID="SYL" flexoID="180">
+  <CreationScheme id="SYL-180" label="init" name="createNewSubProcess" width="800" height="600" userID="SYL" flexoID="180">
     <BehaviourControlGraph_Sequence id="SYL-185" userID="SYL" flexoID="185">
       <ControlGraph2_AssignationAction id="SYL-182" assign="process" ownerContext="controlGraph2" userID="SYL" flexoID="182">
-        <AssignableAction_AddFlexoConceptInstance id="SYL-181" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process.create" receiver="model" userID="SYL" flexoID="181">
-          <AddFlexoConceptInstanceParameter id="SYL-170" paramName="name" value="parameters.name" userID="SYL" flexoID="170" />
-          <AddFlexoConceptInstanceParameter id="SYL-171" paramName="parentProcess" value="parameters.parentProcess" userID="SYL" flexoID="171" />
+        <AssignableAction_AddFlexoConceptInstance id="SYL-181" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process.create(aProcess)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process" receiver="model" userID="SYL" flexoID="181">
+          <AddFlexoConceptInstanceParameter id="SYL-866" paramName="aProcess" userID="SYL" flexoID="866" />
         </AssignableAction_AddFlexoConceptInstance>
       </ControlGraph2_AssignationAction>
       <ControlGraph1_AssignationAction id="SYL-184" assign="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="184">
-        <AssignableAction_CreateDiagram id="SYL-183" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.name" resourceCenter="this.resourceCenter" relativePath="/Diagrams" userID="SYL" flexoID="183" />
+        <AssignableAction_CreateDiagram id="SYL-183" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.name" resourceCenter="this.resourceCenter" relativePath="/Diagrams" dynamicRelativePath="&quot;/Diagrams&quot;" resourceName="parameters.name" userID="SYL" flexoID="183" />
       </ControlGraph1_AssignationAction>
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-186" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="186" />
     <GenericBehaviourParameter id="SYL-203" widget="CUSTOM_WIDGET" name="parentProcess" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" userID="SYL" flexoID="203" />
   </CreationScheme>
-  <ActionScheme id="SYL-451" visibility="Public" name="newSubProcess" width="800" label="newSubProcess" height="600" userID="SYL" flexoID="451">
+  <ActionScheme id="SYL-451" visibility="Public" label="newSubProcess" name="newSubProcess" width="800" height="600" userID="SYL" flexoID="451">
     <BehaviourControlGraph_ReturnStatement id="SYL-458" userID="SYL" flexoID="458">
-      <AssignableAction_AddVirtualModelInstance id="SYL-455" virtualModelInstanceName="parameters.processName" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.createNewSubProcess" receiver="container" userID="SYL" flexoID="455">
+      <AssignableAction_AddVirtualModelInstance id="SYL-455" virtualModelInstanceName="parameters.processName" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.createNewSubProcess(name,parentProcess)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="container" userID="SYL" flexoID="455">
         <AddFlexoConceptInstanceParameter id="SYL-456" paramName="name" value="parameters.processName" userID="SYL" flexoID="456" />
         <AddFlexoConceptInstanceParameter id="SYL-457" paramName="parentProcess" value="this.process" userID="SYL" flexoID="457" />
       </AssignableAction_AddVirtualModelInstance>
     </BehaviourControlGraph_ReturnStatement>
     <GenericBehaviourParameter id="SYL-459" isRequired="true" widget="TEXT_FIELD" name="processName" type="java.lang.String" userID="SYL" flexoID="459" />
   </ActionScheme>
-  <DeletionScheme id="SYL-671" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="671">
+  <DeletionScheme id="SYL-671" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="671">
     <BehaviourControlGraph_DeleteAction id="SYL-705" object="diagram" userID="SYL" flexoID="705" />
   </DeletionScheme>
 </VirtualModel>

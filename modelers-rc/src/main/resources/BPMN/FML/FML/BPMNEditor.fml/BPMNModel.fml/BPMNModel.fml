@@ -1,4 +1,5 @@
 use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
+use org.openflexo.technologyadapter.emf.EMFModelSlot;
 
 /**
  * 
@@ -8,68 +9,40 @@ use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
 @VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml")
 public class BPMNModel {
 
-  @FIBComponentModelSlot(cardinality=ZeroOne,readOnly=false)  
   public GINAFIBComponent ui;
-  @GetSetProperty(value="rootProcesses", access=get)  
-  public List<FlexoConceptInstanceType<Process>> getRootProcesses {  
-    return this.SelectFlexoConceptInstance(type=Process,where=where=(selected.parentProcess = null));  
-  }
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_9f conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
-  BPMNModel:create() {  
-    ui = ui.ConfigureGINAFIBComponent();  
+  BPMNModel:create(EMFModelResource bpmnResource) {  
+    ui = ui.ConfigureGINAFIBComponent();    
+    bpmnModel = parameters.bpmnResource.resourceData;    
+    IndividualOfClass(Definitions) definitions = SelectUniqueEMFObjectIndividual from bpmnModel as Definitions;    
+    log ("root elements = " + definitions.rootElements)    
+    for (rootElement : definitions.rootElements) {    
+      log ("coucou le " + rootElement)      
+      log ("type=" + rootElement.type.name)      
+      if (rootElement.type.name = "Process") {      
+        Process.create(rootElement)      
+      }    
+    }  
   }  
 
 
   @FlexoConcept  
   public class Process {  
   
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Process> parentProcess;  
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public String _name;  
-    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
-    public List<FlexoConceptInstanceType<Process>> childProcesses;  
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public String author;  
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public String version;  
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public Date lastUpdate;  
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
-    public String description;  
-    @GetSetProperty(value="name", access=get)    
-    public String getName {    
-      return _name;    
-    }    
-    @GetSetProperty(value="name", access=set)    
-    public void setName(String value) {    
-      VirtualModelInstanceType<ProcessDiagram> processDiagram = container.container.getProcessDiagram(this);      
-      log ("On change le nom pour " + value)      
-      log ("ProcessDiagram=" + processDiagram)      
-      processDiagram.resource.name = (value + ".fml.rt");      
-      processDiagram.diagram.resource.name = (value + ".diagram");      
-      _name = value;    
-    }  
+    FlexoRole eProcess as Individual conformTo Process from bpmnModel ;  
+      
+    public String name = ((eProcess.name != null) ? eProcess.name : "Root process");  
   
     @CreationScheme    
-    Process:create(String name, FlexoConceptInstanceType<Process> parentProcess) {    
-      _name = parameters.name;      
-      parentProcess = parameters.parentProcess;      
-      parentProcess.childProcesses.FML::AddToList(this)      
-      container.firePropertyChange rootProcesses    
+    Process:create(EMFObjectIndividual aProcess) {    
+      eProcess = parameters.aProcess;    
     }    
   
     @DeletionScheme    
     Void delete() {    
-      VirtualModelInstanceType<ProcessDiagram> processDiagram = container.container.getProcessDiagram(this);      
-      processDiagram.delete();      
-      if (parentProcess != null) {      
-        <not_implemented:[then] RemoveFromListAction()>        
-        parentProcess.firePropertyChange childProcesses      
-      } else {      
-        container.firePropertyChange rootProcesses      
-      }    
+      
     }    
   
     @NavigationScheme    
@@ -77,11 +50,16 @@ public class BPMNModel {
       
     }    
   
+    @ActionScheme    
+    public Void debug() {    
+      log ("process=" + eProcess)      
+      log ("name=" + name)    
+    }    
+  
   
     @FlexoConcept    
     public class AbstractActivity {    
       
-      @PrimitiveRole(cardinality=ZeroOne,readOnly=false)      
       public String activityName;    
       
       @CreationScheme      
@@ -97,7 +75,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class Activity extends AbstractActivity,TransitionEmitter,TransitionReceiver  {    
+    public class Activity {    
       
       @CreationScheme      
       Activity:create(String name) {      
@@ -112,7 +90,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class BeginActivity extends AbstractActivity,TransitionEmitter  {    
+    public class BeginActivity {    
       
       @CreationScheme      
       BeginActivity:create() {      
@@ -127,7 +105,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class EndActivity extends AbstractActivity,TransitionReceiver  {    
+    public class EndActivity {    
       
       @CreationScheme      
       EndActivity:create() {      
@@ -142,7 +120,7 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class Gateway extends AbstractActivity,TransitionEmitter,TransitionReceiver  {    
+    public class Gateway {    
       
       @CreationScheme      
       Gateway:create(String condition) {      
@@ -159,13 +137,11 @@ public class BPMNModel {
     @FlexoConcept    
     public class Transition {    
       
-      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
-      public FlexoConceptInstanceType<TransitionEmitter> from;    
-      @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)      
-      public FlexoConceptInstanceType<TransitionReceiver> to;    
+      public TransitionEmitter from;    
+      public TransitionReceiver to;    
       
       @CreationScheme      
-      Transition:create(FlexoConceptInstanceType<TransitionEmitter> from, FlexoConceptInstanceType<TransitionReceiver> to) {      
+      Transition:create(TransitionEmitter from, TransitionReceiver to) {      
         from = parameters.from;        
         to = parameters.to;      
       }      
@@ -182,10 +158,9 @@ public class BPMNModel {
      *     
      */    
     @FlexoConcept    
-    public class TransitionEmitter extends AbstractActivity  {    
+    public class TransitionEmitter {    
       
-      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
-      public List<FlexoConceptInstanceType<Transition>> outTransitions;    
+      public List outTransitions;    
     }    
   
     /**    
@@ -193,10 +168,9 @@ public class BPMNModel {
      *     
      */    
     @FlexoConcept    
-    public class TransitionReceiver extends AbstractActivity  {    
+    public class TransitionReceiver {    
       
-      @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)      
-      public List<FlexoConceptInstanceType<Transition>> inTransitions;    
+      public List inTransitions;    
     }    
   
   }  
@@ -204,7 +178,6 @@ public class BPMNModel {
   @FlexoConcept  
   public class AbstractActivity {  
   
-    @PrimitiveRole(cardinality=ZeroOne,readOnly=false)    
     public String activityName;  
   
     @CreationScheme    
@@ -220,7 +193,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class Activity extends AbstractActivity,TransitionEmitter,TransitionReceiver  {  
+  public class Activity {  
   
     @CreationScheme    
     Activity:create(String name) {    
@@ -235,7 +208,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class BeginActivity extends AbstractActivity,TransitionEmitter  {  
+  public class BeginActivity {  
   
     @CreationScheme    
     BeginActivity:create() {    
@@ -250,7 +223,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class EndActivity extends AbstractActivity,TransitionReceiver  {  
+  public class EndActivity {  
   
     @CreationScheme    
     EndActivity:create() {    
@@ -265,7 +238,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class Gateway extends AbstractActivity,TransitionEmitter,TransitionReceiver  {  
+  public class Gateway {  
   
     @CreationScheme    
     Gateway:create(String condition) {    
@@ -282,13 +255,11 @@ public class BPMNModel {
   @FlexoConcept  
   public class Transition {  
   
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<TransitionEmitter> from;  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<TransitionReceiver> to;  
+    public TransitionEmitter from;  
+    public TransitionReceiver to;  
   
     @CreationScheme    
-    Transition:create(FlexoConceptInstanceType<TransitionEmitter> from, FlexoConceptInstanceType<TransitionReceiver> to) {    
+    Transition:create(TransitionEmitter from, TransitionReceiver to) {    
       from = parameters.from;      
       to = parameters.to;    
     }    
@@ -305,10 +276,9 @@ public class BPMNModel {
    *   
    */  
   @FlexoConcept  
-  public class TransitionEmitter extends AbstractActivity  {  
+  public class TransitionEmitter {  
   
-    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
-    public List<FlexoConceptInstanceType<Transition>> outTransitions;  
+    public List outTransitions;  
   }  
 
   /**  
@@ -316,10 +286,9 @@ public class BPMNModel {
    *   
    */  
   @FlexoConcept  
-  public class TransitionReceiver extends AbstractActivity  {  
+  public class TransitionReceiver {  
   
-    @FlexoConceptInstanceRole(cardinality=ZeroMany,readOnly=false)    
-    public List<FlexoConceptInstanceType<Transition>> inTransitions;  
+    public List inTransitions;  
   }  
 
 }
