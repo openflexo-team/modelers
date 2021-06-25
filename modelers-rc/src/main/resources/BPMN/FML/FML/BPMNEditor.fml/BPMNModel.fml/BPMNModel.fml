@@ -10,7 +10,7 @@ use org.openflexo.technologyadapter.emf.EMFModelSlot;
 public class BPMNModel {
 
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_9f conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a4 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNModel:create(EMFModelResource bpmnResource) {  
@@ -37,7 +37,19 @@ public class BPMNModel {
   
     @CreationScheme    
     Process:create(EMFObjectIndividual aProcess) {    
-      eProcess = parameters.aProcess;    
+      eProcess = parameters.aProcess;      
+      for (flowElement : eProcess.flowElements) {      
+        log ("flowElement : " + flowElement)        
+        if (flowElement.type.name = "StartEvent") {        
+          model.AddFlexoConceptInstance()        
+        }        
+        if (flowElement.type.name = "StartEvent") {        
+          model.AddFlexoConceptInstance()        
+        }        
+        if (flowElement.type.name = "StartEvent") {        
+          model.AddFlexoConceptInstance()        
+        }      
+      }    
     }    
   
     @DeletionScheme    
@@ -53,17 +65,18 @@ public class BPMNModel {
     @ActionScheme    
     public Void debug() {    
       log ("process=" + eProcess)      
-      log ("name=" + name)    
+      log ("name=" + name)      
+      for (flowElement : eProcess.flowElements) {      
+        log ("element : " + flowElement)      
+      }    
     }    
   
   
     @FlexoConcept    
-    public class AbstractActivity {    
-      
-      public String activityName;    
+    public class FlowNode {    
       
       @CreationScheme      
-      AbstractActivity:create() {      
+      FlowNode:create() {      
           
       }      
       
@@ -75,46 +88,37 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class Activity {    
+    public class Task extends FlowNode  {    
+      
+      FlexoRole eTask as Individual conformTo Task from bpmnModel ;    
       
       @CreationScheme      
-      Activity:create(String name) {      
-        activityName = parameters.name;      
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
+      Task:create(EMFObjectIndividual task) {      
+        eTask = parameters.task;      
       }      
       
     }    
   
     @FlexoConcept    
-    public class BeginActivity {    
+    public class StartEvent extends CatchEvent  {    
+      
+      FlexoRole eStartEvent as Individual conformTo StartEvent from bpmnModel ;    
       
       @CreationScheme      
-      BeginActivity:create() {      
-          
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
+      StartEvent:create(EMFObjectIndividual startEvent) {      
+        eStartEvent = parameters.startEvent;      
       }      
       
     }    
   
     @FlexoConcept    
-    public class EndActivity {    
+    public class EndEvent extends ThrowEvent  {    
+      
+      FlexoRole eEndEvent as Individual conformTo EndEvent from bpmnModel ;    
       
       @CreationScheme      
-      EndActivity:create() {      
-          
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
+      EndEvent:create(EMFObjectIndividual endEvent) {      
+        eEndEvent = parameters.endEvent;      
       }      
       
     }    
@@ -125,25 +129,6 @@ public class BPMNModel {
       @CreationScheme      
       Gateway:create(String condition) {      
         activityName = parameters.condition;      
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
-      }      
-      
-    }    
-  
-    @FlexoConcept    
-    public class Transition {    
-      
-      public TransitionEmitter from;    
-      public TransitionReceiver to;    
-      
-      @CreationScheme      
-      Transition:create(TransitionEmitter from, TransitionReceiver to) {      
-        from = parameters.from;        
-        to = parameters.to;      
       }      
       
       @DeletionScheme      
@@ -173,15 +158,19 @@ public class BPMNModel {
       public List inTransitions;    
     }    
   
+    @FlexoConcept    
+    public class SequenceFlow {    
+      
+      FlexoRole eSequenceFlow as Individual conformTo SequenceFlow from bpmnModel ;    
+    }    
+  
   }  
 
   @FlexoConcept  
-  public class AbstractActivity {  
-  
-    public String activityName;  
+  public class FlowNode {  
   
     @CreationScheme    
-    AbstractActivity:create() {    
+    FlowNode:create() {    
       
     }    
   
@@ -193,46 +182,37 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class Activity {  
+  public class Task extends FlowNode  {  
+  
+    FlexoRole eTask as Individual conformTo Task from bpmnModel ;  
   
     @CreationScheme    
-    Activity:create(String name) {    
-      activityName = parameters.name;    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
+    Task:create(EMFObjectIndividual task) {    
+      eTask = parameters.task;    
     }    
   
   }  
 
   @FlexoConcept  
-  public class BeginActivity {  
+  public class StartEvent extends CatchEvent  {  
+  
+    FlexoRole eStartEvent as Individual conformTo StartEvent from bpmnModel ;  
   
     @CreationScheme    
-    BeginActivity:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
+    StartEvent:create(EMFObjectIndividual startEvent) {    
+      eStartEvent = parameters.startEvent;    
     }    
   
   }  
 
   @FlexoConcept  
-  public class EndActivity {  
+  public class EndEvent extends ThrowEvent  {  
+  
+    FlexoRole eEndEvent as Individual conformTo EndEvent from bpmnModel ;  
   
     @CreationScheme    
-    EndActivity:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
+    EndEvent:create(EMFObjectIndividual endEvent) {    
+      eEndEvent = parameters.endEvent;    
     }    
   
   }  
@@ -243,25 +223,6 @@ public class BPMNModel {
     @CreationScheme    
     Gateway:create(String condition) {    
       activityName = parameters.condition;    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
-
-  @FlexoConcept  
-  public class Transition {  
-  
-    public TransitionEmitter from;  
-    public TransitionReceiver to;  
-  
-    @CreationScheme    
-    Transition:create(TransitionEmitter from, TransitionReceiver to) {    
-      from = parameters.from;      
-      to = parameters.to;    
     }    
   
     @DeletionScheme    
@@ -289,6 +250,57 @@ public class BPMNModel {
   public class TransitionReceiver {  
   
     public List inTransitions;  
+  }  
+
+  @FlexoConcept  
+  public class Event extends FlowNode  {  
+  
+    @CreationScheme    
+    Event:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class ThrowEvent extends Event  {  
+  
+    @CreationScheme    
+    ThrowEvent:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class CatchEvent extends Event  {  
+  
+    @CreationScheme    
+    CatchEvent:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class SequenceFlow {  
+  
+    FlexoRole eSequenceFlow as Individual conformTo SequenceFlow from bpmnModel ;  
   }  
 
 }

@@ -4,11 +4,10 @@
     <Inspector id="SYL-6" renderer="name" inspectorTitle="Process" userID="SYL" flexoID="6">
       <InspectorEntry id="SYL-790" widget="TEXT_FIELD" data="name" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="790" />
     </Inspector>
-    <EmbeddedFlexoConcept id="SYL-20" name="AbstractActivity" userID="SYL" flexoID="20">
+    <EmbeddedFlexoConcept id="SYL-20" name="FlowNode" userID="SYL" flexoID="20">
       <Inspector id="SYL-15" inspectorTitle="AbstractActivity" userID="SYL" flexoID="15">
         <InspectorEntry id="SYL-104" widget="TEXT_FIELD" data="this.activityName" name="activity_name" label="activity_name" type="java.lang.String" userID="SYL" flexoID="104" />
       </Inspector>
-      <PrimitiveRole id="SYL-87" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="activityName" userID="SYL" flexoID="87" />
       <CreationScheme id="SYL-17" label="create" name="create" width="800" height="600" userID="SYL" flexoID="17">
         <BehaviourControlGraph_EmptyControlGraph id="SYL-16" userID="SYL" flexoID="16" />
       </CreationScheme>
@@ -16,35 +15,35 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-18" userID="SYL" flexoID="18" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-29" name="Activity" userID="SYL" flexoID="29">
+    <EmbeddedFlexoConcept id="SYL-29" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" name="Task" userID="SYL" flexoID="29">
       <Inspector id="SYL-24" inspectorTitle="Activity" userID="SYL" flexoID="24" />
-      <CreationScheme id="SYL-26" label="create" name="create" width="800" height="600" userID="SYL" flexoID="26">
-        <BehaviourControlGraph_AssignationAction id="SYL-99" assign="activityName" userID="SYL" flexoID="99">
-          <AssignableAction_ExpressionAction id="SYL-98" expression="parameters.name" userID="SYL" flexoID="98" />
+      <EMFObjectIndividualRole id="SYL-852" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Task" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eTask" userID="SYL" flexoID="852" />
+      <CreationScheme id="SYL-922" label="create" name="create" width="800" height="600" userID="SYL" flexoID="922">
+        <BehaviourControlGraph_AssignationAction id="SYL-924" assign="eTask" userID="SYL" flexoID="924">
+          <AssignableAction_ExpressionAction id="SYL-923" expression="parameters.task" userID="SYL" flexoID="923" />
         </BehaviourControlGraph_AssignationAction>
-        <GenericBehaviourParameter id="SYL-97" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="97" />
+        <GenericBehaviourParameter id="SYL-925" widget="CUSTOM_WIDGET" name="task" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="925" />
       </CreationScheme>
-      <DeletionScheme id="SYL-28" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="28">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-27" userID="SYL" flexoID="27" />
-      </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-45" name="BeginActivity" userID="SYL" flexoID="45">
+    <EmbeddedFlexoConcept id="SYL-45" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#CatchEvent" name="StartEvent" userID="SYL" flexoID="45">
       <Inspector id="SYL-40" inspectorTitle="BeginActivity" userID="SYL" flexoID="40" />
+      <EMFObjectIndividualRole id="SYL-844" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/StartEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eStartEvent" userID="SYL" flexoID="844" />
       <CreationScheme id="SYL-42" label="create" name="create" width="800" height="600" userID="SYL" flexoID="42">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-41" userID="SYL" flexoID="41" />
+        <BehaviourControlGraph_AssignationAction id="SYL-846" assign="eStartEvent" userID="SYL" flexoID="846">
+          <AssignableAction_ExpressionAction id="SYL-845" expression="parameters.startEvent" userID="SYL" flexoID="845" />
+        </BehaviourControlGraph_AssignationAction>
+        <GenericBehaviourParameter id="SYL-866" widget="CUSTOM_WIDGET" name="startEvent" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="866" />
       </CreationScheme>
-      <DeletionScheme id="SYL-44" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="44">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-43" userID="SYL" flexoID="43" />
-      </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-54" name="EndActivity" userID="SYL" flexoID="54">
+    <EmbeddedFlexoConcept id="SYL-54" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#ThrowEvent" name="EndEvent" userID="SYL" flexoID="54">
       <Inspector id="SYL-49" inspectorTitle="EndActivity" userID="SYL" flexoID="49" />
-      <CreationScheme id="SYL-51" label="create" name="create" width="800" height="600" userID="SYL" flexoID="51">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-50" userID="SYL" flexoID="50" />
+      <EMFObjectIndividualRole id="SYL-851" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/EndEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eEndEvent" userID="SYL" flexoID="851" />
+      <CreationScheme id="SYL-926" label="create" name="create" width="800" height="600" userID="SYL" flexoID="926">
+        <BehaviourControlGraph_AssignationAction id="SYL-928" assign="eEndEvent" userID="SYL" flexoID="928">
+          <AssignableAction_ExpressionAction id="SYL-927" expression="parameters.endEvent" userID="SYL" flexoID="927" />
+        </BehaviourControlGraph_AssignationAction>
+        <GenericBehaviourParameter id="SYL-929" widget="CUSTOM_WIDGET" name="endEvent" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="929" />
       </CreationScheme>
-      <DeletionScheme id="SYL-53" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="53">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-52" userID="SYL" flexoID="52" />
-      </DeletionScheme>
     </EmbeddedFlexoConcept>
     <EmbeddedFlexoConcept id="SYL-63" name="Gateway" userID="SYL" flexoID="63">
       <Inspector id="SYL-58" inspectorTitle="Gateway" userID="SYL" flexoID="58" />
@@ -58,40 +57,45 @@
         <BehaviourControlGraph_EmptyControlGraph id="SYL-61" userID="SYL" flexoID="61" />
       </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-128" name="Transition" userID="SYL" flexoID="128">
-      <Inspector id="SYL-123" inspectorTitle="Transition" userID="SYL" flexoID="123" />
-      <FlexoConceptInstanceRole id="SYL-133" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter" cloningStrategy="Reference" cardinality="ZeroOne" name="from" userID="SYL" flexoID="133" />
-      <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver" cloningStrategy="Reference" cardinality="ZeroOne" name="to" userID="SYL" flexoID="134" />
-      <CreationScheme id="SYL-125" label="create" name="create" width="800" height="600" userID="SYL" flexoID="125">
-        <BehaviourControlGraph_Sequence id="SYL-155" userID="SYL" flexoID="155">
-          <ControlGraph2_AssignationAction id="SYL-154" assign="to" ownerContext="controlGraph2" userID="SYL" flexoID="154">
-            <AssignableAction_ExpressionAction id="SYL-153" expression="parameters.to" userID="SYL" flexoID="153" />
-          </ControlGraph2_AssignationAction>
-          <ControlGraph1_AssignationAction id="SYL-152" assign="from" ownerContext="controlGraph1" userID="SYL" flexoID="152">
-            <AssignableAction_ExpressionAction id="SYL-151" expression="parameters.from" userID="SYL" flexoID="151" />
-          </ControlGraph1_AssignationAction>
-        </BehaviourControlGraph_Sequence>
-        <GenericBehaviourParameter id="SYL-150" widget="CUSTOM_WIDGET" name="from" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter&gt;" userID="SYL" flexoID="150" />
-        <GenericBehaviourParameter id="SYL-149" widget="CUSTOM_WIDGET" name="to" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver&gt;" userID="SYL" flexoID="149" />
-      </CreationScheme>
-      <DeletionScheme id="SYL-127" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="127">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-126" userID="SYL" flexoID="126" />
-      </DeletionScheme>
-    </EmbeddedFlexoConcept>
     <EmbeddedFlexoConcept id="SYL-166" isAbstract="true" name="TransitionEmitter" description="An abstract actitity which declares one or more transitions" userID="SYL" flexoID="166">
       <Inspector id="SYL-161" inspectorTitle="TransitionEmitter" userID="SYL" flexoID="161" />
-      <FlexoConceptInstanceRole id="SYL-170" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="outTransitions" userID="SYL" flexoID="170" />
+      <FlexoConceptInstanceRole id="SYL-170" virtualModelInstance="model" flexoConceptTypeURI="null#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="outTransitions" userID="SYL" flexoID="170" />
     </EmbeddedFlexoConcept>
     <EmbeddedFlexoConcept id="SYL-174" isAbstract="true" name="TransitionReceiver" description="An abstract actitity which declares one or more transitions" userID="SYL" flexoID="174">
       <Inspector id="SYL-171" inspectorTitle="TransitionEmitter" userID="SYL" flexoID="171" />
-      <FlexoConceptInstanceRole id="SYL-173" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="inTransitions" userID="SYL" flexoID="173" />
+      <FlexoConceptInstanceRole id="SYL-173" virtualModelInstance="model" flexoConceptTypeURI="null#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="inTransitions" userID="SYL" flexoID="173" />
+    </EmbeddedFlexoConcept>
+    <EmbeddedFlexoConcept id="SYL-936" visibility="Public" name="SequenceFlow" userID="SYL" flexoID="936">
+      <Inspector id="SYL-937" inspectorTitle="SequenceFlow" userID="SYL" flexoID="937" />
+      <EMFObjectIndividualRole id="SYL-943" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/SequenceFlow" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eSequenceFlow" userID="SYL" flexoID="943" />
     </EmbeddedFlexoConcept>
     <EMFObjectIndividualRole id="SYL-746" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Process" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eProcess" userID="SYL" flexoID="746" />
     <ExpressionProperty id="SYL-789" expression="((eProcess.name != null) ? eProcess.name : &quot;Root process&quot;)" name="name" userID="SYL" flexoID="789" />
     <CreationScheme id="SYL-8" label="create" name="create" width="800" height="600" userID="SYL" flexoID="8">
-      <BehaviourControlGraph_AssignationAction id="SYL-748" assign="eProcess" ownerContext="controlGraph2" userID="SYL" flexoID="748">
-        <AssignableAction_ExpressionAction id="SYL-747" expression="parameters.aProcess" userID="SYL" flexoID="747" />
-      </BehaviourControlGraph_AssignationAction>
+      <BehaviourControlGraph_Sequence id="SYL-867" ownerContext="controlGraph2" userID="SYL" flexoID="867">
+        <ControlGraph2_IterationAction id="SYL-834" iteratorName="flowElement" ownerContext="controlGraph2" userID="SYL" flexoID="834">
+          <Iteration_ExpressionAction id="SYL-835" expression="eProcess.flowElements" ownerContext="iterationControlGraph" userID="SYL" flexoID="835" />
+          <ControlGraph_Sequence id="SYL-868" ownerContext="controlGraph" userID="SYL" flexoID="868">
+            <ControlGraph2_Sequence id="SYL-869" ownerContext="controlGraph2" userID="SYL" flexoID="869">
+              <ControlGraph2_Sequence id="SYL-870" ownerContext="controlGraph2" userID="SYL" flexoID="870">
+                <ControlGraph2_ConditionalAction id="SYL-849" condition="(flowElement.type.name = &quot;StartEvent&quot;)" ownerContext="controlGraph2" userID="SYL" flexoID="849">
+                  <ThenControlGraph_AddFlexoConceptInstance id="SYL-850" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" receiver="model" ownerContext="thenControlGraph" userID="SYL" flexoID="850" />
+                </ControlGraph2_ConditionalAction>
+                <ControlGraph1_ConditionalAction id="SYL-847" condition="(flowElement.type.name = &quot;StartEvent&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="847">
+                  <ThenControlGraph_AddFlexoConceptInstance id="SYL-848" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" receiver="model" ownerContext="thenControlGraph" userID="SYL" flexoID="848" />
+                </ControlGraph1_ConditionalAction>
+              </ControlGraph2_Sequence>
+              <ControlGraph1_ConditionalAction id="SYL-841" condition="(flowElement.type.name = &quot;StartEvent&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="841">
+                <ThenControlGraph_AddFlexoConceptInstance id="SYL-843" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" receiver="model" ownerContext="thenControlGraph" userID="SYL" flexoID="843" />
+              </ControlGraph1_ConditionalAction>
+            </ControlGraph2_Sequence>
+            <ControlGraph1_LogAction id="SYL-838" logLevel="INFO" logString="(&quot;flowElement : &quot; + flowElement)" ownerContext="controlGraph1" userID="SYL" flexoID="838" />
+          </ControlGraph_Sequence>
+        </ControlGraph2_IterationAction>
+        <ControlGraph1_AssignationAction id="SYL-748" assign="eProcess" ownerContext="controlGraph1" userID="SYL" flexoID="748">
+          <AssignableAction_ExpressionAction id="SYL-747" expression="parameters.aProcess" userID="SYL" flexoID="747" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
       <GenericBehaviourParameter id="SYL-754" widget="CUSTOM_WIDGET" name="aProcess" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="754" />
     </CreationScheme>
     <DeletionScheme id="SYL-10" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="10">
@@ -102,7 +106,13 @@
     </NavigationScheme>
     <ActionScheme id="SYL-791" visibility="Public" label="debug" name="debug" width="800" height="600" userID="SYL" flexoID="791">
       <BehaviourControlGraph_Sequence id="SYL-796" userID="SYL" flexoID="796">
-        <ControlGraph2_LogAction id="SYL-795" logLevel="INFO" logString="(&quot;name=&quot; + name)" ownerContext="controlGraph2" userID="SYL" flexoID="795" />
+        <ControlGraph2_Sequence id="SYL-832" ownerContext="controlGraph2" userID="SYL" flexoID="832">
+          <ControlGraph2_IterationAction id="SYL-828" iteratorName="flowElement" ownerContext="controlGraph2" userID="SYL" flexoID="828">
+            <Iteration_ExpressionAction id="SYL-829" expression="eProcess.flowElements" ownerContext="iterationControlGraph" userID="SYL" flexoID="829" />
+            <ControlGraph_LogAction id="SYL-831" logLevel="INFO" logString="(&quot;element : &quot; + flowElement)" ownerContext="controlGraph" userID="SYL" flexoID="831" />
+          </ControlGraph2_IterationAction>
+          <ControlGraph1_LogAction id="SYL-795" logLevel="INFO" logString="(&quot;name=&quot; + name)" ownerContext="controlGraph1" userID="SYL" flexoID="795" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_LogAction id="SYL-793" logLevel="INFO" logString="(&quot;process=&quot; + eProcess)" ownerContext="controlGraph1" userID="SYL" flexoID="793" />
       </BehaviourControlGraph_Sequence>
     </ActionScheme>
@@ -112,9 +122,36 @@
   <FlexoConcept idref="SYL-45" />
   <FlexoConcept idref="SYL-54" />
   <FlexoConcept idref="SYL-63" />
-  <FlexoConcept idref="SYL-128" />
   <FlexoConcept idref="SYL-166" />
   <FlexoConcept idref="SYL-174" />
+  <FlexoConcept id="SYL-901" visibility="Public" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" name="Event" userID="SYL" flexoID="901">
+    <Inspector id="SYL-902" inspectorTitle="Event" userID="SYL" flexoID="902" />
+    <CreationScheme id="SYL-906" label="create" name="create" width="800" height="600" userID="SYL" flexoID="906">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-930" userID="SYL" flexoID="930" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-907" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="907">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-931" userID="SYL" flexoID="931" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-908" visibility="Public" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Event" name="ThrowEvent" userID="SYL" flexoID="908">
+    <Inspector id="SYL-909" inspectorTitle="ThrowEvent" userID="SYL" flexoID="909" />
+    <CreationScheme id="SYL-913" label="create" name="create" width="800" height="600" userID="SYL" flexoID="913">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-932" userID="SYL" flexoID="932" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-914" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="914">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-933" userID="SYL" flexoID="933" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-915" visibility="Public" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Event" name="CatchEvent" userID="SYL" flexoID="915">
+    <Inspector id="SYL-916" inspectorTitle="CatchEvent" userID="SYL" flexoID="916" />
+    <CreationScheme id="SYL-920" label="create" name="create" width="800" height="600" userID="SYL" flexoID="920">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-934" userID="SYL" flexoID="934" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-921" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="921">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-935" userID="SYL" flexoID="935" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept idref="SYL-936" />
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.gina.FIBComponentModelSlot" userID="SYL" flexoID="-1" />
   <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.technologyadapter.emf.EMFModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="BPMNModel" userID="SYL" flexoID="1" />

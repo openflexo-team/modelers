@@ -37,12 +37,12 @@ public class ProcessDiagram {
   public class ActivityGR extends TransitionEmitterGR,TransitionReceiverGR  {  
   
     public DiagramShape shape;  
-    public Activity activity;  
+    public Task activity;  
   
     @DropScheme    
     ActivityGR:dropActivityGRAtTopLevel() {    
       shape = diagram.AddShape();      
-      activity = Activity.create("Activity");    
+      activity = model.AddFlexoConceptInstance();    
     }    
   
   }  
@@ -51,12 +51,12 @@ public class ProcessDiagram {
   public class BeginActivityGR extends TransitionEmitterGR  {  
   
     public DiagramShape shape;  
-    public BeginActivity activity;  
+    public StartEvent activity;  
   
     @DropScheme    
     BeginActivityGR:dropBeginActivityGRAtTopLevel() {    
       shape = diagram.AddShape();      
-      activity = BeginActivity.create();    
+      activity = StartEvent.create();    
     }    
   
   }  
@@ -65,12 +65,12 @@ public class ProcessDiagram {
   public class EndActivityGR extends TransitionReceiverGR  {  
   
     public DiagramShape shape;  
-    public EndActivity activity;  
+    public EndEvent activity;  
   
     @DropScheme    
     EndActivityGR:dropEndActivityGRAtTopLevel() {    
       shape = diagram.AddShape();      
-      activity = EndActivity.create();    
+      activity = model.AddFlexoConceptInstance();    
     }    
   
   }  
@@ -98,7 +98,7 @@ public class ProcessDiagram {
     @LinkScheme    
     TransitionGR:linkEmitterGRToReceiverGR() {    
       connector = diagram.AddConnector();      
-      transition = Transition.create(fromTarget.activity,toTarget.activity);      
+      transition = model.AddFlexoConceptInstance();      
       fromTarget.activity.outTransitions.add(transition)      
       toTarget.activity.inTransitions.add(transition)    
     }    
@@ -111,7 +111,7 @@ public class ProcessDiagram {
       
     abstract DiagramShape shape;  
       
-    abstract AbstractActivity activity;  
+    abstract FlowNode activity;  
   }  
 
   @FlexoConcept  
