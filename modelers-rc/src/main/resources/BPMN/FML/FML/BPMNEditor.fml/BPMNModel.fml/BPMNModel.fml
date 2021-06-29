@@ -10,7 +10,7 @@ use org.openflexo.technologyadapter.emf.EMFModelSlot;
 public class BPMNModel {
 
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a4 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a3 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNModel:create(EMFModelResource bpmnResource) {  
@@ -73,7 +73,10 @@ public class BPMNModel {
   
   
     @FlexoConcept    
-    public class FlowNode {    
+    public class FlowNode extends FlowElement  {    
+      
+      public List incoming;    
+      public List outgoing;    
       
       @CreationScheme      
       FlowNode:create() {      
@@ -124,50 +127,24 @@ public class BPMNModel {
     }    
   
     @FlexoConcept    
-    public class Gateway {    
-      
-      @CreationScheme      
-      Gateway:create(String condition) {      
-        activityName = parameters.condition;      
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
-      }      
-      
-    }    
-  
-    /**    
-     * An abstract actitity which declares one or more transitions    
-     *     
-     */    
-    @FlexoConcept    
-    public class TransitionEmitter {    
-      
-      public List outTransitions;    
-    }    
-  
-    /**    
-     * An abstract actitity which declares one or more transitions    
-     *     
-     */    
-    @FlexoConcept    
-    public class TransitionReceiver {    
-      
-      public List inTransitions;    
+    public class Gateway extends FlowNode  {    
     }    
   
     @FlexoConcept    
-    public class SequenceFlow {    
+    public class SequenceFlow extends FlowElement  {    
       
       FlexoRole eSequenceFlow as Individual conformTo SequenceFlow from bpmnModel ;    
+      public FlowNode source;    
+      public FlowNode target;    
     }    
   
   }  
 
   @FlexoConcept  
-  public class FlowNode {  
+  public class FlowNode extends FlowElement  {  
+  
+    public List incoming;  
+    public List outgoing;  
   
     @CreationScheme    
     FlowNode:create() {    
@@ -218,38 +195,7 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class Gateway {  
-  
-    @CreationScheme    
-    Gateway:create(String condition) {    
-      activityName = parameters.condition;    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
-
-  /**  
-   * An abstract actitity which declares one or more transitions  
-   *   
-   */  
-  @FlexoConcept  
-  public class TransitionEmitter {  
-  
-    public List outTransitions;  
-  }  
-
-  /**  
-   * An abstract actitity which declares one or more transitions  
-   *   
-   */  
-  @FlexoConcept  
-  public class TransitionReceiver {  
-  
-    public List inTransitions;  
+  public class Gateway extends FlowNode  {  
   }  
 
   @FlexoConcept  
@@ -298,9 +244,26 @@ public class BPMNModel {
   }  
 
   @FlexoConcept  
-  public class SequenceFlow {  
+  public class SequenceFlow extends FlowElement  {  
   
     FlexoRole eSequenceFlow as Individual conformTo SequenceFlow from bpmnModel ;  
+    public FlowNode source;  
+    public FlowNode target;  
+  }  
+
+  @FlexoConcept  
+  public class FlowElement {  
+  
+    @CreationScheme    
+    FlowElement:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
   }  
 
 }

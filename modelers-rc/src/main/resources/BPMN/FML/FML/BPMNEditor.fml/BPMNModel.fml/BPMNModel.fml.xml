@@ -4,10 +4,12 @@
     <Inspector id="SYL-6" renderer="name" inspectorTitle="Process" userID="SYL" flexoID="6">
       <InspectorEntry id="SYL-790" widget="TEXT_FIELD" data="name" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="790" />
     </Inspector>
-    <EmbeddedFlexoConcept id="SYL-20" name="FlowNode" userID="SYL" flexoID="20">
+    <EmbeddedFlexoConcept id="SYL-20" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowElement" name="FlowNode" userID="SYL" flexoID="20">
       <Inspector id="SYL-15" inspectorTitle="AbstractActivity" userID="SYL" flexoID="15">
         <InspectorEntry id="SYL-104" widget="TEXT_FIELD" data="this.activityName" name="activity_name" label="activity_name" type="java.lang.String" userID="SYL" flexoID="104" />
       </Inspector>
+      <FlexoConceptInstanceRole id="SYL-994" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" cloningStrategy="Reference" cardinality="ZeroMany" name="incoming" userID="SYL" flexoID="994" />
+      <FlexoConceptInstanceRole id="SYL-995" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" cloningStrategy="Reference" cardinality="ZeroMany" name="outgoing" userID="SYL" flexoID="995" />
       <CreationScheme id="SYL-17" label="create" name="create" width="800" height="600" userID="SYL" flexoID="17">
         <BehaviourControlGraph_EmptyControlGraph id="SYL-16" userID="SYL" flexoID="16" />
       </CreationScheme>
@@ -45,29 +47,14 @@
         <GenericBehaviourParameter id="SYL-929" widget="CUSTOM_WIDGET" name="endEvent" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="929" />
       </CreationScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-63" name="Gateway" userID="SYL" flexoID="63">
+    <EmbeddedFlexoConcept id="SYL-63" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" name="Gateway" userID="SYL" flexoID="63">
       <Inspector id="SYL-58" inspectorTitle="Gateway" userID="SYL" flexoID="58" />
-      <CreationScheme id="SYL-60" label="create" name="create" width="800" height="600" userID="SYL" flexoID="60">
-        <BehaviourControlGraph_AssignationAction id="SYL-102" assign="activityName" userID="SYL" flexoID="102">
-          <AssignableAction_ExpressionAction id="SYL-101" expression="parameters.condition" userID="SYL" flexoID="101" />
-        </BehaviourControlGraph_AssignationAction>
-        <GenericBehaviourParameter id="SYL-103" widget="TEXT_FIELD" name="condition" type="java.lang.String" userID="SYL" flexoID="103" />
-      </CreationScheme>
-      <DeletionScheme id="SYL-62" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="62">
-        <BehaviourControlGraph_EmptyControlGraph id="SYL-61" userID="SYL" flexoID="61" />
-      </DeletionScheme>
     </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-166" isAbstract="true" name="TransitionEmitter" description="An abstract actitity which declares one or more transitions" userID="SYL" flexoID="166">
-      <Inspector id="SYL-161" inspectorTitle="TransitionEmitter" userID="SYL" flexoID="161" />
-      <FlexoConceptInstanceRole id="SYL-170" virtualModelInstance="model" flexoConceptTypeURI="null#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="outTransitions" userID="SYL" flexoID="170" />
-    </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-174" isAbstract="true" name="TransitionReceiver" description="An abstract actitity which declares one or more transitions" userID="SYL" flexoID="174">
-      <Inspector id="SYL-171" inspectorTitle="TransitionEmitter" userID="SYL" flexoID="171" />
-      <FlexoConceptInstanceRole id="SYL-173" virtualModelInstance="model" flexoConceptTypeURI="null#Transition" cloningStrategy="Reference" cardinality="ZeroMany" name="inTransitions" userID="SYL" flexoID="173" />
-    </EmbeddedFlexoConcept>
-    <EmbeddedFlexoConcept id="SYL-936" visibility="Public" name="SequenceFlow" userID="SYL" flexoID="936">
+    <EmbeddedFlexoConcept id="SYL-936" visibility="Public" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowElement" name="SequenceFlow" userID="SYL" flexoID="936">
       <Inspector id="SYL-937" inspectorTitle="SequenceFlow" userID="SYL" flexoID="937" />
       <EMFObjectIndividualRole id="SYL-943" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/SequenceFlow" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eSequenceFlow" userID="SYL" flexoID="943" />
+      <FlexoConceptInstanceRole id="SYL-992" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" cloningStrategy="Reference" cardinality="One" name="source" userID="SYL" flexoID="992" />
+      <FlexoConceptInstanceRole id="SYL-993" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" cloningStrategy="Reference" cardinality="One" name="target" userID="SYL" flexoID="993" />
     </EmbeddedFlexoConcept>
     <EMFObjectIndividualRole id="SYL-746" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Process" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eProcess" userID="SYL" flexoID="746" />
     <ExpressionProperty id="SYL-789" expression="((eProcess.name != null) ? eProcess.name : &quot;Root process&quot;)" name="name" userID="SYL" flexoID="789" />
@@ -122,8 +109,6 @@
   <FlexoConcept idref="SYL-45" />
   <FlexoConcept idref="SYL-54" />
   <FlexoConcept idref="SYL-63" />
-  <FlexoConcept idref="SYL-166" />
-  <FlexoConcept idref="SYL-174" />
   <FlexoConcept id="SYL-901" visibility="Public" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" name="Event" userID="SYL" flexoID="901">
     <Inspector id="SYL-902" inspectorTitle="Event" userID="SYL" flexoID="902" />
     <CreationScheme id="SYL-906" label="create" name="create" width="800" height="600" userID="SYL" flexoID="906">
@@ -152,6 +137,15 @@
     </DeletionScheme>
   </FlexoConcept>
   <FlexoConcept idref="SYL-936" />
+  <FlexoConcept id="SYL-983" visibility="Public" isAbstract="true" name="FlowElement" userID="SYL" flexoID="983">
+    <Inspector id="SYL-984" inspectorTitle="FlowElement" userID="SYL" flexoID="984" />
+    <CreationScheme id="SYL-988" label="create" name="create" width="800" height="600" userID="SYL" flexoID="988">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-990" userID="SYL" flexoID="990" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-989" label="delete" name="delete" width="800" height="600" userID="SYL" flexoID="989">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-991" userID="SYL" flexoID="991" />
+    </DeletionScheme>
+  </FlexoConcept>
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.gina.FIBComponentModelSlot" userID="SYL" flexoID="-1" />
   <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.technologyadapter.emf.EMFModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="BPMNModel" userID="SYL" flexoID="1" />
