@@ -1,4 +1,5 @@
 use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
+use org.openflexo.technologyadapter.emf.EMFModelSlot;
 
 /**
  * 
@@ -9,6 +10,8 @@ public class ProcessDiagram {
 
   public Diagram diagram;
   public Process process;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a7 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  FlexoRole eObject as Individual conformTo  from bpmnModel ;
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
@@ -84,7 +87,7 @@ public class ProcessDiagram {
     @DropScheme    
     GatewayGR:dropGatewayGRAtTopLevel() {    
       shape = diagram.AddShape();      
-      activity = Gateway.create("condition ?");    
+      activity = model.AddFlexoConceptInstance();    
     }    
   
   }  
@@ -93,7 +96,7 @@ public class ProcessDiagram {
   public class TransitionGR {  
   
     public DiagramConnector connector;  
-    public Transition transition;  
+    public FlexoConceptInstance transition;  
   
     @LinkScheme    
     TransitionGR:linkEmitterGRToReceiverGR() {    
@@ -118,14 +121,14 @@ public class ProcessDiagram {
   public class TransitionEmitterGR extends AbstractActivityGR  {  
   
       
-    abstract TransitionEmitter activity;  
+    abstract UndefinedFlexoConceptInstanceType<http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter> activity;  
   }  
 
   @FlexoConcept  
   public class TransitionReceiverGR extends AbstractActivityGR  {  
   
       
-    abstract TransitionReceiver activity;  
+    abstract UndefinedFlexoConceptInstanceType<http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver> activity;  
   }  
 
 }
