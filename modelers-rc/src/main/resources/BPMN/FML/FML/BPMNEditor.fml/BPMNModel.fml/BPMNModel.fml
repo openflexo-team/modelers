@@ -10,13 +10,13 @@ use org.openflexo.technologyadapter.emf.EMFModelSlot;
 public class BPMNModel {
 
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a3 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a5 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNModel:create(EMFModelResource bpmnResource) {  
     ui = ui.ConfigureGINAFIBComponent();    
     bpmnModel = parameters.bpmnResource.resourceData;    
-    IndividualOfClass(Definitions) definitions = SelectUniqueEMFObjectIndividual from bpmnModel as Definitions;    
+    Definitions definitions = SelectUniqueEMFObjectIndividual from bpmnModel as Definitions;    
     log ("root elements = " + definitions.rootElements)    
     for (rootElement : definitions.rootElements) {    
       log ("coucou le " + rootElement)      
@@ -29,25 +29,28 @@ public class BPMNModel {
 
 
   @FlexoConcept  
-  public class Process {  
+  public class Process extends BaseElement  {  
   
-    FlexoRole eProcess as Individual conformTo Process from bpmnModel ;  
+    FlexoRole eObject as Individual conformTo Process from bpmnModel ;  
       
-    public String name = ((eProcess.name != null) ? eProcess.name : "Root process");  
+    public String processName = ((eObject.name != null) ? eObject.name : "Root process");  
   
     @CreationScheme    
     Process:create(EMFObjectIndividual aProcess) {    
-      eProcess = parameters.aProcess;      
-      for (flowElement : eProcess.flowElements) {      
+      eObject = parameters.aProcess;      
+      for (flowElement : eObject.flowElements) {      
         log ("flowElement : " + flowElement)        
         if (flowElement.type.name = "StartEvent") {        
-          model.AddFlexoConceptInstance()        
+          StartEvent.create(flowElement)        
         }        
-        if (flowElement.type.name = "StartEvent") {        
-          model.AddFlexoConceptInstance()        
+        if (flowElement.type.name = "EndEvent") {        
+          EndEvent.create(flowElement)        
         }        
-        if (flowElement.type.name = "StartEvent") {        
-          model.AddFlexoConceptInstance()        
+        if (flowElement.type.name = "Task") {        
+          Task.create(flowElement)        
+        }        
+        if (flowElement.type.name = "SequenceFlow") {        
+          SequenceFlow.create(flowElement)        
         }      
       }    
     }    
@@ -64,11 +67,16 @@ public class BPMNModel {
   
     @ActionScheme    
     public Void debug() {    
-      log ("process=" + eProcess)      
-      log ("name=" + name)      
-      for (flowElement : eProcess.flowElements) {      
+      log ("process=" + eObject)      
+      log ("name=" + processName)      
+      for (flowElement : eObject.flowElements) {      
         log ("element : " + flowElement)      
       }    
+    }    
+  
+    @ActionScheme    
+    FlowNode getFlowNode(FlowNode flowNodeObject) {    
+      return container.SelectUniqueFlexoConceptInstance(type=FlowNode,where=where=(selected.eObject = parameters.flowNodeObject));    
     }    
   
   
@@ -77,6 +85,10 @@ public class BPMNModel {
       
       public List incoming;    
       public List outgoing;    
+          
+      abstract FlowNode eObject;    
+          
+      public String name = eObject.name;    
       
       @CreationScheme      
       FlowNode:create() {      
@@ -93,11 +105,11 @@ public class BPMNModel {
     @FlexoConcept    
     public class Task extends FlowNode  {    
       
-      FlexoRole eTask as Individual conformTo Task from bpmnModel ;    
+      FlexoRole eObject as Individual conformTo Task from bpmnModel ;    
       
       @CreationScheme      
       Task:create(EMFObjectIndividual task) {      
-        eTask = parameters.task;      
+        eObject = parameters.task;      
       }      
       
     }    
@@ -105,11 +117,13 @@ public class BPMNModel {
     @FlexoConcept    
     public class StartEvent extends CatchEvent  {    
       
-      FlexoRole eStartEvent as Individual conformTo StartEvent from bpmnModel ;    
+      FlexoRole eObject as Individual conformTo StartEvent from bpmnModel ;    
+          
+      public String name = "Begin";    
       
       @CreationScheme      
       StartEvent:create(EMFObjectIndividual startEvent) {      
-        eStartEvent = parameters.startEvent;      
+        eObject = parameters.startEvent;      
       }      
       
     }    
@@ -117,11 +131,13 @@ public class BPMNModel {
     @FlexoConcept    
     public class EndEvent extends ThrowEvent  {    
       
-      FlexoRole eEndEvent as Individual conformTo EndEvent from bpmnModel ;    
+      FlexoRole eObject as Individual conformTo EndEvent from bpmnModel ;    
+          
+      public String name = "End";    
       
       @CreationScheme      
       EndEvent:create(EMFObjectIndividual endEvent) {      
-        eEndEvent = parameters.endEvent;      
+        eObject = parameters.endEvent;      
       }      
       
     }    
@@ -133,9 +149,37 @@ public class BPMNModel {
     @FlexoConcept    
     public class SequenceFlow extends FlowElement  {    
       
-      FlexoRole eSequenceFlow as Individual conformTo SequenceFlow from bpmnModel ;    
+      FlexoRole eObject as Individual conformTo SequenceFlow from bpmnModel ;    
       public FlowNode source;    
       public FlowNode target;    
+          
+      public String name = eObject.name;    
+      
+      @CreationScheme      
+      SequenceFlow:create(EMFObjectIndividual sequenceFlow) {      
+        eObject = parameters.sequenceFlow;        
+        source = container.getFlowNode(eObject.sourceRef);        
+        target = container.getFlowNode(eObject.targetRef);      
+      }      
+      
+    }    
+  
+    @FlexoConcept    
+    public class FlowElement extends BaseElement  {    
+      
+          
+      abstract FlowElement eObject;    
+      
+      @CreationScheme      
+      FlowElement:create() {      
+          
+      }      
+      
+      @DeletionScheme      
+      Void delete() {      
+          
+      }      
+      
     }    
   
   }  
@@ -145,6 +189,10 @@ public class BPMNModel {
   
     public List incoming;  
     public List outgoing;  
+      
+    abstract FlowNode eObject;  
+      
+    public String name = eObject.name;  
   
     @CreationScheme    
     FlowNode:create() {    
@@ -161,11 +209,11 @@ public class BPMNModel {
   @FlexoConcept  
   public class Task extends FlowNode  {  
   
-    FlexoRole eTask as Individual conformTo Task from bpmnModel ;  
+    FlexoRole eObject as Individual conformTo Task from bpmnModel ;  
   
     @CreationScheme    
     Task:create(EMFObjectIndividual task) {    
-      eTask = parameters.task;    
+      eObject = parameters.task;    
     }    
   
   }  
@@ -173,11 +221,13 @@ public class BPMNModel {
   @FlexoConcept  
   public class StartEvent extends CatchEvent  {  
   
-    FlexoRole eStartEvent as Individual conformTo StartEvent from bpmnModel ;  
+    FlexoRole eObject as Individual conformTo StartEvent from bpmnModel ;  
+      
+    public String name = "Begin";  
   
     @CreationScheme    
     StartEvent:create(EMFObjectIndividual startEvent) {    
-      eStartEvent = parameters.startEvent;    
+      eObject = parameters.startEvent;    
     }    
   
   }  
@@ -185,11 +235,13 @@ public class BPMNModel {
   @FlexoConcept  
   public class EndEvent extends ThrowEvent  {  
   
-    FlexoRole eEndEvent as Individual conformTo EndEvent from bpmnModel ;  
+    FlexoRole eObject as Individual conformTo EndEvent from bpmnModel ;  
+      
+    public String name = "End";  
   
     @CreationScheme    
     EndEvent:create(EMFObjectIndividual endEvent) {    
-      eEndEvent = parameters.endEvent;    
+      eObject = parameters.endEvent;    
     }    
   
   }  
@@ -200,6 +252,9 @@ public class BPMNModel {
 
   @FlexoConcept  
   public class Event extends FlowNode  {  
+  
+      
+    abstract Event eObject;  
   
     @CreationScheme    
     Event:create() {    
@@ -216,6 +271,9 @@ public class BPMNModel {
   @FlexoConcept  
   public class ThrowEvent extends Event  {  
   
+      
+    abstract ThrowEvent eObject;  
+  
     @CreationScheme    
     ThrowEvent:create() {    
       
@@ -230,6 +288,9 @@ public class BPMNModel {
 
   @FlexoConcept  
   public class CatchEvent extends Event  {  
+  
+      
+    abstract CatchEvent eObject;  
   
     @CreationScheme    
     CatchEvent:create() {    
@@ -246,16 +307,47 @@ public class BPMNModel {
   @FlexoConcept  
   public class SequenceFlow extends FlowElement  {  
   
-    FlexoRole eSequenceFlow as Individual conformTo SequenceFlow from bpmnModel ;  
+    FlexoRole eObject as Individual conformTo SequenceFlow from bpmnModel ;  
     public FlowNode source;  
     public FlowNode target;  
+      
+    public String name = eObject.name;  
+  
+    @CreationScheme    
+    SequenceFlow:create(EMFObjectIndividual sequenceFlow) {    
+      eObject = parameters.sequenceFlow;      
+      source = container.getFlowNode(eObject.sourceRef);      
+      target = container.getFlowNode(eObject.targetRef);    
+    }    
+  
   }  
 
   @FlexoConcept  
-  public class FlowElement {  
+  public class FlowElement extends BaseElement  {  
+  
+      
+    abstract FlowElement eObject;  
   
     @CreationScheme    
     FlowElement:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class BaseElement {  
+  
+      
+    abstract BaseElement eObject;  
+  
+    @CreationScheme    
+    BaseElement:create() {    
       
     }    
   
