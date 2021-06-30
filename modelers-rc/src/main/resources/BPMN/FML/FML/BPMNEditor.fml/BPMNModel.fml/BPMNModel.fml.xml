@@ -55,7 +55,7 @@
       <Inspector id="SYL-58" inspectorTitle="Gateway" userID="SYL" flexoID="58" />
     </EmbeddedFlexoConcept>
     <EmbeddedFlexoConcept id="SYL-936" visibility="Public" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowElement" name="SequenceFlow" userID="SYL" flexoID="936">
-      <Inspector id="SYL-937" renderer="name" inspectorTitle="SequenceFlow" userID="SYL" flexoID="937" />
+      <Inspector id="SYL-937" renderer="((source.name + &quot;-&quot;) + target.name)" inspectorTitle="SequenceFlow" userID="SYL" flexoID="937" />
       <EMFObjectIndividualRole id="SYL-943" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/SequenceFlow" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="943" />
       <FlexoConceptInstanceRole id="SYL-992" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" cloningStrategy="Reference" cardinality="One" name="source" userID="SYL" flexoID="992" />
       <FlexoConceptInstanceRole id="SYL-993" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowNode" cloningStrategy="Reference" cardinality="One" name="target" userID="SYL" flexoID="993" />
@@ -63,9 +63,19 @@
       <CreationScheme id="SYL-1136" label="create" name="create" width="800" height="600" userID="SYL" flexoID="1136">
         <BehaviourControlGraph_Sequence id="SYL-1155" userID="SYL" flexoID="1155">
           <ControlGraph2_Sequence id="SYL-1156" ownerContext="controlGraph2" userID="SYL" flexoID="1156">
-            <ControlGraph2_AssignationAction id="SYL-1153" assign="target" ownerContext="controlGraph2" userID="SYL" flexoID="1153">
-              <AssignableAction_ExpressionAction id="SYL-1154" expression="container.getFlowNode(eObject.targetRef)" userID="SYL" flexoID="1154" />
-            </ControlGraph2_AssignationAction>
+            <ControlGraph2_Sequence id="SYL-1204" ownerContext="controlGraph2" userID="SYL" flexoID="1204">
+              <ControlGraph2_Sequence id="SYL-1205" ownerContext="controlGraph2" userID="SYL" flexoID="1205">
+                <ControlGraph2_AddToListAction id="SYL-1203" list="target.incoming" ownerContext="controlGraph2" userID="SYL" flexoID="1203">
+                  <AssignableAction_ExpressionAction id="SYL-1202" expression="this" userID="SYL" flexoID="1202" />
+                </ControlGraph2_AddToListAction>
+                <ControlGraph1_AddToListAction id="SYL-1201" list="source.outgoing" ownerContext="controlGraph1" userID="SYL" flexoID="1201">
+                  <AssignableAction_ExpressionAction id="SYL-1200" expression="this" userID="SYL" flexoID="1200" />
+                </ControlGraph1_AddToListAction>
+              </ControlGraph2_Sequence>
+              <ControlGraph1_AssignationAction id="SYL-1153" assign="target" ownerContext="controlGraph1" userID="SYL" flexoID="1153">
+                <AssignableAction_ExpressionAction id="SYL-1154" expression="container.getFlowNode(eObject.targetRef)" userID="SYL" flexoID="1154" />
+              </ControlGraph1_AssignationAction>
+            </ControlGraph2_Sequence>
             <ControlGraph1_AssignationAction id="SYL-1152" assign="source" ownerContext="controlGraph1" userID="SYL" flexoID="1152">
               <AssignableAction_ExpressionAction id="SYL-1151" expression="container.getFlowNode(eObject.sourceRef)" userID="SYL" flexoID="1151" />
             </ControlGraph1_AssignationAction>

@@ -159,7 +159,9 @@ public class BPMNModel {
       SequenceFlow:create(EMFObjectIndividual sequenceFlow) {      
         eObject = parameters.sequenceFlow;        
         source = container.getFlowNode(eObject.sourceRef);        
-        target = container.getFlowNode(eObject.targetRef);      
+        target = container.getFlowNode(eObject.targetRef);        
+        source.outgoing.add(this)        
+        target.incoming.add(this)      
       }      
       
     }    
@@ -317,7 +319,9 @@ public class BPMNModel {
     SequenceFlow:create(EMFObjectIndividual sequenceFlow) {    
       eObject = parameters.sequenceFlow;      
       source = container.getFlowNode(eObject.sourceRef);      
-      target = container.getFlowNode(eObject.targetRef);    
+      target = container.getFlowNode(eObject.targetRef);      
+      source.outgoing.add(this)      
+      target.incoming.add(this)    
     }    
   
   }  
