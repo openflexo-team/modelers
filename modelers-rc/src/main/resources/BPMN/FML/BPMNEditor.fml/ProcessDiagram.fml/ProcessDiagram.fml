@@ -37,6 +37,7 @@ public class ProcessDiagram {
 
   @CreationScheme  
   ProcessDiagram:representsDiagram(EMFObjectIndividual diagram, Process process) {  
+    diagram = CreateDiagram();    
     diagramEObject = parameters.diagram;    
     planeEObject = diagramEObject.plane;    
     process = parameters.process;    

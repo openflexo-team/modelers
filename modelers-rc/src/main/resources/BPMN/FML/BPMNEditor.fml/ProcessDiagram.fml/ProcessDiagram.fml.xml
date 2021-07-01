@@ -179,23 +179,28 @@
     <BehaviourControlGraph_DeleteAction id="SYL-705" object="diagram" userID="SYL" flexoID="705" />
   </DeletionScheme>
   <CreationScheme id="SYL-994" label="representsDiagram" name="representsDiagram" width="800" height="600" userID="SYL" flexoID="994">
-    <BehaviourControlGraph_Sequence id="SYL-1002" userID="SYL" flexoID="1002">
-      <ControlGraph2_Sequence id="SYL-1048" ownerContext="controlGraph2" userID="SYL" flexoID="1048">
-        <ControlGraph2_Sequence id="SYL-1050" ownerContext="controlGraph2" userID="SYL" flexoID="1050">
-          <ControlGraph2_IterationAction id="SYL-1040" iteratorName="planeElement" ownerContext="controlGraph2" userID="SYL" flexoID="1040">
-            <Iteration_ExpressionAction id="SYL-1041" expression="planeEObject.planeElement" ownerContext="iterationControlGraph" userID="SYL" flexoID="1041" />
-            <ControlGraph_LogAction id="SYL-1043" logLevel="INFO" logString="(&quot;element : &quot; + planeElement)" ownerContext="controlGraph" userID="SYL" flexoID="1043" />
-          </ControlGraph2_IterationAction>
-          <ControlGraph1_AssignationAction id="SYL-1035" assign="process" ownerContext="controlGraph1" userID="SYL" flexoID="1035">
-            <AssignableAction_ExpressionAction id="SYL-1034" expression="parameters.process" userID="SYL" flexoID="1034" />
+    <BehaviourControlGraph_Sequence id="SYL-1086" userID="SYL" flexoID="1086">
+      <ControlGraph2_Sequence id="SYL-1087" ownerContext="controlGraph2" userID="SYL" flexoID="1087">
+        <ControlGraph2_Sequence id="SYL-1048" ownerContext="controlGraph2" userID="SYL" flexoID="1048">
+          <ControlGraph2_Sequence id="SYL-1050" ownerContext="controlGraph2" userID="SYL" flexoID="1050">
+            <ControlGraph2_IterationAction id="SYL-1040" iteratorName="planeElement" ownerContext="controlGraph2" userID="SYL" flexoID="1040">
+              <Iteration_ExpressionAction id="SYL-1041" expression="planeEObject.planeElement" ownerContext="iterationControlGraph" userID="SYL" flexoID="1041" />
+              <ControlGraph_LogAction id="SYL-1043" logLevel="INFO" logString="(&quot;element : &quot; + planeElement)" ownerContext="controlGraph" userID="SYL" flexoID="1043" />
+            </ControlGraph2_IterationAction>
+            <ControlGraph1_AssignationAction id="SYL-1035" assign="process" ownerContext="controlGraph1" userID="SYL" flexoID="1035">
+              <AssignableAction_ExpressionAction id="SYL-1034" expression="parameters.process" userID="SYL" flexoID="1034" />
+            </ControlGraph1_AssignationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_AssignationAction id="SYL-1001" assign="planeEObject" ownerContext="controlGraph1" userID="SYL" flexoID="1001">
+            <AssignableAction_ExpressionAction id="SYL-1000" expression="diagramEObject.plane" userID="SYL" flexoID="1000" />
           </ControlGraph1_AssignationAction>
         </ControlGraph2_Sequence>
-        <ControlGraph1_AssignationAction id="SYL-1001" assign="planeEObject" ownerContext="controlGraph1" userID="SYL" flexoID="1001">
-          <AssignableAction_ExpressionAction id="SYL-1000" expression="diagramEObject.plane" userID="SYL" flexoID="1000" />
+        <ControlGraph1_AssignationAction id="SYL-998" assign="diagramEObject" ownerContext="controlGraph1" userID="SYL" flexoID="998">
+          <AssignableAction_ExpressionAction id="SYL-997" expression="parameters.diagram" userID="SYL" flexoID="997" />
         </ControlGraph1_AssignationAction>
       </ControlGraph2_Sequence>
-      <ControlGraph1_AssignationAction id="SYL-998" assign="diagramEObject" ownerContext="controlGraph1" userID="SYL" flexoID="998">
-        <AssignableAction_ExpressionAction id="SYL-997" expression="parameters.diagram" userID="SYL" flexoID="997" />
+      <ControlGraph1_AssignationAction id="SYL-1084" assign="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="1084">
+        <AssignableAction_CreateDiagram id="SYL-1085" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.process.processName" resourceCenter="this.resourceCenter" relativePath="/Diagrams" dynamicRelativePath="&quot;/Diagrams&quot;" resourceName="parameters.process.processName" userID="SYL" flexoID="1085" />
       </ControlGraph1_AssignationAction>
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-996" isRequired="true" widget="CUSTOM_WIDGET" name="diagram" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="996" />
