@@ -10,21 +10,34 @@ use org.openflexo.technologyadapter.emf.EMFModelSlot;
 public class BPMNModel {
 
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a5 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
-  BPMNModel:create(EMFModelResource bpmnResource) {  
+  BPMNModel:create() {  
     ui = ui.ConfigureGINAFIBComponent();    
-    bpmnModel = parameters.bpmnResource.resourceData;    
     Definitions definitions = SelectUniqueEMFObjectIndividual from bpmnModel as Definitions;    
     log ("root elements = " + definitions.rootElements)    
     for (rootElement : definitions.rootElements) {    
-      log ("coucou le " + rootElement)      
-      log ("type=" + rootElement.type.name)      
+      log ("Found root element " + rootElement)      
       if (rootElement.type.name = "Process") {      
         Process.create(rootElement)      
       }    
+    }    
+    for (diagram : definitions.diagrams) {    
+      log ("Found diagram " + diagram)      
+      log ("type=" + diagram.type.name)      
+      if (diagram.type.name = "BPMNDiagram") {      
+        log ("Create diagram " + diagram)        
+        log ("bpmnElement=" + diagram.plane.bpmnElement)        
+        Process process = this.getProcess(diagram.plane.bpmnElement);        
+        log ("Process=" + process)        
+        ProcessDiagram.representsDiagram(diagram)      
+      }    
     }  
+  }  
+
+  @ActionScheme  
+  Process getProcess(BaseElement processObject) {  
+    return this.SelectUniqueFlexoConceptInstance(type=Process,where=where=(selected.eObject = parameters.processObject));  
   }  
 
 

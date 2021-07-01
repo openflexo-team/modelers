@@ -12,14 +12,16 @@ public class BPMNEditor {
 
   public BPMNModel model;
   @GetSetProperty(value="rootProcessDiagrams", access=get)  
-  public List<UndefinedVirtualModelInstanceType> getRootProcessDiagrams {  
+  public List<ProcessDiagram> getRootProcessDiagrams {  
     return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
   }
   public GINAFIBComponent ui;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a7 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNEditor:create(EMFModelResource bpmnResource) {  
-    model = BPMNModel.create(parameters.bpmnResource);    
+    bpmnModel = parameters.bpmnResource.resourceData;    
+    model = BPMNModel.create();    
     ui = ui.ConfigureGINAFIBComponent();  
   }  
 
