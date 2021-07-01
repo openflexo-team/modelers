@@ -10,8 +10,8 @@ public class ProcessDiagram {
 
   public Diagram diagram;
   public Process process;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a7 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
-  FlexoRole eObject as Individual conformTo  from bpmnModel ;
+  FlexoRole diagramEObject as Individual conformTo BPMNDiagram from bpmnModel ;
+  FlexoRole planeEObject as Individual conformTo BPMNPlane from bpmnModel ;
 
   @CreationScheme  
   ProcessDiagram:createNewProcess(String name) {  
@@ -33,6 +33,12 @@ public class ProcessDiagram {
   @DeletionScheme  
   Void delete() {  
     delete diagram;  
+  }  
+
+  @CreationScheme  
+  ProcessDiagram:representsDiagram(EMFObjectIndividual diagram) {  
+    diagramEObject = parameters.diagram;    
+    planeEObject = diagramEObject.plane;  
   }  
 
 
