@@ -6,6 +6,10 @@
     </Inspector>
     <ShapeRole id="SYL-91" previewHeight="63.99825783972124" previewY="68.00087108013938" previewX="55.431979368149584" previewWidth="139.13604126370083" exampleLabel="Activity" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="91">
       <GRSpec id="SYL-1303" featureName="label" value="modelElement.name" userID="SYL" flexoID="1303" />
+      <GRSpec id="SYL-1308" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1308" />
+      <GRSpec id="SYL-1309" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1309" />
+      <GRSpec id="SYL-1310" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1310" />
+      <GRSpec id="SYL-1311" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1311" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-92" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="92" />
     <EMFObjectIndividualRole id="SYL-1217" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Task" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1217" />
@@ -43,6 +47,10 @@
     </Inspector>
     <ShapeRole id="SYL-112" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="112">
       <GRSpec id="SYL-1304" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1304" />
+      <GRSpec id="SYL-1318" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1318" />
+      <GRSpec id="SYL-1319" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1319" />
+      <GRSpec id="SYL-1320" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1320" />
+      <GRSpec id="SYL-1321" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1321" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-113" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="113" />
     <EMFObjectIndividualRole id="SYL-1190" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/StartEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1190" />
@@ -78,6 +86,10 @@
     <Inspector id="SYL-128" inspectorTitle="EndActivityGR" userID="SYL" flexoID="128" />
     <ShapeRole id="SYL-133" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="133">
       <GRSpec id="SYL-1305" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1305" />
+      <GRSpec id="SYL-1328" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1328" />
+      <GRSpec id="SYL-1329" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1329" />
+      <GRSpec id="SYL-1330" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1330" />
+      <GRSpec id="SYL-1331" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1331" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="134" />
     <EMFObjectIndividualRole id="SYL-1216" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/EndEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1216" />
