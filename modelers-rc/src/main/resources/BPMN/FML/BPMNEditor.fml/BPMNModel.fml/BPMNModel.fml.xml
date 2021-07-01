@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" version="0.1" smallIconResource="../../../Icons/BPMN_32x32.png" name="BPMNModel" author="sylvain" userID="SYL" flexoID="2">
-  <FlexoConcept id="SYL-11" smallIconResource="../../../Icons/Process.png" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BaseElement" name="Process" userID="SYL" flexoID="11">
+<VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" version="0.1" smallIconResource="../../Icons/BPMN_32x32.png" name="BPMNModel" author="sylvain" userID="SYL" flexoID="2">
+  <FlexoConcept id="SYL-11" smallIconResource="../../Icons/Process.png" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BaseElement" name="Process" userID="SYL" flexoID="11">
     <Inspector id="SYL-6" renderer="processName" inspectorTitle="Process" userID="SYL" flexoID="6">
       <InspectorEntry id="SYL-790" readOnly="true" widget="TEXT_FIELD" data="processName" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="790" />
     </Inspector>
