@@ -2,11 +2,11 @@
 <VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" version="0.1" smallIconResource="../../Icons/BPMN_32x32.png" name="BPMNModel" author="sylvain" userID="SYL" flexoID="2">
   <FlexoConcept id="SYL-11" smallIconResource="../../Icons/Process.png" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#BaseElement" name="Process" userID="SYL" flexoID="11">
     <Inspector id="SYL-6" renderer="processName" inspectorTitle="Process" userID="SYL" flexoID="6">
-      <InspectorEntry id="SYL-790" readOnly="true" widget="TEXT_FIELD" data="processName" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="790" />
+      <InspectorEntry id="SYL-790" widget="TEXT_FIELD" readOnly="true" data="processName" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="790" />
     </Inspector>
     <EmbeddedFlexoConcept id="SYL-20" isAbstract="true" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#FlowElement" name="FlowNode" userID="SYL" flexoID="20">
       <Inspector id="SYL-15" renderer="name" inspectorTitle="FlowNode" userID="SYL" flexoID="15">
-        <InspectorEntry id="SYL-104" readOnly="true" widget="TEXT_FIELD" data="name" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="104" />
+        <InspectorEntry id="SYL-104" widget="TEXT_FIELD" readOnly="true" data="name" name="name" label="name" type="java.lang.String" userID="SYL" flexoID="104" />
       </Inspector>
       <FlexoConceptInstanceRole id="SYL-994" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" cloningStrategy="Reference" cardinality="ZeroMany" name="incoming" userID="SYL" flexoID="994" />
       <FlexoConceptInstanceRole id="SYL-995" virtualModelInstance="container.container" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" cloningStrategy="Reference" cardinality="ZeroMany" name="outgoing" userID="SYL" flexoID="995" />
@@ -108,24 +108,24 @@
               <ControlGraph2_Sequence id="SYL-870" ownerContext="controlGraph2" userID="SYL" flexoID="870">
                 <ControlGraph2_Sequence id="SYL-1157" ownerContext="controlGraph2" userID="SYL" flexoID="1157">
                   <ControlGraph2_ConditionalAction id="SYL-1134" condition="(flowElement.type.name = &quot;SequenceFlow&quot;)" ownerContext="controlGraph2" userID="SYL" flexoID="1134">
-                    <ThenControlGraph_AddFlexoConceptInstance id="SYL-1135" container="this" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow.create(sequenceFlow)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="1135">
+                    <ThenControlGraph_AddFlexoConceptInstance id="SYL-1135" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow.create(sequenceFlow)" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="1135">
                       <AddFlexoConceptInstanceParameter id="SYL-1158" paramName="sequenceFlow" value="flowElement" userID="SYL" flexoID="1158" />
                     </ThenControlGraph_AddFlexoConceptInstance>
                   </ControlGraph2_ConditionalAction>
                   <ControlGraph1_ConditionalAction id="SYL-849" condition="(flowElement.type.name = &quot;Task&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="849">
-                    <ThenControlGraph_AddFlexoConceptInstance id="SYL-850" container="this" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task.create(task)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="850">
+                    <ThenControlGraph_AddFlexoConceptInstance id="SYL-850" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task.create(task)" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="850">
                       <AddFlexoConceptInstanceParameter id="SYL-1050" paramName="task" value="flowElement" userID="SYL" flexoID="1050" />
                     </ThenControlGraph_AddFlexoConceptInstance>
                   </ControlGraph1_ConditionalAction>
                 </ControlGraph2_Sequence>
                 <ControlGraph1_ConditionalAction id="SYL-847" condition="(flowElement.type.name = &quot;EndEvent&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="847">
-                  <ThenControlGraph_AddFlexoConceptInstance id="SYL-848" container="this" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent.create(endEvent)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="848">
+                  <ThenControlGraph_AddFlexoConceptInstance id="SYL-848" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent.create(endEvent)" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="848">
                     <AddFlexoConceptInstanceParameter id="SYL-1048" paramName="endEvent" value="flowElement" userID="SYL" flexoID="1048" />
                   </ThenControlGraph_AddFlexoConceptInstance>
                 </ControlGraph1_ConditionalAction>
               </ControlGraph2_Sequence>
               <ControlGraph1_ConditionalAction id="SYL-841" condition="(flowElement.type.name = &quot;StartEvent&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="841">
-                <ThenControlGraph_AddFlexoConceptInstance id="SYL-843" container="this" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent.create(startEvent)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="843">
+                <ThenControlGraph_AddFlexoConceptInstance id="SYL-843" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent.create(startEvent)" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" receiver="container" ownerContext="thenControlGraph" userID="SYL" flexoID="843">
                   <AddFlexoConceptInstanceParameter id="SYL-1049" paramName="startEvent" value="flowElement" userID="SYL" flexoID="1049" />
                 </ThenControlGraph_AddFlexoConceptInstance>
               </ControlGraph1_ConditionalAction>
@@ -164,6 +164,14 @@
         </AssignableAction_SelectUniqueFlexoConceptInstance>
       </BehaviourControlGraph_ReturnStatement>
       <GenericBehaviourParameter id="SYL-1149" isRequired="true" widget="CUSTOM_WIDGET" name="flowNodeObject" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/FlowNode&gt;" userID="SYL" flexoID="1149" />
+    </ActionScheme>
+    <ActionScheme id="SYL-1400" label="getStartEvent" name="getStartEvent" width="800" height="600" userID="SYL" flexoID="1400">
+      <BehaviourControlGraph_ReturnStatement id="SYL-1403" userID="SYL" flexoID="1403">
+        <AssignableAction_SelectUniqueFlexoConceptInstance id="SYL-1402" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" receiver="container" userID="SYL" flexoID="1402">
+          <Condition id="SYL-1401" condition="(selected.eObject = parameters.startEvent)" userID="SYL" flexoID="1401" />
+        </AssignableAction_SelectUniqueFlexoConceptInstance>
+      </BehaviourControlGraph_ReturnStatement>
+      <GenericBehaviourParameter id="SYL-1404" isRequired="true" widget="CUSTOM_WIDGET" name="startEvent" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/StartEvent&gt;" userID="SYL" flexoID="1404" />
     </ActionScheme>
   </FlexoConcept>
   <FlexoConcept idref="SYL-20" />
