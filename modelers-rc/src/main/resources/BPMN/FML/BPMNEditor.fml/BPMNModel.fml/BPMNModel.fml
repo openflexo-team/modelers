@@ -30,7 +30,7 @@ public class BPMNModel {
         log ("bpmnElement=" + diagram.plane.bpmnElement)        
         Process process = this.getProcess(diagram.plane.bpmnElement);        
         log ("Process=" + process)        
-        ProcessDiagram.representsDiagram(diagram)      
+        ProcessDiagram.representsDiagram(diagram,process)      
       }    
     }  
   }  
