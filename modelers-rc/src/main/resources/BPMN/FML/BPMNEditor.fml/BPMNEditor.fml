@@ -16,7 +16,7 @@ public class BPMNEditor {
     return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
   }
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_a7 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_80 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNEditor:create(EMFModelResource bpmnResource) {  
@@ -27,7 +27,7 @@ public class BPMNEditor {
 
   @ActionScheme  
   public ProcessDiagram newProcessDiagram(String processName) {  
-    ProcessDiagram returned = ProcessDiagram.createNewProcess(parameters.processName);    
+    ProcessDiagram returned = this.AddVirtualModelInstance();    
     this.firePropertyChange rootProcesses    
     return returned;  
   }  
@@ -67,7 +67,7 @@ public class BPMNEditor {
     }    
     log ("creating process " + current)    
     if (parameters.parentProcess != null) {    
-      return ProcessDiagram.createNewSubProcess(current,parameters.parentProcess);    
+      return this.AddVirtualModelInstance();    
     } else {    
       
     }    

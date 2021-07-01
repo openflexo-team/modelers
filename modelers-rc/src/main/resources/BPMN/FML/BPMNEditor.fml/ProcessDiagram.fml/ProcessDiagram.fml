@@ -12,8 +12,8 @@ public class ProcessDiagram {
   public Process process;
   FlexoRole diagramEObject as Individual conformTo BPMNDiagram from bpmnModel ;
   FlexoRole planeEObject as Individual conformTo BPMNPlane from bpmnModel ;
-  FlexoRole bpmnShape as Individual conformTo BPMNShape from bpmnModel ;
-  FlexoRole bpmnEdge as Individual conformTo BPMNEdge from bpmnModel ;
+  FlexoRole tempBPMNShape as Individual conformTo BPMNShape from bpmnModel ;
+  FlexoRole tempBPMNEdge as Individual conformTo BPMNEdge from bpmnModel ;
 
   @DeletionScheme  
   Void delete() {  
@@ -29,10 +29,16 @@ public class ProcessDiagram {
     for (planeElement : planeEObject.planeElement) {    
       log ("element : " + planeElement)      
       if (planeElement.type.name = "BPMNShape") {      
-        bpmnShape = planeElement;        
-        log ("shape element = " + this.bpmnShape.bpmnElement)        
-        if (this.bpmnShape.bpmnElement.type.name = "StartEvent") {        
-          StartEventGR.representStartEvent(this.bpmnShape.bpmnElement)        
+        tempBPMNShape = planeElement;        
+        log ("shape element = " + this.tempBPMNShape.bpmnElement)        
+        if (this.tempBPMNShape.bpmnElement.type.name = "StartEvent") {        
+          StartEventGR.representStartEvent(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "EndEvent") {        
+          EndEventGR.representEndEvent(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "Task") {        
+          TaskGR.representTask(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
         }      
       }    
     }  
@@ -44,9 +50,18 @@ public class ProcessDiagram {
   
     public DiagramShape shape;  
     public Task modelElement;  
+    FlexoRole eObject as Individual conformTo Task from bpmnModel ;  
   
     @DropScheme    
     TaskGR:dropActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
+    }    
+  
+    @CreationScheme    
+    TaskGR:representTask(EMFObjectIndividual task, BPMNShape bpmnShape) {    
+      eObject = parameters.task;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
       shape = diagram.AddShape();    
     }    
   
@@ -65,8 +80,9 @@ public class ProcessDiagram {
     }    
   
     @CreationScheme    
-    StartEventGR:representStartEvent(EMFObjectIndividual startEvent) {    
+    StartEventGR:representStartEvent(EMFObjectIndividual startEvent, BPMNShape bpmnShape) {    
       eObject = parameters.startEvent;      
+      bpmnShape = parameters.bpmnShape;      
       modelElement = process.getFlowNode(eObject);      
       shape = diagram.AddShape();    
     }    
@@ -74,13 +90,22 @@ public class ProcessDiagram {
   }  
 
   @FlexoConcept  
-  public class EndActivityGR extends FlowNodeGR  {  
+  public class EndEventGR extends FlowNodeGR  {  
   
     public DiagramShape shape;  
     public EndEvent modelElement;  
+    FlexoRole eObject as Individual conformTo EndEvent from bpmnModel ;  
   
     @DropScheme    
-    EndActivityGR:dropEndActivityGRAtTopLevel() {    
+    EndEventGR:dropEndActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
+    }    
+  
+    @CreationScheme    
+    EndEventGR:representEndEvent(EMFObjectIndividual endEvent, BPMNShape bpmnShape) {    
+      eObject = parameters.endEvent;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
       shape = diagram.AddShape();    
     }    
   
@@ -112,6 +137,9 @@ public class ProcessDiagram {
     abstract DiagramShape shape;  
       
     abstract FlowNode modelElement;  
+      
+    abstract FlowNode eObject;  
+    FlexoRole bpmnShape as Individual conformTo BPMNShape from bpmnModel ;  
   }  
 
 }
