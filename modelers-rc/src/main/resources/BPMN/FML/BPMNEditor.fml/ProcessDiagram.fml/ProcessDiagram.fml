@@ -40,95 +40,81 @@ public class ProcessDiagram {
 
 
   @FlexoConcept  
-  public class ActivityGR extends TransitionEmitterGR,TransitionReceiverGR  {  
+  public class TaskGR extends FlowNodeGR  {  
   
     public DiagramShape shape;  
-    public Task activity;  
+    public Task modelElement;  
   
     @DropScheme    
-    ActivityGR:dropActivityGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = model.AddFlexoConceptInstance();    
+    TaskGR:dropActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class BeginActivityGR extends TransitionEmitterGR  {  
+  public class StartEventGR extends FlowNodeGR  {  
   
     public DiagramShape shape;  
-    public StartEvent activity;  
+    public StartEvent modelElement;  
   
     @DropScheme    
-    BeginActivityGR:dropBeginActivityGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = StartEvent.create();    
+    StartEventGR:dropBeginActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class EndActivityGR extends TransitionReceiverGR  {  
+  public class EndActivityGR extends FlowNodeGR  {  
   
     public DiagramShape shape;  
-    public EndEvent activity;  
+    public EndEvent modelElement;  
   
     @DropScheme    
     EndActivityGR:dropEndActivityGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = model.AddFlexoConceptInstance();    
+      shape = diagram.AddShape();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class GatewayGR extends TransitionEmitterGR,TransitionReceiverGR  {  
-  
-    public DiagramShape shape;  
-    public Gateway activity;  
-  
-    @DropScheme    
-    GatewayGR:dropGatewayGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = model.AddFlexoConceptInstance();    
-    }    
-  
+  public class GatewayGR extends FlowNodeGR  {  
   }  
 
   @FlexoConcept  
-  public class TransitionGR {  
+  public class SequenceFlowGR {  
   
     public DiagramConnector connector;  
-    public FlexoConceptInstance transition;  
+    public SequenceFlow sequenceFlow;  
+    public FlowNodeGR fromNodeGR;  
+    public FlowNodeGR toNodeGR;  
   
     @LinkScheme    
-    TransitionGR:linkEmitterGRToReceiverGR() {    
-      connector = diagram.AddConnector();      
-      transition = model.AddFlexoConceptInstance();      
-      fromTarget.activity.outTransitions.add(transition)      
-      toTarget.activity.inTransitions.add(transition)    
+    SequenceFlowGR:linkNodes() {    
+      connector = diagram.AddConnector();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class AbstractActivityGR {  
+  public class FlowNodeGR {  
   
       
     abstract DiagramShape shape;  
       
-    abstract FlowNode activity;  
+    abstract FlowNode modelElement;  
   }  
 
   @FlexoConcept  
-  public class TransitionEmitterGR extends AbstractActivityGR  {  
+  public class TransitionEmitterGR extends FlowNodeGR  {  
   
       
     abstract UndefinedFlexoConceptInstanceType<http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionEmitter> activity;  
   }  
 
   @FlexoConcept  
-  public class TransitionReceiverGR extends AbstractActivityGR  {  
+  public class TransitionReceiverGR extends FlowNodeGR  {  
   
       
     abstract UndefinedFlexoConceptInstanceType<http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#TransitionReceiver> activity;  
