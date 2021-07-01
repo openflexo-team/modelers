@@ -12,23 +12,8 @@ public class ProcessDiagram {
   public Process process;
   FlexoRole diagramEObject as Individual conformTo BPMNDiagram from bpmnModel ;
   FlexoRole planeEObject as Individual conformTo BPMNPlane from bpmnModel ;
-
-  @CreationScheme  
-  ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram();    
-    process = Process.create();  
-  }  
-
-  @CreationScheme  
-  ProcessDiagram:createNewSubProcess(String name, Process parentProcess) {  
-    diagram = CreateDiagram();    
-    process = Process.create();  
-  }  
-
-  @ActionScheme  
-  public ProcessDiagram newSubProcess(String processName) {  
-    return ProcessDiagram.createNewSubProcess(parameters.processName,this.process);  
-  }  
+  FlexoRole bpmnShape as Individual conformTo BPMNShape from bpmnModel ;
+  FlexoRole bpmnEdge as Individual conformTo BPMNEdge from bpmnModel ;
 
   @DeletionScheme  
   Void delete() {  
@@ -42,7 +27,14 @@ public class ProcessDiagram {
     planeEObject = diagramEObject.plane;    
     process = parameters.process;    
     for (planeElement : planeEObject.planeElement) {    
-      log ("element : " + planeElement)    
+      log ("element : " + planeElement)      
+      if (planeElement.type.name = "BPMNShape") {      
+        bpmnShape = planeElement;        
+        log ("shape element = " + this.bpmnShape.bpmnElement)        
+        if (this.bpmnShape.bpmnElement.type.name = "StartEvent") {        
+              
+        }      
+      }    
     }  
   }  
 
