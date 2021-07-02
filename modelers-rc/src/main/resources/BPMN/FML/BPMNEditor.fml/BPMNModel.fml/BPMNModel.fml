@@ -46,7 +46,7 @@ public class BPMNModel {
   
     FlexoRole eObject as Individual conformTo Process from bpmnModel ;  
       
-    public String processName = ((eObject.name != null) ? eObject.name : "Root process");  
+    public String processName = ((eObject.name != null) ? eObject.name : bpmnModel.resource.name.substring(0,bpmnModel.resource.name.indexOf(".")));  
   
     @CreationScheme    
     Process:create(EMFObjectIndividual aProcess) {    
@@ -96,6 +96,11 @@ public class BPMNModel {
     @ActionScheme    
     FlowNode getFlowNode(FlowNode flowNodeObject) {    
       return container.SelectUniqueFlexoConceptInstance(type=FlowNode,where=where=(selected.eObject = parameters.flowNodeObject));    
+    }    
+  
+    @ActionScheme    
+    SequenceFlow getSequenceFlow(SequenceFlow sequenceFlowObject) {    
+      return container.SelectUniqueFlexoConceptInstance(type=SequenceFlow,where=where=(selected.eObject = parameters.sequenceFlowObject));    
     }    
   
   

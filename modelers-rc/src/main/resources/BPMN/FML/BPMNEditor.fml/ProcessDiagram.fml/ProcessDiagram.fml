@@ -27,7 +27,6 @@ public class ProcessDiagram {
     planeEObject = diagramEObject.plane;    
     process = parameters.process;    
     for (planeElement : planeEObject.planeElement) {    
-      log ("element : " + planeElement)      
       if (planeElement.type.name = "BPMNShape") {      
         tempBPMNShape = planeElement;        
         log ("shape element = " + this.tempBPMNShape.bpmnElement)        
@@ -47,7 +46,21 @@ public class ProcessDiagram {
           ExclusiveGatewayGR.representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
         }      
       }    
+    }    
+    for (planeElement : planeEObject.planeElement) {    
+      if (planeElement.type.name = "BPMNEdge") {      
+        tempBPMNEdge = planeElement;        
+        log ("edge element = " + this.tempBPMNEdge.bpmnElement)        
+        if (this.tempBPMNEdge.bpmnElement.type.name = "SequenceFlow") {        
+          SequenceFlowGR.representSequenceFlow(this.tempBPMNEdge.bpmnElement,this.tempBPMNEdge)        
+        }      
+      }    
     }  
+  }  
+
+  @ActionScheme  
+  FlowNodeGR getFlowNodeGR(FlowNode flowNode) {  
+    return this.SelectUniqueFlexoConceptInstance(type=FlowNodeGR,where=where=(selected.modelElement = parameters.flowNode));  
   }  
 
 
@@ -128,9 +141,22 @@ public class ProcessDiagram {
     public SequenceFlow sequenceFlow;  
     public FlowNodeGR fromNodeGR;  
     public FlowNodeGR toNodeGR;  
+    public SequenceFlow modelElement;  
+    FlexoRole eObject as Individual conformTo SequenceFlow from bpmnModel ;  
+    FlexoRole bpmnEdge as Individual conformTo BPMNShape from bpmnModel ;  
   
     @LinkScheme    
     SequenceFlowGR:linkNodes() {    
+      connector = diagram.AddConnector();    
+    }    
+  
+    @CreationScheme    
+    SequenceFlowGR:representSequenceFlow(EMFObjectIndividual sequenceFlow, BPMNEdge bpmnEdge) {    
+      eObject = parameters.sequenceFlow;      
+      bpmnEdge = parameters.bpmnEdge;      
+      modelElement = process.getSequenceFlow(eObject);      
+      fromNodeGR = container.getFlowNodeGR(modelElement.source);      
+      toNodeGR = container.getFlowNodeGR(modelElement.target);      
       connector = diagram.AddConnector();    
     }    
   

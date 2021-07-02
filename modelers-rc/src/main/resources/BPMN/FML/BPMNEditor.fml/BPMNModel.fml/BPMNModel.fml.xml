@@ -98,7 +98,7 @@
       </DeletionScheme>
     </EmbeddedFlexoConcept>
     <EMFObjectIndividualRole id="SYL-746" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Process" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="746" />
-    <ExpressionProperty id="SYL-789" expression="((eObject.name != null) ? eObject.name : &quot;Root process&quot;)" name="processName" userID="SYL" flexoID="789" />
+    <ExpressionProperty id="SYL-789" expression="((eObject.name != null) ? eObject.name : bpmnModel.resource.name.substring(0,bpmnModel.resource.name.indexOf(&quot;.&quot;)))" name="processName" userID="SYL" flexoID="789" />
     <CreationScheme id="SYL-8" label="create" name="create" width="800" height="600" userID="SYL" flexoID="8">
       <BehaviourControlGraph_Sequence id="SYL-867" ownerContext="controlGraph2" userID="SYL" flexoID="867">
         <ControlGraph2_IterationAction id="SYL-834" iteratorName="flowElement" ownerContext="controlGraph2" userID="SYL" flexoID="834">
@@ -178,6 +178,14 @@
         </AssignableAction_SelectUniqueFlexoConceptInstance>
       </BehaviourControlGraph_ReturnStatement>
       <GenericBehaviourParameter id="SYL-1149" isRequired="true" widget="CUSTOM_WIDGET" name="flowNodeObject" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/FlowNode&gt;" userID="SYL" flexoID="1149" />
+    </ActionScheme>
+    <ActionScheme id="SYL-1532" label="getSequenceFlow" name="getSequenceFlow" width="800" height="600" userID="SYL" flexoID="1532">
+      <BehaviourControlGraph_ReturnStatement id="SYL-1534" userID="SYL" flexoID="1534">
+        <AssignableAction_SelectUniqueFlexoConceptInstance id="SYL-1533" container="this" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#SequenceFlow" receiver="container" userID="SYL" flexoID="1533">
+          <Condition id="SYL-1531" condition="(selected.eObject = parameters.sequenceFlowObject)" userID="SYL" flexoID="1531" />
+        </AssignableAction_SelectUniqueFlexoConceptInstance>
+      </BehaviourControlGraph_ReturnStatement>
+      <GenericBehaviourParameter id="SYL-1535" isRequired="true" widget="CUSTOM_WIDGET" name="sequenceFlowObject" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/SequenceFlow&gt;" userID="SYL" flexoID="1535" />
     </ActionScheme>
   </FlexoConcept>
   <FlexoConcept idref="SYL-20" />
