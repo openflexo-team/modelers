@@ -16,7 +16,7 @@
           <AssignableAction_ConfigureGINAFIBComponent id="SYL-319" receiver="ui" userID="SYL" flexoID="319" />
         </ControlGraph2_AssignationAction>
         <ControlGraph1_AssignationAction id="SYL-11" assign="model" ownerContext="controlGraph1" userID="SYL" flexoID="11">
-          <AssignableAction_AddVirtualModelInstance id="SYL-10" virtualModelInstanceTitle="&quot;Model for BPMN editor&quot;" virtualModelInstanceName="&quot;Model&quot;" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml.create()" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" receiver="this" userID="SYL" flexoID="10" />
+          <AssignableAction_AddVirtualModelInstance id="SYL-10" virtualModelInstanceTitle="&quot;Model for BPMN editor&quot;" virtualModelInstanceName="(parameters.bpmnResource.name.substring(0,parameters.bpmnResource.name.indexOf(&quot;.&quot;)) + &quot;Model&quot;)" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml.create()" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" receiver="this" userID="SYL" flexoID="10" />
         </ControlGraph1_AssignationAction>
       </ControlGraph2_Sequence>
       <ControlGraph1_AssignationAction id="SYL-666" assign="bpmnModel" ownerContext="controlGraph1" userID="SYL" flexoID="666">

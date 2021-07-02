@@ -12,7 +12,7 @@ public class BPMNEditor {
 
   public BPMNModel model;
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_7f conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_79 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNEditor:create(EMFModelResource bpmnResource) {  

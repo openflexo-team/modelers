@@ -277,7 +277,7 @@
                       <ControlGraph2_Sequence id="SYL-1316" ownerContext="controlGraph2" userID="SYL" flexoID="1316">
                         <ControlGraph2_Sequence id="SYL-1312" ownerContext="controlGraph2" userID="SYL" flexoID="1312">
                           <ControlGraph2_Sequence id="SYL-1313" ownerContext="controlGraph2" userID="SYL" flexoID="1313">
-                            <ControlGraph2_AddVirtualModelInstance id="SYL-1305" virtualModelInstanceTitle="process.processName" virtualModelInstanceName="process.processName" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.representsDiagram(diagram,process)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="1305">
+                            <ControlGraph2_AddVirtualModelInstance id="SYL-1305" virtualModelInstanceTitle="(process.processName + &quot;Diagram&quot;)" virtualModelInstanceName="(process.processName + &quot;Diagram&quot;)" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml.representsDiagram(diagram,process)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="1305">
                               <AddFlexoConceptInstanceParameter id="SYL-1359" paramName="diagram" value="diagram" userID="SYL" flexoID="1359" />
                               <AddFlexoConceptInstanceParameter id="SYL-1360" paramName="process" value="process" userID="SYL" flexoID="1360" />
                             </ControlGraph2_AddVirtualModelInstance>
