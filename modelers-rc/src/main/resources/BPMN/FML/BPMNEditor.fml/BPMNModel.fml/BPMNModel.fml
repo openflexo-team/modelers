@@ -52,7 +52,6 @@ public class BPMNModel {
     Process:create(EMFObjectIndividual aProcess) {    
       eObject = parameters.aProcess;      
       for (flowElement : eObject.flowElements) {      
-        log ("flowElement : " + flowElement)        
         if (flowElement.type.name = "StartEvent") {        
           StartEvent.create(flowElement)        
         }        
@@ -67,7 +66,9 @@ public class BPMNModel {
         }        
         if (flowElement.type.name = "ExclusiveGateway") {        
           ExclusiveGateway.create(flowElement)        
-        }        
+        }      
+      }      
+      for (flowElement : eObject.flowElements) {      
         if (flowElement.type.name = "SequenceFlow") {        
           SequenceFlow.create(flowElement)        
         }      
@@ -184,6 +185,11 @@ public class BPMNModel {
         eObject = parameters.sequenceFlow;        
         source = container.getFlowNode(eObject.sourceRef);        
         target = container.getFlowNode(eObject.targetRef);        
+        log ("Create SequenceFlow for " + parameters.sequenceFlow)        
+        log ("sourceRef=" + eObject.sourceRef)        
+        log ("targetRef=" + eObject.targetRef)        
+        log ("source=" + source)        
+        log ("target=" + target)        
         source.outgoing.add(this)        
         target.incoming.add(this)      
       }      
@@ -344,6 +350,11 @@ public class BPMNModel {
       eObject = parameters.sequenceFlow;      
       source = container.getFlowNode(eObject.sourceRef);      
       target = container.getFlowNode(eObject.targetRef);      
+      log ("Create SequenceFlow for " + parameters.sequenceFlow)      
+      log ("sourceRef=" + eObject.sourceRef)      
+      log ("targetRef=" + eObject.targetRef)      
+      log ("source=" + source)      
+      log ("target=" + target)      
       source.outgoing.add(this)      
       target.incoming.add(this)    
     }    
