@@ -11,12 +11,8 @@ use org.openflexo.technologyadapter.emf.EMFModelSlot;
 public class BPMNEditor {
 
   public BPMNModel model;
-  @GetSetProperty(value="rootProcessDiagrams", access=get)  
-  public List<ProcessDiagram> getRootProcessDiagrams {  
-    return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
-  }
   public GINAFIBComponent ui;
-  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_80 conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_7f conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
   BPMNEditor:create(EMFModelResource bpmnResource) {  
@@ -46,7 +42,7 @@ public class BPMNEditor {
 
   @ActionScheme  
   ProcessDiagram getProcessDiagram(String processName) {  
-    List<ProcessDiagram> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process.name = parameters.processName);    
+    List<ProcessDiagram> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process.processName = parameters.processName);    
     log ((("on cherche " + parameters.processName) + " on trouve ") + list)    
     if (list.size > 0) {    
       return list.get(0);    

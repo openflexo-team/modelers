@@ -62,6 +62,12 @@ public class BPMNModel {
         if (flowElement.type.name = "Task") {        
           Task.create(flowElement)        
         }        
+        if (flowElement.type.name = "ParallelGateway") {        
+          ParallelGateway.create(flowElement)        
+        }        
+        if (flowElement.type.name = "ExclusiveGateway") {        
+          ExclusiveGateway.create(flowElement)        
+        }        
         if (flowElement.type.name = "SequenceFlow") {        
           SequenceFlow.create(flowElement)        
         }      
@@ -90,11 +96,6 @@ public class BPMNModel {
     @ActionScheme    
     FlowNode getFlowNode(FlowNode flowNodeObject) {    
       return container.SelectUniqueFlexoConceptInstance(type=FlowNode,where=where=(selected.eObject = parameters.flowNodeObject));    
-    }    
-  
-    @ActionScheme    
-    StartEvent getStartEvent(StartEvent startEvent) {    
-      return container.SelectUniqueFlexoConceptInstance(type=StartEvent,where=where=(selected.eObject = parameters.startEvent));    
     }    
   
   
@@ -376,6 +377,34 @@ public class BPMNModel {
     @DeletionScheme    
     Void delete() {    
       
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class ParallelGateway extends Gateway  {  
+  
+    FlexoRole eObject as Individual conformTo ParallelGateway from bpmnModel ;  
+      
+    public String name = "ParallelGateway";  
+  
+    @CreationScheme    
+    ParallelGateway:create(EMFObjectIndividual gateway) {    
+      eObject = parameters.gateway;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class ExclusiveGateway extends Gateway  {  
+  
+    FlexoRole eObject as Individual conformTo ExclusiveGateway from bpmnModel ;  
+      
+    public String name = "ExclusiveGateway";  
+  
+    @CreationScheme    
+    ExclusiveGateway:create(EMFObjectIndividual gateway) {    
+      eObject = parameters.gateway;    
     }    
   
   }  

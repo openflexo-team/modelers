@@ -5,14 +5,6 @@
   <UseModelSlotDeclaration id="2" modelSlotClass="org.openflexo.technologyadapter.emf.EMFModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="BPMNEditor" userID="SYL" flexoID="1" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-6" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="model" userID="SYL" flexoID="6" />
-  <GetSetProperty id="SYL-220" name="rootProcessDiagrams" userID="SYL" flexoID="220">
-    <SetControlGraph_EmptyControlGraph id="SYL-219" ownerContext="setControlGraph" userID="SYL" flexoID="219" />
-    <GetControlGraph_ReturnStatement id="SYL-248" ownerContext="getControlGraph" userID="SYL" flexoID="248">
-      <AssignableAction_SelectVirtualModelInstance id="SYL-243" container="this" virtualModelTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="this" ownerContext="getControlGraph" userID="SYL" flexoID="243">
-        <Condition id="SYL-244" condition="(selected.process.parentProcess = null)" userID="SYL" flexoID="244" />
-      </AssignableAction_SelectVirtualModelInstance>
-    </GetControlGraph_ReturnStatement>
-  </GetSetProperty>
   <FIBComponentModelSlot id="SYL-315" templateComponentURI="http://openflexo.org/modellers/BPMN/FML/Fib/BPMNEditorUI.fib" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="ui" userID="SYL" flexoID="315">
     <VariableAssignment id="SYL-316" variableType="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml&gt;" variable="data" value="this" userID="SYL" flexoID="316" />
   </FIBComponentModelSlot>
@@ -88,7 +80,7 @@
       </ControlGraph2_Sequence>
       <ControlGraph1_DeclarationAction id="SYL-256" variable="list" ownerContext="controlGraph1" userID="SYL" flexoID="256">
         <AssignableAction_SelectVirtualModelInstance id="SYL-254" container="this" virtualModelTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" receiver="this" userID="SYL" flexoID="254">
-          <Condition id="SYL-255" condition="(selected.process.name = parameters.processName)" userID="SYL" flexoID="255" />
+          <Condition id="SYL-255" condition="(selected.process.processName = parameters.processName)" userID="SYL" flexoID="255" />
         </AssignableAction_SelectVirtualModelInstance>
       </ControlGraph1_DeclarationAction>
     </BehaviourControlGraph_Sequence>
