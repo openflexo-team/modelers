@@ -39,6 +39,12 @@ public class ProcessDiagram {
         }        
         if (this.tempBPMNShape.bpmnElement.type.name = "Task") {        
           TaskGR.representTask(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "ParallelGateway") {        
+          ParallelGatewayGR.representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "ExclusiveGateway") {        
+          ExclusiveGatewayGR.representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
         }      
       }    
     }  
@@ -140,6 +146,40 @@ public class ProcessDiagram {
       
     abstract FlowNode eObject;  
     FlexoRole bpmnShape as Individual conformTo BPMNShape from bpmnModel ;  
+  }  
+
+  @FlexoConcept  
+  public class ParallelGatewayGR extends GatewayGR  {  
+  
+    public DiagramShape shape;  
+    public ParallelGateway modelElement;  
+    FlexoRole eObject as Individual conformTo ParallelGateway from bpmnModel ;  
+  
+    @CreationScheme    
+    ParallelGatewayGR:representGateway(EMFObjectIndividual gateway, BPMNShape bpmnShape) {    
+      eObject = parameters.gateway;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class ExclusiveGatewayGR extends GatewayGR  {  
+  
+    public DiagramShape shape;  
+    public ExclusiveGateway modelElement;  
+    FlexoRole eObject as Individual conformTo ExclusiveGateway from bpmnModel ;  
+  
+    @CreationScheme    
+    ExclusiveGatewayGR:representGateway(EMFObjectIndividual gateway, BPMNShape bpmnShape) {    
+      eObject = parameters.gateway;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
+    }    
+  
   }  
 
 }

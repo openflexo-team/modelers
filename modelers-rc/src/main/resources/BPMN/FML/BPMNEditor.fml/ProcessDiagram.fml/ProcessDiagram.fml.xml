@@ -5,11 +5,11 @@
       <InspectorEntry id="SYL-120" widget="CUSTOM_WIDGET" data="modelElement.name" name="activity_name" label="activity_name" type="java.lang.String" userID="SYL" flexoID="120" />
     </Inspector>
     <ShapeRole id="SYL-91" previewHeight="63.99825783972124" previewY="68.00087108013938" previewX="55.431979368149584" previewWidth="139.13604126370083" exampleLabel="Activity" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="91">
-      <GRSpec id="SYL-1303" featureName="label" value="modelElement.name" userID="SYL" flexoID="1303" />
-      <GRSpec id="SYL-1308" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1308" />
-      <GRSpec id="SYL-1309" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1309" />
-      <GRSpec id="SYL-1310" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1310" />
-      <GRSpec id="SYL-1311" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1311" />
+      <GRSpec id="SYL-1353" featureName="label" value="modelElement.name" userID="SYL" flexoID="1353" />
+      <GRSpec id="SYL-1356" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1356" />
+      <GRSpec id="SYL-1357" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1357" />
+      <GRSpec id="SYL-1358" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1358" />
+      <GRSpec id="SYL-1359" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1359" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-92" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="92" />
     <EMFObjectIndividualRole id="SYL-1217" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Task" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1217" />
@@ -46,11 +46,11 @@
       <InspectorEntry id="SYL-121" readOnly="true" widget="CUSTOM_WIDGET" data="modelElement.name" name="label" label="label" type="java.lang.String" userID="SYL" flexoID="121" />
     </Inspector>
     <ShapeRole id="SYL-112" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="112">
-      <GRSpec id="SYL-1304" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1304" />
-      <GRSpec id="SYL-1318" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1318" />
-      <GRSpec id="SYL-1319" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1319" />
-      <GRSpec id="SYL-1320" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1320" />
-      <GRSpec id="SYL-1321" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1321" />
+      <GRSpec id="SYL-1371" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1371" />
+      <GRSpec id="SYL-1372" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1372" />
+      <GRSpec id="SYL-1373" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1373" />
+      <GRSpec id="SYL-1374" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1374" />
+      <GRSpec id="SYL-1375" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1375" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-113" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="113" />
     <EMFObjectIndividualRole id="SYL-1190" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/StartEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1190" />
@@ -85,11 +85,11 @@
   <FlexoConcept id="SYL-129" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#FlowNodeGR" name="EndEventGR" userID="SYL" flexoID="129">
     <Inspector id="SYL-128" inspectorTitle="EndActivityGR" userID="SYL" flexoID="128" />
     <ShapeRole id="SYL-133" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="133">
-      <GRSpec id="SYL-1305" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1305" />
-      <GRSpec id="SYL-1328" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1328" />
-      <GRSpec id="SYL-1329" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1329" />
-      <GRSpec id="SYL-1330" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1330" />
-      <GRSpec id="SYL-1331" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1331" />
+      <GRSpec id="SYL-1376" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1376" />
+      <GRSpec id="SYL-1377" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1377" />
+      <GRSpec id="SYL-1378" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1378" />
+      <GRSpec id="SYL-1379" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1379" />
+      <GRSpec id="SYL-1380" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1380" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="134" />
     <EMFObjectIndividualRole id="SYL-1216" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/EndEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1216" />
@@ -143,6 +143,72 @@
     <AbstractProperty id="SYL-1218" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/FlowNode&gt;" name="eObject" userID="SYL" flexoID="1218" />
     <EMFObjectIndividualRole id="SYL-1229" ontologicType="http://www.omg.org/spec/BPMN/20100524/DI-XMI/BPMNShape" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="bpmnShape" userID="SYL" flexoID="1229" />
   </FlexoConcept>
+  <FlexoConcept id="SYL-1381" visibility="Public" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#GatewayGR" name="ParallelGatewayGR" userID="SYL" flexoID="1381">
+    <Inspector id="SYL-1382" inspectorTitle="ParallelGateway" userID="SYL" flexoID="1382" />
+    <ShapeRole id="SYL-1403" previewHeight="30.0" previewY="85.0" previewX="110.0" previewWidth="30.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_5" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="1403">
+      <GRSpec id="SYL-1395" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1395" />
+      <GRSpec id="SYL-1396" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1396" />
+      <GRSpec id="SYL-1397" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1397" />
+      <GRSpec id="SYL-1398" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1398" />
+    </ShapeRole>
+    <FlexoConceptInstanceRole id="SYL-1416" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#ParallelGateway" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="1416" />
+    <EMFObjectIndividualRole id="SYL-1418" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/ParallelGateway" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1418" />
+    <CreationScheme id="SYL-1420" label="representGateway" name="representGateway" width="800" height="600" userID="SYL" flexoID="1420">
+      <BehaviourControlGraph_Sequence id="SYL-1431" userID="SYL" flexoID="1431">
+        <ControlGraph2_Sequence id="SYL-1428" ownerContext="controlGraph2" userID="SYL" flexoID="1428">
+          <ControlGraph2_Sequence id="SYL-1425" ownerContext="controlGraph2" userID="SYL" flexoID="1425">
+            <ControlGraph2_AssignationAction id="SYL-1422" assign="shape" ownerContext="controlGraph2" userID="SYL" flexoID="1422">
+              <AssignableAction_AddShape id="SYL-1421" container="diagram" receiver="diagram" userID="SYL" flexoID="1421" />
+            </ControlGraph2_AssignationAction>
+            <ControlGraph1_AssignationAction id="SYL-1424" assign="modelElement" ownerContext="controlGraph1" userID="SYL" flexoID="1424">
+              <AssignableAction_ExpressionAction id="SYL-1423" expression="process.getFlowNode(eObject)" userID="SYL" flexoID="1423" />
+            </ControlGraph1_AssignationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_AssignationAction id="SYL-1427" assign="bpmnShape" ownerContext="controlGraph1" userID="SYL" flexoID="1427">
+            <AssignableAction_ExpressionAction id="SYL-1426" expression="parameters.bpmnShape" userID="SYL" flexoID="1426" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_AssignationAction id="SYL-1430" assign="eObject" ownerContext="controlGraph1" userID="SYL" flexoID="1430">
+          <AssignableAction_ExpressionAction id="SYL-1429" expression="parameters.gateway" userID="SYL" flexoID="1429" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-1432" widget="CUSTOM_WIDGET" name="gateway" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="1432" />
+      <GenericBehaviourParameter id="SYL-1433" widget="CUSTOM_WIDGET" name="bpmnShape" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/DI-XMI/BPMNShape&gt;" userID="SYL" flexoID="1433" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-1364" visibility="Public" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#GatewayGR" name="ExclusiveGatewayGR" userID="SYL" flexoID="1364">
+    <Inspector id="SYL-1365" inspectorTitle="ExclusiveGateway" userID="SYL" flexoID="1365" />
+    <ShapeRole id="SYL-1415" previewHeight="30.0" previewY="85.0" previewX="110.0" previewWidth="30.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_7" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="1415">
+      <GRSpec id="SYL-1407" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1407" />
+      <GRSpec id="SYL-1408" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1408" />
+      <GRSpec id="SYL-1409" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1409" />
+      <GRSpec id="SYL-1410" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1410" />
+    </ShapeRole>
+    <FlexoConceptInstanceRole id="SYL-1417" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#ExclusiveGateway" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="1417" />
+    <EMFObjectIndividualRole id="SYL-1419" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/ExclusiveGateway" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1419" />
+    <CreationScheme id="SYL-1434" label="representGateway" name="representGateway" width="800" height="600" userID="SYL" flexoID="1434">
+      <BehaviourControlGraph_Sequence id="SYL-1445" userID="SYL" flexoID="1445">
+        <ControlGraph2_Sequence id="SYL-1442" ownerContext="controlGraph2" userID="SYL" flexoID="1442">
+          <ControlGraph2_Sequence id="SYL-1439" ownerContext="controlGraph2" userID="SYL" flexoID="1439">
+            <ControlGraph2_AssignationAction id="SYL-1436" assign="shape" ownerContext="controlGraph2" userID="SYL" flexoID="1436">
+              <AssignableAction_AddShape id="SYL-1435" container="diagram" receiver="diagram" userID="SYL" flexoID="1435" />
+            </ControlGraph2_AssignationAction>
+            <ControlGraph1_AssignationAction id="SYL-1438" assign="modelElement" ownerContext="controlGraph1" userID="SYL" flexoID="1438">
+              <AssignableAction_ExpressionAction id="SYL-1437" expression="process.getFlowNode(eObject)" userID="SYL" flexoID="1437" />
+            </ControlGraph1_AssignationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_AssignationAction id="SYL-1441" assign="bpmnShape" ownerContext="controlGraph1" userID="SYL" flexoID="1441">
+            <AssignableAction_ExpressionAction id="SYL-1440" expression="parameters.bpmnShape" userID="SYL" flexoID="1440" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_AssignationAction id="SYL-1444" assign="eObject" ownerContext="controlGraph1" userID="SYL" flexoID="1444">
+          <AssignableAction_ExpressionAction id="SYL-1443" expression="parameters.gateway" userID="SYL" flexoID="1443" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-1446" widget="CUSTOM_WIDGET" name="gateway" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="1446" />
+      <GenericBehaviourParameter id="SYL-1447" widget="CUSTOM_WIDGET" name="bpmnShape" type="org.openflexo.technologyadapter.emf.EMFObjectIndividualType&lt;http://www.omg.org/spec/BPMN/20100524/MODEL-XMI#FLX_http://www.omg.org/spec/BPMN/20100524/DI-XMI/BPMNShape&gt;" userID="SYL" flexoID="1447" />
+    </CreationScheme>
+  </FlexoConcept>
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot" userID="SYL" flexoID="-1" />
   <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.technologyadapter.emf.EMFModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" renderer="instance.process.name" inspectorTitle="ProcessDiagram" userID="SYL" flexoID="1" />
@@ -181,12 +247,28 @@
                     <ControlGraph2_Sequence id="SYL-1109" ownerContext="controlGraph2" userID="SYL" flexoID="1109">
                       <ControlGraph2_Sequence id="SYL-1302" ownerContext="controlGraph2" userID="SYL" flexoID="1302">
                         <ControlGraph2_Sequence id="SYL-1301" ownerContext="controlGraph2" userID="SYL" flexoID="1301">
-                          <ControlGraph2_ConditionalAction id="SYL-1293" condition="(this.tempBPMNShape.bpmnElement.type.name = &quot;Task&quot;)" ownerContext="controlGraph2" userID="SYL" flexoID="1293">
-                            <ThenControlGraph_AddFlexoConceptInstance id="SYL-1296" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR.representTask(task,bpmnShape)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="1296">
-                              <AddFlexoConceptInstanceParameter id="SYL-1299" paramName="task" value="this.tempBPMNShape.bpmnElement" userID="SYL" flexoID="1299" />
-                              <AddFlexoConceptInstanceParameter id="SYL-1300" paramName="bpmnShape" value="this.tempBPMNShape" userID="SYL" flexoID="1300" />
-                            </ThenControlGraph_AddFlexoConceptInstance>
-                          </ControlGraph2_ConditionalAction>
+                          <ControlGraph2_Sequence id="SYL-1462" ownerContext="controlGraph2" userID="SYL" flexoID="1462">
+                            <ControlGraph2_Sequence id="SYL-1463" ownerContext="controlGraph2" userID="SYL" flexoID="1463">
+                              <ControlGraph2_ConditionalAction id="SYL-1452" condition="(this.tempBPMNShape.bpmnElement.type.name = &quot;ExclusiveGateway&quot;)" ownerContext="controlGraph2" userID="SYL" flexoID="1452">
+                                <ThenControlGraph_AddFlexoConceptInstance id="SYL-1455" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#ExclusiveGatewayGR.representGateway(gateway,bpmnShape)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#ExclusiveGatewayGR" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="1455">
+                                  <AddFlexoConceptInstanceParameter id="SYL-1460" paramName="gateway" value="this.tempBPMNShape.bpmnElement" userID="SYL" flexoID="1460" />
+                                  <AddFlexoConceptInstanceParameter id="SYL-1461" paramName="bpmnShape" value="this.tempBPMNShape" userID="SYL" flexoID="1461" />
+                                </ThenControlGraph_AddFlexoConceptInstance>
+                              </ControlGraph2_ConditionalAction>
+                              <ControlGraph1_ConditionalAction id="SYL-1449" condition="(this.tempBPMNShape.bpmnElement.type.name = &quot;ParallelGateway&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="1449">
+                                <ThenControlGraph_AddFlexoConceptInstance id="SYL-1451" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#ParallelGatewayGR.representGateway(gateway,bpmnShape)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#ParallelGatewayGR" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="1451">
+                                  <AddFlexoConceptInstanceParameter id="SYL-1458" paramName="gateway" value="this.tempBPMNShape.bpmnElement" userID="SYL" flexoID="1458" />
+                                  <AddFlexoConceptInstanceParameter id="SYL-1459" paramName="bpmnShape" value="this.tempBPMNShape" userID="SYL" flexoID="1459" />
+                                </ThenControlGraph_AddFlexoConceptInstance>
+                              </ControlGraph1_ConditionalAction>
+                            </ControlGraph2_Sequence>
+                            <ControlGraph1_ConditionalAction id="SYL-1293" condition="(this.tempBPMNShape.bpmnElement.type.name = &quot;Task&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="1293">
+                              <ThenControlGraph_AddFlexoConceptInstance id="SYL-1296" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR.representTask(task,bpmnShape)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="1296">
+                                <AddFlexoConceptInstanceParameter id="SYL-1299" paramName="task" value="this.tempBPMNShape.bpmnElement" userID="SYL" flexoID="1299" />
+                                <AddFlexoConceptInstanceParameter id="SYL-1300" paramName="bpmnShape" value="this.tempBPMNShape" userID="SYL" flexoID="1300" />
+                              </ThenControlGraph_AddFlexoConceptInstance>
+                            </ControlGraph1_ConditionalAction>
+                          </ControlGraph2_Sequence>
                           <ControlGraph1_ConditionalAction id="SYL-1287" condition="(this.tempBPMNShape.bpmnElement.type.name = &quot;EndEvent&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="1287">
                             <ThenControlGraph_AddFlexoConceptInstance id="SYL-1290" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#EndEventGR.representEndEvent(endEvent,bpmnShape)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#EndEventGR" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="1290">
                               <AddFlexoConceptInstanceParameter id="SYL-1297" paramName="endEvent" value="this.tempBPMNShape.bpmnElement" userID="SYL" flexoID="1297" />

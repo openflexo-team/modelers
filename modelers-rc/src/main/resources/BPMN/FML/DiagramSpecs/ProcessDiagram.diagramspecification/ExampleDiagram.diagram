@@ -50,7 +50,7 @@
       <TextStyle id="40" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </Shape>
-  <Shape id="41" name="condition ?" userID="SYL" flexoID="5">
+  <Shape id="41" name="parallel" userID="SYL" flexoID="5">
     <ShapeGraphicalRepresentation id="42" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" layoutManagerIdentifier="grid" x="325.0" y="125.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="30.0" height="30.0" identifier="1f2c868" absoluteTextY="40.0" absoluteTextX="17.0" layer="1">
       <SelectedColorBackgroundStyle id="43" color="254,247,217" transparencyLevel="0.5" />
       <ForegroundStyle id="44" color="153,153,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.7999999985098838" />
@@ -58,13 +58,26 @@
       <ShadowStyle id="46" />
       <FocusedForegroundStyle id="47" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="48" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
-      <ColorGradientBackgroundStyle id="49" color1="255,255,255" color2="255,255,102" direction="NORTH_WEST_SOUTH_EAST" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="49" fitToShape="true" imageFile="../../Icons/Parallel.png" imageBackgroundColor="255,255,204" imageBackgroundType="OPAQUE" transparencyLevel="0.5" />
       <LosangeShape id="50" nPoints="4" />
       <TextStyle id="51" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </Shape>
-  <DrawingGraphicalRepresentation id="52" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="ebc74cd">
-    <GridLayoutManagerSpecification id="53" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" identifier="grid" paintDecoration="true" draggingMode="ContinuousLayout" />
-    <TextStyle id="54" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  <Shape id="52" name="exclusive" text="" userID="SYL" flexoID="7">
+    <ShapeGraphicalRepresentation id="53" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" layoutManagerIdentifier="grid" x="452.1276595744681" y="119.14893617021276" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="30.0" height="30.0" identifier="1f2c868" absoluteTextY="15.0" absoluteTextX="15.0" layer="1" text="">
+      <SelectedColorBackgroundStyle id="54" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="55" color="153,153,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.7999999985098838" />
+      <FocusedColorBackgroundStyle id="56" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="57" />
+      <FocusedForegroundStyle id="58" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="59" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="60" fitToShape="true" imageFile="../../Icons/Exclusive.png" imageBackgroundColor="255,255,204" imageBackgroundType="OPAQUE" transparencyLevel="0.5" />
+      <LosangeShape id="61" nPoints="4" />
+      <TextStyle id="62" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <DrawingGraphicalRepresentation id="63" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" width="1500.0" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="ebc74cd">
+    <GridLayoutManagerSpecification id="64" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" identifier="grid" paintDecoration="true" draggingMode="ContinuousLayout" />
+    <TextStyle id="65" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
   </DrawingGraphicalRepresentation>
 </Diagram>
