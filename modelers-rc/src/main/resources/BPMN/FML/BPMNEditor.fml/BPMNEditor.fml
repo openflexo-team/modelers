@@ -1,5 +1,6 @@
 use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
 use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
+use org.openflexo.technologyadapter.emf.EMFModelSlot;
 
 /**
  * 
@@ -9,31 +10,27 @@ use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
 @VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml")
 public class BPMNEditor {
 
-  @FMLRTVirtualModelInstanceModelSlot(cardinality=ZeroOne,readOnly=false)  
-  public VirtualModelInstanceType<BPMNModel> model;
-  @GetSetProperty(value="rootProcessDiagrams", access=get)  
-  public List<VirtualModelInstanceType<ProcessDiagram>> getRootProcessDiagrams {  
-    return this.FML@RT::SelectVirtualModelInstance where=(selected.process.parentProcess = null);  
-  }
-  @FIBComponentModelSlot(cardinality=ZeroOne,readOnly=false)  
+  public BPMNModel model;
   public GINAFIBComponent ui;
+  ModelSlot bpmnModel type=EMFModelSlot$EMFModelSlotImpl_$$_jvst684_7a conformTo="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" required=true readOnly=false;
 
   @CreationScheme  
-  BPMNEditor:create() {  
+  BPMNEditor:create(EMFModelResource bpmnResource) {  
+    bpmnModel = parameters.bpmnResource.resourceData;    
     model = BPMNModel.create();    
     ui = ui.ConfigureGINAFIBComponent();  
   }  
 
   @ActionScheme  
-  public VirtualModelInstanceType<ProcessDiagram> newProcessDiagram(String processName) {  
-    VirtualModelInstanceType<ProcessDiagram> returned = ProcessDiagram.createNewProcess(parameters.processName);    
+  public ProcessDiagram newProcessDiagram(String processName) {  
+    ProcessDiagram returned = this.AddVirtualModelInstance();    
     this.firePropertyChange rootProcesses    
     return returned;  
   }  
 
   @ActionScheme  
-  VirtualModelInstanceType<ProcessDiagram> getProcessDiagram(FlexoConceptInstanceType<Process> process) {  
-    List<VirtualModelInstanceType<ProcessDiagram>> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process = parameters.process);    
+  ProcessDiagram getProcessDiagram(Process process) {  
+    List<ProcessDiagram> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process = parameters.process);    
     log ("On cherche le diagramme pour " + parameters.process)    
     log ("Trouve: " + list)    
     if (list.size > 0) {    
@@ -44,8 +41,8 @@ public class BPMNEditor {
   }  
 
   @ActionScheme  
-  VirtualModelInstanceType<ProcessDiagram> getProcessDiagram(String processName) {  
-    List<VirtualModelInstanceType<ProcessDiagram>> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process.name = parameters.processName);    
+  ProcessDiagram getProcessDiagram(String processName) {  
+    List<ProcessDiagram> list = this.FML@RT::SelectVirtualModelInstance where=(selected.process.processName = parameters.processName);    
     log ((("on cherche " + parameters.processName) + " on trouve ") + list)    
     if (list.size > 0) {    
       return list.get(0);    
@@ -55,7 +52,7 @@ public class BPMNEditor {
   }  
 
   @ActionScheme  
-  VirtualModelInstanceType<ProcessDiagram> createNewProcess(FlexoConceptInstanceType<Process> parentProcess) {  
+  ProcessDiagram createNewProcess(Process parentProcess) {  
     String baseName = "process";    
     String current = baseName;    
     Long aLong = 2;    
@@ -66,7 +63,7 @@ public class BPMNEditor {
     }    
     log ("creating process " + current)    
     if (parameters.parentProcess != null) {    
-      return ProcessDiagram.createNewSubProcess(current,parameters.parentProcess);    
+      return this.AddVirtualModelInstance();    
     } else {    
       
     }    

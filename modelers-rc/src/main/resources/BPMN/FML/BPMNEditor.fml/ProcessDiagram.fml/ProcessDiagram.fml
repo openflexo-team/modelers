@@ -1,4 +1,5 @@
 use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
+use org.openflexo.technologyadapter.emf.EMFModelSlot;
 
 /**
  * 
@@ -7,148 +8,204 @@ use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
 @VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml")
 public class ProcessDiagram {
 
-  @TypedDiagramModelSlot(metamodel="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification",cardinality=ZeroOne,readOnly=false)  
-  public DiagramType<ProcessDiagram> diagram;
-  @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)  
-  public FlexoConceptInstanceType<Process> process;
-
-  @CreationScheme  
-  ProcessDiagram:createNewProcess(String name) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_bd {    
-    };    
-    process = Process.create(parameters.name,null);  
-  }  
-
-  @CreationScheme  
-  ProcessDiagram:createNewSubProcess(String name, FlexoConceptInstanceType<Process> parentProcess) {  
-    diagram = CreateDiagram$CreateDiagramImpl_$$_jvst7a6_bd {    
-    };    
-    process = Process.create(parameters.name,parameters.parentProcess);  
-  }  
-
-  @ActionScheme  
-  public VirtualModelInstanceType<ProcessDiagram> newSubProcess(String processName) {  
-    return ProcessDiagram.createNewSubProcess(parameters.processName,this.process);  
-  }  
+  public Diagram diagram;
+  public Process process;
+  FlexoRole diagramEObject as Individual conformTo BPMNDiagram from bpmnModel ;
+  FlexoRole planeEObject as Individual conformTo BPMNPlane from bpmnModel ;
+  FlexoRole tempBPMNShape as Individual conformTo BPMNShape from bpmnModel ;
+  FlexoRole tempBPMNEdge as Individual conformTo BPMNEdge from bpmnModel ;
 
   @DeletionScheme  
   Void delete() {  
-    diagram.delete();  
+    delete diagram;  
+  }  
+
+  @CreationScheme  
+  ProcessDiagram:representsDiagram(EMFObjectIndividual diagram, Process process) {  
+    diagram = CreateDiagram();    
+    diagramEObject = parameters.diagram;    
+    planeEObject = diagramEObject.plane;    
+    process = parameters.process;    
+    for (planeElement : planeEObject.planeElement) {    
+      if (planeElement.type.name = "BPMNShape") {      
+        tempBPMNShape = planeElement;        
+        log ("shape element = " + this.tempBPMNShape.bpmnElement)        
+        if (this.tempBPMNShape.bpmnElement.type.name = "StartEvent") {        
+          StartEventGR.representStartEvent(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "EndEvent") {        
+          EndEventGR.representEndEvent(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "Task") {        
+          TaskGR.representTask(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "ParallelGateway") {        
+          ParallelGatewayGR.representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }        
+        if (this.tempBPMNShape.bpmnElement.type.name = "ExclusiveGateway") {        
+          ExclusiveGatewayGR.representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape)        
+        }      
+      }    
+    }    
+    for (planeElement : planeEObject.planeElement) {    
+      if (planeElement.type.name = "BPMNEdge") {      
+        tempBPMNEdge = planeElement;        
+        log ("edge element = " + this.tempBPMNEdge.bpmnElement)        
+        if (this.tempBPMNEdge.bpmnElement.type.name = "SequenceFlow") {        
+          SequenceFlowGR.representSequenceFlow(this.tempBPMNEdge.bpmnElement,this.tempBPMNEdge)        
+        }      
+      }    
+    }  
+  }  
+
+  @ActionScheme  
+  FlowNodeGR getFlowNodeGR(FlowNode flowNode) {  
+    return this.SelectUniqueFlexoConceptInstance(type=FlowNodeGR,where=where=(selected.modelElement = parameters.flowNode));  
   }  
 
 
   @FlexoConcept  
-  public class ActivityGR extends TransitionEmitterGR,TransitionReceiverGR  {  
+  public class TaskGR extends FlowNodeGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Activity> activity;  
+    public DiagramShape shape;  
+    public Task modelElement;  
+    FlexoRole eObject as Individual conformTo Task from bpmnModel ;  
   
     @DropScheme    
-    ActivityGR:dropActivityGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = Activity.create("Activity");    
+    TaskGR:dropActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
+    }    
+  
+    @CreationScheme    
+    TaskGR:representTask(EMFObjectIndividual task, BPMNShape bpmnShape) {    
+      eObject = parameters.task;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class BeginActivityGR extends TransitionEmitterGR  {  
+  public class StartEventGR extends FlowNodeGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<BeginActivity> activity;  
+    public DiagramShape shape;  
+    public StartEvent modelElement;  
+    FlexoRole eObject as Individual conformTo StartEvent from bpmnModel ;  
   
     @DropScheme    
-    BeginActivityGR:dropBeginActivityGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = BeginActivity.create();    
+    StartEventGR:dropBeginActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
+    }    
+  
+    @CreationScheme    
+    StartEventGR:representStartEvent(EMFObjectIndividual startEvent, BPMNShape bpmnShape) {    
+      eObject = parameters.startEvent;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class EndActivityGR extends TransitionReceiverGR  {  
+  public class EndEventGR extends FlowNodeGR  {  
   
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<EndActivity> activity;  
+    public DiagramShape shape;  
+    public EndEvent modelElement;  
+    FlexoRole eObject as Individual conformTo EndEvent from bpmnModel ;  
   
     @DropScheme    
-    EndActivityGR:dropEndActivityGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = EndActivity.create();    
+    EndEventGR:dropEndActivityGRAtTopLevel() {    
+      shape = diagram.AddShape();    
+    }    
+  
+    @CreationScheme    
+    EndEventGR:representEndEvent(EMFObjectIndividual endEvent, BPMNShape bpmnShape) {    
+      eObject = parameters.endEvent;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class GatewayGR extends TransitionEmitterGR,TransitionReceiverGR  {  
-  
-    @ShapeRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramShape shape {    
-        label = this.activity.activityName;      
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Gateway> activity;  
-  
-    @DropScheme    
-    GatewayGR:dropGatewayGRAtTopLevel() {    
-      shape = diagram.AddShape();      
-      activity = Gateway.create("condition ?");    
-    }    
-  
+  public class GatewayGR extends FlowNodeGR  {  
   }  
 
   @FlexoConcept  
-  public class TransitionGR {  
+  public class SequenceFlowGR {  
   
-    @ConnectorRole(cardinality=ZeroOne,readOnly=false)    
-    public DiagramConnector connector {    
-    }  
-    @FlexoConceptInstanceRole(cardinality=ZeroOne,readOnly=false)    
-    public FlexoConceptInstanceType<Transition> transition;  
+    public DiagramConnector connector;  
+    public SequenceFlow sequenceFlow;  
+    public FlowNodeGR fromNodeGR;  
+    public FlowNodeGR toNodeGR;  
+    public SequenceFlow modelElement;  
+    FlexoRole eObject as Individual conformTo SequenceFlow from bpmnModel ;  
+    FlexoRole bpmnEdge as Individual conformTo BPMNShape from bpmnModel ;  
   
     @LinkScheme    
-    TransitionGR:linkEmitterGRToReceiverGR() {    
-      connector = diagram.AddConnector();      
-      transition = Transition.create(fromTarget.activity,toTarget.activity);      
-      fromTarget.activity.outTransitions.FML::AddToList(transition)      
-      toTarget.activity.inTransitions.FML::AddToList(transition)    
+    SequenceFlowGR:linkNodes() {    
+      connector = diagram.AddConnector();    
+    }    
+  
+    @CreationScheme    
+    SequenceFlowGR:representSequenceFlow(EMFObjectIndividual sequenceFlow, BPMNEdge bpmnEdge) {    
+      eObject = parameters.sequenceFlow;      
+      bpmnEdge = parameters.bpmnEdge;      
+      modelElement = process.getSequenceFlow(eObject);      
+      fromNodeGR = container.getFlowNodeGR(modelElement.source);      
+      toNodeGR = container.getFlowNodeGR(modelElement.target);      
+      connector = diagram.AddConnector();    
     }    
   
   }  
 
   @FlexoConcept  
-  public class AbstractActivityGR {  
+  public class FlowNodeGR {  
   
-    @AbstractProperty    
+      
     abstract DiagramShape shape;  
-    @AbstractProperty    
-    abstract FlexoConceptInstanceType<AbstractActivity> activity;  
+      
+    abstract FlowNode modelElement;  
+      
+    abstract FlowNode eObject;  
+    FlexoRole bpmnShape as Individual conformTo BPMNShape from bpmnModel ;  
   }  
 
   @FlexoConcept  
-  public class TransitionEmitterGR extends AbstractActivityGR  {  
+  public class ParallelGatewayGR extends GatewayGR  {  
   
-    @AbstractProperty    
-    abstract FlexoConceptInstanceType<TransitionEmitter> activity;  
+    public DiagramShape shape;  
+    public ParallelGateway modelElement;  
+    FlexoRole eObject as Individual conformTo ParallelGateway from bpmnModel ;  
+  
+    @CreationScheme    
+    ParallelGatewayGR:representGateway(EMFObjectIndividual gateway, BPMNShape bpmnShape) {    
+      eObject = parameters.gateway;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
+    }    
+  
   }  
 
   @FlexoConcept  
-  public class TransitionReceiverGR extends AbstractActivityGR  {  
+  public class ExclusiveGatewayGR extends GatewayGR  {  
   
-    @AbstractProperty    
-    abstract FlexoConceptInstanceType<TransitionReceiver> activity;  
+    public DiagramShape shape;  
+    public ExclusiveGateway modelElement;  
+    FlexoRole eObject as Individual conformTo ExclusiveGateway from bpmnModel ;  
+  
+    @CreationScheme    
+    ExclusiveGatewayGR:representGateway(EMFObjectIndividual gateway, BPMNShape bpmnShape) {    
+      eObject = parameters.gateway;      
+      bpmnShape = parameters.bpmnShape;      
+      modelElement = process.getFlowNode(eObject);      
+      shape = diagram.AddShape();    
+    }    
+  
   }  
 
 }
