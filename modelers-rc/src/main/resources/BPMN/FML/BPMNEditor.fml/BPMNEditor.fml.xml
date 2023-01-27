@@ -9,7 +9,7 @@
     <VariableAssignment id="SYL-316" variableType="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml&gt;" variable="data" value="this" userID="SYL" flexoID="316" />
   </FIBComponentModelSlot>
   <EMFModelSlot id="SYL-665" metaModelURI="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="bpmnModel" userID="SYL" flexoID="665" />
-  <CreationScheme id="SYL-7" label="create" name="create" width="800" height="600" userID="SYL" flexoID="7">
+  <CreationScheme id="SYL-7" label="create" width="800" name="create" height="600" userID="SYL" flexoID="7">
     <BehaviourControlGraph_Sequence id="SYL-668" ownerContext="controlGraph2" userID="SYL" flexoID="668">
       <ControlGraph2_Sequence id="SYL-669" ownerContext="controlGraph2" userID="SYL" flexoID="669">
         <ControlGraph2_AssignationAction id="SYL-318" assign="ui" ownerContext="controlGraph2" userID="SYL" flexoID="318">
@@ -25,7 +25,7 @@
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-655" isRequired="true" widget="CUSTOM_WIDGET" name="bpmnResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.emf.model.EMFModel&gt;" userID="SYL" flexoID="655" />
   </CreationScheme>
-  <ActionScheme id="SYL-15" visibility="Public" label="newProcessDiagram" name="newProcessDiagram" width="800" height="600" userID="SYL" flexoID="15">
+  <ActionScheme id="SYL-15" visibility="Public" label="newProcessDiagram" width="800" name="newProcessDiagram" height="600" userID="SYL" flexoID="15">
     <BehaviourControlGraph_Sequence id="SYL-311" userID="SYL" flexoID="311">
       <ControlGraph2_Sequence id="SYL-339" ownerContext="controlGraph2" userID="SYL" flexoID="339">
         <ControlGraph2_ReturnStatement id="SYL-338" ownerContext="controlGraph2" userID="SYL" flexoID="338">
@@ -41,7 +41,7 @@
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-17" isRequired="true" widget="TEXT_FIELD" name="processName" type="java.lang.String" userID="SYL" flexoID="17" />
   </ActionScheme>
-  <ActionScheme id="SYL-228" label="getProcessDiagram" name="getProcessDiagram" width="800" height="600" userID="SYL" flexoID="228">
+  <ActionScheme id="SYL-228" label="getProcessDiagram" width="800" name="getProcessDiagram" height="600" userID="SYL" flexoID="228">
     <BehaviourControlGraph_Sequence id="SYL-240" userID="SYL" flexoID="240">
       <ControlGraph2_Sequence id="SYL-647" ownerContext="controlGraph2" userID="SYL" flexoID="647">
         <ControlGraph2_Sequence id="SYL-648" ownerContext="controlGraph2" userID="SYL" flexoID="648">
@@ -65,7 +65,7 @@
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-241" widget="CUSTOM_WIDGET" name="process" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Process&gt;" userID="SYL" flexoID="241" />
   </ActionScheme>
-  <ActionScheme id="SYL-252" label="getProcessDiagram" name="getProcessDiagram" width="800" height="600" userID="SYL" flexoID="252">
+  <ActionScheme id="SYL-252" label="getProcessDiagram" width="800" name="getProcessDiagram" height="600" userID="SYL" flexoID="252">
     <BehaviourControlGraph_Sequence id="SYL-270" userID="SYL" flexoID="270">
       <ControlGraph2_Sequence id="SYL-305" ownerContext="controlGraph2" userID="SYL" flexoID="305">
         <ControlGraph2_ConditionalAction id="SYL-258" condition="(list.size &gt; 0)" ownerContext="controlGraph2" userID="SYL" flexoID="258">
@@ -86,7 +86,7 @@
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-271" isRequired="true" widget="TEXT_FIELD" name="processName" type="java.lang.String" userID="SYL" flexoID="271" />
   </ActionScheme>
-  <ActionScheme id="SYL-263" label="createNewProcess" name="createNewProcess" width="800" height="600" description="Creates new Process by choosing first available name from 'process' base&#xA;" userID="SYL" flexoID="263">
+  <ActionScheme id="SYL-263" label="createNewProcess" width="800" name="createNewProcess" height="600" description="Creates new Process by choosing first available name from 'process' base&#xA;" userID="SYL" flexoID="263">
     <BehaviourControlGraph_Sequence id="SYL-272" userID="SYL" flexoID="272">
       <ControlGraph2_Sequence id="SYL-284" ownerContext="controlGraph2" userID="SYL" flexoID="284">
         <ControlGraph2_Sequence id="SYL-285" ownerContext="controlGraph2" userID="SYL" flexoID="285">

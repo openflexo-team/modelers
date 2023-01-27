@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" version="0.1" smallIconResource="../../Icons/Diagram-16x16.png" name="ProcessDiagram" userID="SYL" flexoID="2">
+<VirtualModel id="SYL-2" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" version="0.1" uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" smallIconResource="../../Icons/Diagram-16x16.png" name="ProcessDiagram" userID="SYL" flexoID="2">
   <FlexoConcept id="SYL-87" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#FlowNodeGR" name="TaskGR" userID="SYL" flexoID="87">
     <Inspector id="SYL-86" inspectorTitle="ActivityGR" userID="SYL" flexoID="86">
       <InspectorEntry id="SYL-120" widget="CUSTOM_WIDGET" data="modelElement.name" name="activity_name" label="activity_name" type="java.lang.String" userID="SYL" flexoID="120" />
     </Inspector>
     <ShapeRole id="SYL-91" previewHeight="63.99825783972124" previewY="68.00087108013938" previewX="55.431979368149584" previewWidth="139.13604126370083" exampleLabel="Activity" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="91">
-      <GRSpec id="SYL-1353" featureName="label" value="modelElement.name" userID="SYL" flexoID="1353" />
-      <GRSpec id="SYL-1356" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1356" />
-      <GRSpec id="SYL-1357" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1357" />
-      <GRSpec id="SYL-1358" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1358" />
-      <GRSpec id="SYL-1359" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1359" />
+      <GRSpec id="SYL-1621" featureName="label" value="modelElement.name" userID="SYL" flexoID="1621" />
+      <GRSpec id="SYL-1622" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1622" />
+      <GRSpec id="SYL-1623" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1623" />
+      <GRSpec id="SYL-1624" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1624" />
+      <GRSpec id="SYL-1625" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1625" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-92" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="92" />
     <EMFObjectIndividualRole id="SYL-1217" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/Task" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1217" />
@@ -43,14 +43,14 @@
   </FlexoConcept>
   <FlexoConcept id="SYL-107" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#FlowNodeGR" name="StartEventGR" userID="SYL" flexoID="107">
     <Inspector id="SYL-106" inspectorTitle="BeginActivityGR" userID="SYL" flexoID="106">
-      <InspectorEntry id="SYL-121" readOnly="true" widget="CUSTOM_WIDGET" data="modelElement.name" name="label" label="label" type="java.lang.String" userID="SYL" flexoID="121" />
+      <InspectorEntry id="SYL-121" widget="CUSTOM_WIDGET" readOnly="true" data="modelElement.name" name="label" label="label" type="java.lang.String" userID="SYL" flexoID="121" />
     </Inspector>
     <ShapeRole id="SYL-112" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="112">
-      <GRSpec id="SYL-1371" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1371" />
-      <GRSpec id="SYL-1372" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1372" />
-      <GRSpec id="SYL-1373" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1373" />
-      <GRSpec id="SYL-1374" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1374" />
-      <GRSpec id="SYL-1375" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1375" />
+      <GRSpec id="SYL-1626" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1626" />
+      <GRSpec id="SYL-1627" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1627" />
+      <GRSpec id="SYL-1628" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1628" />
+      <GRSpec id="SYL-1629" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1629" />
+      <GRSpec id="SYL-1630" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1630" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-113" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#StartEvent" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="113" />
     <EMFObjectIndividualRole id="SYL-1190" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/StartEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1190" />
@@ -85,11 +85,11 @@
   <FlexoConcept id="SYL-129" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#FlowNodeGR" name="EndEventGR" userID="SYL" flexoID="129">
     <Inspector id="SYL-128" inspectorTitle="EndActivityGR" userID="SYL" flexoID="128" />
     <ShapeRole id="SYL-133" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_4" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="133">
-      <GRSpec id="SYL-1376" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1376" />
-      <GRSpec id="SYL-1377" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1377" />
-      <GRSpec id="SYL-1378" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1378" />
-      <GRSpec id="SYL-1379" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1379" />
-      <GRSpec id="SYL-1380" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1380" />
+      <GRSpec id="SYL-1631" featureName="label" readOnly="true" value="modelElement.name" userID="SYL" flexoID="1631" />
+      <GRSpec id="SYL-1632" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1632" />
+      <GRSpec id="SYL-1633" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1633" />
+      <GRSpec id="SYL-1634" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1634" />
+      <GRSpec id="SYL-1635" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1635" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-134" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#EndEvent" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="134" />
     <EMFObjectIndividualRole id="SYL-1216" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/EndEvent" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1216" />
@@ -181,10 +181,10 @@
   <FlexoConcept id="SYL-1381" visibility="Public" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#GatewayGR" name="ParallelGatewayGR" userID="SYL" flexoID="1381">
     <Inspector id="SYL-1382" inspectorTitle="ParallelGateway" userID="SYL" flexoID="1382" />
     <ShapeRole id="SYL-1403" previewHeight="30.0" previewY="85.0" previewX="110.0" previewWidth="30.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_5" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="1403">
-      <GRSpec id="SYL-1395" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1395" />
-      <GRSpec id="SYL-1396" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1396" />
-      <GRSpec id="SYL-1397" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1397" />
-      <GRSpec id="SYL-1398" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1398" />
+      <GRSpec id="SYL-1636" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1636" />
+      <GRSpec id="SYL-1637" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1637" />
+      <GRSpec id="SYL-1638" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1638" />
+      <GRSpec id="SYL-1639" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1639" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-1416" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#ParallelGateway" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="1416" />
     <EMFObjectIndividualRole id="SYL-1418" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/ParallelGateway" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1418" />
@@ -214,10 +214,10 @@
   <FlexoConcept id="SYL-1364" visibility="Public" parentFlexoConceptsList="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#GatewayGR" name="ExclusiveGatewayGR" userID="SYL" flexoID="1364">
     <Inspector id="SYL-1365" inspectorTitle="ExclusiveGateway" userID="SYL" flexoID="1365" />
     <ShapeRole id="SYL-1415" previewHeight="30.0" previewY="85.0" previewX="110.0" previewWidth="30.0" exampleLabel="" metamodelElementReference="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification/ExampleDiagram.diagram#SYL_7" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="1415">
-      <GRSpec id="SYL-1407" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1407" />
-      <GRSpec id="SYL-1408" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1408" />
-      <GRSpec id="SYL-1409" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1409" />
-      <GRSpec id="SYL-1410" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1410" />
+      <GRSpec id="SYL-1640" featureName="x" value="bpmnShape.bounds.x" userID="SYL" flexoID="1640" />
+      <GRSpec id="SYL-1641" featureName="y" value="bpmnShape.bounds.y" userID="SYL" flexoID="1641" />
+      <GRSpec id="SYL-1642" featureName="width" value="bpmnShape.bounds.width" userID="SYL" flexoID="1642" />
+      <GRSpec id="SYL-1643" featureName="height" value="bpmnShape.bounds.height" userID="SYL" flexoID="1643" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-1417" virtualModelInstance="model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#ExclusiveGateway" cloningStrategy="Reference" cardinality="ZeroOne" name="modelElement" userID="SYL" flexoID="1417" />
     <EMFObjectIndividualRole id="SYL-1419" ontologicType="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI/ExclusiveGateway" container="bpmnModel" cloningStrategy="Clone" cardinality="ZeroOne" name="eObject" userID="SYL" flexoID="1419" />
@@ -359,7 +359,7 @@
         </ControlGraph1_AssignationAction>
       </ControlGraph2_Sequence>
       <ControlGraph1_AssignationAction id="SYL-1084" assign="diagram" ownerContext="controlGraph1" userID="SYL" flexoID="1084">
-        <AssignableAction_CreateDiagram id="SYL-1085" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.process.processName" resourceCenter="this.resourceCenter" relativePath="/Diagrams" dynamicRelativePath="&quot;/Diagrams&quot;" resourceName="parameters.process.processName" userID="SYL" flexoID="1085" />
+        <AssignableAction_CreateDiagram id="SYL-1085" diagramSpecificationURI="http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" diagramName="parameters.process.processName" resourceCenter="this.resourceCenter" dynamicRelativePath="&quot;/Diagrams&quot;" relativePath="/Diagrams" resourceName="parameters.process.processName" userID="SYL" flexoID="1085" />
       </ControlGraph1_AssignationAction>
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-996" isRequired="true" widget="CUSTOM_WIDGET" name="diagram" type="org.openflexo.technologyadapter.emf.model.EMFObjectIndividual" userID="SYL" flexoID="996" />

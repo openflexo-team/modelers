@@ -47,6 +47,10 @@ public class BPMNModel {
     FlexoRole eObject as Individual conformTo Process from bpmnModel ;  
       
     public String processName = ((eObject.name != null) ? eObject.name : bpmnModel.resource.name.substring(0,bpmnModel.resource.name.indexOf(".")));  
+    @GetSetProperty(value="elements", access=get)    
+    public List<FlowElement> getElements {    
+      return model.SelectFlexoConceptInstance(type=FlowElement);    
+    }  
   
     @CreationScheme    
     Process:create(EMFObjectIndividual aProcess) {    
