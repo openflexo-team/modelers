@@ -10,11 +10,15 @@ import org.openflexo.technologyadapter.owl.model.OWLClass;
 import java.lang.String;
 import org.openflexo.technologyadapter.diagram.model.DiagramConnector;
 import org.openflexo.technologyadapter.owl.model.SubClassStatement;
+import org.openflexo.technologyadapter.owl.model.OWLIndividual;
+import org.openflexo.technologyadapter.owl.model.TypeStatement;
 
 import [DIAGRAM_SPECIFICATION] as OWLONTOLOGY_EDITOR_SPEC;
 import [DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
 import [EXAMPLE_DIAGRAM:"SYL-2"] as DIAGRAM_SHAPE;
 import [EXAMPLE_DIAGRAM:"SYL-4"] as DIAGRAM_CONNECTOR;
+import [EXAMPLE_DIAGRAM:"SYL-5"] as DIAGRAM_SHAPE2;
+import [EXAMPLE_DIAGRAM:"SYL-7"] as DIAGRAM_CONNECTOR2;
 
 /**
  * Implements a basic OWLOntology editor, allowing to edit OWL classes and individuals, with their SubClass and Type relationships
@@ -29,7 +33,8 @@ model OWLOntologyEditor {
 	Diagram diagram with TypedDiagram(
 			diagramSpecification=OWLONTOLOGY_EDITOR_SPEC,
 			paletteElementBindings={
-					PaletteElementBinding:(call=new OWLClassGR::dropOWLClassGRAtTopLevel(null), paletteElementId="http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/Palette.palette#OWLClassGR")});
+					PaletteElementBinding:(call=new OWLClassGR::dropOWLClassGRAtTopLevel(null), paletteElementId="http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/Palette.palette#OWLClassGR"), 
+					PaletteElementBinding:(call=new OWLIndividualGR::dropOWLIndividualGRAtTopLevel(null), paletteElementId="http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/Palette.palette#OWLIndividualGR")});
 
 	/**
 	 * Build a new OWLOntologyEditor, given an ontology resource (the resource where is stored the ontology to be edited)
@@ -44,7 +49,9 @@ model OWLOntologyEditor {
 	 */
 	public void update() {	
 		this.updateClasses();
+		this.updateIndividuals();
 		this.updateSubClassRepresentations();
+		this.updateTypeRepresentations();
 	}
 	
 	private void updateClasses() {	
@@ -55,13 +62,22 @@ model OWLOntologyEditor {
 		end match OWLClassGR in matchingSet delete::doNotRepresentAnyMore();
 	}
 
+	private void updateIndividuals() {	
+		MatchingSet matchingSet = begin match OWLIndividualGR from this;
+		log "On commence";
+		for (OWLIndividual owlIndividual : select OWLIndividual from ontology) {
+			log "On traite " + owlIndividual;
+			match OWLIndividualGR in matchingSet from this where (owlIndividual=owlIndividual) create::representOWLIndividual(owlIndividual);
+		}
+		end match OWLIndividualGR in matchingSet delete::doNotRepresentAnyMore();
+	}
+
 	private void updateSubClassRepresentations() { 
 		MatchingSet matchingSet = begin match SubClassGR from this;
 		for (OWLClassGR c1 : select OWLClassGR from this) {
 			for (OWLClassGR c2 : select OWLClassGR from this) {
 				if (c1 != c2) {
-					if (c1.owlClass.isSuperClassOf(c2.owlClass)) {
-						log "Tiens " + c1.owlClass.name + " superclass of " + c2.owlClass.name;
+					if (c1.owlClass.isDirectSuperClassOf(c2.owlClass)) {
 						SubClassStatement statement = c2.owlClass.getSubClassStatement(c1.owlClass);
 						match SubClassGR in matchingSet from this where (subclassStatement=statement) create::representLink(c2,c1);
 					}
@@ -69,6 +85,19 @@ model OWLOntologyEditor {
 			}		
 		}
 		end match SubClassGR in matchingSet delete::doNotRepresentAnyMore();
+	}
+
+	private void updateTypeRepresentations() { 
+		MatchingSet matchingSet = begin match IsAGR from this;
+		for (OWLClassGR c1 : select OWLClassGR from this) {
+			for (OWLIndividualGR c2 : select OWLIndividualGR from this) {
+					if (c1.owlClass.isDirectTypeOf(c2.owlIndividual)) {
+						TypeStatement statement = c2.owlIndividual.getTypeStatement(c1.owlClass);
+						match IsAGR in matchingSet from this where (typeStatement=statement) create::representLink(c2,c1);
+					}
+			}		
+		}
+		end match IsAGR in matchingSet delete::doNotRepresentAnyMore();
 	}
 
 	/**
@@ -85,7 +114,6 @@ model OWLOntologyEditor {
 		}
 
 		create::representOWLClass(OWLClass anOWLClass) {
-			log "Il faut representer " + parameters.anOWLClass;
 			shape = DIAGRAM::AddShape(container=diagram) in diagram;
 			owlClass = parameters.anOWLClass;
 		}
@@ -111,6 +139,43 @@ model OWLOntologyEditor {
 		create::representLink(OWLClassGR child, OWLClassGR parent) {
 			connector = DIAGRAM::AddConnector(fromShape=parameters.child.shape,toShape=parameters.parent.shape) in diagram; 
 			subclassStatement = parameters.child.owlClass.getSubClassStatement(parameters.parent.owlClass);
+		}
+
+		delete::doNotRepresentAnyMore() {
+			// Delete the connector in the diagram
+		}
+	}
+
+	concept OWLIndividualGR {
+		
+		DiagramShape shape with ShapeRole(metamodelElement=DIAGRAM_SHAPE2,exampleLabel="OWLIndividual",label=owlIndividual.name);
+		OWLIndividual owlIndividual with OWLIndividualRole(container=ontology);
+		
+		OWLIndividualGR dropOWLIndividualGRAtTopLevel(required String name) with DropScheme(targetType=OWLOntologyEditor) {
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
+			owlIndividual = OWL::AddOWLIndividual(individualName=parameters.name) in ontology;
+		}
+
+		create::representOWLIndividual(OWLIndividual anOWLIndividual) {
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+			owlIndividual = parameters.anOWLIndividual;
+		}
+
+
+	}
+
+	concept IsAGR {
+		DiagramConnector connector with ConnectorRole(metamodelElement=DIAGRAM_CONNECTOR2,exampleLabel="is a",label="is a");
+		TypeStatement typeStatement with TypeStatementRole(container=ontology);
+
+		IsAGR linkOWLIndividualGRToOWLClassGR() with LinkScheme(fromType=OWLIndividualGR,toType=OWLClassGR) {
+			connector = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
+			typeStatement = OWL::AddTypeStatement(subject=fromTarget.owlIndividual,type=toTarget.owlClass) in ontology;
+		}
+
+		create::representLink(OWLIndividualGR child, OWLClassGR parent) {
+			connector = DIAGRAM::AddConnector(fromShape=parameters.child.shape,toShape=parameters.parent.shape) in diagram; 
+			typeStatement = parameters.child.owlIndividual.getTypeStatement(parameters.parent.owlClass);
 		}
 
 		delete::doNotRepresentAnyMore() {
