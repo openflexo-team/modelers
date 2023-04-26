@@ -8,10 +8,12 @@ import org.openflexo.technologyadapter.diagram.model.DiagramShape;
 import org.openflexo.technologyadapter.owl.model.OWLOntology;
 import org.openflexo.technologyadapter.owl.model.OWLClass;
 import java.lang.String;
+import org.openflexo.technologyadapter.diagram.model.DiagramConnector;
 
 import [DIAGRAM_SPECIFICATION] as OWLONTOLOGY_EDITOR_SPEC;
 import [DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
 import [EXAMPLE_DIAGRAM:"SYL-2"] as DIAGRAM_SHAPE;
+import [EXAMPLE_DIAGRAM:"SYL-4"] as DIAGRAM_CONNECTOR;
 
 /**
  * Implements a basic OWLOntology editor, allowing to edit OWL classes and individuals, with their SubClass and Type relationships
@@ -69,6 +71,17 @@ model OWLOntologyEditor {
 
 		delete::doNotRepresentAnyMore() {
 			// Delete the shape in the diagram
+		}
+	}
+
+	/**
+	 * Concept reifying the subclass relationship
+	 */
+	concept SubClassGR {
+		DiagramConnector connector4 with ConnectorRole(metamodelElement=DIAGRAM_CONNECTOR,exampleLabel="subclass");
+		
+		SubClassGR linkOWLClassGRToOWLClassGR() with LinkScheme(fromType=OWLClassGR,toType=OWLClassGR) {
+			connector4 = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
 		}
 	}
 
