@@ -12,6 +12,8 @@ import org.openflexo.technologyadapter.diagram.model.DiagramConnector;
 import org.openflexo.technologyadapter.owl.model.SubClassStatement;
 import org.openflexo.technologyadapter.owl.model.OWLIndividual;
 import org.openflexo.technologyadapter.owl.model.TypeStatement;
+import org.openflexo.foundation.ontology.IFlexoOntologyObjectProperty;
+import org.openflexo.technologyadapter.owl.model.OWLObjectProperty;
 
 import [DIAGRAM_SPECIFICATION] as OWLONTOLOGY_EDITOR_SPEC;
 import [DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
@@ -19,6 +21,7 @@ import [EXAMPLE_DIAGRAM:"SYL-2"] as DIAGRAM_SHAPE;
 import [EXAMPLE_DIAGRAM:"SYL-4"] as DIAGRAM_CONNECTOR;
 import [EXAMPLE_DIAGRAM:"SYL-5"] as DIAGRAM_SHAPE2;
 import [EXAMPLE_DIAGRAM:"SYL-7"] as DIAGRAM_CONNECTOR2;
+import [EXAMPLE_DIAGRAM:"SYL-8"] as DIAGRAM_CONNECTOR3;
 
 /**
  * Implements a basic OWLOntology editor, allowing to edit OWL classes and individuals, with their SubClass and Type relationships
@@ -52,6 +55,7 @@ model OWLOntologyEditor {
 		this.updateIndividuals();
 		this.updateSubClassRepresentations();
 		this.updateTypeRepresentations();
+		this.updateObjectPropertyRepresentations();
 	}
 	
 	private void updateClasses() {	
@@ -99,6 +103,23 @@ model OWLOntologyEditor {
 		}
 		end match IsAGR in matchingSet delete::doNotRepresentAnyMore();
 	}
+
+	private OWLClassGR getOWLClassGR(OWLClass aClass) {
+		return select unique OWLClassGR from this where (selected.owlClass == parameters.aClass);
+	}
+
+	private void updateObjectPropertyRepresentations() { 
+		MatchingSet matchingSet = begin match ObjectPropertyGR from this;		
+		for (OWLObjectProperty objectProperty : select OWLObjectProperty from ontology) {
+			OWLClassGR domainClassGR = this.getOWLClassGR((OWLClass)objectProperty.domain);
+			OWLClassGR rangeClassGR = this.getOWLClassGR((OWLClass)objectProperty.range);
+			if (rangeClassGR != null && rangeClassGR != null) {
+				match ObjectPropertyGR in matchingSet from this where (objectProperty=objectProperty) create::representLink(domainClassGR,rangeClassGR,objectProperty);				
+			}
+		}
+		end match ObjectPropertyGR in matchingSet delete::doNotRepresentAnyMore();
+	}
+
 
 	/**
 	 * Concept representing an OWLClass
@@ -182,5 +203,24 @@ model OWLOntologyEditor {
 			// Delete the connector in the diagram
 		}
 }
+
+	concept ObjectPropertyGR {
+		DiagramConnector connector with ConnectorRole(metamodelElement=DIAGRAM_CONNECTOR3,exampleLabel="property",label=objectProperty.name);
+		OWLObjectProperty objectProperty with OWLObjectPropertyRole(container=ontology);
+		
+		ObjectPropertyGR linkOWLClassGRToOWLClassGR() with LinkScheme(fromType=OWLClassGR,toType=OWLClassGR) {
+			connector = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
+		}
+		
+		create::representLink(OWLClassGR domain, OWLClassGR range, OWLObjectProperty objectProperty) {
+			connector = DIAGRAM::AddConnector(fromShape=parameters.domain.shape,toShape=parameters.range.shape) in diagram; 
+			objectProperty = parameters.objectProperty;
+			log "On represente: " + objectProperty + " name=" + objectProperty.name;
+		}
+
+		delete::doNotRepresentAnyMore() {
+			// Delete the connector in the diagram
+		}
+	}
 
 }
