@@ -1,0 +1,39 @@
+namespace "http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification" as DIAGRAM_SPECIFICATION;
+
+use org.openflexo.technologyadapter.owl.OWLModelSlot as OWL;
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot as DIAGRAM;
+
+import org.openflexo.technologyadapter.diagram.model.Diagram;
+import org.openflexo.technologyadapter.diagram.model.DiagramShape;
+import org.openflexo.technologyadapter.owl.model.OWLOntology;
+import org.openflexo.technologyadapter.owl.model.OWLClass;
+import java.lang.String;
+
+//import ["http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification"] as OWLONTOLOGY_EDITOR_SPEC;
+import [DIAGRAM_SPECIFICATION] as OWLONTOLOGY_EDITOR_SPEC;
+import ["http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
+import [EXAMPLE_DIAGRAM:"SYL-2"] as DIAGRAM_SHAPE;
+
+@URI("http://openflexo.org/modellers/OWL/FML/OWLOntologyEditor.fml")
+model OWLOntologyEditor {
+	OWLOntology ontology with OWLModelSlot();
+	Diagram diagram with TypedDiagram(
+			diagramSpecification=OWLONTOLOGY_EDITOR_SPEC,
+			paletteElementBindings={
+					PaletteElementBinding:(call=new OWLClassGR::dropOWLClassGRAtTopLevel(null), paletteElementId="http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/Palette.palette#OWLClassGR")});
+
+	create::init(Resource<OWLOntology> aOWLOntologyResource) {
+		ontology = parameters.aOWLOntologyResource.resourceData;
+		diagram = DIAGRAM::CreateDiagram(resourceName="diagram",resourceCenter=this.resourceCenter,relativePath="Diagrams");
+	}
+
+	concept OWLClassGR {
+		DiagramShape forme with ShapeRole(metamodelElement=DIAGRAM_SHAPE,exampleLabel="OWLClass",label=owlClass.name);
+		OWLClass owlClass with OWLClassRole(container=ontology);
+		OWLClassGR dropOWLClassGRAtTopLevel(required String name) with DropScheme(targetType=OWLOntologyEditor) {
+			forme = DIAGRAM::AddShape(container=topLevel) in diagram;
+			owlClass = OWL::AddOWLClass(className=parameters.name) in ontology;
+		}
+	}
+
+}
