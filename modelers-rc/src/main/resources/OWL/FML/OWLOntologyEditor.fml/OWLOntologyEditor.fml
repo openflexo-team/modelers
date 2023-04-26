@@ -9,30 +9,66 @@ import org.openflexo.technologyadapter.owl.model.OWLOntology;
 import org.openflexo.technologyadapter.owl.model.OWLClass;
 import java.lang.String;
 
-//import ["http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification"] as OWLONTOLOGY_EDITOR_SPEC;
 import [DIAGRAM_SPECIFICATION] as OWLONTOLOGY_EDITOR_SPEC;
-import ["http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
+import [DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
 import [EXAMPLE_DIAGRAM:"SYL-2"] as DIAGRAM_SHAPE;
 
+/**
+ * Implements a basic OWLOntology editor, allowing to edit OWL classes and individuals, with their SubClass and Type relationships
+ */
 @URI("http://openflexo.org/modellers/OWL/FML/OWLOntologyEditor.fml")
 model OWLOntologyEditor {
+
+	// The ontology beeing edited
 	OWLOntology ontology with OWLModelSlot();
+
+	// The diagram actually used to edit the ontology
 	Diagram diagram with TypedDiagram(
 			diagramSpecification=OWLONTOLOGY_EDITOR_SPEC,
 			paletteElementBindings={
 					PaletteElementBinding:(call=new OWLClassGR::dropOWLClassGRAtTopLevel(null), paletteElementId="http://openflexo.org/modellers/OWL/FML/OntologyEditor.diagramspecification/Palette.palette#OWLClassGR")});
 
+	/**
+	 * Build a new OWLOntologyEditor, given an ontology resource (the resource where is stored the ontology to be edited)
+	 */
 	create::init(Resource<OWLOntology> aOWLOntologyResource) {
 		ontology = parameters.aOWLOntologyResource.resourceData;
 		diagram = DIAGRAM::CreateDiagram(resourceName="diagram",resourceCenter=this.resourceCenter,relativePath="Diagrams");
 	}
 
+	/**
+	 * This behaviour is called to update the whole diagram with ontology data
+	 */
+	public void update() {	
+		MatchingSet matchingSet = begin match OWLClassGR from this;
+		for (OWLClass owlClass : select OWLClass with SelectOWLClass(declared=true) from ontology) {
+			log "Coucou la classe:" + owlClass;
+			match OWLClassGR in matchingSet from this where (owlClass=owlClass) create::representOWLClass(owlClass);
+		}
+		end match OWLClassGR in matchingSet delete::doNotRepresentAnyMore();
+	}
+
+	/**
+	 * Concept representing an OWLClass
+	 */
 	concept OWLClassGR {
-		DiagramShape forme with ShapeRole(metamodelElement=DIAGRAM_SHAPE,exampleLabel="OWLClass",label=owlClass.name);
+		
+		DiagramShape shape with ShapeRole(metamodelElement=DIAGRAM_SHAPE,exampleLabel="OWLClass",label=owlClass.name);
 		OWLClass owlClass with OWLClassRole(container=ontology);
+		
 		OWLClassGR dropOWLClassGRAtTopLevel(required String name) with DropScheme(targetType=OWLOntologyEditor) {
-			forme = DIAGRAM::AddShape(container=topLevel) in diagram;
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
 			owlClass = OWL::AddOWLClass(className=parameters.name) in ontology;
+		}
+
+		create::representOWLClass(OWLClass anOWLClass) {
+			log "Il faut representer " + parameters.anOWLClass;
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+			owlClass = parameters.anOWLClass;
+		}
+
+		delete::doNotRepresentAnyMore() {
+			// Delete the shape in the diagram
 		}
 	}
 
