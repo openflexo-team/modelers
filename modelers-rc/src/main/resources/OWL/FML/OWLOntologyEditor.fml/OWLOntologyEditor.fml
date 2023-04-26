@@ -43,12 +43,32 @@ model OWLOntologyEditor {
 	 * This behaviour is called to update the whole diagram with ontology data
 	 */
 	public void update() {	
+		this.updateClasses();
+		this.updateSubClassRepresentations();
+	}
+	
+	private void updateClasses() {	
 		MatchingSet matchingSet = begin match OWLClassGR from this;
 		for (OWLClass owlClass : select OWLClass with SelectOWLClass(declared=true) from ontology) {
-			log "Coucou la classe:" + owlClass;
 			match OWLClassGR in matchingSet from this where (owlClass=owlClass) create::representOWLClass(owlClass);
 		}
 		end match OWLClassGR in matchingSet delete::doNotRepresentAnyMore();
+	}
+
+	private void updateSubClassRepresentations() { 
+		MatchingSet matchingSet = begin match SubClassGR from this;
+		for (OWLClassGR c1 : select OWLClassGR from this) {
+			for (OWLClassGR c2 : select OWLClassGR from this) {
+				if (c1 != c2) {
+					if (c1.owlClass.isSuperClassOf(c2.owlClass)) {
+						log "Tiens " + c1.owlClass.name + " superclass of " + c2.owlClass.name;
+						SubClassStatement statement = c2.owlClass.getSubClassStatement(c1.owlClass);
+						match SubClassGR in matchingSet from this where (subclassStatement=statement) create::representLink(c2,c1);
+					}
+				}
+			}		
+		}
+		end match SubClassGR in matchingSet delete::doNotRepresentAnyMore();
 	}
 
 	/**
@@ -74,19 +94,28 @@ model OWLOntologyEditor {
 			// Delete the shape in the diagram
 		}
 	}
-
+ 
 	/**
 	 * Concept reifying the subclass relationship
 	 */
 	concept SubClassGR {
 		
-		DiagramConnector connector4 with ConnectorRole(metamodelElement=DIAGRAM_CONNECTOR,exampleLabel="subclass");
+		DiagramConnector connector with ConnectorRole(metamodelElement=DIAGRAM_CONNECTOR,exampleLabel="subclass");
 		SubClassStatement subclassStatement with SubClassStatementRole(container=ontology);
 		
 		SubClassGR linkOWLClassGRToOWLClassGR() with LinkScheme(fromType=OWLClassGR,toType=OWLClassGR) {
-			connector4 = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
+			connector = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
 			subclassStatement = OWL::AddSubClassStatement(subject=fromTarget.owlClass,father=toTarget.owlClass) in ontology;
 		}
-	}
+
+		create::representLink(OWLClassGR child, OWLClassGR parent) {
+			connector = DIAGRAM::AddConnector(fromShape=parameters.child.shape,toShape=parameters.parent.shape) in diagram; 
+			subclassStatement = parameters.child.owlClass.getSubClassStatement(parameters.parent.owlClass);
+		}
+
+		delete::doNotRepresentAnyMore() {
+			// Delete the connector in the diagram
+		}
+}
 
 }
