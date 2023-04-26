@@ -9,6 +9,7 @@ import org.openflexo.technologyadapter.owl.model.OWLOntology;
 import org.openflexo.technologyadapter.owl.model.OWLClass;
 import java.lang.String;
 import org.openflexo.technologyadapter.diagram.model.DiagramConnector;
+import org.openflexo.technologyadapter.owl.model.SubClassStatement;
 
 import [DIAGRAM_SPECIFICATION] as OWLONTOLOGY_EDITOR_SPEC;
 import [DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"] as EXAMPLE_DIAGRAM;
@@ -78,10 +79,13 @@ model OWLOntologyEditor {
 	 * Concept reifying the subclass relationship
 	 */
 	concept SubClassGR {
+		
 		DiagramConnector connector4 with ConnectorRole(metamodelElement=DIAGRAM_CONNECTOR,exampleLabel="subclass");
+		SubClassStatement subclassStatement with SubClassStatementRole(container=ontology);
 		
 		SubClassGR linkOWLClassGRToOWLClassGR() with LinkScheme(fromType=OWLClassGR,toType=OWLClassGR) {
 			connector4 = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
+			subclassStatement = OWL::AddSubClassStatement(subject=fromTarget.owlClass,father=toTarget.owlClass) in ontology;
 		}
 	}
 
