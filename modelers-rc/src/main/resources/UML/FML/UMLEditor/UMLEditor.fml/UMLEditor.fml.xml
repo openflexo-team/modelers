@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VirtualModel id="FLX-3" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="1.0" uri="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint" version="0.1" name="UMLEditor" userID="FLX" flexoID="3">
-  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
+  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="FLX-2" inspectorTitle="UMLEditor" userID="FLX" flexoID="2" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-7" virtualModelURI="http://openflexo.org/modellers/resources/UMLEditor/UMLEditor.viewpoint/UMLModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="rootModel" userID="SYL" flexoID="7" />
   <CreationScheme id="SYL-8" name="init" width="800" label="init" height="600" userID="SYL" flexoID="8">

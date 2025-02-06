@@ -74,7 +74,7 @@
     </DropScheme>
   </FlexoConcept>
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot" userID="SYL" flexoID="-1" />
-  <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
+  <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" inspectorTitle="StateChartDiagram" userID="SYL" flexoID="1" />
   <TypedDiagramModelSlot id="SYL-9" metaModelURI="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="diagram" userID="SYL" flexoID="9">
     <FMLDiagramPaletteElementBinding id="SYL-53" paletteElementId="http://openflexo.org/modellers/StateCharts/StateChartDiagram.diagramspecification/Palette.palette#StateGR" userID="SYL" flexoID="53">
