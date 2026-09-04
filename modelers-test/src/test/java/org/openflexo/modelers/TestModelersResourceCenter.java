@@ -38,8 +38,9 @@ import org.openflexo.test.TestOrder;
  * independently of the serialization format it is currently stored in.
  *
  * <p>
- * As of this writing all four modelers fail here: none of the shipped <code>.fml</code> files parses against the 2.99 grammar. The tests are
- * expected to turn green one by one as each modeler is migrated.
+ * All four modelers are now stored as textual FML: the legacy <code>.fml.xml</code> files were removed once each of them turned green here.
+ * Note that BPMN only validates against the FML attributes added to the GINA and diagram technology adapters, so this suite must be run
+ * through those included builds (or against published snapshots that carry them).
  */
 @RunWith(OrderedRunner.class)
 public class TestModelersResourceCenter extends OpenflexoTestCase {
@@ -119,9 +120,9 @@ public class TestModelersResourceCenter extends OpenflexoTestCase {
 
 		log("test4OWLOntologyEditor()");
 
-		// This one is the only modeler already stored as textual FML rather than as legacy .fml.xml,
-		// but it was written against the 2023 grammar: its "import [<uri>] as <name>;" declarations
-		// are no longer accepted, the current form being "import <Type> <name> from [<uri>];".
+		// This one was already stored as textual FML rather than as legacy .fml.xml, but was written
+		// against the 2023 grammar: its "import [<uri>] as <name>;" declarations no longer parse,
+		// the current form being "import <Type> <name> from [<uri>];".
 		testModeler(OWL_ONTOLOGY_EDITOR_URI,
 				new Expectation("OWLOntologyEditor", 8, "IsAGR", "ObjectPropertyGR", "OWLClassGR", "OWLIndividualGR", "SubClassGR"));
 	}
