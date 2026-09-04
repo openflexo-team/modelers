@@ -15,8 +15,8 @@
  *     ("ClassGR" and "TotoGR" - the palette declares only "Class") AND carried no drop scheme.
  *     Both are dropped; the remaining one binds "Class" to dropClassGRAtTopLevel.
  *
- * Lost, not dropped by choice: TypedDiagramModelSlot.templateDiagram (templateDiagramReference)
- * carries no @FMLAttribute, so the diagram is no longer pre-populated from the example diagram.
+ *   - templateDiagram is preserved: TypedDiagramModelSlot gained the matching FML attribute, so the
+ *     legacy templateDiagramReference (…/ExampleDiagram.diagram#SYL_1) still applies.
  */
 
 namespace "http://openflexo.org/modellers/UMLEditor/UMLClassDiagramSpecification.diagramspecification" as UML_CLASS_DIAGRAM_SPECIFICATION;
@@ -49,6 +49,7 @@ public model UMLClassDiagram {
 
 	Diagram diagram with TypedDiagram(
 		diagramSpecification=UML_CLASS_DIAGRAM_SPEC,
+		templateDiagram=EXAMPLE_DIAGRAM,
 		isRequired=true,
 		paletteElementBindings={
 			PaletteElementBinding:(

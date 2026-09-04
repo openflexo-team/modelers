@@ -23,9 +23,9 @@
  *
  *   - createNewProcess(name) is INVENTED, see its own comment.
  *
- * Two legacy details are LOST, not dropped by choice: TypedDiagramModelSlot.templateDiagram
- * (templateDiagramReference) and initializeWithContents carry no @FMLAttribute, so the diagram is
- * no longer pre-populated from the example diagram.
+ *   - templateDiagram / initializeWithContents are preserved: TypedDiagramModelSlot gained the two
+ *     matching FML attributes, so a newly created diagram is still pre-populated from the example
+ *     diagram as the legacy templateDiagramReference (…/ExampleDiagram.diagram#SYL_1) asked.
  */
 
 namespace "http://openflexo.org/modellers/resources/BPMN/ProcessDiagram.diagramspecification" as PROCESS_DIAGRAM_SPECIFICATION;
@@ -81,6 +81,8 @@ public model ProcessDiagram {
 
 	Diagram diagram with TypedDiagram(
 		diagramSpecification=PROCESS_DIAGRAM_SPEC,
+		templateDiagram=EXAMPLE_DIAGRAM,
+		initializeWithContents=true,
 		isRequired=true,
 		paletteElementBindings={
 			PaletteElementBinding:(
