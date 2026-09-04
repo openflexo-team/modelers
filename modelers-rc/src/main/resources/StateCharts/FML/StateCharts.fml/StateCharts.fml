@@ -1,27 +1,38 @@
-
 /**
- * 
- * @author sylvain
- * @version 0.1
+ * StateCharts - entry point of the state-chart modeler.
+ *
+ * Container view point: it declares no concept, and only knows how to create a new state chart,
+ * i.e. a StateChartModel holding the abstract syntax plus a StateChartDiagram representing it.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. The two
+ * AddVirtualModelInstance actions became plain "new <Model>(...) with (name=...)" expressions
+ * (AddVirtualModelInstance is deprecated in favour of an expression), and the creation and
+ * deletion schemes are anonymous.
  */
-@VirtualModel(uri="http://openflexo.org/modellers/StateCharts.fml")
-public class StateCharts {
 
-  @CreationScheme  
-  StateCharts:create() {  
-  
-  }  
+import java.lang.String;
 
-  @ActionScheme  
-  public StateChartDiagram createStateChartDiagram(String name) {  
-    StateChartModel model = StateChartModel.create();    
-    StateChartDiagram editor = StateChartDiagram.create(parameters.name,model);    
-    return editor;  
-  }  
+import ["http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml"];
+import ["http://openflexo.org/modellers/StateCharts.fml/StateChartDiagram.fml"];
 
-  @DeletionScheme  
-  Void delete() {  
-  
-  }  
+@URI("http://openflexo.org/modellers/StateCharts.fml")
+@Version("0.1")
+@Author("sylvain")
+public model StateCharts {
+
+	create() {
+	}
+
+	/**
+	 * Create a new state chart: an empty StateChartModel, and the diagram editing it
+	 */
+	public StateChartDiagram createStateChartDiagram(String name) {
+		StateChartModel stateChartModel = new StateChartModel() with (name=parameters.name + "Model");
+		StateChartDiagram editor = new StateChartDiagram(parameters.name,stateChartModel) with (name=parameters.name);
+		return editor;
+	}
+
+	delete() {
+	}
 
 }

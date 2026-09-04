@@ -1,91 +1,103 @@
-
 /**
- * 
- * @author sylvain
- * @version 0.1
+ * StateChartModel - the abstract syntax of a state chart: states and the transitions between them.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. What was repaired, and why:
+ *   - Transition's role "from" is renamed "fromState": "from" is a reserved word of the 2.99
+ *     grammar (the "from" clause of select/match), so a role cannot keep that name. "to" is not
+ *     reserved, but is renamed "toState" in both Transition and InitialTransition so that the
+ *     model stays internally consistent;
+ *   - Transition's creation scheme declared its two state parameters as
+ *     FlexoConceptInstanceType<null> - the concept had been lost in the legacy XML. They are
+ *     State, as InitialTransition's own parameter already was;
+ *   - the creation and deletion schemes are anonymous, so that a subclass could reach them
+ *     through super(...);
+ *   - <Inspector> / <InspectorEntry> elements were dropped: FlexoConceptInspector is deprecated
+ *     and has no textual form.
  */
-@VirtualModel(uri="http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml")
-public class StateChartModel {
 
-  @GetSetProperty(value="initialTransition", access=get)  
-  public InitialTransition getInitialTransition {  
-    return this.SelectUniqueFlexoConceptInstance(type=InitialTransition);  
-  }
+import java.lang.String;
+import java.util.List;
 
-  @CreationScheme  
-  StateChartModel:create() {  
-  
-  }  
+@URI("http://openflexo.org/modellers/StateCharts.fml/StateChartModel.fml")
+@Version("0.1")
+@Author("sylvain")
+public model StateChartModel {
 
-  @DeletionScheme  
-  Void delete() {  
-  
-  }  
+	// The single initial transition of this state chart, if any
+	InitialTransition initialTransition {
+		InitialTransition get() {
+			return select unique InitialTransition from this;
+		}
+	};
 
+	create() {
+	}
 
-  @FlexoConcept  
-  public class State {  
-  
-    public String name;  
-    @GetSetProperty(value="incomingTransitions", access=get)    
-    public List<Transition> getIncomingTransitions {    
-      return container.SelectFlexoConceptInstance(type=Transition,where=where=(selected.to = this));    
-    }  
-    @GetSetProperty(value="outgoingTransitions", access=get)    
-    public List<Transition> getOutgoingTransitions {    
-      return container.SelectFlexoConceptInstance(type=Transition,where=where=(selected.from = this));    
-    }  
-  
-    @CreationScheme    
-    State:create(String aName) {    
-      name = parameters.aName;    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      name = null;    
-    }    
-  
-  }  
+	delete() {
+	}
 
-  @FlexoConcept  
-  public class Transition {  
-  
-    public State from;  
-    public State to;  
-    public String label;  
-  
-    @CreationScheme    
-    Transition:create(UndefinedFlexoConceptInstanceType<null> aFrom, UndefinedFlexoConceptInstanceType<null> aTo, String aLabel) {    
-      from = parameters.aFrom;      
-      to = parameters.aTo;      
-      label = parameters.aLabel;    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+	/**
+	 * A state of the state chart
+	 */
+	public concept State {
 
-  @FlexoConcept  
-  public class InitialTransition {  
-  
-    public State to;  
-    public String label;  
-  
-    @CreationScheme    
-    InitialTransition:create(State aTo, String aLabel) {    
-      to = parameters.aTo;      
-      label = parameters.aLabel;    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+		String[1,1] name;
+
+		List<Transition> incomingTransitions {
+			List<Transition> get() {
+				return select Transition from container where (selected.toState == this);
+			}
+		};
+
+		List<Transition> outgoingTransitions {
+			List<Transition> get() {
+				return select Transition from container where (selected.fromState == this);
+			}
+		};
+
+		create(String aName) {
+			name = parameters.aName;
+		}
+
+		delete() {
+			name = null;
+		}
+	}
+
+	/**
+	 * A transition between two states
+	 */
+	public concept Transition {
+
+		State[1,1] fromState;
+		State[1,1] toState;
+		String label;
+
+		create(State aFrom, State aTo, String aLabel) {
+			fromState = parameters.aFrom;
+			toState = parameters.aTo;
+			label = parameters.aLabel;
+		}
+
+		delete() {
+		}
+	}
+
+	/**
+	 * The transition entering the initial state of the state chart
+	 */
+	public concept InitialTransition {
+
+		State[1,1] toState;
+		String label;
+
+		create(State aTo, String aLabel) {
+			toState = parameters.aTo;
+			label = parameters.aLabel;
+		}
+
+		delete() {
+		}
+	}
 
 }

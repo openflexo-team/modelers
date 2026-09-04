@@ -1,428 +1,319 @@
-use org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
-use org.openflexo.technologyadapter.emf.EMFModelSlot;
-
 /**
- * 
- * @author sylvain
- * @version 0.1
+ * BPMNModel - the abstract syntax of a BPMN process, federated over an EMF model conform to the
+ * BPMN 2.0 metamodel. Each concept reifies one BPMN element and holds the EMF object behind it.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. What was repaired, and why:
+ *
+ *   - THE MISSING EMF MODEL SLOT. Every EMFObjectRole below declares container="bpmnModel", and
+ *     the creation scheme selects Definitions from "bpmnModel" - but the legacy VirtualModel
+ *     declared no such model slot at all (only the FIB one). It is declared here: the roles
+ *     already name it, so this states what the model always meant.
+ *
+ *   - THE CONCEPTS ARE FLATTENED. The legacy nested FlowElement, FlowNode, Task, StartEvent,
+ *     EndEvent, Gateway and SequenceFlow inside Process as EmbeddedFlexoConcepts, yet stored
+ *     their URIs flat (…/BPMNModel.fml#FlowNode, not #Process#FlowNode) and let inheritance cross
+ *     the boundary in both directions - Event is declared outside Process but extends the nested
+ *     FlowNode, while the nested StartEvent extends the outside CatchEvent. That is not a real
+ *     containment. Flattening keeps every URI exactly as the legacy stored it (so ea-module's
+ *     reference to …#Process still resolves) and makes "container" uniformly mean the
+ *     VirtualModelInstance - which is why the three roles the legacy addressed as
+ *     "container.container" (FlowNode.incoming/outgoing, SequenceFlow.source/target) are now
+ *     simply "container".
+ *
+ *   - <Inspector> / <InspectorEntry> were dropped (FlexoConceptInspector is deprecated), and the
+ *     AddToList actions became list.add(…) expressions (AddToListAction is deprecated in favour
+ *     of an expression).
+ *
+ * One legacy defect is KEPT rather than guessed at: Process declared a NavigationScheme
+ * "navigateToProcessEditor". NavigationScheme carries no @FML annotation, so it has no textual
+ * form at all - see the diagram technology-adapter notes.
  */
-@VirtualModel(uri="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml")
-public class BPMNModel {
 
-  public GINAFIBComponent ui;
+use org.openflexo.technologyadapter.emf.EMFModelSlot as EMF;
+use org.openflexo.technologyadapter.gina.FIBComponentModelSlot as GINA;
 
-  @CreationScheme  
-  BPMNModel:create() {  
-    ui = ui.ConfigureGINAFIBComponent();    
-    Definitions definitions = SelectUniqueEMFObjectIndividual from bpmnModel as Definitions;    
-    log ("root elements = " + definitions.rootElements)    
-    for (rootElement : definitions.rootElements) {    
-      log ("Found root element " + rootElement)      
-      if (rootElement.type.name = "Process") {      
-        Process.create(rootElement)      
-      }    
-    }    
-    for (diagram : definitions.diagrams) {    
-      log ("Found diagram " + diagram)      
-      log ("type=" + diagram.type.name)      
-      if (diagram.type.name = "BPMNDiagram") {      
-        log ("Create diagram " + diagram)        
-        log ("bpmnElement=" + diagram.plane.bpmnElement)        
-        Process process = this.getProcess(diagram.plane.bpmnElement);        
-        log ("Process=" + process)        
-        ProcessDiagram.representsDiagram(diagram,process)      
-      }    
-    }  
-  }  
+import org.openflexo.technologyadapter.emf.model.EMFModel;
+import org.openflexo.technologyadapter.emf.model.EMFObjectIndividual;
+import org.openflexo.technologyadapter.emf.metamodel.EMFMetaModel;
+import org.openflexo.technologyadapter.emf.metamodel.EMFClassClass;
+import org.openflexo.technologyadapter.gina.model.GINAFIBComponent;
+import java.lang.String;
 
-  @ActionScheme  
-  Process getProcess(BaseElement processObject) {  
-    return this.SelectUniqueFlexoConceptInstance(type=Process,where=where=(selected.eObject = parameters.processObject));  
-  }  
+import EMFMetaModel BPMN from ["http://www.omg.org/spec/BPMN/20100524/MODEL-XMI"];
+import EMFClassClass BASE_ELEMENT from [BPMN:"BaseElement"];
+import EMFClassClass FLOW_ELEMENT from [BPMN:"FlowElement"];
+import EMFClassClass FLOW_NODE from [BPMN:"FlowNode"];
+import EMFClassClass BPMN_PROCESS from [BPMN:"Process"];
+import EMFClassClass TASK from [BPMN:"Task"];
+import EMFClassClass EVENT from [BPMN:"Event"];
+import EMFClassClass THROW_EVENT from [BPMN:"ThrowEvent"];
+import EMFClassClass CATCH_EVENT from [BPMN:"CatchEvent"];
+import EMFClassClass START_EVENT from [BPMN:"StartEvent"];
+import EMFClassClass END_EVENT from [BPMN:"EndEvent"];
+import EMFClassClass GATEWAY from [BPMN:"Gateway"];
+import EMFClassClass PARALLEL_GATEWAY from [BPMN:"ParallelGateway"];
+import EMFClassClass EXCLUSIVE_GATEWAY from [BPMN:"ExclusiveGateway"];
+import EMFClassClass SEQUENCE_FLOW from [BPMN:"SequenceFlow"];
+import EMFClassClass DEFINITIONS from [BPMN:"Definitions"];
+import EMFClassClass BPMN_DIAGRAM from [BPMN:"BPMNDiagram"];
 
+import ["http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml"];
 
-  @FlexoConcept  
-  public class Process extends BaseElement  {  
-  
-    FlexoRole eObject as Individual conformTo Process from bpmnModel ;  
-      
-    public String processName = ((eObject.name != null) ? eObject.name : bpmnModel.resource.name.substring(0,bpmnModel.resource.name.indexOf(".")));  
-  
-    @CreationScheme    
-    Process:create(EMFObjectIndividual aProcess) {    
-      eObject = parameters.aProcess;      
-      for (flowElement : eObject.flowElements) {      
-        if (flowElement.type.name = "StartEvent") {        
-          StartEvent.create(flowElement)        
-        }        
-        if (flowElement.type.name = "EndEvent") {        
-          EndEvent.create(flowElement)        
-        }        
-        if (flowElement.type.name = "Task") {        
-          Task.create(flowElement)        
-        }        
-        if (flowElement.type.name = "ParallelGateway") {        
-          ParallelGateway.create(flowElement)        
-        }        
-        if (flowElement.type.name = "ExclusiveGateway") {        
-          ExclusiveGateway.create(flowElement)        
-        }      
-      }      
-      for (flowElement : eObject.flowElements) {      
-        if (flowElement.type.name = "SequenceFlow") {        
-          SequenceFlow.create(flowElement)        
-        }      
-      }    
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-    @NavigationScheme    
-    public Void navigateToProcessEditor() {    
-      
-    }    
-  
-    @ActionScheme    
-    public Void debug() {    
-      log ("process=" + eObject)      
-      log ("name=" + processName)      
-      for (flowElement : eObject.flowElements) {      
-        log ("element : " + flowElement)      
-      }    
-    }    
-  
-    @ActionScheme    
-    FlowNode getFlowNode(FlowNode flowNodeObject) {    
-      return container.SelectUniqueFlexoConceptInstance(type=FlowNode,where=where=(selected.eObject = parameters.flowNodeObject));    
-    }    
-  
-    @ActionScheme    
-    SequenceFlow getSequenceFlow(SequenceFlow sequenceFlowObject) {    
-      return container.SelectUniqueFlexoConceptInstance(type=SequenceFlow,where=where=(selected.eObject = parameters.sequenceFlowObject));    
-    }    
-  
-  
-    @FlexoConcept    
-    public class FlowNode extends FlowElement  {    
-      
-      public List incoming;    
-      public List outgoing;    
-          
-      abstract FlowNode eObject;    
-          
-      public String name = eObject.name;    
-      
-      @CreationScheme      
-      FlowNode:create() {      
-          
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
-      }      
-      
-    }    
-  
-    @FlexoConcept    
-    public class Task extends FlowNode  {    
-      
-      FlexoRole eObject as Individual conformTo Task from bpmnModel ;    
-      
-      @CreationScheme      
-      Task:create(EMFObjectIndividual task) {      
-        eObject = parameters.task;      
-      }      
-      
-    }    
-  
-    @FlexoConcept    
-    public class StartEvent extends CatchEvent  {    
-      
-      FlexoRole eObject as Individual conformTo StartEvent from bpmnModel ;    
-          
-      public String name = "Begin";    
-      
-      @CreationScheme      
-      StartEvent:create(EMFObjectIndividual startEvent) {      
-        eObject = parameters.startEvent;      
-      }      
-      
-    }    
-  
-    @FlexoConcept    
-    public class EndEvent extends ThrowEvent  {    
-      
-      FlexoRole eObject as Individual conformTo EndEvent from bpmnModel ;    
-          
-      public String name = "End";    
-      
-      @CreationScheme      
-      EndEvent:create(EMFObjectIndividual endEvent) {      
-        eObject = parameters.endEvent;      
-      }      
-      
-    }    
-  
-    @FlexoConcept    
-    public class Gateway extends FlowNode  {    
-    }    
-  
-    @FlexoConcept    
-    public class SequenceFlow extends FlowElement  {    
-      
-      FlexoRole eObject as Individual conformTo SequenceFlow from bpmnModel ;    
-      public FlowNode source;    
-      public FlowNode target;    
-          
-      public String name = eObject.name;    
-      
-      @CreationScheme      
-      SequenceFlow:create(EMFObjectIndividual sequenceFlow) {      
-        eObject = parameters.sequenceFlow;        
-        source = container.getFlowNode(eObject.sourceRef);        
-        target = container.getFlowNode(eObject.targetRef);        
-        log ("Create SequenceFlow for " + parameters.sequenceFlow)        
-        log ("sourceRef=" + eObject.sourceRef)        
-        log ("targetRef=" + eObject.targetRef)        
-        log ("source=" + source)        
-        log ("target=" + target)        
-        source.outgoing.add(this)        
-        target.incoming.add(this)      
-      }      
-      
-    }    
-  
-    @FlexoConcept    
-    public class FlowElement extends BaseElement  {    
-      
-          
-      abstract FlowElement eObject;    
-      
-      @CreationScheme      
-      FlowElement:create() {      
-          
-      }      
-      
-      @DeletionScheme      
-      Void delete() {      
-          
-      }      
-      
-    }    
-  
-  }  
+@URI("http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml")
+@Version("0.1")
+@Author("sylvain")
+public model BPMNModel {
 
-  @FlexoConcept  
-  public class FlowNode extends FlowElement  {  
-  
-    public List incoming;  
-    public List outgoing;  
-      
-    abstract FlowNode eObject;  
-      
-    public String name = eObject.name;  
-  
-    @CreationScheme    
-    FlowNode:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+	// The EMF model holding the BPMN definitions being reified. Declared here because every role
+	// below already addresses it; the legacy serialization had lost the declaration itself.
+	EMFModel bpmnModel with EMFModelSlot(metaModel=BPMN, isRequired=true);
 
-  @FlexoConcept  
-  public class Task extends FlowNode  {  
-  
-    FlexoRole eObject as Individual conformTo Task from bpmnModel ;  
-  
-    @CreationScheme    
-    Task:create(EMFObjectIndividual task) {    
-      eObject = parameters.task;    
-    }    
-  
-  }  
+	// The user interface of this model
+	GINAFIBComponent ui with FIBComponent(
+		templateComponentURI="http://openflexo.org/modellers/BPMN/FML/Fib/BPMNModelUI.fib",
+		isRequired=true,
+		assignments={VariableAssignment:(variable="data",value=this)});
 
-  @FlexoConcept  
-  public class StartEvent extends CatchEvent  {  
-  
-    FlexoRole eObject as Individual conformTo StartEvent from bpmnModel ;  
-      
-    public String name = "Begin";  
-  
-    @CreationScheme    
-    StartEvent:create(EMFObjectIndividual startEvent) {    
-      eObject = parameters.startEvent;    
-    }    
-  
-  }  
+	/**
+	 * The legacy creation scheme took no parameter, which left the (undeclared) bpmnModel slot
+	 * unassigned and the whole body reading from null. It now receives the BPMN resource, exactly
+	 * as BPMNEditor's own creation scheme does.
+	 */
+	create(Resource<EMFModel> aBPMNResource) {
+		bpmnModel = parameters.aBPMNResource.resourceData;
+		ui = GINA::ConfigureGINAFIBComponent() in ui;
+		EMFObjectIndividualType(eClass=DEFINITIONS) definitions = select unique EMFObjectIndividualType(eClass=DEFINITIONS) from bpmnModel;
+		log "root elements = " + definitions.rootElements;
+		for (EMFObjectIndividual rootElement : definitions.rootElements) {
+			log "Found root element " + rootElement;
+			if (rootElement.mainType.name == "Process") {
+				new Process(rootElement);
+			}
+		}
+		for (EMFObjectIndividualType(eClass=BPMN_DIAGRAM) diagram : definitions.diagrams) {
+			log "Found diagram " + diagram;
+			log "type=" + diagram.mainType.name;
+			if (diagram.mainType.name == "BPMNDiagram") {
+				log "Create diagram " + diagram;
+				log "bpmnElement=" + diagram.plane.bpmnElement;
+				Process process = this.getProcess(diagram.plane.bpmnElement);
+				log "Process=" + process;
+				container.new ProcessDiagram::representsDiagram(diagram,process) with (name=process.processName + "Diagram");
+			}
+		}
+	}
 
-  @FlexoConcept  
-  public class EndEvent extends ThrowEvent  {  
-  
-    FlexoRole eObject as Individual conformTo EndEvent from bpmnModel ;  
-      
-    public String name = "End";  
-  
-    @CreationScheme    
-    EndEvent:create(EMFObjectIndividual endEvent) {    
-      eObject = parameters.endEvent;    
-    }    
-  
-  }  
+	public FlowNode getFlowNode(EMFObjectIndividual flowNodeObject) {
+		return select unique FlowNode from this where (selected.eObject == parameters.flowNodeObject);
+	}
 
-  @FlexoConcept  
-  public class Gateway extends FlowNode  {  
-  }  
+	public SequenceFlow getSequenceFlow(EMFObjectIndividual sequenceFlowObject) {
+		return select unique SequenceFlow from this where (selected.eObject == parameters.sequenceFlowObject);
+	}
 
-  @FlexoConcept  
-  public class Event extends FlowNode  {  
-  
-      
-    abstract Event eObject;  
-  
-    @CreationScheme    
-    Event:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+	public Process getProcess(EMFObjectIndividual processObject) {
+		return select unique Process from this where (selected.eObject == parameters.processObject);
+	}
 
-  @FlexoConcept  
-  public class ThrowEvent extends Event  {  
-  
-      
-    abstract ThrowEvent eObject;  
-  
-    @CreationScheme    
-    ThrowEvent:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+	/**
+	 * Root of the BPMN element hierarchy
+	 */
+	public abstract concept BaseElement {
+		abstract EMFObjectIndividualType(eClass=BASE_ELEMENT) eObject;
 
-  @FlexoConcept  
-  public class CatchEvent extends Event  {  
-  
-      
-    abstract CatchEvent eObject;  
-  
-    @CreationScheme    
-    CatchEvent:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+		create() {
+		}
 
-  @FlexoConcept  
-  public class SequenceFlow extends FlowElement  {  
-  
-    FlexoRole eObject as Individual conformTo SequenceFlow from bpmnModel ;  
-    public FlowNode source;  
-    public FlowNode target;  
-      
-    public String name = eObject.name;  
-  
-    @CreationScheme    
-    SequenceFlow:create(EMFObjectIndividual sequenceFlow) {    
-      eObject = parameters.sequenceFlow;      
-      source = container.getFlowNode(eObject.sourceRef);      
-      target = container.getFlowNode(eObject.targetRef);      
-      log ("Create SequenceFlow for " + parameters.sequenceFlow)      
-      log ("sourceRef=" + eObject.sourceRef)      
-      log ("targetRef=" + eObject.targetRef)      
-      log ("source=" + source)      
-      log ("target=" + target)      
-      source.outgoing.add(this)      
-      target.incoming.add(this)    
-    }    
-  
-  }  
+		delete() {
+		}
+	}
 
-  @FlexoConcept  
-  public class FlowElement extends BaseElement  {  
-  
-      
-    abstract FlowElement eObject;  
-  
-    @CreationScheme    
-    FlowElement:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+	public abstract concept FlowElement extends BaseElement {
+		abstract EMFObjectIndividualType(eClass=FLOW_ELEMENT) eObject;
 
-  @FlexoConcept  
-  public class BaseElement {  
-  
-      
-    abstract BaseElement eObject;  
-  
-    @CreationScheme    
-    BaseElement:create() {    
-      
-    }    
-  
-    @DeletionScheme    
-    Void delete() {    
-      
-    }    
-  
-  }  
+		create() {
+		}
 
-  @FlexoConcept  
-  public class ParallelGateway extends Gateway  {  
-  
-    FlexoRole eObject as Individual conformTo ParallelGateway from bpmnModel ;  
-      
-    public String name = "ParallelGateway";  
-  
-    @CreationScheme    
-    ParallelGateway:create(EMFObjectIndividual gateway) {    
-      eObject = parameters.gateway;    
-    }    
-  
-  }  
+		delete() {
+		}
+	}
 
-  @FlexoConcept  
-  public class ExclusiveGateway extends Gateway  {  
-  
-    FlexoRole eObject as Individual conformTo ExclusiveGateway from bpmnModel ;  
-      
-    public String name = "ExclusiveGateway";  
-  
-    @CreationScheme    
-    ExclusiveGateway:create(EMFObjectIndividual gateway) {    
-      eObject = parameters.gateway;    
-    }    
-  
-  }  
+	public abstract concept FlowNode extends FlowElement {
+		abstract EMFObjectIndividualType(eClass=FLOW_NODE) eObject;
+
+		SequenceFlow[0,*] incoming with ConceptInstance(virtualModelInstance=container);
+		SequenceFlow[0,*] outgoing with ConceptInstance(virtualModelInstance=container);
+
+		String name values eObject.name;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public concept Task extends FlowNode {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=TASK);
+
+		create(EMFObjectIndividual task) {
+			eObject = (EMFObjectIndividualType(eClass=TASK))parameters.task;
+		}
+	}
+
+	public abstract concept Event extends FlowNode {
+		abstract EMFObjectIndividualType(eClass=EVENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public abstract concept ThrowEvent extends Event {
+		abstract EMFObjectIndividualType(eClass=THROW_EVENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public abstract concept CatchEvent extends Event {
+		abstract EMFObjectIndividualType(eClass=CATCH_EVENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public concept StartEvent extends CatchEvent {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=START_EVENT);
+
+		String name values "Begin";
+
+		create(EMFObjectIndividual startEvent) {
+			eObject = (EMFObjectIndividualType(eClass=START_EVENT))parameters.startEvent;
+		}
+	}
+
+	public concept EndEvent extends ThrowEvent {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=END_EVENT);
+
+		String name values "End";
+
+		create(EMFObjectIndividual endEvent) {
+			eObject = (EMFObjectIndividualType(eClass=END_EVENT))parameters.endEvent;
+		}
+	}
+
+	public abstract concept Gateway extends FlowNode {
+		abstract EMFObjectIndividualType(eClass=GATEWAY) eObject;
+	}
+
+	public concept ParallelGateway extends Gateway {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=PARALLEL_GATEWAY);
+
+		String name values "ParallelGateway";
+
+		create(EMFObjectIndividual gateway) {
+			eObject = (EMFObjectIndividualType(eClass=PARALLEL_GATEWAY))parameters.gateway;
+		}
+	}
+
+	public concept ExclusiveGateway extends Gateway {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=EXCLUSIVE_GATEWAY);
+
+		String name values "ExclusiveGateway";
+
+		create(EMFObjectIndividual gateway) {
+			eObject = (EMFObjectIndividualType(eClass=EXCLUSIVE_GATEWAY))parameters.gateway;
+		}
+	}
+
+	public concept SequenceFlow extends FlowElement {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=SEQUENCE_FLOW);
+
+		FlowNode[1,1] source with ConceptInstance(virtualModelInstance=container);
+		FlowNode[1,1] target with ConceptInstance(virtualModelInstance=container);
+
+		String name values eObject.name;
+
+		create(EMFObjectIndividual sequenceFlow) {
+			eObject = (EMFObjectIndividualType(eClass=SEQUENCE_FLOW))parameters.sequenceFlow;
+			source = container.getFlowNode(eObject.sourceRef);
+			target = container.getFlowNode(eObject.targetRef);
+			log "Create SequenceFlow for " + parameters.sequenceFlow;
+			log "sourceRef=" + eObject.sourceRef;
+			log "targetRef=" + eObject.targetRef;
+			log "source=" + source;
+			log "target=" + target;
+			source.outgoing.add(this);
+			target.incoming.add(this);
+		}
+
+		delete() {
+		}
+	}
+
+	/**
+	 * A BPMN process: reifies its flow elements as concept instances when created
+	 */
+	public concept Process extends BaseElement {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=BPMN_PROCESS);
+
+		String processName values ((eObject.name != null) ? eObject.name : bpmnModel.resource.name.substring(0,bpmnModel.resource.name.indexOf(".")));
+
+		create(EMFObjectIndividual aProcess) {
+			eObject = (EMFObjectIndividualType(eClass=BPMN_PROCESS))parameters.aProcess;
+			for (EMFObjectIndividual flowElement : eObject.flowElements) {
+				if (flowElement.mainType.name == "StartEvent") {
+					container.new StartEvent(flowElement);
+				}
+				if (flowElement.mainType.name == "EndEvent") {
+					container.new EndEvent(flowElement);
+				}
+				if (flowElement.mainType.name == "Task") {
+					container.new Task(flowElement);
+				}
+				if (flowElement.mainType.name == "ParallelGateway") {
+					container.new ParallelGateway(flowElement);
+				}
+				if (flowElement.mainType.name == "ExclusiveGateway") {
+					container.new ExclusiveGateway(flowElement);
+				}
+			}
+			for (EMFObjectIndividual flowElement : eObject.flowElements) {
+				if (flowElement.mainType.name == "SequenceFlow") {
+					container.new SequenceFlow(flowElement);
+				}
+			}
+		}
+
+		delete() {
+		}
+
+		public void debug() {
+			log "process=" + eObject;
+			log "name=" + processName;
+			for (EMFObjectIndividual flowElement : eObject.flowElements) {
+				log "element : " + flowElement;
+			}
+		}
+
+		// Kept on Process because ProcessDiagram calls them as process.getFlowNode(...); both simply
+		// delegate to the model, whose instances they select over.
+		public FlowNode getFlowNode(EMFObjectIndividual flowNodeObject) {
+			return container.getFlowNode(parameters.flowNodeObject);
+		}
+
+		public SequenceFlow getSequenceFlow(EMFObjectIndividual sequenceFlowObject) {
+			return container.getSequenceFlow(parameters.sequenceFlowObject);
+		}
+	}
 
 }
