@@ -1,0 +1,43 @@
+// BPMN modeler - a BPMN 2.0 editor built by federating an EMF .bpmn model (OMG BPMN 2.0
+// metamodel) and projecting each of its processes on a diagram.
+//
+// Self-contained project, on the model of openflexo-integration-tests/city-mapping: it carries
+// its API (src/main/java), its resource center (src/main/resources, declared by
+// META-INF/resourceCenters with base URI http://openflexo.org/bpmn-modeler) AND the tests that
+// exercise it (src/test/java). No separate -api / -rc / -test split.
+//
+// It was extracted out of modelers-rc, where it shared the http://openflexo.org/modellers
+// resource center with the StateCharts, UML and OWL modelers. Its own base URI is NOT optional:
+// DefaultResourceCenterService skips any resource center whose defaultBaseURI is already
+// registered, so two resource centers sharing http://openflexo.org/modellers would silently
+// mask one another as soon as both are on the classpath - which ea-module does.
+//
+// The three VirtualModels (BPMNEditor / BPMNModel / ProcessDiagram) mount four kinds of model
+// slot - EMF, GINA FIBComponent, TypedDiagram and FMLRT - hence the three connectors below. The
+// OMG BPMN 2.0 metamodel itself is NOT shipped here: it comes from emf-ta-rc
+// (MetaModels/BPMN2-1.4), which emf-ta brings along.
+//
+// Two test surfaces, as in city-mapping: TestBPMNModeler loads and validates the three
+// VirtualModels through the Java API, while the FML-scripts of src/main/resources/AutomatedTests
+// actually RUN the modeler on Models/BasicExample.bpmn and assert on business values. The latter
+// is why fml-cli is a test dependency.
+
+dependencies {
+  // openflexo dep
+  implementation flexoFoundation()
+
+  // Technology adapters mounted by the three VirtualModels of this modeler
+  implementation emfConnector()
+  implementation diagramConnector()
+  implementation ginaConnector()
+
+  // testing dep
+  testImplementation testUtils()
+  testImplementation flexoFoundationTest()
+  testImplementation fmlCli()
+  testImplementation fmlCliTest()
+  // gina-ta-ui carries FMLControlledFIBController, the controller the .fib declare. Without it on
+  // the test classpath every controller.* binding is reported unresolved - a classpath artefact,
+  // not a defect: FlexoFIBController.iconForObject() is alive and well.
+  testImplementation ginaConnectorUi()
+}

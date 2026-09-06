@@ -1,0 +1,29 @@
+/**
+ * UMLEditor - entry point of the UML modeler: it holds the root UMLModel instance.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. That serialization was still
+ * in modelVersion 1.0, the oldest of this resource centre. The AddVirtualModelInstance action
+ * became a plain "new UMLModel() with (name=...)" expression, the action being deprecated.
+ *
+ * A legacy gap is worth knowing about, and is NOT repaired here because closing it is a design
+ * decision: nothing instantiates UMLClassDiagram. This editor only creates the root model, and no
+ * behaviour of this resource centre ever calls UMLClassDiagram's creation scheme - so the class
+ * diagram, palette and drop scheme it defines have never been reachable.
+ */
+
+use org.openflexo.foundation.fml.rt.FMLRTModelSlot as FMLRT;
+
+import ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLModel.fml"];
+
+@URI("http://openflexo.org/uml-modeler/FML/UMLEditor.fml")
+@Version("0.1")
+public model UMLEditor {
+
+	// The root UML model being edited
+	UMLModel rootModel with ModelInstance(isRequired=true);
+
+	create::init() {
+		rootModel = new UMLModel() with (name="RootModel");
+	}
+
+}

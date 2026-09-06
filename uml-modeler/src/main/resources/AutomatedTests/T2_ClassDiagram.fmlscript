@@ -1,0 +1,40 @@
+// T2 - the class-diagram side, which the modeler itself never reaches.
+//
+// This is the legacy gap kept as-is during the FML migration: UMLEditor only creates the root
+// model, and NO behaviour of this modeler ever calls UMLClassDiagram::init - so the diagram, its
+// palette and its drop scheme have never been reachable from the model. A script can call it, and
+// that is what this test does: it proves the diagram half is sound even though nothing wires it.
+
+editorVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml"];
+modelVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLModel.fml"];
+diagramVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLClassDiagram.fml"];
+assert diagramVM != null;
+
+service ResourceCenterService add_temp_rc;
+editor = new UMLEditor::init() with (name="UMLEditorInstance");
+model = editor.rootModel;
+
+classDiagram = new UMLClassDiagram::init(model) with (name="ClassDiagram");
+assert classDiagram != null;
+
+// The TypedDiagram model slot resolved, on a diagram created in the temporary resource center.
+assert classDiagram.diagram != null;
+// init() hardcodes resourceName="diagram", so every instance yields a diagram of that name.
+assert classDiagram.diagram.name == "diagram.diagram";
+
+// The FMLRT slot points back at the model it was handed.
+assert classDiagram.umlModel == model;
+
+// A freshly created diagram is empty: init() draws nothing, it only creates the diagram resource.
+assert classDiagram.diagram.shapes.size == 0;
+assert classDiagram.flexoConceptInstances.size == 0;
+
+// --- Why the drop scheme is NOT exercised here, pinned as measured -----------------------------
+// `classDiagram.new ClassGR::dropClassGRAtTopLevel()` does return a ClassGR, but a DropScheme reads
+// `topLevel`, a variable only a real drop supplies. Called from a script it half-executes: the
+// first AddShape lands one orphan shape in the diagram, the five `container=main` ones do nothing,
+// and every shape role - main, icon, header, properties, operations, headerOutline - stays null.
+// Asserting on that would pin the behaviour of a mis-used API, not the modeler. The drop scheme
+// needs a UI-level test (or a drop-context fixture) to be exercised faithfully.
+
+log "Test PASSED: T2 - UMLClassDiagram is instantiable and creates its diagram, though nothing calls it";

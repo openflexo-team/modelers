@@ -1,0 +1,55 @@
+// T1 - the modeler RUNS: the editor instantiates its root model, and both concepts of that model
+// can be created and wired together in it.
+//
+// The instances are created in a temporary resource center, so that anything the modeler writes
+// lands there rather than in src/main/resources.
+
+editorVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml"];
+assert editorVM != null;
+modelVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLModel.fml"];
+assert modelVM != null;
+
+service ResourceCenterService add_temp_rc;
+editor = new UMLEditor::init() with (name="UMLEditorInstance");
+assert editor != null;
+
+// init() creates the root model, and that is ALL this editor does.
+model = editor.rootModel;
+assert model != null;
+assert model.name == "RootModel";
+assert editor.virtualModelInstances.size == 1;
+
+// A fresh model holds nothing.
+assert model.flexoConceptInstances.size == 0;
+
+// --- Creating concept instances ---------------------------------------------------------------
+// Both creation schemes are anonymous and take the name, which their `create` assigns.
+// NB: `<vmi>.new <Concept>(...)` is a STATEMENT: the same call embedded in an expression does not
+// resolve, so bind it to a variable first.
+person = model.new UMLClass("Person");
+assert person != null;
+assert person.name == "Person";
+
+age = model.new Property("age");
+assert age.name == "age";
+surname = model.new Property("surname");
+assert surname.name == "surname";
+
+assert model.flexoConceptInstances.size == 3;
+
+// --- The one relation this model declares -----------------------------------------------------
+// UMLClass.properties has cardinality [0,*]: it is filled with add(), never by assigning a
+// collection to the role.
+assert person.properties.size == 0;
+person.properties.add(age);
+person.properties.add(surname);
+assert person.properties.size == 2;
+assert person.properties.get(0) == age;
+assert person.properties.get(1) == surname;
+
+// A second class keeps its own properties.
+company = model.new UMLClass("Company");
+assert company.properties.size == 0;
+assert model.flexoConceptInstances.size == 4;
+
+log "Test PASSED: T1 - UMLEditor creates RootModel; UMLClass and Property instances live in it";

@@ -1,0 +1,53 @@
+/**
+ * UMLModel - a deliberately minimal UML class model: classes and their properties, expressed in
+ * pure FML (no UML technology adapter is involved, and none exists in 2.99).
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. The creation and deletion
+ * schemes are anonymous, and <Inspector> elements were dropped (FlexoConceptInspector is
+ * deprecated).
+ *
+ * The concept was named "Class" until the extraction into this project. A bare "Class" is bound by
+ * Connie to java.lang.Class, so "<aModel>.new Class(...)" written outside this compilation unit -
+ * in an FML-script, typically - never reached the concept: it failed with "cannot find constructor
+ * null for type class java.lang.Class". Renaming it UMLClass makes it addressable everywhere. The
+ * user-facing default name of a dropped class is unchanged, it is still "Class".
+ */
+
+import java.lang.String;
+
+@URI("http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLModel.fml")
+@Version("0.1")
+@Author("sylvain")
+public model UMLModel {
+
+	create() {
+	}
+
+	public concept UMLClass {
+
+		String name;
+		Property[0,*] properties with ConceptInstance(virtualModelInstance=container);
+
+		create(String aName) {
+			name = parameters.aName;
+		}
+
+		delete() {
+			name = null;
+		}
+	}
+
+	public concept Property {
+
+		String name;
+
+		create(String aName) {
+			name = parameters.aName;
+		}
+
+		delete() {
+			name = null;
+		}
+	}
+
+}

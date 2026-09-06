@@ -1,0 +1,39 @@
+// T1 - the modeler RUNS: createStateChartDiagram() builds a whole state chart, i.e. an empty
+// StateChartModel plus the StateChartDiagram editing it.
+//
+// This is the one behaviour the container view point declares, and the only entry point of the
+// modeler. The instances are created in a temporary resource center, so that the diagram it
+// generates lands there rather than in src/main/resources.
+
+vp = load -r ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml"];
+assert vp != null;
+
+service ResourceCenterService add_temp_rc;
+sc = new StateCharts() with (name="StateChartsInstance");
+assert sc != null;
+
+editor = sc.createStateChartDiagram("Traffic");
+assert editor != null;
+
+// Both halves were created, and they live inside the container view point instance.
+assert sc.virtualModelInstances.size == 2;
+
+// The model, named after the state chart.
+model = editor.stateChartModel;
+assert model != null;
+assert model.name == "TrafficModel";
+assert model.flexoConceptInstances.size == 0;
+
+// The diagram, created in the temporary resource center by DIAGRAM::CreateDiagram.
+assert editor.diagram != null;
+assert editor.diagram.name == "TrafficDiagram.diagram";
+assert editor.diagram.shapes.size == 0;
+assert editor.diagram.connectors.size == 0;
+
+// A second state chart is independent of the first.
+other = sc.createStateChartDiagram("Lift");
+assert other.stateChartModel.name == "LiftModel";
+assert other.stateChartModel != model;
+assert sc.virtualModelInstances.size == 4;
+
+log "Test PASSED: T1 - createStateChartDiagram() builds a StateChartModel and its diagram";

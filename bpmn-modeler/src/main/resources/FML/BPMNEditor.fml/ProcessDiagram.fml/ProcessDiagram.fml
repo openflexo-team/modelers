@@ -1,0 +1,284 @@
+/**
+ * ProcessDiagram - the diagram view of one BPMN Process. Each graphical concept mirrors one
+ * BPMNModel concept and is laid out from the BPMN DI (BPMNShape / BPMNEdge bounds) of the source
+ * .bpmn file.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. What was repaired, and why:
+ *
+ *   - THE TWO MISSING MODEL SLOTS. Every FlexoConceptInstance role below declared
+ *     virtualModelInstance="model" and every EMFObjectRole container="bpmnModel", yet the legacy
+ *     VirtualModel declared neither slot - only the diagram one. Both are declared here; "model"
+ *     had to be renamed (it is a reserved word of the 2.99 grammar).
+ *
+ *   - THE x/y/width/height BINDINGS. They are GRSpec entries in the legacy, and until now only
+ *     the label and transparency specs had a textual form. ShapeRole gained x/y/width/height
+ *     FML attributes so that the DI layout survives the migration; without them 18 of the 23
+ *     GRSpec of this file would have been lost and the diagram would render at default positions.
+ *
+ *   - SequenceFlowGR.bpmnEdge declared ontologicType ".../DI-XMI/BPMNShape" while holding a
+ *     BPMNEdge; corrected.
+ *
+ *   - The fourth palette element binding ("Condition ?") referenced no drop scheme at all - the
+ *     gateway concepts declare none. It is dropped rather than bound to an invented scheme.
+ *
+ *   - createNewProcess(name) is INVENTED, see its own comment.
+ *
+ *   - templateDiagram / initializeWithContents are preserved: TypedDiagramModelSlot gained the two
+ *     matching FML attributes, so a newly created diagram is still pre-populated from the example
+ *     diagram as the legacy templateDiagramReference (…/ExampleDiagram.diagram#SYL_1) asked.
+ */
+
+namespace "http://openflexo.org/bpmn-modeler/DiagramSpecs/ProcessDiagram.diagramspecification" as PROCESS_DIAGRAM_SPECIFICATION;
+
+use org.openflexo.foundation.fml.rt.FMLRTModelSlot as FMLRT;
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot as DIAGRAM;
+use org.openflexo.technologyadapter.emf.EMFModelSlot as EMF;
+
+import org.openflexo.technologyadapter.diagram.model.Diagram;
+import org.openflexo.technologyadapter.diagram.model.DiagramShape;
+import org.openflexo.technologyadapter.diagram.model.DiagramConnector;
+import org.openflexo.technologyadapter.diagram.metamodel.DiagramSpecification;
+import org.openflexo.technologyadapter.emf.model.EMFModel;
+import org.openflexo.technologyadapter.emf.model.EMFObjectIndividual;
+import org.openflexo.technologyadapter.emf.metamodel.EMFMetaModel;
+import org.openflexo.technologyadapter.emf.metamodel.EMFClassClass;
+import java.lang.String;
+
+import ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/BPMNModel.fml"];
+
+import EMFMetaModel BPMN from ["http://www.omg.org/spec/BPMN/20100524/MODEL-XMI"];
+import EMFClassClass FLOW_NODE from [BPMN:"FlowNode"];
+import EMFClassClass TASK from [BPMN:"Task"];
+import EMFClassClass START_EVENT from [BPMN:"StartEvent"];
+import EMFClassClass END_EVENT from [BPMN:"EndEvent"];
+import EMFClassClass PARALLEL_GATEWAY from [BPMN:"ParallelGateway"];
+import EMFClassClass EXCLUSIVE_GATEWAY from [BPMN:"ExclusiveGateway"];
+import EMFClassClass SEQUENCE_FLOW from [BPMN:"SequenceFlow"];
+import EMFClassClass BPMN_DIAGRAM from [BPMN:"BPMNDiagram"];
+import EMFClassClass BPMN_PLANE from [BPMN:"BPMNPlane"];
+import EMFClassClass BPMN_SHAPE from [BPMN:"BPMNShape"];
+import EMFClassClass BPMN_EDGE from [BPMN:"BPMNEdge"];
+
+import DiagramSpecification PROCESS_DIAGRAM_SPEC from [PROCESS_DIAGRAM_SPECIFICATION];
+import Diagram EXAMPLE_DIAGRAM from [PROCESS_DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"];
+import DiagramShape ACTIVITY_SHAPE from [EXAMPLE_DIAGRAM:"SYL-2"];
+import DiagramShape BEGIN_SHAPE from [EXAMPLE_DIAGRAM:"SYL-3"];
+import DiagramShape END_SHAPE from [EXAMPLE_DIAGRAM:"SYL-4"];
+import DiagramShape PARALLEL_SHAPE from [EXAMPLE_DIAGRAM:"SYL-5"];
+import DiagramShape EXCLUSIVE_SHAPE from [EXAMPLE_DIAGRAM:"SYL-7"];
+import DiagramConnector SEQUENCE_CONNECTOR from [EXAMPLE_DIAGRAM:"SYL-6"];
+
+@URI("http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/ProcessDiagram.fml")
+@Version("0.1")
+public model ProcessDiagram {
+
+	// The BPMN model this diagram represents. Declared here: every role below already addressed it
+	// as "model", a name the 2.99 grammar reserves.
+	BPMNModel bpmnModelInstance with ModelInstance();
+
+	// The EMF model behind it, likewise addressed but never declared
+	EMFModel bpmnModel with EMFModelSlot(metaModel=BPMN);
+
+	Diagram diagram with TypedDiagram(
+		diagramSpecification=PROCESS_DIAGRAM_SPEC,
+		templateDiagram=EXAMPLE_DIAGRAM,
+		initializeWithContents=true,
+		isRequired=true,
+		paletteElementBindings={
+			PaletteElementBinding:(
+				call=new TaskGR::dropActivityGRAtTopLevel(),
+				paletteElementId="http://openflexo.org/bpmn-modeler/DiagramSpecs/ProcessDiagram.diagramspecification/Palette.palette#Activity"),
+			PaletteElementBinding:(
+				call=new StartEventGR::dropBeginActivityGRAtTopLevel(),
+				paletteElementId="http://openflexo.org/bpmn-modeler/DiagramSpecs/ProcessDiagram.diagramspecification/Palette.palette#Begin"),
+			PaletteElementBinding:(
+				call=new EndEventGR::dropEndActivityGRAtTopLevel(),
+				paletteElementId="http://openflexo.org/bpmn-modeler/DiagramSpecs/ProcessDiagram.diagramspecification/Palette.palette#End")
+		});
+
+	// The process being represented
+	Process process with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+
+	EMFObjectIndividual diagramEObject with EMFObjectRole(container=bpmnModel,type=BPMN_DIAGRAM);
+	EMFObjectIndividual planeEObject with EMFObjectRole(container=bpmnModel,type=BPMN_PLANE);
+	EMFObjectIndividual tempBPMNShape with EMFObjectRole(container=bpmnModel,type=BPMN_SHAPE);
+	EMFObjectIndividual tempBPMNEdge with EMFObjectRole(container=bpmnModel,type=BPMN_EDGE);
+
+	/**
+	 * Build the diagram representing supplied BPMN process, laying it out from the BPMN DI plane
+	 */
+	create::representsDiagram(EMFObjectIndividual bpmnDiagram, Process aProcess) {
+		bpmnModelInstance = container.bpmnModelInstance;
+		bpmnModel = container.bpmnModel;
+		diagram = DIAGRAM::CreateDiagram(resourceName=parameters.aProcess.processName,resourceCenter=this.resourceCenter,relativePath="/Diagrams");
+		diagramEObject = (EMFObjectIndividualType(eClass=BPMN_DIAGRAM))parameters.bpmnDiagram;
+		planeEObject = diagramEObject.plane;
+		process = parameters.aProcess;
+		for (EMFObjectIndividual planeElement : planeEObject.planeElement) {
+			if (planeElement.mainType.name == "BPMNShape") {
+				tempBPMNShape = (EMFObjectIndividualType(eClass=BPMN_SHAPE))planeElement;
+				log "shape element = " + this.tempBPMNShape.bpmnElement;
+				if (this.tempBPMNShape.bpmnElement.mainType.name == "StartEvent") {
+					new StartEventGR::representStartEvent(this.tempBPMNShape.bpmnElement,this.tempBPMNShape);
+				}
+				if (this.tempBPMNShape.bpmnElement.mainType.name == "EndEvent") {
+					new EndEventGR::representEndEvent(this.tempBPMNShape.bpmnElement,this.tempBPMNShape);
+				}
+				if (this.tempBPMNShape.bpmnElement.mainType.name == "Task") {
+					new TaskGR::representTask(this.tempBPMNShape.bpmnElement,this.tempBPMNShape);
+				}
+				if (this.tempBPMNShape.bpmnElement.mainType.name == "ParallelGateway") {
+					new ParallelGatewayGR::representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape);
+				}
+				if (this.tempBPMNShape.bpmnElement.mainType.name == "ExclusiveGateway") {
+					new ExclusiveGatewayGR::representGateway(this.tempBPMNShape.bpmnElement,this.tempBPMNShape);
+				}
+			}
+		}
+		for (EMFObjectIndividual planeElement : planeEObject.planeElement) {
+			if (planeElement.mainType.name == "BPMNEdge") {
+				tempBPMNEdge = (EMFObjectIndividualType(eClass=BPMN_EDGE))planeElement;
+				log "edge element = " + this.tempBPMNEdge.bpmnElement;
+				if (this.tempBPMNEdge.bpmnElement.mainType.name == "SequenceFlow") {
+					new SequenceFlowGR::representSequenceFlow(this.tempBPMNEdge.bpmnElement,this.tempBPMNEdge);
+				}
+			}
+		}
+	}
+
+	/**
+	 * INVENTED, not recovered. BPMNEditor.newProcessDiagram() - the action ea-module drives -
+	 * instantiates ProcessDiagram through a creation scheme named createNewProcess(name), and the
+	 * legacy ProcessDiagram declared no such scheme (nor the createNewSubProcess(name,parent) that
+	 * BPMNEditor.createNewProcess() calls): both calls have been dangling since day one. The body
+	 * below is the minimum that makes the caller's contract meaningful - the diagram creation that
+	 * representsDiagram() also starts with. Nothing in the legacy says what else it should do.
+	 */
+	create::createNewProcess(String name) {
+		bpmnModelInstance = container.bpmnModelInstance;
+		bpmnModel = container.bpmnModel;
+		diagram = DIAGRAM::CreateDiagram(resourceName=parameters.name,resourceCenter=this.resourceCenter,relativePath="/Diagrams");
+	}
+
+	delete() {
+		delete diagram;
+	}
+
+	public FlowNodeGR getFlowNodeGR(FlowNode flowNode) {
+		return select unique FlowNodeGR from this where (selected.modelElement == parameters.flowNode);
+	}
+
+	/**
+	 * Common shape of every graphical representation of a BPMN flow node
+	 */
+	public abstract concept FlowNodeGR {
+		abstract DiagramShape shape;
+		abstract FlowNode modelElement;
+		abstract EMFObjectIndividualType(eClass=FLOW_NODE) eObject;
+
+		EMFObjectIndividual bpmnShape with EMFObjectRole(container=bpmnModel,type=BPMN_SHAPE);
+	}
+
+	public concept TaskGR extends FlowNodeGR {
+		DiagramShape shape with ShapeRole(metamodelElement=ACTIVITY_SHAPE,exampleLabel="Activity",label=modelElement.name,x=bpmnShape.bounds.x,y=bpmnShape.bounds.y,width=bpmnShape.bounds.width,height=bpmnShape.bounds.height);
+		Task modelElement with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=TASK);
+
+		TaskGR dropActivityGRAtTopLevel() with DropScheme(targetType=ProcessDiagram) {
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
+		}
+
+		create::representTask(EMFObjectIndividual task, EMFObjectIndividual aBpmnShape) {
+			eObject = (EMFObjectIndividualType(eClass=TASK))parameters.task;
+			bpmnShape = (EMFObjectIndividualType(eClass=BPMN_SHAPE))parameters.aBpmnShape;
+			modelElement = (Task)process.getFlowNode(eObject);
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+		}
+	}
+
+	public concept StartEventGR extends FlowNodeGR {
+		DiagramShape shape with ShapeRole(metamodelElement=BEGIN_SHAPE,exampleLabel="",label=modelElement.name,x=bpmnShape.bounds.x,y=bpmnShape.bounds.y,width=bpmnShape.bounds.width,height=bpmnShape.bounds.height);
+		StartEvent modelElement with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=START_EVENT);
+
+		StartEventGR dropBeginActivityGRAtTopLevel() with DropScheme(targetType=ProcessDiagram) {
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
+		}
+
+		create::representStartEvent(EMFObjectIndividual startEvent, EMFObjectIndividual aBpmnShape) {
+			eObject = (EMFObjectIndividualType(eClass=START_EVENT))parameters.startEvent;
+			bpmnShape = (EMFObjectIndividualType(eClass=BPMN_SHAPE))parameters.aBpmnShape;
+			modelElement = (StartEvent)process.getFlowNode(eObject);
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+		}
+	}
+
+	public concept EndEventGR extends FlowNodeGR {
+		DiagramShape shape with ShapeRole(metamodelElement=END_SHAPE,exampleLabel="",label=modelElement.name,x=bpmnShape.bounds.x,y=bpmnShape.bounds.y,width=bpmnShape.bounds.width,height=bpmnShape.bounds.height);
+		EndEvent modelElement with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=END_EVENT);
+
+		EndEventGR dropEndActivityGRAtTopLevel() with DropScheme(targetType=ProcessDiagram) {
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
+		}
+
+		create::representEndEvent(EMFObjectIndividual endEvent, EMFObjectIndividual aBpmnShape) {
+			eObject = (EMFObjectIndividualType(eClass=END_EVENT))parameters.endEvent;
+			bpmnShape = (EMFObjectIndividualType(eClass=BPMN_SHAPE))parameters.aBpmnShape;
+			modelElement = (EndEvent)process.getFlowNode(eObject);
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+		}
+	}
+
+	public abstract concept GatewayGR extends FlowNodeGR {
+	}
+
+	public concept ParallelGatewayGR extends GatewayGR {
+		DiagramShape shape with ShapeRole(metamodelElement=PARALLEL_SHAPE,exampleLabel="",x=bpmnShape.bounds.x,y=bpmnShape.bounds.y,width=bpmnShape.bounds.width,height=bpmnShape.bounds.height);
+		ParallelGateway modelElement with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=PARALLEL_GATEWAY);
+
+		create::representGateway(EMFObjectIndividual gateway, EMFObjectIndividual aBpmnShape) {
+			eObject = (EMFObjectIndividualType(eClass=PARALLEL_GATEWAY))parameters.gateway;
+			bpmnShape = (EMFObjectIndividualType(eClass=BPMN_SHAPE))parameters.aBpmnShape;
+			modelElement = (ParallelGateway)process.getFlowNode(eObject);
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+		}
+	}
+
+	public concept ExclusiveGatewayGR extends GatewayGR {
+		DiagramShape shape with ShapeRole(metamodelElement=EXCLUSIVE_SHAPE,exampleLabel="",x=bpmnShape.bounds.x,y=bpmnShape.bounds.y,width=bpmnShape.bounds.width,height=bpmnShape.bounds.height);
+		ExclusiveGateway modelElement with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=EXCLUSIVE_GATEWAY);
+
+		create::representGateway(EMFObjectIndividual gateway, EMFObjectIndividual aBpmnShape) {
+			eObject = (EMFObjectIndividualType(eClass=EXCLUSIVE_GATEWAY))parameters.gateway;
+			bpmnShape = (EMFObjectIndividualType(eClass=BPMN_SHAPE))parameters.aBpmnShape;
+			modelElement = (ExclusiveGateway)process.getFlowNode(eObject);
+			shape = DIAGRAM::AddShape(container=diagram) in diagram;
+		}
+	}
+
+	public concept SequenceFlowGR {
+		DiagramConnector connector with ConnectorRole(metamodelElement=SEQUENCE_CONNECTOR,exampleLabel="");
+		SequenceFlow modelElement with ConceptInstance(virtualModelInstance=bpmnModelInstance);
+		FlowNodeGR fromNodeGR with ConceptInstance(virtualModelInstance=container);
+		FlowNodeGR toNodeGR with ConceptInstance(virtualModelInstance=container);
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=SEQUENCE_FLOW);
+		EMFObjectIndividual bpmnEdge with EMFObjectRole(container=bpmnModel,type=BPMN_EDGE);
+
+		SequenceFlowGR linkNodes() with LinkScheme(fromType=FlowNodeGR,toType=FlowNodeGR) {
+			connector = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
+		}
+
+		create::representSequenceFlow(EMFObjectIndividual sequenceFlow, EMFObjectIndividual aBpmnEdge) {
+			eObject = (EMFObjectIndividualType(eClass=SEQUENCE_FLOW))parameters.sequenceFlow;
+			bpmnEdge = (EMFObjectIndividualType(eClass=BPMN_EDGE))parameters.aBpmnEdge;
+			modelElement = process.getSequenceFlow(eObject);
+			fromNodeGR = container.getFlowNodeGR(modelElement.source);
+			toNodeGR = container.getFlowNodeGR(modelElement.target);
+			connector = DIAGRAM::AddConnector(fromShape=fromNodeGR.shape,toShape=toNodeGR.shape) in diagram;
+		}
+	}
+
+}

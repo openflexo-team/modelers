@@ -1,0 +1,32 @@
+// StateCharts modeler - states and the transitions between them, expressed in pure FML, with a
+// diagram view where states are shapes and transitions connectors.
+//
+// Self-contained project, on the model of bpmn-modeler and uml-modeler: it carries its API
+// (src/main/java), its resource center (src/main/resources, declared by META-INF/resourceCenters
+// with base URI http://openflexo.org/statecharts-modeler) AND the tests that exercise it
+// (src/test/java).
+//
+// It was extracted out of modelers-rc, where it shared the http://openflexo.org/modellers resource
+// center with the other modelers. Its own base URI is NOT optional: DefaultResourceCenterService
+// skips any resource center whose defaultBaseURI is already registered.
+//
+// StateChartModel is plain FML - no model slot at all - and only StateChartDiagram mounts
+// something, a TypedDiagramModelSlot, hence the single connector below.
+//
+// Two test surfaces: TestStateChartsModeler loads and validates the three VirtualModels through
+// the Java API, while the FML-scripts of src/main/resources/AutomatedTests actually RUN the
+// modeler. This is why fml-cli is a test dependency.
+
+dependencies {
+  // openflexo dep
+  implementation flexoFoundation()
+
+  // Technology adapter mounted by StateChartDiagram
+  implementation diagramConnector()
+
+  // testing dep
+  testImplementation testUtils()
+  testImplementation flexoFoundationTest()
+  testImplementation fmlCli()
+  testImplementation fmlCliTest()
+}

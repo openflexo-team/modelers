@@ -1,0 +1,377 @@
+/**
+ * BPMNModel - the abstract syntax of a BPMN process, federated over an EMF model conform to the
+ * BPMN 2.0 metamodel. Each concept reifies one BPMN element and holds the EMF object behind it.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. What was repaired, and why:
+ *
+ *   - THE MISSING EMF MODEL SLOT. Every EMFObjectRole below declares container="bpmnModel", and
+ *     the creation scheme selects Definitions from "bpmnModel" - but the legacy VirtualModel
+ *     declared no such model slot at all (only the FIB one). It is declared here: the roles
+ *     already name it, so this states what the model always meant.
+ *
+ *   - THE CONCEPTS ARE FLATTENED. The legacy nested FlowElement, FlowNode, Task, StartEvent,
+ *     EndEvent, Gateway and SequenceFlow inside Process as EmbeddedFlexoConcepts, yet stored
+ *     their URIs flat (…/BPMNModel.fml#FlowNode, not #Process#FlowNode) and let inheritance cross
+ *     the boundary in both directions - Event is declared outside Process but extends the nested
+ *     FlowNode, while the nested StartEvent extends the outside CatchEvent. That is not a real
+ *     containment. Flattening keeps every URI exactly as the legacy stored it (so ea-module's
+ *     reference to …#Process still resolves) and makes "container" uniformly mean the
+ *     VirtualModelInstance - which is why the three roles the legacy addressed as
+ *     "container.container" (FlowNode.incoming/outgoing, SequenceFlow.source/target) are now
+ *     simply "container".
+ *
+ *   - <Inspector> / <InspectorEntry> were dropped (FlexoConceptInspector is deprecated), and the
+ *     AddToList actions became list.add(…) expressions (AddToListAction is deprecated in favour
+ *     of an expression).
+ *
+ * One legacy defect is KEPT rather than guessed at: Process declared a NavigationScheme
+ * "navigateToProcessEditor". NavigationScheme carries no @FML annotation, so it has no textual
+ * form at all - see the diagram technology-adapter notes.
+ */
+
+use org.openflexo.technologyadapter.emf.EMFModelSlot as EMF;
+use org.openflexo.technologyadapter.gina.FIBComponentModelSlot as GINA;
+
+import org.openflexo.technologyadapter.emf.model.EMFModel;
+import org.openflexo.technologyadapter.emf.model.EMFObjectIndividual;
+import org.openflexo.technologyadapter.emf.metamodel.EMFMetaModel;
+import org.openflexo.technologyadapter.emf.metamodel.EMFClassClass;
+import org.openflexo.technologyadapter.gina.model.GINAFIBComponent;
+import java.lang.String;
+import java.util.List;
+
+import EMFMetaModel BPMN from ["http://www.omg.org/spec/BPMN/20100524/MODEL-XMI"];
+import EMFClassClass BASE_ELEMENT from [BPMN:"BaseElement"];
+import EMFClassClass FLOW_ELEMENT from [BPMN:"FlowElement"];
+import EMFClassClass FLOW_NODE from [BPMN:"FlowNode"];
+import EMFClassClass BPMN_PROCESS from [BPMN:"Process"];
+import EMFClassClass TASK from [BPMN:"Task"];
+import EMFClassClass EVENT from [BPMN:"Event"];
+import EMFClassClass THROW_EVENT from [BPMN:"ThrowEvent"];
+import EMFClassClass CATCH_EVENT from [BPMN:"CatchEvent"];
+import EMFClassClass START_EVENT from [BPMN:"StartEvent"];
+import EMFClassClass END_EVENT from [BPMN:"EndEvent"];
+import EMFClassClass GATEWAY from [BPMN:"Gateway"];
+import EMFClassClass PARALLEL_GATEWAY from [BPMN:"ParallelGateway"];
+import EMFClassClass EXCLUSIVE_GATEWAY from [BPMN:"ExclusiveGateway"];
+import EMFClassClass SEQUENCE_FLOW from [BPMN:"SequenceFlow"];
+import EMFClassClass DEFINITIONS from [BPMN:"Definitions"];
+import EMFClassClass BPMN_DIAGRAM from [BPMN:"BPMNDiagram"];
+import EMFClassClass DOCUMENTATION from [BPMN:"Documentation"];
+
+import ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/ProcessDiagram.fml"];
+
+@URI("http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/BPMNModel.fml")
+@Version("0.1")
+@Author("sylvain")
+public model BPMNModel {
+
+	// The EMF model holding the BPMN definitions being reified. Declared here because every role
+	// below already addresses it; the legacy serialization had lost the declaration itself.
+	EMFModel bpmnModel with EMFModelSlot(metaModel=BPMN, isRequired=true);
+
+	// The processes this model reifies. Declared for BPMNEditorUI.fib, whose browser lists them
+	// under the model, and notified by BPMNEditor.newProcessDiagram().
+	List<Process> rootProcesses {
+		List<Process> get() {
+			return select Process from this;
+		}
+	};
+
+	// The user interface of this model
+	GINAFIBComponent ui with FIBComponent(
+		templateComponentURI="http://openflexo.org/bpmn-modeler/Fib/BPMNModelUI.fib",
+		isRequired=true,
+		assignments={VariableAssignment:(variable="data",value=this)});
+
+	/**
+	 * The legacy creation scheme took no parameter, which left the (undeclared) bpmnModel slot
+	 * unassigned and the whole body reading from null. It now receives the BPMN resource, exactly
+	 * as BPMNEditor's own creation scheme does.
+	 */
+	create(Resource<EMFModel> aBPMNResource) {
+		bpmnModel = parameters.aBPMNResource.resourceData;
+		ui = GINA::ConfigureGINAFIBComponent() in ui;
+		EMFObjectIndividualType(eClass=DEFINITIONS) definitions = select unique EMFObjectIndividualType(eClass=DEFINITIONS) from bpmnModel;
+		log "root elements = " + definitions.rootElements;
+		for (EMFObjectIndividual rootElement : definitions.rootElements) {
+			log "Found root element " + rootElement;
+			if (rootElement.mainType.name == "Process") {
+				new Process(rootElement);
+			}
+		}
+		for (EMFObjectIndividualType(eClass=BPMN_DIAGRAM) diagram : definitions.diagrams) {
+			log "Found diagram " + diagram;
+			log "type=" + diagram.mainType.name;
+			if (diagram.mainType.name == "BPMNDiagram") {
+				log "Create diagram " + diagram;
+				log "bpmnElement=" + diagram.plane.bpmnElement;
+				Process process = this.getProcess(diagram.plane.bpmnElement);
+				log "Process=" + process;
+				container.new ProcessDiagram::representsDiagram(diagram,process) with (name=process.processName + "Diagram");
+			}
+		}
+	}
+
+	public FlowNode getFlowNode(EMFObjectIndividual flowNodeObject) {
+		return select unique FlowNode from this where (selected.eObject == parameters.flowNodeObject);
+	}
+
+	public SequenceFlow getSequenceFlow(EMFObjectIndividual sequenceFlowObject) {
+		return select unique SequenceFlow from this where (selected.eObject == parameters.sequenceFlowObject);
+	}
+
+	public Process getProcess(EMFObjectIndividual processObject) {
+		return select unique Process from this where (selected.eObject == parameters.processObject);
+	}
+
+	/**
+	 * Root of the BPMN element hierarchy
+	 */
+	public abstract concept BaseElement {
+		abstract EMFObjectIndividualType(eClass=BASE_ELEMENT) eObject;
+
+		/**
+		 * BPMN 2.0 attaches documentation to every BaseElement, as a list of Documentation elements
+		 * each holding a text. This exposes the first of them; BPMNEditorUI.fib's description field
+		 * is bound to it.
+		 *
+		 * Note the typed local: an expression navigating an EMF list yields no EMF path until it is
+		 * bound to a variable of the precise technological type.
+		 *
+		 * The setter rewrites an EXISTING <bpmn:documentation> and cannot create one, which is a
+		 * defect of the EMF technology adapter rather than a choice: the "container=" branch of
+		 * EMF::AddEMFObject has never worked. It calls add() on the value the binding yields, and
+		 * that value is an unmodifiable COPY of the EMF list - getValues() wraps it in
+		 * Collections.unmodifiableList - so it throws UnsupportedOperationException. Measured with
+		 * the target list both empty and non-empty; the defect is now documented on
+		 * AddEMFObjectIndividual. Rather than fail at runtime, the setter says so. T1_Federation
+		 * pins both branches; make the else branch create the element once emf-ta is fixed.
+		 */
+		String documentation {
+			String get() {
+				if (eObject.documentation.size == 0) {
+					return null;
+				}
+				EMFObjectIndividualType(eClass=DOCUMENTATION) doc = eObject.documentation.get(0);
+				return doc.text;
+			}
+			set(String value) {
+				if (eObject.documentation.size > 0) {
+					EMFObjectIndividualType(eClass=DOCUMENTATION) doc = eObject.documentation.get(0);
+					// The assigned value is exposed under GetSetProperty's valueVariableName, which
+					// defaults to "value": neither "parameters.<name>" nor the declared name resolves.
+					doc.text = value;
+				}
+				else {
+					log "No <bpmn:documentation> to write into on " + eObject + ", and the EMF technology adapter cannot create one (AddEMFObject container branch is broken)";
+				}
+			}
+		};
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public abstract concept FlowElement extends BaseElement {
+		abstract EMFObjectIndividualType(eClass=FLOW_ELEMENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public abstract concept FlowNode extends FlowElement {
+		abstract EMFObjectIndividualType(eClass=FLOW_NODE) eObject;
+
+		SequenceFlow[0,*] incoming with ConceptInstance(virtualModelInstance=container);
+		SequenceFlow[0,*] outgoing with ConceptInstance(virtualModelInstance=container);
+
+		String name values eObject.name;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public concept Task extends FlowNode {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=TASK);
+
+		create(EMFObjectIndividual task) {
+			eObject = (EMFObjectIndividualType(eClass=TASK))parameters.task;
+		}
+	}
+
+	public abstract concept Event extends FlowNode {
+		abstract EMFObjectIndividualType(eClass=EVENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public abstract concept ThrowEvent extends Event {
+		abstract EMFObjectIndividualType(eClass=THROW_EVENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public abstract concept CatchEvent extends Event {
+		abstract EMFObjectIndividualType(eClass=CATCH_EVENT) eObject;
+
+		create() {
+		}
+
+		delete() {
+		}
+	}
+
+	public concept StartEvent extends CatchEvent {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=START_EVENT);
+
+		String name values "Begin";
+
+		create(EMFObjectIndividual startEvent) {
+			eObject = (EMFObjectIndividualType(eClass=START_EVENT))parameters.startEvent;
+		}
+	}
+
+	public concept EndEvent extends ThrowEvent {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=END_EVENT);
+
+		String name values "End";
+
+		create(EMFObjectIndividual endEvent) {
+			eObject = (EMFObjectIndividualType(eClass=END_EVENT))parameters.endEvent;
+		}
+	}
+
+	public abstract concept Gateway extends FlowNode {
+		abstract EMFObjectIndividualType(eClass=GATEWAY) eObject;
+	}
+
+	public concept ParallelGateway extends Gateway {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=PARALLEL_GATEWAY);
+
+		String name values "ParallelGateway";
+
+		create(EMFObjectIndividual gateway) {
+			eObject = (EMFObjectIndividualType(eClass=PARALLEL_GATEWAY))parameters.gateway;
+		}
+	}
+
+	public concept ExclusiveGateway extends Gateway {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=EXCLUSIVE_GATEWAY);
+
+		String name values "ExclusiveGateway";
+
+		create(EMFObjectIndividual gateway) {
+			eObject = (EMFObjectIndividualType(eClass=EXCLUSIVE_GATEWAY))parameters.gateway;
+		}
+	}
+
+	public concept SequenceFlow extends FlowElement {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=SEQUENCE_FLOW);
+
+		FlowNode[1,1] source with ConceptInstance(virtualModelInstance=container);
+		FlowNode[1,1] target with ConceptInstance(virtualModelInstance=container);
+
+		String name values eObject.name;
+
+		create(EMFObjectIndividual sequenceFlow) {
+			eObject = (EMFObjectIndividualType(eClass=SEQUENCE_FLOW))parameters.sequenceFlow;
+			source = container.getFlowNode(eObject.sourceRef);
+			target = container.getFlowNode(eObject.targetRef);
+			log "Create SequenceFlow for " + parameters.sequenceFlow;
+			log "sourceRef=" + eObject.sourceRef;
+			log "targetRef=" + eObject.targetRef;
+			log "source=" + source;
+			log "target=" + target;
+			source.outgoing.add(this);
+			target.incoming.add(this);
+		}
+
+		delete() {
+		}
+	}
+
+	/**
+	 * A BPMN process: reifies its flow elements as concept instances when created
+	 */
+	public concept Process extends BaseElement {
+		EMFObjectIndividual eObject with EMFObjectRole(container=bpmnModel,type=BPMN_PROCESS);
+
+		String processName values ((eObject.name != null) ? eObject.name : bpmnModel.resource.name.substring(0,bpmnModel.resource.name.indexOf(".")));
+
+		create(EMFObjectIndividual aProcess) {
+			eObject = (EMFObjectIndividualType(eClass=BPMN_PROCESS))parameters.aProcess;
+			for (EMFObjectIndividual flowElement : eObject.flowElements) {
+				if (flowElement.mainType.name == "StartEvent") {
+					container.new StartEvent(flowElement);
+				}
+				if (flowElement.mainType.name == "EndEvent") {
+					container.new EndEvent(flowElement);
+				}
+				if (flowElement.mainType.name == "Task") {
+					container.new Task(flowElement);
+				}
+				if (flowElement.mainType.name == "ParallelGateway") {
+					container.new ParallelGateway(flowElement);
+				}
+				if (flowElement.mainType.name == "ExclusiveGateway") {
+					container.new ExclusiveGateway(flowElement);
+				}
+			}
+			for (EMFObjectIndividual flowElement : eObject.flowElements) {
+				if (flowElement.mainType.name == "SequenceFlow") {
+					container.new SequenceFlow(flowElement);
+				}
+			}
+		}
+
+		public delete() {
+		}
+
+		/**
+		 * BPMNEditorUI.fib cannot bind to delete() directly: "delete" is a KEYWORD, and the FML
+		 * grammar deliberately leaves it out of authorized_kw_in_composite_ident (fml.sablecc), so
+		 * "x.delete()" never parses. Nothing to do with deletion schemes or with visibility - any
+		 * member called "delete" would be unreachable. Hence this differently-named entry point.
+		 */
+		public void deleteProcess() {
+			delete this;
+		}
+
+		public void debug() {
+			log "process=" + eObject;
+			log "name=" + processName;
+			for (EMFObjectIndividual flowElement : eObject.flowElements) {
+				log "element : " + flowElement;
+			}
+		}
+
+		// Kept on Process because ProcessDiagram calls them as process.getFlowNode(...); both simply
+		// delegate to the model, whose instances they select over.
+		public FlowNode getFlowNode(EMFObjectIndividual flowNodeObject) {
+			return container.getFlowNode(parameters.flowNodeObject);
+		}
+
+		public SequenceFlow getSequenceFlow(EMFObjectIndividual sequenceFlowObject) {
+			return container.getSequenceFlow(parameters.sequenceFlowObject);
+		}
+	}
+
+}

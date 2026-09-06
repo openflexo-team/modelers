@@ -1,0 +1,36 @@
+// UML modeler - a deliberately minimal UML class modeler: classes and their properties, expressed
+// in pure FML, with a class-diagram view on top.
+//
+// Self-contained project, on the model of bpmn-modeler and of
+// openflexo-integration-tests/city-mapping: it carries its API (src/main/java), its resource center
+// (src/main/resources, declared by META-INF/resourceCenters with base URI
+// http://openflexo.org/uml-modeler) AND the tests that exercise it (src/test/java).
+//
+// It was extracted out of modelers-rc, where it shared the http://openflexo.org/modellers resource
+// center with the BPMN, StateCharts and OWL modelers. Its own base URI is NOT optional:
+// DefaultResourceCenterService skips any resource center whose defaultBaseURI is already
+// registered, so two resource centers sharing a URI would silently mask one another.
+//
+// There is NO UML technology adapter in 2.99: UMLModel is plain FML (no model slot at all), and
+// only UMLClassDiagram mounts something - a TypedDiagramModelSlot - hence the single connector
+// below. Examples/*.uml are Papyrus/SysML models inherited from the legacy resource center; nothing
+// in this modeler can read them (they would need an EMF model slot against emf-ta-rc's
+// UML2.0-Papyrus metamodel), they are kept as documentation of the intent.
+//
+// Two test surfaces, as in bpmn-modeler: TestUMLModeler loads and validates the three
+// VirtualModels through the Java API, while the FML-scripts of src/main/resources/AutomatedTests
+// actually RUN the modeler. This is why fml-cli is a test dependency.
+
+dependencies {
+  // openflexo dep
+  implementation flexoFoundation()
+
+  // Technology adapter mounted by UMLClassDiagram
+  implementation diagramConnector()
+
+  // testing dep
+  testImplementation testUtils()
+  testImplementation flexoFoundationTest()
+  testImplementation fmlCli()
+  testImplementation fmlCliTest()
+}

@@ -1,3 +1,13 @@
 rootProject.name = 'modelers'
 
-include 'modelers-api', 'modelers-rc', 'modelers-test'
+// Each modeler is a self-contained project: it carries its own API (src/main/java), its own
+// resource center (src/main/resources) and its own tests (src/test/java, plus the FML-scripts of
+// src/main/resources/AutomatedTests). See each build.gradle.
+//
+// Their resource centers may NOT share a base URI: DefaultResourceCenterService skips any resource
+// center whose defaultBaseURI is already registered, so two of them sharing one would silently
+// mask each other as soon as both are on the classpath.
+include 'bpmn-modeler'
+include 'uml-modeler'
+include 'statecharts-modeler'
+include 'owl-modeler'
