@@ -23,7 +23,6 @@ import org.openflexo.rm.ResourceLocator;
 import org.openflexo.rm.Resources;
 import org.openflexo.technologyadapter.diagram.DiagramTechnologyAdapter;
 import org.openflexo.technologyadapter.emf.EMFTechnologyAdapter;
-import org.openflexo.technologyadapter.gina.GINATechnologyAdapter;
 
 /**
  * A parameterized suite of FML-script driven integration tests for the BPMN modeler.
@@ -72,7 +71,7 @@ public class BPMNModelerAutomatedTests extends FMLScriptParserTestCase {
 	}
 
 	public void initServiceManager() throws ParseException, ModelDefinitionException, IOException {
-		instanciateTestServiceManager(EMFTechnologyAdapter.class, DiagramTechnologyAdapter.class, GINATechnologyAdapter.class);
+		instanciateTestServiceManager(EMFTechnologyAdapter.class, DiagramTechnologyAdapter.class);
 
 		editor = new DefaultFlexoEditor(null, serviceManager);
 		assertNotNull(editor);

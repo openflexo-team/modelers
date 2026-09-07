@@ -30,13 +30,11 @@
  */
 
 use org.openflexo.technologyadapter.emf.EMFModelSlot as EMF;
-use org.openflexo.technologyadapter.gina.FIBComponentModelSlot as GINA;
 
 import org.openflexo.technologyadapter.emf.model.EMFModel;
 import org.openflexo.technologyadapter.emf.model.EMFObjectIndividual;
 import org.openflexo.technologyadapter.emf.metamodel.EMFMetaModel;
 import org.openflexo.technologyadapter.emf.metamodel.EMFClassClass;
-import org.openflexo.technologyadapter.gina.model.GINAFIBComponent;
 import java.lang.String;
 import java.util.List;
 
@@ -70,19 +68,13 @@ public model BPMNModel {
 	// below already addresses it; the legacy serialization had lost the declaration itself.
 	EMFModel bpmnModel with EMFModelSlot(metaModel=BPMN, isRequired=true);
 
-	// The processes this model reifies. Declared for BPMNEditorUI.fib, whose browser lists them
+	// The processes this model reifies. Declared for BPMNEditor.fib, whose browser lists them
 	// under the model, and notified by BPMNEditor.newProcessDiagram().
 	List<Process> rootProcesses {
 		List<Process> get() {
 			return select Process from this;
 		}
 	};
-
-	// The user interface of this model
-	GINAFIBComponent ui with FIBComponent(
-		templateComponentURI="http://openflexo.org/bpmn-modeler/Fib/BPMNModelUI.fib",
-		isRequired=true,
-		assignments={VariableAssignment:(variable="data",value=this)});
 
 	/**
 	 * The legacy creation scheme took no parameter, which left the (undeclared) bpmnModel slot
@@ -91,7 +83,6 @@ public model BPMNModel {
 	 */
 	create(Resource<EMFModel> aBPMNResource) {
 		bpmnModel = parameters.aBPMNResource.resourceData;
-		ui = GINA::ConfigureGINAFIBComponent() in ui;
 		EMFObjectIndividualType(eClass=DEFINITIONS) definitions = select unique EMFObjectIndividualType(eClass=DEFINITIONS) from bpmnModel;
 		log "root elements = " + definitions.rootElements;
 		for (EMFObjectIndividual rootElement : definitions.rootElements) {
@@ -133,7 +124,7 @@ public model BPMNModel {
 
 		/**
 		 * BPMN 2.0 attaches documentation to every BaseElement, as a list of Documentation elements
-		 * each holding a text. This exposes the first of them; BPMNEditorUI.fib's description field
+		 * each holding a text. This exposes the first of them; BPMNEditor.fib's description field
 		 * is bound to it.
 		 *
 		 * Note the typed local: an expression navigating an EMF list yields no EMF path until it is
@@ -346,7 +337,7 @@ public model BPMNModel {
 		}
 
 		/**
-		 * BPMNEditorUI.fib cannot bind to delete() directly: "delete" is a KEYWORD, and the FML
+		 * BPMNEditor.fib cannot bind to delete() directly: "delete" is a KEYWORD, and the FML
 		 * grammar deliberately leaves it out of authorized_kw_in_composite_ident (fml.sablecc), so
 		 * "x.delete()" never parses. Nothing to do with deletion schemes or with visibility - any
 		 * member called "delete" would be unreachable. Hence this differently-named entry point.

@@ -16,18 +16,16 @@
  *     newProcessDiagram(current) as the top-level case, and says so.
  *
  * That legacy notify of a "rootProcesses" property which no virtual model declared is now closed:
- * the property exists, on BPMNModel, which is where BPMNEditorUI.fib's browser reads it (its node
+ * the property exists, on BPMNModel, which is where BPMNEditor.fib's browser reads it (its node
  * IS the model), and the notify below fires there. This editor gained "processDiagrams" for the
- * symmetric need in BPMNModelUI.fib.
+ * symmetric need in BPMNModel.fib.
  */
 
 use org.openflexo.foundation.fml.rt.FMLRTModelSlot as FMLRT;
-use org.openflexo.technologyadapter.gina.FIBComponentModelSlot as GINA;
 use org.openflexo.technologyadapter.emf.EMFModelSlot as EMF;
 
 import org.openflexo.technologyadapter.emf.model.EMFModel;
 import org.openflexo.technologyadapter.emf.metamodel.EMFMetaModel;
-import org.openflexo.technologyadapter.gina.model.GINAFIBComponent;
 import java.lang.String;
 import java.util.List;
 
@@ -47,7 +45,7 @@ public model BPMNEditor {
 	// Its reification as BPMN concepts
 	BPMNModel bpmnModelInstance with ModelInstance(isRequired=true);
 
-	// The process diagrams this editor holds, one per BPMN process. Declared for BPMNModelUI.fib,
+	// The process diagrams this editor holds, one per BPMN process. Declared for BPMNModel.fib,
 	// whose browser lists them under the model.
 	List<ProcessDiagram> processDiagrams {
 		List<ProcessDiagram> get() {
@@ -55,16 +53,9 @@ public model BPMNEditor {
 		}
 	};
 
-	// The user interface of this editor
-	GINAFIBComponent ui with FIBComponent(
-		templateComponentURI="http://openflexo.org/bpmn-modeler/Fib/BPMNEditorUI.fib",
-		isRequired=true,
-		assignments={VariableAssignment:(variable="data",value=this)});
-
 	create(Resource<EMFModel> bpmnResource) {
 		bpmnModel = parameters.bpmnResource.resourceData;
 		bpmnModelInstance = new BPMNModel(parameters.bpmnResource) with (name=parameters.bpmnResource.name.substring(0,parameters.bpmnResource.name.indexOf(".")) + "Model");
-		ui = GINA::ConfigureGINAFIBComponent() in ui;
 	}
 
 	public ProcessDiagram newProcessDiagram(String processName) {
@@ -96,7 +87,7 @@ public model BPMNEditor {
 	/**
 	 * Creates a new process, choosing the first available name from the 'process' base.
 	 *
-	 * This no-argument form exists because BPMNModelUI.fib binds a button to createNewProcess() with
+	 * This no-argument form exists because BPMNModel.fib binds a button to createNewProcess() with
 	 * no argument: a binding matches on ARITY, and only the one-argument form existed. (Visibility is
 	 * not what was missing - a non-public behaviour is perfectly reachable from a binding; measured.)
 	 */

@@ -19,7 +19,6 @@ import org.openflexo.foundation.resource.FlexoResource;
 import org.openflexo.foundation.test.OpenflexoTestCase;
 import org.openflexo.technologyadapter.diagram.DiagramTechnologyAdapter;
 import org.openflexo.technologyadapter.emf.EMFTechnologyAdapter;
-import org.openflexo.technologyadapter.gina.GINATechnologyAdapter;
 import org.openflexo.test.OrderedRunner;
 import org.openflexo.test.TestOrder;
 
@@ -74,7 +73,7 @@ public class TestBPMNModeler extends OpenflexoTestCase {
 
 		log("test0InstantiateResourceCenter()");
 
-		instanciateTestServiceManager(EMFTechnologyAdapter.class, DiagramTechnologyAdapter.class, GINATechnologyAdapter.class);
+		instanciateTestServiceManager(EMFTechnologyAdapter.class, DiagramTechnologyAdapter.class);
 	}
 
 	@Test

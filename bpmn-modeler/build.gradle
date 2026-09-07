@@ -12,8 +12,10 @@
 // registered, so two resource centers sharing http://openflexo.org/modellers would silently
 // mask one another as soon as both are on the classpath - which ea-module does.
 //
-// The three VirtualModels (BPMNEditor / BPMNModel / ProcessDiagram) mount four kinds of model
-// slot - EMF, GINA FIBComponent, TypedDiagram and FMLRT - hence the three connectors below. The
+// The three VirtualModels (BPMNEditor / BPMNModel / ProcessDiagram) mount three kinds of model
+// slot - EMF, TypedDiagram and FMLRT - hence the two connectors below. Their user interfaces are
+// NOT model slots: BPMNEditor.fib and BPMNModel.fib sit in the Xxx.fml/ container of the
+// VirtualModel that drives them, and are resolved by naming convention. The
 // OMG BPMN 2.0 metamodel itself is NOT shipped here: it comes from emf-ta-rc
 // (MetaModels/BPMN2-1.4), which emf-ta brings along.
 //
@@ -29,15 +31,14 @@ dependencies {
   // Technology adapters mounted by the three VirtualModels of this modeler
   implementation emfConnector()
   implementation diagramConnector()
-  implementation ginaConnector()
 
   // testing dep
   testImplementation testUtils()
   testImplementation flexoFoundationTest()
   testImplementation fmlCli()
   testImplementation fmlCliTest()
-  // gina-ta-ui carries FMLControlledFIBController, the controller the .fib declare. Without it on
-  // the test classpath every controller.* binding is reported unresolved - a classpath artefact,
-  // not a defect: FlexoFIBController.iconForObject() is alive and well.
-  testImplementation ginaConnectorUi()
+  // flexo-ui carries FMLControlledComponent, which loads and binds a container component, and
+  // FlexoFIBController, the controller the .fib declare. Without it on the test classpath every
+  // controller.* binding is reported unresolved - a classpath artefact, not a defect.
+  testImplementation flexoUi()
 }

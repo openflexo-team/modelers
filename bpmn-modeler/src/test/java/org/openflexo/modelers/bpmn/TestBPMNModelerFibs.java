@@ -1,10 +1,14 @@
+/**
+ * Openflexo is a computer program whose purpose is to provide an open-source, free and
+ * open-source model federation platform.
+ */
+
 package org.openflexo.modelers.bpmn;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeSet;
@@ -12,6 +16,7 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.openflexo.fib.binding.FMLControlledComponent;
 import org.openflexo.foundation.fml.VirtualModel;
 import org.openflexo.foundation.fml.rm.CompilationUnitResource;
 import org.openflexo.foundation.resource.FlexoResource;
@@ -20,33 +25,23 @@ import org.openflexo.foundation.test.OpenflexoTestCase;
 import org.openflexo.gina.model.FIBComponent;
 import org.openflexo.pamela.validation.ValidationError;
 import org.openflexo.pamela.validation.ValidationReport;
+import org.openflexo.rm.Resource;
 import org.openflexo.technologyadapter.diagram.DiagramTechnologyAdapter;
 import org.openflexo.technologyadapter.emf.EMFTechnologyAdapter;
-import org.openflexo.technologyadapter.gina.FIBComponentModelSlot;
-import org.openflexo.technologyadapter.gina.GINATechnologyAdapter;
-import org.openflexo.technologyadapter.gina.fml.FMLControlledFIBVirtualModelNature;
-import org.openflexo.technologyadapter.gina.model.GINAFIBComponent;
-import org.openflexo.technologyadapter.gina.rm.GINAFIBComponentResource;
 import org.openflexo.test.OrderedRunner;
 import org.openflexo.test.TestOrder;
 
 /**
- * Checks the <code>.fib</code> user interfaces federated by the VirtualModels of this resource center.
+ * The user interfaces of this modeler are GINA components stored in the <code>Xxx.fml/</code> container of the VirtualModel that drives
+ * them, and resolved by naming convention - <code>BPMNEditor.fml/BPMNEditor.fib</code>,
+ * <code>BPMNEditor.fml/BPMNModel.fml/BPMNModel.fib</code>.
  *
  * <p>
- * A <code>.fib</code> is reached from FML through a {@link FIBComponentModelSlot}, whose <code>templateComponentURI</code> is resolved
- * against the resource manager. That link is <em>silent</em> when it breaks:
- * {@link FMLControlledFIBVirtualModelNature#hasNature(VirtualModel)} simply returns false when the URI resolves to nothing, the VirtualModel
- * quietly loses its FML-controlled-FIB nature, and every other test of this project stays green - the FML itself validates, since the URI is
- * only a string attribute. This suite is what makes such a break visible, in particular after the URI rewriting that came with the
- * extraction of this modeler into its own resource center.
- *
- * <p>
- * It is written over the resource center rather than over a hard-coded list of files, so a <code>.fib</code> added later is covered without
- * touching this class, and it walks the link in both directions: every declared model slot must reach a component, and every component
- * shipped here must be reached by a model slot.
- *
- * @see TestBPMNModeler
+ * This replaced the <code>gina-ta</code> bridge, where the link was a <code>templateComponentURI</code> string on a
+ * <code>FIBComponentModelSlot</code>. That link broke <b>silently</b>: an URI resolving to nothing simply made the VirtualModel lose its
+ * nature, and the application showed an empty panel. The convention cannot break that way - the component either sits beside the FML source
+ * or it does not - but this suite still walks the link in <b>both</b> directions, because an orphan component is dead weight nothing else
+ * would notice.
  */
 @RunWith(OrderedRunner.class)
 public class TestBPMNModelerFibs extends OpenflexoTestCase {
@@ -61,56 +56,46 @@ public class TestBPMNModelerFibs extends OpenflexoTestCase {
 
 		log("test0InstantiateResourceCenter()");
 
-		instanciateTestServiceManager(EMFTechnologyAdapter.class, DiagramTechnologyAdapter.class, GINATechnologyAdapter.class);
+		instanciateTestServiceManager(EMFTechnologyAdapter.class, DiagramTechnologyAdapter.class);
 
 		resourceCenter = serviceManager.getResourceCenterService().getFlexoResourceCenter(BPMNModelerConstants.BPMN_MODELER_RC_URI);
 		assertNotNull("No resource center for " + BPMNModelerConstants.BPMN_MODELER_RC_URI, resourceCenter);
+
 	}
 
 	/**
-	 * Every {@link FIBComponentModelSlot} declared in this resource center reaches a component that actually loads.
+	 * The VirtualModels that ship a user interface are exactly the ones expected, and each reaches a component that actually loads.
 	 */
 	@Test
 	@TestOrder(2)
-	public void test1EveryModelSlotReachesItsComponent() {
+	public void test1EveryDrivenVirtualModelReachesItsComponent() {
 
-		log("test1EveryModelSlotReachesItsComponent()");
+		log("test1EveryDrivenVirtualModelReachesItsComponent()");
 
-		Map<VirtualModel, FIBComponentModelSlot> slots = fibModelSlots();
-		assertEquals("Unexpected set of VirtualModels declaring a FIBComponentModelSlot",
-				new TreeSet<>(Arrays.asList("BPMNEditor", "BPMNModel")), names(slots.keySet()));
+		Map<VirtualModel, Resource> driven = drivenVirtualModels();
 
-		for (Map.Entry<VirtualModel, FIBComponentModelSlot> entry : slots.entrySet()) {
+		assertEquals("Unexpected set of VirtualModels driving a user interface", new TreeSet<>(java.util.Arrays.asList("BPMNEditor",
+				"BPMNModel")), names(driven.keySet()));
+
+		for (Map.Entry<VirtualModel, Resource> entry : driven.entrySet()) {
 
 			VirtualModel virtualModel = entry.getKey();
-			FIBComponentModelSlot modelSlot = entry.getValue();
 
-			String uri = modelSlot.getTemplateComponentURI();
-			assertTrue("No templateComponentURI on the FIBComponentModelSlot of " + virtualModel.getName(),
-					uri != null && uri.length() > 0);
-			assertTrue("templateComponentURI of " + virtualModel.getName() + " leaves this resource center: " + uri,
-					uri.startsWith(BPMNModelerConstants.BPMN_MODELER_RC_URI + "/"));
+			// The component sits in the container of the VirtualModel, and is named after it
+			assertTrue("The component of " + virtualModel.getName() + " is not named after it: " + entry.getValue().getRelativePath(),
+					entry.getValue().getRelativePath().endsWith("/" + virtualModel.getName() + ".fib"));
 
-			// The silent failure this whole suite exists for: an unresolved URI costs the VirtualModel
-			// its FML-controlled-FIB nature, with no error reported anywhere.
-			assertNotNull("templateComponentURI of " + virtualModel.getName() + " resolves to nothing: " + uri,
-					modelSlot.getTemplateResource());
-			assertEquals(uri, modelSlot.getTemplateResource().getURI());
+			FIBComponent component = FMLControlledComponent.loadUIComponent(virtualModel, null);
+			assertNotNull("The component of " + virtualModel.getName() + " does not load", component);
 
-			GINAFIBComponent component = FMLControlledFIBVirtualModelNature.getFIBComponent(virtualModel.getDeclaringCompilationUnit());
-			assertNotNull("No GINAFIBComponent behind " + uri, component);
-			assertNotNull("The .fib behind " + uri + " holds no FIBComponent", component.getComponent());
-
-			assertTrue(virtualModel.getName() + " has lost its FML-controlled-FIB nature",
-					FMLControlledFIBVirtualModelNature.INSTANCE.hasNature(virtualModel));
+			// Loading installs the FML binding context - what the model slot's bindTo() used to do
+			assertNotNull("The component of " + virtualModel.getName() + " was not bound to its concept",
+					component.getVariable(FMLControlledComponent.CONCEPT_INSTANCE_VARIABLE));
 		}
 	}
 
 	/**
-	 * And the other way round: no <code>.fib</code> is shipped here without a VirtualModel federating it.
-	 *
-	 * <p>
-	 * An orphan component is dead weight that nothing else would notice - the resource center loads it happily.
+	 * And the other way round: no <code>.fib</code> is shipped here without a VirtualModel driving it.
 	 */
 	@Test
 	@TestOrder(3)
@@ -118,34 +103,39 @@ public class TestBPMNModelerFibs extends OpenflexoTestCase {
 
 		log("test2NoOrphanComponent()");
 
-		TreeSet<String> federated = new TreeSet<>();
-		for (FIBComponentModelSlot modelSlot : fibModelSlots().values()) {
-			federated.add(modelSlot.getTemplateComponentURI());
+		TreeSet<String> driven = new TreeSet<>();
+		for (Resource componentResource : drivenVirtualModels().values()) {
+			driven.add(componentResource.getRelativePath());
 		}
 
 		TreeSet<String> shipped = new TreeSet<>();
 		for (FlexoResource<?> resource : resourceCenter.getAllResources()) {
-			if (resource instanceof GINAFIBComponentResource) {
-				shipped.add(resource.getURI());
+			if (resource instanceof CompilationUnitResource) {
+				Resource container = ((CompilationUnitResource) resource).getDirectory();
+				if (container != null) {
+					for (Resource artefact : container.getContents(false)) {
+						if (artefact.getRelativePath() != null && artefact.getRelativePath().endsWith(".fib")) {
+							shipped.add(artefact.getRelativePath());
+						}
+					}
+				}
 			}
 		}
 
-		assertEquals("A .fib of this resource center is federated by no VirtualModel", shipped, federated);
+		assertEquals("A .fib of this resource center is driven by no VirtualModel", shipped, driven);
 	}
 
 	/**
-	 * Every binding of every component is valid, once bound to the typing space of the VirtualModel that federates it.
+	 * Every binding of every component is valid, in the context the module view shows it in.
 	 *
 	 * <p>
-	 * {@link GINAFIBComponent#bindTo} is what installs that context - the FML binding factory, the technology-adapter type manager, and the
-	 * type of the <code>data</code> variable taken from the model slot assignments. It is exactly what the module view does before showing
-	 * the component, and it matters twice over: validating without it reports every binding on <code>data</code> as broken, and it also
-	 * swaps the expression parser for the FML one, under which a binding that reads fine in the FIB editor may no longer parse at all.
+	 * {@link FMLControlledComponent#loadUIComponent} is what installs that context - the FML binding factory and the type of the inspected
+	 * instance. It matters twice over: validating without it reports every binding on <code>data</code> as broken, and it also swaps the
+	 * expression parser for the FML one, under which a binding that reads fine in the FIB editor may no longer parse at all.
 	 *
 	 * <p>
-	 * These two components were 2012 user interfaces addressing a model the FML migration had not reconstituted, and this assertion was
-	 * first written against a list of tolerated failures. That list is now empty: see the header of each <code>.fib</code>-facing behaviour
-	 * in BPMNEditor and BPMNModel for what had to be declared, and the removed widgets for what had no BPMN counterpart at all.
+	 * The tolerated-failure list is deliberately EMPTY, and was already empty before these components moved into their containers. Do not
+	 * reintroduce one without saying, per entry, what decision is missing.
 	 */
 	@Test
 	@TestOrder(4)
@@ -153,45 +143,41 @@ public class TestBPMNModelerFibs extends OpenflexoTestCase {
 
 		log("test3EveryBindingIsValid()");
 
-		for (Map.Entry<VirtualModel, FIBComponentModelSlot> entry : fibModelSlots().entrySet()) {
+		for (Map.Entry<VirtualModel, Resource> entry : drivenVirtualModels().entrySet()) {
 
 			VirtualModel virtualModel = entry.getKey();
-			FIBComponentModelSlot modelSlot = entry.getValue();
-			String uri = modelSlot.getTemplateComponentURI();
+			FIBComponent component = FMLControlledComponent.loadUIComponent(virtualModel, null);
 
-			GINAFIBComponent component = FMLControlledFIBVirtualModelNature.getFIBComponent(virtualModel.getDeclaringCompilationUnit());
-			component.bindTo(virtualModel, modelSlot);
-
-			FIBComponent fibComponent = component.getComponent();
-			ValidationReport report = fibComponent.validate();
+			ValidationReport report = component.validate();
 
 			TreeSet<String> invalid = new TreeSet<>();
 			for (ValidationError<?, ?> error : report.getAllErrors()) {
 				invalid.add(report.getValidationModel().localizedIssueMessage(error));
 			}
 
-			System.out.println("Validated " + uri + ": " + invalid.size() + " invalid binding(s)");
-			assertEquals("Invalid binding(s) in " + uri + ": " + invalid, new TreeSet<String>(), invalid);
+			System.out.println("Validated " + entry.getValue().getRelativePath() + ": " + invalid.size() + " invalid binding(s)");
+			assertEquals("Invalid binding(s) in " + entry.getValue().getRelativePath() + ": " + invalid, new TreeSet<String>(), invalid);
 		}
 	}
 
 	/**
-	 * The {@link FIBComponentModelSlot} each VirtualModel of this resource center <em>declares</em>, indexed by VirtualModel.
+	 * The VirtualModels of this resource center that drive a user interface, indexed by VirtualModel.
+	 *
+	 * <p>
+	 * Unlike the model-slot era, there is nothing to filter out here: a component is found in the container of the compilation unit that
+	 * declares the concept, so a contained VirtualModel can no longer answer with its container's.
 	 */
-	private Map<VirtualModel, FIBComponentModelSlot> fibModelSlots() {
+	private Map<VirtualModel, Resource> drivenVirtualModels() {
 
-		Map<VirtualModel, FIBComponentModelSlot> returned = new LinkedHashMap<>();
+		Map<VirtualModel, Resource> returned = new LinkedHashMap<>();
 
 		for (FlexoResource<?> resource : resourceCenter.getAllResources()) {
 			if (resource instanceof CompilationUnitResource) {
 				VirtualModel virtualModel = ((CompilationUnitResource) resource).getCompilationUnit().getVirtualModel();
 				if (virtualModel != null) {
-					for (FIBComponentModelSlot modelSlot : virtualModel.getModelSlots(FIBComponentModelSlot.class)) {
-						// getModelSlots() also reports what a CONTAINER declares, so ProcessDiagram would
-						// answer with BPMNEditor's slot. Keep only what this VirtualModel declares itself.
-						if (modelSlot.getFlexoConcept() == virtualModel) {
-							returned.put(virtualModel, modelSlot);
-						}
+					Resource componentResource = virtualModel.getUIComponentResource();
+					if (componentResource != null) {
+						returned.put(virtualModel, componentResource);
 					}
 				}
 			}
