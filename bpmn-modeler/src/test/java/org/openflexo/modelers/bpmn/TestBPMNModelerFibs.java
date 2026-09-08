@@ -90,7 +90,7 @@ public class TestBPMNModelerFibs extends OpenflexoTestCase {
 
 			// Loading installs the FML binding context - what the model slot's bindTo() used to do
 			assertNotNull("The component of " + virtualModel.getName() + " was not bound to its concept",
-					component.getVariable(FMLControlledComponent.CONCEPT_INSTANCE_VARIABLE));
+					component.getVariable(org.openflexo.gina.model.FIBComponent.DEFAULT_DATA_VARIABLE));
 		}
 	}
 
