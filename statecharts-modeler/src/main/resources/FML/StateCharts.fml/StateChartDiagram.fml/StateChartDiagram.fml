@@ -1,0 +1,111 @@
+/**
+ * StateChartDiagram - the diagram view of a StateChartModel: states are shapes, transitions are
+ * connectors, and the initial transition is a small shape linked to its target state.
+ *
+ * Migrated from the deprecated .fml.xml serialization to textual FML. What was recovered or
+ * repaired, and why:
+ *   - the legacy metamodelElementReference fragments spell the example diagram's elements with an
+ *     underscore (#SYL_2); the textual form addresses them with a hyphen ([EXAMPLE_DIAGRAM:"SYL-2"]),
+ *     which is what actually resolves;
+ *   - Transition's state roles are now fromState/toState (see StateChartModel);
+ *   - the creation scheme is anonymous, and the drop/link schemes keep their legacy names,
+ *     lowercased as the grammar requires.
+ *
+ * One legacy detail is LOST, not dropped by choice: InitialTransitionGR's ConnectorRole declared
+ * <StartShape_ShapeRole idref="…"/>, i.e. its start shape is the concept's own "shape" role.
+ * ConnectorRole.startShapeRole carries no @FMLAttribute, so it cannot be expressed in textual FML.
+ * The same information is in the AddConnector(fromShape=shape) of the drop scheme below.
+ */
+
+namespace "http://openflexo.org/statecharts-modeler/DiagramSpecs/StateChartDiagramSpec.diagramspecification" as STATECHART_DIAGRAM_SPECIFICATION;
+
+use org.openflexo.foundation.fml.rt.FMLRTModelSlot as FMLRT;
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot as DIAGRAM;
+
+import org.openflexo.technologyadapter.diagram.model.Diagram;
+import org.openflexo.technologyadapter.diagram.model.DiagramShape;
+import org.openflexo.technologyadapter.diagram.model.DiagramConnector;
+import org.openflexo.technologyadapter.diagram.metamodel.DiagramSpecification;
+import java.lang.String;
+
+import ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml/StateChartModel.fml"];
+
+import DiagramSpecification STATECHART_DIAGRAM_SPEC from [STATECHART_DIAGRAM_SPECIFICATION];
+import Diagram EXAMPLE_DIAGRAM from [STATECHART_DIAGRAM_SPECIFICATION + "/ExampleDiagram.diagram"];
+import DiagramShape STATE_SHAPE from [EXAMPLE_DIAGRAM:"SYL-2"];
+import DiagramConnector TRANSITION_CONNECTOR from [EXAMPLE_DIAGRAM:"SYL-4"];
+import DiagramShape INITIAL_TRANSITION_SHAPE from [EXAMPLE_DIAGRAM:"SYL-5"];
+import DiagramConnector INITIAL_TRANSITION_CONNECTOR from [EXAMPLE_DIAGRAM:"SYL-6"];
+
+@URI("http://openflexo.org/statecharts-modeler/FML/StateCharts.fml/StateChartDiagram.fml")
+@Version("0.1")
+public model StateChartDiagram {
+
+	// The state chart being represented
+	StateChartModel stateChartModel with ModelInstance(isRequired=true);
+
+	// The diagram representing it
+	Diagram diagram with TypedDiagram(
+		diagramSpecification=STATECHART_DIAGRAM_SPEC,
+		isRequired=true,
+		paletteElementBindings={
+			PaletteElementBinding:(
+				call=new StateGR::dropStateGRAtTopLevel(),
+				paletteElementId="http://openflexo.org/statecharts-modeler/DiagramSpecs/StateChartDiagramSpec.diagramspecification/Palette.palette#StateGR"),
+			PaletteElementBinding:(
+				call=new InitialTransitionGR::dropInitialTransitionGR(),
+				paletteElementId="http://openflexo.org/statecharts-modeler/DiagramSpecs/StateChartDiagramSpec.diagramspecification/Palette.palette#InitialTransitionGR")
+		});
+
+	create(String name, StateChartModel aModel) {
+		stateChartModel = parameters.aModel;
+		diagram = DIAGRAM::CreateDiagram(resourceName=parameters.name + "Diagram",resourceCenter=this.resourceCenter,relativePath="/Diagrams");
+	}
+
+	/**
+	 * Represents a State as a shape of the diagram
+	 */
+	public concept StateGR {
+
+		DiagramShape shape with ShapeRole(metamodelElement=STATE_SHAPE,exampleLabel="State",label=state.name);
+		State state with ConceptInstance(virtualModelInstance=stateChartModel);
+
+		StateGR dropStateGRAtTopLevel() with DropScheme(targetType=StateChartDiagram) {
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
+			state = stateChartModel.new State("State");
+		}
+	}
+
+	/**
+	 * Represents a Transition as a connector between the two StateGR it relates
+	 */
+	public concept TransitionGR {
+
+		DiagramConnector connector with ConnectorRole(metamodelElement=TRANSITION_CONNECTOR,exampleLabel="transition",label=transition.label);
+		Transition transition with ConceptInstance(virtualModelInstance=stateChartModel);
+
+		TransitionGR linkStateGRToStateGR() with LinkScheme(fromType=StateGR,toType=StateGR) {
+			connector = DIAGRAM::AddConnector(fromShape=fromTarget.shape,toShape=toTarget.shape) in diagram;
+			transition = stateChartModel.new Transition(fromTarget.state,toTarget.state,"transition");
+		}
+	}
+
+	/**
+	 * Represents the InitialTransition as a small shape dropped on a StateGR, linked to it
+	 */
+	public concept InitialTransitionGR {
+
+		DiagramShape shape with ShapeRole(metamodelElement=INITIAL_TRANSITION_SHAPE,exampleLabel="");
+		DiagramConnector connector with ConnectorRole(metamodelElement=INITIAL_TRANSITION_CONNECTOR,exampleLabel="init",label=initialTransition.label);
+		InitialTransition initialTransition with ConceptInstance(virtualModelInstance=stateChartModel);
+
+		InitialTransitionGR dropInitialTransitionGR() with DropScheme(targetType=StateGR) {
+			initialTransition = stateChartModel.new InitialTransition(target.state,"init");
+			shape = DIAGRAM::AddShape(container=topLevel) in diagram;
+			DIAGRAM::GraphicalAction(subject=shape,graphicalFeatureName="x",value=target.shape.graphicalRepresentation.x - 30) in diagram;
+			DIAGRAM::GraphicalAction(subject=shape,graphicalFeatureName="y",value=target.shape.graphicalRepresentation.y - 30) in diagram;
+			connector = DIAGRAM::AddConnector(fromShape=shape,toShape=target.shape) in diagram;
+		}
+	}
+
+}

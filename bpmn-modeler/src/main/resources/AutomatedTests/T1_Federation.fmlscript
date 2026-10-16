@@ -1,0 +1,105 @@
+// T1 - the modeler RUNS: one .bpmn file federated, its process reified as concept instances.
+//
+// BPMNEditor's creation scheme takes the BPMN resource, hands it to BPMNModel, and BPMNModel walks
+// the EMF Definitions: one Process instance per bpmn:process, then one FlowNode instance per flow
+// element, then the SequenceFlows - in that order, because a SequenceFlow resolves its source and
+// target among the nodes already created.
+//
+// The instances are created in a temporary resource center, so that the diagrams ProcessDiagram
+// generates land there rather than in src/main/resources.
+
+editorVM = load -r ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml"];
+assert editorVM != null;
+bpmn = load -r ["http://openflexo.org/bpmn-modeler/Models/BasicExample.bpmn"];
+assert bpmn != null;
+
+service ResourceCenterService add_temp_rc;
+editor = new BPMNEditor(bpmn.resource) with (name="BasicExampleEditor");
+assert editor != null;
+
+// --- The two model slots of the editor --------------------------------------------------------
+assert editor.bpmnModel != null;
+assert editor.bpmnModel.resource.name == "BasicExample.bpmn";
+model = editor.bpmnModelInstance;
+assert model != null;
+// The name is derived from the resource: "BasicExample.bpmn" -> "BasicExampleModel".
+assert model.name == "BasicExampleModel";
+
+// Two virtual model instances live inside the editor: the BPMNModel, and the one ProcessDiagram
+// created for the single BPMNDiagram the file carries.
+assert editor.virtualModelInstances.size == 2;
+
+// --- The reification ---------------------------------------------------------------------------
+// 8 concept instances: 1 Process, 1 StartEvent, 2 Task, 1 EndEvent, 3 SequenceFlow.
+assert model.flexoConceptInstances.size == 8;
+
+diag = editor.getProcessDiagram("BasicExample");
+assert diag != null;
+process = diag.process;
+assert process != null;
+// bpmn:process carries no name attribute here, so processName falls back on the resource name.
+assert process.processName == "BasicExample";
+assert process.eObject.flowElements.size == 7;
+
+// The flow elements, in the order the .bpmn file declares them. getFlowNode() selects among the
+// FlowNode instances, so it returns null for the three sequence flows - which getSequenceFlow does.
+begin = process.getFlowNode(process.eObject.flowElements.get(0));
+task1 = process.getFlowNode(process.eObject.flowElements.get(1));
+task2 = process.getFlowNode(process.eObject.flowElements.get(3));
+end = process.getFlowNode(process.eObject.flowElements.get(5));
+assert begin != null;
+assert task1 != null;
+assert task2 != null;
+assert end != null;
+
+// StartEvent and EndEvent hold a constant name, a Task reads it off its EMF object.
+assert begin.name == "Begin";
+assert task1.name == "Activity1";
+assert task2.name == "Activity2";
+assert end.name == "End";
+
+// --- The flow graph ----------------------------------------------------------------------------
+// SequenceFlow.create() resolves source and target and registers itself on both ends, which is what
+// makes the graph navigable in either direction.
+assert begin.incoming.size == 0;
+assert begin.outgoing.size == 1;
+assert begin.outgoing.get(0).target == task1;
+
+assert task1.incoming.size == 1;
+assert task1.incoming.get(0).source == begin;
+assert task1.outgoing.size == 1;
+assert task1.outgoing.get(0).target == task2;
+
+assert task2.outgoing.get(0).target == end;
+
+assert end.incoming.size == 1;
+assert end.incoming.get(0).source == task2;
+assert end.outgoing.size == 0;
+
+// The sequence flows are reachable from their EMF object too.
+flow1 = process.getSequenceFlow(process.eObject.flowElements.get(2));
+assert flow1 != null;
+assert flow1.source == begin;
+assert flow1.target == task1;
+
+// --- BPMN documentation -------------------------------------------------------------------------
+// BaseElement.documentation exposes the first <bpmn:documentation> of an element. BasicExample.bpmn
+// carries one on Activity1 and none anywhere else, which covers both branches of the property.
+assert task1.documentation == "The first activity of the example process";
+assert task2.documentation == null;
+assert begin.documentation == null;
+
+// Rewriting an existing documentation reaches the EMF model.
+task1.documentation = "Rewritten";
+assert task1.documentation == "Rewritten";
+
+// --- What the setter canNOT do, pinned as measured ---------------------------------------------
+// Writing on an element that carries no <bpmn:documentation> leaves the model untouched: creating
+// one needs EMF::AddEMFObject(container=...), whose container branch has never worked - it adds to
+// an unmodifiable COPY of the EMF list and throws UnsupportedOperationException (measured with the
+// list both empty and non-empty; documented on AddEMFObjectIndividual). The setter says so instead
+// of failing; see BaseElement.documentation. Invert this once emf-ta is fixed.
+task2.documentation = "ignored";
+assert task2.documentation == null;
+
+log "Test PASSED: T1 - BasicExample.bpmn federated: 1 process, 4 flow nodes, 3 sequence flows";

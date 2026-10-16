@@ -1,0 +1,47 @@
+// T0 - the three VirtualModels of the modeler load, and hold the shape the rest of the suite
+// relies on. Nothing runs yet: this is the smoke test saying the resource center is wired under
+// its own base URI (http://openflexo.org/bpmn-modeler) after the extraction out of modelers-rc.
+
+editorVM = load -r ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml"];
+assert editorVM != null;
+assert editorVM.name == "BPMNEditor";
+
+modelVM = load -r ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/BPMNModel.fml"];
+assert modelVM != null;
+assert modelVM.name == "BPMNModel";
+
+diagramVM = load -r ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml/ProcessDiagram.fml"];
+assert diagramVM != null;
+assert diagramVM.name == "ProcessDiagram";
+
+// --- The abstract syntax: the BPMN element hierarchy ------------------------------------------
+// Flat, on purpose: the legacy nested seven of these inside Process while storing their URIs flat
+// and letting inheritance cross the boundary both ways. See BPMNModel.fml.
+assert modelVM.getFlexoConcept("BaseElement").isAbstract;
+assert modelVM.getFlexoConcept("BaseElement").isSuperConceptOf(modelVM.getFlexoConcept("FlowElement"));
+assert modelVM.getFlexoConcept("FlowElement").isSuperConceptOf(modelVM.getFlexoConcept("FlowNode"));
+assert modelVM.getFlexoConcept("FlowElement").isSuperConceptOf(modelVM.getFlexoConcept("SequenceFlow"));
+assert modelVM.getFlexoConcept("FlowNode").isSuperConceptOf(modelVM.getFlexoConcept("Task"));
+assert modelVM.getFlexoConcept("FlowNode").isSuperConceptOf(modelVM.getFlexoConcept("Event"));
+assert modelVM.getFlexoConcept("FlowNode").isSuperConceptOf(modelVM.getFlexoConcept("Gateway"));
+assert modelVM.getFlexoConcept("CatchEvent").isSuperConceptOf(modelVM.getFlexoConcept("StartEvent"));
+assert modelVM.getFlexoConcept("ThrowEvent").isSuperConceptOf(modelVM.getFlexoConcept("EndEvent"));
+assert modelVM.getFlexoConcept("Gateway").isSuperConceptOf(modelVM.getFlexoConcept("ParallelGateway"));
+assert modelVM.getFlexoConcept("Gateway").isSuperConceptOf(modelVM.getFlexoConcept("ExclusiveGateway"));
+assert modelVM.getFlexoConcept("Process") != null;
+
+// --- The concrete syntax: one graphical concept per model concept -----------------------------
+assert diagramVM.getFlexoConcept("FlowNodeGR").isAbstract;
+assert diagramVM.getFlexoConcept("FlowNodeGR").isSuperConceptOf(diagramVM.getFlexoConcept("TaskGR"));
+assert diagramVM.getFlexoConcept("FlowNodeGR").isSuperConceptOf(diagramVM.getFlexoConcept("StartEventGR"));
+assert diagramVM.getFlexoConcept("FlowNodeGR").isSuperConceptOf(diagramVM.getFlexoConcept("EndEventGR"));
+assert diagramVM.getFlexoConcept("GatewayGR").isSuperConceptOf(diagramVM.getFlexoConcept("ParallelGatewayGR"));
+assert diagramVM.getFlexoConcept("GatewayGR").isSuperConceptOf(diagramVM.getFlexoConcept("ExclusiveGatewayGR"));
+assert diagramVM.getFlexoConcept("SequenceFlowGR") != null;
+
+// --- The .bpmn model this modeler is exercised on ---------------------------------------------
+// Recognized as an EMF model by the .bpmn extension declared by emf-ta-rc's BPMN2-1.4.properties.
+bpmn = load -r ["http://openflexo.org/bpmn-modeler/Models/BasicExample.bpmn"];
+assert bpmn != null;
+
+log "Test PASSED: T0 - BPMNEditor, BPMNModel and ProcessDiagram load, BasicExample.bpmn is readable";

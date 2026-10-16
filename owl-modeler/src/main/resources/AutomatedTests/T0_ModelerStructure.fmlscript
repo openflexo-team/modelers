@@ -1,0 +1,34 @@
+// T0 - the editor loads, and holds the shape the modeler is supposed to have. This is the smoke
+// test saying the resource center is wired under its own base URI (http://openflexo.org/owl-modeler)
+// after the extraction out of modelers-rc.
+//
+// It is also the ONLY script of this modeler, and deliberately so: OWLOntologyEditor::init takes a
+// Resource<OWLOntology>, and this resource center ships no ontology. Running the editor means
+// bringing owl-ta-test-rc in as a test-scope resource center - a scope decision, not a migration
+// one. Until then, what can be proved is that the compilation unit parses and carries its content.
+
+editor = load -r ["http://openflexo.org/owl-modeler/FML/OWLOntologyEditor.fml"];
+assert editor != null;
+assert editor.name == "OWLOntologyEditor";
+
+// --- The five graphical concepts --------------------------------------------------------------
+// The editor has no abstract-syntax model of its own: it reads the ontology through its OWL model
+// slot, and every concept it declares is a representation of an ontology object.
+assert editor.getFlexoConcept("OWLClassGR") != null;
+assert editor.getFlexoConcept("OWLIndividualGR") != null;
+assert editor.getFlexoConcept("SubClassGR") != null;
+assert editor.getFlexoConcept("IsAGR") != null;
+assert editor.getFlexoConcept("ObjectPropertyGR") != null;
+
+// --- The behaviours that keep the diagram in sync with the ontology ---------------------------
+// update() is the entry point; the five updateXxx() below it each run a begin match / match /
+// end match over one family of ontology objects.
+assert editor.getFlexoBehaviour("update") != null;
+assert editor.getFlexoBehaviour("updateClasses") != null;
+assert editor.getFlexoBehaviour("updateIndividuals") != null;
+assert editor.getFlexoBehaviour("updateSubClassRepresentations") != null;
+assert editor.getFlexoBehaviour("updateTypeRepresentations") != null;
+assert editor.getFlexoBehaviour("updateObjectPropertyRepresentations") != null;
+assert editor.getFlexoBehaviour("init") != null;
+
+log "Test PASSED: T0 - OWLOntologyEditor loads with its 5 concepts and its update behaviours";

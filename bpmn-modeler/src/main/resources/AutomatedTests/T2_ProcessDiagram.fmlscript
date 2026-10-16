@@ -1,0 +1,51 @@
+// T2 - the diagram side: BPMNModel creates one ProcessDiagram per BPMNDiagram of the file, and
+// representsDiagram() walks the BPMN DI plane, creating one graphical concept instance per
+// BPMNShape and per BPMNEdge.
+
+editorVM = load -r ["http://openflexo.org/bpmn-modeler/FML/BPMNEditor.fml"];
+bpmn = load -r ["http://openflexo.org/bpmn-modeler/Models/BasicExample.bpmn"];
+service ResourceCenterService add_temp_rc;
+editor = new BPMNEditor(bpmn.resource) with (name="BasicExampleEditor");
+
+diag = editor.getProcessDiagram("BasicExample");
+assert diag != null;
+// Named after the process it represents, by BPMNModel's creation scheme.
+assert diag.name == "BasicExampleDiagram";
+
+// The TypedDiagram model slot resolved, on a diagram created in the temporary resource center.
+assert diag.diagram != null;
+
+// 4 BPMNShape -> 4 shapes, 3 BPMNEdge -> 3 connectors.
+assert diag.diagram.shapes.size == 4;
+assert diag.diagram.connectors.size == 3;
+
+// 7 graphical concept instances: StartEventGR, 2 TaskGR, EndEventGR, 3 SequenceFlowGR.
+assert diag.flexoConceptInstances.size == 7;
+
+// --- One graphical representation per flow node, pointing back at its model element ------------
+process = diag.process;
+task1 = process.getFlowNode(process.eObject.flowElements.get(1));
+gr = diag.getFlowNodeGR(task1);
+assert gr != null;
+assert gr.modelElement == task1;
+
+// The BPMN DI shape this graphical representation was laid out from.
+assert gr.bpmnShape != null;
+assert gr.bpmnShape.bounds.x == 280.0;
+assert gr.bpmnShape.bounds.y == 59.0;
+assert gr.bpmnShape.bounds.width == 100.0;
+assert gr.bpmnShape.bounds.height == 80.0;
+
+// --- What does NOT happen at creation time, pinned as measured --------------------------------
+// TaskGR.shape declares x/y/width/height/label as graphical-element specifications reading the DI
+// bounds above (they are the reason ShapeRole gained those four FML attributes when this modeler
+// was migrated off .fml.xml). They are NOT applied when the instance is created: DIAGRAM::AddShape
+// clones the template shape of ExampleDiagram, and the resulting DiagramShape still carries the
+// template's geometry (175x90 at the origin of the example) and no label at all. Applying the
+// specifications is the job of the graphical layer, which no headless test drives.
+// Invert these three the day AddShape applies the specifications itself.
+assert gr.shape.graphicalRepresentation.x == 175.0;
+assert gr.shape.graphicalRepresentation.width == 90.0;
+assert gr.shape.graphicalRepresentation.text == null;
+
+log "Test PASSED: T2 - the BPMN DI plane is projected on a diagram: 4 shapes, 3 connectors";

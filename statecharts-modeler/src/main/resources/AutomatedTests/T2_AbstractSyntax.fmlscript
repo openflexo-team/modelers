@@ -1,0 +1,58 @@
+// T2 - the abstract syntax: states, the transitions between them, and the three derived
+// properties that navigate the graph.
+//
+// StateChartModel is plain FML - no model slot at all - and its whole value is in those derived
+// properties: State.incomingTransitions / State.outgoingTransitions each run a
+// `select Transition from container where (...)`, and StateChartModel.initialTransition a
+// `select unique InitialTransition from this`. Nothing but running them proves they resolve.
+
+vp = load -r ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml"];
+modelVM = load -r ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml/StateChartModel.fml"];
+assert modelVM != null;
+
+service ResourceCenterService add_temp_rc;
+sc = new StateCharts() with (name="StateChartsInstance");
+editor = sc.createStateChartDiagram("Traffic");
+model = editor.stateChartModel;
+
+// --- A three-state chart: Red -> Green -> Orange -> Red ---------------------------------------
+// NB: `<vmi>.new <Concept>(...)` is a STATEMENT; the same call inside an expression does not
+// resolve, so bind each instance to a variable first.
+red = model.new State("Red");
+green = model.new State("Green");
+orange = model.new State("Orange");
+assert red.name == "Red";
+assert model.flexoConceptInstances.size == 3;
+
+go = model.new Transition(red, green, "go");
+slow = model.new Transition(green, orange, "slow");
+stop = model.new Transition(orange, red, "stop");
+assert go.label == "go";
+assert go.fromState == red;
+assert go.toState == green;
+assert model.flexoConceptInstances.size == 6;
+
+// --- The derived properties, computed by select over the container ----------------------------
+assert red.outgoingTransitions.size == 1;
+assert red.outgoingTransitions.get(0) == go;
+assert red.incomingTransitions.size == 1;
+assert red.incomingTransitions.get(0) == stop;
+
+assert green.incomingTransitions.get(0) == go;
+assert green.outgoingTransitions.get(0) == slow;
+assert orange.outgoingTransitions.get(0) == stop;
+
+// --- The initial transition -------------------------------------------------------------------
+// `select unique` over an empty set yields null, which is what an unstarted chart looks like.
+assert model.initialTransition == null;
+
+init = model.new InitialTransition(red, "init");
+assert model.initialTransition == init;
+assert model.initialTransition.toState == red;
+assert model.initialTransition.label == "init";
+
+// An InitialTransition is NOT a Transition: it does not show up in the states' transition lists.
+assert red.incomingTransitions.size == 1;
+assert model.flexoConceptInstances.size == 7;
+
+log "Test PASSED: T2 - 3 states, 3 transitions and an initial transition, navigated both ways";

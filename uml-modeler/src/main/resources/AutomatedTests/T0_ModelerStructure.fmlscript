@@ -1,0 +1,34 @@
+// T0 - the three VirtualModels of the modeler load, and hold the shape the rest of the suite
+// relies on. Nothing runs yet: this is the smoke test saying the resource center is wired under
+// its own base URI (http://openflexo.org/uml-modeler) after the extraction out of modelers-rc,
+// where the editor was still addressed by its 2012 URI (.../UMLEditor/UMLEditor.viewpoint).
+
+editorVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml"];
+assert editorVM != null;
+assert editorVM.name == "UMLEditor";
+
+modelVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLModel.fml"];
+assert modelVM != null;
+assert modelVM.name == "UMLModel";
+
+diagramVM = load -r ["http://openflexo.org/uml-modeler/FML/UMLEditor.fml/UMLClassDiagram.fml"];
+assert diagramVM != null;
+assert diagramVM.name == "UMLClassDiagram";
+
+// --- The abstract syntax: a deliberately minimal UML, in pure FML -----------------------------
+// No UML technology adapter exists in 2.99; UMLModel declares no model slot at all.
+// UMLClass, not Class: a bare "Class" is bound by Connie to java.lang.Class, which made the
+// concept unreachable from anywhere outside its own compilation unit.
+assert modelVM.getFlexoConcept("UMLClass") != null;
+assert modelVM.getFlexoConcept("Property") != null;
+assert modelVM.getFlexoConcept("UMLClass").isAbstract == false;
+assert modelVM.getFlexoConcept("Property").isAbstract == false;
+assert modelVM.getFlexoConcept("Class") == null;
+
+// --- The concrete syntax: a class drawn as a composite shape ----------------------------------
+assert diagramVM.getFlexoConcept("ClassGR") != null;
+
+// --- The single behaviour of the editor -------------------------------------------------------
+assert editorVM.getFlexoBehaviour("init") != null;
+
+log "Test PASSED: T0 - UMLEditor, UMLModel and UMLClassDiagram load with their concepts";

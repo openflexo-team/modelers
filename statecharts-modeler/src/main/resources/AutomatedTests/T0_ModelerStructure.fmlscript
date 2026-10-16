@@ -1,0 +1,31 @@
+// T0 - the three VirtualModels of the modeler load, and hold the shape the rest of the suite
+// relies on. Nothing runs yet: this is the smoke test saying the resource center is wired under
+// its own base URI (http://openflexo.org/statecharts-modeler) after the extraction out of
+// modelers-rc.
+
+vp = load -r ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml"];
+assert vp != null;
+assert vp.name == "StateCharts";
+
+modelVM = load -r ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml/StateChartModel.fml"];
+assert modelVM != null;
+assert modelVM.name == "StateChartModel";
+
+diagramVM = load -r ["http://openflexo.org/statecharts-modeler/FML/StateCharts.fml/StateChartDiagram.fml"];
+assert diagramVM != null;
+assert diagramVM.name == "StateChartDiagram";
+
+// --- The container view point declares no concept, only the behaviour that builds a state chart
+assert vp.getFlexoBehaviour("createStateChartDiagram") != null;
+
+// --- The abstract syntax ----------------------------------------------------------------------
+assert modelVM.getFlexoConcept("State") != null;
+assert modelVM.getFlexoConcept("Transition") != null;
+assert modelVM.getFlexoConcept("InitialTransition") != null;
+
+// --- The concrete syntax: one graphical concept per model concept ------------------------------
+assert diagramVM.getFlexoConcept("StateGR") != null;
+assert diagramVM.getFlexoConcept("TransitionGR") != null;
+assert diagramVM.getFlexoConcept("InitialTransitionGR") != null;
+
+log "Test PASSED: T0 - StateCharts, StateChartModel and StateChartDiagram load with their concepts";

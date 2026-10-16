@@ -1,0 +1,35 @@
+// OWL modeler - a basic OWL ontology editor: OWL classes and individuals, with their SubClass,
+// Type and ObjectProperty relationships, projected on a diagram.
+//
+// Self-contained project, on the model of the other modelers of this repository: it carries its
+// API (src/main/java), its resource center (src/main/resources, declared by
+// META-INF/resourceCenters with base URI http://openflexo.org/owl-modeler) AND the tests that
+// exercise it (src/test/java).
+//
+// It was extracted out of modelers-rc, where it shared the http://openflexo.org/modellers resource
+// center with the other modelers. Its own base URI is NOT optional: DefaultResourceCenterService
+// skips any resource center whose defaultBaseURI is already registered.
+//
+// The single VirtualModel mounts an OWLModelSlot and a TypedDiagramModelSlot, hence the two
+// connectors below.
+//
+// NOTE ON TESTS: this resource center ships NO ontology, so there is no execution test - the
+// editor's creation scheme requires a Resource<OWLOntology> that nothing here can supply. The
+// FML-scripts of src/main/resources/AutomatedTests therefore assert structure only. Adding an
+// execution suite means depending on owl-ta-test-rc (which ships BasicOntologyEditor.owl,
+// animals.owl, PizzaOntology.owl...) as a test-scope resource center.
+
+dependencies {
+  // openflexo dep
+  implementation flexoFoundation()
+
+  // Technology adapters mounted by OWLOntologyEditor
+  implementation owlConnector()
+  implementation diagramConnector()
+
+  // testing dep
+  testImplementation testUtils()
+  testImplementation flexoFoundationTest()
+  testImplementation fmlCli()
+  testImplementation fmlCliTest()
+}
